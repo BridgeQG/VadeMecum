@@ -4,8 +4,8 @@
   color: #111111;
   border-bottom: none;
   margin: 0;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 #quarto-document-content h1:not(.title) {
@@ -14,8 +14,8 @@
   color: #111111;
   border-bottom: none;
   margin: 0;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 #quarto-document-content h2 {
@@ -24,8 +24,8 @@
   color: #111111;
   border-bottom: none;
   margin: 0;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 #quarto-document-content h3 {
@@ -34,14 +34,13 @@
   color: #111111;
   border-bottom: none;
   margin: 0;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 #quarto-document-content p {
-  margin-top: 1rem !important; 
-  margin-bottom: 1rem !important;
-  line-height: 1.6;
+  margin-top: 0.5rem !important; 
+  margin-bottom: 0.5rem !important;
   padding-left: 0;
   padding-right: 0;
 }
