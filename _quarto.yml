@@ -15,8 +15,11 @@ website:
       - href: about.qmd
 
 bibliography: bib/references.bib
+csl: bib/journal-of-cosmology-and-astroparticle-physics.csl
 
 format:
   html:
     theme: cosmo
     math: mathjax
+    include-in-header: 
+      - include/mathjax-config.html
