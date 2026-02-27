@@ -5,6 +5,10 @@
   border-bottom: 3px solid #cccccc;
 }
 
+#title-block-header {
+  padding-bottom: 2.5rem;
+}
+
 #quarto-document-content h1:not(.title) {
   font-size: 1.8rem;
   font-weight: 600;
