@@ -1,5 +1,5 @@
 ---
-title: "How to write a page in LaTeX"
+title: 'How to write a page in LaTeX'
 ---
 
 Bla

@@ -1,5 +1,5 @@
 ---
-title: "Scientific Wiki Template"
+title: 'Scientific Wiki Template'
 ---
 
 Github Pages template for a wiki-like page that renders LaTeX equations and citations automatically.

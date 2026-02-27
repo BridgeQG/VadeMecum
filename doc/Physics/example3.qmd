@@ -1,5 +1,5 @@
 ---
-title: "$\Lambda$CDM Cosmological Model"
+title: '$\Lambda$CDM Cosmological Model'
 ---
 
 \section{Field equations}

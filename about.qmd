@@ -1,5 +1,5 @@
 ---
-title: "About us"
+title: 'About us'
 ---
 
 COST Action 23130 BridgeQG
