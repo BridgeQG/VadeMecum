@@ -2,85 +2,95 @@
 title: 'How to write a page in Markdown'
 ---
 
-Standard GitHub Pages can transform simple Markdown files (plain text files with a `.md` extension) into HTML webpages. For this wiki, we go a step further by using **Quarto**, a scientific publishing system that seamlessly handles complex equations, cross-referencing, and bibliography management. 
+Standard GitHub Pages can transform simple Markdown files (plain text files with a `.md` extension) into HTML webpages. For this wiki, our setup goes a step further, allowing Markdown to seamlessly handle complex equations, cross-referencing, and bibliography management.
 
-Quarto Markdown syntax is highly intuitive. Below are examples of the formatting you will use most often.
+Markdown syntax is highly intuitive. Below are examples of the formatting you will use most often, showing the literal syntax you need to use followed by the final rendered version.
 
-# This is a section
-
-## This is a subsection
-
-### This is a subsubsection
+### Headers
 
 Section names are created by adding one or more `#` symbols followed by a space. Use `##` or `###` for subsections and sub-subsections, respectively.
 
+```markdown
+# This is a section
+## This is a subsection
+### This is a sub-subsection
+```
+
+# This is a section
+## This is a subsection
+### This is a sub-subsection
+
 ### Mathematical Equations
 
-You can write inline equations, such as $x^2+y^2=r^2$, by enclosing the formula in single `$` symbols. 
+You can write inline equations by enclosing the formula in single `$` symbols. To write a standalone (unnumbered) equation on its own line, enclose it in double `$$` symbols. 
 
-To write a standalone (unnumbered) equation on its own line, enclose it in double `$$` symbols:
+If you want to create a labeled equation that you can reference later, append `{#eq-yourlabel}` to the closing `$$`. You can then reference it seamlessly using `@eq-yourlabel`.
 
+```markdown
+The area of a circle is $A = \pi r^2$.
+
+Here is the quadratic formula:
 $$
 x=\frac{-b\pm \sqrt{b^2-4ac}}{2a} \,
-$$
+$$ {#eq-quadratic}
 
-If you want to create a **labeled equation** that you can reference later, simply append `{#eq-yourlabel}` to the closing `$$`:
+As seen in @eq-quadratic, there are two solutions.
+```
 
+The area of a circle is $A = \pi r^2$.
+
+Here is the quadratic formula:
 $$
 x=\frac{-b\pm \sqrt{b^2-4ac}}{2a} \,
-$$ {#eq-secondorder}
+$$ {#eq-quadratic}
 
-You can then easily reference this equation in your text by typing `@eq-secondorder`, which will automatically render as a clickable link (e.g., Equation @eq-secondorder).
+As seen in @eq-quadratic, there are two solutions.
 
 ### Text Formatting & Lists
 
-You can make text *italic* or **bold** by enclosing it in single `*` or double `**` asterisks, respectively. 
+You can make text italic or bold by enclosing it in single `*` or double `**` asterisks. 
 
-Create an unordered list using the `-` symbol. The level of indentation determines the hierarchy of the list:
+Create an unordered list using the `-` symbol. For ordered lists, use numbers. You can actually just write `1.` for every item, and it will automatically order them correctly when the page renders.
+
+```markdown
+Make text *italic* or **bold**.
 
 - Level 1 item
   - Level 2 item
-  - Level 2 item
     - Level 3 item
-
-For ordered lists, use numbers. You can actually just write `1.` for every item, and it will be automatically ordered correctly when the page renders:
 
 1. First element
 1. Second element
 1. Third element
+```
 
-### Figures and tables
+Make text *italic* or **bold**.
 
-To insert a cross-referenced image with a controlled width, use the following syntax: 
-`![Your caption text here](path_to_file.png){#fig-label width="80%"}`
+- Level 1 item
+  - Level 2 item
+    - Level 3 item
 
-![Default frog picture.](img/Examples/frog.png){#fig-frog width="80%"}
-
-Markdown tables require a header row and a divider. The Quarto syntax allows you to easily add a caption and a label at the bottom:
-
-| Column 1 | Column 2 | Column 3 |
-|:---------|:---------|:---------|
-| a        | b        | c        |
-| d        | e        | f        |
-: Table caption {#tbl-example}
-
-### Blockquotes
-
-To emphasize a quote or important note, use the `>` symbol at the start of the line:
-
-> "If it is on the internet... it must be true." - Abraham Lincoln
-
-Quarto also includes special **Callout Blocks** to draw attention to notes, warnings, or tips. You create them by opening and closing a block with three colons `:::` like this:
-
-:::{.callout-note}
-This is a helpful note! You can also use `.callout-warning`, `.callout-tip`, `.callout-caution`, or `.callout-important` to change the color and icon of the box.
-:::
+1. First element
+2. Second element
+3. Third element
 
 ### Code Snippets
 
-To format short `inline code` within a sentence, enclose the text in single backticks `` ` ``.
+To format short inline code within a sentence, enclose the text in single backticks (\`). To insert multi-line blocks of code with syntax highlighting, enclose the block in triple backticks and specify the programming language on the first line.
 
-To insert multi-line blocks of code with syntax highlighting, enclose the block in triple backticks ```` ``` ````` and specify the programming language on the first line:
+````markdown
+Use the `print()` function.
+
+```cpp
+int sum() {
+  int a = 5;
+  int b = 10;
+  return a + b;
+}
+```
+````
+
+Use the `print()` function.
 
 ```cpp
 int sum() {
@@ -90,10 +100,70 @@ int sum() {
 }
 ```
 
+### Figures and Images
+
+To insert an image, place the caption in square brackets and the file path in parentheses. You can also add cross-reference labels (`#fig-label`) and size controls (`width`) inside curly braces at the end of the image code.
+
+```markdown
+![Default frog picture.](/img/Examples/frog.png){#fig-frog width="80%"}
+
+Look at @fig-frog for an example.
+```
+
+![Default frog picture.](/img/Examples/frog.png){#fig-frog width="80%"}
+
+Look at @fig-frog for an example.
+
+### Tables
+
+Markdown tables require a header row and a divider (`|---|`). You can easily add a caption and a cross-reference label (`#tbl-label`) at the very bottom.
+
+```markdown
+| Column 1 | Column 2 | Column 3 |
+|:---------|:---------|:---------|
+| a        | b        | c        |
+| d        | e        | f        |
+: Table caption {#tbl-example}
+
+Data is shown in @tbl-example.
+```
+
+| Column 1 | Column 2 | Column 3 |
+|:---------|:---------|:---------|
+| a        | b        | c        |
+| d        | e        | f        |
+: Table caption {#tbl-example}
+
+Data is shown in @tbl-example.
+
+### Blockquotes and Callouts
+
+To emphasize a standard quote, use the `>` symbol at the start of the line. You can also use special callout blocks to draw attention to notes or warnings, created by opening and closing a block with three colons (`:::`).
+
+```markdown
+> "If it is on the internet... it must be true." - Abraham Lincoln
+
+:::{.callout-note}
+This is a helpful note! You can also use `.callout-warning` or `.callout-important`.
+:::
+```
+
+> "If it is on the internet... it must be true." - Abraham Lincoln
+
+:::{.callout-note}
+This is a helpful note! You can also use `.callout-warning` or `.callout-important`.
+:::
+
 ### Links and Citations
 
-To insert a hyperlink, place the text in square brackets and the URL in parentheses:
+To insert a standard hyperlink, place the text in square brackets and the URL in parentheses. To cite a paper from our bibliography file, use the `@` symbol followed by the citation key inside square brackets.
+
+```markdown
 [GitHub Repository](https://github.com/MKReyesH/ScientificWiki)
 
-To cite a paper from our bibliography file, use the `@` symbol followed by the citation key inside square brackets. Multiple citations are separated by semicolons:
+The expansion of the universe is accelerating [@riess1998; @perlmutter1999].
+```
+
+[GitHub Repository](https://github.com/MKReyesH/ScientificWiki)
+
 The expansion of the universe is accelerating [@riess1998; @perlmutter1999].
