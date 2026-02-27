@@ -12,7 +12,7 @@ Section names are created by adding one or more `#` symbols followed by a space.
 
 ### This is a sub-subsection
 
-### Mathematical Equations
+# Mathematical Equations
 
 You can write inline equations, such as $x^2+y^2=r^2$, by enclosing the formula in single `$` symbols. To write a standalone (unnumbered) equation on its own line, enclose it in double `$$` symbols:
 
@@ -28,7 +28,7 @@ $$ {#eq-secondorder}
 
 You can then easily reference this equation in your text by typing `@eq-secondorder`, which will automatically render as a clickable link (e.g., @eq-secondorder).
 
-### Text Formatting & Lists
+# Text Formatting & Lists
 
 You can make text *italic* or **bold** by enclosing it in single `*` or double `**` asterisks, respectively. 
 
@@ -44,13 +44,23 @@ For ordered lists, use numbers. You can actually just write `1.` for every item,
 1. Second element
 1. Third element
 
-### Figures and Tables
+# Figures and Tables
 
 To insert a cross-referenced image with a controlled width, use the syntax `![Your caption text here](path_to_file.png){#fig-label width="80%"}`. This will render the image directly on the page, like so:
 
-![Default frog picture.](img/Examples/frog.png){#fig-frog width="80%"}
+![Default frog picture.](/img/Examples/frog.png){#fig-frog width="80%"}
 
-Markdown tables require a header row and a divider (`|---|`). You can easily add a caption and a label at the bottom using `: Table caption {#tbl-label}`. The final result resembles the text structure you use to build it:
+Markdown tables are built using vertical pipes `|` to separate columns, and hyphens `-` to create the header divider. You can also align the text by adding colons `:` to the divider:
+
+```text
+| Column 1 | Column 2 | Column 3 |
+|:---------|:---------|:---------|
+| a        | b        | c        |
+| d        | e        | f        |
+: Table caption {#tbl-example}
+```
+
+To add a caption and a label, are added at the very bottom, but they are rendered before the table:
 
 | Column 1 | Column 2 | Column 3 |
 |:---------|:---------|:---------|
@@ -58,7 +68,7 @@ Markdown tables require a header row and a divider (`|---|`). You can easily add
 | d        | e        | f        |
 : Table caption {#tbl-example}
 
-### Blockquotes
+# Blockquotes
 
 To emphasize a quote or important note, use the `>` symbol at the start of the line:
 
@@ -70,13 +80,19 @@ Quarto Markdown also includes special Callout Blocks to draw attention to notes,
 This is a helpful note! You can also use `.callout-warning`, `.callout-tip`, `.callout-caution`, or `.callout-important` to change the color and icon of the box.
 :::
 
-### Code Snippets
+# Code Snippets
 
 To format short `inline code` within a sentence, enclose the text in single backticks `` ` ``. To insert multi-line blocks of code with syntax highlighting, enclose the block in triple backticks ```` ``` ```` and specify the programming language on the first line:
 
 ```cpp
-int sum() {
-  int a = 5;
-  int b = 10;
+float sum(float a, float b) {
   return a + b;
 }
+```
+
+# Links and Citations
+
+To insert a hyperlink, place the text in square brackets and the URL in parentheses, like `[GitHub Repository](https://github.com/MKReyesH/ScientificWiki)`, which produces a clickable link: [GitHub Repository](https://github.com/MKReyesH/ScientificWiki)`.
+
+To cite a paper from our bibliography file, place both the @ symbol and the citation key entirely inside square brackets, like `[@ReyesHung:2023udr]`. Multiple citations inside the same brackets are separated by semicolons. A list of references will be automatically added at the end of the file [@ReyesHung:2023udr].
+
