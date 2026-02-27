@@ -48,9 +48,9 @@ For ordered lists, use numbers. You can actually just write `1.` for every item,
 
 To insert a cross-referenced image with a controlled width, use the syntax `![Your caption text here](path_to_file.png){#fig-label width="80%"}`. This will render the image directly on the page, like so:
 
-![Default frog picture.](/img/Examples/frog.png){#fig-frog width="80%"}
+![Default frog picture.](/img/Examples/frog.jpg){#fig-frog width="80%"}
 
-Markdown tables are built using vertical pipes `|` to separate columns, and hyphens `-` to create the header divider. You can also align the text by adding colons `:` to the divider:
+Markdown tables are built using vertical pipes `|` to separate columns, and hyphens `-` to create the header divider. You can also align the text by adding colons `:` to the divider. One can also add a caption and label adding them at the very bottom:
 
 ```text
 | Column 1 | Column 2 | Column 3 |
@@ -60,7 +60,7 @@ Markdown tables are built using vertical pipes `|` to separate columns, and hyph
 : Table caption {#tbl-example}
 ```
 
-To add a caption and a label, are added at the very bottom, but they are rendered before the table:
+The caption will be rendered, however, before the table:
 
 | Column 1 | Column 2 | Column 3 |
 |:---------|:---------|:---------|
@@ -85,14 +85,16 @@ This is a helpful note! You can also use `.callout-warning`, `.callout-tip`, `.c
 To format short `inline code` within a sentence, enclose the text in single backticks `` ` ``. To insert multi-line blocks of code with syntax highlighting, enclose the block in triple backticks ```` ``` ```` and specify the programming language on the first line:
 
 ```cpp
-float sum(float a, float b) {
+float sum (float a, float b) {
   return a + b;
 }
 ```
 
 # Links and Citations
 
-To insert a hyperlink, place the text in square brackets and the URL in parentheses, like `[GitHub Repository](https://github.com/MKReyesH/ScientificWiki)`, which produces a clickable link: [GitHub Repository](https://github.com/MKReyesH/ScientificWiki)`.
+To insert a hyperlink, place the text in square brackets and the URL in parentheses, like `[GitHub Repository](https://github.com/MKReyesH/ScientificWiki)`, which produces a clickable link: [GitHub Repository](https://github.com/MKReyesH/ScientificWiki).
+
+To create an internal link to a specific section on the same page, use the exact same syntax but replace the URL with the section's heading in lowercase, using hyphens instead of spaces and starting with a #. For instance, typing `[first section](#sections-and-subsections) will create a link that takes you to the [first section](#sections-and-subsections).
 
 To cite a paper from our bibliography file, place both the @ symbol and the citation key entirely inside square brackets, like `[@ReyesHung:2023udr]`. Multiple citations inside the same brackets are separated by semicolons. A list of references will be automatically added at the end of the file [@ReyesHung:2023udr].
 
