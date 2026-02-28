@@ -66,4 +66,6 @@ The script will strip away the extra LaTeX wrappers and output `![Default frog p
 
 \section{Links and Citations}
 
-Hyperlinks created with the hyperref package are easily converted. When the script sees `\href{https://github.com/MKReyesH/ScientificWiki}{GitHub Repository}`, it rearranges the URL and the text into the Quarto Markdown format
+Hyperlinks created with the hyperref package are easily converted. When the script sees `\href{https://github.com/MKReyesH/ScientificWiki}{GitHub Repository}`, it rearranges the URL and the text into the Quarto Markdown format: `[GitHub Repository](https://github.com/MKReyesH/ScientificWiki)`.
+
+For bibliography management, the standard cite command can continue to be used, like \cite{ReyesHung:2023udr}. A command like `\cite{ReyesHung:2023udr}` will be directly converted into Quarto's `[@ReyesHung:2023udr]` syntax. If multiple papers are cited inside the same command, the script will separate them properly inside the brackets.
