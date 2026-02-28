@@ -41,12 +41,15 @@ def convert_latex_to_quarto(text):
 
     # References
     def ref_repl(match):
-        label = match.group(1).replace(':', '-')
+        is_eqref = match.group(1) == 'eq'
+        label = match.group(2).replace(':', '-')
+        
         if is_eqref:
             return f"(-@{label})"
         else:
             return f"-@{label}"
-    text = re.sub(r'\\(?:eq)?ref\{([^}]+)\}', ref_repl, text)
+            
+    text = re.sub(r'\\(eq)?ref\{([^}]+)\}', ref_repl, text)
 
     # Equations
     def eq_repl(match):
@@ -61,7 +64,7 @@ def convert_latex_to_quarto(text):
     text = re.sub(r'\\begin\{(?:equation|align)\*?\}(.*?)\\end\{(?:equation|align)\*?\}', eq_repl, text, flags=re.DOTALL)
 
     # Nested lists
-    list_stack = [] # Tracks our current depth and list type
+    list_stack = []
     
     def list_repl(match):
         token = match.group(0)
@@ -70,19 +73,16 @@ def convert_latex_to_quarto(text):
         if stripped.startswith('\\begin{itemize}') or stripped.startswith('\\begin{enumerate}'):
             is_root = len(list_stack) == 0
             list_stack.append('itemize' if 'itemize' in stripped else 'enumerate')
-            # Quarto safely requires a blank line before a list begins
             return "\n" if is_root else ""
             
         elif stripped.startswith('\\end{itemize}') or stripped.startswith('\\end{enumerate}'):
             if list_stack:
                 list_stack.pop()
             is_root = len(list_stack) == 0
-            # Ensure list gracefully exits with a blank line before next paragraph
             return "\n" if is_root else ""
         
         elif stripped.startswith('\\item'):
             depth = max(0, len(list_stack) - 1)
-            # FIX: Quarto/Pandoc STRICTLY requires 4 spaces for nested lists!
             indent = "    " * depth 
             marker = "- " if list_stack and list_stack[-1] == 'itemize' else "1. "
             return indent + marker

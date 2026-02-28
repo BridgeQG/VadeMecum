@@ -6,6 +6,7 @@ website:
   search: true
   sidebar:
     style: "docked"
+    logo: "img/logo/logo.png"
     contents:
       - href: index.qmd
         text: "Home"
