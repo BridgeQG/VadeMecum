@@ -1,5 +1,5 @@
 ---
-title: 'How to port a page using LaTeX'
+title: 'How to write a page using LaTeX'
 ---
 
 In the scientific community, it is very common to have texts, equations, and full documents already written in LaTeX. Instead of manually rewriting these documents using Quarto Markdown syntax, this template provides an automatic script that replaces the most common LaTeX environments and commands with their Quarto Markdown equivalents.
@@ -8,13 +8,13 @@ This document serves as both a guide and a test file for the script. It is writt
 
 \section{Sections and subsections}
 
-When you structure your document using standard LaTeX sectioning, the script will translate those commands into Markdown headers. For example, `\section{Sections and subsections}` is transformed into `# Sections and subsections`. This works similarly for subsections and sub-subsections.
+When you structure your document using standard LaTeX sectioning, the script will translate those commands into Markdown headers. For example, `\section{Sections and subsections}‘ is transformed into `# Sections and subsections`. This works similarly for subsections and sub-subsections.
 
 \subsection{This is a subsection}
 
 \subsubsection{This is a sub-subsection}
 
-\section{Mathematical Equations}
+\section{Mathematical Equations $x$}
 
 The native Quarto Markdown syntax for inline and unnumbered formulas (using single and double `$` symbols) is the same as in LaTeX, so no translation is needed. For numbered equations, like those produced by the `\begin{equation}` or `\begin{align}` environments, the script finds the block, extracts the math and the label, and converts them into the Quarto double `$$` syntax:
 

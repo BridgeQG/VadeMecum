@@ -1,5 +1,5 @@
 ---
-title: 'How to write a page in Markdown'
+title: 'How to write a page using Markdown'
 ---
 
 GitHub Pages can transform simple plain text files into HTML webpages. For this template the files have `.qmd` extension and follow the Quarto Markdown syntax. Below are examples of the formatting you will use most often.

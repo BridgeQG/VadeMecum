@@ -6,6 +6,7 @@ import glob
 def convert_latex_to_quarto(text):
 
     # --- 1. HIDE CODE BLOCKS ---
+    
     code_blocks = []
     
     def hide_code(match):
@@ -56,35 +57,35 @@ def convert_latex_to_quarto(text):
             return f"$$\n{body.strip()}\n$$"
     text = re.sub(r'\\begin\{(?:equation|align)\*?\}(.*?)\\end\{(?:equation|align)\*?\}', eq_repl, text, flags=re.DOTALL)
 
-    # --- NEW: NESTED LIST PARSING ---
+    # Nested lists
     list_stack = [] # Tracks our current depth and list type
     
     def list_repl(match):
         token = match.group(0)
         stripped = token.strip()
         
-        # Track depth dynamically
-        if stripped.startswith('\\begin{itemize}'):
-            list_stack.append('itemize')
-            return ""
-        elif stripped.startswith('\\begin{enumerate}'):
-            list_stack.append('enumerate')
-            return ""
+        if stripped.startswith('\\begin{itemize}') or stripped.startswith('\\begin{enumerate}'):
+            is_root = len(list_stack) == 0
+            list_stack.append('itemize' if 'itemize' in stripped else 'enumerate')
+            # Quarto safely requires a blank line before a list begins
+            return "\n" if is_root else ""
+            
         elif stripped.startswith('\\end{itemize}') or stripped.startswith('\\end{enumerate}'):
             if list_stack:
                 list_stack.pop()
-            return ""
+            is_root = len(list_stack) == 0
+            # Ensure list gracefully exits with a blank line before next paragraph
+            return "\n" if is_root else ""
         
-        # Inject correct spaces and marker based on current depth
         elif stripped.startswith('\\item'):
             depth = max(0, len(list_stack) - 1)
-            indent = "  " * depth # 2 spaces per depth level
+            # FIX: Quarto/Pandoc STRICTLY requires 4 spaces for nested lists!
+            indent = "    " * depth 
             marker = "- " if list_stack and list_stack[-1] == 'itemize' else "1. "
             return indent + marker
             
         return token
 
-    # Matches \begin, \end, and \item anywhere, capturing leading spaces and trailing empty lines
     list_pattern = r'^[ \t]*\\begin\{(?:itemize|enumerate)\}[ \t]*\n?|^[ \t]*\\end\{(?:itemize|enumerate)\}[ \t]*\n?|\\begin\{(?:itemize|enumerate)\}|\\end\{(?:itemize|enumerate)\}|^[ \t]*\\item[ \t]*|\\item[ \t]*'
     text = re.sub(list_pattern, list_repl, text, flags=re.MULTILINE)
 
@@ -122,27 +123,27 @@ def convert_latex_to_quarto(text):
     text = re.sub(r'\\begin\{figure\}(?:\[.*?\])?(.*?)\\end\{figure\}', fig_repl, text, flags=re.DOTALL)
 
     # --- 3. RESTORE CODE BLOCKS ---
+    
     for i, code in enumerate(code_blocks):
         text = text.replace(f"__CODE_BLOCK_PLACEHOLDER_{i}__", code)
 
     return text
 
 if __name__ == "__main__":
-    # AUTOMATION FIX: Automatically finds and updates all .qmd files recursively.
-    files_to_process = glob.glob("doc/**/*.qmd", recursive=True)
+
+    files_to_process = glob.glob("doc/**/*.tex", recursive=True)
 
     if not files_to_process:
-        print("No .qmd files found to process.")
+        print("No .tex files found in the 'doc/' folder to process.")
         sys.exit(0)
 
     for filepath in files_to_process:
         with open(filepath, 'r', encoding='utf-8') as f:
             content = f.read()
         
-        converted_content = convert_latex_to_quarto(content)
+        qmd_filepath = os.path.splitext(filepath)[0] + ".qmd"
         
-        # This overwrites the file safely on the GitHub Action runner (does not alter your main branch)
-        with open(filepath, 'w', encoding='utf-8') as f:
+        with open(qmd_filepath, 'w', encoding='utf-8') as f:
             f.write(converted_content)
             
-        print(f"Processed and updated: {filepath}")
+        print(f"Processed file: {qmd_filepath}")
