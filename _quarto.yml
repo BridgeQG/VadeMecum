@@ -4,8 +4,6 @@ project:
 website:
   title: "Scientific Wiki Template"
   search: true
-  navbar:
-    logo: "img/logo/logo.png"
   sidebar:
     style: "docked"
     logo: "img/logo/logo.png"

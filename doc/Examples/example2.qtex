@@ -23,7 +23,7 @@ The native Quarto Markdown syntax for inline and unnumbered formulas (using sing
   \label{eq:secondorder}
 \end{equation}
 
-Thanks to this, the equation can now be referenced anywhere using the native Quarto Markdown format, or even by using the standard LaTeX `\ref{eq:secondorder}` or `\eqref{eq:secondorder}` commands, which the script also translates into `@eq-secondorder`, like it has been done for \eqref{eq:secondorder}.
+Thanks to this, the equation can now be referenced anywhere using the native Quarto Markdown format, or even by using the standard LaTeX `\ref{eq:secondorder}` or `\eqref{eq:secondorder}` commands, which the script also translates into `@eq-secondorder`, like it has been done for Eq. \eqref{eq:secondorder}.
 
 \section{Text Formatting and Lists}
 
