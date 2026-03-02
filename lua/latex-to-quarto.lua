@@ -1,30 +1,43 @@
--- latex-to-quarto.lua
-
+-- Helper: Convert colons to hyphens and handle table prefixes
 local function normalize_label(lbl)
-  return lbl:gsub("^eq:", "eq-")
-            :gsub("^fig:", "fig-")
-            :gsub("^tab:", "tbl-")
-            :gsub("^sec:", "sec-")
+  return lbl:gsub(":", "-")
+            :gsub("^tab%-", "tbl-")
+            :gsub("^table%-", "tbl-")
 end
 
--- 1. EQUATION TARGETS: Just fix the label natively inside the Math block
+-- 1. EQUATIONS: Extract label and append it exactly as Quarto AST expects
 function Math(el)
   if el.mathtype == 'DisplayMath' then
-    el.text = el.text:gsub("\\label{([^}]+)}", function(lbl)
-      local q_label = normalize_label(lbl)
-      if not q_label:match("^eq%-") then q_label = "eq-" .. q_label end
-      return "\\label{" .. q_label .. "}"
-    end)
+    local label = el.text:match("\\label{([^}]+)}")
+    
+    if label then
+      -- Remove the \label{} command from the math content
+      local clean_math = el.text:gsub("\\label{[^}]+}%s*", "")
+      
+      -- Clean the label
+      local q_label = normalize_label(label)
+      if not q_label:match("^eq%-") then 
+        q_label = "eq-" .. q_label 
+      end
+      
+      -- Return a list of AST nodes: [Math, Space, String]
+      -- This exactly mimics native Quarto markdown behavior: $$ math $$ {#eq-label}
+      return {
+        pandoc.Math('DisplayMath', clean_math),
+        pandoc.Space(),
+        pandoc.Str("{#" .. q_label .. "}")
+      }
+    end
   end
   return el
 end
 
--- 2. LINKS AND CITATIONS: Generate the Quarto syntax parsed as AST nodes
+-- 2. INLINE COMMANDS: Convert references and citations to native AST Cite nodes
 function RawInline(el)
   if el.format == 'tex' or el.format == 'latex' then
     local text = el.text
 
-    -- \eqref{...} -> Renders as (1)
+    -- Intercept \eqref{} -> Renders as (1)
     local eqref_lbl = text:match("^\\eqref{([^}]+)}%s*$")
     if eqref_lbl then
       local q_label = normalize_label(eqref_lbl)
@@ -33,7 +46,7 @@ function RawInline(el)
       return doc.blocks[1].content
     end
 
-    -- \ref{...} -> Renders as 1 (prefix suppressed to avoid double prefixes)
+    -- Intercept \ref{} -> Renders as 1
     local ref_lbl = text:match("^\\ref{([^}]+)}%s*$")
     if ref_lbl then
       local q_label = normalize_label(ref_lbl)
@@ -41,7 +54,7 @@ function RawInline(el)
       return doc.blocks[1].content
     end
 
-    -- \cite{...} -> Renders citations
+    -- Intercept \cite{} -> Renders standard Quarto citations
     local cite_lbl = text:match("^\\cite{([^}]+)}%s*$")
     if cite_lbl then
       local q_cites = cite_lbl:gsub("%s+", ""):gsub(",", "; @")
@@ -49,7 +62,7 @@ function RawInline(el)
       return doc.blocks[1].content
     end
 
-    -- Pass other inline LaTeX to standard reader
+    -- Pass all other inline LaTeX through Pandoc's native reader
     local doc = pandoc.read(text, 'latex')
     if doc.blocks and #doc.blocks > 0 and doc.blocks[1].t == "Para" then
       return doc.blocks[1].content
@@ -58,46 +71,16 @@ function RawInline(el)
   return el
 end
 
--- 3. FIGURE TARGETS AND STRUCTURAL BLOCKS
+-- 3. LATEX BLOCKS (Figures, Tables, Sections): Unified fallback
 function RawBlock(el)
   if el.format == 'tex' or el.format == 'latex' then
-    local text = el.text
-
-    -- Explicitly extract and convert \begin{figure} to Quarto Markdown
-    if text:match("\\begin{figure}") then
-      local caption = text:match("\\caption{([^}]+)}") or ""
-      local label = text:match("\\label{([^}]+)}") or ""
-      
-      local q_label = normalize_label(label)
-      if q_label ~= "" and not q_label:match("^fig%-") then 
-         q_label = "fig-" .. q_label 
-      end
-
-      -- Extract path and optional arguments (e.g., width)
-      local args, path = text:match("\\includegraphics%[([^%]]+)%]{([^}]+)}")
-      if not path then
-        path = text:match("\\includegraphics{([^}]+)}")
-        args = ""
-      end
-
-      if path then
-        -- Convert LaTeX arguments (width=4cm) to Quarto arguments (width="4cm")
-        local q_args = ""
-        if args and args ~= "" then
-          q_args = args:gsub("([%w_]+)=([^,%s]+)", '%1="%2"')
-        end
-
-        -- Construct the exact single-line Markdown you requested
-        local md_str = "![" .. caption .. "](" .. path .. "){#" .. q_label .. " " .. q_args .. "}"
-        local doc = pandoc.read(md_str, 'markdown')
-        return doc.blocks
-      end
-    end
-
-    -- For everything else, normalize labels and pass to Pandoc
-    local clean_tex = text:gsub("\\label{([^}]+)}", function(lbl)
+    
+    -- Replace ALL \label{name:target} with \label{name-target} inside the block
+    local clean_tex = el.text:gsub("\\label{([^}]+)}", function(lbl)
       return "\\label{" .. normalize_label(lbl) .. "}"
     end)
+    
+    -- Hand the clean LaTeX block over to Pandoc to do the heavy lifting
     local doc = pandoc.read(clean_tex, 'latex')
     return doc.blocks
   end
