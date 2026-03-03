@@ -146,9 +146,9 @@ float sum (float a, float b) {
 
 Hyperlinks to external websites are created by placing the link text in square brackets followed by the URL in parentheses. Typing `[GitHub Repository](https://github.com/MKReyesH/ScientificWiki)` renders as a clickable link (e.g. [GitHub Repository](https://github.com/MKReyesH/ScientificWiki)).
 
-To link to another page within the same wiki or project, use the exact same syntax but replace the URL with the relative path to the target `.qmd` file. Typing `[second page](doc/Examples/example2.qmd)` creates a link to the [second page](doc/Examples/example2.qmd).
+To link to another page within the same wiki or project, use the exact same syntax but replace the URL with the relative path to the target `.qmd` file. Typing `[second page](/doc/Examples/example2.qmd)` creates a link to the [second page](/doc/Examples/example2.qmd).
 
-To link to a specific section, append a `#` followed by the section's heading identifier (the heading name in lowercase, using hyphens instead of spaces). This can be used to navigate to sections on the same page or on a different page. Typing `[first section](#sections-and-subsections)` links to the [first section](#sections-and-subsections) on this page. Typing `[other section](doc/Examples/example2.qmd#target-section)` links to a specific section on another page.
+To link to a specific section, append a `#` followed by the section's heading identifier (the heading name in lowercase, using hyphens instead of spaces). This can be used to navigate to sections on the same page or on a different page. Typing `[first section](#sections-and-subsections)` links to the [first section](#sections-and-subsections) on this page. Typing `[other section](/doc/Examples/example2.qmd#target-section)` links to a specific section on another page.
 
 Footnotes are added using a caret and an identifier inside square brackets. The actual content of the footnote is defined anywhere else in the document by matching the identifier, followed by a colon and the text:
 
