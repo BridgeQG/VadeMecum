@@ -1,14 +1,17 @@
 ---
-title: 'How to write a page using LaTeX'
+title: 'Allowed LaTeX syntax for page writing'
 ---
 
-In the scientific community, it is very common to have texts, equations, and full documents already written in LaTeX. Instead of manually rewriting these documents using Quarto Markdown syntax, this template provides an automatic script that replaces the most common LaTeX environments and commands with their Quarto Markdown equivalents. To distinguish these hybrid files from standard LaTeX documents, a custom `.qtex` extension is used.
+In the scientific community, it is very common to have texts, equations, and full documents already written in LaTeX. This implies that one needs to translate such a content to the quarto markdown syntax explained in the [prevous guide](/doc/Examples/example1.qmd). However, this template allows for the use of some simple LaTeX syntax (in combination with native syntax), which is converted on the fly to the correct quarto markdown syntax. This document serves as both a guide and a test file for the script. It is written using the supported LaTeX commands to explain exactly how the transformation works.
 
-This document serves as both a guide and a test file for the script. It is written using the supported LaTeX commands to explain exactly how the transformation works. Because this script is a simple text replacer and not a full LaTeX compiler, any LaTeX environment or command that is not explicitly demonstrated on this page (such as `\begin{table}` or complex macros) is not supported and will not be automatically replaced. For those unsupported elements, native Quarto Markdown syntax must be used. Additionally, all the standard Quarto Markdown commands explained in the [Markdown guide](https://mkreyesh.github.io/ScientificWiki/doc/Examples/example1.html) can be used.
+
+:::{.callout-warning}
+The compatibility is implemented as a simple text replacer and not a full LaTeX compiler. This means that any LaTeX environment or command that is not explicitly demonstrated on this page is not supported and will not be automatically replaced. For those unsupported elements, native Quarto Markdown syntax must be used.
+:::{.callout-warning}
 
 \section{Sections and subsections}
 
-When structuring a document using standard LaTeX sectioning, the script will translate those commands into Markdown headers. For example, `\section{Sections and subsections}` is transformed into `# Sections and subsections`. This works similarly for subsections and sub-subsections.
+When structuring a document using standard LaTeX sectioning, the script will translate those commands into Markdown headers. For example, `\section{Section}` is transformed into `# Section`. This works similarly for subsections and sub-subsections.
 
 \subsection{This is a subsection}
 
@@ -16,56 +19,27 @@ When structuring a document using standard LaTeX sectioning, the script will tra
 
 \section{Mathematical Equations}
 
-The native Quarto Markdown syntax for inline and unnumbered formulas (using single and double `$` symbols) is the same as in LaTeX, so no translation is needed. For numbered equations, like those produced by the `\begin{equation}` or `\begin{align}` environments, the script finds the block, extracts the math and the label, and converts them into the Quarto double `$$` syntax:
+The native Quarto Markdown syntax for inline and unnumbered formulas (using single and double `$` symbols) is the same as in LaTeX, so no translation is needed. For numbered equations produced by the `\begin{equation}` environments, the script finds the block, extracts the math and the label, and converts them into the Quarto double `$$` syntax:
 
 \begin{equation}
   x=\frac{-b\pm \sqrt{b^2-4ac}}{2a} \,,
   \label{eq:secondorder}
 \end{equation}
 
-Thanks to this, the equation can now be referenced anywhere using the native Quarto Markdown format, or even by using the standard LaTeX `\ref{eq:secondorder}` or `\eqref{eq:secondorder}` commands, which the script also translates into `@eq-secondorder`, like it has been done for Eq. \eqref{eq:secondorder} and [@eq-secondorder].
+Thanks to this, the equation can now be referenced anywhere using the native Quarto Markdown format, or even by using the standard LaTeX `\ref{eq:secondorder}` (for just the number) or `\eqref{eq:secondorder}` (for the number in parentheses), like it has been done for Eq. \eqref{eq:secondorder}.
 
-\section{Text Formatting and Lists}
+\section{Text Formatting}
 
 \textit{Italics} and \textbf{bold} text are supported. If text is wrapped in `\textit{italic}` or `\textbf{bold}` commands, the script will replace the LaTeX tags with the single `*` and double `**` asterisks used in Markdown.
 
-List environments are also converted. For example, the `\begin{itemize}` environment:
+\section{Links, Footnotes and Citations}
 
-\begin{itemize}
-  \item First element
-  \item Second element
-  \item Third element
-\end{itemize}
+Hyperlinks created with the hyperref package are easily converted. When the script sees `\href{https://github.com/MKReyesH/ScientificWiki}{GitHub Repository}`, it rearranges the URL and the text into the Quarto Markdown format: `[GitHub Repository](https://github.com/MKReyesH/ScientificWiki)` (e.g. \href{https://github.com/MKReyesH/ScientificWiki}{GitHub Repository}).
 
-is translated by the script into a bulleted Markdown list using the `-` symbol. Similarly, an `\begin{enumerate}` environment:
-
-\begin{enumerate}
-  \item First element
-  \item Second element
-  \begin{enumerate}
-    \item Second level first element
-    \item Second level second element
-    \item Second level third element
-  \end{enumerate}
-\end{enumerate}
-
-will be transformed into a numbered list using `1.`.
-
-\section{Figures}
-
-Inserting images in LaTeX usually requires a full figure block. The script is designed to read the standard figure environment, extract the crucial pieces of information (the image path, width, caption, and label), and compress them into the single-line Quarto syntax:
-
-\begin{figure}[h]
-  \centering
-  \includegraphics[width=4cm]{/img/Examples/frog.jpg}
-  \caption{Default frog picture.}
-  \label{fig:frog}
-\end{figure}
-
-The script will strip away the extra LaTeX wrappers and output `![Default frog picture.](img/Examples/frog.jpg){#fig-frog width="4cm"}`, ensuring images load and cross-reference perfectly in the wiki \ref{fig:frog}.
-
-\section{Links and Citations}
-
-Hyperlinks created with the hyperref package are easily converted. When the script sees `\href{https://github.com/MKReyesH/ScientificWiki}{GitHub Repository}`, it rearranges the URL and the text into the Quarto Markdown format: `[GitHub Repository](https://github.com/MKReyesH/ScientificWiki)`.
+Footnotes...
 
 For bibliography management, the standard cite command can continue to be used, like \cite{ReyesHung:2023udr}. A command like `\cite{ReyesHung:2023udr}` will be directly converted into Quarto's `[@ReyesHung:2023udr]` syntax. If multiple papers are cited inside the same command, the script will separate them properly inside the brackets.
+
+\section{Lists, Figures, Tables and everything else}
+
+Inserting lists, figures and tables in LaTeX usually requires the use of much more complicated syntax than doing it directly in markdown. Additionally, the translation of this environments can be complicated due to nested and possible mixing of this enviroments. Then, these enviroments, and in general any other LaTeX syntax, is not supported for automatic translation and will removed from the final webpage. If some of this environments are needed, please use the much easier quarto markdown native syntax, as shown in [Quarto Markdown Guide](/doc/Examples/example1.qmd).

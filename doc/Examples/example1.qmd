@@ -1,5 +1,5 @@
 ---
-title: 'How to write a page using Markdown'
+title: 'How to write a page using Quarto Markdown'
 ---
 
 GitHub Pages transforms plain text files into HTML webpages. In this template, files use the `.qmd` extension and follow Quarto Markdown syntax. Below are examples of the most commonly used formatting structures.
@@ -12,9 +12,11 @@ Section headers are created by adding one or more `#` symbols followed by a spac
 
 ### This is a sub-subsection
 
+To make a section cross-referenceable, append an identifier starting with `#sec-` to the header. For example, typing `## Mathematical Equations {#sec-maths}` allows the section to be referenced anywhere in the document using `@sec-maths`.
+
 # Mathematical Equations
 
-Inline equations, such as $x^2+y^2=r^2$, are written by enclosing the formula in single `$` symbols directly within the text. To write a standalone equation on its own line, enclose the formula in double `$$` symbols. To make the equation cross-referenceable, append an identifier starting with `#eq-` to the closing `$$`:
+Inline equations, such as $x^2+y^2=r^2$, are written by enclosing the formula in single `$` symbols directly within the text. To write a standalone equation on its own line, enclose the formula in double `$$` symbols. To make the equation cross-referenceable, append an identifier to the closing `$$`. This identifier must strictly begin with the `#eq-` prefix for Quarto to recognize it as an equation:
 
 ```latex
 $$
@@ -66,7 +68,7 @@ The compiled list appears as:
 
 # Figures and Tables
 
-To insert an image, provide a caption inside square brackets and the file path inside parentheses. A label and display attributes, such as width, can be appended in curly braces:
+To insert an image, provide a caption inside square brackets and the file path inside parentheses. A label and display attributes, such as width, can be appended inside curly braces. The label must strictly begin with the `#fig-` prefix for Quarto to recognize and number the image correctly:
 
 ```markdown
 ![Default frog picture.](/img/Examples/frog.jpg){#fig-frog width="4cm"}
@@ -76,7 +78,7 @@ This places the image in the document, allowing it to be referenced anywhere in 
 
 ![Default frog picture.](/img/Examples/frog.jpg){#fig-frog width="4cm"}
 
-Tables are constructed using vertical pipes (`|`) to separate columns and hyphens (`-`) to divide the header from the content. Colons (`:`) are added to the divider to control text alignment. A caption and a reference label can be placed at the bottom:
+Tables are constructed using vertical pipes (`|`) to separate columns and hyphens (`-`) to divide the header from the content. Colons (`:`) are added to the divider to control text alignment. A caption and a reference label can be placed at the bottom. The label must strictly begin with the `#tbl-` prefix for Quarto to recognize and number the table correctly:
 
 ```markdown
 | Column 1 | Column 2 | Column 3 |
