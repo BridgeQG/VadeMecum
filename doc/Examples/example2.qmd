@@ -16,9 +16,9 @@ When structuring a document using standard LaTeX sectioning, the script will tra
 
 \subsubsection{This is a sub-subsection}
 
-\section{Mathematical Equations}
-
 Because the script converts this directly into native Markdown, the system automatically generates a reference identifier for it based on the heading's name (lowercase, using hyphens instead of spaces). This allows you to easily link back to the translated section using standard Markdown linking, such as typing `[this section](#sections-and-subsections)` to navigate back to [this section](#sections-and-subsections).
+
+\section{Mathematical Equations}
 
 The native Quarto Markdown syntax for inline and unnumbered formulas (using single and double `$` symbols) is the exact same as in LaTeX, so no translation is needed. For numbered equations produced by the `equation` environment, the script finds the block, extracts the math, and converts it into the native Quarto syntax. To ensure the script correctly translates the reference into Quarto's rigid cross-referencing system, the label must begin with either the standard LaTeX `eq:` or Quarto's `eq-` prefix:
 
