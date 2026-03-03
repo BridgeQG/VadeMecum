@@ -2,44 +2,52 @@
 title: 'Allowed LaTeX syntax for page writing'
 ---
 
-In the scientific community, it is very common to have texts, equations, and full documents already written in LaTeX. This implies that one needs to translate such a content to the quarto markdown syntax explained in the [prevous guide](/doc/Examples/example1.qmd). However, this template allows for the use of some simple LaTeX syntax (in combination with native syntax), which is converted on the fly to the correct quarto markdown syntax. This document serves as both a guide and a test file for the script. It is written using the supported LaTeX commands to explain exactly how the transformation works.
-
+In the scientific community, it is very common to have texts, equations, and full documents already written in LaTeX. This implies that one needs to translate such content to the Quarto Markdown syntax explained in the [previous guide](/doc/Examples/example1.qmd). However, this template allows for the use of some simple LaTeX syntax (in combination with native syntax), which is converted on the fly to the correct Quarto Markdown format. This document serves as both a guide and a test file for the translation rules. It is written using the supported LaTeX commands to explain exactly how the transformation works.
 
 :::{.callout-warning}
 The compatibility is implemented as a simple text replacer and not a full LaTeX compiler. This means that any LaTeX environment or command that is not explicitly demonstrated on this page is not supported and will not be automatically replaced. For those unsupported elements, native Quarto Markdown syntax must be used.
 :::
 
-\section{Sections and subsections}
+\section{Sections and Subsections}
 
-When structuring a document using standard LaTeX sectioning, the script will translate those commands into Markdown headers. For example, `\section{Section}` is transformed into `# Section`. This works similarly for subsections and sub-subsections.
-
+When structuring a document using standard LaTeX sectioning, the script will translate those commands into Markdown headers. For example, typing `\section{Sections and Subsections}` generates a main section header. Similarly, using the `\subsection{This is a subsection}` command produces a secondary heading, and `\subsubsection{This is a sub-subsection}` creates a tertiary heading.
+  
 \subsection{This is a subsection}
 
 \subsubsection{This is a sub-subsection}
 
 \section{Mathematical Equations}
 
-The native Quarto Markdown syntax for inline and unnumbered formulas (using single and double `$` symbols) is the same as in LaTeX, so no translation is needed. For numbered equations produced by the `\begin{equation}` environments, the script finds the block, extracts the math and the label, and converts them into the Quarto double `$$` syntax:
+The native Quarto Markdown syntax for inline and unnumbered formulas (using single and double `$` symbols) is the exact same as in LaTeX, so no translation is needed. For numbered equations produced by the `equation` environment, the script finds the block, extracts the math alongside its label, and converts them into the native Quarto syntax:
+
+```latex
+\begin{equation}
+  x=\frac{-b\pm \sqrt{b^2-4ac}}{2a} \,,
+  \label{eq:secondorder_latex}
+\end{equation}
+```
+
+Once processed, the equation is displayed and numbered automatically:
 
 \begin{equation}
   x=\frac{-b\pm \sqrt{b^2-4ac}}{2a} \,,
-  \label{eq:secondorder}
+  \label{eq:secondorder_latex}
 \end{equation}
 
-Thanks to this, the equation can now be referenced anywhere using the native Quarto Markdown format, or even by using the standard LaTeX `\ref{eq:secondorder}` (for just the number) or `\eqref{eq:secondorder}` (for the number in parentheses), like it has been done for Eq. \eqref{eq:secondorder}.
+Thanks to this automated translation, the equation can now be referenced anywhere using the standard LaTeX `\ref{eq:secondorder_latex}` to output just the number, or `\eqref{eq:secondorder_latex}` to automatically wrap the number in parentheses, like it has been done for Eq. \eqref{eq:secondorder_latex}.
 
 \section{Text Formatting}
 
-\textit{Italics} and \textbf{bold} text are supported. If text is wrapped in `\textit{italic}` or `\textbf{bold}` commands, the script will replace the LaTeX tags with the single `*` and double `**` asterisks used in Markdown.
+Standard LaTeX text formatting commands are fully supported. If text is wrapped in the `\textit{italic}` command, it will be rendered as \textit{italic}. Likewise, using the `\textbf{bold}` command ensures the text is rendered as \textbf{bold}. Behind the scenes, the script simply replaces these LaTeX tags with the single (`*`) and double (`**`) asterisks used in Markdown.
 
-\section{Links, Footnotes and Citations}
+\section{Links and Citations}
 
-Hyperlinks created with the hyperref package are easily converted. When the script sees `\href{https://github.com/MKReyesH/ScientificWiki}{GitHub Repository}`, it rearranges the URL and the text into the Quarto Markdown format: `[GitHub Repository](https://github.com/MKReyesH/ScientificWiki)` (e.g. \href{https://github.com/MKReyesH/ScientificWiki}{GitHub Repository}).
+Hyperlinks created with the standard `href` command are easily converted. When the script sees a command like `\href{https://github.com/MKReyesH/ScientificWiki}{GitHub Repository}`, it rearranges the URL and the text into the correct Markdown format, rendering a clickable link (e.g. \href{https://github.com/MKReyesH/ScientificWiki}{GitHub Repository}).
 
-Footnotes...
+For bibliography management, the standard citation commands continue to function perfectly. A command like `\cite{ReyesHung:2023udr}` is directly converted, producing a formatted citation like `[@ReyesHung:2023udr]` in the text (e.g. \cite{ReyesHung:2023udr}). If multiple papers are cited inside the exact same command, such as `\cite{ReyesHung:2023udr, AnotherCitation}`, the script will properly separate them and display a combined citation.
 
-For bibliography management, the standard cite command can continue to be used, like \cite{ReyesHung:2023udr}. A command like `\cite{ReyesHung:2023udr}` will be directly converted into Quarto's `[@ReyesHung:2023udr]` syntax. If multiple papers are cited inside the same command, the script will separate them properly inside the brackets.
+\section{Lists, Figures, Tables, Footnotes and Everything Else}
 
-\section{Lists, Figures, Tables and everything else}
+Inserting footnotes, lists, figures, and tables in LaTeX usually requires the use of much more complicated syntax than doing it directly in Markdown. Translating these elements using a simple script is incredibly fragile due to decoupled structures, nested elements, and the possible mixing of different environments. 
 
-Inserting lists, figures and tables in LaTeX usually requires the use of much more complicated syntax than doing it directly in markdown. Additionally, the translation of this environments can be complicated due to nested and possible mixing of this enviroments. Then, these enviroments, and in general any other LaTeX syntax, is not supported for automatic translation and will removed from the final webpage. If some of this environments are needed, please use the much easier quarto markdown native syntax, as shown in [Quarto Markdown Guide](/doc/Examples/example1.qmd).
+Therefore, these elements (and in general, any other LaTeX syntax not explicitly mentioned on this page) are not supported for automatic translation. If the script encounters them, they will likely be broken or removed from the final webpage. If any of these elements are needed for your document, please use the much easier, native Quarto Markdown syntax, as shown in the [Quarto Markdown Guide](/doc/Examples/example1.qmd).
