@@ -4,7 +4,7 @@ title: 'About this Wiki'
 
 # About us
 
-- [![MKReyesH](https://github.com/MKReyesH.png?size=40){.rounded-circle}](https://github.com/MKReyesH) [MKReyesH](https://github.com/MKReyesH)
+- [![MKReyesH](https://github.com/MKReyesH.png?size=40){.rounded-circle}](https://github.com/MKReyesH) &nbsp;&nbsp; [MKReyesH](https://github.com/MKReyesH)
 
 # Powered By
 
@@ -13,7 +13,7 @@ title: 'About this Wiki'
 - [Pandoc](https://pandoc.org/): Document format translation.
 - [Bootstrap](https://getbootstrap.com/) and [Bootswatch](https://bootswatch.com/): CSS support and user interface.
 - [MathJax](https://www.mathjax.org/): Mathematical notation rendering.
-- [Gemini](https://gemini.google.com/app): Lua filter generation assistance.
+- [Gemini](https://gemini.google.com/app): Help writing the Lua filters.
 
 # Contributing
 
