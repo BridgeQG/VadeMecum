@@ -271,33 +271,8 @@ window.Quarto = {
 
 <section id="how-to-use-this-template" class="level1">
 <h1>How to use this template</h1>
-<p>This guide outlines the basic steps to set up, configure, and publish your own version of this Scientific Wiki.</p>
-<section id="fork-and-initialize" class="level2">
-<h2 class="anchored" data-anchor-id="fork-and-initialize">1. Fork and Initialize</h2>
-<p>First, fork this repository to your own GitHub account.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="./img/Examples/gh_fork.png" class="img-fluid figure-img" style="width:16cm"></p>
-<figcaption>Forking the template</figcaption>
-</figure>
-</div>
-<p>Once this is done, you will have the base template files in your new repository:</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="./img/Examples/files_index.png" class="img-fluid figure-img" style="width:8cm"></p>
-<figcaption>Initial repository files</figcaption>
-</figure>
-</div>
-<p>To enable website hosting, you need to create an empty branch called <code>gh-pages</code>. Then, navigate to your repository settings, go to the GitHub Pages section, and select the <code>gh-pages</code> branch as your build and deployment source:</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="./img/Examples/gh_pages.png" class="img-fluid figure-img" style="width:12cm"></p>
-<figcaption>GitHub Pages setup</figcaption>
-</figure>
-</div>
-</section>
 <section id="configure-your-wiki" class="level2">
-<h2 class="anchored" data-anchor-id="configure-your-wiki">2. Configure Your Wiki</h2>
+<h2 class="anchored" data-anchor-id="configure-your-wiki">1. Configure Your Wiki</h2>
 <p>The main configuration for the website is handled inside the <code>_quarto.yml</code> file. You can customize this file to change the site’s title, logo, navigation sidebar, and bibliography settings:</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">website</span><span class="kw">:</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"Scientific Wiki Template"</span></span>
@@ -324,7 +299,7 @@ window.Quarto = {
 </div>
 </section>
 <section id="add-content" class="level2">
-<h2 class="anchored" data-anchor-id="add-content">3. Add Content</h2>
+<h2 class="anchored" data-anchor-id="add-content">2. Add Content</h2>
 <p>To add new pages to the wiki, simply create new plain text files (with <code>.qmd</code> extension) inside the <code>doc/</code> folder. The system will automatically recognize the files and add them to the sidebar. The sidebar reproduces the exact folder structure inside the <code>doc/</code> folder, so you can create drop-down menus simply by placing files inside sub-folders:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -336,7 +311,7 @@ window.Quarto = {
 <p>Moreover, anticipating that a lot of scientific content is already written in LaTeX, this template also includes (limited) compatibility for simple LaTeX structures. The commands that are safe to use in the <code>.qmd</code> files are explained in the <a href="./doc/Examples/example2.html">Allowed LaTeX Syntax Guide</a>. For more complex structures like figures or tables, native Markdown syntax must be used.</p>
 </section>
 <section id="commit-changes-and-deploy" class="level2">
-<h2 class="anchored" data-anchor-id="commit-changes-and-deploy">4. Commit changes and Deploy</h2>
+<h2 class="anchored" data-anchor-id="commit-changes-and-deploy">3. Commit changes and Deploy</h2>
 <p>Every time you commit changes to your repository, GitHub Actions will automatically take care of the deployment phase. The updated webpage will be built and pushed to the <code>gh-pages</code> branch, going live online in just a few minutes.</p>
 
 
