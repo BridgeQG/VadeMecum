@@ -3,7 +3,7 @@ website:
   search: true
   sidebar:
     style: "docked"
-    logo: "img/logo/bridgeqg_black.png"
+    logo: "img/logo/logo.png"
     contents:
       - href: index.qmd
         text: "Home"
@@ -26,4 +26,3 @@ format:
     theme: cosmo
     math: mathjax
     css: include/css-config.css
-    
