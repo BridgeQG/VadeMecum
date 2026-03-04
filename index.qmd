@@ -10,7 +10,7 @@ This guide outlines the basic steps to set up, configure, and publish your own v
 
 First, fork this repository to your own GitHub account.
 
-![Initial repository files](/img/Examples/gh_fork.png){width=16cm}
+![Forking the template](/img/Examples/gh_fork.png){width=16cm}
 
 Once this is done, you will have the base template files in your new repository:
 
@@ -49,7 +49,7 @@ You can manage references by adding `.bib` files to the `bib/` folder. You can a
 
 ## 3. Add Content
 
-To add new pages to the wiki, simply create a new file inside the `doc/` folder. The system will automatically recognize the file and add it to the sidebar navigation. The sidebar reproduces your exact directory structure, so you can create drop-down menus simply by placing files inside sub-folders:
+To add new pages to the wiki, simply create new plain text files (with `.qmd` extension) inside the `doc/` folder. The system will automatically recognize the files and add it to the sidebar navigation. The sidebar reproduces your exact directory structure, so you can create drop-down menus simply by placing files inside sub-folders:
 
 ![Documentation folder structure](/img/Examples/files_doc.png){width=8cm}
 
