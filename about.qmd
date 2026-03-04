@@ -2,20 +2,18 @@
 title: 'About us'
 ---
 
-# About us
-
 COST Action CA23130 BridgeQG
 
 - BridgeQG Core Group
 
-	- [![giuliagubitosi](https://github.com/giuliagubitosi.png?size=40){.rounded-circle width=40px height=40px}](https://github.com/giuliagubitosi) &nbsp;&nbsp; [Giulia Gubitosi](https://github.com/giuliagubitosi)
-	- [![tterzic](https://github.com/tterzic.png?size=40){.rounded-circle width=40px height=40px}](https://github.com/tterzic) &nbsp;&nbsp; [Tomislav Terzić](https://github.com/tterzic)
-	- [![Flavio-Mercati](https://github.com/Flavio-Mercati.png?size=40){.rounded-circle width=40px height=40px}](https://github.com/Flavio-Mercati) &nbsp;&nbsp; [Flavio Mercati](https://github.com/Flavio-Mercati)
-	- [![jackderosis](https://github.com/jackderosis.png?size=40){.rounded-circle width=40px height=40px}](https://github.com/jackderosis) &nbsp;&nbsp; [Giacomo Rosati](https://github.com/jackderosis)
+	[![giuliagubitosi](https://github.com/giuliagubitosi.png?size=40){.rounded-circle width=40px height=40px}](https://github.com/giuliagubitosi) &nbsp;&nbsp; [Giulia Gubitosi](https://github.com/giuliagubitosi)
+	[![tterzic](https://github.com/tterzic.png?size=40){.rounded-circle width=40px height=40px}](https://github.com/tterzic) &nbsp;&nbsp; [Tomislav Terzić](https://github.com/tterzic)
+	[![Flavio-Mercati](https://github.com/Flavio-Mercati.png?size=40){.rounded-circle width=40px height=40px}](https://github.com/Flavio-Mercati) &nbsp;&nbsp; [Flavio Mercati](https://github.com/Flavio-Mercati)
+	[![jackderosis](https://github.com/jackderosis.png?size=40){.rounded-circle width=40px height=40px}](https://github.com/jackderosis) &nbsp;&nbsp; [Giacomo Rosati](https://github.com/jackderosis)
 
 - Webpage preparation and deployment
 
-	- [![MKReyesH](https://github.com/MKReyesH.png?size=40){.rounded-circle width=40px height=40px}](https://github.com/MKReyesH) &nbsp;&nbsp; [Maykoll Reyes](https://github.com/MKReyesH)
+	[![MKReyesH](https://github.com/MKReyesH.png?size=40){.rounded-circle width=40px height=40px}](https://github.com/MKReyesH) &nbsp;&nbsp; [Maykoll Reyes](https://github.com/MKReyesH)
 
 # Powered By
 
