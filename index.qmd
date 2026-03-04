@@ -8,13 +8,17 @@ This guide outlines the basic steps to set up, configure, and publish your own v
 
 ## 1. Fork and Initialize
 
-First, fork this repository to your own GitHub account. Once this is done, you will have the base template files in your new repository:
+First, fork this repository to your own GitHub account.
+
+![Initial repository files](/img/Examples/gh_fork.png){width=16cm}
+
+Once this is done, you will have the base template files in your new repository:
 
 ![Initial repository files](/img/Examples/files_index.png){width=8cm}
 
-To enable website hosting, you need to create an empty (orphan) branch called `gh-pages`. Then, navigate to your repository settings, go to the GitHub Pages section, and select the `gh-pages` branch as your build and deployment source:
+To enable website hosting, you need to create an empty branch called `gh-pages`. Then, navigate to your repository settings, go to the GitHub Pages section, and select the `gh-pages` branch as your build and deployment source:
 
-![GitHub Pages setup](/img/Examples/gh_pages.png){width=8cm}
+![GitHub Pages setup](/img/Examples/gh_pages.png){width=12cm}
 
 ## 2. Configure Your Wiki
 
