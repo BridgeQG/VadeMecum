@@ -4,23 +4,7 @@ title: 'BridgeQG Vade Mecum'
 
 # How to use this template
 
-This guide outlines the basic steps to set up, configure, and publish your own version of this Scientific Wiki.
-
-## 1. Fork and Initialize
-
-First, fork this repository to your own GitHub account.
-
-![Forking the template](/img/Examples/gh_fork.png){width=16cm}
-
-Once this is done, you will have the base template files in your new repository:
-
-![Initial repository files](/img/Examples/files_index.png){width=8cm}
-
-To enable website hosting, you need to create an empty branch called `gh-pages`. Then, navigate to your repository settings, go to the GitHub Pages section, and select the `gh-pages` branch as your build and deployment source:
-
-![GitHub Pages setup](/img/Examples/gh_pages.png){width=12cm}
-
-## 2. Configure Your Wiki
+## 1. Configure Your Wiki
 
 The main configuration for the website is handled inside the `_quarto.yml` file. You can customize this file to change the site's title, logo, navigation sidebar, and bibliography settings:
 
@@ -47,7 +31,7 @@ You can manage references by adding `.bib` files to the `bib/` folder. You can a
 
 ![Bibliography files](/img/Examples/files_bib.png){width=8cm}
 
-## 3. Add Content
+## 2. Add Content
 
 To add new pages to the wiki, simply create new plain text files (with `.qmd` extension) inside the `doc/` folder. The system will automatically recognize the files and add them to the sidebar. The sidebar reproduces the exact folder structure inside the `doc/` folder, so you can create drop-down menus simply by placing files inside sub-folders:
 
@@ -57,6 +41,6 @@ All content files must be plain text file using the `.qmd` extension and must be
 
 Moreover, anticipating that a lot of scientific content is already written in LaTeX, this template also includes (limited) compatibility for simple LaTeX structures. The commands that are safe to use in the `.qmd` files are explained in the [Allowed LaTeX Syntax Guide](/doc/Examples/example2.qmd). For more complex structures like figures or tables, native Markdown syntax must be used.
 
-## 4. Commit changes and Deploy
+## 3. Commit changes and Deploy
 
 Every time you commit changes to your repository, GitHub Actions will automatically take care of the deployment phase. The updated webpage will be built and pushed to the `gh-pages` branch, going live online in just a few minutes.
