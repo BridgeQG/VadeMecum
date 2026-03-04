@@ -4,7 +4,7 @@
     "href": "about.html",
     "title": "About us",
     "section": "",
-    "text": "About us\nCOST Action CA23130 BridgeQG\n\nBridgeQG Core Group\n\n    Giulia Gubitosi\n    Tomislav Terzić\n    Flavio Mercati\n    Giacomo Rosati\n\nWebpage preparation and deployment\n\n    Maykoll Reyes\n\n\n\n\nPowered By\n\nGitHub Pages: Hosting and deployment infrastructure.\nQuarto: Markdown rendering, cross-referencing, and website generation.\nPandoc: Document format translation.\nBootstrap and Bootswatch: CSS support and user interface.\nMathJax: Mathematical notation rendering.\nGemini: Help writing the Lua filters.",
+    "text": "COST Action CA23130 BridgeQG\n\nBridgeQG Core Group\n    Giulia Gubitosi     Tomislav Terzić     Flavio Mercati     Giacomo Rosati\nWebpage preparation and deployment\n    Maykoll Reyes\n\n\nPowered By\n\nGitHub Pages: Hosting and deployment infrastructure.\nQuarto: Markdown rendering, cross-referencing, and website generation.\nPandoc: Document format translation.\nBootstrap and Bootswatch: CSS support and user interface.\nMathJax: Mathematical notation rendering.\nGemini: Help writing the Lua filters.",
     "crumbs": [
       "About us"
     ]
