@@ -1,14 +1,14 @@
 website:
-  title: "Scientific Wiki Template"
+  title: "Vade Mecum"
   search: true
   sidebar:
     style: "docked"
-    logo: "img/logo/logo.png"
+    logo: "img/logo/bridgeqg_black.png"
     contents:
       - href: index.qmd
         text: "Home"
       - auto: "doc/"
-      - href: https://github.com/MKReyesH/ScientificWiki
+      - href: https://github.com/BridgeQG/VadeMecum
         text: "GitHub Project"
       - href: about.qmd
 

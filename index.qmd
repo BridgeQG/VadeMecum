@@ -1,5 +1,5 @@
 ---
-title: 'Scientific Wiki Template'
+title: 'BridgeQG Vade Mecum'
 ---
 
 # How to use this template
