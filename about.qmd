@@ -4,7 +4,7 @@ title: 'About us'
 
 COST Action CA23130 BridgeQG
 
-# BridgeQG Core Group
+# BridgeQG Vade Mecum Coordinators
 
 [![giuliagubitosi](https://github.com/giuliagubitosi.png?size=40){.rounded-circle width=40px height=40px}](https://github.com/giuliagubitosi) &nbsp;&nbsp; [Giulia Gubitosi](https://github.com/giuliagubitosi)
 	
