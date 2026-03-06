@@ -10,27 +10,50 @@
     ]
   },
   {
-    "objectID": "doc/Examples/example2.html",
-    "href": "doc/Examples/example2.html",
-    "title": "Allowed LaTeX syntax for page writing",
+    "objectID": "doc/Low-energy_table-top_experiments.html",
+    "href": "doc/Low-energy_table-top_experiments.html",
+    "title": "Vade Mecum",
     "section": "",
-    "text": "In the scientific community, it is very common to have texts, equations, and full documents already written in LaTeX. This implies that one needs to translate such content to the Quarto Markdown syntax explained in the previous guide. However, this template allows for the use of some simple LaTeX syntax (in combination with native syntax), which is converted on the fly to the correct Quarto Markdown format. This document serves as both a guide and a test file for the translation rules. It is written using the supported LaTeX commands to explain exactly how the transformation works.",
+    "text": "#Low-energy table-top experiments\nLow-energy table-top experiments provide a powerful and complementary approach to exploring fundamental questions at the interface of quantum mechanics and gravity. Rather than relying on large-scale or high-energy facilities, these experiments exploit extreme precision, quantum coherence, and ultra-sensitive detection techniques to probe tiny effects that may reveal new physics beyond the Standard Model and classical General Relativity. A central goal of these experiments is to test whether gravity must be quantized or whether it can induce genuinely quantum phenomena, such as entanglement, between massive systems. Closely related are laboratory studies of gravitational decoherence, which investigate whether gravity could play a role in the apparent transition from quantum to classical behavior, as explored for example in models such as Diósi–Penrose. Matter-wave interferometry offers another key pathway, allowing tests of the interplay between gravity and quantum phases, including classic and modern realizations of gravitationally induced phase shifts. In addition, a variety of modified gravity theories have been proposed as candidate frameworks for quantum gravity. Precision tabletop experiments provide a powerful avenue to test these theories, enabling stringent constraints or potential discovery of deviations from standard gravitational physics. Low-energy experiments are also uniquely suited to test foundational principles of quantum mechanics with unprecedented sensitivity. \\[\n  x=\\frac{-b\\pm \\sqrt{b^2-4ac}}{2a} \\,,\n\\tag{1}\\] These include searches for violations of discrete symmetries, precision tests of the Pauli Exclusion Principle (such as those performed by the VIP, Violation of the Pauli Exclusion principle, and related experiments), and investigations of possible modifications of quantum theory inspired by quantum gravity, including collapse models. Furthermore, several approaches aim to probe the existence of a fundamental minimum length scale, often formulated through the Generalized Uncertainty Principle (GUP). Thanks to rapid advances in quantum technologies, systems such as quantum optomechanical resonators, ultra-sensitive magnetometers, and atomic or solid-state sensors are becoming increasingly capable of accessing regimes where tiny gravitational or quantum-gravity–inspired effects may become observable. Together, these table-top experiments form a diverse and rapidly evolving landscape, offering realistic near-term opportunities to experimentally address deep conceptual questions about space, time, and the quantum nature of reality.\nLink to the index",
     "crumbs": [
       "Topics",
-      "Examples",
-      "Allowed LaTeX syntax for page writing"
+      "Low Energy Table Top Experiments"
     ]
   },
   {
-    "objectID": "doc/Examples/example2.html#this-is-a-subsection",
-    "href": "doc/Examples/example2.html#this-is-a-subsection",
-    "title": "Allowed LaTeX syntax for page writing",
-    "section": "This is a subsection",
-    "text": "This is a subsection\n\nThis is a sub-subsection\nBecause the script converts this directly into native Markdown, the system automatically generates a reference identifier for it based on the heading’s name (lowercase, using hyphens instead of spaces). This allows you to easily link back to the translated section using standard Markdown linking, such as typing [this section](#sections-and-subsections) to navigate back to this section.",
+    "objectID": "doc/Examples/example1.html",
+    "href": "doc/Examples/example1.html",
+    "title": "How to write a page using Quarto Markdown",
+    "section": "",
+    "text": "GitHub Pages transforms plain text files into HTML webpages. In this template, files use the .qmd extension and follow Quarto Markdown syntax. Below are examples of the most commonly used formatting structures.",
     "crumbs": [
       "Topics",
       "Examples",
-      "Allowed LaTeX syntax for page writing"
+      "How to write a page using Quarto Markdown"
+    ]
+  },
+  {
+    "objectID": "doc/Examples/example1.html#this-is-a-subsection",
+    "href": "doc/Examples/example1.html#this-is-a-subsection",
+    "title": "How to write a page using Quarto Markdown",
+    "section": "This is a subsection",
+    "text": "This is a subsection\n\nThis is a sub-subsection\nTo make a section cross-referenceable, append an identifier starting with #sec- to the header. For example, typing ## Mathematical Equations {#sec-maths} allows the section to be referenced anywhere in the document using @sec-maths.",
+    "crumbs": [
+      "Topics",
+      "Examples",
+      "How to write a page using Quarto Markdown"
+    ]
+  },
+  {
+    "objectID": "doc/Examples/example1.html#footnotes",
+    "href": "doc/Examples/example1.html#footnotes",
+    "title": "How to write a page using Quarto Markdown",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nFor example, this is a footnote.↩︎",
+    "crumbs": [
+      "Topics",
+      "Examples",
+      "How to write a page using Quarto Markdown"
     ]
   },
   {
@@ -74,39 +97,27 @@
     ]
   },
   {
-    "objectID": "doc/Examples/example1.html",
-    "href": "doc/Examples/example1.html",
-    "title": "How to write a page using Quarto Markdown",
+    "objectID": "doc/Examples/example2.html",
+    "href": "doc/Examples/example2.html",
+    "title": "Allowed LaTeX syntax for page writing",
     "section": "",
-    "text": "GitHub Pages transforms plain text files into HTML webpages. In this template, files use the .qmd extension and follow Quarto Markdown syntax. Below are examples of the most commonly used formatting structures.",
+    "text": "In the scientific community, it is very common to have texts, equations, and full documents already written in LaTeX. This implies that one needs to translate such content to the Quarto Markdown syntax explained in the previous guide. However, this template allows for the use of some simple LaTeX syntax (in combination with native syntax), which is converted on the fly to the correct Quarto Markdown format. This document serves as both a guide and a test file for the translation rules. It is written using the supported LaTeX commands to explain exactly how the transformation works.",
     "crumbs": [
       "Topics",
       "Examples",
-      "How to write a page using Quarto Markdown"
+      "Allowed LaTeX syntax for page writing"
     ]
   },
   {
-    "objectID": "doc/Examples/example1.html#this-is-a-subsection",
-    "href": "doc/Examples/example1.html#this-is-a-subsection",
-    "title": "How to write a page using Quarto Markdown",
+    "objectID": "doc/Examples/example2.html#this-is-a-subsection",
+    "href": "doc/Examples/example2.html#this-is-a-subsection",
+    "title": "Allowed LaTeX syntax for page writing",
     "section": "This is a subsection",
-    "text": "This is a subsection\n\nThis is a sub-subsection\nTo make a section cross-referenceable, append an identifier starting with #sec- to the header. For example, typing ## Mathematical Equations {#sec-maths} allows the section to be referenced anywhere in the document using @sec-maths.",
+    "text": "This is a subsection\n\nThis is a sub-subsection\nBecause the script converts this directly into native Markdown, the system automatically generates a reference identifier for it based on the heading’s name (lowercase, using hyphens instead of spaces). This allows you to easily link back to the translated section using standard Markdown linking, such as typing [this section](#sections-and-subsections) to navigate back to this section.",
     "crumbs": [
       "Topics",
       "Examples",
-      "How to write a page using Quarto Markdown"
-    ]
-  },
-  {
-    "objectID": "doc/Examples/example1.html#footnotes",
-    "href": "doc/Examples/example1.html#footnotes",
-    "title": "How to write a page using Quarto Markdown",
-    "section": "Footnotes",
-    "text": "Footnotes\n\n\nFor example, this is a footnote.↩︎",
-    "crumbs": [
-      "Topics",
-      "Examples",
-      "How to write a page using Quarto Markdown"
+      "Allowed LaTeX syntax for page writing"
     ]
   },
   {
