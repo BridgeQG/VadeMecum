@@ -7,10 +7,7 @@ website:
     contents:
       - href: index.qmd
         text: "Home"
-      - auto: "doc/"
-      - href: https://github.com/BridgeQG/VadeMecum
-        text: "GitHub Project"
-      - href: about.qmd
+#      - auto: "doc/" #auto-generated index
       - section: "Topics"
         contents:
          - section: "First level topics"
@@ -21,6 +18,9 @@ website:
            contents:
             - href: "doc/Low-energy_table-top_experiments.qmd"
             - href: "doc/blablabla2.qmd"
+      - href: https://github.com/BridgeQG/VadeMecum
+        text: "GitHub Project"
+      - href: about.qmd
 
 bibliography: bib/references.bib
 csl: bib/american-mathematical-society-label.csl
