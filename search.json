@@ -21,7 +21,14 @@
     "href": "doc/2ndlevel/LowEnergyTabletop/GeneralRelativity.html",
     "title": "Vade Mecum",
     "section": "",
-    "text": "xxxx"
+    "text": "xxxx",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "2ndlevel",
+      "LowEnergyTabletop",
+      "GeneralRelativity"
+    ]
   },
   {
     "objectID": "doc/2ndlevel/InVacuoDispersion/MDR.html",
@@ -32,7 +39,9 @@
     "crumbs": [
       "Topics",
       "Second level topics",
-      "MDR.html"
+      "2ndlevel",
+      "InVacuoDispersion",
+      "MDR"
     ]
   },
   {
