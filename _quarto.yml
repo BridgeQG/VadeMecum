@@ -11,6 +11,10 @@ website:
       - href: https://github.com/BridgeQG/VadeMecum
         text: "GitHub Project"
       - href: about.qmd
+      - section: "Menu"
+        contents:
+          - href: "doc/Low-energy_table-top_experiments.qmd"
+          - href: "doc/blablabla2.qmd"
 
 bibliography: bib/references.bib
 csl: bib/american-mathematical-society-label.csl
