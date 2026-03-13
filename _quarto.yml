@@ -14,9 +14,10 @@ website:
            contents:
             - href: "doc/Low-energy_table-top_experiments.qmd"
             - href: "doc/In-vacuo_dispersion.qmd"
+            - href: "doc/LIV_DSR.qmd"
             - href: "doc/blablabla2.qmd"
 #        - section: "Second level topics"
-           contents:
+#           contents:
             - auto: "doc/2ndlevel/"
 #            - href: "doc/2ndlevel/InVacuoDispersion/MDR.qmd"
 #           - href: "doc/2ndlevel/quantum-spacetime.qmd"
