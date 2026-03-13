@@ -17,30 +17,37 @@
     "text": "Field equations\nIn order to describe an homogeneous and isotropic universe like in the framework of GR, one should solve the Einstein field equations using a homogeneous, isotropic, and expanding metric (the FLRW metric), \n\\[\nds^2 = dt^2 - a^2(t) \\left(\\frac{dr^2}{1-k r^2}+r^2 d\\Omega\\right) \\,,\n\\tag{1}\\]\n where \\(k\\) is the curvature and \\(a(t)\\) the scale factor of the universe, which is closely related to the redshift, \\(a(t)=1/(1+z(t))\\). We can use this relation to also connect the temporal coordinate to the redshift variable, \n\\[\n\\begin{aligned}\na(t) &=\\frac{1}{1+z(t)} \\\\\n    \\frac{\\dot a(t)}{a(t)} dt &= -\\frac{dz}{1+z(t)} \\\\\n    dt &= -\\frac{dz}{H(z)(1+z)} \\,,\n\\end{aligned}\n\\tag{2}\\]\n where we have defined the Hubble parameter as \\(H=\\dot a/a\\).\n\n\nFriedman equations\nUsing the FLRW metric, Eq. (1), to solve the Einstein equations leads to the Friedmann equations, which are the basis of the standard cosmology. The first Friedmann equation can be written in terms of the cosmic density of radiation (\\(\\Omega_r\\)), matter (\\(\\Omega_m\\)), curvature (\\(\\Omega_k\\)), and dark energy (\\(\\Omega_\\Lambda\\)), \n\\[\n\\begin{gathered}\nH(z) = H_0 \\sqrt{\\Omega_r (1+z)^4 + \\Omega_m (1+z)^3 + \\Omega_k (1+z)^2 + \\Omega_\\Lambda} \\,.\n\\end{gathered}\n\\tag{3}\\]\n The model does not predict the values of these cosmic densities, so they should be adjusted using cosmological observations and measurements. For more information see [Reye23].\n\n\n\n\n\n\nReferences\n\n[Reye23] Reyes Hung, Maykoll Anthonny, Exploration of possible signals beyond special relativity using high-energy astroparticle physics, PhD thesis, U. Zaragoza (main), 2023."
   },
   {
-    "objectID": "doc/2ndlevel/InVacuoDispersion/MDR.html",
-    "href": "doc/2ndlevel/InVacuoDispersion/MDR.html",
-    "title": "Vade Mecum",
+    "objectID": "doc/In-vacuo_dispersion.html",
+    "href": "doc/In-vacuo_dispersion.html",
+    "title": "In-vacuo dispersion",
     "section": "",
-    "text": "yyy",
+    "text": "In-vacuo dispersion is an effect related to the hypothesis of a quantum gravity scale modified dispersion relation (MDR), which is described by the Hamiltonian of a relativistic particle characterizing its propagation in a quantum spacetime. Deviations from the general relativistic dispersion relations are often (but not always) associated with either the violation or deformation of relativistic symmetries. The core idea is to describe the effects of quantum gravity as a deformation of the classical trajectory of particles—a deformation that grows with the particle’s energy and is suppressed by the quantum gravity energy scale [AEMN98, Ad22].\nSince, in the context of quantum gravity, the relevant energies are ultra-relativistic, one can often focus on the massless case. For certain types of MDRs, the speed of a massless particle becomes energy-dependent in vacuum, which is the origin of the effect’s name.\nFor this reason, if particles are emitted from a given source with an energy difference, they arrive at a detector with a time difference proportional to the product of the energy difference and the propagation distance, but suppressed by the quantum gravity energy scale. This is a quantum spacetime-induced time delay effect, analogously to what the propagation of light through a medium (\\(\\eta\\) – phenomenological parameter, \\(M_P\\) –Planck mass, \\(D(z)\\) – redshift-dependent distance factor) \n\\[\n\\Delta t = \\eta D(z) \\frac{\\Delta E}{M_P}\n\\]\n If these particles propagate over cosmological distances, even a modification suppressed by the Planck scale could produce a measurable effect with modern telescopes.\nDifferent formulations of the time delay effect have been proposed based on various hypotheses, such as the coupling between the energy-momentum of the particle and the spacetime metric, the local symmetries of spacetime, and the redshift dependence of the quantum gravity scale [Ad22].\n\n\n\n\n\nReferences\n\n[AEMN98] Amelino-Camelia, G., Ellis, John R., Mavromatos, N. E., Nanopoulos, Dimitri V., and Sarkar, Subir, Tests of quantum gravity from observations of gamma-ray bursts, Nature 393 (1998) 763–765.\n\n\n[Ad22] Addazi, A., and others, Quantum gravity phenomenology at the dawn of the multi-messenger eraA review, Prog. Part. Nucl. Phys. 125 (2022) 103948.",
     "crumbs": [
       "Topics",
-      "Second level topics",
-      "MDR.html"
+      "First level topics",
+      "In-vacuo dispersion"
     ]
   },
   {
-    "objectID": "doc/Examples/example2.html",
-    "href": "doc/Examples/example2.html",
-    "title": "Allowed LaTeX syntax for page writing",
+    "objectID": "doc/Examples/example1.html",
+    "href": "doc/Examples/example1.html",
+    "title": "How to write a page using Quarto Markdown",
     "section": "",
-    "text": "In the scientific community, it is very common to have texts, equations, and full documents already written in LaTeX. This implies that one needs to translate such content to the Quarto Markdown syntax explained in the previous guide. However, this template allows for the use of some simple LaTeX syntax (in combination with native syntax), which is converted on the fly to the correct Quarto Markdown format. This document serves as both a guide and a test file for the translation rules. It is written using the supported LaTeX commands to explain exactly how the transformation works."
+    "text": "GitHub Pages transforms plain text files into HTML webpages. In this template, files use the .qmd extension and follow Quarto Markdown syntax. Below are examples of the most commonly used formatting structures."
   },
   {
-    "objectID": "doc/Examples/example2.html#this-is-a-subsection",
-    "href": "doc/Examples/example2.html#this-is-a-subsection",
-    "title": "Allowed LaTeX syntax for page writing",
+    "objectID": "doc/Examples/example1.html#this-is-a-subsection",
+    "href": "doc/Examples/example1.html#this-is-a-subsection",
+    "title": "How to write a page using Quarto Markdown",
     "section": "This is a subsection",
-    "text": "This is a subsection\n\nThis is a sub-subsection\nBecause the script converts this directly into native Markdown, the system automatically generates a reference identifier for it based on the heading’s name (lowercase, using hyphens instead of spaces). This allows you to easily link back to the translated section using standard Markdown linking, such as typing [this section](#sections-and-subsections) to navigate back to this section."
+    "text": "This is a subsection\n\nThis is a sub-subsection\nTo make a section cross-referenceable, append an identifier starting with #sec- to the header. For example, typing ## Mathematical Equations {#sec-maths} allows the section to be referenced anywhere in the document using @sec-maths."
+  },
+  {
+    "objectID": "doc/Examples/example1.html#footnotes",
+    "href": "doc/Examples/example1.html#footnotes",
+    "title": "How to write a page using Quarto Markdown",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nFor example, this is a footnote.↩︎"
   },
   {
     "objectID": "index.html",
@@ -83,36 +90,29 @@
     ]
   },
   {
-    "objectID": "doc/Examples/example1.html",
-    "href": "doc/Examples/example1.html",
-    "title": "How to write a page using Quarto Markdown",
+    "objectID": "doc/Examples/example2.html",
+    "href": "doc/Examples/example2.html",
+    "title": "Allowed LaTeX syntax for page writing",
     "section": "",
-    "text": "GitHub Pages transforms plain text files into HTML webpages. In this template, files use the .qmd extension and follow Quarto Markdown syntax. Below are examples of the most commonly used formatting structures."
+    "text": "In the scientific community, it is very common to have texts, equations, and full documents already written in LaTeX. This implies that one needs to translate such content to the Quarto Markdown syntax explained in the previous guide. However, this template allows for the use of some simple LaTeX syntax (in combination with native syntax), which is converted on the fly to the correct Quarto Markdown format. This document serves as both a guide and a test file for the translation rules. It is written using the supported LaTeX commands to explain exactly how the transformation works."
   },
   {
-    "objectID": "doc/Examples/example1.html#this-is-a-subsection",
-    "href": "doc/Examples/example1.html#this-is-a-subsection",
-    "title": "How to write a page using Quarto Markdown",
+    "objectID": "doc/Examples/example2.html#this-is-a-subsection",
+    "href": "doc/Examples/example2.html#this-is-a-subsection",
+    "title": "Allowed LaTeX syntax for page writing",
     "section": "This is a subsection",
-    "text": "This is a subsection\n\nThis is a sub-subsection\nTo make a section cross-referenceable, append an identifier starting with #sec- to the header. For example, typing ## Mathematical Equations {#sec-maths} allows the section to be referenced anywhere in the document using @sec-maths."
+    "text": "This is a subsection\n\nThis is a sub-subsection\nBecause the script converts this directly into native Markdown, the system automatically generates a reference identifier for it based on the heading’s name (lowercase, using hyphens instead of spaces). This allows you to easily link back to the translated section using standard Markdown linking, such as typing [this section](#sections-and-subsections) to navigate back to this section."
   },
   {
-    "objectID": "doc/Examples/example1.html#footnotes",
-    "href": "doc/Examples/example1.html#footnotes",
-    "title": "How to write a page using Quarto Markdown",
-    "section": "Footnotes",
-    "text": "Footnotes\n\n\nFor example, this is a footnote.↩︎"
-  },
-  {
-    "objectID": "doc/In-vacuo_dispersion.html",
-    "href": "doc/In-vacuo_dispersion.html",
-    "title": "In-vacuo dispersion",
+    "objectID": "doc/2ndlevel/InVacuoDispersion/MDR.html",
+    "href": "doc/2ndlevel/InVacuoDispersion/MDR.html",
+    "title": "Vade Mecum",
     "section": "",
-    "text": "In-vacuo dispersion is an effect related to the hypothesis of a quantum gravity scale modified dispersion relation (MDR), which is described by the Hamiltonian of a relativistic particle characterizing its propagation in a quantum spacetime. Deviations from the general relativistic dispersion relations are often (but not always) associated with either the violation or deformation of relativistic symmetries. The core idea is to describe the effects of quantum gravity as a deformation of the classical trajectory of particles—a deformation that grows with the particle’s energy and is suppressed by the quantum gravity energy scale [AEMN98, Ad22].\nSince, in the context of quantum gravity, the relevant energies are ultra-relativistic, one can often focus on the massless case. For certain types of MDRs, the speed of a massless particle becomes energy-dependent in vacuum, which is the origin of the effect’s name.\nFor this reason, if particles are emitted from a given source with an energy difference, they arrive at a detector with a time difference proportional to the product of the energy difference and the propagation distance, but suppressed by the quantum gravity energy scale. This is a quantum spacetime-induced time delay effect, analogously to what the propagation of light through a medium (\\(\\eta\\) – phenomenological parameter, \\(M_P\\) –Planck mass, \\(D(z)\\) – redshift-dependent distance factor) \n\\[\n\\Delta t = \\eta D(z) \\frac{\\Delta E}{M_P}\n\\]\n If these particles propagate over cosmological distances, even a modification suppressed by the Planck scale could produce a measurable effect with modern telescopes.\nDifferent formulations of the time delay effect have been proposed based on various hypotheses, such as the coupling between the energy-momentum of the particle and the spacetime metric, the local symmetries of spacetime, and the redshift dependence of the quantum gravity scale [Ad22].\n\n\n\n\n\nReferences\n\n[AEMN98] Amelino-Camelia, G., Ellis, John R., Mavromatos, N. E., Nanopoulos, Dimitri V., and Sarkar, Subir, Tests of quantum gravity from observations of gamma-ray bursts, Nature 393 (1998) 763–765.\n\n\n[Ad22] Addazi, A., and others, Quantum gravity phenomenology at the dawn of the multi-messenger eraA review, Prog. Part. Nucl. Phys. 125 (2022) 103948.",
+    "text": "yyy",
     "crumbs": [
       "Topics",
-      "First level topics",
-      "In-vacuo dispersion"
+      "Second level topics",
+      "MDR.html"
     ]
   },
   {
