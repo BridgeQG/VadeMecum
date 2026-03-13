@@ -17,6 +17,7 @@
     "text": "Low-energy table-top experiments\nLow-energy table-top experiments provide a powerful and complementary approach to exploring fundamental questions at the interface of quantum mechanics and gravity. Rather than relying on large-scale or high-energy facilities, these experiments exploit extreme precision, quantum coherence, and ultra-sensitive detection techniques to probe tiny effects that may reveal new physics beyond the Standard Model and classical General Relativity. A central goal of these experiments is to test whether gravity must be quantized or whether it can induce genuinely quantum phenomena, such as entanglement, between massive systems. Closely related are laboratory studies of gravitational decoherence, which investigate whether gravity could play a role in the apparent transition from quantum to classical behavior, as explored for example in models such as Diósi–Penrose. Matter-wave interferometry offers another key pathway, allowing tests of the interplay between gravity and quantum phases, including classic and modern realizations of gravitationally induced phase shifts. In addition, a variety of modified gravity theories have been proposed as candidate frameworks for quantum gravity. Precision tabletop experiments provide a powerful avenue to test these theories, enabling stringent constraints or potential discovery of deviations from standard gravitational physics. Low-energy experiments are also uniquely suited to test foundational principles of quantum mechanics with unprecedented sensitivity. \\[\n  x=\\frac{-b\\pm \\sqrt{b^2-4ac}}{2a} \\,,\n\\tag{1}\\] These include searches for violations of discrete symmetries [Reye23], precision tests of the Pauli Exclusion Principle (such as those performed by the VIP, Violation of the Pauli Exclusion principle, and related experiments), and investigations of possible modifications of quantum theory inspired by quantum gravity, including collapse models. Furthermore, several approaches aim to probe the existence of a fundamental minimum length scale, often formulated through the Generalized Uncertainty Principle (GUP). Thanks to rapid advances in quantum technologies, systems such as quantum optomechanical resonators, ultra-sensitive magnetometers, and atomic or solid-state sensors are becoming increasingly capable of accessing regimes where tiny gravitational or quantum-gravity–inspired effects may become observable. Together, these table-top experiments form a diverse and rapidly evolving landscape, offering realistic near-term opportunities to experimentally address deep conceptual questions about space, time, and the quantum nature of reality.\nLink to the index\n\n\n\n\n\n\nReferences\n\n[Reye23] Reyes Hung, Maykoll Anthonny, Exploration of possible signals beyond special relativity using high-energy astroparticle physics, PhD thesis, U. Zaragoza (main), 2023.",
     "crumbs": [
       "Topics",
+      "First level topics",
       "Low-energy table-top experiments"
     ]
   },
@@ -25,49 +26,28 @@
     "href": "doc/2ndlevel/InVacuoDispersion/MDR.html",
     "title": "Vade Mecum",
     "section": "",
-    "text": "yyy",
-    "crumbs": [
-      "Topics",
-      "2ndlevel",
-      "InVacuoDispersion",
-      "MDR"
-    ]
+    "text": "yyy"
   },
   {
     "objectID": "doc/Examples/example1.html",
     "href": "doc/Examples/example1.html",
     "title": "How to write a page using Quarto Markdown",
     "section": "",
-    "text": "GitHub Pages transforms plain text files into HTML webpages. In this template, files use the .qmd extension and follow Quarto Markdown syntax. Below are examples of the most commonly used formatting structures.",
-    "crumbs": [
-      "Topics",
-      "Examples",
-      "How to write a page using Quarto Markdown"
-    ]
+    "text": "GitHub Pages transforms plain text files into HTML webpages. In this template, files use the .qmd extension and follow Quarto Markdown syntax. Below are examples of the most commonly used formatting structures."
   },
   {
     "objectID": "doc/Examples/example1.html#this-is-a-subsection",
     "href": "doc/Examples/example1.html#this-is-a-subsection",
     "title": "How to write a page using Quarto Markdown",
     "section": "This is a subsection",
-    "text": "This is a subsection\n\nThis is a sub-subsection\nTo make a section cross-referenceable, append an identifier starting with #sec- to the header. For example, typing ## Mathematical Equations {#sec-maths} allows the section to be referenced anywhere in the document using @sec-maths.",
-    "crumbs": [
-      "Topics",
-      "Examples",
-      "How to write a page using Quarto Markdown"
-    ]
+    "text": "This is a subsection\n\nThis is a sub-subsection\nTo make a section cross-referenceable, append an identifier starting with #sec- to the header. For example, typing ## Mathematical Equations {#sec-maths} allows the section to be referenced anywhere in the document using @sec-maths."
   },
   {
     "objectID": "doc/Examples/example1.html#footnotes",
     "href": "doc/Examples/example1.html#footnotes",
     "title": "How to write a page using Quarto Markdown",
     "section": "Footnotes",
-    "text": "Footnotes\n\n\nFor example, this is a footnote.↩︎",
-    "crumbs": [
-      "Topics",
-      "Examples",
-      "How to write a page using Quarto Markdown"
-    ]
+    "text": "Footnotes\n\n\nFor example, this is a footnote.↩︎"
   },
   {
     "objectID": "index.html",
@@ -114,48 +94,27 @@
     "href": "doc/Examples/example2.html",
     "title": "Allowed LaTeX syntax for page writing",
     "section": "",
-    "text": "In the scientific community, it is very common to have texts, equations, and full documents already written in LaTeX. This implies that one needs to translate such content to the Quarto Markdown syntax explained in the previous guide. However, this template allows for the use of some simple LaTeX syntax (in combination with native syntax), which is converted on the fly to the correct Quarto Markdown format. This document serves as both a guide and a test file for the translation rules. It is written using the supported LaTeX commands to explain exactly how the transformation works.",
-    "crumbs": [
-      "Topics",
-      "Examples",
-      "Allowed LaTeX syntax for page writing"
-    ]
+    "text": "In the scientific community, it is very common to have texts, equations, and full documents already written in LaTeX. This implies that one needs to translate such content to the Quarto Markdown syntax explained in the previous guide. However, this template allows for the use of some simple LaTeX syntax (in combination with native syntax), which is converted on the fly to the correct Quarto Markdown format. This document serves as both a guide and a test file for the translation rules. It is written using the supported LaTeX commands to explain exactly how the transformation works."
   },
   {
     "objectID": "doc/Examples/example2.html#this-is-a-subsection",
     "href": "doc/Examples/example2.html#this-is-a-subsection",
     "title": "Allowed LaTeX syntax for page writing",
     "section": "This is a subsection",
-    "text": "This is a subsection\n\nThis is a sub-subsection\nBecause the script converts this directly into native Markdown, the system automatically generates a reference identifier for it based on the heading’s name (lowercase, using hyphens instead of spaces). This allows you to easily link back to the translated section using standard Markdown linking, such as typing [this section](#sections-and-subsections) to navigate back to this section.",
-    "crumbs": [
-      "Topics",
-      "Examples",
-      "Allowed LaTeX syntax for page writing"
-    ]
+    "text": "This is a subsection\n\nThis is a sub-subsection\nBecause the script converts this directly into native Markdown, the system automatically generates a reference identifier for it based on the heading’s name (lowercase, using hyphens instead of spaces). This allows you to easily link back to the translated section using standard Markdown linking, such as typing [this section](#sections-and-subsections) to navigate back to this section."
   },
   {
     "objectID": "doc/2ndlevel/LowEnergyTabletop/GeneralRelativity.html",
     "href": "doc/2ndlevel/LowEnergyTabletop/GeneralRelativity.html",
     "title": "Vade Mecum",
     "section": "",
-    "text": "xxxx",
-    "crumbs": [
-      "Topics",
-      "2ndlevel",
-      "LowEnergyTabletop",
-      "GeneralRelativity"
-    ]
+    "text": "xxxx"
   },
   {
     "objectID": "doc/Physics/example3.html",
     "href": "doc/Physics/example3.html",
     "title": "\\(\\Lambda\\)CDM Cosmological Model",
     "section": "",
-    "text": "Field equations\nIn order to describe an homogeneous and isotropic universe like in the framework of GR, one should solve the Einstein field equations using a homogeneous, isotropic, and expanding metric (the FLRW metric), \n\\[\nds^2 = dt^2 - a^2(t) \\left(\\frac{dr^2}{1-k r^2}+r^2 d\\Omega\\right) \\,,\n\\tag{1}\\]\n where \\(k\\) is the curvature and \\(a(t)\\) the scale factor of the universe, which is closely related to the redshift, \\(a(t)=1/(1+z(t))\\). We can use this relation to also connect the temporal coordinate to the redshift variable, \n\\[\n\\begin{aligned}\na(t) &=\\frac{1}{1+z(t)} \\\\\n    \\frac{\\dot a(t)}{a(t)} dt &= -\\frac{dz}{1+z(t)} \\\\\n    dt &= -\\frac{dz}{H(z)(1+z)} \\,,\n\\end{aligned}\n\\tag{2}\\]\n where we have defined the Hubble parameter as \\(H=\\dot a/a\\).\n\n\nFriedman equations\nUsing the FLRW metric, Eq. (1), to solve the Einstein equations leads to the Friedmann equations, which are the basis of the standard cosmology. The first Friedmann equation can be written in terms of the cosmic density of radiation (\\(\\Omega_r\\)), matter (\\(\\Omega_m\\)), curvature (\\(\\Omega_k\\)), and dark energy (\\(\\Omega_\\Lambda\\)), \n\\[\n\\begin{gathered}\nH(z) = H_0 \\sqrt{\\Omega_r (1+z)^4 + \\Omega_m (1+z)^3 + \\Omega_k (1+z)^2 + \\Omega_\\Lambda} \\,.\n\\end{gathered}\n\\tag{3}\\]\n The model does not predict the values of these cosmic densities, so they should be adjusted using cosmological observations and measurements. For more information see [Reye23].\n\n\n\n\n\n\nReferences\n\n[Reye23] Reyes Hung, Maykoll Anthonny, Exploration of possible signals beyond special relativity using high-energy astroparticle physics, PhD thesis, U. Zaragoza (main), 2023.",
-    "crumbs": [
-      "Topics",
-      "Physics",
-      "$\\Lambda$CDM Cosmological Model"
-    ]
+    "text": "Field equations\nIn order to describe an homogeneous and isotropic universe like in the framework of GR, one should solve the Einstein field equations using a homogeneous, isotropic, and expanding metric (the FLRW metric), \n\\[\nds^2 = dt^2 - a^2(t) \\left(\\frac{dr^2}{1-k r^2}+r^2 d\\Omega\\right) \\,,\n\\tag{1}\\]\n where \\(k\\) is the curvature and \\(a(t)\\) the scale factor of the universe, which is closely related to the redshift, \\(a(t)=1/(1+z(t))\\). We can use this relation to also connect the temporal coordinate to the redshift variable, \n\\[\n\\begin{aligned}\na(t) &=\\frac{1}{1+z(t)} \\\\\n    \\frac{\\dot a(t)}{a(t)} dt &= -\\frac{dz}{1+z(t)} \\\\\n    dt &= -\\frac{dz}{H(z)(1+z)} \\,,\n\\end{aligned}\n\\tag{2}\\]\n where we have defined the Hubble parameter as \\(H=\\dot a/a\\).\n\n\nFriedman equations\nUsing the FLRW metric, Eq. (1), to solve the Einstein equations leads to the Friedmann equations, which are the basis of the standard cosmology. The first Friedmann equation can be written in terms of the cosmic density of radiation (\\(\\Omega_r\\)), matter (\\(\\Omega_m\\)), curvature (\\(\\Omega_k\\)), and dark energy (\\(\\Omega_\\Lambda\\)), \n\\[\n\\begin{gathered}\nH(z) = H_0 \\sqrt{\\Omega_r (1+z)^4 + \\Omega_m (1+z)^3 + \\Omega_k (1+z)^2 + \\Omega_\\Lambda} \\,.\n\\end{gathered}\n\\tag{3}\\]\n The model does not predict the values of these cosmic densities, so they should be adjusted using cosmological observations and measurements. For more information see [Reye23].\n\n\n\n\n\n\nReferences\n\n[Reye23] Reyes Hung, Maykoll Anthonny, Exploration of possible signals beyond special relativity using high-energy astroparticle physics, PhD thesis, U. Zaragoza (main), 2023."
   }
 ]
