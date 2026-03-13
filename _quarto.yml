@@ -16,12 +16,13 @@ website:
             - href: "doc/In-vacuo_dispersion.qmd"
             - href: "doc/LIV_DSR.qmd"
             - href: "doc/blablabla2.qmd"
-#        - section: "Second level topics"
-#           contents:
-            - auto: "doc/2ndlevel/"
-#            - href: "doc/2ndlevel/InVacuoDispersion/MDR.qmd"
-#           - href: "doc/2ndlevel/quantum-spacetime.qmd"
-#            - href: "doc/2ndlevel/InVacuoDispersion/MDR.qmd"
+        - section: "Second level topics"
+           contents:
+#            - auto: "doc/2ndlevel/"
+            - href: "doc/2ndlevel/MDR.qmd"
+            - href: "doc/2ndlevel/quantum-spacetime.qmd"
+            - href: "doc/2ndlevel/QGscale.qmd"
+            - href: "doc/2ndlevel/time_delay.qmd"
 #           - href: "doc/blablabla2.qmd"
       - href: https://github.com/BridgeQG/VadeMecum
         text: "GitHub Project"
