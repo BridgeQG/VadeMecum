@@ -6,6 +6,8 @@ Low-energy experiments are also uniquely suited to test foundational principles 
 $$
   x=\frac{-b\pm \sqrt{b^2-4ac}}{2a} \,,
 $$ {#eq-secondorder}
+
+Friedman equations are described [here](/doc/Physics/example3.qmd#Friedman-Equations)
 These include searches for violations of discrete symmetries \cite{ReyesHung:2023udr}, precision tests of the Pauli Exclusion Principle (such as those performed by the VIP, Violation of the Pauli Exclusion principle, and related experiments), and investigations of possible modifications of quantum theory inspired by quantum gravity, including collapse models. Furthermore, several approaches aim to probe the existence of a fundamental minimum length scale, often formulated through the Generalized Uncertainty Principle (GUP).
 Thanks to rapid advances in quantum technologies, systems such as quantum optomechanical resonators, ultra-sensitive magnetometers, and atomic or solid-state sensors are becoming increasingly capable of accessing regimes where tiny gravitational or quantum-gravity–inspired effects may become observable. Together, these table-top experiments form a diverse and rapidly evolving landscape, offering realistic near-term opportunities to experimentally address deep conceptual questions about space, time, and the quantum nature of reality.
 
