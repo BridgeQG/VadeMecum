@@ -29,25 +29,18 @@
     "text": "yyy"
   },
   {
-    "objectID": "doc/Examples/example1.html",
-    "href": "doc/Examples/example1.html",
-    "title": "How to write a page using Quarto Markdown",
+    "objectID": "doc/Examples/example2.html",
+    "href": "doc/Examples/example2.html",
+    "title": "Allowed LaTeX syntax for page writing",
     "section": "",
-    "text": "GitHub Pages transforms plain text files into HTML webpages. In this template, files use the .qmd extension and follow Quarto Markdown syntax. Below are examples of the most commonly used formatting structures."
+    "text": "In the scientific community, it is very common to have texts, equations, and full documents already written in LaTeX. This implies that one needs to translate such content to the Quarto Markdown syntax explained in the previous guide. However, this template allows for the use of some simple LaTeX syntax (in combination with native syntax), which is converted on the fly to the correct Quarto Markdown format. This document serves as both a guide and a test file for the translation rules. It is written using the supported LaTeX commands to explain exactly how the transformation works."
   },
   {
-    "objectID": "doc/Examples/example1.html#this-is-a-subsection",
-    "href": "doc/Examples/example1.html#this-is-a-subsection",
-    "title": "How to write a page using Quarto Markdown",
+    "objectID": "doc/Examples/example2.html#this-is-a-subsection",
+    "href": "doc/Examples/example2.html#this-is-a-subsection",
+    "title": "Allowed LaTeX syntax for page writing",
     "section": "This is a subsection",
-    "text": "This is a subsection\n\nThis is a sub-subsection\nTo make a section cross-referenceable, append an identifier starting with #sec- to the header. For example, typing ## Mathematical Equations {#sec-maths} allows the section to be referenced anywhere in the document using @sec-maths."
-  },
-  {
-    "objectID": "doc/Examples/example1.html#footnotes",
-    "href": "doc/Examples/example1.html#footnotes",
-    "title": "How to write a page using Quarto Markdown",
-    "section": "Footnotes",
-    "text": "Footnotes\n\n\nFor example, this is a footnote.↩︎"
+    "text": "This is a subsection\n\nThis is a sub-subsection\nBecause the script converts this directly into native Markdown, the system automatically generates a reference identifier for it based on the heading’s name (lowercase, using hyphens instead of spaces). This allows you to easily link back to the translated section using standard Markdown linking, such as typing [this section](#sections-and-subsections) to navigate back to this section."
   },
   {
     "objectID": "index.html",
@@ -90,18 +83,32 @@
     ]
   },
   {
-    "objectID": "doc/Examples/example2.html",
-    "href": "doc/Examples/example2.html",
-    "title": "Allowed LaTeX syntax for page writing",
+    "objectID": "doc/Examples/example1.html",
+    "href": "doc/Examples/example1.html",
+    "title": "How to write a page using Quarto Markdown",
     "section": "",
-    "text": "In the scientific community, it is very common to have texts, equations, and full documents already written in LaTeX. This implies that one needs to translate such content to the Quarto Markdown syntax explained in the previous guide. However, this template allows for the use of some simple LaTeX syntax (in combination with native syntax), which is converted on the fly to the correct Quarto Markdown format. This document serves as both a guide and a test file for the translation rules. It is written using the supported LaTeX commands to explain exactly how the transformation works."
+    "text": "GitHub Pages transforms plain text files into HTML webpages. In this template, files use the .qmd extension and follow Quarto Markdown syntax. Below are examples of the most commonly used formatting structures."
   },
   {
-    "objectID": "doc/Examples/example2.html#this-is-a-subsection",
-    "href": "doc/Examples/example2.html#this-is-a-subsection",
-    "title": "Allowed LaTeX syntax for page writing",
+    "objectID": "doc/Examples/example1.html#this-is-a-subsection",
+    "href": "doc/Examples/example1.html#this-is-a-subsection",
+    "title": "How to write a page using Quarto Markdown",
     "section": "This is a subsection",
-    "text": "This is a subsection\n\nThis is a sub-subsection\nBecause the script converts this directly into native Markdown, the system automatically generates a reference identifier for it based on the heading’s name (lowercase, using hyphens instead of spaces). This allows you to easily link back to the translated section using standard Markdown linking, such as typing [this section](#sections-and-subsections) to navigate back to this section."
+    "text": "This is a subsection\n\nThis is a sub-subsection\nTo make a section cross-referenceable, append an identifier starting with #sec- to the header. For example, typing ## Mathematical Equations {#sec-maths} allows the section to be referenced anywhere in the document using @sec-maths."
+  },
+  {
+    "objectID": "doc/Examples/example1.html#footnotes",
+    "href": "doc/Examples/example1.html#footnotes",
+    "title": "How to write a page using Quarto Markdown",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nFor example, this is a footnote.↩︎"
+  },
+  {
+    "objectID": "doc/In-vacuo dispersion.html",
+    "href": "doc/In-vacuo dispersion.html",
+    "title": "Vade Mecum",
+    "section": "",
+    "text": "In-vacuo dispersion is an effect related to the hypothesis of a quantum gravity scale-modified dispersion relation, which is described by the Hamiltonian of a relativistic particle characterizing its propagation in a quantum spacetime. Deviations from the general relativistic dispersion relations are often (but not always) associated with either the violation or deformation of relativistic symmetries. The core idea is to describe the effects of quantum gravity as a deformation of the classical trajectory of particles—a deformation that grows with the particle’s energy and is suppressed by the quantum gravity energy scale [AEMN98, Ad22].\nSince, in the context of quantum gravity, the relevant energies are ultra-relativistic, one can often focus on the massless case. For certain types of modified dispersion relations, the speed of a massless particle becomes energy-dependent in vacuum, which is the origin of the effect’s name.\nFor this reason, if particles are emitted from a given source with an energy difference, they arrive at a detector with a time difference proportional to the product of the energy difference and the propagation distance, but suppressed by the quantum gravity energy scale. This is a quantum spacetime-induced time delay effect, analogously to what the propagation of light through a medium (\\(\\eta\\) – phenomenological parameter, \\(M_P\\) –Planck mass, \\(D(z)\\) – redshift-dependent distance factor) \n\\[\n\\Delta t = \\eta D(z) \\frac{\\Delta E}{M_P}\n\\]\n If these particles propagate over cosmological distances, even a modification suppressed by the Planck scale could produce a measurable effect with modern telescopes.\nDifferent formulations of the time delay effect have been proposed based on various hypotheses, such as the coupling between the energy-momentum of the particle and the spacetime metric, the local symmetries of spacetime, and the redshift dependence of the quantum gravity scale [Ad22].\n\n\n\n\n\nReferences\n\n[AEMN98] Amelino-Camelia, G., Ellis, John R., Mavromatos, N. E., Nanopoulos, Dimitri V., and Sarkar, Subir, Tests of quantum gravity from observations of gamma-ray bursts, Nature 393 (1998) 763–765.\n\n\n[Ad22] Addazi, A., and others, Quantum gravity phenomenology at the dawn of the multi-messenger eraA review, Prog. Part. Nucl. Phys. 125 (2022) 103948."
   },
   {
     "objectID": "doc/2ndlevel/LowEnergyTabletop/GeneralRelativity.html",
