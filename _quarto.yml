@@ -13,6 +13,7 @@ website:
          - section: "First level topics"
            contents:
             - href: "doc/Low-energy_table-top_experiments.qmd"
+            - href: "doc/In-vacuo_dispersion.qmd"
             - href: "doc/blablabla2.qmd"
          - section: "Second level topics"
            contents:
