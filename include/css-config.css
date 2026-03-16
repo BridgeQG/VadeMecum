@@ -1,3 +1,5 @@
+/*Sections style*/
+
 #title-block-header h1.title {
   font-size: 2.2rem;
   font-weight: 700;
@@ -38,12 +40,58 @@
   padding-bottom: 0.5rem;
 }
 
+/*Appendices style*/
+
+div#quarto-appendix section,
+div#quarto-appendix section ul,
+div#quarto-appendix section ol,
+div#quarto-appendix section div#refs {
+  margin: 0; 
+}
+
+div#quarto-appendix section h2 {
+  font-size: 1.5rem;
+  font-weight: 550;
+  color: #111111;
+  border-bottom: none;
+  margin: 0;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+/*List of authors style*/
+
+section#authors ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+section#authors ul li,
+section#authors ul li p {
+  display: inline-flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+section#authors ul li:not(:last-child)::after {
+  content: ",";
+}
+
+/*Text style*/
+
 #quarto-document-content p {
   margin-top: 0.5rem; 
   margin-bottom: 0.5rem;
   padding-left: 0;
   padding-right: 0;
 }
+
+/*Center figure caption*/
 
 figcaption {
   text-align: center;
