@@ -18,12 +18,7 @@ website:
             - href: "doc/blablabla2.qmd"
          - section: "Second level topics"
            contents:
-            - href: "doc/2ndlevel/MDR.qmd"
-            - href: "doc/2ndlevel/quantum_spacetime.qmd"
-            - href: "doc/2ndlevel/QGscale.qmd"
-            - href: "doc/2ndlevel/time_delay.qmd"
-            - href: "doc/blablabla2.qmd"
-#            - auto: "doc/2ndlevel/"
+            - auto: "doc/2ndlevel/*.qmd"
       - href: https://github.com/BridgeQG/VadeMecum
         text: "GitHub Project"
       - href: about.qmd

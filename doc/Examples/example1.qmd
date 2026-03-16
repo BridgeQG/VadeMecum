@@ -56,7 +56,7 @@ Multi-labeled equations, like the standard LaTeX `align` environment, are not su
 
 # Text Formatting and Lists
 
-Text formatting is achieved by enclosing words in asterisks. Using single asterisks produces *italic* text (e.g. `*italic*`), while double asterisks produce **bold** text (e.g. `**bold**`).
+Text formatting is achieved by enclosing words in asterisks. Using single asterisks produces *italic* text (e.g. `*italic*`), while double asterisks produce **bold** text (e.g. `**bold**`). One can also display colored text using `[red text]{style="color: red;"}`, which produces a [text in red color]{style="color: red;"}.
 
 Unordered lists are created using the `-` symbol, where the level of indentation determines the hierarchy of the items:
 

@@ -8,6 +8,8 @@ local inline_rules = {
     { pattern = "\\textbf{([^}]+)}", replace = "**%1**" },
     -- Italic text
     { pattern = "\\textit{([^}]+)}", replace = "*%1*" },
+    -- Colored text
+    { pattern = "\\textcolor{([^}]+)}{([^}]+)}", replace = '[%2]{style="color: %1;"}' },
     -- Hyperlink
     { pattern = "\\href{([^}]+)}{([^}]+)}", replace = "[%2](%1)" },
     -- Citations

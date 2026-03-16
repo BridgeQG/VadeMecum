@@ -58,7 +58,7 @@ However, to ensure compatibility with Quarto's cross-referencing engine, these e
 
 \section{Text Formatting}
 
-Standard LaTeX text formatting commands are fully supported. If text is wrapped in the `\textit{italic}` command, it will be rendered as \textit{italic}. Likewise, using the `\textbf{bold}` command ensures the text is rendered as \textbf{bold}. Behind the scenes, the script simply replaces these LaTeX tags with the single (`*`) and double (`**`) asterisks used in Markdown.
+Standard LaTeX text formatting commands are fully supported. If text is wrapped in the `\textit{italic}` command, it will be rendered as \textit{italic}. Likewise, using the `\textbf{bold}` command ensures the text is rendered as \textbf{bold}. Behind the scenes, the script simply replaces these LaTeX tags with the single (`*`) and double (`**`) asterisks used in Markdown. Similarly, one can use the `\textcolor{red}{colored text}` command to produce \textcolor{red}{colored text}.
 
 \section{Links and Citations}
 

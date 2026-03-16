@@ -1,5 +1,7 @@
 ---
 title: '$\Lambda$CDM Cosmological Model'
+nocite: |
+  @Carmona:2022pro
 ---
 
 \section{Field equations}
@@ -16,7 +18,9 @@ where $k$ is the curvature and $a(t)$ the scale factor of the universe, which is
     dt &= -\frac{dz}{H(z)(1+z)} \,,
     \label{eq:dtdz}
 \end{align}
-where we have defined the Hubble parameter as $H=\dot a/a$.
+where we have defined the Hubble parameter[^1] as $H=\dot a/a$.
+
+[^1]: We will not discuss here the Hubble tension problem.
 
 \section{Friedman equations}
 
@@ -26,3 +30,8 @@ Using the FLRW metric, Eq. \eqref{eq:FLRW}, to solve the Einstein equations lead
     \label{eq:Hz_full}
 \end{gather}
 The model does not predict the values of these cosmic densities, so they should be adjusted using cosmological observations and measurements. For more information see \cite{ReyesHung:2023udr}.
+
+## List of Authors {id="authors" .appendix}
+
+- Albert Einstein
+- Isaac Newton
