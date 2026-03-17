@@ -3,7 +3,6 @@
 #title-block-header h1.title {
   font-size: 2.2rem;
   font-weight: 700;
-  color: #111111;
   border-bottom: none;
   margin: 0;
   padding-top: 0.5rem;
@@ -13,7 +12,6 @@
 #quarto-document-content h1:not(.title) {
   font-size: 1.8rem;
   font-weight: 600;
-  color: #111111;
   border-bottom: none;
   margin: 0;
   padding-top: 0.5rem;
@@ -23,7 +21,6 @@
 #quarto-document-content h2 {
   font-size: 1.5rem;
   font-weight: 550;
-  color: #111111;
   border-bottom: none;
   margin: 0;
   padding-top: 0.5rem;
@@ -33,7 +30,6 @@
 #quarto-document-content h3 {
   font-size: 1.2rem;
   font-weight: 550;
-  color: #111111;
   border-bottom: none;
   margin: 0;
   padding-top: 0.5rem;
@@ -52,7 +48,6 @@ div#quarto-appendix section div#refs {
 div#quarto-appendix section h2 {
   font-size: 1.5rem;
   font-weight: 550;
-  color: #111111;
   border-bottom: none;
   margin: 0;
   padding-top: 0.5rem;
