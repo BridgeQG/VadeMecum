@@ -2,7 +2,7 @@
 title: 'Violation and Deformation of Relativistic Symmetries'
 ---
 
-\textbf{Relativistic symmetries} play a central role in modern physics, but many approaches to quantum gravity suggest that these symmetries may not remain exactly the classical (local) Lorentz or Poincaré transformations of special relativity at the highest energy scales. This motivates the investigation of scenarios in which Lorentz and Poincaré symmetries are either violated or deformed.
+[Relativistic symmetries](https://en.wikipedia.org/wiki/Special_relativity) play a central role in modern physics, but many approaches to quantum gravity suggest that these symmetries may not remain exactly the classical (local) Lorentz or Poincaré transformations of special relativity at the highest energy scales. This motivates the investigation of scenarios in which Lorentz and Poincaré symmetries are either violated or deformed.
 In the case of \textbf{Lorentz Invariance Violation (LIV)}, Lorentz symmetry is broken explicitly (as in many effective field theory descriptions) or spontaneously (when fields acquire vacuum expectation values that select preferred directions in spacetime), so that physics is formulated in a preferred frame. In contrast, \textbf{deformed-symmetry frameworks (DSR -- Doubly (or Deformed) Special Relativity} \cite{Amelino-Camelia:2000stu}, preserve the [relativity principle](https://en.wikipedia.org/wiki/Special_relativity) but modify the transformation laws between observers by introducing an additional invariant scale (usually associated with the [Planck length](https://simple.wikipedia.org/wiki/Planck_length), $\ell_P \approx 1.61 \times 10^{-35}\,\mathrm{m} \approx 1.30 \times 10^{-29}\,\mathrm{eV}^{-1}$).
 Although both approaches explore possible imprints of a [quantum or discrete structure of spacetime](/doc/2ndlevel/quantum_spacetime.qmd), they lead to
 conceptually different kinematics and, as discussed below, to very different phenomenological expectations.
@@ -29,3 +29,5 @@ Also, C, P, and T transformations can interact non-trivially with the LIV or DSR
 Taken together, astroparticle, astrophysical, and low-energy laboratory probes form a broad landscape in which the implications of the deformation or violation of relativistic symmetries can be systematically explored.
 
 General reviews of these topics can be found in \cite{Mattingly:2005re}, \cite{Amelino-Camelia:2008aez}, \cite{Addazi:2021xuf}
+
+
