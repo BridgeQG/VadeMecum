@@ -1,7 +1,7 @@
 ---
 title: 'Low-energy table-top experiments'
 nocite: |
-  @Penrose:1996cv, Amati:1988tn
+  @Penrose:1996cv, @Amati:1988tn
 ---
 
 Low-energy table-top experiments provide a powerful and complementary approach to exploring fundamental questions at the interface of quantum mechanics and gravity. Rather than relying on large-scale or high-energy facilities, these experiments exploit extreme precision, quantum coherence, and ultra-sensitive detection techniques to probe tiny effects that may reveal new physics beyond the [Standard Model](https://en.wikipedia.org/wiki/Standard_Model) and classical [General Relativity](https://en.wikipedia.org/wiki/General_relativity).
