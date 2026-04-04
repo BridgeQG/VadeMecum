@@ -2,11 +2,10 @@
 title: 'Gravitationally-induced quantum effects'
 ---
 
-- Minimal length scale 
-- {Gravitationally-mediated entanglement}
-- {Lorentz symmetry breaking}
-- {Effective Theories of Modified Gravity \& quantum Gravity}
-- {Gravitational decoherence}
+
+- Gravity-mediated entanglement
+- Gravitationally-induced decoherence
+
 - Measuring quantum effects of gravity
 - {Modified Schrödinger equation}
 - {Modified Dispersion Relation}
@@ -34,24 +33,11 @@ By \emph{gravitationally-induced quantum effects} we denote physical phenomena i
 
 In the strong-gravity regime, quantum effects arise near causal horizons and regions of large spacetime curvature. Hawking radiation \cite{Hawking:1975vcx} revealed the thermodynamic nature of black holes, motivating studies of quantum corrections to black hole entropy and consistency conditions that promote such astrophysical objects to probes of quantum gravity. Beyond thermodynamic aspects, strong gravitational backgrounds can also induce genuinely quantum correlations in the gravitational field itself, for instance through the production of squeezed graviton states in primordial and astrophysical environments.
 
-In the weak-gravity regime, interacting quantum systems may be described via modified Schrödinger dynamics. Motivations for such modifications include collapse models \cite{Bassi:2012bg}, which introduce gravitationally-induced decoherence in order to address the measurement problem, but also semiclassical gravity, according to which the gravitational field remains classical. Predictions arising from these frameworks can be tested using matter-wave interferometers that delocalize massive quantum systems into spatial superpositions across the interferometer arms. Along this line, gravitationally-induced phase shifts were first observed with a neutron interferometer in the celebrated COW experiment \cite{Colella:1975dq}. More recently, similar techniques have revealed the gravitational Aharonov--Bohm effect, demonstrating that gravity acts on quantum systems through the metric rather than as a Newtonian force. Complementary experiments using large-molecule interferometry further constrain collapse models and gravitational decoherence \cite{Fein:2019dgf}.
+In the weak-gravity regime, interacting quantum systems may be described via modified Schrödinger dynamics. Motivations for such modifications include collapse models \cite{Bassi:2012bg}, which introduce [gravitationally-induced decoherence](/docs/2ndlevel/Gravitationally-induced_decoherence) in order to address the measurement problem, but also semiclassical gravity, according to which the gravitational field remains classical. Predictions arising from these frameworks can be tested using matter-wave interferometers that delocalize massive quantum systems into spatial superpositions across the interferometer arms. Along this line, gravitationally-induced phase shifts were first observed with a neutron interferometer in the celebrated COW experiment \cite{Colella:1975dq}. More recently, similar techniques have revealed the gravitational Aharonov--Bohm effect, demonstrating that gravity acts on quantum systems through the metric rather than as a Newtonian force. Complementary experiments using large-molecule interferometry further constrain collapse models and [gravitational decoherence]/docs/2ndlevel/Gravitationally-induced_decoherence) \cite{Fein:2019dgf}.
 
-A research field closely related to the one discussed above investigates [gravity-mediated entanglement](/doc/2ndlevel/gravity-mediated_entanglement.qmd) between distinct quantum systems. Indeed, quantum mechanics predicts that the mutual gravitational coupling of two spatially-delocalized systems is capable of generating entanglement between their positional degrees of freedom. Inspired by Feynman's proposal at the Chapel Hill conference \cite{CHAPELHILL-TOBEADDEDTOINSPIRES}, several gravity-mediated entanglement tests have been recently put forward. In these works, it is argued that the observation of quantum correlations stemming from the gravitational interaction would constitute evidence for the quantum nature of gravity, since a purely classical field could only mediate local operations and classical communication (LOCC) and would therefore be unable to generate entanglement. The generality and robustness of this conclusion, however, remain the subject of active debate. 
+A research field closely related to the one discussed above investigates [gravity-mediated entanglement](/doc/2ndlevel/Gravity-mediated_entanglement.qmd) between distinct quantum systems. Indeed, quantum mechanics predicts that the mutual gravitational coupling of two spatially-delocalized systems is capable of generating entanglement between their positional degrees of freedom. Inspired by Feynman's proposal at the Chapel Hill conference \cite{CHAPELHILL-TOBEADDEDTOINSPIRES}, several [Gravity-mediated entanglement](/doc/2ndlevel/gravity-mediated_entanglement.qmd) tests have been recently put forward. In these works, it is argued that the observation of quantum correlations stemming from the gravitational interaction would constitute evidence for the quantum nature of gravity, since a purely classical field could only mediate local operations and classical communication (LOCC) and would therefore be unable to generate entanglement. The generality and robustness of this conclusion, however, remain the subject of active debate. 
 
 Beyond entanglement, quantum gravity effects may also manifest as deviations from the standard gravitational interaction, motivating experimental tests of the equivalence principle with quantum systems, precision measurements of short-range gravity, proposed tests of quantum time dilation and local Lorentz symmetry breakdown.
-
-xxxxxxx
-
-Since, in the context of quantum gravity, the relevant energies are ultra-relativistic, one can often focus on the massless case. For certain types of [MDRs](/doc/InVacuoDispersion/MDR.qmd), the speed of a massless particle becomes energy-dependent in vacuum, which is the origin of the effect's name.
-
-For this reason, if particles are emitted from a given source with an energy difference, they arrive at a detector with a time difference proportional to the product of the energy difference and the propagation distance, but suppressed by the [quantum gravity energy scale](/doc/2ndlevel/QGscale.qmd). This is a quantum spacetime-induced [time delay](/doc/2ndlevel/time_delay.qmd) effect, analogously to what the propagation of light through a medium ($\eta$ -- phenomenological parameter, $M_P$ --Planck mass, $D(z)$ -- redshift-dependent distance factor)
-\begin{equation*}
-\Delta t = \eta D(z) \frac{\Delta E}{M_P}
-\end{equation*}
-If these particles propagate over cosmological distances, even a modification suppressed by the Planck scale could produce a measurable effect with modern telescopes.
-
-
-[Different formulations of the time delay](/doc/2ndlevel/time_delay.qmd) effect have been proposed based on various hypotheses, such as the coupling between the energy-momentum of the particle and the spacetime metric, the [local symmetries of spacetime](/doc/LIV_DSR.qmd), and the redshift dependence of the quantum gravity scale \cite{Addazi:2021xuf}.
 
 ## List of Authors {id="authors" .appendix}
 
