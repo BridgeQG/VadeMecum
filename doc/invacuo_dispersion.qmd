@@ -14,3 +14,8 @@ If these particles propagate over cosmological distances, even a modification su
 
 
 [Different formulations of the time delay](/doc/2ndlevel/time_delay.qmd) effect have been proposed based on various hypotheses, such as the coupling between the energy-momentum of the particle and the spacetime metric, the [local symmetries of spacetime](/doc/LIV_DSR.qmd), and the redshift dependence of the quantum gravity scale \cite{Addazi:2021xuf}.
+
+ ## List of Authors {id="authors" .appendix}
+
+- Iarley Pereira Lobo
+- Christian Pfeifer
