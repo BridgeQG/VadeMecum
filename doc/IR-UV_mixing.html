@@ -23,7 +23,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -361,11 +380,11 @@ window.Quarto = {
 </header>
 
 
-<p>Quantum gravity theories usually introduce severe ultraviolet (UV) modifications with respect to standard quantum field theories. In many cases, including string theory and noncommutative approaches, these modifications turn out to affect also the dynamics of the physics in the infrared (IR) region~<span class="citation" data-cites="Minwalla:1999px">[<a href="#ref-Minwalla:1999px" role="doc-biblioref"><strong>Minwalla:1999px?</strong></a>]</span>.</p>
-<p>In particular, it has been shown that a feature rendering these theories (or a given Feynman diagram) UV renormalizable, could generate instabilities in the IR region~<span class="citation" data-cites="Minwalla:1999px">[<a href="#ref-Minwalla:1999px" role="doc-biblioref"><strong>Minwalla:1999px?</strong></a>]</span>. This phenomenon usually shows up already at the first perturbative order as an IR singularity proportional to an inverse power of an external momentum. This singularity will affect thus the subsequent perturbative orders, resulting in new types of divergences which cannot be treated within the usual renormalization schemes. In this sense, the IR and UV regimes are no longer independent, i.e.&nbsp;they are mixed.</p>
+<p>Quantum gravity theories usually introduce severe ultraviolet (UV) modifications with respect to standard quantum field theories. In many cases, including string theory and noncommutative approaches, these modifications turn out to affect also the dynamics of the physics in the infrared (IR) region~<span class="citation" data-cites="Minwalla:1999px">[<a href="#ref-Minwalla:1999px" role="doc-biblioref">MiVaSe00</a>]</span>.</p>
+<p>In particular, it has been shown that a feature rendering these theories (or a given Feynman diagram) UV renormalizable, could generate instabilities in the IR region~<span class="citation" data-cites="Minwalla:1999px">[<a href="#ref-Minwalla:1999px" role="doc-biblioref">MiVaSe00</a>]</span>. This phenomenon usually shows up already at the first perturbative order as an IR singularity proportional to an inverse power of an external momentum. This singularity will affect thus the subsequent perturbative orders, resulting in new types of divergences which cannot be treated within the usual renormalization schemes. In this sense, the IR and UV regimes are no longer independent, i.e.&nbsp;they are mixed.</p>
 <p>The IR-UV mixing is frequently associated to non-locality in quantum field theories; in effect, in a quantum theory of gravity, the presence of the latter is expected, given the long-range character of the gravitational force and the impossibility to screen it.</p>
-<p>Only a few ways to avoid this phenomenon have been found within particular field theories, at least to the first perturbative orders~<span class="citation" data-cites="DimitrijevicCiric:2024qew">[<a href="#ref-DimitrijevicCiric:2024qew" role="doc-biblioref"><strong>DimitrijevicCiric:2024qew?</strong></a>]</span>. The IR-UV mixing has also recently been studied as a way to alleviate the hierarchy problem~<span class="citation" data-cites="Craig:2019zbn">[<a href="#ref-Craig:2019zbn" role="doc-biblioref"><strong>Craig:2019zbn?</strong></a>]</span>.</p>
-<p>From a phenomenological point of view, the IR-UV mixing motivates modified dispersion relations that include inverse powers of the momentum~<span class="citation" data-cites="Matusis:2000jf">[<a href="#ref-Matusis:2000jf" role="doc-biblioref"><strong>Matusis:2000jf?</strong></a>]</span>. Such modifications would strongly affect our understanding of a broad class of experiments, including, for example, particle-physics~<span class="citation" data-cites="Amelino-Camelia:2002onw">[<a href="#ref-Amelino-Camelia:2002onw" role="doc-biblioref"><strong>Amelino-Camelia:2002onw?</strong></a>]</span> and cold-atoms~<span class="citation" data-cites="Amelino-Camelia:2009wvc">[<a href="#ref-Amelino-Camelia:2009wvc" role="doc-biblioref"><strong>Amelino-Camelia:2009wvc?</strong></a>]</span> scenarios.</p>
+<p>Only a few ways to avoid this phenomenon have been found within particular field theories, at least to the first perturbative orders~<span class="citation" data-cites="DimitrijevicCiric:2024qew">[<a href="#ref-DimitrijevicCiric:2024qew" role="doc-biblioref">DNRS24</a>]</span>. The IR-UV mixing has also recently been studied as a way to alleviate the hierarchy problem~<span class="citation" data-cites="Craig:2019zbn">[<a href="#ref-Craig:2019zbn" role="doc-biblioref"><strong>Craig:2019zbn?</strong></a>]</span>.</p>
+<p>From a phenomenological point of view, the IR-UV mixing motivates modified dispersion relations that include inverse powers of the momentum~<span class="citation" data-cites="Matusis:2000jf">[<a href="#ref-Matusis:2000jf" role="doc-biblioref">MaSuTo00</a>]</span>. Such modifications would strongly affect our understanding of a broad class of experiments, including, for example, particle-physics~<span class="citation" data-cites="Amelino-Camelia:2002onw">[<a href="#ref-Amelino-Camelia:2002onw" role="doc-biblioref">AmMaYo04</a>]</span> and cold-atoms~<span class="citation" data-cites="Amelino-Camelia:2009wvc">[<a href="#ref-Amelino-Camelia:2009wvc" role="doc-biblioref">ALMT09</a>]</span> scenarios.</p>
 <ul>
 <li><p>Noncommutative quantum field theories</p></li>
 <li><p>Nonlocalities</p></li>
@@ -381,6 +400,23 @@ window.Quarto = {
 
 
 
+
+</div></section><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body" role="list">
+<div id="ref-Minwalla:1999px" class="csl-entry" role="listitem">
+[<strong>MiVaSe00</strong>] Minwalla S, Van Raamsdonk M, and Seiberg N 2000 <em><span class="nocase">Noncommutative perturbative dynamics</span></em> <em>JHEP</em> <strong>02</strong> 020 [doi:<a href="https://doi.org/10.1088/1126-6708/2000/02/020">10.1088/1126-6708/2000/02/020</a>]
+</div>
+<div id="ref-DimitrijevicCiric:2024qew" class="csl-entry" role="listitem">
+[<strong>DNRS24</strong>] Dimitrijević Ćirić M, Nikolić B, Radovanović V, Szabo R J, and Trojani G 2024 <em><span>Braided Scalar Quantum Electrodynamics</span></em> <em>Fortsch. Phys.</em> <strong>72</strong> 2400190 [doi:<a href="https://doi.org/10.1002/prop.202400190">10.1002/prop.202400190</a>]
+</div>
+<div id="ref-Matusis:2000jf" class="csl-entry" role="listitem">
+[<strong>MaSuTo00</strong>] Matusis A, Susskind L, and Toumbas N 2000 <em><span class="nocase">The IR / UV connection in the noncommutative gauge theories</span></em> <em>JHEP</em> <strong>12</strong> 002 [doi:<a href="https://doi.org/10.1088/1126-6708/2000/12/002">10.1088/1126-6708/2000/12/002</a>]
+</div>
+<div id="ref-Amelino-Camelia:2002onw" class="csl-entry" role="listitem">
+[<strong>AmMaYo04</strong>] Amelino-Camelia G, Mandanici G, and Yoshida K 2004 <em><span class="nocase">On the IR / UV mixing and experimental limits on the parameters of canonical noncommutative space-times</span></em> <em>JHEP</em> <strong>01</strong> 037 [doi:<a href="https://doi.org/10.1088/1126-6708/2004/01/037">10.1088/1126-6708/2004/01/037</a>]
+</div>
+<div id="ref-Amelino-Camelia:2009wvc" class="csl-entry" role="listitem">
+[<strong>ALMT09</strong>] Amelino-Camelia G, Laemmerzahl C, Mercati F, and Tino G M 2009 <em><span class="nocase">Constraining the Energy-Momentum Dispersion Relation with Planck-Scale Sensitivity Using Cold Atoms</span></em> <em>Phys. Rev. Lett.</em> <strong>103</strong> 171302 [doi:<a href="https://doi.org/10.1103/PhysRevLett.103.171302">10.1103/PhysRevLett.103.171302</a>]
+</div>
 </div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
