@@ -250,13 +250,23 @@
     "href": "doc/IR-UV_mixing.html",
     "title": "IR-UV mixing",
     "section": "",
-    "text": "Quantum gravity theories usually introduce severe ultraviolet (UV) modifications with respect to standard quantum field theories. In many cases, including string theory and noncommutative approaches, these modifications turn out to affect also the dynamics of the physics in the infrared (IR) region~[MiVaSe00].\nIn particular, it has been shown that a feature rendering these theories (or a given Feynman diagram) UV renormalizable, could generate instabilities in the IR region~[MiVaSe00]. This phenomenon usually shows up already at the first perturbative order as an IR singularity proportional to an inverse power of an external momentum. This singularity will affect thus the subsequent perturbative orders, resulting in new types of divergences which cannot be treated within the usual renormalization schemes. In this sense, the IR and UV regimes are no longer independent, i.e. they are mixed.\nThe IR-UV mixing is frequently associated to non-locality in quantum field theories; in effect, in a quantum theory of gravity, the presence of the latter is expected, given the long-range character of the gravitational force and the impossibility to screen it.\nOnly a few ways to avoid this phenomenon have been found within particular field theories, at least to the first perturbative orders~[DNRS24]. The IR-UV mixing has also recently been studied as a way to alleviate the hierarchy problem~[Craig:2019zbn?].\nFrom a phenomenological point of view, the IR-UV mixing motivates modified dispersion relations that include inverse powers of the momentum~[MaSuTo00]. Such modifications would strongly affect our understanding of a broad class of experiments, including, for example, particle-physics~[AmMaYo04] and cold-atoms~[ALMT09] scenarios.\nKeywords already accepted as 2nd level topics:\nProposed keywords not cited in the text, to be considered as further 2nd-level topics:"
+    "text": "Quantum gravity theories usually introduce severe ultraviolet (UV) modifications with respect to standard quantum field theories. In many cases, including string theory and noncommutative approaches, these modifications turn out to affect also the dynamics of the physics in the infrared (IR) region~[MiVaSe00].\nIn particular, it has been shown that a feature rendering these theories (or a given Feynman diagram) UV renormalizable, could generate instabilities in the IR region~[MiVaSe00]. This phenomenon usually shows up already at the first perturbative order as an IR singularity proportional to an inverse power of an external momentum. This singularity will affect thus the subsequent perturbative orders, resulting in new types of divergences which cannot be treated within the usual renormalization schemes. In this sense, the IR and UV regimes are no longer independent, i.e. they are mixed.\nThe IR-UV mixing is frequently associated to non-locality in quantum field theories; in effect, in a quantum theory of gravity, the presence of the latter is expected, given the long-range character of the gravitational force and the impossibility to screen it.\nOnly a few ways to avoid this phenomenon have been found within particular field theories, at least to the first perturbative orders~[DNRS24]. The IR-UV mixing has also recently been studied as a way to alleviate the hierarchy problem~[Craig:2019zbn?].\nFrom a phenomenological point of view, the IR-UV mixing motivates modified dispersion relations that include inverse powers of the momentum~[MaSuTo00]. Such modifications would strongly affect our understanding of a broad class of experiments, including, for example, particle-physics~[AmMaYo04] and cold-atoms~[ALMT09] scenarios.\nKeywords already accepted as 2nd level topics:\nProposed keywords not cited in the text, to be considered as further 2nd-level topics:",
+    "crumbs": [
+      "Topics",
+      "First level topics",
+      "IR-UV mixing"
+    ]
   },
   {
     "objectID": "doc/IR-UV_mixing.html#authors",
     "href": "doc/IR-UV_mixing.html#authors",
     "title": "IR-UV mixing",
     "section": "List of Authors",
-    "text": "List of Authors\n\n\nSebastián Franchino-Viñas\nJean-Christophe Wallet\nTajron Jurić"
+    "text": "List of Authors\n\n\nSebastián Franchino-Viñas\nJean-Christophe Wallet\nTajron Jurić",
+    "crumbs": [
+      "Topics",
+      "First level topics",
+      "IR-UV mixing"
+    ]
   }
 ]
