@@ -16,6 +16,7 @@ website:
             - href: "doc/invacuo_dispersion.qmd"
             - href: "doc/LIV_DSR.qmd"
             - href: "doc/Gravitationally-induced_quantum_effects.qmd"
+            - href: "doc/equivalence_principle.qmd"
          - section: "Second level topics"
            contents:
             - auto: "doc/2ndlevel/*.qmd"
