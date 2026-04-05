@@ -48,82 +48,82 @@
     ]
   },
   {
-    "objectID": "doc/invacuo_dispersion.html",
-    "href": "doc/invacuo_dispersion.html",
-    "title": "In-vacuo dispersion",
+    "objectID": "doc/Emergent_nonclassical_and_fuzzy_spacetime.html",
+    "href": "doc/Emergent_nonclassical_and_fuzzy_spacetime.html",
+    "title": "Bridge QG Vademecum - Emergent, Nonclassical and Fuzzy Spacetime",
     "section": "",
-    "text": "In-vacuo dispersion is an effect related to the hypothesis of a quantum gravity scale modified dispersion relation (MDR), which is described by the Hamiltonian of a relativistic particle characterizing its propagation in a quantum spacetime. Deviations from the general relativistic dispersion relations are often (but not always) associated with either the violation or deformation of relativistic symmetries. The core idea is to describe the effects of quantum gravity as a deformation of the classical trajectory of particles—a deformation that grows with the particle’s energy and is suppressed by the quantum gravity energy scale [AEMN98, Ad22].\nSince, in the context of quantum gravity, the relevant energies are ultra-relativistic, one can often focus on the massless case. For certain types of MDRs, the speed of a massless particle becomes energy-dependent in vacuum, which is the origin of the effect’s name.\nFor this reason, if particles are emitted from a given source with an energy difference, they arrive at a detector with a time difference proportional to the product of the energy difference and the propagation distance, but suppressed by the quantum gravity energy scale. This is a quantum spacetime-induced time delay effect, analogously to what the propagation of light through a medium (\\(\\eta\\) – phenomenological parameter, \\(M_P\\) –Planck mass, \\(D(z)\\) – redshift-dependent distance factor)\n\\[\n\\Delta t = \\eta D(z) \\frac{\\Delta E}{M_P}\n\\]\nIf these particles propagate over cosmological distances, even a modification suppressed by the Planck scale could produce a measurable effect with modern telescopes.\nDifferent formulations of the time delay effect have been proposed based on various hypotheses, such as the coupling between the energy-momentum of the particle and the spacetime metric, the local symmetries of spacetime, and the redshift dependence of the quantum gravity scale [Ad22].",
+    "text": "Classical spacetime in General Relativity is a smooth differentiable manifold with well-defined locality and causal structure. Quantum gravity frameworks suggest instead that spacetime is not fundamental; typically, we read/write that ``it emerges from more primitive, non-geometric degrees of freedom’’. We should make sense of these words by indicating examples from theoretical frameworks.\n#Spacetime Ingredients\nTo appreciate the variety of work and ideas on quantum/emergent/fuzzy spacetime and geometry, it is useful to identify first the various ingredients that concur to the characterization of spacetime, in our best model for its nature and dynamics, i.e. classical General Relativity. Spacetime is characterized in terms of: a topological manifold of given dimensionality, a differentiable structure, a signature (usually Minkowskian/Lorentzian), smooth dynamical fields including the metric, which defines spacetime geometry, and matter/interaction fields.\nDiffeomorphism invariance can be then understood as implying that: 1) all diffeocovariant quantities, in particular the metric and matter fields, have to be dynamical; 2) the only possibly non-dynamical structures have to be diffeoinvariant, e.g. the topological manifold, the differentiable structure, the signature; 3) manifold points, directions, coordinates have no intrinsic physical meaning unless understood as a convenient idealization of values of physical/dynamical quantities, i.e. physical frames.\nDifferent research directions then can be identified depending on which of the above “spacetime ingredients” are treated as dynamical, quantum or emergent.\nThe different categories are not exclusive, but rather organize different, possibly complementary aspects and lines of investigation; for example, one category may imply another as a particular regime or approximation.\n#Nonclassical or quantum spacetime\nOne has a quantum spacetime when one or more of the (dynamical or nondynamical) physical structures characterizing spacetime in GR (and other theories of gravity) are treated in a quantum way. The main example is of course, any formalism that just proceeds to “quantize GR”, i.e. to promote GR itself to a quantum theory of a dynamical quantum metric field (equivalently, quantum tetrad, quantum connection, etc), leaving a priori other structures like topology, signature, dimension, as non-dynamical and, in principle, classical.\nIt is not guaranteed that, by doing so, one does indeed leave such structures untouched or that no new “spacetime structures” are introduced, generalising the metric and matter fields of GR. But the point remains that, at the very least, metric and matter fields will then be subject to quantum properties: superposition and fluctuations, discretization of observable spectra, entanglement, contextuality, etc.\nBecause the spacetime geometry, at least in the classical continuum context, is almost identified with the causal structure of spacetime, this implies that the causal structure is also subject to quantum properties, on top of being dynamical like in GR.\nExamples are many, taken from both traditional and modern quantum gravity approaches. The conceptual and phenomenological implications are many and profound.\n#Fuzzy Spacetime\nBy “fuzzy spacetime” one may intend to identify a situation in which the spacetime geometry is not dynamical (or at least its dynamics is not the primary concern), but the very notion of spacetime localization as normally embodied in a set of coordinate functions is subject to a quantum treatment. More generally, by promoting to a quantum treatment the general algebra of functions on a manifold, one is generally promoting the whole kinematical basis of General relativity to the quantum domain, i.e. manifold, fields, and coordinates. Depending on the specific implementation, this can be seen just as a first step toward a full quantum gravity or quantum spacetime set-up, equivalently as a first implication of such a fundamental theory onto our usual description of spacetime, or, alternatively, it could go much further toward the development of such a theory. It comes already with many physical consequences: fundamental limits on spacetime resolution and localization, deformed spacetime symmetries, dispersion laws, modifications of the field theory framework for matter and gauge interactions, etc. By those, fuzzy spacetime can serve as a bridge between the fundamental theory and observable phenomenological consequences.\n#Emergent spacetime\nOne customarily talks of an emergent spacetime scenario when one or more of the spacetime ingredients, normally at least the geometry and matter fields, are understood as “emerging” from the collective, dynamical and quantum behaviour of a different kind of “pregeometric” or “nonspatiotemporal” entities/structures. The way this comes about (involving averaging or coarse-graining, hydrodynamic/thermodynamic approximations, specific limiting procedures) depends on the formalism and obviously on the specific proposal for the more fundamental entities/structures. These range from minimal generalizations of the smooth fields of GR, e.g. piecewise-flat or piecewise-degenerate fields, to purely combinatorial structures, like posets or cellular complexes, often endowed with algebraic, rather than geometric, data. Depending on the specific context, more, if not all, of the usual spacetime ingredients of GR acquire a necessarily approximate, nonfundamental character. Moreover, the role of strictly quantum properties, e.g. entanglement, in “reconstructing” (and in a way defining) such spacetime ingredients, e.g. geometry itself, becomes crucial. Additional mathematical and conceptual challenges are brought forward, in this kind of scenario, with respect to quantum or fuzzy spacetime formalisms, but it opens the way also to more radical conceptual advances and phenomenological possibilities. It should be distinguished from an “emergent gravity” scenario, where it is only curvature, i.e. gravitational interaction, that emerges as a collective notion, possibly from standard spacetime structures or dynamical fields, rather than spacetime itself. Examples of the latter would be Sakharov’s induced gravity or analogue gravity models in condensed matter systems, as currently developed.\n#Emergent Geometry from Entanglement\n#Emergent Geometry from Correlations\nThe metric is effectively reconstructed at leading order from the two-point correlations of the gravitational fluctuations, and the spacetime emerges from the web of correlations between all points in spacetime. Higher-order correlations reveal the finer structure of the emergent metric and potentially non-metric fluctuations.\n##Causal Fermion Systems is the prime example here, with work by Kempf et al. going into a similar direction.\n##Quantum Information theoretic models}: 1)Quantum circuit complexity correlates with emergent geometric quantities (e.g., volumes, actions), or scrambling dynamics generating effective causal structures, relevant for black hole physics and quantum gravity simulations.\n##Towards a Unified Picture\nDo we need it? e.g., is it meaningful to identify conceptual/theoretical layers in emergence like micro/meso/macro-scopic? Nonclassicality and fuzziness measure the deviation between these layers? What are the common principles in the field? What radical differences?\nSecond Level Topics",
     "crumbs": [
       "Topics",
       "First level topics",
-      "In-vacuo dispersion"
+      "Bridge QG Vademecum - Emergent, Nonclassical and Fuzzy Spacetime"
     ]
   },
   {
-    "objectID": "doc/invacuo_dispersion.html#authors",
-    "href": "doc/invacuo_dispersion.html#authors",
-    "title": "In-vacuo dispersion",
+    "objectID": "doc/Emergent_nonclassical_and_fuzzy_spacetime.html#authors",
+    "href": "doc/Emergent_nonclassical_and_fuzzy_spacetime.html#authors",
+    "title": "Bridge QG Vademecum - Emergent, Nonclassical and Fuzzy Spacetime",
     "section": "List of Authors",
-    "text": "List of Authors\n\n\nIarley Pereira Lobo\nChristian Pfeifer",
+    "text": "List of Authors\n\n\nBekir Baytaş\nGoffredo Chirco\nBranko Dragovich\nSamuel Kováčik\nEtera Livine\nFedele Lizzi\nAntonino Marcianò\nPaulo Moniz\nDaniele Oriti\nClaudio Paganini\nRoman Pasechnik\nSaeed Rastgoo\nJean-Christophe Wallet",
     "crumbs": [
       "Topics",
       "First level topics",
-      "In-vacuo dispersion"
+      "Bridge QG Vademecum - Emergent, Nonclassical and Fuzzy Spacetime"
     ]
   },
   {
-    "objectID": "doc/Examples/example1.html",
-    "href": "doc/Examples/example1.html",
-    "title": "How to write a page using Quarto Markdown",
+    "objectID": "doc/Examples/example2.html",
+    "href": "doc/Examples/example2.html",
+    "title": "Allowed LaTeX syntax for page writing",
     "section": "",
-    "text": "GitHub Pages transforms plain text files into HTML webpages. In this template, files use the .qmd extension and follow Quarto Markdown syntax. Below are examples of the most commonly used formatting structures.",
+    "text": "In the scientific community, it is very common to have texts, equations, and full documents already written in LaTeX. This implies that one needs to translate such content to the Quarto Markdown syntax explained in the previous guide. However, this template allows for the use of some simple LaTeX syntax (in combination with native syntax), which is converted on the fly to the correct Quarto Markdown format. This document serves as both a guide and a test file for the translation rules. It is written using the supported LaTeX commands to explain exactly how the transformation works.",
     "crumbs": [
       "Examples",
-      "How to write a page using Quarto Markdown"
+      "Allowed LaTeX syntax for page writing"
     ]
   },
   {
-    "objectID": "doc/Examples/example1.html#this-is-a-subsection",
-    "href": "doc/Examples/example1.html#this-is-a-subsection",
-    "title": "How to write a page using Quarto Markdown",
+    "objectID": "doc/Examples/example2.html#this-is-a-subsection",
+    "href": "doc/Examples/example2.html#this-is-a-subsection",
+    "title": "Allowed LaTeX syntax for page writing",
     "section": "This is a subsection",
-    "text": "This is a subsection\n\nThis is a sub-subsection\nTo make a section cross-referenceable, append an identifier starting with #sec- to the header. For example, typing ## Mathematical Equations {#sec-maths} allows the section to be referenced anywhere in the document using @sec-maths.",
+    "text": "This is a subsection\n\nThis is a sub-subsection\nBecause the script converts this directly into native Markdown, the system automatically generates a reference identifier for it based on the heading’s name (lowercase, using hyphens instead of spaces). This allows you to easily link back to the translated section using standard Markdown linking, such as typing [this section](#sections-and-subsections) to navigate back to this section.",
     "crumbs": [
       "Examples",
-      "How to write a page using Quarto Markdown"
+      "Allowed LaTeX syntax for page writing"
     ]
   },
   {
-    "objectID": "doc/Examples/example1.html#footnotes",
-    "href": "doc/Examples/example1.html#footnotes",
-    "title": "How to write a page using Quarto Markdown",
+    "objectID": "doc/Examples/example3.html",
+    "href": "doc/Examples/example3.html",
+    "title": "\\(\\Lambda\\)CDM Cosmological Model",
+    "section": "",
+    "text": "In order to describe an homogeneous and isotropic universe like in the framework of GR, one should solve the Einstein field equations using a homogeneous, isotropic, and expanding metric (the FLRW metric), \n\\[\nds^2 = dt^2 - a^2(t) \\left(\\frac{dr^2}{1-k r^2}+r^2 d\\Omega\\right) \\,,\n\\tag{1}\\]\n where \\(k\\) is the curvature and \\(a(t)\\) the scale factor of the universe, which is closely related to the redshift, \\(a(t)=1/(1+z(t))\\). We can use this relation to also connect the temporal coordinate to the redshift variable, \n\\[\n\\begin{aligned}\na(t) &=\\frac{1}{1+z(t)} \\\\\n    \\frac{\\dot a(t)}{a(t)} dt &= -\\frac{dz}{1+z(t)} \\\\\n    dt &= -\\frac{dz}{H(z)(1+z)} \\,,\n\\end{aligned}\n\\tag{2}\\]\n where we have defined the Hubble parameter1 as \\(H=\\dot a/a\\).",
+    "crumbs": [
+      "Examples",
+      "$\\Lambda$CDM Cosmological Model"
+    ]
+  },
+  {
+    "objectID": "doc/Examples/example3.html#authors",
+    "href": "doc/Examples/example3.html#authors",
+    "title": "\\(\\Lambda\\)CDM Cosmological Model",
+    "section": "List of Authors",
+    "text": "List of Authors\n\n\nAlbert Einstein\nIsaac Newton",
+    "crumbs": [
+      "Examples",
+      "$\\Lambda$CDM Cosmological Model"
+    ]
+  },
+  {
+    "objectID": "doc/Examples/example3.html#footnotes",
+    "href": "doc/Examples/example3.html#footnotes",
+    "title": "\\(\\Lambda\\)CDM Cosmological Model",
     "section": "Footnotes",
-    "text": "Footnotes\n\n\nFor example, this is a footnote.↩︎",
+    "text": "Footnotes\n\n\nWe will not discuss here the Hubble tension problem.↩︎",
     "crumbs": [
       "Examples",
-      "How to write a page using Quarto Markdown"
-    ]
-  },
-  {
-    "objectID": "doc/LIV_DSR.html",
-    "href": "doc/LIV_DSR.html",
-    "title": "Violation and Deformation of Relativistic Symmetries",
-    "section": "",
-    "text": "Relativistic symmetries play a central role in modern physics, but many approaches to quantum gravity suggest that these symmetries may not remain exactly the classical (local) Lorentz or Poincaré transformations of special relativity at the highest energy scales. This motivates the investigation of scenarios in which Lorentz and Poincaré symmetries are either violated or deformed. In the case of Lorentz Invariance Violation (LIV), Lorentz symmetry is broken explicitly (as in many effective field theory descriptions) or spontaneously (when fields acquire vacuum expectation values that select preferred directions in spacetime), so that physics is formulated in a preferred frame. In contrast, deformed-symmetry frameworks (DSR – Doubly (or Deformed) Special Relativity [Amel02], preserve the relativity principle but modify the transformation laws between observers by introducing an additional invariant scale (usually associated with the Planck length, \\(\\ell_P \\approx 1.61 \\times 10^{-35}\\,\\mathrm{m} \\approx 1.30 \\times 10^{-29}\\,\\mathrm{eV}^{-1}\\)). Although both approaches explore possible imprints of a quantum or discrete structure of spacetime, they lead to conceptually different kinematics and, as discussed below, to very different phenomenological expectations.\nModified Dispersion Relations (MDR) represent one of the most studied ways to depart from special-relativistic kinematics and have been extensively studied in both LIV and DSR scenarios, particularly for their phenomenological implications, even though not all LIV and DSR models necessarily feature a MDR. The most-studied LIV models typically arise from symmetry-breaking operators in effective field theory. On the other hand, DSR models often arise from constructions in which deformed spacetime symmetries are formulated within a Hopf-algebra framework encoding high-energy modifications of the Poincaré symmetry. In LIV and DSR scenarios, nontrivial/nonlinear energy-momentum conservation rules, formalized as a Modified Composition Law (MCL) { [note: this is not a standard acronym generally used in literature]} for four-momenta, have also been considered. However, while in LIV a MCL is not strictly required, in DSR it is generally considered necessary to ensure the compatibility between the relativity principle and the presence of an additional invariant scale. In DSR, the MCL admits a geometric interpretation as a rule for non-linear translations in momentum space, and it can also be understood algebraically as part of the coalgebra structure of Hopf algebras. These structures commonly appear in models with curved momentum space, noncommutative spacetimes, or quantum-group symmetries, and can lead to relative locality, namely an observer dependence of event localisation that may also arise in more general contexts. A more fundamental framework for LIV and DSR models is based on (quantum) fields in noncommutative spacetimes, which in turn allow for the study of discrete symmetry operators C (charge conjugation), P (parity), T (time reversal), and scattering amplitudes. In this context, loop corrections to tree-level diagrams often exhibit UV/IR mixing, where Lorentz-breaking (or deformation) scales, and cutoff scales interact in a non-trivial way, with potentially observable consequences. Some of these models, which may or may not imply MDRs, may also lead to a Planck-scale Generalized Heisenberg Uncertainty Principle (GUP).\nThe phenomenology associated with the LIV and DSR frameworks is markedly different. The most studied effect in both LIV and DSR scenarios is in-vacuo dispersion, arising from MDRs. However, other effects that are generally present in LIV frameworks, like threshold anomalies, vacuum birefringence, or modified decay channels, are typically highly suppressed in DSR scenarios, or not present at all if they violate the relativity principle. For example, they neither open nor close thresholds of reactions that, in LIV scenarios, may become allowed or forbidden. Astroparticle messengers (high-energy gamma rays, neutrinos, and cosmic rays), together with gravitational-wave, gravitational-lensing and black-hole observations, offer access to regimes where small departures from relativistic symmetries may accumulate or become detectable within a multimessenger approach. A generalization to expanding spacetimes of LIV models (mostly based on Hamilton geometry) and of DSR models (sometimes referred to as Triply Special Relativity in the presence of a de Sitter-invariant scale) has been developed in recent years.\nSuch effects can also manifest in the low-energy regime. In quantum mechanical systems, LIV and DSR may induce modifications in time evolution. For instance, a modified Schrödinger equation arises from modified dispersion relations, and decoherence occurs when the quantum gravity scale is treated as a stochastic quantity or when modified symmetries are present. Also, C, P, and T transformations can interact non-trivially with the LIV or DSR scales, leading to additional phenomenological signatures. Precision laboratory and collider or accelerator experiments, often aimed at measuring differences in properties between particles and antiparticles (e.g. decay times), provide complementary tests of these effects. Taken together, astroparticle, astrophysical, and low-energy laboratory probes form a broad landscape in which the implications of the deformation or violation of relativistic symmetries can be systematically explored.\nGeneral reviews of these topics can be found in [Matt05], [Amel13], [Ad22]\n\n\n\n\n\nReferences\n\n[Amel02] Amelino-Camelia G 2002 Relativity in space-times with short distance structure governed by an observer independent (Planckian) length scale Int. J. Mod. Phys. D 11 35–60 [doi:10.1142/S0218271802001330]\n\n\n[Matt05] Mattingly D 2005 Modern tests of Lorentz invariance Living Rev. Rel. 8 5 [doi:10.12942/lrr-2005-5]\n\n\n[Amel13] Amelino-Camelia G 2013 Quantum-Spacetime Phenomenology Living Rev. Rel. 16 5 [doi:10.12942/lrr-2013-5]\n\n\n[Ad22] Addazi A et al. 2022 Quantum gravity phenomenology at the dawn of the multi-messenger eraA review Prog. Part. Nucl. Phys. 125 103948 [doi:10.1016/j.ppnp.2022.103948]",
-    "crumbs": [
-      "Topics",
-      "First level topics",
-      "Violation and Deformation of Relativistic Symmetries"
-    ]
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About us",
-    "section": "",
-    "text": "COST Action CA23130 BridgeQG\n\nBridgeQG Vade Mecum Coordinators\n    Giulia Gubitosi\n    Tomislav Terzić\n    Flavio Mercati\n    Giacomo Rosati\n\n\nWebpage preparation and deployment\n    Maykoll Reyes\n\n\nPowered By\n\nGitHub Pages: Hosting and deployment infrastructure.\nQuarto: Markdown rendering, cross-referencing, and website generation.\nPandoc: Document format translation.\nBootstrap and Bootswatch: CSS support and user interface.\nMathJax: Mathematical notation rendering.\nGemini: Help writing the Lua filters.",
-    "crumbs": [
-      "About us"
+      "$\\Lambda$CDM Cosmological Model"
     ]
   },
   {
@@ -167,58 +167,82 @@
     ]
   },
   {
-    "objectID": "doc/Examples/example3.html",
-    "href": "doc/Examples/example3.html",
-    "title": "\\(\\Lambda\\)CDM Cosmological Model",
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About us",
     "section": "",
-    "text": "In order to describe an homogeneous and isotropic universe like in the framework of GR, one should solve the Einstein field equations using a homogeneous, isotropic, and expanding metric (the FLRW metric), \n\\[\nds^2 = dt^2 - a^2(t) \\left(\\frac{dr^2}{1-k r^2}+r^2 d\\Omega\\right) \\,,\n\\tag{1}\\]\n where \\(k\\) is the curvature and \\(a(t)\\) the scale factor of the universe, which is closely related to the redshift, \\(a(t)=1/(1+z(t))\\). We can use this relation to also connect the temporal coordinate to the redshift variable, \n\\[\n\\begin{aligned}\na(t) &=\\frac{1}{1+z(t)} \\\\\n    \\frac{\\dot a(t)}{a(t)} dt &= -\\frac{dz}{1+z(t)} \\\\\n    dt &= -\\frac{dz}{H(z)(1+z)} \\,,\n\\end{aligned}\n\\tag{2}\\]\n where we have defined the Hubble parameter1 as \\(H=\\dot a/a\\).",
+    "text": "COST Action CA23130 BridgeQG\n\nBridgeQG Vade Mecum Coordinators\n    Giulia Gubitosi\n    Tomislav Terzić\n    Flavio Mercati\n    Giacomo Rosati\n\n\nWebpage preparation and deployment\n    Maykoll Reyes\n\n\nPowered By\n\nGitHub Pages: Hosting and deployment infrastructure.\nQuarto: Markdown rendering, cross-referencing, and website generation.\nPandoc: Document format translation.\nBootstrap and Bootswatch: CSS support and user interface.\nMathJax: Mathematical notation rendering.\nGemini: Help writing the Lua filters.",
     "crumbs": [
-      "Examples",
-      "$\\Lambda$CDM Cosmological Model"
+      "About us"
     ]
   },
   {
-    "objectID": "doc/Examples/example3.html#authors",
-    "href": "doc/Examples/example3.html#authors",
-    "title": "\\(\\Lambda\\)CDM Cosmological Model",
-    "section": "List of Authors",
-    "text": "List of Authors\n\n\nAlbert Einstein\nIsaac Newton",
-    "crumbs": [
-      "Examples",
-      "$\\Lambda$CDM Cosmological Model"
-    ]
-  },
-  {
-    "objectID": "doc/Examples/example3.html#footnotes",
-    "href": "doc/Examples/example3.html#footnotes",
-    "title": "\\(\\Lambda\\)CDM Cosmological Model",
-    "section": "Footnotes",
-    "text": "Footnotes\n\n\nWe will not discuss here the Hubble tension problem.↩︎",
-    "crumbs": [
-      "Examples",
-      "$\\Lambda$CDM Cosmological Model"
-    ]
-  },
-  {
-    "objectID": "doc/Examples/example2.html",
-    "href": "doc/Examples/example2.html",
-    "title": "Allowed LaTeX syntax for page writing",
+    "objectID": "doc/LIV_DSR.html",
+    "href": "doc/LIV_DSR.html",
+    "title": "Violation and Deformation of Relativistic Symmetries",
     "section": "",
-    "text": "In the scientific community, it is very common to have texts, equations, and full documents already written in LaTeX. This implies that one needs to translate such content to the Quarto Markdown syntax explained in the previous guide. However, this template allows for the use of some simple LaTeX syntax (in combination with native syntax), which is converted on the fly to the correct Quarto Markdown format. This document serves as both a guide and a test file for the translation rules. It is written using the supported LaTeX commands to explain exactly how the transformation works.",
+    "text": "Relativistic symmetries play a central role in modern physics, but many approaches to quantum gravity suggest that these symmetries may not remain exactly the classical (local) Lorentz or Poincaré transformations of special relativity at the highest energy scales. This motivates the investigation of scenarios in which Lorentz and Poincaré symmetries are either violated or deformed. In the case of Lorentz Invariance Violation (LIV), Lorentz symmetry is broken explicitly (as in many effective field theory descriptions) or spontaneously (when fields acquire vacuum expectation values that select preferred directions in spacetime), so that physics is formulated in a preferred frame. In contrast, deformed-symmetry frameworks (DSR – Doubly (or Deformed) Special Relativity [Amel02], preserve the relativity principle but modify the transformation laws between observers by introducing an additional invariant scale (usually associated with the Planck length, \\(\\ell_P \\approx 1.61 \\times 10^{-35}\\,\\mathrm{m} \\approx 1.30 \\times 10^{-29}\\,\\mathrm{eV}^{-1}\\)). Although both approaches explore possible imprints of a quantum or discrete structure of spacetime, they lead to conceptually different kinematics and, as discussed below, to very different phenomenological expectations.\nModified Dispersion Relations (MDR) represent one of the most studied ways to depart from special-relativistic kinematics and have been extensively studied in both LIV and DSR scenarios, particularly for their phenomenological implications, even though not all LIV and DSR models necessarily feature a MDR. The most-studied LIV models typically arise from symmetry-breaking operators in effective field theory. On the other hand, DSR models often arise from constructions in which deformed spacetime symmetries are formulated within a Hopf-algebra framework encoding high-energy modifications of the Poincaré symmetry. In LIV and DSR scenarios, nontrivial/nonlinear energy-momentum conservation rules, formalized as a Modified Composition Law (MCL) { [note: this is not a standard acronym generally used in literature]} for four-momenta, have also been considered. However, while in LIV a MCL is not strictly required, in DSR it is generally considered necessary to ensure the compatibility between the relativity principle and the presence of an additional invariant scale. In DSR, the MCL admits a geometric interpretation as a rule for non-linear translations in momentum space, and it can also be understood algebraically as part of the coalgebra structure of Hopf algebras. These structures commonly appear in models with curved momentum space, noncommutative spacetimes, or quantum-group symmetries, and can lead to relative locality, namely an observer dependence of event localisation that may also arise in more general contexts. A more fundamental framework for LIV and DSR models is based on (quantum) fields in noncommutative spacetimes, which in turn allow for the study of discrete symmetry operators C (charge conjugation), P (parity), T (time reversal), and scattering amplitudes. In this context, loop corrections to tree-level diagrams often exhibit UV/IR mixing, where Lorentz-breaking (or deformation) scales, and cutoff scales interact in a non-trivial way, with potentially observable consequences. Some of these models, which may or may not imply MDRs, may also lead to a Planck-scale Generalized Heisenberg Uncertainty Principle (GUP).\nThe phenomenology associated with the LIV and DSR frameworks is markedly different. The most studied effect in both LIV and DSR scenarios is in-vacuo dispersion, arising from MDRs. However, other effects that are generally present in LIV frameworks, like threshold anomalies, vacuum birefringence, or modified decay channels, are typically highly suppressed in DSR scenarios, or not present at all if they violate the relativity principle. For example, they neither open nor close thresholds of reactions that, in LIV scenarios, may become allowed or forbidden. Astroparticle messengers (high-energy gamma rays, neutrinos, and cosmic rays), together with gravitational-wave, gravitational-lensing and black-hole observations, offer access to regimes where small departures from relativistic symmetries may accumulate or become detectable within a multimessenger approach. A generalization to expanding spacetimes of LIV models (mostly based on Hamilton geometry) and of DSR models (sometimes referred to as Triply Special Relativity in the presence of a de Sitter-invariant scale) has been developed in recent years.\nSuch effects can also manifest in the low-energy regime. In quantum mechanical systems, LIV and DSR may induce modifications in time evolution. For instance, a modified Schrödinger equation arises from modified dispersion relations, and decoherence occurs when the quantum gravity scale is treated as a stochastic quantity or when modified symmetries are present. Also, C, P, and T transformations can interact non-trivially with the LIV or DSR scales, leading to additional phenomenological signatures. Precision laboratory and collider or accelerator experiments, often aimed at measuring differences in properties between particles and antiparticles (e.g. decay times), provide complementary tests of these effects. Taken together, astroparticle, astrophysical, and low-energy laboratory probes form a broad landscape in which the implications of the deformation or violation of relativistic symmetries can be systematically explored.\nGeneral reviews of these topics can be found in [Matt05], [Amel13], [Ad22]\n\n\n\n\n\nReferences\n\n[Amel02] Amelino-Camelia G 2002 Relativity in space-times with short distance structure governed by an observer independent (Planckian) length scale Int. J. Mod. Phys. D 11 35–60 [doi:10.1142/S0218271802001330]\n\n\n[Matt05] Mattingly D 2005 Modern tests of Lorentz invariance Living Rev. Rel. 8 5 [doi:10.12942/lrr-2005-5]\n\n\n[Amel13] Amelino-Camelia G 2013 Quantum-Spacetime Phenomenology Living Rev. Rel. 16 5 [doi:10.12942/lrr-2013-5]\n\n\n[Ad22] Addazi A et al. 2022 Quantum gravity phenomenology at the dawn of the multi-messenger eraA review Prog. Part. Nucl. Phys. 125 103948 [doi:10.1016/j.ppnp.2022.103948]",
     "crumbs": [
-      "Examples",
-      "Allowed LaTeX syntax for page writing"
+      "Topics",
+      "First level topics",
+      "Violation and Deformation of Relativistic Symmetries"
     ]
   },
   {
-    "objectID": "doc/Examples/example2.html#this-is-a-subsection",
-    "href": "doc/Examples/example2.html#this-is-a-subsection",
-    "title": "Allowed LaTeX syntax for page writing",
+    "objectID": "doc/Examples/example1.html",
+    "href": "doc/Examples/example1.html",
+    "title": "How to write a page using Quarto Markdown",
+    "section": "",
+    "text": "GitHub Pages transforms plain text files into HTML webpages. In this template, files use the .qmd extension and follow Quarto Markdown syntax. Below are examples of the most commonly used formatting structures.",
+    "crumbs": [
+      "Examples",
+      "How to write a page using Quarto Markdown"
+    ]
+  },
+  {
+    "objectID": "doc/Examples/example1.html#this-is-a-subsection",
+    "href": "doc/Examples/example1.html#this-is-a-subsection",
+    "title": "How to write a page using Quarto Markdown",
     "section": "This is a subsection",
-    "text": "This is a subsection\n\nThis is a sub-subsection\nBecause the script converts this directly into native Markdown, the system automatically generates a reference identifier for it based on the heading’s name (lowercase, using hyphens instead of spaces). This allows you to easily link back to the translated section using standard Markdown linking, such as typing [this section](#sections-and-subsections) to navigate back to this section.",
+    "text": "This is a subsection\n\nThis is a sub-subsection\nTo make a section cross-referenceable, append an identifier starting with #sec- to the header. For example, typing ## Mathematical Equations {#sec-maths} allows the section to be referenced anywhere in the document using @sec-maths.",
     "crumbs": [
       "Examples",
-      "Allowed LaTeX syntax for page writing"
+      "How to write a page using Quarto Markdown"
+    ]
+  },
+  {
+    "objectID": "doc/Examples/example1.html#footnotes",
+    "href": "doc/Examples/example1.html#footnotes",
+    "title": "How to write a page using Quarto Markdown",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nFor example, this is a footnote.↩︎",
+    "crumbs": [
+      "Examples",
+      "How to write a page using Quarto Markdown"
+    ]
+  },
+  {
+    "objectID": "doc/invacuo_dispersion.html",
+    "href": "doc/invacuo_dispersion.html",
+    "title": "In-vacuo dispersion",
+    "section": "",
+    "text": "In-vacuo dispersion is an effect related to the hypothesis of a quantum gravity scale modified dispersion relation (MDR), which is described by the Hamiltonian of a relativistic particle characterizing its propagation in a quantum spacetime. Deviations from the general relativistic dispersion relations are often (but not always) associated with either the violation or deformation of relativistic symmetries. The core idea is to describe the effects of quantum gravity as a deformation of the classical trajectory of particles—a deformation that grows with the particle’s energy and is suppressed by the quantum gravity energy scale [AEMN98, Ad22].\nSince, in the context of quantum gravity, the relevant energies are ultra-relativistic, one can often focus on the massless case. For certain types of MDRs, the speed of a massless particle becomes energy-dependent in vacuum, which is the origin of the effect’s name.\nFor this reason, if particles are emitted from a given source with an energy difference, they arrive at a detector with a time difference proportional to the product of the energy difference and the propagation distance, but suppressed by the quantum gravity energy scale. This is a quantum spacetime-induced time delay effect, analogously to what the propagation of light through a medium (\\(\\eta\\) – phenomenological parameter, \\(M_P\\) –Planck mass, \\(D(z)\\) – redshift-dependent distance factor)\n\\[\n\\Delta t = \\eta D(z) \\frac{\\Delta E}{M_P}\n\\]\nIf these particles propagate over cosmological distances, even a modification suppressed by the Planck scale could produce a measurable effect with modern telescopes.\nDifferent formulations of the time delay effect have been proposed based on various hypotheses, such as the coupling between the energy-momentum of the particle and the spacetime metric, the local symmetries of spacetime, and the redshift dependence of the quantum gravity scale [Ad22].",
+    "crumbs": [
+      "Topics",
+      "First level topics",
+      "In-vacuo dispersion"
+    ]
+  },
+  {
+    "objectID": "doc/invacuo_dispersion.html#authors",
+    "href": "doc/invacuo_dispersion.html#authors",
+    "title": "In-vacuo dispersion",
+    "section": "List of Authors",
+    "text": "List of Authors\n\n\nIarley Pereira Lobo\nChristian Pfeifer",
+    "crumbs": [
+      "Topics",
+      "First level topics",
+      "In-vacuo dispersion"
     ]
   },
   {
