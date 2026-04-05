@@ -50,5 +50,14 @@ Beyond entanglement, quantum gravity effects may also manifest as deviations fro
 
 ## List of Authors {id="authors" .appendix}
 
-- Iarley Pereira Lobo
-- Christian Pfeifer
+- Luciano Petruzziello
+- Martin Plavala
+- İzzet Sakallı
+- Özgür Kelekçi
+- Elias Vagenas
+- Catalina Curceanu
+- Gaetano Lambiase
+- Pasquale Bosso
+- Antonia Frassino
+- Nick Mavromatos
+- Sebastian Franchino-Viñas
