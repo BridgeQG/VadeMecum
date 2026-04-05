@@ -1,7 +1,7 @@
 ---
 title: 'Equivalence Principle, locality and quantum gravity'
 nocite: |
-  @Misner:1973prb, @Okon:2010kn, @DiCasola:2013iia, @Paunkovic:2022nkc
+  @Misner:1973prb, @Okon:2010kn, @DiCasola:2013iia, @Paunkovic:2022flx
 ---
 
 \subsubsection{Introduction and purpose}
