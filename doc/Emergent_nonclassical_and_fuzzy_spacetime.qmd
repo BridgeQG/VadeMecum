@@ -15,7 +15,7 @@ Different research directions then can be identified depending on which of the a
 The different categories are not exclusive, but rather organize different, possibly complementary aspects and lines of investigation; for example, one category may imply another as a particular regime or approximation.
 
 
-#Nonclassical or quantum spacetime
+\subsubsection{Nonclassical or quantum spacetime}
 
 One has a quantum spacetime when one or more of the (dynamical or nondynamical) physical structures characterizing spacetime in GR (and other theories of gravity) are treated in a quantum way. The main example is of course, any formalism that just proceeds to "quantize GR", i.e. to promote GR itself to a quantum theory of a dynamical quantum metric field (equivalently, quantum tetrad, quantum connection, etc), leaving a priori other structures like topology, signature, dimension, as non-dynamical and, in principle, classical. 
 
