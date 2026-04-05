@@ -1,0 +1,130 @@
+---
+title: "Bridge QG Vademecum - Emergent, Nonclassical and Fuzzy Spacetime"
+---
+
+Classical spacetime in General Relativity is a smooth differentiable manifold with well-defined locality and causal structure. Quantum gravity frameworks suggest instead that spacetime is not fundamental; typically, we read/write that ``it emerges from more primitive, non-geometric degrees of freedom''. We should make sense of these words by indicating examples from theoretical frameworks.
+
+#Spacetime Ingredients
+
+To appreciate the variety of work and ideas on quantum/emergent/fuzzy spacetime and geometry, it is useful to identify first the various ingredients that concur to the characterization of spacetime, in our best model for its nature and dynamics, i.e. classical General Relativity. Spacetime is characterized in terms of: a topological manifold of given dimensionality, a differentiable structure, a signature (usually Minkowskian/Lorentzian), smooth dynamical fields including the metric, which defines spacetime geometry, and matter/interaction fields. 
+
+Diffeomorphism invariance can be then understood as implying that: 1) all diffeocovariant quantities, in particular the metric and matter fields, have to be dynamical; 2) the only possibly non-dynamical structures have to be diffeoinvariant, e.g. the topological manifold, the differentiable structure, the signature; 3) manifold points, directions, coordinates have no intrinsic physical meaning unless understood as a convenient idealization of values of physical/dynamical quantities, i.e. physical frames. 
+
+Different research directions then can be identified depending on which of the above "spacetime ingredients" are treated as dynamical, quantum or emergent.
+
+The different categories are not exclusive, but rather organize different, possibly complementary aspects and lines of investigation; for example, one category may imply another as a particular regime or approximation.
+
+
+#Nonclassical or quantum spacetime
+
+One has a quantum spacetime when one or more of the (dynamical or nondynamical) physical structures characterizing spacetime in GR (and other theories of gravity) are treated in a quantum way. The main example is of course, any formalism that just proceeds to "quantize GR", i.e. to promote GR itself to a quantum theory of a dynamical quantum metric field (equivalently, quantum tetrad, quantum connection, etc), leaving a priori other structures like topology, signature, dimension, as non-dynamical and, in principle, classical. 
+
+It is not guaranteed that, by doing so, one does indeed leave such structures untouched or that no new "spacetime structures" are introduced, generalising the metric and matter fields of GR. But the point remains that, at the very least, metric and matter fields will then be subject to quantum properties: superposition and fluctuations, discretization of observable spectra, entanglement, contextuality, etc.
+
+Because the spacetime geometry, at least in the classical continuum context, is almost identified with the causal structure of spacetime, this implies that the causal structure is also subject to quantum properties, on top of being dynamical like in GR. 
+
+Examples are many, taken from both traditional and modern quantum gravity approaches. The conceptual and phenomenological implications are many and profound.
+
+1. *quantum superposition of geometries*, among others, superposed spin networks and superposed combinatorial "spacetime" complexes in loop quantum gravity, spin foam models and group field theory, etc Also the work towards quantum gravity in the Lab on quantum superposition of metrics and causal structures by Brukner, Giacomini and collaborators, by Bose and collaborators, etc...;
+
+1. *quantumness of geometry* intended as inherent, fundamental limits on spacetime resolution, hence failure of localization 
+at Planck scale (e.g.Connes' noncommutative geometry or $\kappa$-Minkowski space);
+
+1. Locality and microcausality as emergent properties from pregeometric quantum correlations or nonlocal interactions that coarse-grain into approximately local classical physics.
+
+#Fuzzy Spacetime
+
+By "fuzzy spacetime" one may intend to identify a situation in which the spacetime geometry is not dynamical (or at least its dynamics is not the primary concern), but the very notion of spacetime localization as normally embodied in a set of coordinate functions is subject to a quantum treatment. More generally, by promoting to a quantum treatment the general algebra of functions on a manifold, one is generally promoting the whole kinematical basis of General relativity to the quantum domain, i.e. manifold, fields, and coordinates. Depending on the specific implementation, this can be seen just as a first step toward a full quantum gravity or quantum spacetime set-up, equivalently as a first implication of such a fundamental theory onto our usual description of spacetime, or, alternatively, it could go much further toward the development of such a theory. It comes already with many physical consequences: fundamental limits on spacetime resolution and localization, deformed spacetime symmetries, dispersion laws, modifications of the field theory framework for matter and gauge interactions, etc. By those, fuzzy spacetime can serve as a bridge between the fundamental theory and observable phenomenological consequences. 
+
+2. Noncommutative spacetimes (like $\kappa$-Minkowski  or fuzzy-spheres models) based on quantum group symmetries or $\star$-products leading to intrinsically smeared geometry, generalized uncertainty principles and modified dispersion relations, stochastic deformations of the light cone (dispersion relation) and of GUP;
+
+2. *discrete/quantized geometric spectra* for area and volume operators in
+Loop quantum gravity, inherent minimal resolution of spacetime;
+{\bf D: I think this falls both under quantum spacetime and fuzzy spacetime*
+
+2. *condensate and hydrodynamic fuzziness*, e.g., group field theory (GFT) condensates, where spacetime emerges as an effective hydrodynamic medium with geometric observables given by expectation values subject to quantum fluctuations determined by entanglement structure.
+
+2. Stochastic nature of the quantum gravity scale deformation parameter. When this is assumed in metric perturbations, generalized uncertainty principle or modified dispersion relations, it leads to decoherence of quantum systems. It has also been studied in the time of flight of gamma rays in time delay phenomenology.
+
+2. Images from distant sources can be blurred, and laser interferometry has an extra noise due to spacetime fuzzyness.
+
+
+#Emergent spacetime
+
+One customarily talks of an emergent spacetime scenario when one or more of the spacetime ingredients, normally at least the geometry and matter fields, are understood as "emerging" from the collective, dynamical and quantum behaviour of a different kind of "pregeometric" or "nonspatiotemporal" entities/structures. The way this comes about (involving averaging or coarse-graining, hydrodynamic/thermodynamic approximations, specific limiting procedures) depends on the formalism and obviously on the specific proposal for the more fundamental entities/structures. These range from minimal generalizations of the smooth fields of GR, e.g. piecewise-flat or piecewise-degenerate fields, to purely combinatorial structures, like posets or cellular complexes, often endowed with algebraic, rather than geometric, data. Depending on the specific context, more, if not all, of the usual spacetime ingredients of GR acquire a necessarily approximate, nonfundamental character. Moreover, the role of strictly quantum properties, e.g. entanglement, in "reconstructing" (and in a way defining) such spacetime ingredients, e.g. geometry itself, becomes crucial.
+Additional mathematical and conceptual challenges are brought forward, in this kind of scenario, with respect to quantum or fuzzy spacetime formalisms, but it opens the way also to more radical conceptual advances and phenomenological possibilities. It should be distinguished from an "emergent gravity" scenario, where it is only curvature, i.e. gravitational interaction, that emerges as a collective notion, possibly from standard spacetime structures or dynamical fields, rather than spacetime itself. Examples of the latter would be Sakharov's induced gravity or analogue gravity models in condensed matter systems, as currently developed.
+
+
+#Emergent Geometry from Entanglement
+
+3. *Interface Quantum Information-(Quantum) Gravity*, e.g. the work by Van Raamsdonk, etc...
+
+3. *(quantum) spacetime thermodynamics*, e.g., work on the flux of entropy and the generalized second law in general relativity by Wald, Wall and others, Jacobson's induced gravity framework, black hole statistical mechanics from boundary quantum gravitational degrees of freedom (edge modes), etc...
+
+3. *AdS/CFT holographic perspective* with entanglement entropy encoding bulk geometric data via the Ryu--Takayanagi formula and bulk locality arises from quantum error-correcting properties of the boundary theory;
+
+3. *tensor networks* encoding of geometric quantities (distances, curvature) in patterns of entanglement,  Fisher information metric as an emergent Riemannian structure on the state manifold, etc...;
+
+#Emergent Geometry from Correlations
+
+The metric is effectively reconstructed at leading order from the two-point correlations of the gravitational fluctuations, and the spacetime emerges from the web of correlations between all points in spacetime. Higher-order correlations reveal the finer structure of the emergent metric and potentially non-metric fluctuations.
+
+##Causal Fermion Systems
+is the prime example here, with work by Kempf et al. going into a similar direction.
+
+##Quantum Information theoretic models}: 1)*Quantum circuit complexity*
+correlates with emergent geometric quantities (e.g.,\ volumes, actions), or scrambling dynamics generating effective causal structures, relevant for black hole physics and quantum gravity simulations.
+
+##Towards a Unified Picture
+
+Do we need it? e.g., is it meaningful to identify conceptual/theoretical layers in emergence like *micro/meso/macro*-scopic?
+Nonclassicality and fuzziness measure the deviation between these layers? What are the common principles in the field? What radical differences?
+
+
+Second Level Topics
+
+- quantum causality
+
+- dynamical topology
+
+- dynamical signature
+
+- dynamical dimension
+
+- quantum geometry and spacetime discreteness
+
+- prespacetime/geometric structures
+
+- relational observables and (quantum) reference frames
+
+- entanglement/geometry correspondence
+
+- emergent spacetime/gravitational dynamics
+
+- gravity as thermodynamics/hydrodynamics
+
+- noncommutative spacetime and quantum symmetries 
+
+- matrix models
+
+-  coarse-graining geometric structures, renormalization group flow
+
+- phases of geometry, phase diagrams of quantum gravity theories
+
+
+
+
+## List of Authors {id="authors" .appendix}
+- Bekir Baytaş
+- Goffredo Chirco
+- Branko Dragovich
+- Samuel Kováčik
+- Etera Livine
+- Fedele Lizzi
+- Antonino Marcianò
+- Paulo Moniz
+- Daniele Oriti
+- Claudio Paganini
+- Roman Pasechnik
+- Saeed Rastgoo
+- Jean-Christophe Wallet
