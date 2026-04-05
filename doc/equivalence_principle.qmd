@@ -4,19 +4,19 @@ nocite: |
   @Misner:1973prb, @Okon:2010kn, @DiCasola:2013iia, @Paunkovic:2022nkc
 ---
 
-\section{Introduction and purpose}
+\subsubsection{Introduction and purpose}
 
-The purpose of the equivalence principle (EP) is to \emph{prescribe the interaction between gravity and matter}, i.e., between gravitational and non-gravitational degrees of freedom in nature. EP is one of the most fundamental principles in modern physics, a cornerstone of Einstein's theory of \underline{general relativity} and of the \underline{Standard Model} of elementary particle physics.
+The purpose of the equivalence principle (EP) is to \textit{prescribe the interaction between gravity and matter}, i.e., between gravitational and non-gravitational degrees of freedom in nature. EP is one of the most fundamental principles in modern physics, a cornerstone of Einstein's theory of [general relativity](https://en.wikipedia.org/wiki/General_relativity) and of the [Standard Model](https://en.wikipedia.org/wiki/Standard_Model) of elementary particle physics.
 
-\section{The statement of EP}
+\subsubsection{The statement of EP}
 
 In its most general and abstract form, the equivalence principle states:
-\begin{center}
-\emph{The equations of motion for matter coupled to gravity are locally identical \\ to the equations of motion for matter in the absence of gravity.}
-\end{center}
-Here, the notion of \underline{\emph{locality}} refers to an infinitesimally small region around a single point in spacetime, in which the dynamics of matter is being discussed.
 
-\section{Various flavors of EP}
+\textit{The equations of motion for matter coupled to gravity are locally identical to the equations of motion for matter in the absence of gravity}.
+
+Here, the notion of [\textit{locality}](/doc/2ndlevel/locality.qmd) refers to an infinitesimally small region around a single point in spacetime, in which the dynamics of matter is being discussed.
+
+\subsubsection{Various flavors of EP}
 
 Depending on the details on how one chooses to describe gravity, matter, and equations of motion, the above abstract statement of EP can be rephrased in various (inequivalent) ways. The most common \underline{flavors} are as follows:
 \begin{itemize}
