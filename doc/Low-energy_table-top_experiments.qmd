@@ -14,7 +14,7 @@ Thanks to rapid advances in quantum technologies, systems such as quantum optome
 
 ## List of Authors {id="authors" .appendix}
 
-- Cătălina Oana Curceanu
+- Catalina Oana Curceanu
 - Luciano Petruzziello
 - Saurya Das
 - Tammay Kumar Poddar
