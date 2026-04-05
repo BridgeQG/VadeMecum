@@ -40,7 +40,6 @@ By "fuzzy spacetime" one may intend to identify a situation in which the spaceti
 
 2. *discrete/quantized geometric spectra* for area and volume operators in
 Loop quantum gravity, inherent minimal resolution of spacetime;
-{\bf D: I think this falls both under quantum spacetime and fuzzy spacetime*
 
 2. *condensate and hydrodynamic fuzziness*, e.g., group field theory (GFT) condensates, where spacetime emerges as an effective hydrodynamic medium with geometric observables given by expectation values subject to quantum fluctuations determined by entanglement structure.
 
