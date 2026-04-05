@@ -31,4 +31,7 @@ Depending on the details on how one chooses to describe gravity, matter, and equ
 
 In addition to gravity, a variant of the strong EP can be formulated for \underline{strong}, \underline{weak} and \underline{electromagnetic} interaction, and is implemented in the \underline{\emph{Standard Model}} of elementary particle physics. In the context of \underline{\emph{quantum gravity}} research, formulating the \underline{quantum EP} represents an active research topic.
 
+## List of Authors {id="authors" .appendix}
 
+- Nikola Paunkovic
+- Marko Vojinovic
