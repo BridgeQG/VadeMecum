@@ -15,7 +15,7 @@ website:
             - href: "doc/Low-energy_table-top_experiments.qmd"
             - href: "doc/invacuo_dispersion.qmd"
             - href: "doc/LIV_DSR.qmd"
-            - href: "doc/blablabla2.qmd"
+            - href: "doc/Gravitationally-induced_quantum_effects.qmd"
          - section: "Second level topics"
            contents:
             - auto: "doc/2ndlevel/*.qmd"
