@@ -26,3 +26,9 @@ Depending on the details on how one chooses to describe gravity, matter, and equ
 \item \underline{Weak EP} --- geodesic trajectories of free particles. Matter is described by point particles, equations of motion are geodesic equations in a given curved background geometry, and gravity is described as the curvature of spacetime. EP is rephrased as a statement that locally one cannot distinguish between a geodesic in curved spacetime and a straight line in flat spacetime.
 \item \underline{Strong EP} --- minimal coupling between matter fields and gravity. Both matter and gravity are described as fields over the spacetime manifold. The equations of motion are implicit, but assumed to be local. EP is rephrased as a restriction that matter does not couple directly to spacetime curvature, but only to the metric and connection, in the equations of motion for matter fields.
 \end{itemize}
+
+\section{Generalizations of EP}
+
+In addition to gravity, a variant of the strong EP can be formulated for \underline{strong}, \underline{weak} and \underline{electromagnetic} interaction, and is implemented in the \underline{\emph{Standard Model}} of elementary particle physics. In the context of \underline{\emph{quantum gravity}} research, formulating the \underline{quantum EP} represents an active research topic.
+
+
