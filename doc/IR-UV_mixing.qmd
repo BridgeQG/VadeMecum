@@ -1,3 +1,7 @@
+---
+title: IR-UV mixing
+---
+
 Quantum gravity theories usually introduce severe  ultraviolet (UV) modifications with respect to standard quantum field theories. In many cases, including string theory and noncommutative approaches, these modifications turn out to affect also the dynamics of the physics in the infrared (IR) region~\cite{Minwalla:1999px}.
 \medskip
 
@@ -20,3 +24,6 @@ From a phenomenological point of view, the IR-UV mixing motivates modified dispe
 - Hierarchy problem
 - Renormalizability
 - Modified dispersion relations
+
+
+## List of Authors {id="authors" .appendix}
