@@ -8,17 +8,21 @@ In particular, it has been shown that a feature rendering these theories (or a g
 
 The IR-UV mixing is frequently associated to non-locality in quantum field theories; in effect, in a quantum theory of gravity, the presence of the latter is expected, given the long-range character of the gravitational force and the impossibility to screen it. 
 
-Only a few ways to avoid this phenomenon have been found  within particular field theories, at least to the first perturbative orders~\cite{DimitrijevicCiric:2024qew}. The IR-UV mixing has also recently been studied as a way to alleviate the hierarchy problem~\cite{Craig:2019zbn}.
+Only a few ways to avoid this phenomenon have been found  within particular field theories, at least to the first perturbative orders~\cite{DimitrijevicCiric:2024qew}. The IR-UV mixing has also recently been studied as a way to alleviate the [hierarchy problem](/doc/2ndlevel/Hierarchy_problem.qmd)~\cite{Craig:2019zbn}.
  
-From a phenomenological point of view, the IR-UV mixing motivates modified dispersion relations that include inverse powers of the momentum~\cite{Matusis:2000jf}. Such modifications would strongly affect our understanding of a broad class of experiments, including,  for example, particle-physics~\cite{Amelino-Camelia:2002onw} and cold-atoms~\cite{Amelino-Camelia:2009wvc} scenarios.
+From a phenomenological point of view, the IR-UV mixing motivates [modified dispersion relations](/doc/2ndlevel/Modified_dispersion_relations.qmd) that include inverse powers of the momentum~\cite{Matusis:2000jf}. Such modifications would strongly affect our understanding of a broad class of experiments, including,  for example, particle-physics~\cite{Amelino-Camelia:2002onw} and cold-atoms~\cite{Amelino-Camelia:2009wvc} scenarios.
 
+Keywords already accepted as 2nd level topics:
+
+- Modified dispersion relations
+- Hierarchy problem
+
+Proposed keywords not cited in the text, to be considered as further 2nd-level topics:
 
 - Noncommutative quantum field theories
 - Nonlocalities
 - String theory
-- Hierarchy problem
 - Renormalizability
-- Modified dispersion relations
 
 
 ## List of Authors {id="authors" .appendix}
