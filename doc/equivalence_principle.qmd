@@ -1,0 +1,9 @@
+---
+title: 'Equivalence Principle, locality and quantum gravity'
+nocite: |
+  @Misner:1973prb, @Okon:2010kn, @DiCasola:2013iia, @Paunkovic:2022nkc
+---
+
+\section{Introduction and purpose}
+
+The purpose of the equivalence principle (EP) is to \emph{prescribe the interaction between gravity and matter}, i.e., between gravitational and non-gravitational degrees of freedom in nature. EP is one of the most fundamental principles in modern physics, a cornerstone of Einstein's theory of \underline{general relativity} and of the \underline{Standard Model} of elementary particle physics.
