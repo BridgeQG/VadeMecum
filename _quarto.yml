@@ -24,7 +24,7 @@ website:
       - href: about.qmd
 
 bibliography: bib/references.bib
-csl: bib/american-mathematical-society-label.csl
+csl: bib/journal-of-cosmology-and-astroparticle-physics.csl
 
 project:
   type: website
