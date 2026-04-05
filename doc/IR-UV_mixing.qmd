@@ -1,0 +1,22 @@
+Quantum gravity theories usually introduce severe  ultraviolet (UV) modifications with respect to standard quantum field theories. In many cases, including string theory and noncommutative approaches, these modifications turn out to affect also the dynamics of the physics in the infrared (IR) region~\cite{Minwalla:1999px}.
+\medskip
+
+
+In particular, it has been shown that a feature rendering these theories (or a given Feynman diagram) UV renormalizable, could generate instabilities in the IR region~\cite{Minwalla:1999px}.  This phenomenon usually shows up already at the first perturbative order as an IR singularity proportional to an inverse power of an external momentum. This singularity will affect thus the subsequent perturbative orders, resulting in new types of divergences which cannot be treated within the usual renormalization schemes. In this sense, the IR and UV regimes are no longer independent, i.e. they are mixed.
+\medskip
+
+The IR-UV mixing is frequently associated to non-locality in quantum field theories; in effect, in a quantum theory of gravity, the presence of the latter is expected, given the long-range character of the gravitational force and the impossibility to screen it. 
+\medskip
+
+Only a few ways to avoid this phenomenon have been found  within particular field theories, at least to the first perturbative orders~\cite{DimitrijevicCiric:2024qew}. The IR-UV mixing has also recently been studied as a way to alleviate the hierarchy problem~\cite{Craig:2019zbn}.\\
+ 
+From a phenomenological point of view, the IR-UV mixing motivates modified dispersion relations that include inverse powers of the momentum~\cite{Matusis:2000jf}. Such modifications would strongly affect our understanding of a broad class of experiments, including,  for example, particle-physics~\cite{Amelino-Camelia:2002onw} and cold-atoms~\cite{Amelino-Camelia:2009wvc} scenarios.
+
+
+
+- Noncommutative quantum field theories
+- Nonlocalities
+- String theory
+- Hierarchy problem
+- Renormalizability
+- Modified dispersion relations
