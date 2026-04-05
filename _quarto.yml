@@ -24,7 +24,7 @@ website:
       - href: about.qmd
 
 bibliography: bib/references.bib
-csl: bib/journal-of-cosmology-and-astroparticle-physics.csl
+csl: bib/JCAP_modified.csl
 
 project:
   type: website
