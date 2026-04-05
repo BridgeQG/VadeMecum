@@ -7,3 +7,22 @@ nocite: |
 \section{Introduction and purpose}
 
 The purpose of the equivalence principle (EP) is to \emph{prescribe the interaction between gravity and matter}, i.e., between gravitational and non-gravitational degrees of freedom in nature. EP is one of the most fundamental principles in modern physics, a cornerstone of Einstein's theory of \underline{general relativity} and of the \underline{Standard Model} of elementary particle physics.
+
+\section{The statement of EP}
+
+In its most general and abstract form, the equivalence principle states:
+\begin{center}
+\emph{The equations of motion for matter coupled to gravity are locally identical \\ to the equations of motion for matter in the absence of gravity.}
+\end{center}
+Here, the notion of \underline{\emph{locality}} refers to an infinitesimally small region around a single point in spacetime, in which the dynamics of matter is being discussed.
+
+\section{Various flavors of EP}
+
+Depending on the details on how one chooses to describe gravity, matter, and equations of motion, the above abstract statement of EP can be rephrased in various (inequivalent) ways. The most common \underline{flavors} are as follows:
+\begin{itemize}
+\item \underline{Newtonian EP} --- equality of gravitational and inertial mass. Matter is described by point particles, equations of motion are Newton's laws, while gravity is described by Newton's law of universal gravity. EP is rephrased as a constraint between the parameter featuring in Newton's second law of motion and the parameter featuring in Newton's law of universal gravity.
+\item \underline{Galilean EP} --- universality of free fall. Matter is described by point particles, equations of motion are implicit and qualitative, as is the description of gravity. EP is rephrased as a comparison of the motion between different types of particles, given the same gravitational background.
+\item \underline{Einstein's EP} --- local equivalence between inertia and gravity. Matter is described mostly by point particles, equations of motion are implicit, and gravity is described as a field, uniform across a ``local laboratory''. EP is rephrased as the local indistinguishability between inertial and gravitational forces.
+\item \underline{Weak EP} --- geodesic trajectories of free particles. Matter is described by point particles, equations of motion are geodesic equations in a given curved background geometry, and gravity is described as the curvature of spacetime. EP is rephrased as a statement that locally one cannot distinguish between a geodesic in curved spacetime and a straight line in flat spacetime.
+\item \underline{Strong EP} --- minimal coupling between matter fields and gravity. Both matter and gravity are described as fields over the spacetime manifold. The equations of motion are implicit, but assumed to be local. EP is rephrased as a restriction that matter does not couple directly to spacetime curvature, but only to the metric and connection, in the equations of motion for matter fields.
+\end{itemize}
