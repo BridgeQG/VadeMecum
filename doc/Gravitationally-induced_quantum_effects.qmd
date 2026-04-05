@@ -11,19 +11,28 @@ Keywords already accepted as 2nd level topics:
 - Hawking radiation
 - Quantum superposition of massive objects
 - COW experiment
-
-- Quantum reference frames in curved space-time 
 - Quantum tests of the equivalence principle
-- Time dilation induced dephasing
+- Time-dilation induced dephasing
+- Precision measurements of short-range gravity
+
+Proposed keywords not cited in the text, to be considered as further 2nd-level topics:
+
+- Minimal length scale 
+- Lorentz symmetry breaking
+- Effective Theories of Modified Gravity & quantum Gravity
+- Measuring quantum effects of gravity
+- Modified Dispersion Relation
+- Black-hole thermodynamics
+- Quantum reference frames in curved space-time 
 - Quantum gravity signatures in gravitational wave detectors
-- {Generalized Uncertainty Principle (GUP)}
-- {Quasinormal modes and black hole stability}
-- {Gravitational lensing and weak deflection angles}
-- {Black hole shadows and photon spheres}
-- {Thermodynamic topology of black holes}
-- {Non-extensive entropies and quantum corrections}
-- {Weak Gravity Conjecture and quantum extremality}
-- {Observable signatures of quantum gravity}
+- Generalized Uncertainty Principle (GUP)
+- Quasinormal modes and black hole stability
+- Gravitational lensing and weak deflection angles
+- Black hole shadows and photon spheres
+- Thermodynamic topology of black holes
+- Non-extensive entropies and quantum corrections
+- Weak Gravity Conjecture and quantum extremality
+- Observable signatures of quantum gravity
 - Quantum switch realizations involving gravity
 - Semiclassical gravity
 - Pair creation
@@ -37,7 +46,7 @@ In the weak-gravity regime, interacting quantum systems may be described via [mo
 
 A research field closely related to the one discussed above investigates [gravity-mediated entanglement](/doc/2ndlevel/Gravity-mediated_entanglement.qmd) between distinct quantum systems. Indeed, quantum mechanics predicts that the mutual gravitational coupling of two spatially-delocalized systems is capable of generating entanglement between their positional degrees of freedom. Inspired by Feynman's proposal at the Chapel Hill conference \cite{CHAPELHILL-TOBEADDEDTOINSPIRES}, several [Gravity-mediated entanglement](/doc/2ndlevel/gravity-mediated_entanglement.qmd) tests have been recently put forward. In these works, it is argued that the observation of quantum correlations stemming from the gravitational interaction would constitute evidence for the quantum nature of gravity, since a purely classical field could only mediate local operations and classical communication (LOCC) and would therefore be unable to generate entanglement. The generality and robustness of this conclusion, however, remain the subject of active debate. 
 
-Beyond entanglement, quantum gravity effects may also manifest as deviations from the standard gravitational interaction, motivating experimental tests of the equivalence principle with quantum systems, precision measurements of short-range gravity, proposed tests of quantum time dilation and local Lorentz symmetry breakdown.
+Beyond entanglement, quantum gravity effects may also manifest as deviations from the standard gravitational interaction, motivating experimental [tests of the equivalence principle with quantum systems](/doc/2ndlevel/Quantum_tests_of_the_equivalence_principle.qmd), [precision measurements of short-range gravity](/doc/2ndlevel/Precision_measurements_of_short-range_gravity.qmd), proposed [tests of quantum time dilation](/doc/2ndlevel/Time_dilation-induced_dephasing.qmd) and local Lorentz symmetry breakdown.
 
 ## List of Authors {id="authors" .appendix}
 
