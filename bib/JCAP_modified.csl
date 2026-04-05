@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<style xmlns="http://purl.org/net/xbiblio/csl" version="1.0" class="in-text" default-locale="en-US" citation-format="label">
+  <info>
+    <title>JCAP (Citation Key Label)</title>
+    <id>http://www.zotero.org/styles/jcap-citation-key</id>
+    <link href="http://www.zotero.org/styles/jcap-citation-key" rel="self"/>
+    <link href="http://iopscience.iop.org/1475-7516" rel="documentation"/>
+    <author><name>Gemini</name></author>
+    <category citation-format="label"/>
+    <category field="physics"/>
+    <updated>2026-04-05T00:00:00+00:00</updated>
+  </info>
+
+  <macro name="author">
+    <names variable="author">
+      <name delimiter=", " initialize-with=" " and="text" name-as-sort-order="all" sort-separator=" "/>
+      <label form="short" prefix=" "/>
+      <substitute>
+        <names variable="editor"/>
+        <text variable="title"/>
+      </substitute>
+    </names>
+  </macro>
+
+  <citation>
+    <layout prefix="[" suffix="]" delimiter=", ">
+      <text variable="citation-label"/>
+    </layout>
+  </citation>
+
+  <bibliography et-al-min="10" et-al-use-first="1">
+    <layout>
+      <text variable="citation-label" prefix="[" suffix="] " font-weight="bold"/>
+      <group delimiter=" ">
+        <text macro="author"/>
+        <date variable="issued">
+          <date-part name="year"/>
+        </date>
+        <text variable="title" font-style="italic"/>
+        <group delimiter=" ">
+          <text variable="container-title" font-style="italic" form="short"/>
+          <text variable="volume" font-weight="bold"/>
+          <text variable="page"/>
+        </group>
+        <text variable="DOI" prefix="[doi:" suffix="]"/>
+      </group>
+    </layout>
+  </bibliography>
+</style>
