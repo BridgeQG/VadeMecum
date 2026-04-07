@@ -19,7 +19,7 @@ Some of these models, which may or may not imply MDRs, may also lead to a Planck
 
 The phenomenology associated with the LIV and DSR frameworks is markedly different.
 The most studied effect in both LIV and DSR scenarios is [in-vacuo dispersion](/doc/invacuo_dispersion.qmd), arising from MDRs.
-However, other effects that are generally present in LIV frameworks, like \textbf{threshold anomalies},  \textbf{vacuum birefringence}, or  \textbf{modified decay channels}, are typically highly suppressed in DSR scenarios, or not present at all if they violate the relativity principle.
+However, other effects that are generally present in LIV frameworks, like [threshold anomalies](/doc/2ndlevel/Threshold_anomalies.qmd),  [vacuum birefringence](/doc/2ndlevel/Vacuum_birefringence.qmd), or  [modified decay channels](/doc/2ndlevel/Modified_decay_channels), are typically highly suppressed in DSR scenarios, or not present at all if they violate the relativity principle.
 For example, they neither open nor close thresholds of reactions that, in LIV scenarios, may become allowed or forbidden.
 [Astroparticle messengers](/doc/Astrophyisical_probes) (high-energy gamma rays, neutrinos, and cosmic rays), together with gravitational-wave, gravitational-lensing and \textbf{black-hole} observations, offer access to regimes where small departures from relativistic symmetries may accumulate or become detectable within a multimessenger approach.
 A generalization to \textbf{expanding spacetimes} of LIV models (mostly based on \textbf{Hamilton geometry}) and of DSR models (sometimes referred to as \textbf{Triply Special Relativity} in the presence of a \textbf{de Sitter}-invariant scale) has been developed in recent years.
