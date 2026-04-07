@@ -1,5 +1,5 @@
 ---
-title: Fundamental principles of Quantum Mechanics that are amenable to testing
+title: 'Fundamental principles of Quantum Mechanics that are amenable to testing'
 ---
 
 In particular within the community of Quantum Information
