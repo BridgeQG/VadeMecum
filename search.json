@@ -52,6 +52,18 @@
     "text": "List of Authors\n\n\nBekir Baytaş\nGoffredo Chirco\nBranko Dragovich\nSamuel Kováčik\nEtera Livine\nFedele Lizzi\nAntonino Marcianò\nPaulo Moniz\nDaniele Oriti\nClaudio Paganini\nRoman Pasechnik\nSaeed Rastgoo\nJean-Christophe Wallet"
   },
   {
+    "objectID": "doc/2ndlevel/DSR_FLRW.html",
+    "href": "doc/2ndlevel/DSR_FLRW.html",
+    "title": "DSR in expandin spacetimes",
+    "section": "",
+    "text": "mention Triply Special Relativity, Hamilton geometry, and “slicing”",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "DSR in expandin spacetimes"
+    ]
+  },
+  {
     "objectID": "doc/Examples/example2.html",
     "href": "doc/Examples/example2.html",
     "title": "Allowed LaTeX syntax for page writing",
@@ -199,6 +211,18 @@
     "crumbs": [
       "Examples",
       "How to write a page using Quarto Markdown"
+    ]
+  },
+  {
+    "objectID": "doc/2ndlevel/LIV_FLRW.html",
+    "href": "doc/2ndlevel/LIV_FLRW.html",
+    "title": "LIV in expanding spacetimes",
+    "section": "",
+    "text": "mention JAcob and Piran etc.",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "LIV in expanding spacetimes"
     ]
   },
   {
