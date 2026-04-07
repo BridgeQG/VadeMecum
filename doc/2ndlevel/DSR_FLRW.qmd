@@ -1,0 +1,5 @@
+---
+title: 'DSR in expandin spacetimes'
+---
+
+mention Triply Special Relativity, Hamilton geometry, and "slicing"
