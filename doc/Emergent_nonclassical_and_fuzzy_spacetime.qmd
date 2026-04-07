@@ -1,5 +1,5 @@
 ---
-title: Emergent, Nonclassical and Fuzzy Spacetime
+title: 'Emergent, Nonclassical and Fuzzy Spacetime'
 ---
 
 Classical spacetime in General Relativity is a smooth differentiable manifold with well-defined locality and causal structure. Quantum gravity frameworks suggest instead that spacetime is not fundamental; typically, we read/write that ``it emerges from more primitive, non-geometric degrees of freedom''. We should make sense of these words by indicating examples from theoretical frameworks.
