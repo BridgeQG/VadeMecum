@@ -17,7 +17,7 @@ website:
             - href: "doc/LIV_DSR.qmd"
             - href: "doc/Gravitationally-induced_quantum_effects.qmd"
             - href: "doc/IR-UV_mixing.qmd"
-            - href: "equivalence_principle.qmd"
+            - href: "doc/equivalence_principle.qmd"
          - section: "Second level topics"
            contents:
             - auto: "doc/2ndlevel/*.qmd"
