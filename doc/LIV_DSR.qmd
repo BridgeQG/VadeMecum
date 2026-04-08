@@ -30,4 +30,21 @@ Taken together, astroparticle, astrophysical, and low-energy laboratory probes f
 
 General reviews of these topics can be found in \cite{Mattingly:2005re}, \cite{Amelino-Camelia:2008aez}, \cite{Addazi:2021xuf}
 
+## List of Authors {id="authors" .appendix}
+
+- Andrea Bevilacqua 
+- Andrzej Borowiec
+- José Manuel Carmona
+- José Luis Cortés
+- Sebastian Franchino-Viñas
+- Tajron Jurić
+- Teppei Katori
+- Iarley Lobo
+- Flavio Mercati
+- Christian Pfeifer
+- Diego Rubiera-Garcia
+- Filip Rescic
+- Maykoll A. Reyes
+- Giacomo Rosati
+- Yaser Tavakoli
 
