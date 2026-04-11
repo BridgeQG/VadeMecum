@@ -11,5 +11,7 @@ Vade Mecum -> Examples {shape:circle, color:#daffcc}
 Second level topics -> Quantum Gravity Scale {url:/VadeMecum/doc/2ndlevel/QGscale.html}
 Second level topics -> Time delays {url:/VadeMecum/doc/2ndlevel/time_delay.html}
 
-Examples -> auto:doc/Examples
+Examples -> How to use the Wiki {url:/VadeMecum/doc/Examples/example0.html}
+Examples -> How to write QMarkdown {url:/VadeMecum/doc/Examples/example1.html}
+Examples -> How to write LaTeX {url:/VadeMecum/doc/Examples/example2.html}
 ```
