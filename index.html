@@ -374,7 +374,7 @@ window.Quarto = {
 </header>
 
 
-<div id="graph_108867" style="width: 100%; height: 600px; border: 1px solid #ddd; background: #ffffff; border-radius: 8px; overflow: hidden; position: relative;"></div>
+<div id="graph_690836" style="width: 100%; height: 600px; border: 1px solid #ddd; background: #ffffff; border-radius: 8px; overflow: hidden; position: relative;"></div>
 
 <script src="https://unpkg.com/force-graph"></script>
 <script>
@@ -385,12 +385,12 @@ window.Quarto = {
     }
 
     const graphData = {
-      nodes: [ { id: 'Violation and Deformation of Relativistic Symmetries', url: '/doc/LIV_DSR.html', depth: 1, color: null, shape: 'rounded' },
-        { id: 'In-vacuo dispersion', url: '/doc/Invacuo_dispersion.html', depth: 1, color: null, shape: 'rounded' },
+      nodes: [ { id: 'Violation and Deformation of Relativistic Symmetries', url: '/VadeMecum/doc/LIV_DSR.html', depth: 1, color: null, shape: 'rounded' },
+        { id: 'Quantum Gravity Scale', url: '/VadeMecum/doc/2ndlevel/QGscale.html', depth: 2, color: null, shape: 'rounded' },
         { id: 'Vade Mecum', url: null, depth: 0, color: null, shape: 'circle' },
-        { id: 'Second level topics', url: null, depth: 1, color: null, shape: 'rounded' },
-        { id: 'Time delays', url: '/doc/time_delay.html', depth: 2, color: null, shape: 'rounded' },
-        { id: 'Quantum Gravity Scale', url: '/doc/QGscale.html', depth: 2, color: null, shape: 'rounded' } ],
+        { id: 'Time delays', url: '/VadeMecum/doc/2ndlevel/time_delay.html', depth: 2, color: null, shape: 'rounded' },
+        { id: 'Second level topics', url: null, depth: 1, color: '#E4C1C7', shape: 'circle' },
+        { id: 'In-vacuo dispersion', url: '/VadeMecum/doc/Invacuo_dispersion.html', depth: 1, color: null, shape: 'rounded' } ],
       links: [ { source: 'Vade Mecum', target: 'Violation and Deformation of Relativistic Symmetries' },
         { source: 'Vade Mecum', target: 'In-vacuo dispersion' },
         { source: 'Vade Mecum', target: 'Second level topics' },
@@ -398,7 +398,7 @@ window.Quarto = {
         { source: 'Second level topics', target: 'Time delays' } ]
     };
 
-    const container = document.getElementById('graph_108867');
+    const container = document.getElementById('graph_690836');
     if (!container) return;
 
     // --- 1. ASYMPTOTIC COLOR CASCADE LOGIC ---
