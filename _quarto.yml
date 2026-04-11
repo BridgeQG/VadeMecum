@@ -7,7 +7,7 @@ website:
     contents:
       - href: index.qmd
         text: "Home"
-      - auto: "doc/Examples"
+      #- auto: "doc/Examples"
       - section: "Topics"
         contents:
          - section: "First level topics"
@@ -33,6 +33,7 @@ project:
 
 filters:
   - lua/latex-to-quarto.lua
+  - lua/mindmap-graph.lua
 
 format:
   html:

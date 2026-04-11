@@ -2,45 +2,11 @@
 title: 'BridgeQG Vade Mecum'
 ---
 
-# How to use this template
+```mindmap-graph
+Vade Mecum {shape: circle} -> Violation and Deformation of Relativistic Symmetries {url:/doc/LIV_DSR.html}
+Vade Mecum {shape: circle} -> In-vacuo dispersion {url:/doc/Invacuo_dispersion.html}
+Vade Mecum {shape: circle} -> Second level topics
 
-## 1. Configure Your Wiki
-
-The main configuration for the website is handled inside the `_quarto.yml` file. You can customize this file to change the site's title, logo, navigation sidebar, and bibliography settings:
-
-```yaml
-website:
-  title: "Scientific Wiki Template"
-  search: true
-  sidebar:
-    style: "docked"
-    logo: "img/logo/logo.png"
-    contents:
-      - href: index.qmd
-        text: "Home"
-      - auto: "doc/"
-      - href: [https://github.com/MKReyesH/ScientificWiki](https://github.com/MKReyesH/ScientificWiki)
-        text: "GitHub Project"
-      - href: about.qmd
-
-bibliography: bib/references.bib
-csl: bib/journal-of-cosmology-and-astroparticle-physics.csl
+Second level topics -> Quantum Gravity Scale {url:/doc/QGscale.html}
+Second level topics -> Time delays {url:/doc/time_delay.html}
 ```
-
-You can manage references by adding `.bib` files to the `bib/` folder. You can also change the citation style by updating the `csl` file path. Quarto supports many Zotero styles, which can be found at the [Zotero Style Repository](https://www.zotero.org/styles).
-
-![Bibliography files](/img/Examples/files_bib.png){width=8cm}
-
-## 2. Add Content
-
-To add new pages to the wiki, simply create new plain text files (with `.qmd` extension) inside the `doc/` folder. The system will automatically recognize the files and add them to the sidebar. The sidebar reproduces the exact folder structure inside the `doc/` folder, so you can create drop-down menus simply by placing files inside sub-folders:
-
-![Documentation folder structure](/img/Examples/files_doc.png){width=8cm}
-
-All content files must be plain text file using the `.qmd` extension and must be written using Quarto Markdown syntax. For a detailed guide on native formatting, please see the [Quarto Markdown Guide](/doc/Examples/example1.qmd).
-
-Moreover, anticipating that a lot of scientific content is already written in LaTeX, this template also includes (limited) compatibility for simple LaTeX structures. The commands that are safe to use in the `.qmd` files are explained in the [Allowed LaTeX Syntax Guide](/doc/Examples/example2.qmd). For more complex structures like figures or tables, native Markdown syntax must be used.
-
-## 3. Commit changes and Deploy
-
-Every time you commit changes to your repository, GitHub Actions will automatically take care of the deployment phase. The updated webpage will be built and pushed to the `gh-pages` branch, going live online in just a few minutes.
