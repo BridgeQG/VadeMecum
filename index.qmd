@@ -14,12 +14,13 @@ Vade Mecum -> Low-energy table-top experiments {url:/VadeMecum/doc/Low-energy_ta
 
 Emergent, Nonclassical and Fuzzy Spacetime -> Quantum causality {color:#fdbcce, url:/VadeMecum/doc/2ndlevel/Quantum_causality.html} 
 Emergent, Nonclassical and Fuzzy Spacetime -> Quantum geometry and spacetime discreteness {color:#fdbcce, url:/VadeMecum/doc/2ndlevel/Quantum_geometry_and_spacetime_discreteness.html}
-Emergent, Nonclassical and Fuzzy Spacetime -> 
-Emergent, Nonclassical and Fuzzy Spacetime -> 
-Emergent, Nonclassical and Fuzzy Spacetime -> 
-Emergent, Nonclassical and Fuzzy Spacetime -> 
-Emergent, Nonclassical and Fuzzy Spacetime -> 
-Emergent, Nonclassical and Fuzzy Spacetime -> 
+Emergent, Nonclassical and Fuzzy Spacetime -> Quantum superpositions of geometries  {color:#fdbcce, url:/VadeMecum/doc/2ndlevel/Quantum_superposition_of_geometries.html}
+
+Equivalence Principle, locality and quantum gravity -> Locality {color:#fdbcce, url:/VadeMecum/doc/2ndlevel/locality.html}
+Equivalence Principle, locality and quantum gravity -> Strong Equivalence Principle {color:#fdbcce, url:/VadeMecumdoc/2ndlevel/strongEP.html}
+Equivalence Principle, locality and quantum gravity -> Quantum Gravity {color:#fdbcce, url:/VadeMecum/doc/quantum_gravity.html}
+Equivalence Principle, locality and quantum gravity -> Quantum Equivalence Principle {color:#fdbcce, url:/VadeMecum/doc/2ndlevel/quantum_EP.html}
+
 
 Examples -> How to use the Wiki {url:/VadeMecum/doc/Examples/example0.html}
 Examples -> How to write QMarkdown {url:/VadeMecum/doc/Examples/example1.html}
