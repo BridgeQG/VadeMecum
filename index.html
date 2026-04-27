@@ -422,7 +422,7 @@ window.Quarto = {
 </header>
 
 
-<div id="graph_310814" style="width: 100%; height: 600px; border: 1px solid #ddd; background: #ffffff; border-radius: 8px; overflow: hidden; position: relative;"></div>
+<div id="graph_175082" style="width: 100%; height: 600px; border: 1px solid #ddd; background: #ffffff; border-radius: 8px; overflow: hidden; position: relative;"></div>
 
 <script src="https://unpkg.com/force-graph"></script>
 <script>
@@ -433,30 +433,24 @@ window.Quarto = {
     }
 
     const graphData = {
-      nodes: [ { id: 'Vade Mecum', url: null, depth: 0, color: null, shape: 'circle' },
-        { id: 'How to write LaTeX', url: '/VadeMecum/doc/Examples/example2.html', depth: 1, color: null, shape: 'rounded' },
-        { id: 'Examples', url: null, depth: 0, color: null, shape: 'rounded' },
-        { id: 'Second level topics', url: null, depth: 1, color: '#fdbcce', shape: 'circle' },
-        { id: 'How to use the Wiki', url: '/VadeMecum/doc/Examples/example0.html', depth: 1, color: null, shape: 'rounded' },
-        { id: '<!--Vade Mecum', url: null, depth: 0, color: null, shape: 'rounded' },
-        { id: 'Examples {shape:circle, color:#daffcc}-->', url: null, depth: 1, color: null, shape: 'rounded' },
-        { id: 'How to write QMarkdown', url: '/VadeMecum/doc/Examples/example1.html', depth: 1, color: null, shape: 'rounded' },
+      nodes: [ { id: 'Low-energy table-top experiments', url: '/VadeMecum/doc/Low-energy_table-top_experiments.html', depth: 1, color: null, shape: 'rounded' },
         { id: 'In-vacuo dispersion', url: '/VadeMecum/doc/Invacuo_dispersion.html', depth: 1, color: null, shape: 'rounded' },
+        { id: 'IR-UV mixing', url: '/VadeMecum/doc/IR-UV_mixing.html', depth: 1, color: null, shape: 'rounded' },
+        { id: 'Emergent, Nonclassical and Fuzzy Spacetime', url: '/VadeMecum/doc/Emergent_nonclassical_and_fuzzy_spacetime.html', depth: 1, color: null, shape: 'rounded' },
+        { id: 'Gravitationally-induced quantum effects', url: '/VadeMecum/doc/Gravitationally-induced_quantum_effects.html', depth: 1, color: null, shape: 'rounded' },
         { id: 'Violation and Deformation of Relativistic Symmetries', url: '/VadeMecum/doc/LIV_DSR.html', depth: 1, color: null, shape: 'rounded' },
-        { id: 'Time delays', url: '/VadeMecum/doc/2ndlevel/time_delay.html', depth: 2, color: null, shape: 'rounded' },
-        { id: 'Quantum Gravity Scale', url: '/VadeMecum/doc/2ndlevel/QGscale.html', depth: 2, color: null, shape: 'rounded' } ],
-      links: [ { source: 'Vade Mecum', target: 'Violation and Deformation of Relativistic Symmetries' },
+        { id: 'Equivalence Principle, locality and quantum gravity', url: '/VadeMecum/doc/Equivalence_principle.html', depth: 1, color: null, shape: 'rounded' },
+        { id: 'Vade Mecum', url: null, depth: 0, color: null, shape: 'circle' } ],
+      links: [ { source: 'Vade Mecum', target: 'Emergent, Nonclassical and Fuzzy Spacetime' },
+        { source: 'Vade Mecum', target: 'Equivalence Principle, locality and quantum gravity' },
+        { source: 'Vade Mecum', target: 'Gravitationally-induced quantum effects' },
+        { source: 'Vade Mecum', target: 'IR-UV mixing' },
         { source: 'Vade Mecum', target: 'In-vacuo dispersion' },
-        { source: 'Vade Mecum', target: 'Second level topics' },
-        { source: '<!--Vade Mecum', target: 'Examples {shape:circle, color:#daffcc}-->' },
-        { source: 'Second level topics', target: 'Quantum Gravity Scale' },
-        { source: 'Second level topics', target: 'Time delays' },
-        { source: 'Examples', target: 'How to use the Wiki' },
-        { source: 'Examples', target: 'How to write QMarkdown' },
-        { source: 'Examples', target: 'How to write LaTeX' } ]
+        { source: 'Vade Mecum', target: 'Violation and Deformation of Relativistic Symmetries' },
+        { source: 'Vade Mecum', target: 'Low-energy table-top experiments' } ]
     };
 
-    const container = document.getElementById('graph_310814');
+    const container = document.getElementById('graph_175082');
     if (!container) return;
 
     // --- 1. ASYMPTOTIC COLOR CASCADE LOGIC ---
@@ -666,6 +660,16 @@ window.Quarto = {
   })();
 </script>
     
+<!--Vade Mecum -> Second level topics {shape:circle, color:#fdbcce}
+Vade Mecum -> Examples {shape:circle, color:#daffcc}
+
+Second level topics -> Quantum Gravity Scale {url:/VadeMecum/doc/2ndlevel/QGscale.html}
+Second level topics -> Time delays {url:/VadeMecum/doc/2ndlevel/time_delay.html}
+
+Examples -> How to use the Wiki {url:/VadeMecum/doc/Examples/example0.html}
+Examples -> How to write QMarkdown {url:/VadeMecum/doc/Examples/example1.html}
+Examples -> How to write LaTeX {url:/VadeMecum/doc/Examples/example2.html}
+-->
 
 
 
