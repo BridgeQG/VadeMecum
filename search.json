@@ -296,5 +296,17 @@
       "Second level topics",
       "LIV in expanding spacetimes"
     ]
+  },
+  {
+    "objectID": "doc/2ndlevel/quantum_spacetime.html",
+    "href": "doc/2ndlevel/quantum_spacetime.html",
+    "title": "Quantum Spacetime",
+    "section": "",
+    "text": "Mention quantum group symmetries\nMention fuzzy spacetimes from finite matrix geometries e.g. Grosse-Wulkenhaar (mentioned in Emergent, nonclassical and fuzzy spacetime)",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Quantum Spacetime"
+    ]
   }
 ]
