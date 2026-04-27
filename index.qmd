@@ -4,7 +4,7 @@ title: 'BridgeQG Vade Mecum'
 
 ```mindmap-graph
 
-Vade Mecum {shape:circle, color:#daffcc} -> Emergent, Nonclassical and Fuzzy Spacetime {url:/VadeMecum/doc/Emergent_nonclassical_and_fuzzy_spacetime.html}
+Vade Mecum {shape:circle, color:#2986cc} -> Emergent, Nonclassical and Fuzzy Spacetime {url:/VadeMecum/doc/Emergent_nonclassical_and_fuzzy_spacetime.html}
 Vade Mecum -> Equivalence Principle, locality and quantum gravity {url:/VadeMecum/doc/Equivalence_principle.html}
 Vade Mecum -> Gravitationally-induced quantum effects {url:/VadeMecum/doc/Gravitationally-induced_quantum_effects.html}
 Vade Mecum -> IR-UV mixing {url:/VadeMecum/doc/IR-UV_mixing.html}
@@ -22,7 +22,7 @@ Equivalence Principle, locality and quantum gravity -> Quantum Gravity {color:#f
 Equivalence Principle, locality and quantum gravity -> Quantum Equivalence Principle {color:#fdbcce, url:/VadeMecum/doc/2ndlevel/quantum_EP.html}
 
 
-Examples -> How to use the Wiki {url:/VadeMecum/doc/Examples/example0.html}
+Examples  {shape:circle, color:#daffcc} -> How to use the Wiki {url:/VadeMecum/doc/Examples/example0.html}
 Examples -> How to write QMarkdown {url:/VadeMecum/doc/Examples/example1.html}
 Examples -> How to write LaTeX {url:/VadeMecum/doc/Examples/example2.html}
 ```
