@@ -22,9 +22,9 @@ Equivalence Principle, locality and quantum gravity -> Quantum Gravity {color:#f
 Equivalence Principle, locality and quantum gravity -> Quantum Equivalence Principle {color:#fdbcce, url:/VadeMecum/doc/2ndlevel/quantum_EP.html}
 
 Gravitationally-induced quantum effects -> Doubly-referenced 2nd level topic {color:#fdbfce url:/VadeMecum/doc/2ndlevel/index.html} 
-Gravitationally-induced quantum effects -> Hawking radiation, url:/VadeMecum/doc/2ndlevel/Hawking_radiation.html} 
-Gravitationally-induced quantum effects -> Modified Schrödinger equation, url:/VadeMecum/doc/2ndlevel/Modified_Schroedinger_equation.html}
-Gravitationally-induced quantum effects -> Collapse models, url:/VadeMecum/doc/2ndlevel/Collapse_models.html}
+Gravitationally-induced quantum effects -> Hawking radiation {color:#fdbcce, url:/VadeMecum/doc/2ndlevel/Hawking_radiation.html} 
+Gravitationally-induced quantum effects -> Modified Schrödinger equation {color:#fdbcce, url:/VadeMecum/doc/2ndlevel/Modified_Schroedinger_equation.html}
+Gravitationally-induced quantum effects -> Collapse models {color:#fdbcce, url:/VadeMecum/doc/2ndlevel/Collapse_models.html}
 
 IR-UV mixing -> Doubly-referenced 2nd level topic {color:#fdbfce, url:/VadeMecum/doc/2ndlevel/index.html} 
 IR-UV mixing -> Modified dispersion relations {color:#fdbcce, url:/VadeMecum/doc/2ndlevel/Modified_dispersion_relations.html}
