@@ -9,30 +9,9 @@ In this framework, quantum fluctuations, superpositions, discrete spectra, and e
 
 In \textbf{fuzzy spacetime}, localization is not described by commuting coordinate functions. This may occur through non-commutative coordinate algebras, which appear in [noncommutative spacetime and quantum symmetries](/doc/2ndlevel/quantum_spacetime.qmd). It may also happen through finite-dimensional matrix geometries, as in [fuzzy spaces](/doc/2ndlevel/quantum_spacetime.qmd) and [matrix models](/doc/2ndlevel/Matrix_models.qmd). These frameworks replace sharp points with algebraic degrees of freedom. They can lead to minimal resolution scales, deformed symmetries, generalized uncertainty relations, and modified propagation laws \cite{Connes_book94,Szabo:2001kg}.
 
-An \textbf{emergent spacetime} scenario treats geometry, locality, dimensionality, matter fields, or topology as approximate macroscopic structures. The microscopic variables may be combinatorial, algebraic, quantum-informational, thermodynamic, or pre-geometric. Continuum spacetime is then obtained through coarse-graining, condensate phases, hydrodynamic limits, renormalization flow, or thermodynamic arguments. See [](/doc/2ndlevel/.qmd) \textbf{prespacetime structures}, \textbf{emergent spacetime gravitational dynamics}, and [gravity as thermodynamics/hydrodynamics](/doc/2ndlevel/Gravity_as_thermodynamics_hydrodynamics.qmd) \cite{Oriti:2018dsg,Jacobson:1995TES}.
+An \textbf{emergent spacetime} scenario treats geometry, locality, dimensionality, matter fields, or topology as approximate macroscopic structures. The microscopic variables may be combinatorial, algebraic, quantum-informational, thermodynamic, or pre-geometric. Continuum spacetime is then obtained through coarse-graining, condensate phases, hydrodynamic limits, renormalization flow, or thermodynamic arguments. See \textit{prespacetime structures}, \textit{emergent spacetime gravitational dynamics}, and [gravity as thermodynamics/hydrodynamics](/doc/2ndlevel/Gravity_as_thermodynamics_hydrodynamics.qmd) \cite{Oriti:2018dsg,Jacobson:1995TES}.
 
 Overall, these notions define a shared conceptual landscape for quantum-gravity approaches. They help identify whether departure from classical spacetime occurs by quantization of geometry, weakened localization, or the emergence of continuum structures from more fundamental degrees of freedom.
-
-
-Second Level Topics
-
-- Spacetime ingredients in General Relativity
-- Diffeomorphism invariance as a guiding constraint
-- Quantum causality
-- Quantum geometry and spacetime discreteness
-- Noncommutative spacetime and quantum symmetries
-- Fuzzy spaces
-- Matrix models
-- Phenomenology of spacetime fuzziness
-- Prespacetime / pregeometric structures
-- Emergent spacetime / gravitational dynamics
-- Gravity as thermodynamics / hydrodynamics
-- Entanglement/geometry correspondence
-- Correlation geometry and emergence of classical spacetime
-- Tensor networks and information geometry
-- The problem of locality
-- Phases of geometry and phase diagrams of quantum gravity theories
-
 
 ## List of Authors {id="authors" .appendix}
 - Bekir Baytaş
