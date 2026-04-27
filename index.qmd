@@ -21,6 +21,25 @@ Equivalence Principle, locality and quantum gravity -> Strong Equivalence Princi
 Equivalence Principle, locality and quantum gravity -> Quantum Gravity {color:#fdbcce, url:/VadeMecum/doc/quantum_gravity.html}
 Equivalence Principle, locality and quantum gravity -> Quantum Equivalence Principle {color:#fdbcce, url:/VadeMecum/doc/2ndlevel/quantum_EP.html}
 
+Gravitationally-induced quantum effects -> Doubly-referenced 2nd level topic {color:#fdbfce url:/VadeMecum/doc/2ndlevel/index.html} 
+Gravitationally-induced quantum effects -> Hawking radiation, url:/VadeMecum/doc/2ndlevel/Hawking_radiation.html} 
+Gravitationally-induced quantum effects -> Modified Schrödinger equation, url:/VadeMecum/doc/2ndlevel/Modified_Schroedinger_equation.html}
+Gravitationally-induced quantum effects -> Collapse models, url:/VadeMecum/doc/2ndlevel/Collapse_models.html}
+
+IR-UV mixing -> Doubly-referenced 2nd level topic {color:#fdbfce, url:/VadeMecum/doc/2ndlevel/index.html} 
+IR-UV mixing -> Modified dispersion relations {color:#fdbcce, url:/VadeMecum/doc/2ndlevel/Modified_dispersion_relations.html}
+
+In-vacuo dispersion -> Multiply-referenced 2nd level topic {color:#fdbccd, url:/VadeMecum/doc/2ndlevel/index.html} 
+In-vacuo dispersion -> Modified dispersion relations {color:#fdbcce, url:/VadeMecum/doc/2ndlevel/Modified_dispersion_relations.html}
+In-vacuo dispersion -> Quantum spacetime {color:#fdbcce, url:/VadeMecum/doc/2ndlevel/Emergent_nonclassical_and_fuzzy_spacetime.html}
+
+Violation and Deformation of Relativistic Symmetries -> Multiply-referenced 2nd level topic {color:#fdbccd, url:/VadeMecum/doc/2ndlevel/index.html} 
+Violation and Deformation of Relativistic Symmetries -> Standard Model extensions {color:#fdbcce, url:/VadeMecum/doc/2ndlevel/Standard_model_extensions.html}
+Violation and Deformation of Relativistic Symmetries -> Emergent, nonclassical and fuzzy spacetime  {color:#fdbcce, url:/VadeMecum/doc/2ndlevel/Emergent_nonclassical_and_fuzzy_spacetime.html}
+
+Low-energy table-top experiments -> Multiply-referenced 2nd level topic {color:#fdbccd, url:/VadeMecum/doc/2ndlevel/index.html} 
+Low-energy table-top experiments -> Entanglement {color:#fdbcce, url:/VadeMecum/doc/2ndlevel/GRinduced_entanglement.html}
+
 ```
 
 <!--
