@@ -21,18 +21,9 @@ Equivalence Principle, locality and quantum gravity -> Strong Equivalence Princi
 Equivalence Principle, locality and quantum gravity -> Quantum Gravity {color:#fdbcce, url:/VadeMecum/doc/quantum_gravity.html}
 Equivalence Principle, locality and quantum gravity -> Quantum Equivalence Principle {color:#fdbcce, url:/VadeMecum/doc/2ndlevel/quantum_EP.html}
 
-
-Examples  {shape:circle, color:#daffcc} -> How to use the Wiki {url:/VadeMecum/doc/Examples/example0.html}
-Examples -> How to write QMarkdown {url:/VadeMecum/doc/Examples/example1.html}
-Examples -> How to write LaTeX {url:/VadeMecum/doc/Examples/example2.html}
 ```
 
-<!--Vade Mecum -> Second level topics {shape:circle, color:#fdbcce}
-Vade Mecum -> Examples {shape:circle, color:#daffcc}
-
-Second level topics -> Quantum Gravity Scale {url:/VadeMecum/doc/2ndlevel/QGscale.html}
-Second level topics -> Time delays {url:/VadeMecum/doc/2ndlevel/time_delay.html}
-
+<!--
 Examples -> How to use the Wiki {url:/VadeMecum/doc/Examples/example0.html}
 Examples -> How to write QMarkdown {url:/VadeMecum/doc/Examples/example1.html}
 Examples -> How to write LaTeX {url:/VadeMecum/doc/Examples/example2.html}
