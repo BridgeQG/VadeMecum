@@ -2,42 +2,6 @@
 title: 'Gravitationally-induced quantum effects'
 ---
 
-Keywords already accepted as 2nd level topics:
-
-- Gravity-mediated entanglement
-- Gravitationally-induced decoherence
-- Modified Schrödinger equation
-- Collapse models
-- Hawking radiation
-- Quantum superposition of massive objects
-- COW experiment
-- Quantum tests of the equivalence principle
-- Time-dilation induced dephasing
-- Precision measurements of short-range gravity
-
-Proposed keywords not cited in the text, to be considered as further 2nd-level topics:
-
-- Minimal length scale 
-- Lorentz symmetry breaking
-- Effective Theories of Modified Gravity & quantum Gravity
-- Measuring quantum effects of gravity
-- Modified Dispersion Relation
-- Black-hole thermodynamics
-- Quantum reference frames in curved space-time 
-- Quantum gravity signatures in gravitational wave detectors
-- Generalized Uncertainty Principle (GUP)
-- Quasinormal modes and black hole stability
-- Gravitational lensing and weak deflection angles
-- Black hole shadows and photon spheres
-- Thermodynamic topology of black holes
-- Non-extensive entropies and quantum corrections
-- Weak Gravity Conjecture and quantum extremality
-- Observable signatures of quantum gravity
-- Quantum switch realizations involving gravity
-- Semiclassical gravity
-- Pair creation
-- Birefringence
-
 By \emph{gravitationally-induced quantum effects} we denote physical phenomena in which gravity modifies the standard quantum behavior in ways not fully captured by relativistic quantum field theory. Such effects are expected either when quantum systems probe spacetime curvature or when gravity and quantum mechanics are treated within a unified framework, independently of the microscopic realization of quantum gravity. 
 
 In the strong-gravity regime, quantum effects arise near causal horizons and regions of large spacetime curvature. [Hawking radiation](/doc/2ndlevel/Hawking_radiation.qmd) \cite{Hawking:1975vcx} revealed the thermodynamic nature of black holes, motivating studies of quantum corrections to black hole entropy and consistency conditions that promote such astrophysical objects to probes of quantum gravity. Beyond thermodynamic aspects, strong gravitational backgrounds can also induce genuinely quantum correlations in the gravitational field itself, for instance through the production of squeezed graviton states in primordial and astrophysical environments.
