@@ -4,7 +4,7 @@ title: 'BridgeQG Vade Mecum'
 
 ```mindmap-graph
 
-Vade Mecum {shape:circle} -> Emergent, Nonclassical and Fuzzy Spacetime {url:/VadeMecum/doc/Emergent_nonclassical_and_fuzzy_spacetime.html}
+Vade Mecum {shape:circle, color:#daffcc} -> Emergent, Nonclassical and Fuzzy Spacetime {url:/VadeMecum/doc/Emergent_nonclassical_and_fuzzy_spacetime.html}
 Vade Mecum -> Equivalence Principle, locality and quantum gravity {url:/VadeMecum/doc/Equivalence_principle.html}
 Vade Mecum -> Gravitationally-induced quantum effects {url:/VadeMecum/doc/Gravitationally-induced_quantum_effects.html}
 Vade Mecum -> IR-UV mixing {url:/VadeMecum/doc/IR-UV_mixing.html}
