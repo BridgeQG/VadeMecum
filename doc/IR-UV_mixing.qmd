@@ -12,18 +12,6 @@ Only a few ways to avoid this phenomenon have been found  within particular fiel
  
 From a phenomenological point of view, the IR-UV mixing motivates [modified dispersion relations](/doc/2ndlevel/Modified_dispersion_relations.qmd) that include inverse powers of the momentum \cite{Matusis:2000jf}. Such modifications would strongly affect our understanding of a broad class of experiments, including,  for example, particle-physics \cite{Amelino-Camelia:2002onw} and cold-atoms \cite{Amelino-Camelia:2009wvc} scenarios.
 
-Keywords already accepted as 2nd level topics:
-
-- Modified dispersion relations
-
-Proposed keywords not cited in the text, to be considered as further 2nd-level topics:
-
-- Noncommutative quantum field theories
-- Nonlocalities
-- String theory
-- Renormalizability
-
-
 ## List of Authors {id="authors" .appendix}
 - Sebastián Franchino-Viñas
 - Jean-Christophe Wallet
