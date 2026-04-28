@@ -24,154 +24,100 @@
     ]
   },
   {
-    "objectID": "doc/2ndlevel/QMfoundations.html",
-    "href": "doc/2ndlevel/QMfoundations.html",
-    "title": "Fundamental principles of Quantum Mechanics that are amenable to testing",
+    "objectID": "doc/2ndlevel/LIV_FLRW.html",
+    "href": "doc/2ndlevel/LIV_FLRW.html",
+    "title": "LIV in expanding spacetimes",
     "section": "",
-    "text": "In particular within the community of Quantum Information",
+    "text": "mention JAcob and Piran etc.",
     "crumbs": [
       "Topics",
       "Second level topics",
-      "Fundamental principles of Quantum Mechanics that are amenable to testing"
+      "LIV in expanding spacetimes"
     ]
   },
   {
-    "objectID": "doc/Low-energy_table-top_experiments.html",
-    "href": "doc/Low-energy_table-top_experiments.html",
-    "title": "Low-energy table-top experiments",
+    "objectID": "doc/2ndlevel/DSR_FLRW.html",
+    "href": "doc/2ndlevel/DSR_FLRW.html",
+    "title": "DSR in expandin spacetimes",
     "section": "",
-    "text": "Low-energy table-top experiments provide a powerful and complementary approach to exploring fundamental questions at the interface of quantum mechanics and gravity. Rather than relying on large-scale or high-energy facilities, these experiments exploit extreme precision, quantum coherence, and ultra-sensitive detection techniques to probe tiny effects that may reveal new physics beyond the Standard Model and classical General Relativity.\nA central goal of these experiments is to test whether gravity must be quantized or whether it can induce genuinely quantum phenomena, such as entanglement, between massive systems. Closely related are laboratory studies of gravitational decoherence, which investigate whether gravity could play a role in the apparent transition from quantum to classical behavior, as explored for example in models such as Diósi–Penrose [Dios87]. Matter-wave interferometry offers another key pathway, allowing tests of the interplay between gravity and quantum phases, including classic and modern realizations of gravitationally induced phase shifts. In addition, a variety of modified gravity theories have been proposed as candidate frameworks for quantum gravity. Precision tabletop experiments provide a powerful avenue to test these theories, enabling stringent constraints or potential discovery of deviations from standard gravitational physics.\nLow-energy experiments are also uniquely suited to test foundational principles of quantum mechanics with unprecedented sensitivity. These include searches for violations of discrete symmetries, precision tests of the Pauli Exclusion Principle (such as those performed by the VIP, Violation of the Pauli Exclusion principle, and related experiments), and investigations of possible modifications of quantum theory inspired by quantum gravity, including collapse models. Furthermore, several approaches aim to probe the existence of a fundamental minimum length scale, often formulated through the Generalized Uncertainty Principle (GUP).\nThanks to rapid advances in quantum technologies, systems such as quantum optomechanical resonators, ultra-sensitive magnetometers, and atomic or solid-state sensors are becoming increasingly capable of accessing regimes where tiny gravitational or quantum-gravity–inspired effects may become observable. Together, these table-top experiments form a diverse and rapidly evolving landscape, offering realistic near-term opportunities to experimentally address deep conceptual questions about space, time, and the quantum nature of reality.",
+    "text": "mention Triply Special Relativity, Hamilton geometry, and “slicing”",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "DSR in expandin spacetimes"
+    ]
+  },
+  {
+    "objectID": "doc/Equivalence_principle.html",
+    "href": "doc/Equivalence_principle.html",
+    "title": "Equivalence Principle, locality and quantum gravity",
+    "section": "",
+    "text": "The purpose of the equivalence principle (EP) is to prescribe the interaction between gravity and matter, i.e., between gravitational and non-gravitational degrees of freedom in nature. EP is one of the most fundamental principles in modern physics, a cornerstone of Einstein’s theory of general relativity and of the Standard Model of elementary particle physics.",
     "crumbs": [
       "Topics",
       "First level topics",
-      "Low-energy table-top experiments"
+      "Equivalence Principle, locality and quantum gravity"
     ]
   },
   {
-    "objectID": "doc/Low-energy_table-top_experiments.html#authors",
-    "href": "doc/Low-energy_table-top_experiments.html#authors",
-    "title": "Low-energy table-top experiments",
+    "objectID": "doc/Equivalence_principle.html#authors",
+    "href": "doc/Equivalence_principle.html#authors",
+    "title": "Equivalence Principle, locality and quantum gravity",
     "section": "List of Authors",
-    "text": "List of Authors\n\n\nCatalina Oana Curceanu\nLuciano Petruzziello\nSaurya Das\nTammay Kumar Poddar\nAntonino Marciano",
+    "text": "List of Authors\n\n\nNikola Paunkovic\nMarko Vojinovic",
     "crumbs": [
       "Topics",
       "First level topics",
-      "Low-energy table-top experiments"
+      "Equivalence Principle, locality and quantum gravity"
     ]
   },
   {
-    "objectID": "doc/IR-UV_mixing.html",
-    "href": "doc/IR-UV_mixing.html",
-    "title": "IR-UV mixing",
+    "objectID": "doc/LIV_DSR.html",
+    "href": "doc/LIV_DSR.html",
+    "title": "Violation and Deformation of Relativistic Symmetries",
     "section": "",
-    "text": "Quantum gravity theories usually introduce severe ultraviolet (UV) modifications with respect to standard quantum field theories. In many cases, including string theory and noncommutative approaches, these modifications turn out to affect also the dynamics of the physics in the infrared (IR) region [MiVaSe00].\nIn particular, it has been shown that a feature rendering these theories (or a given Feynman diagram) UV renormalizable, could generate instabilities in the IR region [MiVaSe00]. This phenomenon usually shows up already at the first perturbative order as an IR singularity proportional to an inverse power of an external momentum. This singularity will affect thus the subsequent perturbative orders, resulting in new types of divergences which cannot be treated within the usual renormalization schemes. In this sense, the IR and UV regimes are no longer independent, i.e. they are mixed.\nThe IR-UV mixing is frequently associated to non-locality in quantum field theories; in effect, in a quantum theory of gravity, the presence of the latter is expected, given the long-range character of the gravitational force and the impossibility to screen it.\nOnly a few ways to avoid this phenomenon have been found within particular field theories, at least to the first perturbative orders [DNRS24]. The IR-UV mixing has also recently been studied as a way to alleviate the hierarchy problem [CrKo20].\nFrom a phenomenological point of view, the IR-UV mixing motivates modified dispersion relations that include inverse powers of the momentum [MaSuTo00]. Such modifications would strongly affect our understanding of a broad class of experiments, including, for example, particle-physics [AmMaYo04] and cold-atoms [ALMT09] scenarios.",
+    "text": "Relativistic symmetries play a central role in modern physics, but many approaches to quantum gravity suggest that these symmetries may not remain exactly the classical (local) Lorentz or Poincaré transformations of special relativity at the highest energy scales. This motivates the investigation of scenarios in which Lorentz and Poincaré symmetries are either violated or deformed. In the case of Lorentz Invariance Violation (LIV), Lorentz symmetry is broken explicitly (as in many effective field theory descriptions) or spontaneously (when fields acquire vacuum expectation values that select preferred directions in spacetime), so that physics is formulated in a preferred frame. In contrast, deformed-symmetry frameworks (DSR – Doubly (or Deformed) Special Relativity [Amel02], preserve the relativity principle but modify the transformation laws between observers by introducing an additional invariant scale (usually associated with the Planck length, \\(\\ell_P \\approx 1.61 \\times 10^{-35}\\,\\mathrm{m} \\approx 1.30 \\times 10^{-29}\\,\\mathrm{eV}^{-1}\\)). Although both approaches explore possible imprints of a quantum or discrete structure of spacetime, they lead to conceptually different kinematics and, as discussed below, to very different phenomenological expectations.\nModified Dispersion Relations (MDR) represent one of the most studied ways to depart from special-relativistic kinematics and have been extensively studied in both LIV and DSR scenarios, particularly for their phenomenological implications, even though not all LIV and DSR models necessarily feature a MDR. The most-studied LIV models typically arise from symmetry-breaking operators in effective field theory. On the other hand, DSR models often arise from constructions in which deformed spacetime symmetries are formulated within a Hopf-algebra (quantum groups) framework encoding high-energy modifications of the Poincaré symmetry. In LIV and DSR scenarios, nontrivial/nonlinear energy-momentum conservation rules, formalized as a modified composition law for four-momenta, have also been considered. However, while in LIV a modified composition law is not strictly required, in DSR it is generally considered necessary to ensure the compatibility between the relativity principle and the presence of an additional invariant scale. In DSR, the modified composition law admits a geometric interpretation as a rule for non-linear translations in momentum space, and it can also be understood algebraically as part of the coalgebra structure of Hopf algebras. These structures commonly appear in models with curved momentum space, noncommutative spacetimes, or quantum-group symmetries, and can lead to relative locality, namely an observer dependence of event localisation that may also arise in more general contexts. A more fundamental framework for LIV and DSR models is based on (quantum) fields in noncommutative spacetimes, which in turn allow for the study of discrete symmetry operators C (charge conjugation), P (parity), T (time reversal), and scattering amplitudes. In this context, loop corrections to tree-level diagrams often exhibit UV/IR mixing, where Lorentz-breaking (or deformation) scales, and cutoff scales interact in a non-trivial way, with potentially observable consequences. Some of these models, which may or may not imply MDRs, may also lead to a Planck-scale Generalized Heisenberg Uncertainty Principle (GUP).\nThe phenomenology associated with the LIV and DSR frameworks is markedly different. The most studied effect in both LIV and DSR scenarios is in-vacuo dispersion, arising from MDRs. However, other effects that are generally present in LIV frameworks, like threshold anomalies, vacuum birefringence, or modified decay channels, are typically highly suppressed in DSR scenarios, or not present at all if they violate the relativity principle. For example, they neither open nor close thresholds of reactions that, in LIV scenarios, may become allowed or forbidden. Astroparticle messengers (high-energy gamma rays, neutrinos, and cosmic rays), together with gravitational-wave, gravitational-lensing and black-hole observations, offer access to regimes where small departures from relativistic symmetries may accumulate or become detectable within a multimessenger approach. A generalization to expanding spacetimes of LIV models and of DSR models in the presence of a de Sitter-invariant scale) has been developed in recent years.\nSuch effects can also manifest in the low-energy regime. In quantum mechanical systems, LIV and DSR may induce modifications in time evolution. For instance, a modified Schrödinger equation arises from modified dispersion relations, and decoherence occurs when the quantum gravity scale is treated as a stochastic quantity or when modified symmetries are present. Also, C, P, and T transformations can interact non-trivially with the LIV or DSR scales, leading to additional phenomenological signatures. Precision laboratory and collider or accelerator experiments, often aimed at measuring differences in properties between particles and antiparticles (e.g. decay times), provide complementary tests of these effects. Taken together, astroparticle, astrophysical, and low-energy laboratory probes form a broad landscape in which the implications of the deformation or violation of relativistic symmetries can be systematically explored.\nGeneral reviews of these topics can be found in [Matt05], [Amel13], [Ad22]",
     "crumbs": [
       "Topics",
       "First level topics",
-      "IR-UV mixing"
+      "Violation and Deformation of Relativistic Symmetries"
     ]
   },
   {
-    "objectID": "doc/IR-UV_mixing.html#authors",
-    "href": "doc/IR-UV_mixing.html#authors",
-    "title": "IR-UV mixing",
+    "objectID": "doc/LIV_DSR.html#authors",
+    "href": "doc/LIV_DSR.html#authors",
+    "title": "Violation and Deformation of Relativistic Symmetries",
     "section": "List of Authors",
-    "text": "List of Authors\n\n\nSebastián Franchino-Viñas\nJean-Christophe Wallet\nTajron Jurić",
+    "text": "List of Authors\n\n\nAndrea Bevilacqua\nAndrzej Borowiec\nJosé Manuel Carmona\nJosé Luis Cortés\nSebastian Franchino-Viñas\nTajron Jurić\nTeppei Katori\nIarley Lobo\nFlavio Mercati\nChristian Pfeifer\nDiego Rubiera-Garcia\nFilip Rescic\nMaykoll A. Reyes\nGiacomo Rosati\nYaser Tavakoli",
     "crumbs": [
       "Topics",
       "First level topics",
-      "IR-UV mixing"
+      "Violation and Deformation of Relativistic Symmetries"
     ]
   },
   {
-    "objectID": "doc/Examples/example2.html",
-    "href": "doc/Examples/example2.html",
-    "title": "Allowed LaTeX syntax for page writing",
+    "objectID": "doc/Invacuo_dispersion.html",
+    "href": "doc/Invacuo_dispersion.html",
+    "title": "In-vacuo dispersion",
     "section": "",
-    "text": "In the scientific community, it is very common to have texts, equations, and full documents already written in LaTeX. This implies that one needs to translate such content to the Quarto Markdown syntax explained in the previous guide. However, this template allows for the use of some simple LaTeX syntax (in combination with native syntax), which is converted on the fly to the correct Quarto Markdown format. This document serves as both a guide and a test file for the translation rules. It is written using the supported LaTeX commands to explain exactly how the transformation works."
-  },
-  {
-    "objectID": "doc/Examples/example2.html#this-is-a-subsection",
-    "href": "doc/Examples/example2.html#this-is-a-subsection",
-    "title": "Allowed LaTeX syntax for page writing",
-    "section": "This is a subsection",
-    "text": "This is a subsection\n\nThis is a sub-subsection\nBecause the script converts this directly into native Markdown, the system automatically generates a reference identifier for it based on the heading’s name (lowercase, using hyphens instead of spaces). This allows you to easily link back to the translated section using standard Markdown linking, such as typing [this section](#sections-and-subsections) to navigate back to this section."
-  },
-  {
-    "objectID": "doc/Examples/example1.html",
-    "href": "doc/Examples/example1.html",
-    "title": "How to write a page using Quarto Markdown",
-    "section": "",
-    "text": "GitHub Pages transforms plain text files into HTML webpages. In this template, files use the .qmd extension and follow Quarto Markdown syntax. Below are examples of the most commonly used formatting structures."
-  },
-  {
-    "objectID": "doc/Examples/example1.html#this-is-a-subsection",
-    "href": "doc/Examples/example1.html#this-is-a-subsection",
-    "title": "How to write a page using Quarto Markdown",
-    "section": "This is a subsection",
-    "text": "This is a subsection\n\nThis is a sub-subsection\nTo make a section cross-referenceable, append an identifier starting with #sec- to the header. For example, typing ## Mathematical Equations {#sec-maths} allows the section to be referenced anywhere in the document using @sec-maths."
-  },
-  {
-    "objectID": "doc/Examples/example1.html#footnotes",
-    "href": "doc/Examples/example1.html#footnotes",
-    "title": "How to write a page using Quarto Markdown",
-    "section": "Footnotes",
-    "text": "Footnotes\n\n\nFor example, this is a footnote.↩︎"
-  },
-  {
-    "objectID": "doc/Gravitationally-induced_quantum_effects.html",
-    "href": "doc/Gravitationally-induced_quantum_effects.html",
-    "title": "Gravitationally-induced quantum effects",
-    "section": "",
-    "text": "By we denote physical phenomena in which gravity modifies the standard quantum behavior in ways not fully captured by relativistic quantum field theory. Such effects are expected either when quantum systems probe spacetime curvature or when gravity and quantum mechanics are treated within a unified framework, independently of the microscopic realization of quantum gravity.\nIn the strong-gravity regime, quantum effects arise near causal horizons and regions of large spacetime curvature. Hawking radiation [Hawk75] revealed the thermodynamic nature of black holes, motivating studies of quantum corrections to black hole entropy and consistency conditions that promote such astrophysical objects to probes of quantum gravity. Beyond thermodynamic aspects, strong gravitational backgrounds can also induce genuinely quantum correlations in the gravitational field itself, for instance through the production of squeezed graviton states in primordial and astrophysical environments.\nIn the weak-gravity regime, interacting quantum systems may be described via modified Schrödinger dynamics. Motivations for such modifications include collapse models [BLSS13], which introduce gravitationally-induced decoherence in order to address the measurement problem, but also semiclassical gravity, according to which the gravitational field remains classical. Predictions arising from these frameworks can be tested using matter-wave interferometers that delocalize massive quantum systems into spatial superpositions across the interferometer arms. Along this line, gravitationally-induced phase shifts were first observed with a neutron interferometer in the celebrated COW experiment [CoOvWe75]. More recently, similar techniques have revealed the gravitational Aharonov–Bohm effect, demonstrating that gravity acts on quantum systems through the metric rather than as a Newtonian force. Complementary experiments using large-molecule interferometry further constrain collapse models and [gravitational decoherence]/docs/2ndlevel/Gravitationally-induced_decoherence.qmd) [FGZK19].\nA research field closely related to the one discussed above investigates gravity-mediated entanglement between distinct quantum systems. Indeed, quantum mechanics predicts that the mutual gravitational coupling of two spatially-delocalized systems is capable of generating entanglement between their positional degrees of freedom. Inspired by Feynman’s proposal at the Chapel Hill conference [Berg57], several Gravity-mediated entanglement tests have been recently put forward. In these works, it is argued that the observation of quantum correlations stemming from the gravitational interaction would constitute evidence for the quantum nature of gravity, since a purely classical field could only mediate local operations and classical communication (LOCC) and would therefore be unable to generate entanglement. The generality and robustness of this conclusion, however, remain the subject of active debate.\nBeyond entanglement, quantum gravity effects may also manifest as deviations from the standard gravitational interaction, motivating experimental tests of the equivalence principle with quantum systems, precision measurements of short-range gravity, proposed tests of quantum time dilation and local Lorentz symmetry breakdown.",
+    "text": "In-vacuo dispersion is an effect related to the hypothesis of a quantum gravity scale modified dispersion relation (MDR), which is described by the Hamiltonian of a relativistic particle characterizing its propagation in a quantum spacetime. Deviations from the general relativistic dispersion relations are often (but not always) associated with either the violation or deformation of relativistic symmetries. The core idea is to describe the effects of quantum gravity as a deformation of the classical trajectory of particles—a deformation that grows with the particle’s energy and is suppressed by the quantum gravity energy scale [AEMN98, Ad22].\nSince, in the context of quantum gravity, the relevant energies are ultra-relativistic, one can often focus on the massless case. For certain types of MDRs, the speed of a massless particle becomes energy-dependent in vacuum, which is the origin of the effect’s name.\nFor this reason, if particles are emitted from a given source with an energy difference, they arrive at a detector with a time difference proportional to the product of the energy difference and the propagation distance, but suppressed by the quantum gravity energy scale. This is a quantum spacetime-induced time delay effect, analogously to what the propagation of light through a medium (\\(\\eta\\) – phenomenological parameter, \\(M_P\\) –Planck mass, \\(D(z)\\) – redshift-dependent distance factor)\n\\[\n\\Delta t = \\eta D(z) \\frac{\\Delta E}{M_P}\n\\]\nIf these particles propagate over cosmological distances, even a modification suppressed by the Planck scale could produce a measurable effect with modern telescopes.\nDifferent formulations of the time delay effect have been proposed based on various hypotheses, such as the coupling between the energy-momentum of the particle and the spacetime metric, the local symmetries of spacetime, and the redshift dependence of the quantum gravity scale [Ad22].",
     "crumbs": [
       "Topics",
       "First level topics",
-      "Gravitationally-induced quantum effects"
+      "In-vacuo dispersion"
     ]
   },
   {
-    "objectID": "doc/Gravitationally-induced_quantum_effects.html#authors",
-    "href": "doc/Gravitationally-induced_quantum_effects.html#authors",
-    "title": "Gravitationally-induced quantum effects",
+    "objectID": "doc/Invacuo_dispersion.html#authors",
+    "href": "doc/Invacuo_dispersion.html#authors",
+    "title": "In-vacuo dispersion",
     "section": "List of Authors",
-    "text": "List of Authors\n\n\nLuciano Petruzziello\nMartin Plavala\nİzzet Sakallı\nÖzgür Kelekçi\nElias Vagenas\nCatalina Curceanu\nGaetano Lambiase\nPasquale Bosso\nAntonia Frassino\nNick Mavromatos\nSebastian Franchino-Viñas",
+    "text": "List of Authors\n\n\nIarley Pereira Lobo\nChristian Pfeifer",
     "crumbs": [
       "Topics",
       "First level topics",
-      "Gravitationally-induced quantum effects"
+      "In-vacuo dispersion"
     ]
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About us",
-    "section": "",
-    "text": "COST Action CA23130 BridgeQG\n\nBridgeQG Vade Mecum Coordinators\n    Giulia Gubitosi\n    Tomislav Terzić\n    Flavio Mercati\n    Giacomo Rosati\n\n\nWebpage preparation and deployment\n    Maykoll Reyes\n\n\nPowered By\n\nGitHub Pages: Hosting and deployment infrastructure.\nQuarto: Markdown rendering, cross-referencing, and website generation.\nPandoc: Document format translation.\nBootstrap and Bootswatch: CSS support and user interface.\nMathJax: Mathematical notation rendering.\nGemini: Help writing the Lua filters.",
-    "crumbs": [
-      "About us"
-    ]
-  },
-  {
-    "objectID": "doc/Examples/example3.html",
-    "href": "doc/Examples/example3.html",
-    "title": "\\(\\Lambda\\)CDM Cosmological Model",
-    "section": "",
-    "text": "In order to describe an homogeneous and isotropic universe like in the framework of GR, one should solve the Einstein field equations using a homogeneous, isotropic, and expanding metric (the FLRW metric), \n\\[\nds^2 = dt^2 - a^2(t) \\left(\\frac{dr^2}{1-k r^2}+r^2 d\\Omega\\right) \\,,\n\\tag{1}\\]\n where \\(k\\) is the curvature and \\(a(t)\\) the scale factor of the universe, which is closely related to the redshift, \\(a(t)=1/(1+z(t))\\). We can use this relation to also connect the temporal coordinate to the redshift variable, \n\\[\n\\begin{aligned}\na(t) &=\\frac{1}{1+z(t)} \\\\\n    \\frac{\\dot a(t)}{a(t)} dt &= -\\frac{dz}{1+z(t)} \\\\\n    dt &= -\\frac{dz}{H(z)(1+z)} \\,,\n\\end{aligned}\n\\tag{2}\\]\n where we have defined the Hubble parameter1 as \\(H=\\dot a/a\\)."
-  },
-  {
-    "objectID": "doc/Examples/example3.html#authors",
-    "href": "doc/Examples/example3.html#authors",
-    "title": "\\(\\Lambda\\)CDM Cosmological Model",
-    "section": "List of Authors",
-    "text": "List of Authors\n\n\nAlbert Einstein\nIsaac Newton"
-  },
-  {
-    "objectID": "doc/Examples/example3.html#footnotes",
-    "href": "doc/Examples/example3.html#footnotes",
-    "title": "\\(\\Lambda\\)CDM Cosmological Model",
-    "section": "Footnotes",
-    "text": "Footnotes\n\n\nWe will not discuss here the Hubble tension problem.↩︎"
   },
   {
     "objectID": "doc/Examples/example0.html",
@@ -202,99 +148,153 @@
     "text": "Every time you commit changes to your repository, GitHub Actions will automatically take care of the deployment phase. The updated webpage will be built and pushed to the gh-pages branch, going live online in just a few minutes."
   },
   {
-    "objectID": "doc/Invacuo_dispersion.html",
-    "href": "doc/Invacuo_dispersion.html",
-    "title": "In-vacuo dispersion",
+    "objectID": "doc/Examples/example3.html",
+    "href": "doc/Examples/example3.html",
+    "title": "\\(\\Lambda\\)CDM Cosmological Model",
     "section": "",
-    "text": "In-vacuo dispersion is an effect related to the hypothesis of a quantum gravity scale modified dispersion relation (MDR), which is described by the Hamiltonian of a relativistic particle characterizing its propagation in a quantum spacetime. Deviations from the general relativistic dispersion relations are often (but not always) associated with either the violation or deformation of relativistic symmetries. The core idea is to describe the effects of quantum gravity as a deformation of the classical trajectory of particles—a deformation that grows with the particle’s energy and is suppressed by the quantum gravity energy scale [AEMN98, Ad22].\nSince, in the context of quantum gravity, the relevant energies are ultra-relativistic, one can often focus on the massless case. For certain types of MDRs, the speed of a massless particle becomes energy-dependent in vacuum, which is the origin of the effect’s name.\nFor this reason, if particles are emitted from a given source with an energy difference, they arrive at a detector with a time difference proportional to the product of the energy difference and the propagation distance, but suppressed by the quantum gravity energy scale. This is a quantum spacetime-induced time delay effect, analogously to what the propagation of light through a medium (\\(\\eta\\) – phenomenological parameter, \\(M_P\\) –Planck mass, \\(D(z)\\) – redshift-dependent distance factor)\n\\[\n\\Delta t = \\eta D(z) \\frac{\\Delta E}{M_P}\n\\]\nIf these particles propagate over cosmological distances, even a modification suppressed by the Planck scale could produce a measurable effect with modern telescopes.\nDifferent formulations of the time delay effect have been proposed based on various hypotheses, such as the coupling between the energy-momentum of the particle and the spacetime metric, the local symmetries of spacetime, and the redshift dependence of the quantum gravity scale [Ad22].",
-    "crumbs": [
-      "Topics",
-      "First level topics",
-      "In-vacuo dispersion"
-    ]
+    "text": "In order to describe an homogeneous and isotropic universe like in the framework of GR, one should solve the Einstein field equations using a homogeneous, isotropic, and expanding metric (the FLRW metric), \n\\[\nds^2 = dt^2 - a^2(t) \\left(\\frac{dr^2}{1-k r^2}+r^2 d\\Omega\\right) \\,,\n\\tag{1}\\]\n where \\(k\\) is the curvature and \\(a(t)\\) the scale factor of the universe, which is closely related to the redshift, \\(a(t)=1/(1+z(t))\\). We can use this relation to also connect the temporal coordinate to the redshift variable, \n\\[\n\\begin{aligned}\na(t) &=\\frac{1}{1+z(t)} \\\\\n    \\frac{\\dot a(t)}{a(t)} dt &= -\\frac{dz}{1+z(t)} \\\\\n    dt &= -\\frac{dz}{H(z)(1+z)} \\,,\n\\end{aligned}\n\\tag{2}\\]\n where we have defined the Hubble parameter1 as \\(H=\\dot a/a\\)."
   },
   {
-    "objectID": "doc/Invacuo_dispersion.html#authors",
-    "href": "doc/Invacuo_dispersion.html#authors",
-    "title": "In-vacuo dispersion",
+    "objectID": "doc/Examples/example3.html#authors",
+    "href": "doc/Examples/example3.html#authors",
+    "title": "\\(\\Lambda\\)CDM Cosmological Model",
     "section": "List of Authors",
-    "text": "List of Authors\n\n\nIarley Pereira Lobo\nChristian Pfeifer",
-    "crumbs": [
-      "Topics",
-      "First level topics",
-      "In-vacuo dispersion"
-    ]
+    "text": "List of Authors\n\n\nAlbert Einstein\nIsaac Newton"
   },
   {
-    "objectID": "doc/LIV_DSR.html",
-    "href": "doc/LIV_DSR.html",
-    "title": "Violation and Deformation of Relativistic Symmetries",
+    "objectID": "doc/Examples/example3.html#footnotes",
+    "href": "doc/Examples/example3.html#footnotes",
+    "title": "\\(\\Lambda\\)CDM Cosmological Model",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nWe will not discuss here the Hubble tension problem.↩︎"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About us",
     "section": "",
-    "text": "Relativistic symmetries play a central role in modern physics, but many approaches to quantum gravity suggest that these symmetries may not remain exactly the classical (local) Lorentz or Poincaré transformations of special relativity at the highest energy scales. This motivates the investigation of scenarios in which Lorentz and Poincaré symmetries are either violated or deformed. In the case of Lorentz Invariance Violation (LIV), Lorentz symmetry is broken explicitly (as in many effective field theory descriptions) or spontaneously (when fields acquire vacuum expectation values that select preferred directions in spacetime), so that physics is formulated in a preferred frame. In contrast, deformed-symmetry frameworks (DSR – Doubly (or Deformed) Special Relativity [Amel02], preserve the relativity principle but modify the transformation laws between observers by introducing an additional invariant scale (usually associated with the Planck length, \\(\\ell_P \\approx 1.61 \\times 10^{-35}\\,\\mathrm{m} \\approx 1.30 \\times 10^{-29}\\,\\mathrm{eV}^{-1}\\)). Although both approaches explore possible imprints of a quantum or discrete structure of spacetime, they lead to conceptually different kinematics and, as discussed below, to very different phenomenological expectations.\nModified Dispersion Relations (MDR) represent one of the most studied ways to depart from special-relativistic kinematics and have been extensively studied in both LIV and DSR scenarios, particularly for their phenomenological implications, even though not all LIV and DSR models necessarily feature a MDR. The most-studied LIV models typically arise from symmetry-breaking operators in effective field theory. On the other hand, DSR models often arise from constructions in which deformed spacetime symmetries are formulated within a Hopf-algebra (quantum groups) framework encoding high-energy modifications of the Poincaré symmetry. In LIV and DSR scenarios, nontrivial/nonlinear energy-momentum conservation rules, formalized as a modified composition law for four-momenta, have also been considered. However, while in LIV a modified composition law is not strictly required, in DSR it is generally considered necessary to ensure the compatibility between the relativity principle and the presence of an additional invariant scale. In DSR, the modified composition law admits a geometric interpretation as a rule for non-linear translations in momentum space, and it can also be understood algebraically as part of the coalgebra structure of Hopf algebras. These structures commonly appear in models with curved momentum space, noncommutative spacetimes, or quantum-group symmetries, and can lead to relative locality, namely an observer dependence of event localisation that may also arise in more general contexts. A more fundamental framework for LIV and DSR models is based on (quantum) fields in noncommutative spacetimes, which in turn allow for the study of discrete symmetry operators C (charge conjugation), P (parity), T (time reversal), and scattering amplitudes. In this context, loop corrections to tree-level diagrams often exhibit UV/IR mixing, where Lorentz-breaking (or deformation) scales, and cutoff scales interact in a non-trivial way, with potentially observable consequences. Some of these models, which may or may not imply MDRs, may also lead to a Planck-scale Generalized Heisenberg Uncertainty Principle (GUP).\nThe phenomenology associated with the LIV and DSR frameworks is markedly different. The most studied effect in both LIV and DSR scenarios is in-vacuo dispersion, arising from MDRs. However, other effects that are generally present in LIV frameworks, like threshold anomalies, vacuum birefringence, or modified decay channels, are typically highly suppressed in DSR scenarios, or not present at all if they violate the relativity principle. For example, they neither open nor close thresholds of reactions that, in LIV scenarios, may become allowed or forbidden. Astroparticle messengers (high-energy gamma rays, neutrinos, and cosmic rays), together with gravitational-wave, gravitational-lensing and black-hole observations, offer access to regimes where small departures from relativistic symmetries may accumulate or become detectable within a multimessenger approach. A generalization to expanding spacetimes of LIV models and of DSR models in the presence of a de Sitter-invariant scale) has been developed in recent years.\nSuch effects can also manifest in the low-energy regime. In quantum mechanical systems, LIV and DSR may induce modifications in time evolution. For instance, a modified Schrödinger equation arises from modified dispersion relations, and decoherence occurs when the quantum gravity scale is treated as a stochastic quantity or when modified symmetries are present. Also, C, P, and T transformations can interact non-trivially with the LIV or DSR scales, leading to additional phenomenological signatures. Precision laboratory and collider or accelerator experiments, often aimed at measuring differences in properties between particles and antiparticles (e.g. decay times), provide complementary tests of these effects. Taken together, astroparticle, astrophysical, and low-energy laboratory probes form a broad landscape in which the implications of the deformation or violation of relativistic symmetries can be systematically explored.\nGeneral reviews of these topics can be found in [Matt05], [Amel13], [Ad22]",
+    "text": "COST Action CA23130 BridgeQG\n\nBridgeQG Vade Mecum Coordinators\n    Giulia Gubitosi\n    Tomislav Terzić\n    Flavio Mercati\n    Giacomo Rosati\n\n\nWebpage preparation and deployment\n    Maykoll Reyes\n\n\nPowered By\n\nGitHub Pages: Hosting and deployment infrastructure.\nQuarto: Markdown rendering, cross-referencing, and website generation.\nPandoc: Document format translation.\nBootstrap and Bootswatch: CSS support and user interface.\nMathJax: Mathematical notation rendering.\nGemini: Help writing the Lua filters.",
     "crumbs": [
-      "Topics",
-      "First level topics",
-      "Violation and Deformation of Relativistic Symmetries"
+      "About us"
     ]
   },
   {
-    "objectID": "doc/LIV_DSR.html#authors",
-    "href": "doc/LIV_DSR.html#authors",
-    "title": "Violation and Deformation of Relativistic Symmetries",
+    "objectID": "doc/Gravitationally-induced_quantum_effects.html",
+    "href": "doc/Gravitationally-induced_quantum_effects.html",
+    "title": "Gravitationally-induced quantum effects",
+    "section": "",
+    "text": "By we denote physical phenomena in which gravity modifies the standard quantum behavior in ways not fully captured by relativistic quantum field theory. Such effects are expected either when quantum systems probe spacetime curvature or when gravity and quantum mechanics are treated within a unified framework, independently of the microscopic realization of quantum gravity.\nIn the strong-gravity regime, quantum effects arise near causal horizons and regions of large spacetime curvature. Hawking radiation [Hawk75] revealed the thermodynamic nature of black holes, motivating studies of quantum corrections to black hole entropy and consistency conditions that promote such astrophysical objects to probes of quantum gravity. Beyond thermodynamic aspects, strong gravitational backgrounds can also induce genuinely quantum correlations in the gravitational field itself, for instance through the production of squeezed graviton states in primordial and astrophysical environments.\nIn the weak-gravity regime, interacting quantum systems may be described via modified Schrödinger dynamics. Motivations for such modifications include collapse models [BLSS13], which introduce gravitationally-induced decoherence in order to address the measurement problem, but also semiclassical gravity, according to which the gravitational field remains classical. Predictions arising from these frameworks can be tested using matter-wave interferometers that delocalize massive quantum systems into spatial superpositions across the interferometer arms. Along this line, gravitationally-induced phase shifts were first observed with a neutron interferometer in the celebrated COW experiment [CoOvWe75]. More recently, similar techniques have revealed the gravitational Aharonov–Bohm effect, demonstrating that gravity acts on quantum systems through the metric rather than as a Newtonian force. Complementary experiments using large-molecule interferometry further constrain collapse models and [gravitational decoherence]/docs/2ndlevel/Gravitationally-induced_decoherence.qmd) [FGZK19].\nA research field closely related to the one discussed above investigates gravity-mediated entanglement between distinct quantum systems. Indeed, quantum mechanics predicts that the mutual gravitational coupling of two spatially-delocalized systems is capable of generating entanglement between their positional degrees of freedom. Inspired by Feynman’s proposal at the Chapel Hill conference [Berg57], several Gravity-mediated entanglement tests have been recently put forward. In these works, it is argued that the observation of quantum correlations stemming from the gravitational interaction would constitute evidence for the quantum nature of gravity, since a purely classical field could only mediate local operations and classical communication (LOCC) and would therefore be unable to generate entanglement. The generality and robustness of this conclusion, however, remain the subject of active debate.\nBeyond entanglement, quantum gravity effects may also manifest as deviations from the standard gravitational interaction, motivating experimental tests of the equivalence principle with quantum systems, precision measurements of short-range gravity, proposed tests of quantum time dilation and local Lorentz symmetry breakdown.",
+    "crumbs": [
+      "Topics",
+      "First level topics",
+      "Gravitationally-induced quantum effects"
+    ]
+  },
+  {
+    "objectID": "doc/Gravitationally-induced_quantum_effects.html#authors",
+    "href": "doc/Gravitationally-induced_quantum_effects.html#authors",
+    "title": "Gravitationally-induced quantum effects",
     "section": "List of Authors",
-    "text": "List of Authors\n\n\nAndrea Bevilacqua\nAndrzej Borowiec\nJosé Manuel Carmona\nJosé Luis Cortés\nSebastian Franchino-Viñas\nTajron Jurić\nTeppei Katori\nIarley Lobo\nFlavio Mercati\nChristian Pfeifer\nDiego Rubiera-Garcia\nFilip Rescic\nMaykoll A. Reyes\nGiacomo Rosati\nYaser Tavakoli",
+    "text": "List of Authors\n\n\nLuciano Petruzziello\nMartin Plavala\nİzzet Sakallı\nÖzgür Kelekçi\nElias Vagenas\nCatalina Curceanu\nGaetano Lambiase\nPasquale Bosso\nAntonia Frassino\nNick Mavromatos\nSebastian Franchino-Viñas",
     "crumbs": [
       "Topics",
       "First level topics",
-      "Violation and Deformation of Relativistic Symmetries"
+      "Gravitationally-induced quantum effects"
     ]
   },
   {
-    "objectID": "doc/Equivalence_principle.html",
-    "href": "doc/Equivalence_principle.html",
-    "title": "Equivalence Principle, locality and quantum gravity",
+    "objectID": "doc/Examples/example1.html",
+    "href": "doc/Examples/example1.html",
+    "title": "How to write a page using Quarto Markdown",
     "section": "",
-    "text": "The purpose of the equivalence principle (EP) is to prescribe the interaction between gravity and matter, i.e., between gravitational and non-gravitational degrees of freedom in nature. EP is one of the most fundamental principles in modern physics, a cornerstone of Einstein’s theory of general relativity and of the Standard Model of elementary particle physics.",
+    "text": "GitHub Pages transforms plain text files into HTML webpages. In this template, files use the .qmd extension and follow Quarto Markdown syntax. Below are examples of the most commonly used formatting structures."
+  },
+  {
+    "objectID": "doc/Examples/example1.html#this-is-a-subsection",
+    "href": "doc/Examples/example1.html#this-is-a-subsection",
+    "title": "How to write a page using Quarto Markdown",
+    "section": "This is a subsection",
+    "text": "This is a subsection\n\nThis is a sub-subsection\nTo make a section cross-referenceable, append an identifier starting with #sec- to the header. For example, typing ## Mathematical Equations {#sec-maths} allows the section to be referenced anywhere in the document using @sec-maths."
+  },
+  {
+    "objectID": "doc/Examples/example1.html#footnotes",
+    "href": "doc/Examples/example1.html#footnotes",
+    "title": "How to write a page using Quarto Markdown",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nFor example, this is a footnote.↩︎"
+  },
+  {
+    "objectID": "doc/Examples/example2.html",
+    "href": "doc/Examples/example2.html",
+    "title": "Allowed LaTeX syntax for page writing",
+    "section": "",
+    "text": "In the scientific community, it is very common to have texts, equations, and full documents already written in LaTeX. This implies that one needs to translate such content to the Quarto Markdown syntax explained in the previous guide. However, this template allows for the use of some simple LaTeX syntax (in combination with native syntax), which is converted on the fly to the correct Quarto Markdown format. This document serves as both a guide and a test file for the translation rules. It is written using the supported LaTeX commands to explain exactly how the transformation works."
+  },
+  {
+    "objectID": "doc/Examples/example2.html#this-is-a-subsection",
+    "href": "doc/Examples/example2.html#this-is-a-subsection",
+    "title": "Allowed LaTeX syntax for page writing",
+    "section": "This is a subsection",
+    "text": "This is a subsection\n\nThis is a sub-subsection\nBecause the script converts this directly into native Markdown, the system automatically generates a reference identifier for it based on the heading’s name (lowercase, using hyphens instead of spaces). This allows you to easily link back to the translated section using standard Markdown linking, such as typing [this section](#sections-and-subsections) to navigate back to this section."
+  },
+  {
+    "objectID": "doc/IR-UV_mixing.html",
+    "href": "doc/IR-UV_mixing.html",
+    "title": "IR-UV mixing",
+    "section": "",
+    "text": "Quantum gravity theories usually introduce severe ultraviolet (UV) modifications with respect to standard quantum field theories. In many cases, including string theory and noncommutative approaches, these modifications turn out to affect also the dynamics of the physics in the infrared (IR) region [MiVaSe00].\nIn particular, it has been shown that a feature rendering these theories (or a given Feynman diagram) UV renormalizable, could generate instabilities in the IR region [MiVaSe00]. This phenomenon usually shows up already at the first perturbative order as an IR singularity proportional to an inverse power of an external momentum. This singularity will affect thus the subsequent perturbative orders, resulting in new types of divergences which cannot be treated within the usual renormalization schemes. In this sense, the IR and UV regimes are no longer independent, i.e. they are mixed.\nThe IR-UV mixing is frequently associated to non-locality in quantum field theories; in effect, in a quantum theory of gravity, the presence of the latter is expected, given the long-range character of the gravitational force and the impossibility to screen it.\nOnly a few ways to avoid this phenomenon have been found within particular field theories, at least to the first perturbative orders [DNRS24]. The IR-UV mixing has also recently been studied as a way to alleviate the hierarchy problem [CrKo20].\nFrom a phenomenological point of view, the IR-UV mixing motivates modified dispersion relations that include inverse powers of the momentum [MaSuTo00]. Such modifications would strongly affect our understanding of a broad class of experiments, including, for example, particle-physics [AmMaYo04] and cold-atoms [ALMT09] scenarios.",
     "crumbs": [
       "Topics",
       "First level topics",
-      "Equivalence Principle, locality and quantum gravity"
+      "IR-UV mixing"
     ]
   },
   {
-    "objectID": "doc/Equivalence_principle.html#authors",
-    "href": "doc/Equivalence_principle.html#authors",
-    "title": "Equivalence Principle, locality and quantum gravity",
+    "objectID": "doc/IR-UV_mixing.html#authors",
+    "href": "doc/IR-UV_mixing.html#authors",
+    "title": "IR-UV mixing",
     "section": "List of Authors",
-    "text": "List of Authors\n\n\nNikola Paunkovic\nMarko Vojinovic",
+    "text": "List of Authors\n\n\nSebastián Franchino-Viñas\nJean-Christophe Wallet\nTajron Jurić",
     "crumbs": [
       "Topics",
       "First level topics",
-      "Equivalence Principle, locality and quantum gravity"
+      "IR-UV mixing"
     ]
   },
   {
-    "objectID": "doc/2ndlevel/DSR_FLRW.html",
-    "href": "doc/2ndlevel/DSR_FLRW.html",
-    "title": "DSR in expandin spacetimes",
+    "objectID": "doc/Low-energy_table-top_experiments.html",
+    "href": "doc/Low-energy_table-top_experiments.html",
+    "title": "Low-energy table-top experiments",
     "section": "",
-    "text": "mention Triply Special Relativity, Hamilton geometry, and “slicing”",
+    "text": "Low-energy table-top experiments provide a powerful and complementary approach to exploring fundamental questions at the interface of quantum mechanics and gravity. Rather than relying on large-scale or high-energy facilities, these experiments exploit extreme precision, quantum coherence, and ultra-sensitive detection techniques to probe tiny effects that may reveal new physics beyond the Standard Model and classical General Relativity.\nA central goal of these experiments is to test whether gravity must be quantized or whether it can induce genuinely quantum phenomena, such as entanglement, between massive systems. Closely related are laboratory studies of gravitational decoherence, which investigate whether gravity could play a role in the apparent transition from quantum to classical behavior, as explored for example in models such as Diósi–Penrose [Dios87]. Matter-wave interferometry offers another key pathway, allowing tests of the interplay between gravity and quantum phases, including classic and modern realizations of gravitationally induced phase shifts. In addition, a variety of modified gravity theories have been proposed as candidate frameworks for quantum gravity. Precision tabletop experiments provide a powerful avenue to test these theories, enabling stringent constraints or potential discovery of deviations from standard gravitational physics.\nLow-energy experiments are also uniquely suited to test foundational principles of quantum mechanics with unprecedented sensitivity. These include searches for violations of discrete symmetries, precision tests of the Pauli Exclusion Principle (such as those performed by the VIP, Violation of the Pauli Exclusion principle, and related experiments), and investigations of possible modifications of quantum theory inspired by quantum gravity, including collapse models. Furthermore, several approaches aim to probe the existence of a fundamental minimum length scale, often formulated through the Generalized Uncertainty Principle (GUP).\nThanks to rapid advances in quantum technologies, systems such as quantum optomechanical resonators, ultra-sensitive magnetometers, and atomic or solid-state sensors are becoming increasingly capable of accessing regimes where tiny gravitational or quantum-gravity–inspired effects may become observable. Together, these table-top experiments form a diverse and rapidly evolving landscape, offering realistic near-term opportunities to experimentally address deep conceptual questions about space, time, and the quantum nature of reality.",
+    "crumbs": [
+      "Topics",
+      "First level topics",
+      "Low-energy table-top experiments"
+    ]
+  },
+  {
+    "objectID": "doc/Low-energy_table-top_experiments.html#authors",
+    "href": "doc/Low-energy_table-top_experiments.html#authors",
+    "title": "Low-energy table-top experiments",
+    "section": "List of Authors",
+    "text": "List of Authors\n\n\nCatalina Oana Curceanu\nLuciano Petruzziello\nSaurya Das\nTammay Kumar Poddar\nAntonino Marciano",
+    "crumbs": [
+      "Topics",
+      "First level topics",
+      "Low-energy table-top experiments"
+    ]
+  },
+  {
+    "objectID": "doc/2ndlevel/QMfoundations.html",
+    "href": "doc/2ndlevel/QMfoundations.html",
+    "title": "Fundamental principles of Quantum Mechanics that are amenable to testing",
+    "section": "",
+    "text": "In particular within the community of Quantum Information",
     "crumbs": [
       "Topics",
       "Second level topics",
-      "DSR in expandin spacetimes"
-    ]
-  },
-  {
-    "objectID": "doc/2ndlevel/LIV_FLRW.html",
-    "href": "doc/2ndlevel/LIV_FLRW.html",
-    "title": "LIV in expanding spacetimes",
-    "section": "",
-    "text": "mention JAcob and Piran etc.",
-    "crumbs": [
-      "Topics",
-      "Second level topics",
-      "LIV in expanding spacetimes"
+      "Fundamental principles of Quantum Mechanics that are amenable to testing"
     ]
   },
   {
