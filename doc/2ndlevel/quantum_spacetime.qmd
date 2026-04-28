@@ -5,3 +5,5 @@ title: 'Quantum Spacetime'
 Mention quantum group symmetries
 
 Mention fuzzy spacetimes from finite matrix geometries e.g. Grosse-Wulkenhaar (mentioned in Emergent, nonclassical and fuzzy spacetime)
+
+Mention discrete spectra of geometric operators (lenght, area etc.)
