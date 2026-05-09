@@ -131,6 +131,18 @@
     ]
   },
   {
+    "objectID": "doc/Quantum_Reference_Frames.html#core-concepts-and-approaches.",
+    "href": "doc/Quantum_Reference_Frames.html#core-concepts-and-approaches.",
+    "title": "Quantum Reference Frames",
+    "section": "Core Concepts and Approaches.",
+    "text": "Core Concepts and Approaches.\nIn general, a QRF is a physical system associated with a \\(G\\), under which it transforms covariantly. The properties of other systems can then be described relative to the chosen QRF with so-called . The descriptions relative to different QRFs are related by .",
+    "crumbs": [
+      "Topics",
+      "First level topics",
+      "Quantum Reference Frames"
+    ]
+  },
+  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About us",
