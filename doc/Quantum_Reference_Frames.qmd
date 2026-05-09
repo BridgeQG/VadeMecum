@@ -38,3 +38,17 @@ The symmetries of such spacetimes are described by [quantum groups and Hopf alge
 
  The variety of contemporary frameworks for describing and using quantum reference frames reflects the different contexts in which the concept first appeared. In particular, approaches motivated by constraint quantization and gauge symmetry often lead to mathematical structures that differ from `quantum-native' approaches, where symmetries are imposed directly at the level of observable algebras. The precise relation between the different approaches is still an active area of research. Nevertheless, there is substantial overlap in motivation, structures, and insights.
 The ultimate goals of constructing diffeomorphism-invariant quantum field theories and of applying QRFs to quantum gravity are shared across all approaches, and it is likely that insights from each framework will be needed.
+
+## List of Authors {id="authors" .appendix}
+- Angel Ballesteros
+- Goffredo Chirco
+- Anne-Catherine de la Hamette
+- Renata Ferrero
+- Sébastien C. Garmier
+- Viktoria Kabel
+- Etera Livine
+- Fedele Lizzi
+- Leon Loveridge
+- Antonino Marciano
+- Daniele Oriti
+- and Roman Pasechnik
