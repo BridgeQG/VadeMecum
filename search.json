@@ -88,35 +88,60 @@
     "href": "doc/Examples/example2.html",
     "title": "Allowed LaTeX syntax for page writing",
     "section": "",
-    "text": "In the scientific community, it is very common to have texts, equations, and full documents already written in LaTeX. This implies that one needs to translate such content to the Quarto Markdown syntax explained in the previous guide. However, this template allows for the use of some simple LaTeX syntax (in combination with native syntax), which is converted on the fly to the correct Quarto Markdown format. This document serves as both a guide and a test file for the translation rules. It is written using the supported LaTeX commands to explain exactly how the transformation works."
+    "text": "In the scientific community, it is very common to have texts, equations, and full documents already written in LaTeX. This implies that one needs to translate such content to the Quarto Markdown syntax explained in the previous guide. However, this template allows for the use of some simple LaTeX syntax (in combination with native syntax), which is converted on the fly to the correct Quarto Markdown format. This document serves as both a guide and a test file for the translation rules. It is written using the supported LaTeX commands to explain exactly how the transformation works.",
+    "crumbs": [
+      "Topics",
+      "Examples",
+      "Allowed LaTeX syntax for page writing"
+    ]
   },
   {
     "objectID": "doc/Examples/example2.html#this-is-a-subsection",
     "href": "doc/Examples/example2.html#this-is-a-subsection",
     "title": "Allowed LaTeX syntax for page writing",
     "section": "This is a subsection",
-    "text": "This is a subsection\n\nThis is a sub-subsection\nBecause the script converts this directly into native Markdown, the system automatically generates a reference identifier for it based on the heading’s name (lowercase, using hyphens instead of spaces). This allows you to easily link back to the translated section using standard Markdown linking, such as typing [this section](#sections-and-subsections) to navigate back to this section."
+    "text": "This is a subsection\n\nThis is a sub-subsection\nBecause the script converts this directly into native Markdown, the system automatically generates a reference identifier for it based on the heading’s name (lowercase, using hyphens instead of spaces). This allows you to easily link back to the translated section using standard Markdown linking, such as typing [this section](#sections-and-subsections) to navigate back to this section.",
+    "crumbs": [
+      "Topics",
+      "Examples",
+      "Allowed LaTeX syntax for page writing"
+    ]
   },
   {
     "objectID": "doc/Examples/example1.html",
     "href": "doc/Examples/example1.html",
     "title": "How to write a page using Quarto Markdown",
     "section": "",
-    "text": "GitHub Pages transforms plain text files into HTML webpages. In this template, files use the .qmd extension and follow Quarto Markdown syntax. Below are examples of the most commonly used formatting structures."
+    "text": "GitHub Pages transforms plain text files into HTML webpages. In this template, files use the .qmd extension and follow Quarto Markdown syntax. Below are examples of the most commonly used formatting structures.",
+    "crumbs": [
+      "Topics",
+      "Examples",
+      "How to write a page using Quarto Markdown"
+    ]
   },
   {
     "objectID": "doc/Examples/example1.html#this-is-a-subsection",
     "href": "doc/Examples/example1.html#this-is-a-subsection",
     "title": "How to write a page using Quarto Markdown",
     "section": "This is a subsection",
-    "text": "This is a subsection\n\nThis is a sub-subsection\nTo make a section cross-referenceable, append an identifier starting with #sec- to the header. For example, typing ## Mathematical Equations {#sec-maths} allows the section to be referenced anywhere in the document using @sec-maths."
+    "text": "This is a subsection\n\nThis is a sub-subsection\nTo make a section cross-referenceable, append an identifier starting with #sec- to the header. For example, typing ## Mathematical Equations {#sec-maths} allows the section to be referenced anywhere in the document using @sec-maths.",
+    "crumbs": [
+      "Topics",
+      "Examples",
+      "How to write a page using Quarto Markdown"
+    ]
   },
   {
     "objectID": "doc/Examples/example1.html#footnotes",
     "href": "doc/Examples/example1.html#footnotes",
     "title": "How to write a page using Quarto Markdown",
     "section": "Footnotes",
-    "text": "Footnotes\n\n\nFor example, this is a footnote.↩︎"
+    "text": "Footnotes\n\n\nFor example, this is a footnote.↩︎",
+    "crumbs": [
+      "Topics",
+      "Examples",
+      "How to write a page using Quarto Markdown"
+    ]
   },
   {
     "objectID": "doc/Quantum_Reference_Frames.html#motivation-and-context.",
@@ -181,49 +206,84 @@
     "href": "doc/Examples/example3.html",
     "title": "\\(\\Lambda\\)CDM Cosmological Model",
     "section": "",
-    "text": "In order to describe an homogeneous and isotropic universe like in the framework of GR, one should solve the Einstein field equations using a homogeneous, isotropic, and expanding metric (the FLRW metric), \n\\[\nds^2 = dt^2 - a^2(t) \\left(\\frac{dr^2}{1-k r^2}+r^2 d\\Omega\\right) \\,,\n\\tag{1}\\]\n where \\(k\\) is the curvature and \\(a(t)\\) the scale factor of the universe, which is closely related to the redshift, \\(a(t)=1/(1+z(t))\\). We can use this relation to also connect the temporal coordinate to the redshift variable, \n\\[\n\\begin{aligned}\na(t) &=\\frac{1}{1+z(t)} \\\\\n    \\frac{\\dot a(t)}{a(t)} dt &= -\\frac{dz}{1+z(t)} \\\\\n    dt &= -\\frac{dz}{H(z)(1+z)} \\,,\n\\end{aligned}\n\\tag{2}\\]\n where we have defined the Hubble parameter1 as \\(H=\\dot a/a\\)."
+    "text": "In order to describe an homogeneous and isotropic universe like in the framework of GR, one should solve the Einstein field equations using a homogeneous, isotropic, and expanding metric (the FLRW metric), \n\\[\nds^2 = dt^2 - a^2(t) \\left(\\frac{dr^2}{1-k r^2}+r^2 d\\Omega\\right) \\,,\n\\tag{1}\\]\n where \\(k\\) is the curvature and \\(a(t)\\) the scale factor of the universe, which is closely related to the redshift, \\(a(t)=1/(1+z(t))\\). We can use this relation to also connect the temporal coordinate to the redshift variable, \n\\[\n\\begin{aligned}\na(t) &=\\frac{1}{1+z(t)} \\\\\n    \\frac{\\dot a(t)}{a(t)} dt &= -\\frac{dz}{1+z(t)} \\\\\n    dt &= -\\frac{dz}{H(z)(1+z)} \\,,\n\\end{aligned}\n\\tag{2}\\]\n where we have defined the Hubble parameter1 as \\(H=\\dot a/a\\).",
+    "crumbs": [
+      "Topics",
+      "Examples",
+      "$\\Lambda$CDM Cosmological Model"
+    ]
   },
   {
     "objectID": "doc/Examples/example3.html#authors",
     "href": "doc/Examples/example3.html#authors",
     "title": "\\(\\Lambda\\)CDM Cosmological Model",
     "section": "List of Authors",
-    "text": "List of Authors\n\n\nAlbert Einstein\nIsaac Newton"
+    "text": "List of Authors\n\n\nAlbert Einstein\nIsaac Newton",
+    "crumbs": [
+      "Topics",
+      "Examples",
+      "$\\Lambda$CDM Cosmological Model"
+    ]
   },
   {
     "objectID": "doc/Examples/example3.html#footnotes",
     "href": "doc/Examples/example3.html#footnotes",
     "title": "\\(\\Lambda\\)CDM Cosmological Model",
     "section": "Footnotes",
-    "text": "Footnotes\n\n\nWe will not discuss here the Hubble tension problem.↩︎"
+    "text": "Footnotes\n\n\nWe will not discuss here the Hubble tension problem.↩︎",
+    "crumbs": [
+      "Topics",
+      "Examples",
+      "$\\Lambda$CDM Cosmological Model"
+    ]
   },
   {
     "objectID": "doc/Examples/example0.html",
     "href": "doc/Examples/example0.html",
     "title": "BridgeQG Vade Mecum",
     "section": "",
-    "text": "The main configuration for the website is handled inside the _quarto.yml file. You can customize this file to change the site’s title, logo, navigation sidebar, and bibliography settings:\nwebsite:\n  title: \"Scientific Wiki Template\"\n  search: true\n  sidebar:\n    style: \"docked\"\n    logo: \"img/logo/logo.png\"\n    contents:\n      - href: index.qmd\n        text: \"Home\"\n      - auto: \"doc/\"\n      - href: [https://github.com/MKReyesH/ScientificWiki](https://github.com/MKReyesH/ScientificWiki)\n        text: \"GitHub Project\"\n      - href: about.qmd\n\nbibliography: bib/references.bib\ncsl: bib/journal-of-cosmology-and-astroparticle-physics.csl\nYou can manage references by adding .bib files to the bib/ folder. You can also change the citation style by updating the csl file path. Quarto supports many Zotero styles, which can be found at the Zotero Style Repository.\n\n\n\nBibliography files\n\n\n\n\n\nTo add new pages to the wiki, simply create new plain text files (with .qmd extension) inside the doc/ folder. The system will automatically recognize the files and add them to the sidebar. The sidebar reproduces the exact folder structure inside the doc/ folder, so you can create drop-down menus simply by placing files inside sub-folders:\n\n\n\nDocumentation folder structure\n\n\nAll content files must be plain text file using the .qmd extension and must be written using Quarto Markdown syntax. For a detailed guide on native formatting, please see the Quarto Markdown Guide.\nMoreover, anticipating that a lot of scientific content is already written in LaTeX, this template also includes (limited) compatibility for simple LaTeX structures. The commands that are safe to use in the .qmd files are explained in the Allowed LaTeX Syntax Guide. For more complex structures like figures or tables, native Markdown syntax must be used.\n\n\n\nEvery time you commit changes to your repository, GitHub Actions will automatically take care of the deployment phase. The updated webpage will be built and pushed to the gh-pages branch, going live online in just a few minutes."
+    "text": "The main configuration for the website is handled inside the _quarto.yml file. You can customize this file to change the site’s title, logo, navigation sidebar, and bibliography settings:\nwebsite:\n  title: \"Scientific Wiki Template\"\n  search: true\n  sidebar:\n    style: \"docked\"\n    logo: \"img/logo/logo.png\"\n    contents:\n      - href: index.qmd\n        text: \"Home\"\n      - auto: \"doc/\"\n      - href: [https://github.com/MKReyesH/ScientificWiki](https://github.com/MKReyesH/ScientificWiki)\n        text: \"GitHub Project\"\n      - href: about.qmd\n\nbibliography: bib/references.bib\ncsl: bib/journal-of-cosmology-and-astroparticle-physics.csl\nYou can manage references by adding .bib files to the bib/ folder. You can also change the citation style by updating the csl file path. Quarto supports many Zotero styles, which can be found at the Zotero Style Repository.\n\n\n\nBibliography files\n\n\n\n\n\nTo add new pages to the wiki, simply create new plain text files (with .qmd extension) inside the doc/ folder. The system will automatically recognize the files and add them to the sidebar. The sidebar reproduces the exact folder structure inside the doc/ folder, so you can create drop-down menus simply by placing files inside sub-folders:\n\n\n\nDocumentation folder structure\n\n\nAll content files must be plain text file using the .qmd extension and must be written using Quarto Markdown syntax. For a detailed guide on native formatting, please see the Quarto Markdown Guide.\nMoreover, anticipating that a lot of scientific content is already written in LaTeX, this template also includes (limited) compatibility for simple LaTeX structures. The commands that are safe to use in the .qmd files are explained in the Allowed LaTeX Syntax Guide. For more complex structures like figures or tables, native Markdown syntax must be used.\n\n\n\nEvery time you commit changes to your repository, GitHub Actions will automatically take care of the deployment phase. The updated webpage will be built and pushed to the gh-pages branch, going live online in just a few minutes.",
+    "crumbs": [
+      "Topics",
+      "Examples",
+      "BridgeQG Vade Mecum"
+    ]
   },
   {
     "objectID": "doc/Examples/example0.html#configure-your-wiki",
     "href": "doc/Examples/example0.html#configure-your-wiki",
     "title": "BridgeQG Vade Mecum",
     "section": "",
-    "text": "The main configuration for the website is handled inside the _quarto.yml file. You can customize this file to change the site’s title, logo, navigation sidebar, and bibliography settings:\nwebsite:\n  title: \"Scientific Wiki Template\"\n  search: true\n  sidebar:\n    style: \"docked\"\n    logo: \"img/logo/logo.png\"\n    contents:\n      - href: index.qmd\n        text: \"Home\"\n      - auto: \"doc/\"\n      - href: [https://github.com/MKReyesH/ScientificWiki](https://github.com/MKReyesH/ScientificWiki)\n        text: \"GitHub Project\"\n      - href: about.qmd\n\nbibliography: bib/references.bib\ncsl: bib/journal-of-cosmology-and-astroparticle-physics.csl\nYou can manage references by adding .bib files to the bib/ folder. You can also change the citation style by updating the csl file path. Quarto supports many Zotero styles, which can be found at the Zotero Style Repository.\n\n\n\nBibliography files"
+    "text": "The main configuration for the website is handled inside the _quarto.yml file. You can customize this file to change the site’s title, logo, navigation sidebar, and bibliography settings:\nwebsite:\n  title: \"Scientific Wiki Template\"\n  search: true\n  sidebar:\n    style: \"docked\"\n    logo: \"img/logo/logo.png\"\n    contents:\n      - href: index.qmd\n        text: \"Home\"\n      - auto: \"doc/\"\n      - href: [https://github.com/MKReyesH/ScientificWiki](https://github.com/MKReyesH/ScientificWiki)\n        text: \"GitHub Project\"\n      - href: about.qmd\n\nbibliography: bib/references.bib\ncsl: bib/journal-of-cosmology-and-astroparticle-physics.csl\nYou can manage references by adding .bib files to the bib/ folder. You can also change the citation style by updating the csl file path. Quarto supports many Zotero styles, which can be found at the Zotero Style Repository.\n\n\n\nBibliography files",
+    "crumbs": [
+      "Topics",
+      "Examples",
+      "BridgeQG Vade Mecum"
+    ]
   },
   {
     "objectID": "doc/Examples/example0.html#add-content",
     "href": "doc/Examples/example0.html#add-content",
     "title": "BridgeQG Vade Mecum",
     "section": "",
-    "text": "To add new pages to the wiki, simply create new plain text files (with .qmd extension) inside the doc/ folder. The system will automatically recognize the files and add them to the sidebar. The sidebar reproduces the exact folder structure inside the doc/ folder, so you can create drop-down menus simply by placing files inside sub-folders:\n\n\n\nDocumentation folder structure\n\n\nAll content files must be plain text file using the .qmd extension and must be written using Quarto Markdown syntax. For a detailed guide on native formatting, please see the Quarto Markdown Guide.\nMoreover, anticipating that a lot of scientific content is already written in LaTeX, this template also includes (limited) compatibility for simple LaTeX structures. The commands that are safe to use in the .qmd files are explained in the Allowed LaTeX Syntax Guide. For more complex structures like figures or tables, native Markdown syntax must be used."
+    "text": "To add new pages to the wiki, simply create new plain text files (with .qmd extension) inside the doc/ folder. The system will automatically recognize the files and add them to the sidebar. The sidebar reproduces the exact folder structure inside the doc/ folder, so you can create drop-down menus simply by placing files inside sub-folders:\n\n\n\nDocumentation folder structure\n\n\nAll content files must be plain text file using the .qmd extension and must be written using Quarto Markdown syntax. For a detailed guide on native formatting, please see the Quarto Markdown Guide.\nMoreover, anticipating that a lot of scientific content is already written in LaTeX, this template also includes (limited) compatibility for simple LaTeX structures. The commands that are safe to use in the .qmd files are explained in the Allowed LaTeX Syntax Guide. For more complex structures like figures or tables, native Markdown syntax must be used.",
+    "crumbs": [
+      "Topics",
+      "Examples",
+      "BridgeQG Vade Mecum"
+    ]
   },
   {
     "objectID": "doc/Examples/example0.html#commit-changes-and-deploy",
     "href": "doc/Examples/example0.html#commit-changes-and-deploy",
     "title": "BridgeQG Vade Mecum",
     "section": "",
-    "text": "Every time you commit changes to your repository, GitHub Actions will automatically take care of the deployment phase. The updated webpage will be built and pushed to the gh-pages branch, going live online in just a few minutes."
+    "text": "Every time you commit changes to your repository, GitHub Actions will automatically take care of the deployment phase. The updated webpage will be built and pushed to the gh-pages branch, going live online in just a few minutes.",
+    "crumbs": [
+      "Topics",
+      "Examples",
+      "BridgeQG Vade Mecum"
+    ]
   },
   {
     "objectID": "doc/Invacuo_dispersion.html",
