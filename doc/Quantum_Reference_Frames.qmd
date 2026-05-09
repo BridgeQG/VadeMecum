@@ -1,5 +1,7 @@
 ---
 title: 'Quantum Reference Frames'
+nocite: |
+  Bartlett_2007, Giacomini_2017_covariance, Vanrietvelde_2018a, delaHamette_2020, Loveridge:2017pcv
 ---
 \texti{in Relativistic Quantum Information and Quantum Gravity}
 
