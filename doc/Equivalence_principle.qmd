@@ -1,5 +1,5 @@
 ---
-title: 'Equivalence Principle, locality and quantum gravity'
+title: 'Equivalence Principle'
 nocite: |
   @Misner:1973prb, @Okon:2010kn, @DiCasola:2013iia, @Paunkovic:2022flx
 ---
