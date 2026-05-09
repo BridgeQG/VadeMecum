@@ -23,9 +23,6 @@ website:
          - section: "Second level topics"
            contents:
             - auto: "doc/2ndlevel/*.qmd"
-         - section: "Examples"
-           contents:
-            - auto: "doc/Examples/*.qmd"
       - href: https://github.com/BridgeQG/VadeMecum
         text: "GitHub Project"
       - href: about.qmd
