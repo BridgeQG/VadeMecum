@@ -19,6 +19,7 @@ website:
             - href: "doc/IR-UV_mixing.qmd"
             - href: "doc/Equivalence_principle.qmd"
             - href: "doc/Emergent_nonclassical_and_fuzzy_spacetime.qmd"
+            - href: "doc/Quantum_Reference_Frames.qmd"
          - section: "Second level topics"
            contents:
             - auto: "doc/2ndlevel/*.qmd"
