@@ -230,7 +230,7 @@
     "href": "doc/Quantum_Reference_Frames.html",
     "title": "Quantum Reference Frames",
     "section": "",
-    "text": "With the development of relativity theories came a replacement of absolute space and time with the more relational notion of spacetime, which obtains its operational meaning through measurements of relative distances and durations defined by physical systems serving as references. By the same token, in a world described by quantum theory, reference frames should be subject to those laws that govern the objects to be described. Just as extent, duration, and motion in relativity must be understood relative to a given frame, the central objects of the quantum description of nature – states, observables, and probabilities – should be understood as relative to a given quantum reference frame (QRF). This has implications in the foundations of quantum mechanics, provoking a re-examination of the meaning of superposition, entanglement, and indeterminacy, in quantum information processing tasks in which agents lack access to a reference frame, and in quantum field theory and quantum gravity wherein relational descriptions provided by quantum reference frames may allow for background-independence to be manifested.",
+    "text": "in Relativistic Quantum Information and Quantum Gravity",
     "crumbs": [
       "Topics",
       "First level topics",
