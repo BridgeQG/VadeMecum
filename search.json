@@ -24,18 +24,6 @@
     ]
   },
   {
-    "objectID": "doc/2ndlevel/LIV_FLRW.html",
-    "href": "doc/2ndlevel/LIV_FLRW.html",
-    "title": "LIV in expanding spacetimes",
-    "section": "",
-    "text": "mention JAcob and Piran etc.",
-    "crumbs": [
-      "Topics",
-      "Second level topics",
-      "LIV in expanding spacetimes"
-    ]
-  },
-  {
     "objectID": "doc/2ndlevel/Quantum_spacetime.html",
     "href": "doc/2ndlevel/Quantum_spacetime.html",
     "title": "Quantum Spacetime",
@@ -307,6 +295,18 @@
       "Topics",
       "Second level topics",
       "Fundamental principles of Quantum Mechanics that are amenable to testing"
+    ]
+  },
+  {
+    "objectID": "doc/2ndlevel/LIV_DSR_FLRW.html",
+    "href": "doc/2ndlevel/LIV_DSR_FLRW.html",
+    "title": "LIV in expanding spacetimes",
+    "section": "",
+    "text": "mention JAcob and Piran etc.",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "LIV in expanding spacetimes"
     ]
   }
 ]
