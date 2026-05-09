@@ -1,3 +1,5 @@
 ---
 title: 'Quantum Gravity Scale'
 ---
+
+mention also "stochastica Planck scale"?
