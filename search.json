@@ -48,27 +48,15 @@
     ]
   },
   {
-    "objectID": "doc/2ndlevel/Quantum_spacetime.html",
-    "href": "doc/2ndlevel/Quantum_spacetime.html",
-    "title": "Quantum Spacetime",
+    "objectID": "doc/2ndlevel/QMfoundations.html",
+    "href": "doc/2ndlevel/QMfoundations.html",
+    "title": "Fundamental principles of Quantum Mechanics that are amenable to testing",
     "section": "",
-    "text": "Mention quantum group symmetries\nMention fuzzy spacetimes from finite matrix geometries e.g. Grosse-Wulkenhaar (mentioned in Emergent, nonclassical and fuzzy spacetime)\nMention discrete spectra of geometric operators (lenght, area etc.)",
+    "text": "In particular within the community of Quantum Information",
     "crumbs": [
       "Topics",
       "Second level topics",
-      "Quantum Spacetime"
-    ]
-  },
-  {
-    "objectID": "doc/2ndlevel/Decoherence.html",
-    "href": "doc/2ndlevel/Decoherence.html",
-    "title": "Gravity Induced Decoherence",
-    "section": "",
-    "text": "mention also decoherence modified symmetries?",
-    "crumbs": [
-      "Topics",
-      "Second level topics",
-      "Gravity Induced Decoherence"
+      "Fundamental principles of Quantum Mechanics that are amenable to testing"
     ]
   },
   {
@@ -370,15 +358,27 @@
     ]
   },
   {
-    "objectID": "doc/2ndlevel/QMfoundations.html",
-    "href": "doc/2ndlevel/QMfoundations.html",
-    "title": "Fundamental principles of Quantum Mechanics that are amenable to testing",
+    "objectID": "doc/2ndlevel/Decoherence.html",
+    "href": "doc/2ndlevel/Decoherence.html",
+    "title": "Gravity Induced Decoherence",
     "section": "",
-    "text": "In particular within the community of Quantum Information",
+    "text": "mention also decoherence modified symmetries?",
     "crumbs": [
       "Topics",
       "Second level topics",
-      "Fundamental principles of Quantum Mechanics that are amenable to testing"
+      "Gravity Induced Decoherence"
+    ]
+  },
+  {
+    "objectID": "doc/2ndlevel/Quantum_spacetime.html",
+    "href": "doc/2ndlevel/Quantum_spacetime.html",
+    "title": "Quantum Spacetime",
+    "section": "",
+    "text": "Mention quantum group symmetries\nMention fuzzy spacetimes from finite matrix geometries e.g. Grosse-Wulkenhaar (mentioned in Emergent, nonclassical and fuzzy spacetime)\nMention discrete spectra of geometric operators (lenght, area etc.)",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Quantum Spacetime"
     ]
   }
 ]
