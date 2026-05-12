@@ -12,6 +12,7 @@ website:
         contents:
          - section: "First level topics"
            contents:
+            - href: "doc/Astrophysical_probes.qmd"
             - href: "doc/Low-energy_table-top_experiments.qmd"
             - href: "doc/Invacuo_dispersion.qmd"
             - href: "doc/LIV_DSR.qmd"
