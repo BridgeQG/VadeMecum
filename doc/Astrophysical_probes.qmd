@@ -11,7 +11,6 @@ The location of the source also plays a key role during propagation, through bot
 Finally, at the detection stage, messengers are observed through different experimental techniques depending on their nature and energy, such as air-shower measurements, Cherenkov radiation, neutrino telescopes, or interferometric detectors. Since different messengers are linked by the particle processes that govern their production and interactions, their origin can be investigated in a correlated way. Multimessenger astrophysics is developed through studies involving more than one messenger, and is a very hot topic in current investigations of the nature of astrophysical objects, as well as searches for signatures of quantum gravity. 
 
 
-Astrophysical messengers
 
 - Astrophysical sources (list of relevant types of sources)
 - Production stage (acceleration mechanisms, elementary particle interactions, time delays)
