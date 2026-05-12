@@ -12,11 +12,11 @@ Finally, at the detection stage, messengers are observed through different exper
 
 
 
-- Astrophysical sources (list of relevant types of sources)
-- Production stage (acceleration mechanisms, elementary particle interactions, time delays)
-- Propagation stage (elementary particle interactions, time delays, magnetic fields)
-- Detection stage (detection techniques)
-- Multimessenger astrophysics (connections of different messengers and energy ranges)
+- [Astrophysical sources](/doc/2ndlevel/Astrophysical_sources.qmd)
+- Production stage ([acceleration mechanisms](/doc/2ndlevel/Acceleration_mechanisms.qmd), [elementary particle interactions](/doc/2ndlevel/Particle_processes_in_astrophysical_sources.qmd), [time delays](/doc/2ndlevel/Time_delay.qmd))
+- Propagation stage ([elementary particle interactions](/doc/2ndlevel/Particle_processes_in_astrophysical_sources.qmd), [time delays](/doc/2ndlevel/Time_delay.qmd), [magnetic fields](Magnetic_fields_in_astrophysical_sources.qmd))
+- Detection stage ([detection techniques](/doc/2ndlevel/Astrophysical_detection_techniques.qmd))
+- [Multimessenger astrophysics](/doc/2ndlevel/Multimessenger_astrophysics.qmd) (connections of different messengers and energy ranges)
 - Quantum gravity effects (list of relevant effects)
 
 
