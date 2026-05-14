@@ -41,7 +41,7 @@ The telltale sign for a violation of the strong EP would be a curvature-dependen
 
 \subsubsection{Generalizations of EP}
 
-In addition to gravity, a [variant of the strong EP](/doc/2ndlevel/StrongEP.qmd) can be formulated for [strong, weak and electromagnetic](https://en.wikipedia.org/wiki/Fundamental_interaction) interaction, and is implemented in the [\textit{Standard Model}](https://en.wikipedia.org/wiki/Standard_Model) of elementary particle physics. In the context of [\textit{quantum gravity}](/doc/Quantum_gravity.qmd) research, formulating the [quantum EP](/doc/2ndlevel/Quantum_EP.qmd) represents an active research topic.
+In addition to gravity, a variant of the strong EP can be formulated for [strong, weak and electromagnetic](https://en.wikipedia.org/wiki/Fundamental_interaction) interaction, and is implemented in the [\textit{Standard Model}](https://en.wikipedia.org/wiki/Standard_Model) of elementary particle physics. In the context of quantum gravity research, formulating the quantum EP represents an active research topic.
 
 ## List of Authors {id="authors" .appendix}
 
