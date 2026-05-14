@@ -23,7 +23,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -42,7 +61,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-84365199647afda7ec578bfe13ef3742.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-bfc81c90a4e668f7cc6782dca231ae32.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -603,10 +622,11 @@ window.Quarto = {
 
 
 <p>Black holes provide a controlled arena in which quantum mechanics meets gravitation. In the standard semiclassical approach one quantizes matter fields on a fixed black-hole spacetime (, QFTCS). This framework predicts Hawking radiation and black-hole evaporation, sharpening the black-hole information-loss problem and motivating genuinely quantum-gravitational (QG) descriptions of spacetime.</p>
-<p>A central theme is the thermodynamic and entanglement structure of horizons. The Bekenstein–Hawking entropy suggests that the number of microscopic degrees of freedom scales with horizon area. In many settings, entanglement across a horizon obeys an and is tied to holography and emergent spacetime. In holographic models this relation is captured by the Ryu–Takayanagi prescription, and it motivates broader ideas such as ER<span class="math inline">\(=\)</span>EPR (the conjectured link between Einstein–Rosen bridges and Einstein–Podolsky–Rosen entanglement). These ideas interface with scrambling and computational complexity, and with the tension between the ``no-hair’’ simplicity of classical black holes and their enormous entropy. They also connect to questions about the fate of infalling matter, the status of the equivalence principle near horizons, and possible quantum superpositions of macroscopic geometries or causal structures. Across approaches, a key target is the resolution (or effective replacement) of classical singularities.</p>
+<p>A central theme is the thermodynamic and entanglement structure of horizons. The Bekenstein–Hawking entropy suggests that the number of microscopic degrees of freedom scales with horizon area. In many settings, entanglement across a horizon obeys an and is tied to holography and emergent spacetime. In holographic models this relation is captured by the Ryu–Takayanagi prescription, and it motivates broader ideas such as ER<span class="math inline">\(=\)</span>EPR (the conjectured link between Einstein–Rosen bridges and Einstein–Podolsky–Rosen entanglement). These ideas interface with scrambling and computational complexity, and with the tension between the ‘no-hair’ simplicity of classical black holes and their enormous entropy. They also connect to questions about the fate of infalling matter, the status of the equivalence principle near horizons, and possible quantum superpositions of macroscopic geometries or causal structures. Across approaches, a key target is the resolution (or effective replacement) of classical singularities.</p>
 <p>Observable and phenomenological handles include deviations from perfect thermality in the Hawking flux (greybody factors) and possible short-distance modifications of particle creation. Such effects are often parameterized through Planck-scale deformations, including the generalized uncertainty principle (GUP), and can induce corrections to temperature, entropy (including R'{e}nyi/Tsallis-type generalizations), heat capacity, phase structure, and the late-time endgame of evaporation (e.g., remnants vs complete evaporation).</p>
 <p>Gravitational-wave (GW) and electromagnetic (EM) observations probe the near-horizon geometry through quasinormal modes (QNMs) and ringdown, potential late-time echoes, and strong-lensing/photon-sphere features. Relationships among QNMs, shadows, and greybody factors (including eikonal correspondences in suitable regimes) can help distinguish true horizons from ultra-compact horizonless mimickers with surfaces just outside the would-be horizon, and can inform scenarios in which primordial-black-hole remnants might store information.</p>
-<p>Infrared (IR) physics provides complementary constraints and mechanisms. Asymptotic symmetries (Bondi–van der Burg–Metzner–Sachs, BMS), soft modes (<code>soft hair''), and gravitational memory are tied to soft-graviton theorems and have been proposed as part of the information puzzle. Other proposed effective descriptions include nonlocal or fractional (non-Markovian) dynamics (e.g., models using Caputo derivatives). Candidate QG-motivated frameworks studied in this context include noncommutative geometry (often introducing an effective minimal length that shifts, for example, Regge--Wheeler potentials and QNMs) and loop-quantum-gravity-inspired effective metrics (</code>dressed-metric’’ or ``rainbow’’ constructions) in which backreaction can yield mode-dependent effective propagation and potentially chromatic lensing or Lorentz-invariance-violation signatures. Astrophysical environments (e.g., dark-matter halos) and consistency tests involving conjectures such as the Weak Gravity and Weak Cosmic Censorship conjectures can further constrain viable models.</p>
+<p>Infrared (IR) physics provides complementary constraints and mechanisms. Asymptotic symmetries (Bondi–van der Burg–Metzner–Sachs, BMS), soft modes (‘soft hair’), and gravitational memory are tied to soft-graviton theorems and have been proposed as part of the information puzzle. Other proposed effective descriptions include nonlocal or fractional (non-Markovian) dynamics (e.g., models using Caputo derivatives). Candidate QG-motivated frameworks studied in this context include noncommutative geometry (often introducing an effective minimal length that shifts, for example, Regge–Wheeler potentials and QNMs) and loop-quantum-gravity-inspired effective metrics (‘dressed-metric’ or ‘rainbow’ constructions) in which backreaction can yield mode-dependent effective propagation and potentially chromatic lensing or Lorentz-invariance-violation signatures. Astrophysical environments (e.g., dark-matter halos) and consistency tests involving conjectures such as the Weak Gravity and Weak Cosmic Censorship conjectures can further constrain viable models.</p>
+<p>Bibliography: <span class="citation" data-cites="Bekenstein:1973ur Hawking:1975vcx Maldacena:1997re Ryu:2006bv Strominger:2017zoo">[<a href="#ref-Bekenstein:1973ur" role="doc-biblioref">Beke73</a>, <a href="#ref-Hawking:1975vcx" role="doc-biblioref">Hawk75</a>, <a href="#ref-Maldacena:1997re" role="doc-biblioref">Mald98</a>, <a href="#ref-Ryu:2006bv" role="doc-biblioref">RyTa06</a>, <a href="#ref-Strominger:2017zoo" role="doc-biblioref">Stro18</a>]</span></p>
 <ul>
 <li><p>Hawking radiation; evaporation; information-loss problem</p>
 <ul>
@@ -631,10 +651,9 @@ window.Quarto = {
 <li><p>Etera Livine</p></li>
 <li><p>Paulo Moniz</p></li>
 <li><p>Vishal Nath</p></li>
-<li><p>Bilgehan Bar Oner</p></li>
+<li><p>Bilgehan Barış Öner</p></li>
 <li><p>Saeed Rastgoo</p></li>
 <li><p>Diego Rubiera-Garcia</p></li>
-<li><p>.{I}zzet Sakall</p></li>
 <li><p>İzzet Sakallı</p></li>
 <li><p>Y. Tavakoli</p></li>
 <li><p>H. Ziaeepour</p></li>
@@ -642,6 +661,23 @@ window.Quarto = {
 
 
 
+
+</div></section><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body" role="list">
+<div id="ref-Bekenstein:1973ur" class="csl-entry" role="listitem">
+[<strong>Beke73</strong>] Bekenstein J D 1973 <em><span class="nocase">Black holes and entropy</span></em> <em>Phys. Rev. D</em> <strong>7</strong> 2333–2346 [doi:<a href="https://doi.org/10.1103/PhysRevD.7.2333">10.1103/PhysRevD.7.2333</a>]
+</div>
+<div id="ref-Hawking:1975vcx" class="csl-entry" role="listitem">
+[<strong>Hawk75</strong>] Hawking S W 1975 <em><span class="nocase">Particle Creation by Black Holes</span></em> <em>Commun. Math. Phys.</em> <strong>43</strong> 199–220 [doi:<a href="https://doi.org/10.1007/BF02345020">10.1007/BF02345020</a>]
+</div>
+<div id="ref-Maldacena:1997re" class="csl-entry" role="listitem">
+[<strong>Mald98</strong>] Maldacena J M 1998 <em><span class="nocase">The Large <span class="math inline">\(N\)</span> limit of superconformal field theories and supergravity</span></em> <em>Adv. Theor. Math. Phys.</em> <strong>2</strong> 231–252 [doi:<a href="https://doi.org/10.4310/ATMP.1998.v2.n2.a1">10.4310/ATMP.1998.v2.n2.a1</a>]
+</div>
+<div id="ref-Ryu:2006bv" class="csl-entry" role="listitem">
+[<strong>RyTa06</strong>] Ryu S and Takayanagi T 2006 <em><span class="nocase">Holographic derivation of entanglement entropy from AdS/CFT</span></em> <em>Phys. Rev. Lett.</em> <strong>96</strong> 181602 [doi:<a href="https://doi.org/10.1103/PhysRevLett.96.181602">10.1103/PhysRevLett.96.181602</a>]
+</div>
+<div id="ref-Strominger:2017zoo" class="csl-entry" role="listitem">
+[<strong>Stro18</strong>] Strominger A 2018 <em><a href="https://arxiv.org/abs/1703.05448"><span class="nocase">Lectures on the Infrared Structure of Gravity and Gauge Theory</span></a></em>
+</div>
 </div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
