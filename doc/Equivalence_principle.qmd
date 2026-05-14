@@ -11,8 +11,6 @@ In its most general and abstract form, the equivalence principle states \cite{Mi
 
 \textit{The equations of motion for matter coupled to gravity are locally identical to the equations of motion for matter in the absence of gravity}.
 
-Here, the notion of [locality](/doc/2ndlevel/Locality.qmd) refers to an infinitesimally small region around a single point in spacetime, in which the dynamics of matter is being discussed.
-
 Here, the notion of [locality](/doc/2ndlevel/Locality.qmd) refers to an infinitesimally small region around a single point in spacetime, in which the dynamics of matter is being discussed. In general, locality is a notion that restricts how the physics "here and now" can influence physics "there and then", by requiring that the influence propagates through all intermediate spacetime regions connecting the "here and now" region to the "there and then"region. The opposite notion is \textit{action at a distance}, where influence can spread from "here and now" to "there and then" directly, skipping intermediate regions. See the article on [locality](/doc/2ndlevel/Locality.qmd) for further details.
 
 In the context of EP, one typically assumes that the dynamics of matter is being governed by some (partial) differential equations of finite order, specified in the infinitesimal neighborhood of a single spacetime point. Such equations are called local, since the influence of the physics at the initial point can spread to other spacetime points only through the process of integrating the equations, thus implementing the above idea of locality. Given such local equations of motion for matter in the absence of gravity, the statement of EP is that these equations remain unchanged when one couples gravity to matter. The presence of gravity becomes manifest only through the process of integration, i.e., as a global property of the solutions of the equations, rather than of the equations themselves.
@@ -21,37 +19,25 @@ In the context of EP, one typically assumes that the dynamics of matter is being
 
 Depending on the details on how one chooses to describe gravity, matter, and equations of motion, the above abstract statement of EP can be rephrased in various (inequivalent) ways \cite{Okon:2010kn,DiCasola:2013iia}. The most common flavors are as follows \cite{Paunkovic:2022flx}:
 
-
 - Newtonian EP --- equality of gravitational and inertial mass. Matter is described by point particles, equations of motion are Newton's laws, while gravity is described by Newton's law of universal gravity. EP is rephrased as a constraint between the mass parameter featuring in Newton's second law of motion and the mass parameter featuring in Newton's law of universal gravity.
-
 The equality of the two masses can be tested by a torsion balance, sensitive to the equilibrium between the gravitational force (featuring the gravitational mass) and the centrifugal force (featuring the inertial mass). The most modern tests have been conducted by the Eöt-Wash group [EotWash](https://www.npl.washington.edu/eotwash/).
-
 Photons are known to violate Newtonian EP, since they have zero inertial mass, while their trajectory is nevertheless being bent by the gravitational field of the Sun. Alternatively, one can say that massless particles lie outside the scope of validity of Newtonian mechanics, and consequently Newtonian EP as well.
 
 - Galilean EP --- universality of free fall. Matter is described by point particles, equations of motion are implicit and qualitative, as is the description of gravity. EP is rephrased as a comparison of the motion between different types of particles, given the same gravitational background.
-
-Galilean EP can be tested by comparing the free-fall trajectories of particles made of different materials, and otherwise having different internal properties. The most modern tests have been conducted by the MICROSCOPE satellite experiment [Mic].
-
+Galilean EP can be tested by comparing the free-fall trajectories of particles made of different materials, and otherwise having different internal properties. The most modern tests have been conducted by the MICROSCOPE satellite experiment [Mic](https://cnes.fr/en/projects/microscope).
 This version of EP is known to be violated by a particle with high enough angular momentum, which couples directly to spacetime curvature (Papapetrou equation [Pa51]). In contrast, a particle with negligible angular momentum does not feature this coupling (geodesic equation). Thus the two particles travel along different trajectories in curved spacetime. Alternatively, one can say that particles with high angular momentum and similar properties lie outside the scope of validity of Galileian EP.
 
 - Einstein's EP --- local equivalence between inertia and gravity. Matter is described mostly by point particles, equations of motion are implicit, and gravity is described as a field, uniform across a "local laboratory". EP is rephrased as the local indistinguishability between inertial and gravitational forces. This version of EP is famous for featuring in Einstein's "falling elevator" gedanken-experiments.
-
 Einstein's EP can be tested by measuring the magnitude of the gravitational field in a freely-falling environment, such as the microgravity conditions at the International Space Station [ISS].
-
 Einstein's EP can be assumed to hold as long as the gravitational field can be considered uniform across the spacetime region defining the "local laboratory" environment. However, this is never strictly true for any laboratory of finite size, and Einstein's EP is violated by any experiment sensitive to the existing gravitational gradients across the size of the laboratory. Alternatively, one can say that experiments that are too sensitive for a given laboratory are outside the scope of validity of Einstein's EP.
   
 - Weak EP --- geodesic trajectories of free particles. Matter is described by point particles, equations of motion are geodesic equations in a given curved background geometry, and gravity is described as the curvature of spacetime. EP is rephrased as a statement that locally one cannot distinguish between the particle trajectory in curved spacetime and a straight line in flat spacetime. In other words, the particle trajectory in curved spacetime is a geodesic trajectory.
-
-Testing the weak EP amounts to verifying that free point-particles follow geodesic trajectories in curved spacetime.  The most modern tests have been conducted by the LISA Pathfinder satellite experiment [LiPa].
-  
+Testing the weak EP amounts to verifying that free point-particles follow geodesic trajectories in curved spacetime.  The most modern tests have been conducted by the LISA Pathfinder satellite experiment [LiPa](https://sci.esa.int/web/lisa-pathfinder/-/31431-summary).
 The validity of the weak EP is based on the notion of a point-particle, which is a theoretical idealization. In nature, every particle has a size, and if an experiment is precise enough to measure this size, it will also in principle be able to measure the violation of weak EP. Alternatively, one can say that experiments, precise enough to measure the nonzero size of what is otherwise a point-particle, are outside the scope of validity of weak EP.
 
-- Strong EP --- minimal coupling between matter fields and gravity. Both matter and gravity are described as fields over the spacetime manifold. The equations of motion are implicit, but assumed to be local. EP is rephrased as a restriction that matter does not couple directly to spacetime curvature, but only to the metric and connection, in the equations of motion for matter fields. An analogous notion of minimal coupling prescription is also used in the construction of the weak, strong and electromagnetic interactions in the \href{https://en.wikipedia.org/wiki/Standard_Model}{Standard Model} of elementary particle physics.
-
+- Strong EP --- minimal coupling between matter fields and gravity. Both matter and gravity are described as fields over the spacetime manifold. The equations of motion are implicit, but assumed to be local. EP is rephrased as a restriction that matter does not couple directly to spacetime curvature, but only to the metric and connection, in the equations of motion for matter fields. An analogous notion of minimal coupling prescription is also used in the construction of the weak, strong and electromagnetic interactions in the [Standard Model](https://en.wikipedia.org/wiki/Standard_Model) of elementary particle physics.
 Testing of the strong EP amounts to studying the behavior of astrophysical systems in the strong gravity regime, such as the accretion disc around a black hole, dynamics of a neutron star orbiting a black hole, curvature dependence of the dispersion relations for electromagnetic waves, and similar. Experiments and observations are usually indirect, since it is rather hard to study the matter field equations directly in the strong curvature background.
-
 The telltale sign for a violation of the strong EP would be a curvature-dependent term in the equations of motion for matter fields. So far there are no experimental indications that would suggest any violation of the strong EP.
-
 
 \subsubsection{Generalizations of EP}
 
