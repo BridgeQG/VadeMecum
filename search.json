@@ -24,8 +24,8 @@
     ]
   },
   {
-    "objectID": "doc/2ndlevel/LIV_DSR_FLRW.html",
-    "href": "doc/2ndlevel/LIV_DSR_FLRW.html",
+    "objectID": "doc/2ndlevel/LIV_FLRW.html",
+    "href": "doc/2ndlevel/LIV_FLRW.html",
     "title": "LIV in expanding spacetimes",
     "section": "",
     "text": "mention JAcob and Piran etc.",
@@ -33,18 +33,6 @@
       "Topics",
       "Second level topics",
       "LIV in expanding spacetimes"
-    ]
-  },
-  {
-    "objectID": "doc/2ndlevel/Holography.html",
-    "href": "doc/2ndlevel/Holography.html",
-    "title": "Holographic Principle",
-    "section": "",
-    "text": "mention Gauge-invariant observables and dressed operators",
-    "crumbs": [
-      "Topics",
-      "Second level topics",
-      "Holographic Principle"
     ]
   },
   {
@@ -98,13 +86,13 @@
   {
     "objectID": "doc/2ndlevel/DSR_FLRW.html",
     "href": "doc/2ndlevel/DSR_FLRW.html",
-    "title": "DSR in expandin spacetimes",
+    "title": "DSR in expanding spacetimes",
     "section": "",
     "text": "mention Triply Special Relativity, Hamilton geometry, and “slicing”",
     "crumbs": [
       "Topics",
       "Second level topics",
-      "DSR in expandin spacetimes"
+      "DSR in expanding spacetimes"
     ]
   },
   {
@@ -434,6 +422,18 @@
       "Topics",
       "Second level topics",
       "Fundamental principles of Quantum Mechanics that are amenable to testing"
+    ]
+  },
+  {
+    "objectID": "doc/2ndlevel/Holography.html",
+    "href": "doc/2ndlevel/Holography.html",
+    "title": "Holographic Principle",
+    "section": "",
+    "text": "mention Gauge-invariant observables and dressed operators",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Holographic Principle"
     ]
   },
   {
