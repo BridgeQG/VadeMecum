@@ -1,8 +1,5 @@
 ---
 title: 'Equivalence Principle, locality and quantum gravity'
-nocite: |
-  @Okon:2010kn, @DiCasola:2013iia, @Paunkovic:2022flx
----
 
 \subsubsection{Introduction and purpose}
 
@@ -22,9 +19,7 @@ In the context of EP, one typically assumes that the dynamics of matter is being
 
 \subsubsection{Various flavors of EP}
 
-Depending on the details on how one chooses to describe gravity, matter, and equations of motion, the above abstract statement of EP can be rephrased in various (inequivalent) ways. The most common flavors are as follows:
-
-Depending on the details on how one chooses to describe gravity, matter, and equations of motion, the above abstract statement of EP can be rephrased in various (inequivalent) ways [OkCa11,DiLiSo15]. The most common flavors are as follows [PaVo22]:
+Depending on the details on how one chooses to describe gravity, matter, and equations of motion, the above abstract statement of EP can be rephrased in various (inequivalent) ways \cite{Okon:2010kn,DiCasola:2013iia}. The most common flavors are as follows \cite{Paunkovic:2022flx}:
 
 
 - Newtonian EP --- equality of gravitational and inertial mass. Matter is described by point particles, equations of motion are Newton's laws, while gravity is described by Newton's law of universal gravity. EP is rephrased as a constraint between the mass parameter featuring in Newton's second law of motion and the mass parameter featuring in Newton's law of universal gravity.
