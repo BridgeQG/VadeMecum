@@ -31,8 +31,7 @@ At the quantum level, these boundary symmetries can be interpreted as quantum re
 
 Finally, quantization of gravity, where geometry itself becomes a quantum variable, naturally leads to the notion of a [quantum spacetime](/doc/2ndlevel/Quantum_spacetime).
 
-
-The symmetries of such spacetimes are described by [quantum groups and Hopf algebras](/doc/2ndlevel/Hopf_algebra.qmd), whose transformation properties imply a corresponding \textit{quantization of observers and reference frames}. Moreover, the quantum reference frame transformations introduced in are also endowed with a quantum group symmetry. This further supports the view that quantum reference frames are not auxiliary tools, but fundamental ingredients of a fully relational formulation of quantum gravity.
+The symmetries of such spacetimes are described by [quantum groups and Hopf algebras](/doc/2ndlevel/Hopf_algebra.qmd), whose transformation properties imply a corresponding [quantization of observers and reference frames](/doc/2ndlevel/QRF_transformations.qmd). Moreover, the quantum reference frame transformations introduced in are also endowed with a quantum group symmetry. This further supports the view that quantum reference frames are not auxiliary tools, but fundamental ingredients of a fully relational formulation of quantum gravity.
 
 
 \subsubsection{Multiple Perspectives, Shared Goals.}
