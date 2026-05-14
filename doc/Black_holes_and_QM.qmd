@@ -15,7 +15,7 @@ Infrared (IR) physics provides complementary constraints and mechanisms. Asympto
 
 Bibliography: \cite{Bekenstein:1973ur,Hawking:1975vcx,Maldacena:1997re,Ryu:2006bv,Strominger:2017zoo}
 
-\section*{Keywords for potential second-level topic pages}
+\textbf{Keywords for potential second-level topic pages}
   - Hawking radiation; evaporation; information-loss problem
   - Bekenstein--Hawking entropy; entanglement entropy; area law
   - Holography; AdS/CFT; Ryu--Takayanagi
