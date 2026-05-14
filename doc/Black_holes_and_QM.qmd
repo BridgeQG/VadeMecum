@@ -12,6 +12,9 @@ Gravitational-wave (GW) and electromagnetic (EM) observations probe the near-hor
 
 Infrared (IR) physics provides complementary constraints and mechanisms. Asymptotic symmetries (Bondi--van der Burg--Metzner--Sachs, BMS), soft modes (``soft hair''), and gravitational memory are tied to soft-graviton theorems and have been proposed as part of the information puzzle. Other proposed effective descriptions include nonlocal or fractional (non-Markovian) dynamics (e.g., models using Caputo derivatives). Candidate QG-motivated frameworks studied in this context include noncommutative geometry (often introducing an effective minimal length that shifts, for example, Regge--Wheeler potentials and QNMs) and loop-quantum-gravity-inspired effective metrics (``dressed-metric'' or ``rainbow'' constructions) in which backreaction can yield mode-dependent effective propagation and potentially chromatic lensing or Lorentz-invariance-violation signatures. Astrophysical environments (e.g., dark-matter halos) and consistency tests involving conjectures such as the Weak Gravity and Weak Cosmic Censorship conjectures can further constrain viable models.
 
+
+Bibliography: \cite{Bekenstein:1973ur,Hawking:1975vcx,Maldacena:1997re,Ryu:2006bv,Strominger:2017zoo}
+
 \section*{Keywords for potential second-level topic pages}
   - Hawking radiation; evaporation; information-loss problem
   - Bekenstein--Hawking entropy; entanglement entropy; area law
@@ -31,10 +34,9 @@ Infrared (IR) physics provides complementary constraints and mechanisms. Asympto
   - Etera Livine
   - Paulo Moniz
   - Vishal Nath
-  - Bilgehan Bar\i\c{s} Oner
+  - Bilgehan Barış Öner
   - Saeed Rastgoo
   - Diego Rubiera-Garcia
-  - \.{I}zzet Sakall\i
   - İzzet Sakallı
   - Y. Tavakoli
   - H. Ziaeepour
