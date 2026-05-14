@@ -29,7 +29,7 @@ Depending on the details on how one chooses to describe gravity, matter, and equ
 
 - Newtonian EP --- equality of gravitational and inertial mass. Matter is described by point particles, equations of motion are Newton's laws, while gravity is described by Newton's law of universal gravity. EP is rephrased as a constraint between the mass parameter featuring in Newton's second law of motion and the mass parameter featuring in Newton's law of universal gravity.
 
-The equality of the two masses can be tested by a torsion balance, sensitive to the equilibrium between the gravitational force (featuring the gravitational mass) and the centrifugal force (featuring the inertial mass). The most modern tests have been conducted by the E\"ot-Wash group [EotWash].
+The equality of the two masses can be tested by a torsion balance, sensitive to the equilibrium between the gravitational force (featuring the gravitational mass) and the centrifugal force (featuring the inertial mass). The most modern tests have been conducted by the Eöt-Wash group [EotWash](https://www.npl.washington.edu/eotwash/).
 
 Photons are known to violate Newtonian EP, since they have zero inertial mass, while their trajectory is nevertheless being bent by the gravitational field of the Sun. Alternatively, one can say that massless particles lie outside the scope of validity of Newtonian mechanics, and consequently Newtonian EP as well.
 
