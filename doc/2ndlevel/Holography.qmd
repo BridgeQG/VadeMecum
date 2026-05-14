@@ -1,0 +1,5 @@
+---
+title: 'Holographic Principle'
+---
+
+mention Gauge-invariant observables and dressed operators
