@@ -35,5 +35,6 @@ Infrared (IR) physics provides complementary constraints and mechanisms. Asympto
   - Saeed Rastgoo
   - Diego Rubiera-Garcia
   - \.{I}zzet Sakall\i
+  - İzzet Sakallı
   - Y. Tavakoli
   - H. Ziaeepour
