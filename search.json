@@ -1,5 +1,105 @@
 [
   {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About us",
+    "section": "",
+    "text": "COST Action CA23130 BridgeQG\n\nBridgeQG Vade Mecum Coordinators\n    Giulia Gubitosi\n    Tomislav Terzić\n    Flavio Mercati\n    Giacomo Rosati\n\n\nWebpage preparation and deployment\n    Maykoll Reyes\n\n\nPowered By\n\nGitHub Pages: Hosting and deployment infrastructure.\nQuarto: Markdown rendering, cross-referencing, and website generation.\nPandoc: Document format translation.\nBootstrap and Bootswatch: CSS support and user interface.\nMathJax: Mathematical notation rendering.\nGemini: Help writing the Lua filters.",
+    "crumbs": [
+      "About us"
+    ]
+  },
+  {
+    "objectID": "doc/Examples/example0.html",
+    "href": "doc/Examples/example0.html",
+    "title": "BridgeQG Vade Mecum",
+    "section": "",
+    "text": "The main configuration for the website is handled inside the _quarto.yml file. You can customize this file to change the site’s title, logo, navigation sidebar, and bibliography settings:\nwebsite:\n  title: \"Scientific Wiki Template\"\n  search: true\n  sidebar:\n    style: \"docked\"\n    logo: \"img/logo/logo.png\"\n    contents:\n      - href: index.qmd\n        text: \"Home\"\n      - auto: \"doc/\"\n      - href: [https://github.com/MKReyesH/ScientificWiki](https://github.com/MKReyesH/ScientificWiki)\n        text: \"GitHub Project\"\n      - href: about.qmd\n\nbibliography: bib/references.bib\ncsl: bib/journal-of-cosmology-and-astroparticle-physics.csl\nYou can manage references by adding .bib files to the bib/ folder. You can also change the citation style by updating the csl file path. Quarto supports many Zotero styles, which can be found at the Zotero Style Repository.\n\n\n\nBibliography files\n\n\n\n\n\nTo add new pages to the wiki, simply create new plain text files (with .qmd extension) inside the doc/ folder. The system will automatically recognize the files and add them to the sidebar. The sidebar reproduces the exact folder structure inside the doc/ folder, so you can create drop-down menus simply by placing files inside sub-folders:\n\n\n\nDocumentation folder structure\n\n\nAll content files must be plain text file using the .qmd extension and must be written using Quarto Markdown syntax. For a detailed guide on native formatting, please see the Quarto Markdown Guide.\nMoreover, anticipating that a lot of scientific content is already written in LaTeX, this template also includes (limited) compatibility for simple LaTeX structures. The commands that are safe to use in the .qmd files are explained in the Allowed LaTeX Syntax Guide. For more complex structures like figures or tables, native Markdown syntax must be used.\n\n\n\nEvery time you commit changes to your repository, GitHub Actions will automatically take care of the deployment phase. The updated webpage will be built and pushed to the gh-pages branch, going live online in just a few minutes."
+  },
+  {
+    "objectID": "doc/Examples/example0.html#configure-your-wiki",
+    "href": "doc/Examples/example0.html#configure-your-wiki",
+    "title": "BridgeQG Vade Mecum",
+    "section": "",
+    "text": "The main configuration for the website is handled inside the _quarto.yml file. You can customize this file to change the site’s title, logo, navigation sidebar, and bibliography settings:\nwebsite:\n  title: \"Scientific Wiki Template\"\n  search: true\n  sidebar:\n    style: \"docked\"\n    logo: \"img/logo/logo.png\"\n    contents:\n      - href: index.qmd\n        text: \"Home\"\n      - auto: \"doc/\"\n      - href: [https://github.com/MKReyesH/ScientificWiki](https://github.com/MKReyesH/ScientificWiki)\n        text: \"GitHub Project\"\n      - href: about.qmd\n\nbibliography: bib/references.bib\ncsl: bib/journal-of-cosmology-and-astroparticle-physics.csl\nYou can manage references by adding .bib files to the bib/ folder. You can also change the citation style by updating the csl file path. Quarto supports many Zotero styles, which can be found at the Zotero Style Repository.\n\n\n\nBibliography files"
+  },
+  {
+    "objectID": "doc/Examples/example0.html#add-content",
+    "href": "doc/Examples/example0.html#add-content",
+    "title": "BridgeQG Vade Mecum",
+    "section": "",
+    "text": "To add new pages to the wiki, simply create new plain text files (with .qmd extension) inside the doc/ folder. The system will automatically recognize the files and add them to the sidebar. The sidebar reproduces the exact folder structure inside the doc/ folder, so you can create drop-down menus simply by placing files inside sub-folders:\n\n\n\nDocumentation folder structure\n\n\nAll content files must be plain text file using the .qmd extension and must be written using Quarto Markdown syntax. For a detailed guide on native formatting, please see the Quarto Markdown Guide.\nMoreover, anticipating that a lot of scientific content is already written in LaTeX, this template also includes (limited) compatibility for simple LaTeX structures. The commands that are safe to use in the .qmd files are explained in the Allowed LaTeX Syntax Guide. For more complex structures like figures or tables, native Markdown syntax must be used."
+  },
+  {
+    "objectID": "doc/Examples/example0.html#commit-changes-and-deploy",
+    "href": "doc/Examples/example0.html#commit-changes-and-deploy",
+    "title": "BridgeQG Vade Mecum",
+    "section": "",
+    "text": "Every time you commit changes to your repository, GitHub Actions will automatically take care of the deployment phase. The updated webpage will be built and pushed to the gh-pages branch, going live online in just a few minutes."
+  },
+  {
+    "objectID": "doc/Examples/example2.html",
+    "href": "doc/Examples/example2.html",
+    "title": "Allowed LaTeX syntax for page writing",
+    "section": "",
+    "text": "In the scientific community, it is very common to have texts, equations, and full documents already written in LaTeX. This implies that one needs to translate such content to the Quarto Markdown syntax explained in the previous guide. However, this template allows for the use of some simple LaTeX syntax (in combination with native syntax), which is converted on the fly to the correct Quarto Markdown format. This document serves as both a guide and a test file for the translation rules. It is written using the supported LaTeX commands to explain exactly how the transformation works."
+  },
+  {
+    "objectID": "doc/Examples/example2.html#this-is-a-subsection",
+    "href": "doc/Examples/example2.html#this-is-a-subsection",
+    "title": "Allowed LaTeX syntax for page writing",
+    "section": "This is a subsection",
+    "text": "This is a subsection\n\nThis is a sub-subsection\nBecause the script converts this directly into native Markdown, the system automatically generates a reference identifier for it based on the heading’s name (lowercase, using hyphens instead of spaces). This allows you to easily link back to the translated section using standard Markdown linking, such as typing [this section](#sections-and-subsections) to navigate back to this section."
+  },
+  {
+    "objectID": "doc/Equivalence_principle.html",
+    "href": "doc/Equivalence_principle.html",
+    "title": "Equivalence Principle, locality and quantum gravity",
+    "section": "",
+    "text": "The purpose of the equivalence principle (EP) is to prescribe the interaction between gravity and matter, i.e., between gravitational and non-gravitational degrees of freedom in nature. EP is one of the most fundamental principles in modern physics, a cornerstone of Einstein’s theory of general relativity and of the Standard Model of elementary particle physics.",
+    "crumbs": [
+      "Topics",
+      "First level topics",
+      "Equivalence Principle, locality and quantum gravity"
+    ]
+  },
+  {
+    "objectID": "doc/Equivalence_principle.html#authors",
+    "href": "doc/Equivalence_principle.html#authors",
+    "title": "Equivalence Principle, locality and quantum gravity",
+    "section": "List of Authors",
+    "text": "List of Authors\n\n\nNikola Paunkovic\nMarko Vojinovic",
+    "crumbs": [
+      "Topics",
+      "First level topics",
+      "Equivalence Principle, locality and quantum gravity"
+    ]
+  },
+  {
+    "objectID": "doc/2ndlevel/QMfoundations.html",
+    "href": "doc/2ndlevel/QMfoundations.html",
+    "title": "Fundamental principles of Quantum Mechanics that are amenable to testing",
+    "section": "",
+    "text": "In particular within the community of Quantum Information",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Fundamental principles of Quantum Mechanics that are amenable to testing"
+    ]
+  },
+  {
+    "objectID": "doc/2ndlevel/QGscale.html",
+    "href": "doc/2ndlevel/QGscale.html",
+    "title": "Quantum Gravity Scale",
+    "section": "",
+    "text": "mention also “stochastica Planck scale”?",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Quantum Gravity Scale"
+    ]
+  },
+  {
     "objectID": "doc/Emergent_nonclassical_and_fuzzy_spacetime.html",
     "href": "doc/Emergent_nonclassical_and_fuzzy_spacetime.html",
     "title": "Emergent, Nonclassical and Fuzzy Spacetime",
@@ -21,42 +121,6 @@
       "Topics",
       "First level topics",
       "Emergent, Nonclassical and Fuzzy Spacetime"
-    ]
-  },
-  {
-    "objectID": "doc/2ndlevel/LIV_DSR_FLRW.html",
-    "href": "doc/2ndlevel/LIV_DSR_FLRW.html",
-    "title": "LIV in expanding spacetimes",
-    "section": "",
-    "text": "mention JAcob and Piran etc.",
-    "crumbs": [
-      "Topics",
-      "Second level topics",
-      "LIV in expanding spacetimes"
-    ]
-  },
-  {
-    "objectID": "doc/2ndlevel/QGscale.html",
-    "href": "doc/2ndlevel/QGscale.html",
-    "title": "Quantum Gravity Scale",
-    "section": "",
-    "text": "mention also “stochastica Planck scale”?",
-    "crumbs": [
-      "Topics",
-      "Second level topics",
-      "Quantum Gravity Scale"
-    ]
-  },
-  {
-    "objectID": "doc/2ndlevel/QMfoundations.html",
-    "href": "doc/2ndlevel/QMfoundations.html",
-    "title": "Fundamental principles of Quantum Mechanics that are amenable to testing",
-    "section": "",
-    "text": "In particular within the community of Quantum Information",
-    "crumbs": [
-      "Topics",
-      "Second level topics",
-      "Fundamental principles of Quantum Mechanics that are amenable to testing"
     ]
   },
   {
@@ -108,72 +172,27 @@
     ]
   },
   {
-    "objectID": "doc/Examples/example2.html",
-    "href": "doc/Examples/example2.html",
-    "title": "Allowed LaTeX syntax for page writing",
+    "objectID": "doc/Astrophysical_probes.html",
+    "href": "doc/Astrophysical_probes.html",
+    "title": "Astrophysical probes",
     "section": "",
-    "text": "In the scientific community, it is very common to have texts, equations, and full documents already written in LaTeX. This implies that one needs to translate such content to the Quarto Markdown syntax explained in the previous guide. However, this template allows for the use of some simple LaTeX syntax (in combination with native syntax), which is converted on the fly to the correct Quarto Markdown format. This document serves as both a guide and a test file for the translation rules. It is written using the supported LaTeX commands to explain exactly how the transformation works."
-  },
-  {
-    "objectID": "doc/Examples/example2.html#this-is-a-subsection",
-    "href": "doc/Examples/example2.html#this-is-a-subsection",
-    "title": "Allowed LaTeX syntax for page writing",
-    "section": "This is a subsection",
-    "text": "This is a subsection\n\nThis is a sub-subsection\nBecause the script converts this directly into native Markdown, the system automatically generates a reference identifier for it based on the heading’s name (lowercase, using hyphens instead of spaces). This allows you to easily link back to the translated section using standard Markdown linking, such as typing [this section](#sections-and-subsections) to navigate back to this section."
-  },
-  {
-    "objectID": "doc/Examples/example1.html",
-    "href": "doc/Examples/example1.html",
-    "title": "How to write a page using Quarto Markdown",
-    "section": "",
-    "text": "GitHub Pages transforms plain text files into HTML webpages. In this template, files use the .qmd extension and follow Quarto Markdown syntax. Below are examples of the most commonly used formatting structures."
-  },
-  {
-    "objectID": "doc/Examples/example1.html#this-is-a-subsection",
-    "href": "doc/Examples/example1.html#this-is-a-subsection",
-    "title": "How to write a page using Quarto Markdown",
-    "section": "This is a subsection",
-    "text": "This is a subsection\n\nThis is a sub-subsection\nTo make a section cross-referenceable, append an identifier starting with #sec- to the header. For example, typing ## Mathematical Equations {#sec-maths} allows the section to be referenced anywhere in the document using @sec-maths."
-  },
-  {
-    "objectID": "doc/Examples/example1.html#footnotes",
-    "href": "doc/Examples/example1.html#footnotes",
-    "title": "How to write a page using Quarto Markdown",
-    "section": "Footnotes",
-    "text": "Footnotes\n\n\nFor example, this is a footnote.↩︎"
-  },
-  {
-    "objectID": "doc/Quantum_Reference_Frames.html",
-    "href": "doc/Quantum_Reference_Frames.html",
-    "title": "Quantum Reference Frames",
-    "section": "",
-    "text": "in Relativistic Quantum Information and Quantum Gravity",
+    "text": "The term astrophysical probes can refer to particles emitted in astrophysical processes, usually referred to as astrophysical messengers, or to astrophysical processes whose dynamics could be affected by the quantum nature of gravity. Messengers are particles or waves produced in astrophysical sources. They tend to reach energies far beyond those attainable in terrestrial accelerators. These messengers are cosmic rays, gravitational waves, neutrinos, and photons (or gamma rays if we focus on high energy regime). They carry information about the physical processes in sources through which they were created; about the spacetime effects and interaction with radiation and matter they experience on their way through Cosmos; and about the processes through which they are detected. Any of these processes can be used to probe quantum gravity, and can be classified in three stages: production, propagation, and detection [DePi18, AlCoVi18].\nThe production stage is strongly influenced by the nature of the source. In sources dominated by hadronic processes, interactions involving accelerated protons or nuclei lead to the simultaneous production of cosmic rays, gamma rays, and neutrinos, whereas in leptonic environments the emission is largely driven by accelerated electrons and their radiative losses, resulting in characteristic photon spectra with no accompanying neutrino flux. These differences directly affect the interpretation of multimessenger observations and the type of quantum gravity effects that can be tested.\nThe location of the source also plays a key role during propagation, through both the distance traveled and the environments encountered by the messengers. Nearby Galactic sources typically allow access to very high energies with limited attenuation, while extragalactic sources combine extreme energies with long propagation distances and interactions with diffuse photon backgrounds. Quantum-gravity effects may manifest themselves through modifications of standard interactions, such as changes in reaction thresholds, cross sections, or effective opacities, altering, for instance, the attenuation of high-energy gamma rays during propagation. Modified kinematics can also allow or forbid reactions with respect to special relativity, leading to qualitative changes in particle stability or decay channels at high energies A review can be found in [Ad22].\nFinally, at the detection stage, messengers are observed through different experimental techniques depending on their nature and energy, such as air-shower measurements, Cherenkov radiation, neutrino telescopes, or interferometric detectors. Since different messengers are linked by the particle processes that govern their production and interactions, their origin can be investigated in a correlated way. Multimessenger astrophysics is developed through studies involving more than one messenger, and is a very hot topic in current investigations of the nature of astrophysical objects, as well as searches for signatures of quantum gravity.",
     "crumbs": [
       "Topics",
       "First level topics",
-      "Quantum Reference Frames"
+      "Astrophysical probes"
     ]
   },
   {
-    "objectID": "doc/Quantum_Reference_Frames.html#authors",
-    "href": "doc/Quantum_Reference_Frames.html#authors",
-    "title": "Quantum Reference Frames",
+    "objectID": "doc/Astrophysical_probes.html#authors",
+    "href": "doc/Astrophysical_probes.html#authors",
+    "title": "Astrophysical probes",
     "section": "List of Authors",
-    "text": "List of Authors\n\n\nAngel Ballesteros\nGoffredo Chirco\nAnne-Catherine de la Hamette\nRenata Ferrero\nSébastien C. Garmier\nViktoria Kabel\nEtera Livine\nFedele Lizzi\nLeon Loveridge\nAntonino Marciano\nDaniele Oriti\nand Roman Pasechnik",
+    "text": "List of Authors",
     "crumbs": [
       "Topics",
       "First level topics",
-      "Quantum Reference Frames"
-    ]
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About us",
-    "section": "",
-    "text": "COST Action CA23130 BridgeQG\n\nBridgeQG Vade Mecum Coordinators\n    Giulia Gubitosi\n    Tomislav Terzić\n    Flavio Mercati\n    Giacomo Rosati\n\n\nWebpage preparation and deployment\n    Maykoll Reyes\n\n\nPowered By\n\nGitHub Pages: Hosting and deployment infrastructure.\nQuarto: Markdown rendering, cross-referencing, and website generation.\nPandoc: Document format translation.\nBootstrap and Bootswatch: CSS support and user interface.\nMathJax: Mathematical notation rendering.\nGemini: Help writing the Lua filters.",
-    "crumbs": [
-      "About us"
+      "Astrophysical probes"
     ]
   },
   {
@@ -201,148 +220,15 @@
     ]
   },
   {
-    "objectID": "doc/Examples/example3.html",
-    "href": "doc/Examples/example3.html",
-    "title": "\\(\\Lambda\\)CDM Cosmological Model",
+    "objectID": "doc/2ndlevel/LIV_DSR_FLRW.html",
+    "href": "doc/2ndlevel/LIV_DSR_FLRW.html",
+    "title": "LIV in expanding spacetimes",
     "section": "",
-    "text": "In order to describe an homogeneous and isotropic universe like in the framework of GR, one should solve the Einstein field equations using a homogeneous, isotropic, and expanding metric (the FLRW metric), \n\\[\nds^2 = dt^2 - a^2(t) \\left(\\frac{dr^2}{1-k r^2}+r^2 d\\Omega\\right) \\,,\n\\tag{1}\\]\n where \\(k\\) is the curvature and \\(a(t)\\) the scale factor of the universe, which is closely related to the redshift, \\(a(t)=1/(1+z(t))\\). We can use this relation to also connect the temporal coordinate to the redshift variable, \n\\[\n\\begin{aligned}\na(t) &=\\frac{1}{1+z(t)} \\\\\n    \\frac{\\dot a(t)}{a(t)} dt &= -\\frac{dz}{1+z(t)} \\\\\n    dt &= -\\frac{dz}{H(z)(1+z)} \\,,\n\\end{aligned}\n\\tag{2}\\]\n where we have defined the Hubble parameter1 as \\(H=\\dot a/a\\)."
-  },
-  {
-    "objectID": "doc/Examples/example3.html#authors",
-    "href": "doc/Examples/example3.html#authors",
-    "title": "\\(\\Lambda\\)CDM Cosmological Model",
-    "section": "List of Authors",
-    "text": "List of Authors\n\n\nAlbert Einstein\nIsaac Newton"
-  },
-  {
-    "objectID": "doc/Examples/example3.html#footnotes",
-    "href": "doc/Examples/example3.html#footnotes",
-    "title": "\\(\\Lambda\\)CDM Cosmological Model",
-    "section": "Footnotes",
-    "text": "Footnotes\n\n\nWe will not discuss here the Hubble tension problem.↩︎"
-  },
-  {
-    "objectID": "doc/Examples/example0.html",
-    "href": "doc/Examples/example0.html",
-    "title": "BridgeQG Vade Mecum",
-    "section": "",
-    "text": "The main configuration for the website is handled inside the _quarto.yml file. You can customize this file to change the site’s title, logo, navigation sidebar, and bibliography settings:\nwebsite:\n  title: \"Scientific Wiki Template\"\n  search: true\n  sidebar:\n    style: \"docked\"\n    logo: \"img/logo/logo.png\"\n    contents:\n      - href: index.qmd\n        text: \"Home\"\n      - auto: \"doc/\"\n      - href: [https://github.com/MKReyesH/ScientificWiki](https://github.com/MKReyesH/ScientificWiki)\n        text: \"GitHub Project\"\n      - href: about.qmd\n\nbibliography: bib/references.bib\ncsl: bib/journal-of-cosmology-and-astroparticle-physics.csl\nYou can manage references by adding .bib files to the bib/ folder. You can also change the citation style by updating the csl file path. Quarto supports many Zotero styles, which can be found at the Zotero Style Repository.\n\n\n\nBibliography files\n\n\n\n\n\nTo add new pages to the wiki, simply create new plain text files (with .qmd extension) inside the doc/ folder. The system will automatically recognize the files and add them to the sidebar. The sidebar reproduces the exact folder structure inside the doc/ folder, so you can create drop-down menus simply by placing files inside sub-folders:\n\n\n\nDocumentation folder structure\n\n\nAll content files must be plain text file using the .qmd extension and must be written using Quarto Markdown syntax. For a detailed guide on native formatting, please see the Quarto Markdown Guide.\nMoreover, anticipating that a lot of scientific content is already written in LaTeX, this template also includes (limited) compatibility for simple LaTeX structures. The commands that are safe to use in the .qmd files are explained in the Allowed LaTeX Syntax Guide. For more complex structures like figures or tables, native Markdown syntax must be used.\n\n\n\nEvery time you commit changes to your repository, GitHub Actions will automatically take care of the deployment phase. The updated webpage will be built and pushed to the gh-pages branch, going live online in just a few minutes."
-  },
-  {
-    "objectID": "doc/Examples/example0.html#configure-your-wiki",
-    "href": "doc/Examples/example0.html#configure-your-wiki",
-    "title": "BridgeQG Vade Mecum",
-    "section": "",
-    "text": "The main configuration for the website is handled inside the _quarto.yml file. You can customize this file to change the site’s title, logo, navigation sidebar, and bibliography settings:\nwebsite:\n  title: \"Scientific Wiki Template\"\n  search: true\n  sidebar:\n    style: \"docked\"\n    logo: \"img/logo/logo.png\"\n    contents:\n      - href: index.qmd\n        text: \"Home\"\n      - auto: \"doc/\"\n      - href: [https://github.com/MKReyesH/ScientificWiki](https://github.com/MKReyesH/ScientificWiki)\n        text: \"GitHub Project\"\n      - href: about.qmd\n\nbibliography: bib/references.bib\ncsl: bib/journal-of-cosmology-and-astroparticle-physics.csl\nYou can manage references by adding .bib files to the bib/ folder. You can also change the citation style by updating the csl file path. Quarto supports many Zotero styles, which can be found at the Zotero Style Repository.\n\n\n\nBibliography files"
-  },
-  {
-    "objectID": "doc/Examples/example0.html#add-content",
-    "href": "doc/Examples/example0.html#add-content",
-    "title": "BridgeQG Vade Mecum",
-    "section": "",
-    "text": "To add new pages to the wiki, simply create new plain text files (with .qmd extension) inside the doc/ folder. The system will automatically recognize the files and add them to the sidebar. The sidebar reproduces the exact folder structure inside the doc/ folder, so you can create drop-down menus simply by placing files inside sub-folders:\n\n\n\nDocumentation folder structure\n\n\nAll content files must be plain text file using the .qmd extension and must be written using Quarto Markdown syntax. For a detailed guide on native formatting, please see the Quarto Markdown Guide.\nMoreover, anticipating that a lot of scientific content is already written in LaTeX, this template also includes (limited) compatibility for simple LaTeX structures. The commands that are safe to use in the .qmd files are explained in the Allowed LaTeX Syntax Guide. For more complex structures like figures or tables, native Markdown syntax must be used."
-  },
-  {
-    "objectID": "doc/Examples/example0.html#commit-changes-and-deploy",
-    "href": "doc/Examples/example0.html#commit-changes-and-deploy",
-    "title": "BridgeQG Vade Mecum",
-    "section": "",
-    "text": "Every time you commit changes to your repository, GitHub Actions will automatically take care of the deployment phase. The updated webpage will be built and pushed to the gh-pages branch, going live online in just a few minutes."
-  },
-  {
-    "objectID": "doc/Invacuo_dispersion.html",
-    "href": "doc/Invacuo_dispersion.html",
-    "title": "In-vacuo dispersion",
-    "section": "",
-    "text": "In-vacuo dispersion is an effect related to the hypothesis of a quantum gravity scale modified dispersion relation (MDR), which is described by the Hamiltonian of a relativistic particle characterizing its propagation in a quantum spacetime. Deviations from the general relativistic dispersion relations are often (but not always) associated with either the violation or deformation of relativistic symmetries. The core idea is to describe the effects of quantum gravity as a deformation of the classical trajectory of particles—a deformation that grows with the particle’s energy and is suppressed by the quantum gravity energy scale [AEMN98, Ad22].\nSince, in the context of quantum gravity, the relevant energies are ultra-relativistic, one can often focus on the massless case. For certain types of MDRs, the speed of a massless particle becomes energy-dependent in vacuum, which is the origin of the effect’s name.\nFor this reason, if particles are emitted from a given source with an energy difference, they arrive at a detector with a time difference proportional to the product of the energy difference and the propagation distance, but suppressed by the quantum gravity energy scale. This is a quantum spacetime-induced time delay effect, analogously to what the propagation of light through a medium (\\(\\eta\\) – phenomenological parameter, \\(M_P\\) –Planck mass, \\(D(z)\\) – redshift-dependent distance factor)\n\\[\n\\Delta t = \\eta D(z) \\frac{\\Delta E}{M_P}\n\\]\nIf these particles propagate over cosmological distances, even a modification suppressed by the Planck scale could produce a measurable effect with modern telescopes.\nDifferent formulations of the time delay effect have been proposed based on various hypotheses, such as the coupling between the energy-momentum of the particle and the spacetime metric, the local symmetries of spacetime, and the redshift dependence of the quantum gravity scale [Ad22].",
+    "text": "mention JAcob and Piran etc.",
     "crumbs": [
       "Topics",
-      "First level topics",
-      "In-vacuo dispersion"
-    ]
-  },
-  {
-    "objectID": "doc/Invacuo_dispersion.html#authors",
-    "href": "doc/Invacuo_dispersion.html#authors",
-    "title": "In-vacuo dispersion",
-    "section": "List of Authors",
-    "text": "List of Authors\n\n\nIarley Pereira Lobo\nChristian Pfeifer",
-    "crumbs": [
-      "Topics",
-      "First level topics",
-      "In-vacuo dispersion"
-    ]
-  },
-  {
-    "objectID": "doc/LIV_DSR.html",
-    "href": "doc/LIV_DSR.html",
-    "title": "Violation and Deformation of Relativistic Symmetries",
-    "section": "",
-    "text": "Relativistic symmetries play a central role in modern physics, but many approaches to quantum gravity suggest that these symmetries may not remain exactly the classical (local) Lorentz or Poincaré transformations of special relativity at the highest energy scales. This motivates the investigation of scenarios in which Lorentz and Poincaré symmetries are either violated or deformed. In the case of Lorentz Invariance Violation (LIV), Lorentz symmetry is broken explicitly (as in many effective field theory descriptions) or spontaneously (when fields acquire vacuum expectation values that select preferred directions in spacetime), so that physics is formulated in a preferred frame. In contrast, deformed-symmetry frameworks (DSR – Doubly (or Deformed) Special Relativity [Amel02], preserve the relativity principle but modify the transformation laws between observers by introducing an additional invariant scale (usually associated with the Planck length, \\(\\ell_P \\approx 1.61 \\times 10^{-35}\\,\\mathrm{m} \\approx 1.30 \\times 10^{-29}\\,\\mathrm{eV}^{-1}\\)). Although both approaches explore possible imprints of a quantum or discrete structure of spacetime, they lead to conceptually different kinematics and, as discussed below, to very different phenomenological expectations.\nModified Dispersion Relations (MDR) represent one of the most studied ways to depart from special-relativistic kinematics and have been extensively studied in both LIV and DSR scenarios, particularly for their phenomenological implications, even though not all LIV and DSR models necessarily feature a MDR. The most-studied LIV models typically arise from symmetry-breaking operators in effective field theory. On the other hand, DSR models often arise from constructions in which deformed spacetime symmetries are formulated within a Hopf-algebra (quantum groups) framework encoding high-energy modifications of the Poincaré symmetry. In LIV and DSR scenarios, nontrivial/nonlinear energy-momentum conservation rules, formalized as a modified composition law for four-momenta, have also been considered. However, while in LIV a modified composition law is not strictly required, in DSR it is generally considered necessary to ensure the compatibility between the relativity principle and the presence of an additional invariant scale. In DSR, the modified composition law admits a geometric interpretation as a rule for non-linear translations in momentum space, and it can also be understood algebraically as part of the coalgebra structure of Hopf algebras. These structures commonly appear in models with curved momentum space, noncommutative spacetimes, or quantum-group symmetries, and can lead to relative locality, namely an observer dependence of event localisation that may also arise in more general contexts. A more fundamental framework for LIV and DSR models is based on (quantum) fields in noncommutative spacetimes, which in turn allow for the study of discrete symmetry operators C (charge conjugation), P (parity), T (time reversal), and scattering amplitudes. In this context, loop corrections to tree-level diagrams often exhibit UV/IR mixing, where Lorentz-breaking (or deformation) scales, and cutoff scales interact in a non-trivial way, with potentially observable consequences. Some of these models, which may or may not imply MDRs, may also lead to a Planck-scale Generalized Heisenberg Uncertainty Principle (GUP).\nThe phenomenology associated with the LIV and DSR frameworks is markedly different. The most studied effect in both LIV and DSR scenarios is in-vacuo dispersion, arising from MDRs. However, other effects that are generally present in LIV frameworks, like threshold anomalies, vacuum birefringence, or modified decay channels, are typically highly suppressed in DSR scenarios, or not present at all if they violate the relativity principle. For example, they neither open nor close thresholds of reactions that, in LIV scenarios, may become allowed or forbidden. Astroparticle messengers (high-energy gamma rays, neutrinos, and cosmic rays), together with gravitational-wave, gravitational-lensing and black-hole observations, offer access to regimes where small departures from relativistic symmetries may accumulate or become detectable within a multimessenger approach. A generalization to expanding spacetimes of LIV models and of DSR models in the presence of a de Sitter-invariant scale) has been developed in recent years.\nSuch effects can also manifest in the low-energy regime. In quantum mechanical systems, LIV and DSR may induce modifications in time evolution. For instance, a modified Schrödinger equation arises from modified dispersion relations, and decoherence occurs when the quantum gravity scale is treated as a stochastic quantity or when modified symmetries are present. Also, C, P, and T transformations can interact non-trivially with the LIV or DSR scales, leading to additional phenomenological signatures. Precision laboratory and collider or accelerator experiments, often aimed at measuring differences in properties between particles and antiparticles (e.g. decay times), provide complementary tests of these effects. Taken together, astroparticle, astrophysical, and low-energy laboratory probes form a broad landscape in which the implications of the deformation or violation of relativistic symmetries can be systematically explored.\nGeneral reviews of these topics can be found in [Matt05], [Amel13], [Ad22]",
-    "crumbs": [
-      "Topics",
-      "First level topics",
-      "Violation and Deformation of Relativistic Symmetries"
-    ]
-  },
-  {
-    "objectID": "doc/LIV_DSR.html#authors",
-    "href": "doc/LIV_DSR.html#authors",
-    "title": "Violation and Deformation of Relativistic Symmetries",
-    "section": "List of Authors",
-    "text": "List of Authors\n\n\nAndrea Bevilacqua\nAndrzej Borowiec\nJosé Manuel Carmona\nJosé Luis Cortés\nSebastian Franchino-Viñas\nTajron Jurić\nTeppei Katori\nIarley Lobo\nFlavio Mercati\nChristian Pfeifer\nDiego Rubiera-Garcia\nFilip Rescic\nMaykoll A. Reyes\nGiacomo Rosati\nYaser Tavakoli",
-    "crumbs": [
-      "Topics",
-      "First level topics",
-      "Violation and Deformation of Relativistic Symmetries"
-    ]
-  },
-  {
-    "objectID": "doc/Astrophysical_probes.html",
-    "href": "doc/Astrophysical_probes.html",
-    "title": "Astrophysical probes",
-    "section": "",
-    "text": "The term astrophysical probes can refer to particles emitted in astrophysical processes, usually referred to as astrophysical messengers, or to astrophysical processes whose dynamics could be affected by the quantum nature of gravity. Messengers are particles or waves produced in astrophysical sources. They tend to reach energies far beyond those attainable in terrestrial accelerators. These messengers are cosmic rays, gravitational waves, neutrinos, and photons (or gamma rays if we focus on high energy regime). They carry information about the physical processes in sources through which they were created; about the spacetime effects and interaction with radiation and matter they experience on their way through Cosmos; and about the processes through which they are detected. Any of these processes can be used to probe quantum gravity, and can be classified in three stages: production, propagation, and detection [DePi18, AlCoVi18].\nThe production stage is strongly influenced by the nature of the source. In sources dominated by hadronic processes, interactions involving accelerated protons or nuclei lead to the simultaneous production of cosmic rays, gamma rays, and neutrinos, whereas in leptonic environments the emission is largely driven by accelerated electrons and their radiative losses, resulting in characteristic photon spectra with no accompanying neutrino flux. These differences directly affect the interpretation of multimessenger observations and the type of quantum gravity effects that can be tested.\nThe location of the source also plays a key role during propagation, through both the distance traveled and the environments encountered by the messengers. Nearby Galactic sources typically allow access to very high energies with limited attenuation, while extragalactic sources combine extreme energies with long propagation distances and interactions with diffuse photon backgrounds. Quantum-gravity effects may manifest themselves through modifications of standard interactions, such as changes in reaction thresholds, cross sections, or effective opacities, altering, for instance, the attenuation of high-energy gamma rays during propagation. Modified kinematics can also allow or forbid reactions with respect to special relativity, leading to qualitative changes in particle stability or decay channels at high energies A review can be found in [Ad22].\nFinally, at the detection stage, messengers are observed through different experimental techniques depending on their nature and energy, such as air-shower measurements, Cherenkov radiation, neutrino telescopes, or interferometric detectors. Since different messengers are linked by the particle processes that govern their production and interactions, their origin can be investigated in a correlated way. Multimessenger astrophysics is developed through studies involving more than one messenger, and is a very hot topic in current investigations of the nature of astrophysical objects, as well as searches for signatures of quantum gravity.",
-    "crumbs": [
-      "Topics",
-      "First level topics",
-      "Astrophysical probes"
-    ]
-  },
-  {
-    "objectID": "doc/Astrophysical_probes.html#authors",
-    "href": "doc/Astrophysical_probes.html#authors",
-    "title": "Astrophysical probes",
-    "section": "List of Authors",
-    "text": "List of Authors",
-    "crumbs": [
-      "Topics",
-      "First level topics",
-      "Astrophysical probes"
-    ]
-  },
-  {
-    "objectID": "doc/Equivalence_principle.html",
-    "href": "doc/Equivalence_principle.html",
-    "title": "Equivalence Principle, locality and quantum gravity",
-    "section": "",
-    "text": "The purpose of the equivalence principle (EP) is to prescribe the interaction between gravity and matter, i.e., between gravitational and non-gravitational degrees of freedom in nature. EP is one of the most fundamental principles in modern physics, a cornerstone of Einstein’s theory of general relativity and of the Standard Model of elementary particle physics.",
-    "crumbs": [
-      "Topics",
-      "First level topics",
-      "Equivalence Principle, locality and quantum gravity"
-    ]
-  },
-  {
-    "objectID": "doc/Equivalence_principle.html#authors",
-    "href": "doc/Equivalence_principle.html#authors",
-    "title": "Equivalence Principle, locality and quantum gravity",
-    "section": "List of Authors",
-    "text": "List of Authors\n\n\nNikola Paunkovic\nMarko Vojinovic",
-    "crumbs": [
-      "Topics",
-      "First level topics",
-      "Equivalence Principle, locality and quantum gravity"
+      "Second level topics",
+      "LIV in expanding spacetimes"
     ]
   },
   {
@@ -380,5 +266,119 @@
       "Second level topics",
       "Quantum Spacetime"
     ]
+  },
+  {
+    "objectID": "doc/LIV_DSR.html",
+    "href": "doc/LIV_DSR.html",
+    "title": "Violation and Deformation of Relativistic Symmetries",
+    "section": "",
+    "text": "Relativistic symmetries play a central role in modern physics, but many approaches to quantum gravity suggest that these symmetries may not remain exactly the classical (local) Lorentz or Poincaré transformations of special relativity at the highest energy scales. This motivates the investigation of scenarios in which Lorentz and Poincaré symmetries are either violated or deformed. In the case of Lorentz Invariance Violation (LIV), Lorentz symmetry is broken explicitly (as in many effective field theory descriptions) or spontaneously (when fields acquire vacuum expectation values that select preferred directions in spacetime), so that physics is formulated in a preferred frame. In contrast, deformed-symmetry frameworks (DSR – Doubly (or Deformed) Special Relativity [Amel02], preserve the relativity principle but modify the transformation laws between observers by introducing an additional invariant scale (usually associated with the Planck length, \\(\\ell_P \\approx 1.61 \\times 10^{-35}\\,\\mathrm{m} \\approx 1.30 \\times 10^{-29}\\,\\mathrm{eV}^{-1}\\)). Although both approaches explore possible imprints of a quantum or discrete structure of spacetime, they lead to conceptually different kinematics and, as discussed below, to very different phenomenological expectations.\nModified Dispersion Relations (MDR) represent one of the most studied ways to depart from special-relativistic kinematics and have been extensively studied in both LIV and DSR scenarios, particularly for their phenomenological implications, even though not all LIV and DSR models necessarily feature a MDR. The most-studied LIV models typically arise from symmetry-breaking operators in effective field theory. On the other hand, DSR models often arise from constructions in which deformed spacetime symmetries are formulated within a Hopf-algebra (quantum groups) framework encoding high-energy modifications of the Poincaré symmetry. In LIV and DSR scenarios, nontrivial/nonlinear energy-momentum conservation rules, formalized as a modified composition law for four-momenta, have also been considered. However, while in LIV a modified composition law is not strictly required, in DSR it is generally considered necessary to ensure the compatibility between the relativity principle and the presence of an additional invariant scale. In DSR, the modified composition law admits a geometric interpretation as a rule for non-linear translations in momentum space, and it can also be understood algebraically as part of the coalgebra structure of Hopf algebras. These structures commonly appear in models with curved momentum space, noncommutative spacetimes, or quantum-group symmetries, and can lead to relative locality, namely an observer dependence of event localisation that may also arise in more general contexts. A more fundamental framework for LIV and DSR models is based on (quantum) fields in noncommutative spacetimes, which in turn allow for the study of discrete symmetry operators C (charge conjugation), P (parity), T (time reversal), and scattering amplitudes. In this context, loop corrections to tree-level diagrams often exhibit UV/IR mixing, where Lorentz-breaking (or deformation) scales, and cutoff scales interact in a non-trivial way, with potentially observable consequences. Some of these models, which may or may not imply MDRs, may also lead to a Planck-scale Generalized Heisenberg Uncertainty Principle (GUP).\nThe phenomenology associated with the LIV and DSR frameworks is markedly different. The most studied effect in both LIV and DSR scenarios is in-vacuo dispersion, arising from MDRs. However, other effects that are generally present in LIV frameworks, like threshold anomalies, vacuum birefringence, or modified decay channels, are typically highly suppressed in DSR scenarios, or not present at all if they violate the relativity principle. For example, they neither open nor close thresholds of reactions that, in LIV scenarios, may become allowed or forbidden. Astroparticle messengers (high-energy gamma rays, neutrinos, and cosmic rays), together with gravitational-wave, gravitational-lensing and black-hole observations, offer access to regimes where small departures from relativistic symmetries may accumulate or become detectable within a multimessenger approach. A generalization to expanding spacetimes of LIV models and of DSR models in the presence of a de Sitter-invariant scale) has been developed in recent years.\nSuch effects can also manifest in the low-energy regime. In quantum mechanical systems, LIV and DSR may induce modifications in time evolution. For instance, a modified Schrödinger equation arises from modified dispersion relations, and decoherence occurs when the quantum gravity scale is treated as a stochastic quantity or when modified symmetries are present. Also, C, P, and T transformations can interact non-trivially with the LIV or DSR scales, leading to additional phenomenological signatures. Precision laboratory and collider or accelerator experiments, often aimed at measuring differences in properties between particles and antiparticles (e.g. decay times), provide complementary tests of these effects. Taken together, astroparticle, astrophysical, and low-energy laboratory probes form a broad landscape in which the implications of the deformation or violation of relativistic symmetries can be systematically explored.\nGeneral reviews of these topics can be found in [Matt05], [Amel13], [Ad22]",
+    "crumbs": [
+      "Topics",
+      "First level topics",
+      "Violation and Deformation of Relativistic Symmetries"
+    ]
+  },
+  {
+    "objectID": "doc/LIV_DSR.html#authors",
+    "href": "doc/LIV_DSR.html#authors",
+    "title": "Violation and Deformation of Relativistic Symmetries",
+    "section": "List of Authors",
+    "text": "List of Authors\n\n\nAndrea Bevilacqua\nAndrzej Borowiec\nJosé Manuel Carmona\nJosé Luis Cortés\nSebastian Franchino-Viñas\nTajron Jurić\nTeppei Katori\nIarley Lobo\nFlavio Mercati\nChristian Pfeifer\nDiego Rubiera-Garcia\nFilip Rescic\nMaykoll A. Reyes\nGiacomo Rosati\nYaser Tavakoli",
+    "crumbs": [
+      "Topics",
+      "First level topics",
+      "Violation and Deformation of Relativistic Symmetries"
+    ]
+  },
+  {
+    "objectID": "doc/Quantum_Reference_Frames.html",
+    "href": "doc/Quantum_Reference_Frames.html",
+    "title": "Quantum Reference Frames",
+    "section": "",
+    "text": "in Relativistic Quantum Information and Quantum Gravity",
+    "crumbs": [
+      "Topics",
+      "First level topics",
+      "Quantum Reference Frames"
+    ]
+  },
+  {
+    "objectID": "doc/Quantum_Reference_Frames.html#authors",
+    "href": "doc/Quantum_Reference_Frames.html#authors",
+    "title": "Quantum Reference Frames",
+    "section": "List of Authors",
+    "text": "List of Authors\n\n\nAngel Ballesteros\nGoffredo Chirco\nAnne-Catherine de la Hamette\nRenata Ferrero\nSébastien C. Garmier\nViktoria Kabel\nEtera Livine\nFedele Lizzi\nLeon Loveridge\nAntonino Marciano\nDaniele Oriti\nand Roman Pasechnik",
+    "crumbs": [
+      "Topics",
+      "First level topics",
+      "Quantum Reference Frames"
+    ]
+  },
+  {
+    "objectID": "doc/Invacuo_dispersion.html",
+    "href": "doc/Invacuo_dispersion.html",
+    "title": "In-vacuo dispersion",
+    "section": "",
+    "text": "In-vacuo dispersion is an effect related to the hypothesis of a quantum gravity scale modified dispersion relation (MDR), which is described by the Hamiltonian of a relativistic particle characterizing its propagation in a quantum spacetime. Deviations from the general relativistic dispersion relations are often (but not always) associated with either the violation or deformation of relativistic symmetries. The core idea is to describe the effects of quantum gravity as a deformation of the classical trajectory of particles—a deformation that grows with the particle’s energy and is suppressed by the quantum gravity energy scale [AEMN98, Ad22].\nSince, in the context of quantum gravity, the relevant energies are ultra-relativistic, one can often focus on the massless case. For certain types of MDRs, the speed of a massless particle becomes energy-dependent in vacuum, which is the origin of the effect’s name.\nFor this reason, if particles are emitted from a given source with an energy difference, they arrive at a detector with a time difference proportional to the product of the energy difference and the propagation distance, but suppressed by the quantum gravity energy scale. This is a quantum spacetime-induced time delay effect, analogously to what the propagation of light through a medium (\\(\\eta\\) – phenomenological parameter, \\(M_P\\) –Planck mass, \\(D(z)\\) – redshift-dependent distance factor)\n\\[\n\\Delta t = \\eta D(z) \\frac{\\Delta E}{M_P}\n\\]\nIf these particles propagate over cosmological distances, even a modification suppressed by the Planck scale could produce a measurable effect with modern telescopes.\nDifferent formulations of the time delay effect have been proposed based on various hypotheses, such as the coupling between the energy-momentum of the particle and the spacetime metric, the local symmetries of spacetime, and the redshift dependence of the quantum gravity scale [Ad22].",
+    "crumbs": [
+      "Topics",
+      "First level topics",
+      "In-vacuo dispersion"
+    ]
+  },
+  {
+    "objectID": "doc/Invacuo_dispersion.html#authors",
+    "href": "doc/Invacuo_dispersion.html#authors",
+    "title": "In-vacuo dispersion",
+    "section": "List of Authors",
+    "text": "List of Authors\n\n\nIarley Pereira Lobo\nChristian Pfeifer",
+    "crumbs": [
+      "Topics",
+      "First level topics",
+      "In-vacuo dispersion"
+    ]
+  },
+  {
+    "objectID": "doc/Examples/example3.html",
+    "href": "doc/Examples/example3.html",
+    "title": "\\(\\Lambda\\)CDM Cosmological Model",
+    "section": "",
+    "text": "In order to describe an homogeneous and isotropic universe like in the framework of GR, one should solve the Einstein field equations using a homogeneous, isotropic, and expanding metric (the FLRW metric), \n\\[\nds^2 = dt^2 - a^2(t) \\left(\\frac{dr^2}{1-k r^2}+r^2 d\\Omega\\right) \\,,\n\\tag{1}\\]\n where \\(k\\) is the curvature and \\(a(t)\\) the scale factor of the universe, which is closely related to the redshift, \\(a(t)=1/(1+z(t))\\). We can use this relation to also connect the temporal coordinate to the redshift variable, \n\\[\n\\begin{aligned}\na(t) &=\\frac{1}{1+z(t)} \\\\\n    \\frac{\\dot a(t)}{a(t)} dt &= -\\frac{dz}{1+z(t)} \\\\\n    dt &= -\\frac{dz}{H(z)(1+z)} \\,,\n\\end{aligned}\n\\tag{2}\\]\n where we have defined the Hubble parameter1 as \\(H=\\dot a/a\\)."
+  },
+  {
+    "objectID": "doc/Examples/example3.html#authors",
+    "href": "doc/Examples/example3.html#authors",
+    "title": "\\(\\Lambda\\)CDM Cosmological Model",
+    "section": "List of Authors",
+    "text": "List of Authors\n\n\nAlbert Einstein\nIsaac Newton"
+  },
+  {
+    "objectID": "doc/Examples/example3.html#footnotes",
+    "href": "doc/Examples/example3.html#footnotes",
+    "title": "\\(\\Lambda\\)CDM Cosmological Model",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nWe will not discuss here the Hubble tension problem.↩︎"
+  },
+  {
+    "objectID": "doc/Examples/example1.html",
+    "href": "doc/Examples/example1.html",
+    "title": "How to write a page using Quarto Markdown",
+    "section": "",
+    "text": "GitHub Pages transforms plain text files into HTML webpages. In this template, files use the .qmd extension and follow Quarto Markdown syntax. Below are examples of the most commonly used formatting structures."
+  },
+  {
+    "objectID": "doc/Examples/example1.html#this-is-a-subsection",
+    "href": "doc/Examples/example1.html#this-is-a-subsection",
+    "title": "How to write a page using Quarto Markdown",
+    "section": "This is a subsection",
+    "text": "This is a subsection\n\nThis is a sub-subsection\nTo make a section cross-referenceable, append an identifier starting with #sec- to the header. For example, typing ## Mathematical Equations {#sec-maths} allows the section to be referenced anywhere in the document using @sec-maths."
+  },
+  {
+    "objectID": "doc/Examples/example1.html#footnotes",
+    "href": "doc/Examples/example1.html#footnotes",
+    "title": "How to write a page using Quarto Markdown",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nFor example, this is a footnote.↩︎"
   }
 ]
