@@ -24,39 +24,15 @@
     ]
   },
   {
-    "objectID": "doc/2ndlevel/LIV_DSR_FLRW.html",
-    "href": "doc/2ndlevel/LIV_DSR_FLRW.html",
-    "title": "LIV in expanding spacetimes",
+    "objectID": "doc/2ndlevel/Quantum_spacetime.html",
+    "href": "doc/2ndlevel/Quantum_spacetime.html",
+    "title": "Quantum Spacetime",
     "section": "",
-    "text": "mention JAcob and Piran etc.",
+    "text": "Mention quantum group symmetries\nMention fuzzy spacetimes from finite matrix geometries e.g. Grosse-Wulkenhaar (mentioned in Emergent, nonclassical and fuzzy spacetime)\nMention discrete spectra of geometric operators (lenght, area etc.)",
     "crumbs": [
       "Topics",
       "Second level topics",
-      "LIV in expanding spacetimes"
-    ]
-  },
-  {
-    "objectID": "doc/2ndlevel/QGscale.html",
-    "href": "doc/2ndlevel/QGscale.html",
-    "title": "Quantum Gravity Scale",
-    "section": "",
-    "text": "mention also “stochastica Planck scale”?",
-    "crumbs": [
-      "Topics",
-      "Second level topics",
-      "Quantum Gravity Scale"
-    ]
-  },
-  {
-    "objectID": "doc/2ndlevel/QMfoundations.html",
-    "href": "doc/2ndlevel/QMfoundations.html",
-    "title": "Fundamental principles of Quantum Mechanics that are amenable to testing",
-    "section": "",
-    "text": "In particular within the community of Quantum Information",
-    "crumbs": [
-      "Topics",
-      "Second level topics",
-      "Fundamental principles of Quantum Mechanics that are amenable to testing"
+      "Quantum Spacetime"
     ]
   },
   {
@@ -370,15 +346,39 @@
     ]
   },
   {
-    "objectID": "doc/2ndlevel/Quantum_spacetime.html",
-    "href": "doc/2ndlevel/Quantum_spacetime.html",
-    "title": "Quantum Spacetime",
+    "objectID": "doc/2ndlevel/QMfoundations.html",
+    "href": "doc/2ndlevel/QMfoundations.html",
+    "title": "Fundamental principles of Quantum Mechanics that are amenable to testing",
     "section": "",
-    "text": "Mention quantum group symmetries\nMention fuzzy spacetimes from finite matrix geometries e.g. Grosse-Wulkenhaar (mentioned in Emergent, nonclassical and fuzzy spacetime)\nMention discrete spectra of geometric operators (lenght, area etc.)",
+    "text": "In particular within the community of Quantum Information",
     "crumbs": [
       "Topics",
       "Second level topics",
-      "Quantum Spacetime"
+      "Fundamental principles of Quantum Mechanics that are amenable to testing"
+    ]
+  },
+  {
+    "objectID": "doc/2ndlevel/QGscale.html",
+    "href": "doc/2ndlevel/QGscale.html",
+    "title": "Quantum Gravity Scale",
+    "section": "",
+    "text": "mention also “stochastica Planck scale”?",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Quantum Gravity Scale"
+    ]
+  },
+  {
+    "objectID": "doc/2ndlevel/LIV_DSR_FLRW.html",
+    "href": "doc/2ndlevel/LIV_DSR_FLRW.html",
+    "title": "LIV in expanding spacetimes",
+    "section": "",
+    "text": "mention JAcob and Piran etc.",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "LIV in expanding spacetimes"
     ]
   }
 ]
