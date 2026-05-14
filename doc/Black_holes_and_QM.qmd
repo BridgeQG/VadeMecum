@@ -13,49 +13,27 @@ Gravitational-wave (GW) and electromagnetic (EM) observations probe the near-hor
 Infrared (IR) physics provides complementary constraints and mechanisms. Asymptotic symmetries (Bondi--van der Burg--Metzner--Sachs, BMS), soft modes (``soft hair''), and gravitational memory are tied to soft-graviton theorems and have been proposed as part of the information puzzle. Other proposed effective descriptions include nonlocal or fractional (non-Markovian) dynamics (e.g., models using Caputo derivatives). Candidate QG-motivated frameworks studied in this context include noncommutative geometry (often introducing an effective minimal length that shifts, for example, Regge--Wheeler potentials and QNMs) and loop-quantum-gravity-inspired effective metrics (``dressed-metric'' or ``rainbow'' constructions) in which backreaction can yield mode-dependent effective propagation and potentially chromatic lensing or Lorentz-invariance-violation signatures. Astrophysical environments (e.g., dark-matter halos) and consistency tests involving conjectures such as the Weak Gravity and Weak Cosmic Censorship conjectures can further constrain viable models.
 
 \section*{Keywords for potential second-level topic pages}
-\begin{itemize}
-  \item Hawking radiation; evaporation; information-loss problem
-  \item Bekenstein--Hawking entropy; entanglement entropy; area law
-  \item Holography; AdS/CFT; Ryu--Takayanagi
-  \item ER$=$EPR; wormholes
-  \item Greybody factors; generalized uncertainty principle (GUP)
-  \item Quasinormal modes (QNMs); ringdown; gravitational-wave echoes
-  \item Black-hole shadow; photon sphere
-  \item BMS symmetries; soft hair; gravitational memory
-  \item Noncommutative geometry; loop quantum gravity effective metrics
-\end{itemize}
+  - Hawking radiation; evaporation; information-loss problem
+  - Bekenstein--Hawking entropy; entanglement entropy; area law
+  - Holography; AdS/CFT; Ryu--Takayanagi
+  - ER$=$EPR; wormholes
+  - Greybody factors; generalized uncertainty principle (GUP)
+  - Quasinormal modes (QNMs); ringdown; gravitational-wave echoes
+  - Black-hole shadow; photon sphere
+  - BMS symmetries; soft hair; gravitational memory
+  - Noncommutative geometry; loop quantum gravity effective metrics
 
-\section*{Minimal foundational/review references (for the first-level page)}
-\begin{thebibliography}{9}
-\bibitem{Bekenstein1973}
-J.~D.~Bekenstein, ``Black holes and entropy,'' \emph{Phys.\ Rev.\ D} \textbf{7} (1973) 2333.
 
-\bibitem{Hawking1975}
-S.~W.~Hawking, ``Particle creation by black holes,'' \emph{Commun.\ Math.\ Phys.} \textbf{43} (1975) 199.
-
-\bibitem{Maldacena1998}
-J.~M.~Maldacena, ``The large-$N$ limit of superconformal field theories and supergravity,'' \emph{Adv.\ Theor.\ Math.\ Phys.} \textbf{2} (1998) 231.
-
-\bibitem{RyuTakayanagi2006}
-S.~Ryu and T.~Takayanagi, ``Holographic derivation of entanglement entropy from AdS/CFT,'' \emph{Phys.\ Rev.\ Lett.} \textbf{96} (2006) 181602.
-
-\bibitem{Strominger2018}
-A.~Strominger, \emph{Lectures on the Infrared Structure of Gravity and Gauge Theory}, Princeton University Press (2018).
-\end{thebibliography}
-
-\section*{Contributor confirmation}
-Please confirm which of the following listed names provided substantive contributions to this first-level topic write-up (text, editing, references, or technical input), so the final contributor list on GitHub can match actual contributions:
-\begin{itemize}
-  \item Saurya Das
-  \item Hasan El Moumni
-  \item Tajron Juric
-  \item Etera Livine
-  \item Paulo Moniz
-  \item Vishal Nath
-  \item Bilgehan Bar\i\c{s} Oner
-  \item Saeed Rastgoo
-  \item Diego Rubiera-Garcia
-  \item \.{I}zzet Sakall\i
-  \item Y. Tavakoli
-  \item H. Ziaeepour
-\end{itemize}
+## List of Authors {id="authors" .appendix}
+  - Saurya Das
+  - Hasan El Moumni
+  - Tajron Juric
+  - Etera Livine
+  - Paulo Moniz
+  - Vishal Nath
+  - Bilgehan Bar\i\c{s} Oner
+  - Saeed Rastgoo
+  - Diego Rubiera-Garcia
+  - \.{I}zzet Sakall\i
+  - Y. Tavakoli
+  - H. Ziaeepour
