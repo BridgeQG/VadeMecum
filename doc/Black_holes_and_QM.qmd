@@ -1,0 +1,59 @@
+Black Holes and Quantum Mechanics
+
+Black holes provide a controlled arena in which quantum mechanics meets gravitation. In the standard semiclassical approach one quantizes matter fields on a fixed black-hole spacetime (\emph{quantum field theory in curved spacetime}, QFTCS). This framework predicts Hawking radiation and black-hole evaporation, sharpening the black-hole information-loss problem and motivating genuinely quantum-gravitational (QG) descriptions of spacetime.
+
+A central theme is the thermodynamic and entanglement structure of horizons. The Bekenstein--Hawking entropy suggests that the number of microscopic degrees of freedom scales with horizon area. In many settings, entanglement across a horizon obeys an \emph{area law} and is tied to holography and emergent spacetime. In holographic models this relation is captured by the Ryu--Takayanagi prescription, and it motivates broader ideas such as ER$=$EPR (the conjectured link between Einstein--Rosen bridges and Einstein--Podolsky--Rosen entanglement). These ideas interface with scrambling and computational complexity, and with the tension between the ``no-hair'' simplicity of classical black holes and their enormous entropy. They also connect to questions about the fate of infalling matter, the status of the equivalence principle near horizons, and possible quantum superpositions of macroscopic geometries or causal structures. Across approaches, a key target is the resolution (or effective replacement) of classical singularities.
+
+Observable and phenomenological handles include deviations from perfect thermality in the Hawking flux (greybody factors) and possible short-distance modifications of particle creation. Such effects are often parameterized through Planck-scale deformations, including the generalized uncertainty principle (GUP), and can induce corrections to temperature, entropy (including R\'{e}nyi/Tsallis-type generalizations), heat capacity, phase structure, and the late-time endgame of evaporation (e.g., remnants vs complete evaporation).
+
+Gravitational-wave (GW) and electromagnetic (EM) observations probe the near-horizon geometry through quasinormal modes (QNMs) and ringdown, potential late-time echoes, and strong-lensing/photon-sphere features. Relationships among QNMs, shadows, and greybody factors (including eikonal correspondences in suitable regimes) can help distinguish true horizons from ultra-compact horizonless mimickers with surfaces just outside the would-be horizon, and can inform scenarios in which primordial-black-hole remnants might store information.
+
+Infrared (IR) physics provides complementary constraints and mechanisms. Asymptotic symmetries (Bondi--van der Burg--Metzner--Sachs, BMS), soft modes (``soft hair''), and gravitational memory are tied to soft-graviton theorems and have been proposed as part of the information puzzle. Other proposed effective descriptions include nonlocal or fractional (non-Markovian) dynamics (e.g., models using Caputo derivatives). Candidate QG-motivated frameworks studied in this context include noncommutative geometry (often introducing an effective minimal length that shifts, for example, Regge--Wheeler potentials and QNMs) and loop-quantum-gravity-inspired effective metrics (``dressed-metric'' or ``rainbow'' constructions) in which backreaction can yield mode-dependent effective propagation and potentially chromatic lensing or Lorentz-invariance-violation signatures. Astrophysical environments (e.g., dark-matter halos) and consistency tests involving conjectures such as the Weak Gravity and Weak Cosmic Censorship conjectures can further constrain viable models.
+
+\section*{Keywords for potential second-level topic pages}
+\begin{itemize}
+  \item Hawking radiation; evaporation; information-loss problem
+  \item Bekenstein--Hawking entropy; entanglement entropy; area law
+  \item Holography; AdS/CFT; Ryu--Takayanagi
+  \item ER$=$EPR; wormholes
+  \item Greybody factors; generalized uncertainty principle (GUP)
+  \item Quasinormal modes (QNMs); ringdown; gravitational-wave echoes
+  \item Black-hole shadow; photon sphere
+  \item BMS symmetries; soft hair; gravitational memory
+  \item Noncommutative geometry; loop quantum gravity effective metrics
+\end{itemize}
+
+\section*{Minimal foundational/review references (for the first-level page)}
+\begin{thebibliography}{9}
+\bibitem{Bekenstein1973}
+J.~D.~Bekenstein, ``Black holes and entropy,'' \emph{Phys.\ Rev.\ D} \textbf{7} (1973) 2333.
+
+\bibitem{Hawking1975}
+S.~W.~Hawking, ``Particle creation by black holes,'' \emph{Commun.\ Math.\ Phys.} \textbf{43} (1975) 199.
+
+\bibitem{Maldacena1998}
+J.~M.~Maldacena, ``The large-$N$ limit of superconformal field theories and supergravity,'' \emph{Adv.\ Theor.\ Math.\ Phys.} \textbf{2} (1998) 231.
+
+\bibitem{RyuTakayanagi2006}
+S.~Ryu and T.~Takayanagi, ``Holographic derivation of entanglement entropy from AdS/CFT,'' \emph{Phys.\ Rev.\ Lett.} \textbf{96} (2006) 181602.
+
+\bibitem{Strominger2018}
+A.~Strominger, \emph{Lectures on the Infrared Structure of Gravity and Gauge Theory}, Princeton University Press (2018).
+\end{thebibliography}
+
+\section*{Contributor confirmation}
+Please confirm which of the following listed names provided substantive contributions to this first-level topic write-up (text, editing, references, or technical input), so the final contributor list on GitHub can match actual contributions:
+\begin{itemize}
+  \item Saurya Das
+  \item Hasan El Moumni
+  \item Tajron Juric
+  \item Etera Livine
+  \item Paulo Moniz
+  \item Vishal Nath
+  \item Bilgehan Bar\i\c{s} Oner
+  \item Saeed Rastgoo
+  \item Diego Rubiera-Garcia
+  \item \.{I}zzet Sakall\i
+  \item Y. Tavakoli
+  \item H. Ziaeepour
+\end{itemize}
