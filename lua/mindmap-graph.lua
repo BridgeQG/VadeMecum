@@ -144,18 +144,6 @@ local function generate_graph_html(nodes_db, edges_db)
               ctx.arc(x, y, Math.max(w, h)/2, 0, 2 * Math.PI);
           } else if (shape === 'square') {
               ctx.rect(x - w/2, y - h/2, w, h);
-          } else if (shape === 'diamond') {
-              ctx.moveTo(x, y - h/2); ctx.lineTo(x + w/2, y); ctx.lineTo(x, y + h/2); ctx.lineTo(x - w/2, y);
-          } else if (shape === 'triangle') {
-              ctx.moveTo(x, y - h/2); ctx.lineTo(x + w/2, y + h/2); ctx.lineTo(x - w/2, y + h/2);
-          } else if (shape === 'star') {
-              const spikes = 5; const outerRadius = Math.max(w, h)/2; const innerRadius = outerRadius / 2;
-              let rot = Math.PI / 2 * 3; let step = Math.PI / spikes;
-              ctx.moveTo(x, y - outerRadius);
-              for (let i = 0; i < spikes; i++) {
-                  ctx.lineTo(x + Math.cos(rot) * outerRadius, y + Math.sin(rot) * outerRadius); rot += step;
-                  ctx.lineTo(x + Math.cos(rot) * innerRadius, y + Math.sin(rot) * innerRadius); rot += step;
-              }
           } else {
               if (ctx.roundRect) ctx.roundRect(x - w/2, y - h/2, w, h, 8); else ctx.rect(x - w/2, y - h/2, w, h);
           }

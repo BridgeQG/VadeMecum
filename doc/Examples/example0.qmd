@@ -1,6 +1,6 @@
 ---
 title: 'BridgeQG Vade Mecum'
-mindmap-shape: 'diamond'
+mindmap-shape: 'square'
 ---
 
 # How to use this template

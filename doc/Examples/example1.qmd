@@ -1,6 +1,6 @@
 ---
 title: 'How to write a page using Quarto Markdown'
-mindmap-shape: 'diamond'
+mindmap-shape: 'square'
 ---
 
 GitHub Pages transforms plain text files into HTML webpages. In this template, files use the `.qmd` extension and follow Quarto Markdown syntax. Below are examples of the most commonly used formatting structures.
