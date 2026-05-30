@@ -1,6 +1,6 @@
 ---
 title: '$\Lambda$CDM Cosmological Model'
-midmap-shape: 'diamond'
+mindmap-shape: 'diamond'
 nocite: |
   @Carmona:2022pro
 ---

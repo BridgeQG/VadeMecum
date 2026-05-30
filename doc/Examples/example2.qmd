@@ -1,6 +1,6 @@
 ---
 title: 'Allowed LaTeX syntax for page writing'
-midmap-shape: 'diamond'
+mindmap-shape: 'diamond'
 ---
 
 In the scientific community, it is very common to have texts, equations, and full documents already written in LaTeX. This implies that one needs to translate such content to the Quarto Markdown syntax explained in the [previous guide](/doc/Examples/example1.qmd). However, this template allows for the use of some simple LaTeX syntax (in combination with native syntax), which is converted on the fly to the correct Quarto Markdown format. This document serves as both a guide and a test file for the translation rules. It is written using the supported LaTeX commands to explain exactly how the transformation works.
