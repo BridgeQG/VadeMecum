@@ -1,5 +1,7 @@
 ---
 title: 'Violation and Deformation of Relativistic Symmetries'
+mindmap-shape: 'circle'
+mindmap-color: #84cfff
 ---
 
 [Relativistic symmetries](https://en.wikipedia.org/wiki/Special_relativity) play a central role in modern physics, but many approaches to quantum gravity suggest that these symmetries may not remain exactly the classical (local) Lorentz or Poincaré transformations of special relativity at the highest energy scales. This motivates the investigation of scenarios in which Lorentz and Poincaré symmetries are either violated or deformed.
@@ -32,7 +34,7 @@ General reviews of these topics can be found in \cite{Mattingly:2005re}, \cite{A
 
 ## List of Authors {id="authors" .appendix}
 
-- Andrea Bevilacqua 
+- Andrea Bevilacqua
 - Andrzej Borowiec
 - José Manuel Carmona
 - José Luis Cortés
