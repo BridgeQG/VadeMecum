@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.37">
+<meta name="generator" content="quarto-1.9.38">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -39,10 +39,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-84365199647afda7ec578bfe13ef3742.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-814b7d86f81bef83ceb6a6c63506e914.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -578,283 +578,276 @@ window.Quarto = {
 </header>
 
 
-<div id="graph_906742" style="width: 100%; height: 600px; border: 1px solid #ddd; background: #ffffff; border-radius: 8px; overflow: hidden; position: relative;"></div>
-
-<script src="https://unpkg.com/force-graph"></script>
-<script>
-  (function initGraph() {
-    if (typeof ForceGraph === 'undefined') {
-      setTimeout(initGraph, 50);
-      return;
-    }
-
-    const graphData = {
-      nodes: [ { id: 'Hawking radiation', url: '/VadeMecum/doc/2ndlevel/Hawking_radiation.html', depth: 2, color: '#fdbcce', shape: 'rounded' },
-        { id: 'Quantum Gravity', url: '/VadeMecum/doc/quantum_gravity.html', depth: 2, color: '#fdbcce', shape: 'rounded' },
-        { id: 'Strong Equivalence Principle', url: '/VadeMecumdoc/2ndlevel/strongEP.html', depth: 2, color: '#fdbcce', shape: 'rounded' },
-        { id: 'Doubly-referenced 2nd level topic', url: '/VadeMecum/doc/2ndlevel/index.html', depth: 2, color: '#fdbfce', shape: 'rounded' },
-        { id: 'Quantum superpositions of geometries', url: '/VadeMecum/doc/2ndlevel/Quantum_superposition_of_geometries.html', depth: 2, color: '#fdbcce', shape: 'rounded' },
-        { id: 'Equivalence Principle, locality and quantum gravity', url: '/VadeMecum/doc/Equivalence_principle.html', depth: 1, color: null, shape: 'rounded' },
-        { id: 'Emergent, nonclassical and fuzzy spacetime', url: '/VadeMecum/doc/2ndlevel/Emergent_nonclassical_and_fuzzy_spacetime.html', depth: 2, color: '#fdbcce', shape: 'rounded' },
-        { id: 'Modified Schrödinger equation', url: '/VadeMecum/doc/2ndlevel/Modified_Schroedinger_equation.html', depth: 2, color: '#fdbcce', shape: 'rounded' },
-        { id: 'Entanglement', url: '/VadeMecum/doc/2ndlevel/GRinduced_entanglement.html', depth: 2, color: '#fdbcce', shape: 'rounded' },
-        { id: 'Quantum causality', url: '/VadeMecum/doc/2ndlevel/Quantum_causality.html', depth: 2, color: '#fdbcce', shape: 'rounded' },
-        { id: 'Quantum spacetime', url: '/VadeMecum/doc/2ndlevel/Emergent_nonclassical_and_fuzzy_spacetime.html', depth: 2, color: '#fdbcce', shape: 'rounded' },
-        { id: 'Multiply-referenced 2nd level topic', url: '/VadeMecum/doc/2ndlevel/index.html', depth: 2, color: '#fdbccd', shape: 'rounded' },
-        { id: 'Quantum geometry and spacetime discreteness', url: '/VadeMecum/doc/2ndlevel/Quantum_geometry_and_spacetime_discreteness.html', depth: 2, color: '#fdbcce', shape: 'rounded' },
-        { id: 'Collapse models', url: '/VadeMecum/doc/2ndlevel/Collapse_models.html', depth: 2, color: '#fdbcce', shape: 'rounded' },
-        { id: 'Gravitationally-induced quantum effects', url: '/VadeMecum/doc/Gravitationally-induced_quantum_effects.html', depth: 1, color: null, shape: 'rounded' },
-        { id: 'Modified dispersion relations', url: '/VadeMecum/doc/2ndlevel/Modified_dispersion_relations.html', depth: 2, color: '#fdbcce', shape: 'rounded' },
-        { id: 'In-vacuo dispersion', url: '/VadeMecum/doc/Invacuo_dispersion.html', depth: 1, color: null, shape: 'rounded' },
-        { id: 'Violation and Deformation of Relativistic Symmetries', url: '/VadeMecum/doc/LIV_DSR.html', depth: 1, color: null, shape: 'rounded' },
-        { id: 'Vade Mecum', url: null, depth: 0, color: '#2986cc', shape: 'circle' },
-        { id: 'IR-UV mixing', url: '/VadeMecum/doc/IR-UV_mixing.html', depth: 1, color: null, shape: 'rounded' },
-        { id: 'Emergent, Nonclassical and Fuzzy Spacetime', url: '/VadeMecum/doc/Emergent_nonclassical_and_fuzzy_spacetime.html', depth: 1, color: null, shape: 'rounded' },
-        { id: 'Low-energy table-top experiments', url: '/VadeMecum/doc/Low-energy_table-top_experiments.html', depth: 1, color: null, shape: 'rounded' },
-        { id: 'Locality', url: '/VadeMecum/doc/2ndlevel/locality.html', depth: 2, color: '#fdbcce', shape: 'rounded' },
-        { id: 'Quantum Equivalence Principle', url: '/VadeMecum/doc/2ndlevel/quantum_EP.html', depth: 2, color: '#fdbcce', shape: 'rounded' },
-        { id: 'Standard Model extensions', url: '/VadeMecum/doc/2ndlevel/Standard_model_extensions.html', depth: 2, color: '#fdbcce', shape: 'rounded' } ],
-      links: [ { source: 'Vade Mecum', target: 'Emergent, Nonclassical and Fuzzy Spacetime' },
-        { source: 'Vade Mecum', target: 'Equivalence Principle, locality and quantum gravity' },
-        { source: 'Vade Mecum', target: 'Gravitationally-induced quantum effects' },
-        { source: 'Vade Mecum', target: 'IR-UV mixing' },
-        { source: 'Vade Mecum', target: 'In-vacuo dispersion' },
-        { source: 'Vade Mecum', target: 'Violation and Deformation of Relativistic Symmetries' },
-        { source: 'Vade Mecum', target: 'Low-energy table-top experiments' },
-        { source: 'Emergent, Nonclassical and Fuzzy Spacetime', target: 'Quantum causality' },
-        { source: 'Emergent, Nonclassical and Fuzzy Spacetime', target: 'Quantum geometry and spacetime discreteness' },
-        { source: 'Emergent, Nonclassical and Fuzzy Spacetime', target: 'Quantum superpositions of geometries' },
-        { source: 'Equivalence Principle, locality and quantum gravity', target: 'Locality' },
-        { source: 'Equivalence Principle, locality and quantum gravity', target: 'Strong Equivalence Principle' },
-        { source: 'Equivalence Principle, locality and quantum gravity', target: 'Quantum Gravity' },
-        { source: 'Equivalence Principle, locality and quantum gravity', target: 'Quantum Equivalence Principle' },
-        { source: 'Gravitationally-induced quantum effects', target: 'Doubly-referenced 2nd level topic' },
-        { source: 'Gravitationally-induced quantum effects', target: 'Hawking radiation' },
-        { source: 'Gravitationally-induced quantum effects', target: 'Modified Schrödinger equation' },
-        { source: 'Gravitationally-induced quantum effects', target: 'Collapse models' },
-        { source: 'IR-UV mixing', target: 'Doubly-referenced 2nd level topic' },
-        { source: 'IR-UV mixing', target: 'Modified dispersion relations' },
-        { source: 'In-vacuo dispersion', target: 'Multiply-referenced 2nd level topic' },
-        { source: 'In-vacuo dispersion', target: 'Modified dispersion relations' },
-        { source: 'In-vacuo dispersion', target: 'Quantum spacetime' },
-        { source: 'Violation and Deformation of Relativistic Symmetries', target: 'Multiply-referenced 2nd level topic' },
-        { source: 'Violation and Deformation of Relativistic Symmetries', target: 'Standard Model extensions' },
-        { source: 'Violation and Deformation of Relativistic Symmetries', target: 'Emergent, nonclassical and fuzzy spacetime' },
-        { source: 'Low-energy table-top experiments', target: 'Multiply-referenced 2nd level topic' },
-        { source: 'Low-energy table-top experiments', target: 'Entanglement' } ]
-    };
-
-    const container = document.getElementById('graph_906742');
-    if (!container) return;
-
-    // --- 1. ASYMPTOTIC COLOR CASCADE LOGIC ---
-    
-    function lightenColorCascade(hexColor) {
-        if (!hexColor) return '#ffffff';
-        let hex = hexColor.replace('#', '');
-        if (hex.length === 3) hex = hex[0]+hex[0]+hex[1]+hex[1]+hex[2]+hex[2];
-        const r = parseInt(hex.substr(0, 2), 16) / 255;
-        const g = parseInt(hex.substr(2, 2), 16) / 255;
-        const b = parseInt(hex.substr(4, 2), 16) / 255;
-        
-        let max = Math.max(r, g, b), min = Math.min(r, g, b);
-        let h, s, l = (max + min) / 2;
-
-        if (max === min) { h = s = 0; } else {
-            let d = max - min;
-            s = l > 0.5 ? d / (2 - max - min) : d / (max + min);
-            switch (max) {
-                case r: h = (g - b) / d + (g < b ? 6 : 0); break;
-                case g: h = (b - r) / d + 2; break;
-                case b: h = (r - g) / d + 4; break;
-            }
-            h /= 6;
-        }
-
-        l = l + (0.98 - l) * 0.40;
-        s = s * 0.85; 
-
-        let outR, outG, outB;
-        if (s === 0) { outR = outG = outB = l; } else {
-            const hue2rgb = (p, q, t) => {
-                if (t < 0) t += 1; if (t > 1) t -= 1;
-                if (t < 1/6) return p + (q - p) * 6 * t;
-                if (t < 1/2) return q;
-                if (t < 2/3) return p + (q - p) * (2/3 - t) * 6;
-                return p;
-            };
-            let q = l < 0.5 ? l * (1 + s) : l + s - l * s;
-            let p = 2 * l - q;
-            outR = hue2rgb(p, q, h + 1/3);
-            outG = hue2rgb(p, q, h);
-            outB = hue2rgb(p, q, h - 1/3);
-        }
-
-        return '#' + 
-            Math.round(outR * 255).toString(16).padStart(2, '0') + 
-            Math.round(outG * 255).toString(16).padStart(2, '0') + 
-            Math.round(outB * 255).toString(16).padStart(2, '0');
-    }
-
-    const nodesMap = new Map();
-    const childrenMap = new Map();
-    const inDegreeMap = new Map();
-
-    graphData.nodes.forEach(n => {
-        nodesMap.set(n.id, n);
-        childrenMap.set(n.id, []);
-        inDegreeMap.set(n.id, 0);
-    });
-
-    graphData.links.forEach(l => {
-        if (childrenMap.has(l.source) && inDegreeMap.has(l.target)) {
-            childrenMap.get(l.source).push(l.target);
-            inDegreeMap.set(l.target, inDegreeMap.get(l.target) + 1);
-        }
-    });
-
-    // --- GLOBAL DEFAULT COLOR ---
-    const GLOBAL_ROOT_COLOR = '#84cfff';
-    
-    let queue = [];
-    let visited = new Set();
-
-    nodesMap.forEach((node, id) => {
-        if (inDegreeMap.get(id) === 0) {
-            queue.push({ id, parentColor: GLOBAL_ROOT_COLOR, isRoot: true });
-            visited.add(id);
-        }
-    });
-
-    while (queue.length > 0) {
-        const { id, parentColor, isRoot } = queue.shift();
-        const node = nodesMap.get(id);
-
-        node._resolvedColor = (isRoot) ? (node.color || GLOBAL_ROOT_COLOR) : (node.color || parentColor);
-        const lightenedForChildren = lightenColorCascade(node._resolvedColor);
-
-        childrenMap.get(id).forEach(childId => {
-            if (!visited.has(childId)) {
-                visited.add(childId);
-                queue.push({ id: childId, parentColor: lightenedForChildren, isRoot: false });
-            }
-        });
-    }
-
-    // --- 2. CONTRAST THEME GENERATOR ---
-    
-    function getThemeColors(hexColor) {
-        let hex = hexColor.replace('#', '');
-        if (hex.length === 3) hex = hex[0]+hex[0]+hex[1]+hex[1]+hex[2]+hex[2];
-        const r = parseInt(hex.substr(0, 2), 16) / 255;
-        const g = parseInt(hex.substr(2, 2), 16) / 255;
-        const b = parseInt(hex.substr(4, 2), 16) / 255;
-        
-        // Convert to HSL to preserve the exact hue and saturation
-        let max = Math.max(r, g, b), min = Math.min(r, g, b);
-        let h, s, l = (max + min) / 2;
-
-        if (max === min) { h = s = 0; } else {
-            let d = max - min;
-            s = l > 0.5 ? d / (2 - max - min) : d / (max + min);
-            switch (max) {
-                case r: h = (g - b) / d + (g < b ? 6 : 0); break;
-                case g: h = (b - r) / d + 2; break;
-                case b: h = (r - g) / d + 4; break;
-            }
-            h /= 6;
-        }
-
-        // Dynamically shift lightness for the text color
-        // If background is light, make text very dark. If dark, make text very light.
-        let textL = l > 0.5 ? Math.max(0.15, l - 0.65) : Math.min(0.95, l + 0.65);
-
-        // Convert back to RGB for the canvas
-        let outR, outG, outB;
-        if (s === 0) { outR = outG = outB = textL; } else {
-            const hue2rgb = (p, q, t) => {
-                if (t < 0) t += 1; if (t > 1) t -= 1;
-                if (t < 1/6) return p + (q - p) * 6 * t;
-                if (t < 1/2) return q;
-                if (t < 2/3) return p + (q - p) * (2/3 - t) * 6;
-                return p;
-            };
-            let q = textL < 0.5 ? textL * (1 + s) : textL + s - textL * s;
-            let p = 2 * textL - q;
-            outR = hue2rgb(p, q, h + 1/3);
-            outG = hue2rgb(p, q, h);
-            outB = hue2rgb(p, q, h - 1/3);
-        }
-
-        let dynamicFg = '#' + 
-            Math.round(outR * 255).toString(16).padStart(2, '0') + 
-            Math.round(outG * 255).toString(16).padStart(2, '0') + 
-            Math.round(outB * 255).toString(16).padStart(2, '0');
-
-        return { bg: hexColor, fg: dynamicFg };
-    }
-
-    // --- 3. RENDER ---
-
-    const Graph = ForceGraph()(container)
-      .graphData(graphData)
-      .linkDirectionalParticles(2)
-      .linkColor(() => '#cccccc')
-      .nodeCanvasObject((node, ctx, globalScale) => {
-        const cappedDepth = Math.min(node.depth || 0, 4); 
-        const fontSize = (16 - (cappedDepth * 2)) / globalScale;
-        ctx.font = `bold ${fontSize}px Sans-Serif`;
-        
-        const label = node.id;
-        const maxTextWidth = (130 - (cappedDepth * 8)) / globalScale; 
-        const words = label.split(' ');
-        let lines = [];
-        let curLine = words[0];
-        for (let i = 1; i < words.length; i++) {
-            if (ctx.measureText(curLine + " " + words[i]).width < maxTextWidth) curLine += " " + words[i];
-            else { lines.push(curLine); curLine = words[i]; }
-        }
-        lines.push(curLine);
-
-        const lineHeight = fontSize * 1.2;
-        const textWidth = Math.max(...lines.map(l => ctx.measureText(l).width));
-        const padding = fontSize * 1.5;
-        const boxW = textWidth + padding;
-        const boxH = lines.length * lineHeight + padding;
-        const theme = getThemeColors(node._resolvedColor);
-
-        ctx.fillStyle = theme.bg;
-        ctx.strokeStyle = theme.fg;
-        ctx.lineWidth = 1.5 / globalScale;
-
-        ctx.beginPath();
-        const r = 8 / globalScale;
-        if (node.shape === 'circle') ctx.arc(node.x, node.y, Math.max(boxW, boxH)/2, 0, 2*Math.PI);
-        else if (ctx.roundRect) ctx.roundRect(node.x - boxW/2, node.y - boxH/2, boxW, boxH, r);
-        else ctx.rect(node.x - boxW/2, node.y - boxH/2, boxW, boxH);
-        ctx.fill();
-        ctx.stroke();
-
-        ctx.textAlign = 'center';
-        ctx.textBaseline = 'middle';
-        ctx.fillStyle = theme.fg;
-        const startY = node.y - (lines.length * lineHeight)/2 + lineHeight/2;
-        lines.forEach((line, i) => ctx.fillText(line, node.x, startY + i * lineHeight));
-        
-        node.__rect = { boxW, boxH };
-      })
-      .onNodeClick(node => { if(node.url) window.location.href = node.url; })
-      .onNodeHover(node => container.style.cursor = node && node.url ? 'pointer' : null);
-
-      new ResizeObserver(() => {
-        Graph.width(container.offsetWidth);
-        Graph.height(container.offsetHeight);
-      }).observe(container);
-
-  })();
-</script>
+  <div id="graph_130187" style="width: 100%; height: 600px; border: 1px solid #ddd; background: #ffffff; border-radius: 8px; overflow: hidden; position: relative; margin-bottom: 1.5em;"></div>
+  
+  <script src="https://unpkg.com/force-graph"></script>
+  <script>
+    (function initGraph() {
+      if (typeof ForceGraph === 'undefined') { setTimeout(initGraph, 50); return; }
+  
+      const graphData = {
+        nodes: [ { id: 'QRF_approaches.qmd', url: 'doc/2ndlevel/QRF_approaches.html', color: null, shape: 'rounded' },
+          { id: 'LIV_FLRW.qmd', url: 'doc/2ndlevel/LIV_FLRW.html', color: null, shape: 'rounded' },
+          { id: 'Quantum_causality.qmd', url: 'doc/2ndlevel/Quantum_causality.html', color: null, shape: 'rounded' },
+          { id: 'Emergent, Nonclassical and Fuzzy Spacetime', url: 'doc/Emergent_nonclassical_and_fuzzy_spacetime.html', color: null, shape: 'circle' },
+          { id: 'Discrete_symmetries.qmd', url: 'doc/2ndlevel/Discrete_symmetries.html', color: null, shape: 'rounded' },
+          { id: '$\Lambda$CDM Cosmological Model', url: 'doc/Examples/example3.html', color: null, shape: 'rounded' },
+          { id: 'Modified_Schroedinger_equation.qmd', url: 'doc/2ndlevel/Modified_Schroedinger_equation.html', color: null, shape: 'rounded' },
+          { id: 'Locality.qmd', url: 'doc/2ndlevel/Locality.html', color: null, shape: 'rounded' },
+          { id: 'DSR_FLRW.qmd', url: 'doc/2ndlevel/DSR_FLRW.html', color: null, shape: 'rounded' },
+          { id: 'Quantum Reference Frames', url: 'doc/Quantum_Reference_Frames.html', color: '#84cfff', shape: 'circle' },
+          { id: 'Subsystems_relativity.qmd', url: 'doc/2ndlevel/Subsystems_relativity.html', color: null, shape: 'rounded' },
+          { id: 'Asymptotic and global symmetries of spacetime', url: 'doc/Asymptotic_symmetries.html', color: null, shape: 'circle' },
+          { id: 'Pauli_violation.qmd', url: 'doc/2ndlevel/Pauli_violation.html', color: null, shape: 'rounded' },
+          { id: 'COW_experiment.qmd', url: 'doc/2ndlevel/COW_experiment.html', color: null, shape: 'rounded' },
+          { id: 'Acceleration_mechanisms.qmd', url: 'doc/2ndlevel/Acceleration_mechanisms.html', color: null, shape: 'rounded' },
+          { id: 'Hawking_radiation.qmd', url: 'doc/2ndlevel/Hawking_radiation.html', color: null, shape: 'rounded' },
+          { id: 'QMfoundations.qmd', url: 'doc/2ndlevel/QMfoundations.html', color: null, shape: 'rounded' },
+          { id: 'DSR.qmd', url: 'doc/2ndlevel/DSR.html', color: null, shape: 'rounded' },
+          { id: 'Time_delay.qmd', url: 'doc/2ndlevel/Time_delay.html', color: null, shape: 'rounded' },
+          { id: 'IR-UV mixing', url: 'doc/IR-UV_mixing.html', color: null, shape: 'circle' },
+          { id: 'Quantum_tests_of_the_equivalence_principle.qmd', url: 'doc/2ndlevel/Quantum_tests_of_the_equivalence_principle.html', color: null, shape: 'rounded' },
+          { id: 'Holography.qmd', url: 'doc/2ndlevel/Holography.html', color: null, shape: 'rounded' },
+          { id: 'QRF_transformations.qmd', url: 'doc/2ndlevel/QRF_transformations.html', color: null, shape: 'rounded' },
+          { id: 'Low-energy table-top experiments', url: 'doc/Low-energy_table-top_experiments.html', color: '#84cfff', shape: 'circle' },
+          { id: 'example1.qmd', url: 'doc/Examples/example1.html', color: null, shape: 'rounded' },
+          { id: 'Astrophysical probes', url: 'doc/Astrophysical_probes.html', color: null, shape: 'circle' },
+          { id: 'Particle_processes_in_astrophysical_sources.qmd', url: 'doc/2ndlevel/Particle_processes_in_astrophysical_sources.html', color: null, shape: 'rounded' },
+          { id: 'Quantum_superposition_of_massive_objects.qmd', url: 'doc/2ndlevel/Quantum_superposition_of_massive_objects.html', color: null, shape: 'rounded' },
+          { id: 'Astrophysical_sources.qmd', url: 'doc/2ndlevel/Astrophysical_sources.html', color: null, shape: 'rounded' },
+          { id: 'Quantum_spacetime.qmd', url: 'doc/2ndlevel/Quantum_spacetime.html', color: null, shape: 'rounded' },
+          { id: 'Curved_momentum_space.qmd', url: 'doc/2ndlevel/Curved_momentum_space.html', color: null, shape: 'rounded' },
+          { id: 'Modified_dispersion_relations.qmd', url: 'doc/2ndlevel/Modified_dispersion_relations.html', color: null, shape: 'rounded' },
+          { id: 'GUP.qmd', url: 'doc/2ndlevel/GUP.html', color: null, shape: 'rounded' },
+          { id: 'QGscale.qmd', url: 'doc/2ndlevel/QGscale.html', color: null, shape: 'rounded' },
+          { id: 'Magnetic_fields_in_astrophysical_sources.qmd', url: 'doc/2ndlevel/Magnetic_fields_in_astrophysical_sources.html', color: null, shape: 'rounded' },
+          { id: 'Standard_model_extensions.qmd', url: 'doc/2ndlevel/Standard_model_extensions.html', color: null, shape: 'rounded' },
+          { id: 'In-vacuo dispersion', url: 'doc/Invacuo_dispersion.html', color: null, shape: 'circle' },
+          { id: 'Gravitationally-induced quantum effects', url: 'doc/Gravitationally-induced_quantum_effects.html', color: null, shape: 'circle' },
+          { id: 'Astrophysical_detection_techniques.qmd', url: 'doc/2ndlevel/Astrophysical_detection_techniques.html', color: null, shape: 'rounded' },
+          { id: 'Time_dilation-induced_dephasing.qmd', url: 'doc/2ndlevel/Time_dilation-induced_dephasing.html', color: null, shape: 'rounded' },
+          { id: 'Algebraic_QFT.qmd', url: 'doc/2ndlevel/Algebraic_QFT.html', color: null, shape: 'rounded' },
+          { id: 'example0.qmd', url: 'doc/Examples/example0.html', color: null, shape: 'rounded' },
+          { id: 'Multimessenger_astrophysics.qmd', url: 'doc/2ndlevel/Multimessenger_astrophysics.html', color: null, shape: 'rounded' },
+          { id: 'Gravitationally-induced_decoherence.qmd', url: 'doc/2ndlevel/Gravitationally-induced_decoherence.html', color: null, shape: 'rounded' },
+          { id: 'Magnometry.qmd', url: 'doc/2ndlevel/Magnometry.html', color: null, shape: 'rounded' },
+          { id: 'Precision_measurements_of_short-range_gravity.qmd', url: 'doc/2ndlevel/Precision_measurements_of_short-range_gravity.html', color: null, shape: 'rounded' },
+          { id: 'Gravity_as_thermodynamics_hydrodynamics.qmd', url: 'doc/2ndlevel/Gravity_as_thermodynamics_hydrodynamics.html', color: null, shape: 'rounded' },
+          { id: 'Collapse_models.qmd', url: 'doc/2ndlevel/Collapse_models.html', color: null, shape: 'rounded' },
+          { id: 'Constraint_quantization.qmd', url: 'doc/2ndlevel/Constraint_quantization.html', color: null, shape: 'rounded' },
+          { id: 'Hopf_algebra.qmd', url: 'doc/2ndlevel/Hopf_algebra.html', color: null, shape: 'rounded' },
+          { id: 'Modified_gravity.qmd', url: 'doc/2ndlevel/Modified_gravity.html', color: null, shape: 'rounded' },
+          { id: 'Optomechanical_systems.qmd', url: 'doc/2ndlevel/Optomechanical_systems.html', color: null, shape: 'rounded' },
+          { id: 'Matrix_models.qmd', url: 'doc/2ndlevel/Matrix_models.html', color: null, shape: 'rounded' },
+          { id: 'Matter_interferometry.qmd', url: 'doc/2ndlevel/Matter_interferometry.html', color: null, shape: 'rounded' },
+          { id: 'Equivalence Principle, locality and quantum gravity', url: 'doc/Equivalence_principle.html', color: null, shape: 'circle' },
+          { id: 'Gravity-mediated_entanglement.qmd', url: 'doc/2ndlevel/Gravity-mediated_entanglement.html', color: null, shape: 'rounded' },
+          { id: 'Relational_observables.qmd', url: 'doc/2ndlevel/Relational_observables.html', color: null, shape: 'rounded' },
+          { id: 'Phases_of_geometry_and_phase_diagrams_of_quantum_gravity_theories.qmd', url: 'doc/2ndlevel/Phases_of_geometry_and_phase_diagrams_of_quantum_gravity_theories.html', color: null, shape: 'rounded' },
+          { id: 'Threshold_anomalies.qmd', url: 'doc/2ndlevel/Threshold_anomalies.html', color: null, shape: 'rounded' },
+          { id: 'Quantum_superposition_of_geometries.qmd', url: 'doc/2ndlevel/Quantum_superposition_of_geometries.html', color: null, shape: 'rounded' },
+          { id: 'Violation and Deformation of Relativistic Symmetries', url: 'doc/LIV_DSR.html', color: null, shape: 'circle' },
+          { id: 'Black Holes and Quantum Mechanics', url: 'doc/Black_holes_and_QM.html', color: null, shape: 'circle' },
+          { id: 'Vacuum_birefringence.qmd', url: 'doc/2ndlevel/Vacuum_birefringence.html', color: null, shape: 'rounded' },
+          { id: 'Discrete_QG.qmd', url: 'doc/2ndlevel/Discrete_QG.html', color: null, shape: 'rounded' },
+          { id: 'example2.qmd', url: 'doc/Examples/example2.html', color: null, shape: 'rounded' } ],
+        links: [ { source: 'Astrophysical probes', target: 'Astrophysical_detection_techniques.qmd' },
+          { source: 'Violation and Deformation of Relativistic Symmetries', target: 'Hopf_algebra.qmd' },
+          { source: 'Quantum Reference Frames', target: 'Constraint_quantization.qmd' },
+          { source: 'Quantum Reference Frames', target: 'Discrete_QG.qmd' },
+          { source: 'Gravitationally-induced quantum effects', target: 'Gravity-mediated_entanglement.qmd' },
+          { source: 'Violation and Deformation of Relativistic Symmetries', target: 'Vacuum_birefringence.qmd' },
+          { source: 'Low-energy table-top experiments', target: 'Optomechanical_systems.qmd' },
+          { source: 'Violation and Deformation of Relativistic Symmetries', target: 'Quantum_spacetime.qmd' },
+          { source: 'Quantum Reference Frames', target: 'Subsystems_relativity.qmd' },
+          { source: 'Violation and Deformation of Relativistic Symmetries', target: 'IR-UV mixing' },
+          { source: 'Low-energy table-top experiments', target: 'COW_experiment.qmd' },
+          { source: 'Emergent, Nonclassical and Fuzzy Spacetime', target: 'Phases_of_geometry_and_phase_diagrams_of_quantum_gravity_theories.qmd' },
+          { source: 'Quantum Reference Frames', target: 'Holography.qmd' },
+          { source: 'Astrophysical probes', target: 'Particle_processes_in_astrophysical_sources.qmd' },
+          { source: 'Low-energy table-top experiments', target: 'Discrete_symmetries.qmd' },
+          { source: 'Low-energy table-top experiments', target: 'GUP.qmd' },
+          { source: 'Low-energy table-top experiments', target: 'Modified_gravity.qmd' },
+          { source: 'In-vacuo dispersion', target: 'Quantum_spacetime.qmd' },
+          { source: 'Low-energy table-top experiments', target: 'Collapse_models.qmd' },
+          { source: 'Emergent, Nonclassical and Fuzzy Spacetime', target: 'Matrix_models.qmd' },
+          { source: 'Low-energy table-top experiments', target: 'QGscale.qmd' },
+          { source: 'Low-energy table-top experiments', target: 'QMfoundations.qmd' },
+          { source: 'Low-energy table-top experiments', target: 'Magnometry.qmd' },
+          { source: 'Violation and Deformation of Relativistic Symmetries', target: 'QGscale.qmd' },
+          { source: 'Quantum Reference Frames', target: 'Relational_observables.qmd' },
+          { source: 'Quantum Reference Frames', target: 'QRF_approaches.qmd' },
+          { source: 'Low-energy table-top experiments', target: 'Matter_interferometry.qmd' },
+          { source: 'Low-energy table-top experiments', target: 'Gravitationally-induced_decoherence.qmd' },
+          { source: 'Violation and Deformation of Relativistic Symmetries', target: 'Modified_Schroedinger_equation.qmd' },
+          { source: 'Violation and Deformation of Relativistic Symmetries', target: 'DSR.qmd' },
+          { source: 'Astrophysical probes', target: 'Time_delay.qmd' },
+          { source: 'Emergent, Nonclassical and Fuzzy Spacetime', target: 'Locality.qmd' },
+          { source: 'example2.qmd', target: 'example1.qmd' },
+          { source: 'Quantum Reference Frames', target: 'Hopf_algebra.qmd' },
+          { source: 'Violation and Deformation of Relativistic Symmetries', target: 'In-vacuo dispersion' },
+          { source: 'example0.qmd', target: 'example2.qmd' },
+          { source: 'Gravitationally-induced quantum effects', target: 'Quantum_tests_of_the_equivalence_principle.qmd' },
+          { source: 'Gravitationally-induced quantum effects', target: 'Quantum_superposition_of_massive_objects.qmd' },
+          { source: 'Violation and Deformation of Relativistic Symmetries', target: 'Curved_momentum_space.qmd' },
+          { source: 'In-vacuo dispersion', target: 'Modified_dispersion_relations.qmd' },
+          { source: 'Gravitationally-induced quantum effects', target: 'Hawking_radiation.qmd' },
+          { source: 'Quantum Reference Frames', target: 'Algebraic_QFT.qmd' },
+          { source: 'Quantum Reference Frames', target: 'QRF_transformations.qmd' },
+          { source: 'Astrophysical probes', target: 'Magnetic_fields_in_astrophysical_sources.qmd' },
+          { source: 'Violation and Deformation of Relativistic Symmetries', target: 'GUP.qmd' },
+          { source: 'Violation and Deformation of Relativistic Symmetries', target: 'DSR_FLRW.qmd' },
+          { source: 'Violation and Deformation of Relativistic Symmetries', target: 'LIV_FLRW.qmd' },
+          { source: 'Emergent, Nonclassical and Fuzzy Spacetime', target: 'Quantum_spacetime.qmd' },
+          { source: 'Equivalence Principle, locality and quantum gravity', target: 'Locality.qmd' },
+          { source: 'Low-energy table-top experiments', target: 'Pauli_violation.qmd' },
+          { source: 'Astrophysical probes', target: 'Astrophysical_sources.qmd' },
+          { source: 'Gravitationally-induced quantum effects', target: 'Time_dilation-induced_dephasing.qmd' },
+          { source: 'Gravitationally-induced quantum effects', target: 'Collapse_models.qmd' },
+          { source: 'In-vacuo dispersion', target: 'QGscale.qmd' },
+          { source: 'Violation and Deformation of Relativistic Symmetries', target: 'Discrete_symmetries.qmd' },
+          { source: 'Gravitationally-induced quantum effects', target: 'Precision_measurements_of_short-range_gravity.qmd' },
+          { source: 'In-vacuo dispersion', target: 'Violation and Deformation of Relativistic Symmetries' },
+          { source: 'Emergent, Nonclassical and Fuzzy Spacetime', target: 'Quantum_causality.qmd' },
+          { source: 'Gravitationally-induced quantum effects', target: 'Modified_Schroedinger_equation.qmd' },
+          { source: 'example1.qmd', target: 'example2.qmd' },
+          { source: 'IR-UV mixing', target: 'Modified_dispersion_relations.qmd' },
+          { source: 'Emergent, Nonclassical and Fuzzy Spacetime', target: 'Gravity_as_thermodynamics_hydrodynamics.qmd' },
+          { source: 'example0.qmd', target: 'example1.qmd' },
+          { source: 'Violation and Deformation of Relativistic Symmetries', target: 'Threshold_anomalies.qmd' },
+          { source: 'Astrophysical probes', target: 'Acceleration_mechanisms.qmd' },
+          { source: 'Astrophysical probes', target: 'Multimessenger_astrophysics.qmd' },
+          { source: 'Quantum Reference Frames', target: 'Emergent, Nonclassical and Fuzzy Spacetime' },
+          { source: 'In-vacuo dispersion', target: 'Time_delay.qmd' },
+          { source: 'Emergent, Nonclassical and Fuzzy Spacetime', target: 'Quantum_superposition_of_geometries.qmd' },
+          { source: 'Violation and Deformation of Relativistic Symmetries', target: 'Standard_model_extensions.qmd' },
+          { source: 'Violation and Deformation of Relativistic Symmetries', target: 'Modified_dispersion_relations.qmd' } ]
+      };
+  
+      const container = document.getElementById('graph_130187');
+      if (!container) return;
+  
+      function getContrastColor(hexColor) {
+          if (!hexColor) return '#000000';
+          let hex = hexColor.replace('#', '');
+          if (hex.length === 3) hex = hex[0]+hex[0]+hex[1]+hex[1]+hex[2]+hex[2];
+          const r = parseInt(hex.substr(0, 2), 16);
+          const g = parseInt(hex.substr(2, 2), 16);
+          const b = parseInt(hex.substr(4, 2), 16);
+          const yiq = ((r * 299) + (g * 587) + (b * 114)) / 1000;
+          return (yiq >= 128) ? '#000000' : '#ffffff';
+      }
+  
+      function drawShape(ctx, shape, x, y, w, h) {
+          ctx.beginPath();
+          if (shape === 'circle') {
+              ctx.arc(x, y, Math.max(w, h)/2, 0, 2 * Math.PI);
+          } else if (shape === 'square') {
+              ctx.rect(x - w/2, y - h/2, w, h);
+          } else if (shape === 'diamond') {
+              ctx.moveTo(x, y - h/2); ctx.lineTo(x + w/2, y); ctx.lineTo(x, y + h/2); ctx.lineTo(x - w/2, y);
+          } else if (shape === 'triangle') {
+              ctx.moveTo(x, y - h/2); ctx.lineTo(x + w/2, y + h/2); ctx.lineTo(x - w/2, y + h/2);
+          } else if (shape === 'star') {
+              const spikes = 5; const outerRadius = Math.max(w, h)/2; const innerRadius = outerRadius / 2;
+              let rot = Math.PI / 2 * 3; let step = Math.PI / spikes;
+              ctx.moveTo(x, y - outerRadius);
+              for (let i = 0; i < spikes; i++) {
+                  ctx.lineTo(x + Math.cos(rot) * outerRadius, y + Math.sin(rot) * outerRadius); rot += step;
+                  ctx.lineTo(x + Math.cos(rot) * innerRadius, y + Math.sin(rot) * innerRadius); rot += step;
+              }
+          } else {
+              if (ctx.roundRect) ctx.roundRect(x - w/2, y - h/2, w, h, 8); else ctx.rect(x - w/2, y - h/2, w, h);
+          }
+          ctx.closePath();
+      }
+  
+      const Graph = ForceGraph()(container)
+        .graphData(graphData)
+        .linkDirectionalParticles(2)
+        .linkColor(() => '#cccccc')
+        .nodeCanvasObject((node, ctx, globalScale) => {
+          const fontSize = 14 / globalScale;
+          ctx.font = `bold ${fontSize}px Sans-Serif`;
+          
+          const label = node.id;
+          const maxTextWidth = 100 / globalScale;
+          const words = label.split(' ');
+          let lines = []; let curLine = words[0];
+          for (let i = 1; i < words.length; i++) {
+              if (ctx.measureText(curLine + " " + words[i]).width < maxTextWidth) curLine += " " + words[i];
+              else { lines.push(curLine); curLine = words[i]; }
+          }
+          lines.push(curLine);
+  
+          const lineHeight = fontSize * 1.2;
+          const textWidth = Math.max(...lines.map(l => ctx.measureText(l).width));
+          const padding = fontSize * 1.5;
+          const boxW = textWidth + padding;
+          const boxH = lines.length * lineHeight + padding;
+          
+          const bgColor = node.color || '#84cfff';
+          const fgColor = getContrastColor(bgColor);
+  
+          ctx.fillStyle = bgColor;
+          ctx.strokeStyle = '#333333';
+          ctx.lineWidth = 1.5 / globalScale;
+  
+          drawShape(ctx, node.shape, node.x, node.y, boxW, boxH);
+          ctx.fill(); ctx.stroke();
+  
+          ctx.textAlign = 'center'; ctx.textBaseline = 'middle'; ctx.fillStyle = fgColor;
+          const startY = node.y - (lines.length * lineHeight)/2 + lineHeight/2;
+          lines.forEach((line, i) => ctx.fillText(line, node.x, startY + i * lineHeight));
+        })
+        .onNodeClick(node => { if(node.url) window.location.href = node.url; })
+        .onNodeHover(node => container.style.cursor = node && node.url ? 'pointer' : null);
+  
+        new ResizeObserver(() => { Graph.width(container.offsetWidth); Graph.height(container.offsetHeight); }).observe(container);
+    })();
+  </script>
     
 <!--
+```mindmap-graph
+
+Vade Mecum {shape:circle, color:#2986cc} -> Emergent, Nonclassical and Fuzzy Spacetime {url:/VadeMecum/doc/Emergent_nonclassical_and_fuzzy_spacetime.html}
+Vade Mecum -> Equivalence Principle, locality and quantum gravity {url:/VadeMecum/doc/Equivalence_principle.html}
+Vade Mecum -> Gravitationally-induced quantum effects {url:/VadeMecum/doc/Gravitationally-induced_quantum_effects.html}
+Vade Mecum -> IR-UV mixing {url:/VadeMecum/doc/IR-UV_mixing.html}
+Vade Mecum -> In-vacuo dispersion {url:/VadeMecum/doc/Invacuo_dispersion.html}
+Vade Mecum -> Violation and Deformation of Relativistic Symmetries {url:/VadeMecum/doc/LIV_DSR.html}
+Vade Mecum -> Low-energy table-top experiments {url:/VadeMecum/doc/Low-energy_table-top_experiments.html}
+
+Emergent, Nonclassical and Fuzzy Spacetime -> Quantum causality {color:#fdbcce, url:/VadeMecum/doc/2ndlevel/Quantum_causality.html}
+Emergent, Nonclassical and Fuzzy Spacetime -> Quantum geometry and spacetime discreteness {color:#fdbcce, url:/VadeMecum/doc/2ndlevel/Quantum_geometry_and_spacetime_discreteness.html}
+Emergent, Nonclassical and Fuzzy Spacetime -> Quantum superpositions of geometries  {color:#fdbcce, url:/VadeMecum/doc/2ndlevel/Quantum_superposition_of_geometries.html}
+
+Equivalence Principle, locality and quantum gravity -> Locality {color:#fdbcce, url:/VadeMecum/doc/2ndlevel/locality.html}
+Equivalence Principle, locality and quantum gravity -> Strong Equivalence Principle {color:#fdbcce, url:/VadeMecumdoc/2ndlevel/strongEP.html}
+Equivalence Principle, locality and quantum gravity -> Quantum Gravity {color:#fdbcce, url:/VadeMecum/doc/quantum_gravity.html}
+Equivalence Principle, locality and quantum gravity -> Quantum Equivalence Principle {color:#fdbcce, url:/VadeMecum/doc/2ndlevel/quantum_EP.html}
+
+Gravitationally-induced quantum effects -> Doubly-referenced 2nd level topic {color:#fdbfce url:/VadeMecum/doc/2ndlevel/index.html}
+Gravitationally-induced quantum effects -> Hawking radiation {color:#fdbcce, url:/VadeMecum/doc/2ndlevel/Hawking_radiation.html}
+Gravitationally-induced quantum effects -> Modified Schrödinger equation {color:#fdbcce, url:/VadeMecum/doc/2ndlevel/Modified_Schroedinger_equation.html}
+Gravitationally-induced quantum effects -> Collapse models {color:#fdbcce, url:/VadeMecum/doc/2ndlevel/Collapse_models.html}
+
+IR-UV mixing -> Doubly-referenced 2nd level topic {color:#fdbfce, url:/VadeMecum/doc/2ndlevel/index.html}
+IR-UV mixing -> Modified dispersion relations {color:#fdbcce, url:/VadeMecum/doc/2ndlevel/Modified_dispersion_relations.html}
+
+In-vacuo dispersion -> Multiply-referenced 2nd level topic {color:#fdbccd, url:/VadeMecum/doc/2ndlevel/index.html}
+In-vacuo dispersion -> Modified dispersion relations {color:#fdbcce, url:/VadeMecum/doc/2ndlevel/Modified_dispersion_relations.html}
+In-vacuo dispersion -> Quantum spacetime {color:#fdbcce, url:/VadeMecum/doc/2ndlevel/Emergent_nonclassical_and_fuzzy_spacetime.html}
+
+Violation and Deformation of Relativistic Symmetries -> Multiply-referenced 2nd level topic {color:#fdbccd, url:/VadeMecum/doc/2ndlevel/index.html}
+Violation and Deformation of Relativistic Symmetries -> Standard Model extensions {color:#fdbcce, url:/VadeMecum/doc/2ndlevel/Standard_model_extensions.html}
+Violation and Deformation of Relativistic Symmetries -> Emergent, nonclassical and fuzzy spacetime  {color:#fdbcce, url:/VadeMecum/doc/2ndlevel/Emergent_nonclassical_and_fuzzy_spacetime.html}
+
+Low-energy table-top experiments -> Multiply-referenced 2nd level topic {color:#fdbccd, url:/VadeMecum/doc/2ndlevel/index.html}
+Low-energy table-top experiments -> Entanglement {color:#fdbcce, url:/VadeMecum/doc/2ndlevel/GRinduced_entanglement.html}
+
+```
+
 Examples -> How to use the Wiki {url:/VadeMecum/doc/Examples/example0.html}
 Examples -> How to write QMarkdown {url:/VadeMecum/doc/Examples/example1.html}
 Examples -> How to write LaTeX {url:/VadeMecum/doc/Examples/example2.html}
