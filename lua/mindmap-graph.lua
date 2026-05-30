@@ -25,10 +25,18 @@ local function parse_file_metadata(filepath)
 
     local meta = {}
     local yaml_block = content:match("^%-%-%-\n(.-)\n%-%-%-")
+    
     if yaml_block then
-        meta.title = yaml_block:match("\ntitle:%s*['\"]?(.-)['\"]?%s*\n") or yaml_block:match("^title:%s*['\"]?(.-)['\"]?%s*\n")
-        meta.shape = yaml_block:match("\nmindmap%-shape:%s*['\"]?(.-)['\"]?%s*\n") or yaml_block:match("^map%-shape:%s*['\"]?(.-)['\"]?%s*\n")
-        meta.color = yaml_block:match("\nmindmap%-color:%s*['\"]?(.-)['\"]?%s*\n") or yaml_block:match("^map%-color:%s*['\"]?(.-)['\"]?%s*\n")
+        -- Read the YAML block line by line to avoid missing the last line
+        for line in yaml_block:gmatch("[^\r\n]+") do
+            if line:match("^title:") then
+                meta.title = line:match("^title:%s*['\"]?(.-)['\"]?%s*$")
+            elseif line:match("^mindmap%-shape:") then
+                meta.shape = line:match("shape:%s*['\"]?(.-)['\"]?%s*$")
+            elseif line:match("^mindmap%-color:") then
+                meta.color = line:match("color:%s*['\"]?(.-)['\"]?%s*$")
+            end
+        end
     end
     return meta, content
 end
@@ -135,7 +143,7 @@ local function generate_graph_html(nodes_db, edges_db)
         .linkDirectionalParticles(2)
         .linkColor(() => '#cccccc')
         .nodeCanvasObject((node, ctx, globalScale) => {
-          const fontSize = 14 / globalScale;
+          const fontSize = 10 / globalScale;
           ctx.font = `bold ${fontSize}px Sans-Serif`;
           
           const label = node.id;
@@ -150,7 +158,7 @@ local function generate_graph_html(nodes_db, edges_db)
   
           const lineHeight = fontSize * 1.2;
           const textWidth = Math.max(...lines.map(l => ctx.measureText(l).width));
-          const padding = fontSize * 1.5;
+          const padding = fontSize * 1.0;
           const boxW = textWidth + padding;
           const boxH = lines.length * lineHeight + padding;
           
@@ -170,6 +178,9 @@ local function generate_graph_html(nodes_db, edges_db)
         })
         .onNodeClick(node => { if(node.url) window.location.href = node.url; })
         .onNodeHover(node => container.style.cursor = node && node.url ? 'pointer' : null);
+        
+        Graph.d3Force('charge').strength(-600);
+        Graph.d3Force('link').distance(150);
   
         new ResizeObserver(() => { Graph.width(container.offsetWidth); Graph.height(container.offsetHeight); }).observe(container);
     })();
@@ -248,22 +259,29 @@ local function process_auto_folder(folder_path)
         local meta, content = parse_file_metadata(filepath)
         if content then
             local filename = filepath:match("([^/]+)$")
-            local node_id = meta.title or filename
             
-            local rel_path = filepath
-            if project_root ~= "." then
-                local safe_root = project_root:gsub("([%-%.%+%[%]%(%)%$%^%%%?%*])", "%%%1")
-                rel_path = filepath:gsub("^" .. safe_root .. "/?", "")
-            else
-                rel_path = filepath:gsub("^%./", "")
+            -- Use filename as fallback
+            -- local node_id = meta.title or filename
+            
+            -- Only process files that have a title
+            local node_id = meta.title
+            
+            if node_id and node_id ~= "" then
+                local rel_path = filepath
+                if project_root ~= "." then
+                    local safe_root = project_root:gsub("([%-%.%+%[%]%(%)%$%^%%%?%*])", "%%%1")
+                    rel_path = filepath:gsub("^" .. safe_root .. "/?", "")
+                else
+                    rel_path = filepath:gsub("^%./", "")
+                end
+                local url = rel_path:gsub("%.qmd$", ".html")
+                
+                register_node(node_id, { url = url, shape = meta.shape, color = meta.color })
+                
+                local base_filename = filename:gsub("%.qmd$", "")
+                file_to_id[base_filename] = node_id
+                table.insert(scanned_files, { id = node_id, content = content })
             end
-            local url = rel_path:gsub("%.qmd$", ".html")
-            
-            register_node(node_id, { url = url, shape = meta.shape, color = meta.color })
-            
-            local base_filename = filename:gsub("%.qmd$", "")
-            file_to_id[base_filename] = node_id
-            table.insert(scanned_files, { id = node_id, content = content })
         end
     end
 
