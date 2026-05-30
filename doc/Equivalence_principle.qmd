@@ -1,7 +1,7 @@
 ---
 title: 'Equivalence Principle, locality and quantum gravity'
 mindmap-shape: 'circle'
-mindmap-color: #84cfff
+mindmap-color: #fdbcce
 ---
 
 \subsubsection{Introduction and purpose}

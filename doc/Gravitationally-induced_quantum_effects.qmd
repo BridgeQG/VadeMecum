@@ -1,7 +1,7 @@
 ---
 title: 'Gravitationally-induced quantum effects'
 mindmap-shape: 'circle'
-mindmap-color: #84cfff
+mindmap-color: #fdbcce
 ---
 
 By \emph{gravitationally-induced quantum effects} we denote physical phenomena in which gravity modifies the standard quantum behavior in ways not fully captured by relativistic quantum field theory. Such effects are expected either when quantum systems probe spacetime curvature or when gravity and quantum mechanics are treated within a unified framework, independently of the microscopic realization of quantum gravity.

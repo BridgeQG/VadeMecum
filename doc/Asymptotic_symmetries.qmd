@@ -1,7 +1,7 @@
 ---
 title: 'Asymptotic and global symmetries of spacetime'
 mindmap-shape: 'circle'
-mindmap-color: #84cfff
+mindmap-color: #fdbcce
 ---
 
 mention "edge modes"
