@@ -88,8 +88,9 @@ local function generate_graph_html(nodes_db, edges_db)
     local graph_id = "graph_" .. tostring(math.random(100000, 999999))
     
     local html_code = [[
-  <div id="]] .. graph_id .. [[" style="width: 100%; height: 600px; border: 1px solid #ddd; background: #ffffff; border-radius: 8px; overflow: hidden; position: relative; margin-bottom: 1.5em;">
-      <button id="btn_]] .. graph_id .. [[" style="position: absolute; bottom: 15px; right: 15px; z-index: 1000; padding: 6px 12px; background: rgba(255, 255, 255, 0.9); border: 1px solid #ccc; border-radius: 6px; cursor: pointer; font-family: sans-serif; font-size: 13px; font-weight: bold; color: #333; box-shadow: 0 2px 5px rgba(0,0,0,0.2); transition: background 0.2s;">⛶ Fullscreen</button>
+  <div id="wrapper_]] .. graph_id .. [[" style="position: relative; width: 100%; height: 600px; border: 1px solid #ddd; background: #ffffff; border-radius: 8px; overflow: hidden; margin-bottom: 1.5em;">
+      <div id="]] .. graph_id .. [[" style="width: 100%; height: 100%;"></div>
+      <button id="btn_]] .. graph_id .. [[" title="Toggle Fullscreen" style="position: absolute; bottom: 15px; right: 15px; z-index: 1000; width: 36px; height: 36px; padding: 0; background: rgba(255, 255, 255, 0.9); border: 1px solid #ccc; border-radius: 6px; cursor: pointer; font-size: 20px; color: #333; box-shadow: 0 2px 5px rgba(0,0,0,0.2); display: flex; align-items: center; justify-content: center; transition: background 0.2s; line-height: 1;">⛶</button>
   </div>
   
   <script src="https://unpkg.com/force-graph"></script>
@@ -102,27 +103,27 @@ local function generate_graph_html(nodes_db, edges_db)
         links: [ ]] .. table.concat(links_js_arr, ",\n          ") .. [[ ]
       };
   
+      const wrapper = document.getElementById('wrapper_]] .. graph_id .. [[');
       const container = document.getElementById(']] .. graph_id .. [[');
       const fsBtn = document.getElementById('btn_]] .. graph_id .. [[');
-      if (!container || !fsBtn) return;
+      if (!wrapper || !container || !fsBtn) return;
   
-      // Fullscreen Toggle Logic
+      // Fullscreen Toggle Logic now targets the WRAPPER
       fsBtn.addEventListener('click', () => {
           if (!document.fullscreenElement) {
-              container.requestFullscreen().catch(err => console.log(err));
+              wrapper.requestFullscreen().catch(err => console.log(err));
           } else {
               document.exitFullscreen();
           }
       });
       
-      // Listen for fullscreen changes to update button text/style
       document.addEventListener('fullscreenchange', () => {
-          if (document.fullscreenElement === container) {
-              fsBtn.innerText = '✖ Exit Fullscreen';
-              container.style.borderRadius = '0px'; // Remove border radius in fullscreen
+          if (document.fullscreenElement === wrapper) {
+              fsBtn.innerHTML = '✖'; // Just an X when in fullscreen
+              wrapper.style.borderRadius = '0px';
           } else {
-              fsBtn.innerText = '⛶ Fullscreen';
-              container.style.borderRadius = '8px'; // Restore border radius
+              fsBtn.innerHTML = '⛶'; // Back to square when minimized
+              wrapper.style.borderRadius = '8px';
           }
       });
   
@@ -205,7 +206,8 @@ local function generate_graph_html(nodes_db, edges_db)
         Graph.d3Force('charge').strength(-600);
         Graph.d3Force('link').distance(150);
   
-        new ResizeObserver(() => { Graph.width(container.offsetWidth); Graph.height(container.offsetHeight); }).observe(container);
+        // ResizeObserver now watches the WRAPPER to rescale the graph
+        new ResizeObserver(() => { Graph.width(wrapper.offsetWidth); Graph.height(wrapper.offsetHeight); }).observe(wrapper);
     })();
   </script>
     ]]
