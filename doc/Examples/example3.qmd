@@ -1,5 +1,6 @@
 ---
 title: '$\Lambda$CDM Cosmological Model'
+midmap-shape: 'diamond'
 nocite: |
   @Carmona:2022pro
 ---
@@ -13,7 +14,7 @@ In order to describe an homogeneous and isotropic universe like in the framework
 \end{equation}
 where $k$ is the curvature and $a(t)$ the scale factor of the universe, which is closely related to the redshift, $a(t)=1/(1+z(t))$. We can use this relation to also connect the temporal coordinate to the redshift variable,
 \begin{align}
-    a(t) &=\frac{1}{1+z(t)} \\ 
+    a(t) &=\frac{1}{1+z(t)} \\
     \frac{\dot a(t)}{a(t)} dt &= -\frac{dz}{1+z(t)} \\
     dt &= -\frac{dz}{H(z)(1+z)} \,,
     \label{eq:dtdz}

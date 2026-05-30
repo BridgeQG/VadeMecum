@@ -1,5 +1,6 @@
 ---
 title: 'BridgeQG Vade Mecum'
+midmap-shape: 'diamond'
 ---
 
 # How to use this template

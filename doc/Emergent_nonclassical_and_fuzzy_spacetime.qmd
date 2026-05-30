@@ -1,7 +1,7 @@
 ---
 title: 'Emergent, Nonclassical and Fuzzy Spacetime'
 mindmap-shape: 'circle'
-mindmap-color: #fdbcce
+mindmap-color: '#fdbcce'
 ---
 
 In General Relativity, spacetime is a differentiable manifold with a dynamical Lorentzian metric. The metric encodes causal structure, determines geometric observables, and mediates universal coupling to matter. Quantum-gravity approaches question the fundamental status of classical spacetime ingredients. These include manifold structure, localization, causal order, dimensionality, and geometric fields. These ingredients may be quantized, algebraically deformed, or only recovered in an effective continuum regime. This motivates three overlapping notions: nonclassical spacetime, fuzzy spacetime, and emergent spacetime.

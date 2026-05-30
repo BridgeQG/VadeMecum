@@ -1,7 +1,7 @@
 ---
 title: 'Low-energy table-top experiments'
 mindmap-shape: 'circle'
-mindmap-color: #fdbcce
+mindmap-color: '#fdbcce'
 nocite: |
   @Amati:1988tn, @Penrose:1996cv
 ---

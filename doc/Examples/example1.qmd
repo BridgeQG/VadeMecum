@@ -1,5 +1,6 @@
 ---
 title: 'How to write a page using Quarto Markdown'
+midmap-shape: 'diamond'
 ---
 
 GitHub Pages transforms plain text files into HTML webpages. In this template, files use the `.qmd` extension and follow Quarto Markdown syntax. Below are examples of the most commonly used formatting structures.
@@ -30,7 +31,7 @@ $$
   x=\frac{-b\pm \sqrt{b^2-4ac}}{2a} \,,
 $$ {#eq-secondorder}
 
-This equation can then be referenced in the text using `@eq-secondorder`, which automatically renders a clickable link with the appropriate prefix, such as @eq-secondorder. 
+This equation can then be referenced in the text using `@eq-secondorder`, which automatically renders a clickable link with the appropriate prefix, such as @eq-secondorder.
 
 If the automatic prefix needs to be suppressed, place the reference with a minus sign inside parentheses. For instance, typing `(-@eq-secondorder)` will suppress the word "Equation" and render just the number in-between parentheses, resulting in (-@eq-secondorder).
 

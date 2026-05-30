@@ -1,5 +1,6 @@
 ---
 title: 'Allowed LaTeX syntax for page writing'
+midmap-shape: 'diamond'
 ---
 
 In the scientific community, it is very common to have texts, equations, and full documents already written in LaTeX. This implies that one needs to translate such content to the Quarto Markdown syntax explained in the [previous guide](/doc/Examples/example1.qmd). However, this template allows for the use of some simple LaTeX syntax (in combination with native syntax), which is converted on the fly to the correct Quarto Markdown format. This document serves as both a guide and a test file for the translation rules. It is written using the supported LaTeX commands to explain exactly how the transformation works.
@@ -68,6 +69,6 @@ For bibliography management, the standard citation commands continue to function
 
 \section{Lists, Figures, Tables, Footnotes and Everything Else}
 
-Inserting footnotes, lists, figures, and tables in LaTeX usually requires the use of much more complicated syntax than doing it directly in Markdown. Translating these elements using a simple script is incredibly fragile due to decoupled structures, nested elements, and the possible mixing of different environments. 
+Inserting footnotes, lists, figures, and tables in LaTeX usually requires the use of much more complicated syntax than doing it directly in Markdown. Translating these elements using a simple script is incredibly fragile due to decoupled structures, nested elements, and the possible mixing of different environments.
 
 Therefore, these elements (and in general, any other LaTeX syntax not explicitly mentioned on this page) are not supported for automatic translation. If the script encounters them, they will likely be broken or removed from the final webpage. If any of these elements are needed for your document, please use the much easier, native Quarto Markdown syntax, as shown in the [Quarto Markdown Guide](/doc/Examples/example1.qmd).

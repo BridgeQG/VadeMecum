@@ -1,7 +1,7 @@
 ---
 title: 'Quantum Reference Frames'
 mindmap-shape: 'circle'
-mindmap-color: #fdbcce
+mindmap-color: '#fdbcce'
 nocite: |
   @Bartlett_2007, @Giacomini_2017_covariance, @Vanrietvelde_2018a, @delaHamette_2020, @Loveridge:2017pcv
 ---
