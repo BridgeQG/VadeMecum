@@ -5,6 +5,10 @@ page-layout: full
 
 !mindmap-graph-auto: doc
 
+::: {style="color: gray; font-size: 0.9em;"}
+How to read the map: the map behaves like a small physical system. Pink squares are the first-level topics (larger ones link to more pages) and blue boxes are the second-level topics. Every box repels its neighbours, with a force that depends on the gap between their borders, so nothing overlaps. Each link between a first-level topic and a second-level topic acts as a spring, so every topic gathers a cloud of its own pages around it, pages shared by two topics sit between them, and pages shared by three sit at the centre of the triangle they form. Friction keeps the motion smooth, and a very weak random agitation lets the map slowly relax towards a tidy arrangement, so it settles again by itself after you drag a box. The shuffle button shakes it harder to find a different arrangement. Hover over a box to highlight its links, and click or tap it to open its page in a new tab.
+:::
+
 <!--
 Examples -> How to use the Wiki {url:/VadeMecum/doc/Examples/example0.html}
 Examples -> How to write QMarkdown {url:/VadeMecum/doc/Examples/example1.html}
