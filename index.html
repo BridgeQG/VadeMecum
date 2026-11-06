@@ -262,7 +262,7 @@ window.Quarto = {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./doc/2ndlevel/Constraint_quantization.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Constraint Quantization</span></a>
+ <span class="menu-text">Constraint Quantization in Gravity</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -304,19 +304,19 @@ window.Quarto = {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./doc/2ndlevel/Gravitationally-induced_decoherence.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Gravitationally Induced Decoherence</span></a>
+ <span class="menu-text">Gravitationally-induced Decoherence</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./doc/2ndlevel/Gravity_as_thermodynamics_hydrodynamics.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Gravity As Thermodynamics Hydrodynamics</span></a>
+ <span class="menu-text">Gravity as Thermodynamics/Hydrodynamics</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./doc/2ndlevel/Gravity-mediated_entanglement.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Gravity Mediated Entanglement</span></a>
+ <span class="menu-text">Gravity-mediated Entanglement</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -430,7 +430,7 @@ window.Quarto = {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./doc/2ndlevel/Precision_measurements_of_short-range_gravity.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Precision Measurements of Short Range Gravity</span></a>
+ <span class="menu-text">Precision Measurements of Short-range Gravity</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -520,7 +520,7 @@ window.Quarto = {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./doc/2ndlevel/Time_dilation-induced_dephasing.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Time Dilation Induced Dephasing</span></a>
+ <span class="menu-text">Time Dilation-induced Dephasing</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -573,9 +573,9 @@ window.Quarto = {
 </header>
 
 
-  <div id="wrapper_graph_843589" style="position: relative; width: 100%; height: 600px; border: 1px solid #ddd; background: #ffffff; border-radius: 8px; overflow: hidden; margin-bottom: 1.5em;">
-      <div id="graph_843589" style="width: 100%; height: 100%;"></div>
-      <button id="btn_graph_843589" title="Toggle Fullscreen" style="position: absolute; bottom: 15px; right: 15px; z-index: 1000; width: 36px; height: 36px; padding: 0; background: rgba(255, 255, 255, 0.9); border: 1px solid #ccc; border-radius: 6px; cursor: pointer; font-size: 20px; color: #333; box-shadow: 0 2px 5px rgba(0,0,0,0.2); display: flex; align-items: center; justify-content: center; transition: background 0.2s; line-height: 1;">⛶</button>
+  <div id="wrapper_graph_812868" style="position: relative; width: 100%; height: 600px; border: 1px solid #ddd; background: #ffffff; border-radius: 8px; overflow: hidden; margin-bottom: 1.5em;">
+      <div id="graph_812868" style="width: 100%; height: 100%;"></div>
+      <button id="btn_graph_812868" title="Toggle Fullscreen" style="position: absolute; bottom: 15px; right: 15px; z-index: 1000; width: 36px; height: 36px; padding: 0; background: rgba(255, 255, 255, 0.9); border: 1px solid #ccc; border-radius: 6px; cursor: pointer; font-size: 20px; color: #333; box-shadow: 0 2px 5px rgba(0,0,0,0.2); display: flex; align-items: center; justify-content: center; transition: background 0.2s; line-height: 1;">⛶</button>
   </div>
   
   <script src="https://unpkg.com/force-graph"></script>
@@ -584,96 +584,147 @@ window.Quarto = {
       if (typeof ForceGraph === 'undefined') { setTimeout(initGraph, 50); return; }
   
       const graphData = {
-        nodes: [ { id: 'Quantum Reference Frames', url: 'doc/Quantum_Reference_Frames.html', color: '#fdbcce', shape: 'circle' },
-          { id: 'Doubly (or Deformed) Special Relativity (DSR)', url: 'doc/2ndlevel/DSR.html', color: null, shape: 'rounded' },
-          { id: 'Algebraic Quantum Field Theory: relevant aspects for QG', url: 'doc/2ndlevel/Algebraic_QFT.html', color: null, shape: 'rounded' },
-          { id: 'Emergent, Nonclassical and Fuzzy Spacetime', url: 'doc/Emergent_nonclassical_and_fuzzy_spacetime.html', color: '#fdbcce', shape: 'circle' },
-          { id: 'Astrophysical probes', url: 'doc/Astrophysical_probes.html', color: '#fdbcce', shape: 'circle' },
-          { id: 'The Problem of Locality', url: 'doc/2ndlevel/Locality.html', color: null, shape: 'rounded' },
-          { id: 'Violation and Deformation of Relativistic Symmetries', url: 'doc/LIV_DSR.html', color: '#fdbcce', shape: 'circle' },
-          { id: 'Black Holes and Quantum Mechanics', url: 'doc/Black_holes_and_QM.html', color: '#fdbcce', shape: 'circle' },
-          { id: 'DSR in expanding spacetimes', url: 'doc/2ndlevel/DSR_FLRW.html', color: null, shape: 'rounded' },
-          { id: 'Asymptotic and global symmetries of spacetime', url: 'doc/Asymptotic_symmetries.html', color: '#fdbcce', shape: 'circle' },
-          { id: 'Hawking Radiation', url: 'doc/2ndlevel/Hawking_radiation.html', color: null, shape: 'rounded' },
-          { id: 'Generalized Uncertainty Principle', url: 'doc/2ndlevel/GUP.html', color: null, shape: 'rounded' },
-          { id: 'BridgeQG Vade Mecum', url: 'doc/Examples/example0.html', color: null, shape: 'square' },
-          { id: 'Subsystem Relativity: the Paradox of the Third Particle', url: 'doc/2ndlevel/Subsystems_relativity.html', color: null, shape: 'rounded' },
-          { id: 'Quantum Gravity Scale', url: 'doc/2ndlevel/QGscale.html', color: null, shape: 'rounded' },
-          { id: 'Quantum Optomechanical Systems', url: 'doc/2ndlevel/Optomechanical_systems.html', color: null, shape: 'rounded' },
-          { id: 'Ultra-sensitive Magnetometry', url: 'doc/2ndlevel/Magnometry.html', color: null, shape: 'rounded' },
-          { id: '$\Lambda$CDM Cosmological Model', url: 'doc/Examples/example3.html', color: null, shape: 'square' },
-          { id: 'Quantum Spacetime', url: 'doc/2ndlevel/Quantum_spacetime.html', color: null, shape: 'rounded' },
-          { id: 'Discrete Symmetries Violation and Deformation motivated by Quantum Gravity', url: 'doc/2ndlevel/Discrete_symmetries.html', color: null, shape: 'rounded' },
-          { id: 'How to write a page using Quarto Markdown', url: 'doc/Examples/example1.html', color: null, shape: 'square' },
+        nodes: [ { id: 'Matrix Models', url: 'doc/2ndlevel/Matrix_models.html', color: null, shape: 'rounded' },
           { id: 'Matter-wave and Neutron Interferometry', url: 'doc/2ndlevel/Matter_interferometry.html', color: null, shape: 'rounded' },
-          { id: 'IR-UV mixing', url: 'doc/IR-UV_mixing.html', color: '#fdbcce', shape: 'circle' },
-          { id: 'Allowed LaTeX syntax for page writing', url: 'doc/Examples/example2.html', color: null, shape: 'square' },
-          { id: 'Quantum Reference Frame Transformations', url: 'doc/2ndlevel/QRF_transformations.html', color: null, shape: 'rounded' },
-          { id: 'Pauli Exclusion Principle violations', url: 'doc/2ndlevel/Pauli_violation.html', color: null, shape: 'rounded' },
-          { id: 'Quantum groups and Hopf algebras', url: 'doc/2ndlevel/Hopf_algebra.html', color: null, shape: 'rounded' },
-          { id: 'Standard Model Extensions', url: 'doc/2ndlevel/Standard_model_extensions.html', color: null, shape: 'rounded' },
-          { id: 'Modified Gravity theories that emerge from QG models', url: 'doc/2ndlevel/Modified_gravity.html', color: null, shape: 'rounded' },
-          { id: 'Fundamental principles of Quantum Mechanics that are amenable to testing', url: 'doc/2ndlevel/QMfoundations.html', color: null, shape: 'rounded' },
-          { id: 'LIV in expanding spacetimes', url: 'doc/2ndlevel/LIV_FLRW.html', color: null, shape: 'rounded' },
-          { id: 'Holographic Principle', url: 'doc/2ndlevel/Holography.html', color: null, shape: 'rounded' },
-          { id: 'Perspectival and Operational Approaches to QRFs', url: 'doc/2ndlevel/QRF_approaches.html', color: null, shape: 'rounded' },
-          { id: 'Low-energy table-top experiments', url: 'doc/Low-energy_table-top_experiments.html', color: '#fdbcce', shape: 'circle' },
+          { id: 'Constraint Quantization in Gravity', url: 'doc/2ndlevel/Constraint_quantization.html', color: null, shape: 'rounded' },
           { id: 'Discrete, Canonical and Covariant Quantum Gravity', url: 'doc/2ndlevel/Discrete_QG.html', color: null, shape: 'rounded' },
           { id: 'Collapse Models', url: 'doc/2ndlevel/Collapse_models.html', color: null, shape: 'rounded' },
-          { id: 'Equivalence Principle, locality and quantum gravity', url: 'doc/Equivalence_principle.html', color: '#fdbcce', shape: 'circle' },
-          { id: 'Gravitationally-induced quantum effects', url: 'doc/Gravitationally-induced_quantum_effects.html', color: '#fdbcce', shape: 'circle' },
-          { id: 'COW experiment and gravitational phase shifts', url: 'doc/2ndlevel/COW_experiment.html', color: null, shape: 'rounded' },
+          { id: 'Phases of Geometry and Phase Diagrams of Quantum Gravity Theories', url: 'doc/2ndlevel/Phases_of_geometry_and_phase_diagrams_of_quantum_gravity_theories.html', color: null, shape: 'rounded' },
+          { id: 'The Problem of Locality', url: 'doc/2ndlevel/Locality.html', color: null, shape: 'rounded' },
+          { id: 'Perspectival and Operational Approaches to QRFs', url: 'doc/2ndlevel/QRF_approaches.html', color: null, shape: 'rounded' },
           { id: 'Quantum Gravity Induced Time Delays', url: 'doc/2ndlevel/Time_delay.html', color: null, shape: 'rounded' },
-          { id: 'In-vacuo dispersion', url: 'doc/Invacuo_dispersion.html', color: '#fdbcce', shape: 'circle' } ],
-        links: [ { source: 'Low-energy table-top experiments', target: 'Pauli Exclusion Principle violations' },
-          { source: 'Low-energy table-top experiments', target: 'Ultra-sensitive Magnetometry' },
-          { source: 'Gravitationally-induced quantum effects', target: 'Collapse Models' },
+          { id: 'Discrete Symmetries Violation and Deformation motivated by Quantum Gravity', url: 'doc/2ndlevel/Discrete_symmetries.html', color: null, shape: 'rounded' },
+          { id: 'Black Holes and Quantum Mechanics', url: 'doc/Black_holes_and_QM.html', color: '#fdbcce', shape: 'circle' },
+          { id: 'Ultra-sensitive Magnetometry', url: 'doc/2ndlevel/Magnometry.html', color: null, shape: 'rounded' },
+          { id: 'Acceleration Mechanisms', url: 'doc/2ndlevel/Acceleration_mechanisms.html', color: null, shape: 'rounded' },
+          { id: 'Curved Momentum Space', url: 'doc/2ndlevel/Curved_momentum_space.html', color: null, shape: 'rounded' },
+          { id: 'Quantum Optomechanical Systems', url: 'doc/2ndlevel/Optomechanical_systems.html', color: null, shape: 'rounded' },
+          { id: 'Astrophysical Sources', url: 'doc/2ndlevel/Astrophysical_sources.html', color: null, shape: 'rounded' },
+          { id: 'Precision Measurements of Short-range Gravity', url: 'doc/2ndlevel/Precision_measurements_of_short-range_gravity.html', color: null, shape: 'rounded' },
+          { id: 'Standard Model Extensions', url: 'doc/2ndlevel/Standard_model_extensions.html', color: null, shape: 'rounded' },
+          { id: 'Asymptotic and global symmetries of spacetime', url: 'doc/Asymptotic_symmetries.html', color: '#fdbcce', shape: 'circle' },
+          { id: 'Magnetic Fields in Astrophysical Sources', url: 'doc/2ndlevel/Magnetic_fields_in_astrophysical_sources.html', color: null, shape: 'rounded' },
+          { id: 'Vacuum Birefringence', url: 'doc/2ndlevel/Vacuum_birefringence.html', color: null, shape: 'rounded' },
+          { id: 'How to write a page using Quarto Markdown', url: 'doc/Examples/example1.html', color: null, shape: 'square' },
+          { id: 'DSR in expanding spacetimes', url: 'doc/2ndlevel/DSR_FLRW.html', color: null, shape: 'rounded' },
+          { id: 'Quantum Gravity Scale', url: 'doc/2ndlevel/QGscale.html', color: null, shape: 'rounded' },
+          { id: 'Quantum groups and Hopf algebras', url: 'doc/2ndlevel/Hopf_algebra.html', color: null, shape: 'rounded' },
+          { id: 'BridgeQG Vade Mecum', url: 'doc/Examples/example0.html', color: null, shape: 'square' },
+          { id: 'Algebraic Quantum Field Theory: relevant aspects for QG', url: 'doc/2ndlevel/Algebraic_QFT.html', color: null, shape: 'rounded' },
+          { id: 'Multimessenger Astrophysics', url: 'doc/2ndlevel/Multimessenger_astrophysics.html', color: null, shape: 'rounded' },
+          { id: 'Modified Schroedinger Equation', url: 'doc/2ndlevel/Modified_Schroedinger_equation.html', color: null, shape: 'rounded' },
+          { id: 'Quantum Reference Frame Transformations', url: 'doc/2ndlevel/QRF_transformations.html', color: null, shape: 'rounded' },
+          { id: 'Subsystem Relativity: the Paradox of the Third Particle', url: 'doc/2ndlevel/Subsystems_relativity.html', color: null, shape: 'rounded' },
+          { id: 'Equivalence Principle, locality and quantum gravity', url: 'doc/Equivalence_principle.html', color: '#fdbcce', shape: 'circle' },
+          { id: 'Fundamental principles of Quantum Mechanics that are amenable to testing', url: 'doc/2ndlevel/QMfoundations.html', color: null, shape: 'rounded' },
+          { id: 'Astrophysical probes', url: 'doc/Astrophysical_probes.html', color: '#fdbcce', shape: 'circle' },
+          { id: 'Modified Gravity theories that emerge from QG models', url: 'doc/2ndlevel/Modified_gravity.html', color: null, shape: 'rounded' },
+          { id: 'Pauli Exclusion Principle violations', url: 'doc/2ndlevel/Pauli_violation.html', color: null, shape: 'rounded' },
+          { id: 'Gravitationally-induced quantum effects', url: 'doc/Gravitationally-induced_quantum_effects.html', color: '#fdbcce', shape: 'circle' },
+          { id: 'Particle Processes in Astrophysical Sources', url: 'doc/2ndlevel/Particle_processes_in_astrophysical_sources.html', color: null, shape: 'rounded' },
+          { id: 'COW experiment and gravitational phase shifts', url: 'doc/2ndlevel/COW_experiment.html', color: null, shape: 'rounded' },
+          { id: 'Quantum Tests of the Equivalence Principle', url: 'doc/2ndlevel/Quantum_tests_of_the_equivalence_principle.html', color: null, shape: 'rounded' },
+          { id: 'Modified Dispersion Relations', url: 'doc/2ndlevel/Modified_dispersion_relations.html', color: null, shape: 'rounded' },
+          { id: 'Relational Observables', url: 'doc/2ndlevel/Relational_observables.html', color: null, shape: 'rounded' },
+          { id: 'In-vacuo dispersion', url: 'doc/Invacuo_dispersion.html', color: '#fdbcce', shape: 'circle' },
+          { id: 'LIV in expanding spacetimes', url: 'doc/2ndlevel/LIV_FLRW.html', color: null, shape: 'rounded' },
+          { id: 'Quantum Spacetime', url: 'doc/2ndlevel/Quantum_spacetime.html', color: null, shape: 'rounded' },
+          { id: 'Holographic Principle', url: 'doc/2ndlevel/Holography.html', color: null, shape: 'rounded' },
+          { id: 'Hawking Radiation', url: 'doc/2ndlevel/Hawking_radiation.html', color: null, shape: 'rounded' },
+          { id: 'IR-UV mixing', url: 'doc/IR-UV_mixing.html', color: '#fdbcce', shape: 'circle' },
+          { id: 'Emergent, Nonclassical and Fuzzy Spacetime', url: 'doc/Emergent_nonclassical_and_fuzzy_spacetime.html', color: '#fdbcce', shape: 'circle' },
+          { id: 'Doubly (or Deformed) Special Relativity (DSR)', url: 'doc/2ndlevel/DSR.html', color: null, shape: 'rounded' },
+          { id: 'Threshold Anomalies', url: 'doc/2ndlevel/Threshold_anomalies.html', color: null, shape: 'rounded' },
+          { id: 'Quantum Causality', url: 'doc/2ndlevel/Quantum_causality.html', color: null, shape: 'rounded' },
+          { id: 'Gravity as Thermodynamics/Hydrodynamics', url: 'doc/2ndlevel/Gravity_as_thermodynamics_hydrodynamics.html', color: null, shape: 'rounded' },
+          { id: 'Violation and Deformation of Relativistic Symmetries', url: 'doc/LIV_DSR.html', color: '#fdbcce', shape: 'circle' },
+          { id: 'Time Dilation-induced Dephasing', url: 'doc/2ndlevel/Time_dilation-induced_dephasing.html', color: null, shape: 'rounded' },
+          { id: 'Gravity-mediated Entanglement', url: 'doc/2ndlevel/Gravity-mediated_entanglement.html', color: null, shape: 'rounded' },
+          { id: 'Quantum Superposition of Geometries', url: 'doc/2ndlevel/Quantum_superposition_of_geometries.html', color: null, shape: 'rounded' },
+          { id: 'Quantum Reference Frames', url: 'doc/Quantum_Reference_Frames.html', color: '#fdbcce', shape: 'circle' },
+          { id: 'Quantum Superposition of Massive Objects', url: 'doc/2ndlevel/Quantum_superposition_of_massive_objects.html', color: null, shape: 'rounded' },
+          { id: 'Astrophysical Detection Techniques', url: 'doc/2ndlevel/Astrophysical_detection_techniques.html', color: null, shape: 'rounded' },
+          { id: 'Generalized Uncertainty Principle', url: 'doc/2ndlevel/GUP.html', color: null, shape: 'rounded' },
+          { id: '$\Lambda$CDM Cosmological Model', url: 'doc/Examples/example3.html', color: null, shape: 'square' },
+          { id: 'Allowed LaTeX syntax for page writing', url: 'doc/Examples/example2.html', color: null, shape: 'square' },
+          { id: 'Low-energy table-top experiments', url: 'doc/Low-energy_table-top_experiments.html', color: '#fdbcce', shape: 'circle' },
+          { id: 'Gravitationally-induced Decoherence', url: 'doc/2ndlevel/Gravitationally-induced_decoherence.html', color: null, shape: 'rounded' } ],
+        links: [ { source: 'BridgeQG Vade Mecum', target: 'How to write a page using Quarto Markdown' },
+          { source: 'Violation and Deformation of Relativistic Symmetries', target: 'Doubly (or Deformed) Special Relativity (DSR)' },
+          { source: 'Low-energy table-top experiments', target: 'Quantum Gravity Scale' },
+          { source: 'Violation and Deformation of Relativistic Symmetries', target: 'Discrete Symmetries Violation and Deformation motivated by Quantum Gravity' },
+          { source: 'Violation and Deformation of Relativistic Symmetries', target: 'LIV in expanding spacetimes' },
+          { source: 'Emergent, Nonclassical and Fuzzy Spacetime', target: 'Quantum Superposition of Geometries' },
+          { source: 'Emergent, Nonclassical and Fuzzy Spacetime', target: 'Gravity as Thermodynamics/Hydrodynamics' },
+          { source: 'Astrophysical probes', target: 'Astrophysical Detection Techniques' },
+          { source: 'IR-UV mixing', target: 'Modified Dispersion Relations' },
+          { source: 'Low-energy table-top experiments', target: 'Pauli Exclusion Principle violations' },
+          { source: 'Emergent, Nonclassical and Fuzzy Spacetime', target: 'Matrix Models' },
+          { source: 'Violation and Deformation of Relativistic Symmetries', target: 'Modified Dispersion Relations' },
+          { source: 'Quantum Reference Frames', target: 'Quantum groups and Hopf algebras' },
+          { source: 'Equivalence Principle, locality and quantum gravity', target: 'The Problem of Locality' },
+          { source: 'Low-energy table-top experiments', target: 'Fundamental principles of Quantum Mechanics that are amenable to testing' },
+          { source: 'Quantum Reference Frames', target: 'Holographic Principle' },
+          { source: 'Violation and Deformation of Relativistic Symmetries', target: 'Curved Momentum Space' },
+          { source: 'In-vacuo dispersion', target: 'Quantum Spacetime' },
+          { source: 'Emergent, Nonclassical and Fuzzy Spacetime', target: 'Phases of Geometry and Phase Diagrams of Quantum Gravity Theories' },
           { source: 'In-vacuo dispersion', target: 'Violation and Deformation of Relativistic Symmetries' },
+          { source: 'Low-energy table-top experiments', target: 'Gravitationally-induced Decoherence' },
+          { source: 'Violation and Deformation of Relativistic Symmetries', target: 'DSR in expanding spacetimes' },
+          { source: 'Violation and Deformation of Relativistic Symmetries', target: 'Generalized Uncertainty Principle' },
+          { source: 'Quantum Reference Frames', target: 'Algebraic Quantum Field Theory: relevant aspects for QG' },
+          { source: 'Violation and Deformation of Relativistic Symmetries', target: 'Vacuum Birefringence' },
+          { source: 'Violation and Deformation of Relativistic Symmetries', target: 'Modified Schroedinger Equation' },
+          { source: 'Quantum Reference Frames', target: 'Constraint Quantization in Gravity' },
+          { source: 'Violation and Deformation of Relativistic Symmetries', target: 'Quantum groups and Hopf algebras' },
+          { source: 'How to write a page using Quarto Markdown', target: 'Allowed LaTeX syntax for page writing' },
+          { source: 'In-vacuo dispersion', target: 'Modified Dispersion Relations' },
+          { source: 'Quantum Reference Frames', target: 'Relational Observables' },
+          { source: 'Violation and Deformation of Relativistic Symmetries', target: 'Threshold Anomalies' },
+          { source: 'Emergent, Nonclassical and Fuzzy Spacetime', target: 'Quantum Causality' },
+          { source: 'Astrophysical probes', target: 'Quantum Gravity Induced Time Delays' },
+          { source: 'Gravitationally-induced quantum effects', target: 'Time Dilation-induced Dephasing' },
+          { source: 'Violation and Deformation of Relativistic Symmetries', target: 'Quantum Spacetime' },
+          { source: 'BridgeQG Vade Mecum', target: 'Allowed LaTeX syntax for page writing' },
+          { source: 'Gravitationally-induced quantum effects', target: 'Quantum Tests of the Equivalence Principle' },
+          { source: 'Violation and Deformation of Relativistic Symmetries', target: 'Quantum Gravity Scale' },
+          { source: 'Emergent, Nonclassical and Fuzzy Spacetime', target: 'Quantum Spacetime' },
+          { source: 'Gravitationally-induced quantum effects', target: 'Quantum Superposition of Massive Objects' },
+          { source: 'Quantum Reference Frames', target: 'Perspectival and Operational Approaches to QRFs' },
           { source: 'In-vacuo dispersion', target: 'Quantum Gravity Scale' },
           { source: 'Emergent, Nonclassical and Fuzzy Spacetime', target: 'The Problem of Locality' },
-          { source: 'Astrophysical probes', target: 'Quantum Gravity Induced Time Delays' },
-          { source: 'In-vacuo dispersion', target: 'Quantum Spacetime' },
-          { source: 'Violation and Deformation of Relativistic Symmetries', target: 'Standard Model Extensions' },
-          { source: 'Violation and Deformation of Relativistic Symmetries', target: 'Quantum Spacetime' },
-          { source: 'Violation and Deformation of Relativistic Symmetries', target: 'LIV in expanding spacetimes' },
-          { source: 'Violation and Deformation of Relativistic Symmetries', target: 'DSR in expanding spacetimes' },
-          { source: 'Low-energy table-top experiments', target: 'Fundamental principles of Quantum Mechanics that are amenable to testing' },
-          { source: 'Violation and Deformation of Relativistic Symmetries', target: 'Quantum groups and Hopf algebras' },
-          { source: 'Violation and Deformation of Relativistic Symmetries', target: 'Generalized Uncertainty Principle' },
-          { source: 'Low-energy table-top experiments', target: 'Quantum Optomechanical Systems' },
-          { source: 'Low-energy table-top experiments', target: 'Discrete Symmetries Violation and Deformation motivated by Quantum Gravity' },
-          { source: 'Quantum Reference Frames', target: 'Subsystem Relativity: the Paradox of the Third Particle' },
           { source: 'In-vacuo dispersion', target: 'Quantum Gravity Induced Time Delays' },
-          { source: 'Quantum Reference Frames', target: 'Emergent, Nonclassical and Fuzzy Spacetime' },
-          { source: 'Violation and Deformation of Relativistic Symmetries', target: 'Doubly (or Deformed) Special Relativity (DSR)' },
-          { source: 'Violation and Deformation of Relativistic Symmetries', target: 'Discrete Symmetries Violation and Deformation motivated by Quantum Gravity' },
-          { source: 'How to write a page using Quarto Markdown', target: 'Allowed LaTeX syntax for page writing' },
+          { source: 'Quantum Reference Frames', target: 'Subsystem Relativity: the Paradox of the Third Particle' },
           { source: 'Quantum Reference Frames', target: 'Quantum Reference Frame Transformations' },
-          { source: 'BridgeQG Vade Mecum', target: 'Allowed LaTeX syntax for page writing' },
-          { source: 'BridgeQG Vade Mecum', target: 'How to write a page using Quarto Markdown' },
-          { source: 'Quantum Reference Frames', target: 'Quantum groups and Hopf algebras' },
-          { source: 'Quantum Reference Frames', target: 'Holographic Principle' },
-          { source: 'Low-energy table-top experiments', target: 'Modified Gravity theories that emerge from QG models' },
-          { source: 'Quantum Reference Frames', target: 'Discrete, Canonical and Covariant Quantum Gravity' },
-          { source: 'Violation and Deformation of Relativistic Symmetries', target: 'Quantum Gravity Scale' },
-          { source: 'Low-energy table-top experiments', target: 'Generalized Uncertainty Principle' },
-          { source: 'Equivalence Principle, locality and quantum gravity', target: 'The Problem of Locality' },
+          { source: 'Gravitationally-induced quantum effects', target: 'Modified Schroedinger Equation' },
+          { source: 'Quantum Reference Frames', target: 'Emergent, Nonclassical and Fuzzy Spacetime' },
           { source: 'Violation and Deformation of Relativistic Symmetries', target: 'IR-UV mixing' },
-          { source: 'Quantum Reference Frames', target: 'Perspectival and Operational Approaches to QRFs' },
+          { source: 'Gravitationally-induced quantum effects', target: 'Collapse Models' },
+          { source: 'Gravitationally-induced quantum effects', target: 'Precision Measurements of Short-range Gravity' },
+          { source: 'Low-energy table-top experiments', target: 'Ultra-sensitive Magnetometry' },
+          { source: 'Violation and Deformation of Relativistic Symmetries', target: 'Standard Model Extensions' },
+          { source: 'Quantum Reference Frames', target: 'Discrete, Canonical and Covariant Quantum Gravity' },
           { source: 'Low-energy table-top experiments', target: 'Matter-wave and Neutron Interferometry' },
           { source: 'Allowed LaTeX syntax for page writing', target: 'How to write a page using Quarto Markdown' },
-          { source: 'Emergent, Nonclassical and Fuzzy Spacetime', target: 'Quantum Spacetime' },
-          { source: 'Quantum Reference Frames', target: 'Algebraic Quantum Field Theory: relevant aspects for QG' },
+          { source: 'Gravitationally-induced quantum effects', target: 'Gravity-mediated Entanglement' },
+          { source: 'Low-energy table-top experiments', target: 'Discrete Symmetries Violation and Deformation motivated by Quantum Gravity' },
+          { source: 'Astrophysical probes', target: 'Acceleration Mechanisms' },
           { source: 'Low-energy table-top experiments', target: 'COW experiment and gravitational phase shifts' },
-          { source: 'Violation and Deformation of Relativistic Symmetries', target: 'In-vacuo dispersion' },
-          { source: 'Gravitationally-induced quantum effects', target: 'Hawking Radiation' },
+          { source: 'Low-energy table-top experiments', target: 'Modified Gravity theories that emerge from QG models' },
           { source: 'Low-energy table-top experiments', target: 'Collapse Models' },
-          { source: 'Low-energy table-top experiments', target: 'Quantum Gravity Scale' } ]
+          { source: 'Low-energy table-top experiments', target: 'Generalized Uncertainty Principle' },
+          { source: 'Low-energy table-top experiments', target: 'Quantum Optomechanical Systems' },
+          { source: 'Violation and Deformation of Relativistic Symmetries', target: 'In-vacuo dispersion' },
+          { source: 'Astrophysical probes', target: 'Astrophysical Sources' },
+          { source: 'Astrophysical probes', target: 'Particle Processes in Astrophysical Sources' },
+          { source: 'Gravitationally-induced quantum effects', target: 'Hawking Radiation' },
+          { source: 'Astrophysical probes', target: 'Magnetic Fields in Astrophysical Sources' },
+          { source: 'Astrophysical probes', target: 'Multimessenger Astrophysics' } ]
       };
   
-      const wrapper = document.getElementById('wrapper_graph_843589');
-      const container = document.getElementById('graph_843589');
-      const fsBtn = document.getElementById('btn_graph_843589');
+      const wrapper = document.getElementById('wrapper_graph_812868');
+      const container = document.getElementById('graph_812868');
+      const fsBtn = document.getElementById('btn_graph_812868');
       if (!wrapper || !container || !fsBtn) return;
   
       // Fullscreen Toggle Logic now targets the WRAPPER
