@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.38">
+<meta name="generator" content="quarto-1.11.9">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -12,10 +12,13 @@
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
 */
-code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -35,14 +38,15 @@ ul.task-list li input[type="checkbox"] {
 <meta name="quarto:offset" content="./">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/scrollable-regions/scrollable-regions.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-814b7d86f81bef83ceb6a6c63506e914.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-c4524a14520acb9330a778e869499311.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -72,7 +76,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
 
 <script type="text/javascript">
 const typesetMath = (el) => {
@@ -104,17 +108,17 @@ window.Quarto = {
 <link rel="stylesheet" href="include/css-config.css">
 </head>
 
-<body class="nav-sidebar docked fullcontent quarto-light">
+<body class="nav-sidebar docked fullcontent quarto-light"><a id="quarto-skip-link" class="visually-hidden-focusable" href="#quarto-document-content">Skip to main content</a>
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-  <nav class="quarto-secondary-nav">
+  <nav class="quarto-secondary-nav" aria-label="Toolbar">
     <div class="container-fluid d-flex">
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Home</a></li></ol></nav>
-        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        <nav class="quarto-page-breadcrumbs" aria-label="Breadcrumbs"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Home</a></li></ol></nav>
+        <a class="flex-grow-1" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
@@ -125,7 +129,7 @@ window.Quarto = {
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto" aria-label="Site">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
       <a href="./index.html" class="sidebar-logo-link">
       <img src="./img/logo/logo.png" alt="" class="sidebar-logo light-content py-0 d-lg-inline d-none">
@@ -147,22 +151,16 @@ window.Quarto = {
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
- <span class="menu-text">Topics</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-controls="quarto-sidebar-section-1" aria-expanded="true">
+ <span class="menu-text" id="quarto-sidebar-section-1-label">Topics</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
       </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-1" aria-labelledby="quarto-sidebar-section-1-label" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false">
- <span class="menu-text">First level topics</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-controls="quarto-sidebar-section-2" aria-expanded="false">
+ <span class="menu-text" id="quarto-sidebar-section-2-label">First level topics</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
       </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 ">  
+      <ul id="quarto-sidebar-section-2" aria-labelledby="quarto-sidebar-section-2-label" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./doc/Astrophysical_probes.html" class="sidebar-item-text sidebar-link">
@@ -227,13 +225,10 @@ window.Quarto = {
   </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false">
- <span class="menu-text">Second level topics</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
+            <button type="button" class="sidebar-item-text sidebar-item-toggle sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-controls="quarto-sidebar-section-3" aria-expanded="false">
+ <span class="menu-text" id="quarto-sidebar-section-3-label">Second level topics</span><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
       </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth2 ">  
+      <ul id="quarto-sidebar-section-3" aria-labelledby="quarto-sidebar-section-3-label" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./doc/2ndlevel/Acceleration_mechanisms.html" class="sidebar-item-text sidebar-link">
@@ -557,7 +552,7 @@ window.Quarto = {
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content" id="quarto-document-content" tabindex="-1">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -578,9 +573,9 @@ window.Quarto = {
 </header>
 
 
-  <div id="wrapper_graph_989921" style="position: relative; width: 100%; height: 600px; border: 1px solid #ddd; background: #ffffff; border-radius: 8px; overflow: hidden; margin-bottom: 1.5em;">
-      <div id="graph_989921" style="width: 100%; height: 100%;"></div>
-      <button id="btn_graph_989921" title="Toggle Fullscreen" style="position: absolute; bottom: 15px; right: 15px; z-index: 1000; width: 36px; height: 36px; padding: 0; background: rgba(255, 255, 255, 0.9); border: 1px solid #ccc; border-radius: 6px; cursor: pointer; font-size: 20px; color: #333; box-shadow: 0 2px 5px rgba(0,0,0,0.2); display: flex; align-items: center; justify-content: center; transition: background 0.2s; line-height: 1;">⛶</button>
+  <div id="wrapper_graph_843589" style="position: relative; width: 100%; height: 600px; border: 1px solid #ddd; background: #ffffff; border-radius: 8px; overflow: hidden; margin-bottom: 1.5em;">
+      <div id="graph_843589" style="width: 100%; height: 100%;"></div>
+      <button id="btn_graph_843589" title="Toggle Fullscreen" style="position: absolute; bottom: 15px; right: 15px; z-index: 1000; width: 36px; height: 36px; padding: 0; background: rgba(255, 255, 255, 0.9); border: 1px solid #ccc; border-radius: 6px; cursor: pointer; font-size: 20px; color: #333; box-shadow: 0 2px 5px rgba(0,0,0,0.2); display: flex; align-items: center; justify-content: center; transition: background 0.2s; line-height: 1;">⛶</button>
   </div>
   
   <script src="https://unpkg.com/force-graph"></script>
@@ -589,94 +584,96 @@ window.Quarto = {
       if (typeof ForceGraph === 'undefined') { setTimeout(initGraph, 50); return; }
   
       const graphData = {
-        nodes: [ { id: '$\Lambda$CDM Cosmological Model', url: 'doc/Examples/example3.html', color: null, shape: 'square' },
-          { id: 'Quantum Gravity Induced Time Delays', url: 'doc/2ndlevel/Time_delay.html', color: null, shape: 'rounded' },
-          { id: 'In-vacuo dispersion', url: 'doc/Invacuo_dispersion.html', color: '#fdbcce', shape: 'circle' },
-          { id: 'IR-UV mixing', url: 'doc/IR-UV_mixing.html', color: '#fdbcce', shape: 'circle' },
-          { id: 'Discrete, Canonical and Covariant Quantum Gravity', url: 'doc/2ndlevel/Discrete_QG.html', color: null, shape: 'rounded' },
-          { id: 'Subsystem Relativity: the Paradox of the Third Particle', url: 'doc/2ndlevel/Subsystems_relativity.html', color: null, shape: 'rounded' },
-          { id: 'BridgeQG Vade Mecum', url: 'doc/Examples/example0.html', color: null, shape: 'square' },
-          { id: 'Discrete Symmetries Violation and Deformation motivated by Quantum Gravity', url: 'doc/2ndlevel/Discrete_symmetries.html', color: null, shape: 'rounded' },
-          { id: 'Astrophysical probes', url: 'doc/Astrophysical_probes.html', color: '#fdbcce', shape: 'circle' },
-          { id: 'Fundamental principles of Quantum Mechanics that are amenable to testing', url: 'doc/2ndlevel/QMfoundations.html', color: null, shape: 'rounded' },
-          { id: 'How to write a page using Quarto Markdown', url: 'doc/Examples/example1.html', color: null, shape: 'square' },
-          { id: 'Quantum Optomechanical Systems', url: 'doc/2ndlevel/Optomechanical_systems.html', color: null, shape: 'rounded' },
-          { id: 'Matter-wave and Neutron Interferometry', url: 'doc/2ndlevel/Matter_interferometry.html', color: null, shape: 'rounded' },
-          { id: 'Modified Gravity theories that emerge from QG models', url: 'doc/2ndlevel/Modified_gravity.html', color: null, shape: 'rounded' },
-          { id: 'Asymptotic and global symmetries of spacetime', url: 'doc/Asymptotic_symmetries.html', color: '#fdbcce', shape: 'circle' },
-          { id: 'Holographic Principle', url: 'doc/2ndlevel/Holography.html', color: null, shape: 'rounded' },
-          { id: 'Black Holes and Quantum Mechanics', url: 'doc/Black_holes_and_QM.html', color: '#fdbcce', shape: 'circle' },
-          { id: 'Violation and Deformation of Relativistic Symmetries', url: 'doc/LIV_DSR.html', color: '#fdbcce', shape: 'circle' },
-          { id: 'Low-energy table-top experiments', url: 'doc/Low-energy_table-top_experiments.html', color: '#fdbcce', shape: 'circle' },
-          { id: 'Quantum Reference Frames', url: 'doc/Quantum_Reference_Frames.html', color: '#fdbcce', shape: 'circle' },
-          { id: 'Emergent, Nonclassical and Fuzzy Spacetime', url: 'doc/Emergent_nonclassical_and_fuzzy_spacetime.html', color: '#fdbcce', shape: 'circle' },
-          { id: 'Collapse Models', url: 'doc/2ndlevel/Collapse_models.html', color: null, shape: 'rounded' },
-          { id: 'DSR in expanding spacetimes', url: 'doc/2ndlevel/DSR_FLRW.html', color: null, shape: 'rounded' },
-          { id: 'Algebraic Quantum Field Theory: relevant aspects for QG', url: 'doc/2ndlevel/Algebraic_QFT.html', color: null, shape: 'rounded' },
-          { id: 'Perspectival and Operational Approaches to QRFs', url: 'doc/2ndlevel/QRF_approaches.html', color: null, shape: 'rounded' },
-          { id: 'LIV in expanding spacetimes', url: 'doc/2ndlevel/LIV_FLRW.html', color: null, shape: 'rounded' },
-          { id: 'The Problem of Locality', url: 'doc/2ndlevel/Locality.html', color: null, shape: 'rounded' },
-          { id: 'Quantum groups and Hopf algebras', url: 'doc/2ndlevel/Hopf_algebra.html', color: null, shape: 'rounded' },
-          { id: 'Pauli Exclusion Principle violations', url: 'doc/2ndlevel/Pauli_violation.html', color: null, shape: 'rounded' },
-          { id: 'Quantum Spacetime', url: 'doc/2ndlevel/Quantum_spacetime.html', color: null, shape: 'rounded' },
+        nodes: [ { id: 'Quantum Reference Frames', url: 'doc/Quantum_Reference_Frames.html', color: '#fdbcce', shape: 'circle' },
           { id: 'Doubly (or Deformed) Special Relativity (DSR)', url: 'doc/2ndlevel/DSR.html', color: null, shape: 'rounded' },
-          { id: 'Quantum Reference Frame Transformations', url: 'doc/2ndlevel/QRF_transformations.html', color: null, shape: 'rounded' },
-          { id: 'Ultra-sensitive Magnetometry', url: 'doc/2ndlevel/Magnometry.html', color: null, shape: 'rounded' },
+          { id: 'Algebraic Quantum Field Theory: relevant aspects for QG', url: 'doc/2ndlevel/Algebraic_QFT.html', color: null, shape: 'rounded' },
+          { id: 'Emergent, Nonclassical and Fuzzy Spacetime', url: 'doc/Emergent_nonclassical_and_fuzzy_spacetime.html', color: '#fdbcce', shape: 'circle' },
+          { id: 'Astrophysical probes', url: 'doc/Astrophysical_probes.html', color: '#fdbcce', shape: 'circle' },
+          { id: 'The Problem of Locality', url: 'doc/2ndlevel/Locality.html', color: null, shape: 'rounded' },
+          { id: 'Violation and Deformation of Relativistic Symmetries', url: 'doc/LIV_DSR.html', color: '#fdbcce', shape: 'circle' },
+          { id: 'Black Holes and Quantum Mechanics', url: 'doc/Black_holes_and_QM.html', color: '#fdbcce', shape: 'circle' },
+          { id: 'DSR in expanding spacetimes', url: 'doc/2ndlevel/DSR_FLRW.html', color: null, shape: 'rounded' },
+          { id: 'Asymptotic and global symmetries of spacetime', url: 'doc/Asymptotic_symmetries.html', color: '#fdbcce', shape: 'circle' },
+          { id: 'Hawking Radiation', url: 'doc/2ndlevel/Hawking_radiation.html', color: null, shape: 'rounded' },
+          { id: 'Generalized Uncertainty Principle', url: 'doc/2ndlevel/GUP.html', color: null, shape: 'rounded' },
+          { id: 'BridgeQG Vade Mecum', url: 'doc/Examples/example0.html', color: null, shape: 'square' },
+          { id: 'Subsystem Relativity: the Paradox of the Third Particle', url: 'doc/2ndlevel/Subsystems_relativity.html', color: null, shape: 'rounded' },
           { id: 'Quantum Gravity Scale', url: 'doc/2ndlevel/QGscale.html', color: null, shape: 'rounded' },
-          { id: 'Standard Model Extensions', url: 'doc/2ndlevel/Standard_model_extensions.html', color: null, shape: 'rounded' },
-          { id: 'COW experiment and gravitational phase shifts', url: 'doc/2ndlevel/COW_experiment.html', color: null, shape: 'rounded' },
+          { id: 'Quantum Optomechanical Systems', url: 'doc/2ndlevel/Optomechanical_systems.html', color: null, shape: 'rounded' },
+          { id: 'Ultra-sensitive Magnetometry', url: 'doc/2ndlevel/Magnometry.html', color: null, shape: 'rounded' },
+          { id: '$\Lambda$CDM Cosmological Model', url: 'doc/Examples/example3.html', color: null, shape: 'square' },
+          { id: 'Quantum Spacetime', url: 'doc/2ndlevel/Quantum_spacetime.html', color: null, shape: 'rounded' },
+          { id: 'Discrete Symmetries Violation and Deformation motivated by Quantum Gravity', url: 'doc/2ndlevel/Discrete_symmetries.html', color: null, shape: 'rounded' },
+          { id: 'How to write a page using Quarto Markdown', url: 'doc/Examples/example1.html', color: null, shape: 'square' },
+          { id: 'Matter-wave and Neutron Interferometry', url: 'doc/2ndlevel/Matter_interferometry.html', color: null, shape: 'rounded' },
+          { id: 'IR-UV mixing', url: 'doc/IR-UV_mixing.html', color: '#fdbcce', shape: 'circle' },
           { id: 'Allowed LaTeX syntax for page writing', url: 'doc/Examples/example2.html', color: null, shape: 'square' },
-          { id: 'Gravitationally-induced quantum effects', url: 'doc/Gravitationally-induced_quantum_effects.html', color: '#fdbcce', shape: 'circle' },
+          { id: 'Quantum Reference Frame Transformations', url: 'doc/2ndlevel/QRF_transformations.html', color: null, shape: 'rounded' },
+          { id: 'Pauli Exclusion Principle violations', url: 'doc/2ndlevel/Pauli_violation.html', color: null, shape: 'rounded' },
+          { id: 'Quantum groups and Hopf algebras', url: 'doc/2ndlevel/Hopf_algebra.html', color: null, shape: 'rounded' },
+          { id: 'Standard Model Extensions', url: 'doc/2ndlevel/Standard_model_extensions.html', color: null, shape: 'rounded' },
+          { id: 'Modified Gravity theories that emerge from QG models', url: 'doc/2ndlevel/Modified_gravity.html', color: null, shape: 'rounded' },
+          { id: 'Fundamental principles of Quantum Mechanics that are amenable to testing', url: 'doc/2ndlevel/QMfoundations.html', color: null, shape: 'rounded' },
+          { id: 'LIV in expanding spacetimes', url: 'doc/2ndlevel/LIV_FLRW.html', color: null, shape: 'rounded' },
+          { id: 'Holographic Principle', url: 'doc/2ndlevel/Holography.html', color: null, shape: 'rounded' },
+          { id: 'Perspectival and Operational Approaches to QRFs', url: 'doc/2ndlevel/QRF_approaches.html', color: null, shape: 'rounded' },
+          { id: 'Low-energy table-top experiments', url: 'doc/Low-energy_table-top_experiments.html', color: '#fdbcce', shape: 'circle' },
+          { id: 'Discrete, Canonical and Covariant Quantum Gravity', url: 'doc/2ndlevel/Discrete_QG.html', color: null, shape: 'rounded' },
+          { id: 'Collapse Models', url: 'doc/2ndlevel/Collapse_models.html', color: null, shape: 'rounded' },
           { id: 'Equivalence Principle, locality and quantum gravity', url: 'doc/Equivalence_principle.html', color: '#fdbcce', shape: 'circle' },
-          { id: 'Generalized Uncertainty Principle', url: 'doc/2ndlevel/GUP.html', color: null, shape: 'rounded' } ],
-        links: [ { source: 'Low-energy table-top experiments', target: 'Discrete Symmetries Violation and Deformation motivated by Quantum Gravity' },
-          { source: 'In-vacuo dispersion', target: 'Quantum Spacetime' },
+          { id: 'Gravitationally-induced quantum effects', url: 'doc/Gravitationally-induced_quantum_effects.html', color: '#fdbcce', shape: 'circle' },
+          { id: 'COW experiment and gravitational phase shifts', url: 'doc/2ndlevel/COW_experiment.html', color: null, shape: 'rounded' },
+          { id: 'Quantum Gravity Induced Time Delays', url: 'doc/2ndlevel/Time_delay.html', color: null, shape: 'rounded' },
+          { id: 'In-vacuo dispersion', url: 'doc/Invacuo_dispersion.html', color: '#fdbcce', shape: 'circle' } ],
+        links: [ { source: 'Low-energy table-top experiments', target: 'Pauli Exclusion Principle violations' },
           { source: 'Low-energy table-top experiments', target: 'Ultra-sensitive Magnetometry' },
-          { source: 'Low-energy table-top experiments', target: 'Matter-wave and Neutron Interferometry' },
-          { source: 'Quantum Reference Frames', target: 'Quantum Reference Frame Transformations' },
+          { source: 'Gravitationally-induced quantum effects', target: 'Collapse Models' },
           { source: 'In-vacuo dispersion', target: 'Violation and Deformation of Relativistic Symmetries' },
-          { source: 'Violation and Deformation of Relativistic Symmetries', target: 'Quantum Gravity Scale' },
-          { source: 'Emergent, Nonclassical and Fuzzy Spacetime', target: 'The Problem of Locality' },
-          { source: 'Quantum Reference Frames', target: 'Holographic Principle' },
-          { source: 'Violation and Deformation of Relativistic Symmetries', target: 'DSR in expanding spacetimes' },
           { source: 'In-vacuo dispersion', target: 'Quantum Gravity Scale' },
+          { source: 'Emergent, Nonclassical and Fuzzy Spacetime', target: 'The Problem of Locality' },
+          { source: 'Astrophysical probes', target: 'Quantum Gravity Induced Time Delays' },
+          { source: 'In-vacuo dispersion', target: 'Quantum Spacetime' },
+          { source: 'Violation and Deformation of Relativistic Symmetries', target: 'Standard Model Extensions' },
+          { source: 'Violation and Deformation of Relativistic Symmetries', target: 'Quantum Spacetime' },
+          { source: 'Violation and Deformation of Relativistic Symmetries', target: 'LIV in expanding spacetimes' },
+          { source: 'Violation and Deformation of Relativistic Symmetries', target: 'DSR in expanding spacetimes' },
           { source: 'Low-energy table-top experiments', target: 'Fundamental principles of Quantum Mechanics that are amenable to testing' },
-          { source: 'Low-energy table-top experiments', target: 'Quantum Gravity Scale' },
-          { source: 'Quantum Reference Frames', target: 'Subsystem Relativity: the Paradox of the Third Particle' },
-          { source: 'Low-energy table-top experiments', target: 'Pauli Exclusion Principle violations' },
+          { source: 'Violation and Deformation of Relativistic Symmetries', target: 'Quantum groups and Hopf algebras' },
           { source: 'Violation and Deformation of Relativistic Symmetries', target: 'Generalized Uncertainty Principle' },
           { source: 'Low-energy table-top experiments', target: 'Quantum Optomechanical Systems' },
-          { source: 'Quantum Reference Frames', target: 'Emergent, Nonclassical and Fuzzy Spacetime' },
-          { source: 'Astrophysical probes', target: 'Quantum Gravity Induced Time Delays' },
-          { source: 'Gravitationally-induced quantum effects', target: 'Collapse Models' },
-          { source: 'Low-energy table-top experiments', target: 'Collapse Models' },
+          { source: 'Low-energy table-top experiments', target: 'Discrete Symmetries Violation and Deformation motivated by Quantum Gravity' },
+          { source: 'Quantum Reference Frames', target: 'Subsystem Relativity: the Paradox of the Third Particle' },
           { source: 'In-vacuo dispersion', target: 'Quantum Gravity Induced Time Delays' },
-          { source: 'Equivalence Principle, locality and quantum gravity', target: 'The Problem of Locality' },
-          { source: 'How to write a page using Quarto Markdown', target: 'Allowed LaTeX syntax for page writing' },
-          { source: 'Low-energy table-top experiments', target: 'COW experiment and gravitational phase shifts' },
-          { source: 'Quantum Reference Frames', target: 'Algebraic Quantum Field Theory: relevant aspects for QG' },
-          { source: 'Violation and Deformation of Relativistic Symmetries', target: 'In-vacuo dispersion' },
-          { source: 'Violation and Deformation of Relativistic Symmetries', target: 'IR-UV mixing' },
-          { source: 'Violation and Deformation of Relativistic Symmetries', target: 'Discrete Symmetries Violation and Deformation motivated by Quantum Gravity' },
-          { source: 'Violation and Deformation of Relativistic Symmetries', target: 'Quantum groups and Hopf algebras' },
-          { source: 'Violation and Deformation of Relativistic Symmetries', target: 'Quantum Spacetime' },
-          { source: 'Allowed LaTeX syntax for page writing', target: 'How to write a page using Quarto Markdown' },
+          { source: 'Quantum Reference Frames', target: 'Emergent, Nonclassical and Fuzzy Spacetime' },
           { source: 'Violation and Deformation of Relativistic Symmetries', target: 'Doubly (or Deformed) Special Relativity (DSR)' },
-          { source: 'Violation and Deformation of Relativistic Symmetries', target: 'Standard Model Extensions' },
-          { source: 'Quantum Reference Frames', target: 'Perspectival and Operational Approaches to QRFs' },
-          { source: 'BridgeQG Vade Mecum', target: 'How to write a page using Quarto Markdown' },
-          { source: 'Emergent, Nonclassical and Fuzzy Spacetime', target: 'Quantum Spacetime' },
+          { source: 'Violation and Deformation of Relativistic Symmetries', target: 'Discrete Symmetries Violation and Deformation motivated by Quantum Gravity' },
+          { source: 'How to write a page using Quarto Markdown', target: 'Allowed LaTeX syntax for page writing' },
+          { source: 'Quantum Reference Frames', target: 'Quantum Reference Frame Transformations' },
           { source: 'BridgeQG Vade Mecum', target: 'Allowed LaTeX syntax for page writing' },
-          { source: 'Violation and Deformation of Relativistic Symmetries', target: 'LIV in expanding spacetimes' },
-          { source: 'Quantum Reference Frames', target: 'Discrete, Canonical and Covariant Quantum Gravity' },
-          { source: 'Low-energy table-top experiments', target: 'Modified Gravity theories that emerge from QG models' },
+          { source: 'BridgeQG Vade Mecum', target: 'How to write a page using Quarto Markdown' },
           { source: 'Quantum Reference Frames', target: 'Quantum groups and Hopf algebras' },
-          { source: 'Low-energy table-top experiments', target: 'Generalized Uncertainty Principle' } ]
+          { source: 'Quantum Reference Frames', target: 'Holographic Principle' },
+          { source: 'Low-energy table-top experiments', target: 'Modified Gravity theories that emerge from QG models' },
+          { source: 'Quantum Reference Frames', target: 'Discrete, Canonical and Covariant Quantum Gravity' },
+          { source: 'Violation and Deformation of Relativistic Symmetries', target: 'Quantum Gravity Scale' },
+          { source: 'Low-energy table-top experiments', target: 'Generalized Uncertainty Principle' },
+          { source: 'Equivalence Principle, locality and quantum gravity', target: 'The Problem of Locality' },
+          { source: 'Violation and Deformation of Relativistic Symmetries', target: 'IR-UV mixing' },
+          { source: 'Quantum Reference Frames', target: 'Perspectival and Operational Approaches to QRFs' },
+          { source: 'Low-energy table-top experiments', target: 'Matter-wave and Neutron Interferometry' },
+          { source: 'Allowed LaTeX syntax for page writing', target: 'How to write a page using Quarto Markdown' },
+          { source: 'Emergent, Nonclassical and Fuzzy Spacetime', target: 'Quantum Spacetime' },
+          { source: 'Quantum Reference Frames', target: 'Algebraic Quantum Field Theory: relevant aspects for QG' },
+          { source: 'Low-energy table-top experiments', target: 'COW experiment and gravitational phase shifts' },
+          { source: 'Violation and Deformation of Relativistic Symmetries', target: 'In-vacuo dispersion' },
+          { source: 'Gravitationally-induced quantum effects', target: 'Hawking Radiation' },
+          { source: 'Low-energy table-top experiments', target: 'Collapse Models' },
+          { source: 'Low-energy table-top experiments', target: 'Quantum Gravity Scale' } ]
       };
   
-      const wrapper = document.getElementById('wrapper_graph_989921');
-      const container = document.getElementById('graph_989921');
-      const fsBtn = document.getElementById('btn_graph_989921');
+      const wrapper = document.getElementById('wrapper_graph_843589');
+      const container = document.getElementById('graph_843589');
+      const fsBtn = document.getElementById('btn_graph_843589');
       if (!wrapper || !container || !fsBtn) return;
   
       // Fullscreen Toggle Logic now targets the WRAPPER
@@ -858,7 +855,8 @@ Examples -> How to write LaTeX {url:/VadeMecum/doc/Examples/example2.html}
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
       // Inspect non-navigation links and adorn them if external
-     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      window.quartoDecorateExternalLinks = function (root) {
+     var links = (root || window.document).querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
       for (var i=0; i<links.length; i++) {
         const link = links[i];
         if (!isInternal(link.href)) {
@@ -867,8 +865,69 @@ Examples -> How to write LaTeX {url:/VadeMecum/doc/Examples/example2.html}
           if (link.dataset.originalHref !== undefined) {
             link.href = link.dataset.originalHref;
           }
+          if (!link.classList.contains('no-external-icon')) {
+          }
         }
       }
+      };
+      window.quartoDecorateExternalLinks(window.document);
+    // Esc closes the popup (WCAG 1.4.13) and focus leaving both trigger and
+    // popup closes it (WCAG 2.4.11); tippy handles neither for interactive popups.
+    const hideOnEscAndFocusOut = {
+      name: 'hideOnEscAndFocusOut',
+      defaultValue: true,
+      fn(instance) {
+        const dismiss = () => {
+          // A show scheduled by the trigger delay would otherwise reopen it
+          instance.clearDelayTimeouts();
+          instance.hide();
+        };
+        const onKeyDown = (event) => {
+          if (event.key !== 'Escape') {
+            return;
+          }
+          // Keep Esc from also reaching page handlers (e.g. reveal.js overview),
+          // except an open reveal.js slide menu, which Esc should close too.
+          // The menu handles keys only when its keyboard option is on.
+          const menuHandlesEsc = window.Reveal?.getPlugin?.('menu')?.isOpen() &&
+            window.Reveal.getConfig().menu?.keyboard !== false;
+          if (!menuHandlesEsc) {
+            event.stopPropagation();
+          }
+          if (instance.popper.contains(window.document.activeElement)) {
+            // Disabled while refocusing so the focus trigger does not reopen it
+            instance.disable();
+            instance.reference.focus();
+            instance.enable();
+          }
+          dismiss();
+        };
+        const onFocusOut = (event) => {
+          const target = event.relatedTarget;
+          if (target && !instance.reference.contains(target) &&
+              !instance.popper.contains(target)) {
+            dismiss();
+          }
+        };
+        // On the trigger too: a click trigger (code-annotations: select) has no
+        // blur handling. Attached for the instance's lifetime so leaving the
+        // trigger also cancels a show still pending on the trigger delay.
+        instance.reference.addEventListener('focusout', onFocusOut);
+        return {
+          onShow() {
+            window.document.addEventListener('keydown', onKeyDown, true);
+            instance.popper.addEventListener('focusout', onFocusOut);
+          },
+          onHide() {
+            window.document.removeEventListener('keydown', onKeyDown, true);
+            instance.popper.removeEventListener('focusout', onFocusOut);
+          },
+          onDestroy() {
+            instance.reference.removeEventListener('focusout', onFocusOut);
+          },
+        };
+      },
+    };
     function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
       const config = {
         allowHTML: true,
@@ -882,6 +941,7 @@ Examples -> How to write LaTeX {url:/VadeMecum/doc/Examples/example2.html}
         interactiveBorder: 10,
         theme: 'quarto',
         placement: 'bottom-start',
+        plugins: [hideOnEscAndFocusOut],
       };
       if (contentFn) {
         config.content = contentFn;
@@ -1044,44 +1104,54 @@ Examples -> How to write LaTeX {url:/VadeMecum/doc/Examples/example2.html}
           const lineIds = lines.map((line) => {
             return targetCell + "-" + line;
           })
-          let top = null;
-          let height = null;
-          let parent = null;
+          // Each band is positioned against its own containing block, which is
+          // not the offsetParent of the lines, so place it from client rects.
+          const placeBand = (band, firstEl, lastEl, codeBlock) => {
+            const container = band.offsetParent;
+            if (container === null) {
+              return;
+            }
+            const containerRect = container.getBoundingClientRect();
+            // Reveal.js scales slides with a transform, so convert client
+            // pixels back to the CSS pixels of the container.
+            const scale = containerRect.height / container.offsetHeight || 1;
+            const firstRect = firstEl.getBoundingClientRect();
+            const lastRect = lastEl.getBoundingClientRect();
+            const top = (firstRect.top - containerRect.top) / scale - container.clientTop + container.scrollTop;
+            const height = (lastRect.bottom - firstRect.top) / scale;
+            band.style.top = top - 2 + "px";
+            band.style.height = height + 4 + "px";
+            if (codeBlock) {
+              // Without the copy button wrapper, the containing block is wider
+              // than the code block, so span the code block explicitly.
+              const blockRect = codeBlock.getBoundingClientRect();
+              band.style.left = (blockRect.left - containerRect.left) / scale - container.clientLeft + container.scrollLeft + "px";
+              band.style.width = blockRect.width / scale + "px";
+            }
+          };
           if (lineIds.length > 0) {
-              //compute the position of the single el (top and bottom and make a div)
-              const el = window.document.getElementById(lineIds[0]);
-              top = el.offsetTop;
-              height = el.offsetHeight;
-              parent = el.parentElement.parentElement;
-            if (lineIds.length > 1) {
-              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
-              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
-              height = bottom - top;
+            const el = window.document.getElementById(lineIds[0]);
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const parent = el.parentElement.parentElement;
+            // cook up a div (if necessary) and position it
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
             }
-            if (top !== null && height !== null && parent !== null) {
-              // cook up a div (if necessary) and position it 
-              let div = window.document.getElementById("code-annotation-line-highlight");
-              if (div === null) {
-                div = window.document.createElement("div");
-                div.setAttribute("id", "code-annotation-line-highlight");
-                div.style.position = 'absolute';
-                parent.appendChild(div);
-              }
-              div.style.top = top - 2 + "px";
-              div.style.height = height + 4 + "px";
-              div.style.left = 0;
-              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
-              if (gutterDiv === null) {
-                gutterDiv = window.document.createElement("div");
-                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
-                gutterDiv.style.position = 'absolute';
-                const codeCell = window.document.getElementById(targetCell);
-                const gutter = codeCell.querySelector('.code-annotation-gutter');
-                gutter.appendChild(gutterDiv);
-              }
-              gutterDiv.style.top = top - 2 + "px";
-              gutterDiv.style.height = height + 4 + "px";
+            placeBand(div, el, lastEl, parent.closest("div.sourceCode") || parent);
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
             }
+            placeBand(gutterDiv, el, lastEl);
             selectedAnnoteEl = annoteEl;
           }
         };
@@ -1179,6 +1249,9 @@ Examples -> How to write LaTeX {url:/VadeMecum/doc/Examples/example2.html}
       }
     }
   });
+  </script>
+  <script type="application/javascript">
+  window.quartoScrollableRegionsLabels = {"code":"Scrollable code","output":"Scrollable output"};
   </script>
 </div> <!-- /content -->
 
