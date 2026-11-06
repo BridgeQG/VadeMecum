@@ -123,6 +123,8 @@ local function generate_graph_html(nodes_db, edges_db)
       const LINK_GAP = 40;      // preferred gap between the borders of linked balloons
       const BOX_GAP = 10;
       const GRAVITY = 0.04;
+      const DAMPING = 0.85;     // 0 = no friction, 1 = frozen (the library default is 0.4)
+      const MAX_SPEED = 6;      // speed limit per tick, in graph units
 
       const wrapper = document.getElementById('wrapper_]] .. graph_id .. [[');
       const container = document.getElementById(']] .. graph_id .. [[');
@@ -308,12 +310,22 @@ local function generate_graph_html(nodes_db, edges_db)
                 }
             }
         });
-        Graph.warmupTicks(200).cooldownTime(4000);
+        // Heavy damping: velocities die out quickly, the simulation cools fast, and no balloon
+        // can move faster than MAX_SPEED per tick, so dragging one balloon moves the rest smoothly.
+        Graph.d3VelocityDecay(DAMPING).d3AlphaDecay(0.04);
+        Graph.d3Force('speedLimit', () => {
+            graphData.nodes.forEach(n => {
+                const v = Math.hypot(n.vx, n.vy);
+                if (v > MAX_SPEED) { n.vx *= MAX_SPEED / v; n.vy *= MAX_SPEED / v; }
+            });
+        });
+        Graph.warmupTicks(200).cooldownTime(3000);
 
         // Zoom so that the whole map fills the window (once the layout settles, and on resize)
         let fitTimer = null;
         const fitMap = () => { clearTimeout(fitTimer); fitTimer = setTimeout(() => Graph.zoomToFit(400, 25), 150); };
-        Graph.onEngineStop(fitMap);
+        let fittedOnce = false;   // fit only after the first layout, not after every drag
+        Graph.onEngineStop(() => { if (!fittedOnce) { fittedOnce = true; fitMap(); } });
         Graph.minZoom(0.2);
 
         // Click / tap: open the page of the balloon under the pointer in a new tab.
