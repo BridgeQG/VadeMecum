@@ -111,7 +111,7 @@
     "href": "1st-level-topics/Astrophysical_probes.html#authors",
     "title": "Astrophysical probes",
     "section": "List of Authors",
-    "text": "List of Authors",
+    "text": "List of Authors\n\n\nDenise Boncioli",
     "crumbs": [
       "Topics",
       "First level topics",
@@ -164,6 +164,1014 @@
       "Topics",
       "First level topics",
       "Emergent, Nonclassical and Fuzzy Spacetime"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/Weak_equivalence_principle.html",
+    "href": "1st-level-topics/2nd-level-topics/Weak_equivalence_principle.html",
+    "title": "Weak Equivalence Principle",
+    "section": "",
+    "text": "Geodesic trajectories of free particles. Matter is described by point particles, equations of motion are geodesic equations in a given curved background geometry, and gravity is described as the curvature of spacetime. EP is rephrased as a statement that locally one cannot distinguish between the particle trajectory in curved spacetime and a straight line in flat spacetime. In other words, the particle trajectory in curved spacetime is a geodesic trajectory.\nTesting the weak EP amounts to verifying that free point-particles follow geodesic trajectories in curved spacetime. The most modern tests have been conducted by the LISA Pathfinder satellite experiment.\nThe validity of the weak EP is based on the notion of a point-particle, which is a theoretical idealization. In nature, every particle has a size, and if an experiment is precise enough to measure this size, it will also in principle be able to measure the violation of weak EP. Alternatively, one can say that experiments, precise enough to measure the nonzero size of what is otherwise a point-particle, are outside the scope of validity of weak EP.",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Weak Equivalence Principle"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/Weak_equivalence_principle.html#authors",
+    "href": "1st-level-topics/2nd-level-topics/Weak_equivalence_principle.html#authors",
+    "title": "Weak Equivalence Principle",
+    "section": "List of Authors",
+    "text": "List of Authors\n\n\nAuthor 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Weak Equivalence Principle"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/Precision_measurements_of_short-range_gravity.html",
+    "href": "1st-level-topics/2nd-level-topics/Precision_measurements_of_short-range_gravity.html",
+    "title": "Precision Measurements of Short-range Gravity",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Precision Measurements of Short-range Gravity"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/Precision_measurements_of_short-range_gravity.html#authors",
+    "href": "1st-level-topics/2nd-level-topics/Precision_measurements_of_short-range_gravity.html#authors",
+    "title": "Precision Measurements of Short-range Gravity",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Precision Measurements of Short-range Gravity"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/Pauli_violation.html",
+    "href": "1st-level-topics/2nd-level-topics/Pauli_violation.html",
+    "title": "Pauli Exclusion Principle violations",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Pauli Exclusion Principle violations"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/Pauli_violation.html#authors",
+    "href": "1st-level-topics/2nd-level-topics/Pauli_violation.html#authors",
+    "title": "Pauli Exclusion Principle violations",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Pauli Exclusion Principle violations"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/Hopf_algebra.html",
+    "href": "1st-level-topics/2nd-level-topics/Hopf_algebra.html",
+    "title": "Quantum groups and Hopf algebras",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Quantum groups and Hopf algebras"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/Hopf_algebra.html#authors",
+    "href": "1st-level-topics/2nd-level-topics/Hopf_algebra.html#authors",
+    "title": "Quantum groups and Hopf algebras",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Quantum groups and Hopf algebras"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/BMS_algebra.html",
+    "href": "1st-level-topics/2nd-level-topics/BMS_algebra.html",
+    "title": "BMS Algebra and Asymptotically Flat Spacetimes",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "BMS Algebra and Asymptotically Flat Spacetimes"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/BMS_algebra.html#authors",
+    "href": "1st-level-topics/2nd-level-topics/BMS_algebra.html#authors",
+    "title": "BMS Algebra and Asymptotically Flat Spacetimes",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "BMS Algebra and Asymptotically Flat Spacetimes"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/Standard_model_extensions.html",
+    "href": "1st-level-topics/2nd-level-topics/Standard_model_extensions.html",
+    "title": "Standard Model Extensions",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Standard Model Extensions"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/Standard_model_extensions.html#authors",
+    "href": "1st-level-topics/2nd-level-topics/Standard_model_extensions.html#authors",
+    "title": "Standard Model Extensions",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Standard Model Extensions"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/Noncommutative_geometry_and_black_holes.html",
+    "href": "1st-level-topics/2nd-level-topics/Noncommutative_geometry_and_black_holes.html",
+    "title": "Noncommutative Geometry and Black Holes",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Noncommutative Geometry and Black Holes"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/Noncommutative_geometry_and_black_holes.html#authors",
+    "href": "1st-level-topics/2nd-level-topics/Noncommutative_geometry_and_black_holes.html#authors",
+    "title": "Noncommutative Geometry and Black Holes",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Noncommutative Geometry and Black Holes"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/LIV_FLRW.html",
+    "href": "1st-level-topics/2nd-level-topics/LIV_FLRW.html",
+    "title": "LIV in expanding spacetimes",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "LIV in expanding spacetimes"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/LIV_FLRW.html#authors",
+    "href": "1st-level-topics/2nd-level-topics/LIV_FLRW.html#authors",
+    "title": "LIV in expanding spacetimes",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "LIV in expanding spacetimes"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/Effective_field_theory_of_gravity.html",
+    "href": "1st-level-topics/2nd-level-topics/Effective_field_theory_of_gravity.html",
+    "title": "Effective Field Theory of Gravity",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Effective Field Theory of Gravity"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/Effective_field_theory_of_gravity.html#authors",
+    "href": "1st-level-topics/2nd-level-topics/Effective_field_theory_of_gravity.html#authors",
+    "title": "Effective Field Theory of Gravity",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Effective Field Theory of Gravity"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/Soft_hair_and_gravitational_memory.html",
+    "href": "1st-level-topics/2nd-level-topics/Soft_hair_and_gravitational_memory.html",
+    "title": "Soft Hair and Gravitational Memory",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Soft Hair and Gravitational Memory"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/Soft_hair_and_gravitational_memory.html#authors",
+    "href": "1st-level-topics/2nd-level-topics/Soft_hair_and_gravitational_memory.html#authors",
+    "title": "Soft Hair and Gravitational Memory",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Soft Hair and Gravitational Memory"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/COW_experiment.html",
+    "href": "1st-level-topics/2nd-level-topics/COW_experiment.html",
+    "title": "COW experiment and gravitational phase shifts",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "COW experiment and gravitational phase shifts"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/COW_experiment.html#authors",
+    "href": "1st-level-topics/2nd-level-topics/COW_experiment.html#authors",
+    "title": "COW experiment and gravitational phase shifts",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "COW experiment and gravitational phase shifts"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/Strong_equivalence_principle.html",
+    "href": "1st-level-topics/2nd-level-topics/Strong_equivalence_principle.html",
+    "title": "Strong Equivalence Principle",
+    "section": "",
+    "text": "Minimal coupling between matter fields and gravity. Both matter and gravity are described as fields over the spacetime manifold. The equations of motion are implicit, but assumed to be local. EP is rephrased as a restriction that matter does not couple directly to spacetime curvature, but only to the metric and connection, in the equations of motion for matter fields. An analogous notion of minimal coupling prescription is also used in the construction of the weak, strong and electromagnetic interactions in the Standard Model of elementary particle physics.\nTesting of the strong EP amounts to studying the behavior of astrophysical systems in the strong gravity regime, such as the accretion disc around a black hole, dynamics of a neutron star orbiting a black hole, curvature dependence of the dispersion relations for electromagnetic waves, and similar. Experiments and observations are usually indirect, since it is rather hard to study the matter field equations directly in the strong curvature background.\nThe telltale sign for a violation of the strong EP would be a curvature-dependent term in the equations of motion for matter fields. So far there are no experimental indications that would suggest any violation of the strong EP.",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Strong Equivalence Principle"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/Strong_equivalence_principle.html#authors",
+    "href": "1st-level-topics/2nd-level-topics/Strong_equivalence_principle.html#authors",
+    "title": "Strong Equivalence Principle",
+    "section": "List of Authors",
+    "text": "List of Authors\n\n\nAuthor 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Strong Equivalence Principle"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/Optomechanical_systems.html",
+    "href": "1st-level-topics/2nd-level-topics/Optomechanical_systems.html",
+    "title": "Quantum Optomechanical Systems",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Quantum Optomechanical Systems"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/Optomechanical_systems.html#authors",
+    "href": "1st-level-topics/2nd-level-topics/Optomechanical_systems.html#authors",
+    "title": "Quantum Optomechanical Systems",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Quantum Optomechanical Systems"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/Discrete_QG.html",
+    "href": "1st-level-topics/2nd-level-topics/Discrete_QG.html",
+    "title": "Discrete, Canonical and Covariant Quantum Gravity",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Discrete, Canonical and Covariant Quantum Gravity"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/Discrete_QG.html#authors",
+    "href": "1st-level-topics/2nd-level-topics/Discrete_QG.html#authors",
+    "title": "Discrete, Canonical and Covariant Quantum Gravity",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Discrete, Canonical and Covariant Quantum Gravity"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/Particle_processes_in_astrophysical_sources.html",
+    "href": "1st-level-topics/2nd-level-topics/Particle_processes_in_astrophysical_sources.html",
+    "title": "Particle Processes in Astrophysical Sources",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Particle Processes in Astrophysical Sources"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/Particle_processes_in_astrophysical_sources.html#authors",
+    "href": "1st-level-topics/2nd-level-topics/Particle_processes_in_astrophysical_sources.html#authors",
+    "title": "Particle Processes in Astrophysical Sources",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Particle Processes in Astrophysical Sources"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/Hawking_radiation.html",
+    "href": "1st-level-topics/2nd-level-topics/Hawking_radiation.html",
+    "title": "Hawking Radiation",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Hawking Radiation"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/Hawking_radiation.html#authors",
+    "href": "1st-level-topics/2nd-level-topics/Hawking_radiation.html#authors",
+    "title": "Hawking Radiation",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Hawking Radiation"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/Quantum_cosmology.html",
+    "href": "1st-level-topics/2nd-level-topics/Quantum_cosmology.html",
+    "title": "Quantum Cosmology",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Quantum Cosmology"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/Quantum_cosmology.html#authors",
+    "href": "1st-level-topics/2nd-level-topics/Quantum_cosmology.html#authors",
+    "title": "Quantum Cosmology",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Quantum Cosmology"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/Modified_Schroedinger_equation.html",
+    "href": "1st-level-topics/2nd-level-topics/Modified_Schroedinger_equation.html",
+    "title": "Modified Schroedinger Equation",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Modified Schroedinger Equation"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/Modified_Schroedinger_equation.html#authors",
+    "href": "1st-level-topics/2nd-level-topics/Modified_Schroedinger_equation.html#authors",
+    "title": "Modified Schroedinger Equation",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Modified Schroedinger Equation"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/Global_symmetries_in_holography.html",
+    "href": "1st-level-topics/2nd-level-topics/Global_symmetries_in_holography.html",
+    "title": "Global Symmetries in Holography",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Global Symmetries in Holography"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/Global_symmetries_in_holography.html#authors",
+    "href": "1st-level-topics/2nd-level-topics/Global_symmetries_in_holography.html#authors",
+    "title": "Global Symmetries in Holography",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Global Symmetries in Holography"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/QMfoundations.html",
+    "href": "1st-level-topics/2nd-level-topics/QMfoundations.html",
+    "title": "Fundamental principles of Quantum Mechanics that are amenable to testing",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Fundamental principles of Quantum Mechanics that are amenable to testing"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/QMfoundations.html#authors",
+    "href": "1st-level-topics/2nd-level-topics/QMfoundations.html#authors",
+    "title": "Fundamental principles of Quantum Mechanics that are amenable to testing",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Fundamental principles of Quantum Mechanics that are amenable to testing"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/Gravitationally-induced_decoherence.html",
+    "href": "1st-level-topics/2nd-level-topics/Gravitationally-induced_decoherence.html",
+    "title": "Gravitationally-induced Decoherence",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Gravitationally-induced Decoherence"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/Gravitationally-induced_decoherence.html#authors",
+    "href": "1st-level-topics/2nd-level-topics/Gravitationally-induced_decoherence.html#authors",
+    "title": "Gravitationally-induced Decoherence",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Gravitationally-induced Decoherence"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/DSR.html",
+    "href": "1st-level-topics/2nd-level-topics/DSR.html",
+    "title": "Doubly (or Deformed) Special Relativity (DSR)",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Doubly (or Deformed) Special Relativity (DSR)"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/DSR.html#authors",
+    "href": "1st-level-topics/2nd-level-topics/DSR.html#authors",
+    "title": "Doubly (or Deformed) Special Relativity (DSR)",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Doubly (or Deformed) Special Relativity (DSR)"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/Greybody_factors.html",
+    "href": "1st-level-topics/2nd-level-topics/Greybody_factors.html",
+    "title": "Greybody Factors",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Greybody Factors"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/Greybody_factors.html#authors",
+    "href": "1st-level-topics/2nd-level-topics/Greybody_factors.html#authors",
+    "title": "Greybody Factors",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Greybody Factors"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/Phases_of_geometry_and_phase_diagrams_of_quantum_gravity_theories.html",
+    "href": "1st-level-topics/2nd-level-topics/Phases_of_geometry_and_phase_diagrams_of_quantum_gravity_theories.html",
+    "title": "Phases of Geometry and Phase Diagrams of Quantum Gravity Theories",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Phases of Geometry and Phase Diagrams of Quantum Gravity Theories"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/Phases_of_geometry_and_phase_diagrams_of_quantum_gravity_theories.html#authors",
+    "href": "1st-level-topics/2nd-level-topics/Phases_of_geometry_and_phase_diagrams_of_quantum_gravity_theories.html#authors",
+    "title": "Phases of Geometry and Phase Diagrams of Quantum Gravity Theories",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Phases of Geometry and Phase Diagrams of Quantum Gravity Theories"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/Black_hole_information_loss_problem.html",
+    "href": "1st-level-topics/2nd-level-topics/Black_hole_information_loss_problem.html",
+    "title": "Black Hole Information-Loss Problem",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Black Hole Information-Loss Problem"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/Black_hole_information_loss_problem.html#authors",
+    "href": "1st-level-topics/2nd-level-topics/Black_hole_information_loss_problem.html#authors",
+    "title": "Black Hole Information-Loss Problem",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Black Hole Information-Loss Problem"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/Global_spacetime_symmetries_and_isometries.html",
+    "href": "1st-level-topics/2nd-level-topics/Global_spacetime_symmetries_and_isometries.html",
+    "title": "Global Spacetime Symmetries and Isometries",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Global Spacetime Symmetries and Isometries"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/Global_spacetime_symmetries_and_isometries.html#authors",
+    "href": "1st-level-topics/2nd-level-topics/Global_spacetime_symmetries_and_isometries.html#authors",
+    "title": "Global Spacetime Symmetries and Isometries",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Global Spacetime Symmetries and Isometries"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/Locality.html",
+    "href": "1st-level-topics/2nd-level-topics/Locality.html",
+    "title": "The Problem of Locality",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "The Problem of Locality"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/Locality.html#authors",
+    "href": "1st-level-topics/2nd-level-topics/Locality.html#authors",
+    "title": "The Problem of Locality",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "The Problem of Locality"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/Galilean_equivalence_principle.html",
+    "href": "1st-level-topics/2nd-level-topics/Galilean_equivalence_principle.html",
+    "title": "Galilean Equivalence Principle",
+    "section": "",
+    "text": "Universality of free fall. Matter is described by point particles, equations of motion are implicit and qualitative, as is the description of gravity. EP is rephrased as a comparison of the motion between different types of particles, given the same gravitational background.\nGalilean EP can be tested by comparing the free-fall trajectories of particles made of different materials, and otherwise having different internal properties. The most modern tests have been conducted by the MICROSCOPE satellite experiment.\nThis version of EP is known to be violated by a particle with high enough angular momentum, which couples directly to spacetime curvature (Papapetrou equation [Papa51]). In contrast, a particle with negligible angular momentum does not feature this coupling (geodesic equation). Thus the two particles travel along different trajectories in curved spacetime. Alternatively, one can say that particles with high angular momentum and similar properties lie outside the scope of validity of Galilean EP.",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Galilean Equivalence Principle"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/Galilean_equivalence_principle.html#authors",
+    "href": "1st-level-topics/2nd-level-topics/Galilean_equivalence_principle.html#authors",
+    "title": "Galilean Equivalence Principle",
+    "section": "List of Authors",
+    "text": "List of Authors\n\n\nAuthor 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Galilean Equivalence Principle"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/Astrophysical_detection_techniques.html",
+    "href": "1st-level-topics/2nd-level-topics/Astrophysical_detection_techniques.html",
+    "title": "Astrophysical Detection Techniques",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Astrophysical Detection Techniques"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/Astrophysical_detection_techniques.html#authors",
+    "href": "1st-level-topics/2nd-level-topics/Astrophysical_detection_techniques.html#authors",
+    "title": "Astrophysical Detection Techniques",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Astrophysical Detection Techniques"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/Astrophysical_sources.html",
+    "href": "1st-level-topics/2nd-level-topics/Astrophysical_sources.html",
+    "title": "Astrophysical Sources",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Astrophysical Sources"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/Astrophysical_sources.html#authors",
+    "href": "1st-level-topics/2nd-level-topics/Astrophysical_sources.html#authors",
+    "title": "Astrophysical Sources",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Astrophysical Sources"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/Matter_interferometry.html",
+    "href": "1st-level-topics/2nd-level-topics/Matter_interferometry.html",
+    "title": "Matter-wave and Neutron Interferometry",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Matter-wave and Neutron Interferometry"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/Matter_interferometry.html#authors",
+    "href": "1st-level-topics/2nd-level-topics/Matter_interferometry.html#authors",
+    "title": "Matter-wave and Neutron Interferometry",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Matter-wave and Neutron Interferometry"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/GUP.html",
+    "href": "1st-level-topics/2nd-level-topics/GUP.html",
+    "title": "Generalized Uncertainty Principle",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Generalized Uncertainty Principle"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/GUP.html#authors",
+    "href": "1st-level-topics/2nd-level-topics/GUP.html#authors",
+    "title": "Generalized Uncertainty Principle",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Generalized Uncertainty Principle"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/Covariant_surface_charges.html",
+    "href": "1st-level-topics/2nd-level-topics/Covariant_surface_charges.html",
+    "title": "Covariant Surface Charges and Boundary Terms",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Covariant Surface Charges and Boundary Terms"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/Covariant_surface_charges.html#authors",
+    "href": "1st-level-topics/2nd-level-topics/Covariant_surface_charges.html#authors",
+    "title": "Covariant Surface Charges and Boundary Terms",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Covariant Surface Charges and Boundary Terms"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/Time_delay.html",
+    "href": "1st-level-topics/2nd-level-topics/Time_delay.html",
+    "title": "Quantum Gravity Induced Time Delays",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Quantum Gravity Induced Time Delays"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/Time_delay.html#authors",
+    "href": "1st-level-topics/2nd-level-topics/Time_delay.html#authors",
+    "title": "Quantum Gravity Induced Time Delays",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Quantum Gravity Induced Time Delays"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/Nonlocalities.html",
+    "href": "1st-level-topics/2nd-level-topics/Nonlocalities.html",
+    "title": "Nonlocalities",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Nonlocalities"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/Nonlocalities.html#authors",
+    "href": "1st-level-topics/2nd-level-topics/Nonlocalities.html#authors",
+    "title": "Nonlocalities",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Nonlocalities"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/Relative_locality.html",
+    "href": "1st-level-topics/2nd-level-topics/Relative_locality.html",
+    "title": "Relative Locality",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Relative Locality"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/Relative_locality.html#authors",
+    "href": "1st-level-topics/2nd-level-topics/Relative_locality.html#authors",
+    "title": "Relative Locality",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Relative Locality"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/Quantum_causality.html",
+    "href": "1st-level-topics/2nd-level-topics/Quantum_causality.html",
+    "title": "Quantum Causality",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Quantum Causality"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/Quantum_causality.html#authors",
+    "href": "1st-level-topics/2nd-level-topics/Quantum_causality.html#authors",
+    "title": "Quantum Causality",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Quantum Causality"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/Singularity_resolution.html",
+    "href": "1st-level-topics/2nd-level-topics/Singularity_resolution.html",
+    "title": "Singularity Resolution",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Singularity Resolution"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/Singularity_resolution.html#authors",
+    "href": "1st-level-topics/2nd-level-topics/Singularity_resolution.html#authors",
+    "title": "Singularity Resolution",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Singularity Resolution"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/Gravity_as_thermodynamics_hydrodynamics.html",
+    "href": "1st-level-topics/2nd-level-topics/Gravity_as_thermodynamics_hydrodynamics.html",
+    "title": "Gravity as Thermodynamics/Hydrodynamics",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Gravity as Thermodynamics/Hydrodynamics"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/Gravity_as_thermodynamics_hydrodynamics.html#authors",
+    "href": "1st-level-topics/2nd-level-topics/Gravity_as_thermodynamics_hydrodynamics.html#authors",
+    "title": "Gravity as Thermodynamics/Hydrodynamics",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Gravity as Thermodynamics/Hydrodynamics"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/Modified_dispersion_relations.html",
+    "href": "1st-level-topics/2nd-level-topics/Modified_dispersion_relations.html",
+    "title": "Modified Dispersion Relations",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Modified Dispersion Relations"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/Modified_dispersion_relations.html#authors",
+    "href": "1st-level-topics/2nd-level-topics/Modified_dispersion_relations.html#authors",
+    "title": "Modified Dispersion Relations",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Modified Dispersion Relations"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/Noncommutative_QFT.html",
+    "href": "1st-level-topics/2nd-level-topics/Noncommutative_QFT.html",
+    "title": "Noncommutative quantum field theories",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Noncommutative quantum field theories"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/Noncommutative_QFT.html#authors",
+    "href": "1st-level-topics/2nd-level-topics/Noncommutative_QFT.html#authors",
+    "title": "Noncommutative quantum field theories",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Noncommutative quantum field theories"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/Nonlocal_fractional_dynamics.html",
+    "href": "1st-level-topics/2nd-level-topics/Nonlocal_fractional_dynamics.html",
+    "title": "Nonlocal and Fractional Non-Markovian Dynamics",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Nonlocal and Fractional Non-Markovian Dynamics"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/Nonlocal_fractional_dynamics.html#authors",
+    "href": "1st-level-topics/2nd-level-topics/Nonlocal_fractional_dynamics.html#authors",
+    "title": "Nonlocal and Fractional Non-Markovian Dynamics",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Nonlocal and Fractional Non-Markovian Dynamics"
     ]
   },
   {
@@ -260,6 +1268,1062 @@
       "Topics",
       "First level topics",
       "In-vacuo dispersion"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/Vacuum_birefringence.html",
+    "href": "1st-level-topics/2nd-level-topics/Vacuum_birefringence.html",
+    "title": "Vacuum Birefringence",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Vacuum Birefringence"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/Vacuum_birefringence.html#authors",
+    "href": "1st-level-topics/2nd-level-topics/Vacuum_birefringence.html#authors",
+    "title": "Vacuum Birefringence",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Vacuum Birefringence"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/Renormalizability.html",
+    "href": "1st-level-topics/2nd-level-topics/Renormalizability.html",
+    "title": "Renormalizability",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Renormalizability"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/Renormalizability.html#authors",
+    "href": "1st-level-topics/2nd-level-topics/Renormalizability.html#authors",
+    "title": "Renormalizability",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Renormalizability"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/Gravity-mediated_entanglement.html",
+    "href": "1st-level-topics/2nd-level-topics/Gravity-mediated_entanglement.html",
+    "title": "Gravity-mediated Entanglement",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Gravity-mediated Entanglement"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/Gravity-mediated_entanglement.html#authors",
+    "href": "1st-level-topics/2nd-level-topics/Gravity-mediated_entanglement.html#authors",
+    "title": "Gravity-mediated Entanglement",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Gravity-mediated Entanglement"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/Matrix_models.html",
+    "href": "1st-level-topics/2nd-level-topics/Matrix_models.html",
+    "title": "Matrix Models",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Matrix Models"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/Matrix_models.html#authors",
+    "href": "1st-level-topics/2nd-level-topics/Matrix_models.html#authors",
+    "title": "Matrix Models",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Matrix Models"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/Multimessenger_astrophysics.html",
+    "href": "1st-level-topics/2nd-level-topics/Multimessenger_astrophysics.html",
+    "title": "Multimessenger Astrophysics",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Multimessenger Astrophysics"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/Multimessenger_astrophysics.html#authors",
+    "href": "1st-level-topics/2nd-level-topics/Multimessenger_astrophysics.html#authors",
+    "title": "Multimessenger Astrophysics",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Multimessenger Astrophysics"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/Asymptotic_symmetries_in_AdS_and_dS.html",
+    "href": "1st-level-topics/2nd-level-topics/Asymptotic_symmetries_in_AdS_and_dS.html",
+    "title": "Asymptotic Symmetries in AdS and dS",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Asymptotic Symmetries in AdS and dS"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/Asymptotic_symmetries_in_AdS_and_dS.html#authors",
+    "href": "1st-level-topics/2nd-level-topics/Asymptotic_symmetries_in_AdS_and_dS.html#authors",
+    "title": "Asymptotic Symmetries in AdS and dS",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Asymptotic Symmetries in AdS and dS"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/Curved_momentum_space.html",
+    "href": "1st-level-topics/2nd-level-topics/Curved_momentum_space.html",
+    "title": "Curved Momentum Space",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Curved Momentum Space"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/Curved_momentum_space.html#authors",
+    "href": "1st-level-topics/2nd-level-topics/Curved_momentum_space.html#authors",
+    "title": "Curved Momentum Space",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Curved Momentum Space"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/Asymptotic_safety.html",
+    "href": "1st-level-topics/2nd-level-topics/Asymptotic_safety.html",
+    "title": "Asymptotic Safety",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Asymptotic Safety"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/Asymptotic_safety.html#authors",
+    "href": "1st-level-topics/2nd-level-topics/Asymptotic_safety.html#authors",
+    "title": "Asymptotic Safety",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Asymptotic Safety"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/Quantum_superposition_of_geometries.html",
+    "href": "1st-level-topics/2nd-level-topics/Quantum_superposition_of_geometries.html",
+    "title": "Quantum Superposition of Geometries",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Quantum Superposition of Geometries"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/Quantum_superposition_of_geometries.html#authors",
+    "href": "1st-level-topics/2nd-level-topics/Quantum_superposition_of_geometries.html#authors",
+    "title": "Quantum Superposition of Geometries",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Quantum Superposition of Geometries"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/Newtonian_equivalence_principle.html",
+    "href": "1st-level-topics/2nd-level-topics/Newtonian_equivalence_principle.html",
+    "title": "Newtonian Equivalence Principle",
+    "section": "",
+    "text": "Equality of gravitational and inertial mass. Matter is described by point particles, equations of motion are Newton’s laws, while gravity is described by Newton’s law of universal gravity. EP is rephrased as a constraint between the mass parameter featuring in Newton’s second law of motion and the mass parameter featuring in Newton’s law of universal gravity.\nThe equality of the two masses can be tested by a torsion balance, sensitive to the equilibrium between the gravitational force (featuring the gravitational mass) and the centrifugal force (featuring the inertial mass). The most modern tests have been conducted by the Eöt-Wash group.\nPhotons are known to violate Newtonian EP, since they have zero inertial mass, while their trajectory is nevertheless being bent by the gravitational field of the Sun. Alternatively, one can say that massless particles lie outside the scope of validity of Newtonian mechanics, and consequently Newtonian EP as well.",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Newtonian Equivalence Principle"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/Newtonian_equivalence_principle.html#authors",
+    "href": "1st-level-topics/2nd-level-topics/Newtonian_equivalence_principle.html#authors",
+    "title": "Newtonian Equivalence Principle",
+    "section": "List of Authors",
+    "text": "List of Authors\n\n\nAuthor 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Newtonian Equivalence Principle"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/Quantum_spacetime.html",
+    "href": "1st-level-topics/2nd-level-topics/Quantum_spacetime.html",
+    "title": "Quantum Spacetime",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Quantum Spacetime"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/Quantum_spacetime.html#authors",
+    "href": "1st-level-topics/2nd-level-topics/Quantum_spacetime.html#authors",
+    "title": "Quantum Spacetime",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Quantum Spacetime"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/Black_hole_thermodynamics_corrections.html",
+    "href": "1st-level-topics/2nd-level-topics/Black_hole_thermodynamics_corrections.html",
+    "title": "Corrections to Black Hole Thermodynamics",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Corrections to Black Hole Thermodynamics"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/Black_hole_thermodynamics_corrections.html#authors",
+    "href": "1st-level-topics/2nd-level-topics/Black_hole_thermodynamics_corrections.html#authors",
+    "title": "Corrections to Black Hole Thermodynamics",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Corrections to Black Hole Thermodynamics"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/Magnometry.html",
+    "href": "1st-level-topics/2nd-level-topics/Magnometry.html",
+    "title": "Ultra-sensitive Magnetometry",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Ultra-sensitive Magnetometry"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/Magnometry.html#authors",
+    "href": "1st-level-topics/2nd-level-topics/Magnometry.html#authors",
+    "title": "Ultra-sensitive Magnetometry",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Ultra-sensitive Magnetometry"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/String_theory.html",
+    "href": "1st-level-topics/2nd-level-topics/String_theory.html",
+    "title": "String theory",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "String theory"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/String_theory.html#authors",
+    "href": "1st-level-topics/2nd-level-topics/String_theory.html#authors",
+    "title": "String theory",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "String theory"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/Black_hole_shadows_and_photon_spheres.html",
+    "href": "1st-level-topics/2nd-level-topics/Black_hole_shadows_and_photon_spheres.html",
+    "title": "Black Hole Shadows and Photon Spheres",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Black Hole Shadows and Photon Spheres"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/Black_hole_shadows_and_photon_spheres.html#authors",
+    "href": "1st-level-topics/2nd-level-topics/Black_hole_shadows_and_photon_spheres.html#authors",
+    "title": "Black Hole Shadows and Photon Spheres",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Black Hole Shadows and Photon Spheres"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/Entanglement_entropy_and_area_law.html",
+    "href": "1st-level-topics/2nd-level-topics/Entanglement_entropy_and_area_law.html",
+    "title": "Entanglement Entropy and the Area Law",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Entanglement Entropy and the Area Law"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/Entanglement_entropy_and_area_law.html#authors",
+    "href": "1st-level-topics/2nd-level-topics/Entanglement_entropy_and_area_law.html#authors",
+    "title": "Entanglement Entropy and the Area Law",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Entanglement Entropy and the Area Law"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/Algebraic_QFT.html",
+    "href": "1st-level-topics/2nd-level-topics/Algebraic_QFT.html",
+    "title": "Algebraic Quantum Field Theory: relevant aspects for QG",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Algebraic Quantum Field Theory: relevant aspects for QG"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/Algebraic_QFT.html#authors",
+    "href": "1st-level-topics/2nd-level-topics/Algebraic_QFT.html#authors",
+    "title": "Algebraic Quantum Field Theory: relevant aspects for QG",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Algebraic Quantum Field Theory: relevant aspects for QG"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/Threshold_anomalies.html",
+    "href": "1st-level-topics/2nd-level-topics/Threshold_anomalies.html",
+    "title": "Threshold Anomalies",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Threshold Anomalies"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/Threshold_anomalies.html#authors",
+    "href": "1st-level-topics/2nd-level-topics/Threshold_anomalies.html#authors",
+    "title": "Threshold Anomalies",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Threshold Anomalies"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/Quantum_superposition_of_massive_objects.html",
+    "href": "1st-level-topics/2nd-level-topics/Quantum_superposition_of_massive_objects.html",
+    "title": "Quantum Superposition of Massive Objects",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Quantum Superposition of Massive Objects"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/Quantum_superposition_of_massive_objects.html#authors",
+    "href": "1st-level-topics/2nd-level-topics/Quantum_superposition_of_massive_objects.html#authors",
+    "title": "Quantum Superposition of Massive Objects",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Quantum Superposition of Massive Objects"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/Subsystems_relativity.html",
+    "href": "1st-level-topics/2nd-level-topics/Subsystems_relativity.html",
+    "title": "Subsystem Relativity: the Paradox of the Third Particle",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Subsystem Relativity: the Paradox of the Third Particle"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/Subsystems_relativity.html#authors",
+    "href": "1st-level-topics/2nd-level-topics/Subsystems_relativity.html#authors",
+    "title": "Subsystem Relativity: the Paradox of the Third Particle",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Subsystem Relativity: the Paradox of the Third Particle"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/Quantum_tests_of_the_equivalence_principle.html",
+    "href": "1st-level-topics/2nd-level-topics/Quantum_tests_of_the_equivalence_principle.html",
+    "title": "Quantum Tests of the Equivalence Principle",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Quantum Tests of the Equivalence Principle"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/Quantum_tests_of_the_equivalence_principle.html#authors",
+    "href": "1st-level-topics/2nd-level-topics/Quantum_tests_of_the_equivalence_principle.html#authors",
+    "title": "Quantum Tests of the Equivalence Principle",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Quantum Tests of the Equivalence Principle"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/Symmetries_in_string_theory.html",
+    "href": "1st-level-topics/2nd-level-topics/Symmetries_in_string_theory.html",
+    "title": "Symmetries in String Theory",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Symmetries in String Theory"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/Symmetries_in_string_theory.html#authors",
+    "href": "1st-level-topics/2nd-level-topics/Symmetries_in_string_theory.html#authors",
+    "title": "Symmetries in String Theory",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Symmetries in String Theory"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/DSR_FLRW.html",
+    "href": "1st-level-topics/2nd-level-topics/DSR_FLRW.html",
+    "title": "DSR in expanding spacetimes",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "DSR in expanding spacetimes"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/DSR_FLRW.html#authors",
+    "href": "1st-level-topics/2nd-level-topics/DSR_FLRW.html#authors",
+    "title": "DSR in expanding spacetimes",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "DSR in expanding spacetimes"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/Holography.html",
+    "href": "1st-level-topics/2nd-level-topics/Holography.html",
+    "title": "Holographic Principle",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Holographic Principle"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/Holography.html#authors",
+    "href": "1st-level-topics/2nd-level-topics/Holography.html#authors",
+    "title": "Holographic Principle",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Holographic Principle"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/Quasinormal_modes_and_ringdown.html",
+    "href": "1st-level-topics/2nd-level-topics/Quasinormal_modes_and_ringdown.html",
+    "title": "Quasinormal Modes, Ringdown and Echoes",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Quasinormal Modes, Ringdown and Echoes"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/Quasinormal_modes_and_ringdown.html#authors",
+    "href": "1st-level-topics/2nd-level-topics/Quasinormal_modes_and_ringdown.html#authors",
+    "title": "Quasinormal Modes, Ringdown and Echoes",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Quasinormal Modes, Ringdown and Echoes"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/Discrete_symmetries.html",
+    "href": "1st-level-topics/2nd-level-topics/Discrete_symmetries.html",
+    "title": "Discrete Symmetries Violation and Deformation motivated by Quantum Gravity",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Discrete Symmetries Violation and Deformation motivated by Quantum Gravity"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/Discrete_symmetries.html#authors",
+    "href": "1st-level-topics/2nd-level-topics/Discrete_symmetries.html#authors",
+    "title": "Discrete Symmetries Violation and Deformation motivated by Quantum Gravity",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Discrete Symmetries Violation and Deformation motivated by Quantum Gravity"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/QRF_transformations.html",
+    "href": "1st-level-topics/2nd-level-topics/QRF_transformations.html",
+    "title": "Quantum Reference Frame Transformations",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Quantum Reference Frame Transformations"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/QRF_transformations.html#authors",
+    "href": "1st-level-topics/2nd-level-topics/QRF_transformations.html#authors",
+    "title": "Quantum Reference Frame Transformations",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Quantum Reference Frame Transformations"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/Problem_of_time.html",
+    "href": "1st-level-topics/2nd-level-topics/Problem_of_time.html",
+    "title": "Problem of Time",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Problem of Time"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/Problem_of_time.html#authors",
+    "href": "1st-level-topics/2nd-level-topics/Problem_of_time.html#authors",
+    "title": "Problem of Time",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Problem of Time"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/Constraint_quantization.html",
+    "href": "1st-level-topics/2nd-level-topics/Constraint_quantization.html",
+    "title": "Constraint Quantization in Gravity",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Constraint Quantization in Gravity"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/Constraint_quantization.html#authors",
+    "href": "1st-level-topics/2nd-level-topics/Constraint_quantization.html#authors",
+    "title": "Constraint Quantization in Gravity",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Constraint Quantization in Gravity"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/QRF_approaches.html",
+    "href": "1st-level-topics/2nd-level-topics/QRF_approaches.html",
+    "title": "Perspectival and Operational Approaches to QRFs",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Perspectival and Operational Approaches to QRFs"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/QRF_approaches.html#authors",
+    "href": "1st-level-topics/2nd-level-topics/QRF_approaches.html#authors",
+    "title": "Perspectival and Operational Approaches to QRFs",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Perspectival and Operational Approaches to QRFs"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/Collapse_models.html",
+    "href": "1st-level-topics/2nd-level-topics/Collapse_models.html",
+    "title": "Collapse Models",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Collapse Models"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/Collapse_models.html#authors",
+    "href": "1st-level-topics/2nd-level-topics/Collapse_models.html#authors",
+    "title": "Collapse Models",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Collapse Models"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/Einstein_equivalence_principle.html",
+    "href": "1st-level-topics/2nd-level-topics/Einstein_equivalence_principle.html",
+    "title": "Einstein’s Equivalence Principle",
+    "section": "",
+    "text": "Local equivalence between inertia and gravity. Matter is described mostly by point particles, equations of motion are implicit, and gravity is described as a field, uniform across a “local laboratory”. EP is rephrased as the local indistinguishability between inertial and gravitational forces. This version of EP is famous for featuring in Einstein’s “falling elevator” gedanken-experiments.\nEinstein’s EP can be tested by measuring the magnitude of the gravitational field in a freely-falling environment, such as the microgravity conditions at the International Space Station.\nEinstein’s EP can be assumed to hold as long as the gravitational field can be considered uniform across the spacetime region defining the “local laboratory” environment. However, this is never strictly true for any laboratory of finite size, and Einstein’s EP is violated by any experiment sensitive to the existing gravitational gradients across the size of the laboratory. Alternatively, one can say that experiments that are too sensitive for a given laboratory are outside the scope of validity of Einstein’s EP.",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Einstein's Equivalence Principle"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/Einstein_equivalence_principle.html#authors",
+    "href": "1st-level-topics/2nd-level-topics/Einstein_equivalence_principle.html#authors",
+    "title": "Einstein’s Equivalence Principle",
+    "section": "List of Authors",
+    "text": "List of Authors\n\n\nAuthor 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Einstein's Equivalence Principle"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/Magnetic_fields_in_astrophysical_sources.html",
+    "href": "1st-level-topics/2nd-level-topics/Magnetic_fields_in_astrophysical_sources.html",
+    "title": "Magnetic Fields in Astrophysical Sources",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Magnetic Fields in Astrophysical Sources"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/Magnetic_fields_in_astrophysical_sources.html#authors",
+    "href": "1st-level-topics/2nd-level-topics/Magnetic_fields_in_astrophysical_sources.html#authors",
+    "title": "Magnetic Fields in Astrophysical Sources",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Magnetic Fields in Astrophysical Sources"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/Time_dilation-induced_dephasing.html",
+    "href": "1st-level-topics/2nd-level-topics/Time_dilation-induced_dephasing.html",
+    "title": "Time Dilation-induced Dephasing",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Time Dilation-induced Dephasing"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/Time_dilation-induced_dephasing.html#authors",
+    "href": "1st-level-topics/2nd-level-topics/Time_dilation-induced_dephasing.html#authors",
+    "title": "Time Dilation-induced Dephasing",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Time Dilation-induced Dephasing"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/Modified_gravity.html",
+    "href": "1st-level-topics/2nd-level-topics/Modified_gravity.html",
+    "title": "Modified Gravity theories that emerge from QG models",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Modified Gravity theories that emerge from QG models"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/Modified_gravity.html#authors",
+    "href": "1st-level-topics/2nd-level-topics/Modified_gravity.html#authors",
+    "title": "Modified Gravity theories that emerge from QG models",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Modified Gravity theories that emerge from QG models"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/LQG_effective_metrics.html",
+    "href": "1st-level-topics/2nd-level-topics/LQG_effective_metrics.html",
+    "title": "Loop Quantum Gravity Dressed-metric and Rainbow Models of Black Holes",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Loop Quantum Gravity Dressed-metric and Rainbow Models of Black Holes"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/LQG_effective_metrics.html#authors",
+    "href": "1st-level-topics/2nd-level-topics/LQG_effective_metrics.html#authors",
+    "title": "Loop Quantum Gravity Dressed-metric and Rainbow Models of Black Holes",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Loop Quantum Gravity Dressed-metric and Rainbow Models of Black Holes"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/No_global_symmetries_in_quantum_gravity.html",
+    "href": "1st-level-topics/2nd-level-topics/No_global_symmetries_in_quantum_gravity.html",
+    "title": "Absence of Global Symmetries in Quantum Gravity",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Absence of Global Symmetries in Quantum Gravity"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/No_global_symmetries_in_quantum_gravity.html#authors",
+    "href": "1st-level-topics/2nd-level-topics/No_global_symmetries_in_quantum_gravity.html#authors",
+    "title": "Absence of Global Symmetries in Quantum Gravity",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Absence of Global Symmetries in Quantum Gravity"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/Relational_observables.html",
+    "href": "1st-level-topics/2nd-level-topics/Relational_observables.html",
+    "title": "Relational Observables",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Relational Observables"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/Relational_observables.html#authors",
+    "href": "1st-level-topics/2nd-level-topics/Relational_observables.html#authors",
+    "title": "Relational Observables",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Relational Observables"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/QGscale.html",
+    "href": "1st-level-topics/2nd-level-topics/QGscale.html",
+    "title": "Quantum Gravity Scale",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Quantum Gravity Scale"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/QGscale.html#authors",
+    "href": "1st-level-topics/2nd-level-topics/QGscale.html#authors",
+    "title": "Quantum Gravity Scale",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Quantum Gravity Scale"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/Emergence_and_coarse_graining.html",
+    "href": "1st-level-topics/2nd-level-topics/Emergence_and_coarse_graining.html",
+    "title": "Emergence, Coarse-graining and the Inverse Problem",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Emergence, Coarse-graining and the Inverse Problem"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/Emergence_and_coarse_graining.html#authors",
+    "href": "1st-level-topics/2nd-level-topics/Emergence_and_coarse_graining.html#authors",
+    "title": "Emergence, Coarse-graining and the Inverse Problem",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Emergence, Coarse-graining and the Inverse Problem"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/Weak_gravity_and_cosmic_censorship.html",
+    "href": "1st-level-topics/2nd-level-topics/Weak_gravity_and_cosmic_censorship.html",
+    "title": "Weak Gravity and Weak Cosmic Censorship Conjectures",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Weak Gravity and Weak Cosmic Censorship Conjectures"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/Weak_gravity_and_cosmic_censorship.html#authors",
+    "href": "1st-level-topics/2nd-level-topics/Weak_gravity_and_cosmic_censorship.html#authors",
+    "title": "Weak Gravity and Weak Cosmic Censorship Conjectures",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Weak Gravity and Weak Cosmic Censorship Conjectures"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/Generalized_and_approximate_global_symmetries.html",
+    "href": "1st-level-topics/2nd-level-topics/Generalized_and_approximate_global_symmetries.html",
+    "title": "Higher-form, Discrete and Approximate Global Symmetries",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Higher-form, Discrete and Approximate Global Symmetries"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/Generalized_and_approximate_global_symmetries.html#authors",
+    "href": "1st-level-topics/2nd-level-topics/Generalized_and_approximate_global_symmetries.html#authors",
+    "title": "Higher-form, Discrete and Approximate Global Symmetries",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Higher-form, Discrete and Approximate Global Symmetries"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/Acceleration_mechanisms.html",
+    "href": "1st-level-topics/2nd-level-topics/Acceleration_mechanisms.html",
+    "title": "Acceleration Mechanisms",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Acceleration Mechanisms"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/2nd-level-topics/Acceleration_mechanisms.html#authors",
+    "href": "1st-level-topics/2nd-level-topics/Acceleration_mechanisms.html#authors",
+    "title": "Acceleration Mechanisms",
+    "section": "",
+    "text": "Author 1\nAuthor 2\n…",
+    "crumbs": [
+      "Topics",
+      "Second level topics",
+      "Acceleration Mechanisms"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/The_Quantum_Gravity_problem.html",
+    "href": "1st-level-topics/The_Quantum_Gravity_problem.html",
+    "title": "The Quantum Gravity problem",
+    "section": "",
+    "text": "The quantum gravity (QG) problem is the task of understanding gravity at all scales. These range from the size of the observable Universe (\\(\\sim 10^{26}\\) m) down to the Planck length (\\(\\ell_P \\sim 10^{-35}\\) m) and possibly beyond. Since gravity couples universally to matter, and matter is quantum, the gravitational field is expected to show quantum (or at least fundamentally stochastic) behaviour at some scale. Otherwise the superposition principle would be violated. Rather than a single problem, QG is a set of related challenges, reviewed in [AsPe14, BaMoSh24].\nCore tensions. Treated as a quantum field theory (QFT), general relativity (GR) is perturbatively non-renormalizable [HoVe74, GoSa86]. This can be traced to the dimensionality of Newton’s constant, \\([G]=\\text{mass}^{-2}\\) in natural units. Adding higher-curvature terms restores renormalizability but spoils perturbative unitarity [Stel77]. At a more basic level, GR is written in the language of differential geometry, while quantum theory uses self-adjoint operators on a Hilbert space. A framework is needed that accommodates both, defining a background-independent algebra of observables, its representation and its transition amplitudes without presupposing a classical manifold. The problem of time is a sharp instance of this tension. Time is dynamical in GR but an external parameter in quantum mechanics. In canonical quantization the Wheeler–DeWitt equation describes a “frozen” wavefunction of the Universe [DeWi67, Isha93], and one must explain how experienced time evolution emerges. Relational observables [Ditt06] and quantum reference frames [GiCaBr19] address this. Finally, diffeomorphism invariance makes physical observables intrinsically non-local [GiMaHa06]. QG may thus be seen as the search for a suitable representation, possibly deformed, of the diffeomorphism group and of the algebra of gravitational charges.\nEffective field theory vs. UV completion. In the infrared (IR), perturbative QG is a well-defined effective field theory (EFT) [Dono94]. It systematically parametrizes deviations from Einstein gravity, possibly including additional geometric structures such as torsion and non-metricity [HMMN95] (see modified gravity). The central challenge is a UV completion that (i) yields finite, predictive observables, and (ii) reduces to GR at large distances, with the correct semiclassical limit. Since candidate completions rest on different principles and mathematical languages, they are increasingly compared at the level of the low-energy EFTs they produce [BBDK25, Bu24].\nBroad strategies. Three broad routes exist (see also IR-UV mixing).\nEmergence and the inverse problem. Whether gravity should be quantized or emerges from other degrees of freedom is itself open. By analogy, quantizing thermodynamics yields phonons, not statistical mechanics, whereas thermodynamics emerges by coarse-graining the microscopic degrees of freedom. The inverse problem is to recover classical, continuum geometry, time, causality and symmetries from an underlying structure through coarse-graining and the study of its phases. Some proposals push further, treating the Universe as a many-body quantum system, or tracing quantum behaviour itself to complex, chaotic gravitational interactions.\nBlack holes as theoretical probes. Black holes have a temperature and an entropy [Beke73], emit Hawking radiation [Hawk75], and raise the information paradox [Hawk76]. Recent semiclassical computations with quantum extremal surfaces, islands and replica wormholes reproduce the Page curve in controlled models [AHMS21]. Consistency criteria such as the weak gravity conjecture [AMNV07] further constrain candidate theories.\nPhenomenology and observations. QG is increasingly constrained by data [Ad22]. Probes include early-universe cosmology and primordial fluctuations [HaHa83, AsSi11]. Black-hole environments are probed through quasinormal modes and ringdown [BeCaSt09] and shadows and photon rings [Ak19, Ak22]. High-energy astrophysics tests modified dispersion relations [AEMN98]. The growing interface with quantum information also motivates table-top experiments.\nA QG theory is often hoped to also address singularity resolution, the cosmological constant problem [Wein89], the parameters and structure of the Standard Model, or dark matter and dark energy. These are welcome bonuses rather than requirements: the defining criteria remain UV consistency and the correct semiclassical limit.",
+    "crumbs": [
+      "Topics",
+      "First level topics",
+      "The Quantum Gravity problem"
+    ]
+  },
+  {
+    "objectID": "1st-level-topics/The_Quantum_Gravity_problem.html#authors",
+    "href": "1st-level-topics/The_Quantum_Gravity_problem.html#authors",
+    "title": "The Quantum Gravity problem",
+    "section": "List of Authors",
+    "text": "List of Authors\n\n\nBekir Baytaş\nAndrea Bevilacqua\nSaurya Das\nHasan El Moumni\nTajron Jurić\nEtera Livine\nAntonino Marcianò\nPaulo Moniz\nVishal Nath\nClaudio Paganini\nRoman Pasechnik\nAlessia Platania\nSaeed Rastgoo\nDiego Rubiera-Garcia\nİzzet Sakallı\nYaser Tavakoli\nMarko Vojinović\nHouri Ziaeepour",
+    "crumbs": [
+      "Topics",
+      "First level topics",
+      "The Quantum Gravity problem"
     ]
   },
   {
@@ -381,7 +2445,7 @@
     "href": "index.html",
     "title": "BridgeQG Vade Mecum",
     "section": "",
-    "text": "⛶\n      \n  \n\n  \n  \n    \n\nHow to read the map: the map behaves like a small physical system. Pink squares are the first-level topics (larger ones link to more pages) and blue boxes are the second-level topics. Every box repels its neighbours, with a force that depends on the gap between their borders, so nothing overlaps. Each link between a first-level topic and a second-level topic acts as a spring, so every topic gathers a cloud of its own pages around it, pages shared by two topics sit between them, and pages shared by three sit at the centre of the triangle they form. Friction keeps the motion smooth, and a very weak random agitation lets the map slowly relax towards a tidy arrangement, so it settles again by itself after you drag a box. The shuffle button shakes it harder to find a different arrangement. Boxes with red text and a red border are pages that are still empty and for which nobody has volunteered yet; boxes with the normal style are being worked on or already have text. Hover over a box to highlight its links, and click or tap it to open its page in a new tab.",
+    "text": "⛶\n      \n  \n\n  \n  \n    \n\nFirst-level topic\nSecond-level: authors unassigned\nSecond-level: work in progress\nSecond-level: written\n\n\nHow to read the map: the map behaves like a small physical system. Pink squares are the first-level topics (larger ones link to more pages) and blue boxes are the second-level topics. Every box repels its neighbours, with a force that depends on the gap between their borders, so nothing overlaps. Each link between a first-level topic and a second-level topic acts as a spring, so every topic gathers a cloud of its own pages around it, pages shared by two topics sit between them, and pages shared by three sit at the centre of the triangle they form. Friction keeps the motion smooth, and a very weak random agitation lets the map slowly relax towards a tidy arrangement, so it settles again by itself after you drag a box. The shuffle button shakes it harder to find a different arrangement. The colour of the text and border shows the status of each page: red means nobody has volunteered to write it yet, green means it is being written, and dark blue means it is completed. Pink lines link first-level topics to each other. Hover over a box to highlight its links, and click or tap it to open its page in a new tab.",
     "crumbs": [
       "Home"
     ]
