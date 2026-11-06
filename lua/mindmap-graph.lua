@@ -7,7 +7,7 @@ local function parse_dsl_string(str)
         attr_str = ""
     end
     name = name:match("^%s*(.-)%s*$")
-    
+
     local attrs = {}
     if attr_str ~= "" then
         for k, v in attr_str:gmatch("(%w[%w%-]+)%s*:%s*([^,]+)") do
@@ -25,7 +25,7 @@ local function parse_file_metadata(filepath)
 
     local meta = {}
     local yaml_block = content:match("^%-%-%-\n(.-)\n%-%-%-")
-    
+
     if yaml_block then
         -- Read the YAML block line by line to avoid missing the last line
         for line in yaml_block:gmatch("[^\r\n]+") do
@@ -43,7 +43,7 @@ end
 
 local function extract_internal_links(content)
     local links = {}
-    
+
     local function process_target(link_target)
         if not link_target:match("^http") and not link_target:match("^#") then
             local base = link_target:match("([^/]+)%.html$") or link_target:match("([^/]+)%.qmd$")
@@ -55,7 +55,7 @@ local function extract_internal_links(content)
     for link_target in string.gmatch(content, "%[.-%]%(([^%)]+)%)") do
         process_target(link_target)
     end
-    
+
     -- LaTeX href links: \href{target}{text}
     for link_target in string.gmatch(content, "\\href{([^}]+)}") do
         process_target(link_target)
@@ -71,12 +71,15 @@ local function generate_graph_html(nodes_db, edges_db)
 
     local nodes_js_arr = {}
     for id, attrs in pairs(nodes_db) do
+        -- First-level topics live in doc/, second-level ones in doc/2ndlevel/
+        local is_first = attrs.url and not attrs.url:find("2ndlevel/", 1, true)
         table.insert(nodes_js_arr, string.format(
-            "{ id: '%s', url: %s, color: %s, shape: %s }",
+            "{ id: '%s', url: %s, color: %s, shape: %s, level1: %s }",
             escape_js(id),
             attrs.url and string.format("'%s'", escape_js(attrs.url)) or "null",
             attrs.color and string.format("'%s'", escape_js(attrs.color)) or "null",
-            attrs.shape and string.format("'%s'", escape_js(attrs.shape)) or "'rounded'"
+            attrs.shape and string.format("'%s'", escape_js(attrs.shape)) or "'rounded'",
+            is_first and "true" or "false"
         ))
     end
 
@@ -86,28 +89,38 @@ local function generate_graph_html(nodes_db, edges_db)
     end
 
     local graph_id = "graph_" .. tostring(math.random(100000, 999999))
-    
+
     local html_code = [[
   <div id="wrapper_]] .. graph_id .. [[" style="position: relative; width: 100%; height: max(600px, calc(100vh - 220px)); border: 1px solid #ddd; background: #ffffff; border-radius: 8px; overflow: hidden; margin-bottom: 1.5em;">
       <div id="]] .. graph_id .. [[" style="width: 100%; height: 100%;"></div>
       <button id="btn_]] .. graph_id .. [[" title="Toggle Fullscreen" style="position: absolute; bottom: 15px; right: 15px; z-index: 1000; width: 36px; height: 36px; padding: 0; background: rgba(255, 255, 255, 0.9); border: 1px solid #ccc; border-radius: 6px; cursor: pointer; font-size: 20px; color: #333; box-shadow: 0 2px 5px rgba(0,0,0,0.2); display: flex; align-items: center; justify-content: center; transition: background 0.2s; line-height: 1;">⛶</button>
   </div>
-  
+
   <script src="https://unpkg.com/force-graph"></script>
   <script>
     (function initGraph() {
       if (typeof ForceGraph === 'undefined') { setTimeout(initGraph, 50); return; }
-  
+
       const graphData = {
         nodes: [ ]] .. table.concat(nodes_js_arr, ",\n          ") .. [[ ],
         links: [ ]] .. table.concat(links_js_arr, ",\n          ") .. [[ ]
       };
-  
+
+      // Number of links leaving each node (computed before force-graph rewrites the links).
+      // For a first-level page this is the number of topics it links to.
+      const outDegree = {};
+      graphData.links.forEach(l => { outDegree[l.source] = (outDegree[l.source] || 0) + 1; });
+
+      // Size of first-level balloons: radius in screen pixels = BASE + PER_LINK * links.
+      // Tune these two numbers to make the balloons bigger/smaller or the differences stronger.
+      const L1_BASE_RADIUS = 22;
+      const L1_PER_LINK = 5;
+
       const wrapper = document.getElementById('wrapper_]] .. graph_id .. [[');
       const container = document.getElementById(']] .. graph_id .. [[');
       const fsBtn = document.getElementById('btn_]] .. graph_id .. [[');
       if (!wrapper || !container || !fsBtn) return;
-  
+
       // Fullscreen Toggle Logic now targets the WRAPPER
       fsBtn.addEventListener('click', () => {
           if (!document.fullscreenElement) {
@@ -116,7 +129,7 @@ local function generate_graph_html(nodes_db, edges_db)
               document.exitFullscreen();
           }
       });
-      
+
       document.addEventListener('fullscreenchange', () => {
           if (document.fullscreenElement === wrapper) {
               fsBtn.innerHTML = '✖'; // Just an X when in fullscreen
@@ -126,7 +139,7 @@ local function generate_graph_html(nodes_db, edges_db)
               wrapper.style.borderRadius = '8px';
           }
       });
-  
+
       function getContrastColor(hexColor) {
           if (!hexColor) return '#000000';
           let hex = hexColor.replace('#', '');
@@ -137,7 +150,7 @@ local function generate_graph_html(nodes_db, edges_db)
           const yiq = ((r * 299) + (g * 587) + (b * 114)) / 1000;
           return (yiq >= 128) ? '#000000' : '#ffffff';
       }
-  
+
       function drawShape(ctx, shape, x, y, w, h) {
           ctx.beginPath();
           if (shape === 'circle') {
@@ -149,51 +162,103 @@ local function generate_graph_html(nodes_db, edges_db)
           }
           ctx.closePath();
       }
-  
-      const Graph = ForceGraph()(container)
-        .graphData(graphData)
-        .linkDirectionalParticles(2)
-        .linkColor(() => '#cccccc')
-        .nodeCanvasObject((node, ctx, globalScale) => {
+
+      // Computes (and stores on the node) the lines of text and the size of the balloon,
+      // in graph units. Used for drawing, for the hover area and for click detection.
+      function layoutNode(node, ctx, globalScale) {
           const fontSize = 10 / globalScale;
           ctx.font = `bold ${fontSize}px Sans-Serif`;
-          
-          const label = node.id;
+
+          const words = node.id.split(' ');
           const maxTextWidth = 100 / globalScale;
-          const words = label.split(' ');
-          let lines = []; let curLine = words[0];
+          const lines = []; let curLine = words[0];
           for (let i = 1; i < words.length; i++) {
               if (ctx.measureText(curLine + " " + words[i]).width < maxTextWidth) curLine += " " + words[i];
               else { lines.push(curLine); curLine = words[i]; }
           }
           lines.push(curLine);
-  
+
           const lineHeight = fontSize * 1.2;
           const textWidth = Math.max(...lines.map(l => ctx.measureText(l).width));
           const padding = fontSize * 1.0;
-          const boxW = textWidth + padding;
-          const boxH = lines.length * lineHeight + padding;
-          
+          let w = textWidth + padding;
+          let h = lines.length * lineHeight + padding;
+
+          // First-level balloons grow with the number of topics they link to
+          if (node.level1) {
+              const minSize = 2 * (L1_BASE_RADIUS + L1_PER_LINK * (outDegree[node.id] || 0)) / globalScale;
+              w = Math.max(w, minSize);
+              h = Math.max(h, minSize);
+          }
+          if (node.shape === 'circle') { const d = Math.max(w, h); w = d; h = d; }
+
+          node.__g = { lines, lineHeight, w, h };
+          return node.__g;
+      }
+
+      // Is the graph-space point (px, py) inside the balloon of this node?
+      function insideNode(node, px, py) {
+          const g = node.__g;
+          if (!g || node.x === undefined) return false;
+          const dx = px - node.x, dy = py - node.y;
+          if (node.shape === 'circle') return dx*dx + dy*dy <= (g.w/2) * (g.w/2);
+          return Math.abs(dx) <= g.w/2 && Math.abs(dy) <= g.h/2;
+      }
+
+      const Graph = ForceGraph()(container)
+        .graphData(graphData)
+        .linkDirectionalParticles(2)
+        .linkColor(() => '#cccccc')
+        .nodeCanvasObject((node, ctx, globalScale) => {
+          const g = layoutNode(node, ctx, globalScale);
+
           const bgColor = node.color || '#84cfff';
           const fgColor = getContrastColor(bgColor);
-  
+
           ctx.fillStyle = bgColor;
           ctx.strokeStyle = '#333333';
           ctx.lineWidth = 1.5 / globalScale;
-  
-          drawShape(ctx, node.shape, node.x, node.y, boxW, boxH);
+
+          drawShape(ctx, node.shape, node.x, node.y, g.w, g.h);
           ctx.fill(); ctx.stroke();
-  
+
           ctx.textAlign = 'center'; ctx.textBaseline = 'middle'; ctx.fillStyle = fgColor;
-          const startY = node.y - (lines.length * lineHeight)/2 + lineHeight/2;
-          lines.forEach((line, i) => ctx.fillText(line, node.x, startY + i * lineHeight));
+          const startY = node.y - (g.lines.length * g.lineHeight)/2 + g.lineHeight/2;
+          g.lines.forEach((line, i) => ctx.fillText(line, node.x, startY + i * g.lineHeight));
         })
-        .onNodeClick(node => { if(node.url) window.location.href = node.url; })
+        // The hover area is exactly the drawn balloon (used for the pointer cursor)
+        .nodePointerAreaPaint((node, color, ctx, globalScale) => {
+          const g = layoutNode(node, ctx, globalScale);
+          ctx.fillStyle = color;
+          drawShape(ctx, node.shape, node.x, node.y, g.w, g.h);
+          ctx.fill();
+        })
         .onNodeHover(node => container.style.cursor = node && node.url ? 'pointer' : null);
-        
+
         Graph.d3Force('charge').strength(-600);
         Graph.d3Force('link').distance(150);
-  
+
+        // Click / tap: open the page of the balloon under the pointer in a new tab.
+        // Hit-testing is done here (instead of relying on hover) so that taps work on touch screens.
+        // The topmost balloon wins, so only the exposed part of an overlapped balloon counts.
+        let downPos = null;
+        container.addEventListener('pointerdown', ev => { downPos = { x: ev.clientX, y: ev.clientY }; }, true);
+        container.addEventListener('click', ev => {
+            // Ignore drags (panning the map or moving a balloon)
+            const moved = downPos && Math.hypot(ev.clientX - downPos.x, ev.clientY - downPos.y) > 6;
+            downPos = null;
+            if (moved) return;
+            const rect = container.getBoundingClientRect();
+            const p = Graph.screen2GraphCoords(ev.clientX - rect.left, ev.clientY - rect.top);
+            const nodes = graphData.nodes;
+            for (let i = nodes.length - 1; i >= 0; i--) {
+                if (insideNode(nodes[i], p.x, p.y)) {
+                    if (nodes[i].url) window.open(nodes[i].url, '_blank');
+                    return;
+                }
+            }
+        });
+
         // ResizeObserver now watches the WRAPPER to rescale the graph
         new ResizeObserver(() => { Graph.width(wrapper.offsetWidth); Graph.height(wrapper.offsetHeight); }).observe(wrapper);
     })();
@@ -261,24 +326,24 @@ local function process_auto_folder(folder_path)
 
     local project_root = os.getenv("QUARTO_PROJECT_DIR") or "."
     local os_target_dir = project_root .. "/" .. folder_path
-    
+
     local cmd = 'find "' .. os_target_dir .. '" -type f -name "*.qmd" 2>/dev/null'
     local handle = io.popen(cmd)
     if not handle then return generate_graph_html(nodes_db, edges_db) end
     local result = handle:read("*a")
     handle:close()
-    
+
     for filepath in string.gmatch(result, "[^\r\n]+") do
         local meta, content = parse_file_metadata(filepath)
         if content then
             local filename = filepath:match("([^/]+)$")
-            
+
             -- Use filename as fallback
             -- local node_id = meta.title or filename
-            
+
             -- Only process files that have a title
             local node_id = meta.title
-            
+
             if node_id and node_id ~= "" then
                 local rel_path = filepath
                 if project_root ~= "." then
@@ -288,9 +353,9 @@ local function process_auto_folder(folder_path)
                     rel_path = filepath:gsub("^%./", "")
                 end
                 local url = rel_path:gsub("%.qmd$", ".html")
-                
+
                 register_node(node_id, { url = url, shape = meta.shape, color = meta.color })
-                
+
                 local base_filename = filename:gsub("%.qmd$", "")
                 file_to_id[base_filename] = node_id
                 table.insert(scanned_files, { id = node_id, content = content })
@@ -312,14 +377,14 @@ end
 -- Main functions
 
 return {
-    
+
     -- Manual graph
     CodeBlock = function(el)
         if el.classes:includes("mindmap-graph") then
             return process_manual_graph(el.text)
         end
     end,
-    
+
     -- Automatic graph generation from folder
     Para = function(el)
         local full_text = pandoc.utils.stringify(el)
@@ -328,5 +393,5 @@ return {
             return process_auto_folder(folder_path)
         end
     end
-    
+
 }
