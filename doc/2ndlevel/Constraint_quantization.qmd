@@ -1,5 +1,5 @@
 ---
-tilte: 'Constraint Quantization in Gravity'
+title: 'Constraint Quantization in Gravity'
 ---
 
 Mention Dirac observables.
