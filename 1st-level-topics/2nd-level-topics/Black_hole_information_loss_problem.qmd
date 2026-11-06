@@ -1,3 +1,9 @@
 ---
 title: 'Black Hole Information-Loss Problem'
+mindmap-status: 'authors-unassigned'
 ---
+
+## List of Authors {id="authors" .appendix}
+- Author 1
+- Author 2
+- ...

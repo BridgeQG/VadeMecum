@@ -1,6 +1,12 @@
 ---
 title: 'Modified Gravity theories that emerge from QG models'
+mindmap-status: 'work-in-progress'
 ---
+
+## List of Authors {id="authors" .appendix}
+- Author 1
+- Author 2
+- ...
 
 ```{=comment}
 Volunteer authors (not shown on the page):

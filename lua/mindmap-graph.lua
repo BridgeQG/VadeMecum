@@ -33,19 +33,14 @@ local function parse_file_metadata(filepath)
                 meta.title = line:match("^title:%s*['\"]?(.-)['\"]?%s*$")
             elseif line:match("^mindmap%-shape:") then
                 meta.shape = line:match("shape:%s*['\"]?(.-)['\"]?%s*$")
+            elseif line:match("^mindmap%-status:") then
+                meta.status = line:match("status:%s*['\"]?(.-)['\"]?%s*$")
             elseif line:match("^mindmap%-color:") then
                 meta.color = line:match("color:%s*['\"]?(.-)['\"]?%s*$")
             end
         end
     end
     return meta, content
-end
-
--- A page is "empty" when nothing but the front matter (and HTML comments) is left in it
-local function body_is_empty(content)
-    local body = content:gsub("^%-%-%-\r?\n.-\r?\n%-%-%-[ \t\r]*\n?", "", 1)
-    body = body:gsub("<!%-%-.-%-%->", "")
-    return body:match("^%s*$") ~= nil
 end
 
 local function extract_internal_links(content)
@@ -81,13 +76,13 @@ local function generate_graph_html(nodes_db, edges_db)
         -- First-level topics are the pages directly in 1st-level-topics/ (second-level ones are in 1st-level-topics/2nd-level-topics/)
         local is_first = attrs.url and attrs.url:match("^1st%-level%-topics/[^/]+%.html$") ~= nil
         table.insert(nodes_js_arr, string.format(
-            "{ id: '%s', url: %s, color: %s, shape: %s, level1: %s, empty: %s }",
+            "{ id: '%s', url: %s, color: %s, shape: %s, level1: %s, status: %s }",
             escape_js(id),
             attrs.url and string.format("'%s'", escape_js(attrs.url)) or "null",
             attrs.color and string.format("'%s'", escape_js(attrs.color)) or "null",
             attrs.shape and string.format("'%s'", escape_js(attrs.shape)) or "'rounded'",
             is_first and "true" or "false",
-            attrs.empty and "true" or "false"
+            attrs.status and string.format("'%s'", escape_js(attrs.status)) or "null"
         ))
     end
 
@@ -199,6 +194,12 @@ local function generate_graph_html(nodes_db, edges_db)
           }
       });
 
+      // text and border colours for the "mindmap-status" front-matter field
+      const STATUS_STYLE = {
+        'authors-unassigned': { text: '#c00000', border: '#d00000' },
+        'work-in-progress':   { text: '#00703c', border: '#008a45' },
+        'written':            { text: '#0b2f8a', border: '#0b2f8a' }
+      };
       function getContrastColor(hexColor) {
           if (!hexColor) return '#000000';
           let hex = hexColor.replace('#', '');
@@ -457,9 +458,9 @@ local function generate_graph_html(nodes_db, edges_db)
         // links: the structural ones (first-level <-> others) are darker, the rest is faint;
         // all links of the balloon under the pointer are highlighted and the rest is dimmed
         .linkColor(l => hot
-            ? (isHotLink(l) ? '#111111' : 'rgba(0,0,0,0.06)')
-            : (l.kind === 'own' ? 'rgba(60,60,60,0.65)' : l.kind === 'top' ? 'rgba(60,60,60,0.45)' : 'rgba(0,0,0,0.13)'))
-        .linkWidth(l => isHotLink(l) ? 2.6 : (l.kind === 'own' ? 1.6 : 0.8))
+            ? (isHotLink(l) ? (l.kind === 'top' ? '#e0457f' : '#111111') : (l.kind === 'top' ? 'rgba(236,98,146,0.15)' : 'rgba(0,0,0,0.06)'))
+            : (l.kind === 'own' ? 'rgba(60,60,60,0.65)' : l.kind === 'top' ? 'rgba(236,98,146,0.85)' : 'rgba(0,0,0,0.13)'))
+        .linkWidth(l => isHotLink(l) ? 2.6 : (l.kind === 'own' ? 1.6 : l.kind === 'top' ? 1.6 : 0.8))
         .linkDirectionalParticles(l => isHotLink(l) ? 3 : 0)
         .linkDirectionalParticleWidth(3.5)
         // lets zoomToFit take the real size of the balloons into account
@@ -468,14 +469,15 @@ local function generate_graph_html(nodes_db, edges_db)
           const g = node.__g;
 
           const bgColor = node.color || '#84cfff';
-          // pages that are still empty (title only) are drawn with red text and border
-          const fgColor = node.empty ? '#c00000' : getContrastColor(bgColor);
+          // "mindmap-status" in the front matter sets the text and border colour
+          const st = STATUS_STYLE[node.status];
+          const fgColor = st ? st.text : getContrastColor(bgColor);
           const dim = hot && node !== hot && !(nbrs[hot.id] && nbrs[hot.id].has(node.id));
 
           ctx.globalAlpha = dim ? 0.3 : 1;
           ctx.fillStyle = bgColor;
-          ctx.strokeStyle = node.empty ? '#d00000' : '#333333';
-          ctx.lineWidth = (node.empty ? 2.5 : 1.5) / Math.max(globalScale, 1);
+          ctx.strokeStyle = st ? st.border : '#333333';
+          ctx.lineWidth = (st ? 2.5 : 1.5) / Math.max(globalScale, 1);
 
           drawShape(ctx, node.shape, node.x, node.y, g.w, g.h);
           ctx.fill(); ctx.stroke();
@@ -678,7 +680,7 @@ local function process_auto_folder(folder_path)
                 end
                 local url = rel_path:gsub("%.qmd$", ".html")
 
-                register_node(node_id, { url = url, shape = meta.shape, color = meta.color, empty = body_is_empty(content) or nil })
+                register_node(node_id, { url = url, shape = meta.shape, color = meta.color, status = meta.status })
 
                 local base_filename = filename:gsub("%.qmd$", "")
                 file_to_id[base_filename] = node_id

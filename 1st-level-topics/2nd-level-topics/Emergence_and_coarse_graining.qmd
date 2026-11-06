@@ -1,0 +1,9 @@
+---
+title: 'Emergence, Coarse-graining and the Inverse Problem'
+mindmap-status: 'authors-unassigned'
+---
+
+## List of Authors {id="authors" .appendix}
+- Author 1
+- Author 2
+- ...

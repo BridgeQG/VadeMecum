@@ -1,0 +1,15 @@
+---
+title: 'Weak Equivalence Principle'
+mindmap-status: 'written'
+---
+
+\textbf{Geodesic trajectories of free particles.} Matter is described by point particles, equations of motion are geodesic equations in a given curved background geometry, and gravity is described as the curvature of spacetime. EP is rephrased as a statement that locally one cannot distinguish between the particle trajectory in curved spacetime and a straight line in flat spacetime. In other words, the particle trajectory in curved spacetime is a geodesic trajectory.
+
+Testing the weak EP amounts to verifying that free point-particles follow geodesic trajectories in curved spacetime.  The most modern tests have been conducted by the [LISA Pathfinder satellite experiment](https://sci.esa.int/web/lisa-pathfinder/-/31431-summary).
+
+The validity of the weak EP is based on the notion of a point-particle, which is a theoretical idealization. In nature, every particle has a size, and if an experiment is precise enough to measure this size, it will also in principle be able to measure the violation of weak EP. Alternatively, one can say that experiments, precise enough to measure the nonzero size of what is otherwise a point-particle, are outside the scope of validity of weak EP.
+
+## List of Authors {id="authors" .appendix}
+- Author 1
+- Author 2
+- ...

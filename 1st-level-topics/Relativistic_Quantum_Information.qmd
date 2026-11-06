@@ -2,4 +2,5 @@
 title: 'Relativistic Quantum Information'
 mindmap-shape: 'circle'
 mindmap-color: '#fdbcce'
+mindmap-status: 'authors-unassigned'
 ---

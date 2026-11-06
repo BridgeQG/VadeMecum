@@ -5,8 +5,17 @@ page-layout: full
 
 !mindmap-graph-auto: 1st-level-topics
 
-::: {style="color: gray; font-size: 0.9em;"}
-How to read the map: the map behaves like a small physical system. Pink squares are the first-level topics (larger ones link to more pages) and blue boxes are the second-level topics. Every box repels its neighbours, with a force that depends on the gap between their borders, so nothing overlaps. Each link between a first-level topic and a second-level topic acts as a spring, so every topic gathers a cloud of its own pages around it, pages shared by two topics sit between them, and pages shared by three sit at the centre of the triangle they form. Friction keeps the motion smooth, and a very weak random agitation lets the map slowly relax towards a tidy arrangement, so it settles again by itself after you drag a box. The shuffle button shakes it harder to find a different arrangement. Boxes with red text and a red border are pages that are still empty and for which nobody has volunteered yet; boxes with the normal style are being worked on or already have text. Hover over a box to highlight its links, and click or tap it to open its page in a new tab.
+```{=html}
+<div style="font-size: 0.8em; margin-top: 0.4em;">
+<span style="display:inline-block; padding:1px 6px; margin:2px 4px; border-radius:4px; background:#fdbcce; color:#000; border:1.5px solid #333; font-weight:bold;">First-level topic</span>
+<span style="display:inline-block; padding:1px 6px; margin:2px 4px; border-radius:4px; background:#84cfff; color:#c00000; border:2.5px solid #d00000; font-weight:normal;">Second-level: authors unassigned</span>
+<span style="display:inline-block; padding:1px 6px; margin:2px 4px; border-radius:4px; background:#84cfff; color:#00703c; border:2.5px solid #008a45; font-weight:normal;">Second-level: work in progress</span>
+<span style="display:inline-block; padding:1px 6px; margin:2px 4px; border-radius:4px; background:#84cfff; color:#0b2f8a; border:2.5px solid #0b2f8a; font-weight:normal;">Second-level: written</span>
+</div>
+```
+
+::: {style="color: gray; font-size: 0.63em;"}
+How to read the map: the map behaves like a small physical system. Pink squares are the first-level topics (larger ones link to more pages) and blue boxes are the second-level topics. Every box repels its neighbours, with a force that depends on the gap between their borders, so nothing overlaps. Each link between a first-level topic and a second-level topic acts as a spring, so every topic gathers a cloud of its own pages around it, pages shared by two topics sit between them, and pages shared by three sit at the centre of the triangle they form. Friction keeps the motion smooth, and a very weak random agitation lets the map slowly relax towards a tidy arrangement, so it settles again by itself after you drag a box. The shuffle button shakes it harder to find a different arrangement. The colour of the text and border shows the status of each page: red means nobody has volunteered to write it yet, green means it is being written, and dark blue means it is completed. Pink lines link first-level topics to each other. Hover over a box to highlight its links, and click or tap it to open its page in a new tab.
 :::
 
 <!--

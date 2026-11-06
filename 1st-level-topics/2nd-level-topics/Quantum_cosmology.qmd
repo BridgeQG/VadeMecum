@@ -1,0 +1,16 @@
+---
+title: 'Quantum Cosmology'
+mindmap-status: 'work-in-progress'
+---
+
+## List of Authors {id="authors" .appendix}
+- Author 1
+- Author 2
+- ...
+
+```{=comment}
+Volunteer authors (not shown on the page):
+- Houri Ziaeepour houriziaeepour@gmail.com
+- Roukaya Dekhil roukaya.dk@gmail.com
+- Goran Djordjevic gorandj@juni.ni.ac.rs
+```

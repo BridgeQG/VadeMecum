@@ -1,0 +1,15 @@
+---
+title: 'Strong Equivalence Principle'
+mindmap-status: 'written'
+---
+
+\textbf{Minimal coupling between matter fields and gravity.} Both matter and gravity are described as fields over the spacetime manifold. The equations of motion are implicit, but assumed to be local. EP is rephrased as a restriction that matter does not couple directly to spacetime curvature, but only to the metric and connection, in the equations of motion for matter fields. An analogous notion of minimal coupling prescription is also used in the construction of the weak, strong and electromagnetic interactions in the [Standard Model](https://en.wikipedia.org/wiki/Standard_Model) of elementary particle physics.
+
+Testing of the strong EP amounts to studying the behavior of astrophysical systems in the strong gravity regime, such as the accretion disc around a black hole, dynamics of a neutron star orbiting a black hole, curvature dependence of the dispersion relations for electromagnetic waves, and similar. Experiments and observations are usually indirect, since it is rather hard to study the matter field equations directly in the strong curvature background.
+
+The telltale sign for a violation of the strong EP would be a curvature-dependent term in the equations of motion for matter fields. So far there are no experimental indications that would suggest any violation of the strong EP.
+
+## List of Authors {id="authors" .appendix}
+- Author 1
+- Author 2
+- ...

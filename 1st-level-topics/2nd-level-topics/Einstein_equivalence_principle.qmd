@@ -1,0 +1,15 @@
+---
+title: "Einstein's Equivalence Principle"
+mindmap-status: 'written'
+---
+
+\textbf{Local equivalence between inertia and gravity.} Matter is described mostly by point particles, equations of motion are implicit, and gravity is described as a field, uniform across a "local laboratory". EP is rephrased as the local indistinguishability between inertial and gravitational forces. This version of EP is famous for featuring in Einstein's "falling elevator" gedanken-experiments.
+
+Einstein's EP can be tested by measuring the magnitude of the gravitational field in a freely-falling environment, such as the microgravity conditions at the [International Space Station](https://ntrs.nasa.gov/api/citations/20040070758/downloads/20040070758.pdf).
+
+Einstein's EP can be assumed to hold as long as the gravitational field can be considered uniform across the spacetime region defining the "local laboratory" environment. However, this is never strictly true for any laboratory of finite size, and Einstein's EP is violated by any experiment sensitive to the existing gravitational gradients across the size of the laboratory. Alternatively, one can say that experiments that are too sensitive for a given laboratory are outside the scope of validity of Einstein's EP.
+
+## List of Authors {id="authors" .appendix}
+- Author 1
+- Author 2
+- ...

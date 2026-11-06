@@ -1,3 +1,9 @@
 ---
 title: 'Weak Gravity and Weak Cosmic Censorship Conjectures'
+mindmap-status: 'authors-unassigned'
 ---
+
+## List of Authors {id="authors" .appendix}
+- Author 1
+- Author 2
+- ...

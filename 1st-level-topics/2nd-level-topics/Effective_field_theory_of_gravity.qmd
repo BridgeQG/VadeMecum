@@ -1,0 +1,9 @@
+---
+title: 'Effective Field Theory of Gravity'
+mindmap-status: 'authors-unassigned'
+---
+
+## List of Authors {id="authors" .appendix}
+- Author 1
+- Author 2
+- ...

@@ -1,3 +1,9 @@
 ---
 title: 'Noncommutative Geometry and Black Holes'
+mindmap-status: 'authors-unassigned'
 ---
+
+## List of Authors {id="authors" .appendix}
+- Author 1
+- Author 2
+- ...

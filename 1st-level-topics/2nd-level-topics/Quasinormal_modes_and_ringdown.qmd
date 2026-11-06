@@ -1,3 +1,9 @@
 ---
 title: 'Quasinormal Modes, Ringdown and Echoes'
+mindmap-status: 'authors-unassigned'
 ---
+
+## List of Authors {id="authors" .appendix}
+- Author 1
+- Author 2
+- ...

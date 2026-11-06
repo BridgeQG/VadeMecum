@@ -1,6 +1,12 @@
 ---
 title: 'Relational Observables'
+mindmap-status: 'work-in-progress'
 ---
+
+## List of Authors {id="authors" .appendix}
+- Author 1
+- Author 2
+- ...
 
 ```{=comment}
 Volunteer authors (not shown on the page):

@@ -1,3 +1,9 @@
 ---
 title: 'Black Hole Shadows and Photon Spheres'
+mindmap-status: 'authors-unassigned'
 ---
+
+## List of Authors {id="authors" .appendix}
+- Author 1
+- Author 2
+- ...

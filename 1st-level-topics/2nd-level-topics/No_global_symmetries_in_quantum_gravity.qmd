@@ -1,3 +1,9 @@
 ---
 title: 'Absence of Global Symmetries in Quantum Gravity'
+mindmap-status: 'authors-unassigned'
 ---
+
+## List of Authors {id="authors" .appendix}
+- Author 1
+- Author 2
+- ...

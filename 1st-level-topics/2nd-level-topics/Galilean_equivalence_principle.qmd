@@ -1,0 +1,15 @@
+---
+title: 'Galilean Equivalence Principle'
+mindmap-status: 'written'
+---
+
+\textbf{Universality of free fall.} Matter is described by point particles, equations of motion are implicit and qualitative, as is the description of gravity. EP is rephrased as a comparison of the motion between different types of particles, given the same gravitational background.
+
+Galilean EP can be tested by comparing the free-fall trajectories of particles made of different materials, and otherwise having different internal properties. The most modern tests have been conducted by the [MICROSCOPE satellite experiment](https://cnes.fr/en/projects/microscope).
+
+This version of EP is known to be violated by a particle with high enough angular momentum, which couples directly to spacetime curvature (Papapetrou equation \cite{Papapetrou:1951pa}). In contrast, a particle with negligible angular momentum does not feature this coupling (geodesic equation). Thus the two particles travel along different trajectories in curved spacetime. Alternatively, one can say that particles with high angular momentum and similar properties lie outside the scope of validity of Galilean EP.
+
+## List of Authors {id="authors" .appendix}
+- Author 1
+- Author 2
+- ...
