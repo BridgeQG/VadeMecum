@@ -10,6 +10,12 @@ website:
       #- auto: "docs/Examples"
       - section: "Topics"
         contents:
+         - section: "Examples"
+           contents:
+            - href: "docs/Examples/example0.qmd"
+            - href: "docs/Examples/example1.qmd"
+            - href: "docs/Examples/example2.qmd"
+            - href: "docs/Examples/example3.qmd"           
          - section: "First level topics"
            contents:
             - href: "1st-level-topics/Astrophysical_probes.qmd"
