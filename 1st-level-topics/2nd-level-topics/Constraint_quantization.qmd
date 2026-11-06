@@ -1,0 +1,11 @@
+---
+title: 'Constraint Quantization in Gravity'
+---
+
+```{=comment}
+Volunteer authors (not shown on the page):
+- Flavio Mercati f.mercati@ubu.es
+- Etera Livine etera.livine@ens-lyon.fr
+- Saeed Rastgoo srastgoo@ualberta.ca
+- Priidik Gallagher priidik.gallagher@ut.ee
+```

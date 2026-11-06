@@ -1,0 +1,9 @@
+---
+title: 'Quantum Superposition of Massive Objects'
+---
+
+```{=comment}
+Volunteer authors (not shown on the page):
+- Piotr T. Grochowski piotr.grochowski@upol.cz
+- Claudio Paganini Claudio.Paganini@mathematik.uni-regensburg.de
+```

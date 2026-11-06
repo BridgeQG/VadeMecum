@@ -1,0 +1,13 @@
+---
+title: 'The Problem of Locality'
+---
+
+```{=comment}
+Volunteer authors (not shown on the page):
+- Andrea Bevilacqua andrea.bevilacqua@ncbj.gov.pl
+- Claudio Paganini Claudio.Paganini@mathematik.uni-regensburg.de
+- Guilherme Franzmann guilherme.franzmann@su.se
+- Marko Vojinovic vmarko@ipb.ac.rs
+- Nikola Paunkovic npaunkovic@gmail.com
+- Priidik Gallagher priidik.gallagher@ut.ee
+```

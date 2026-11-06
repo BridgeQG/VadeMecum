@@ -1,0 +1,12 @@
+---
+title: 'Gravity as Thermodynamics/Hydrodynamics'
+---
+
+```{=comment}
+Volunteer authors (not shown on the page):
+- Stefano Liberati liberati@sissa.it
+- Ayush Hazarika ayush.hazarika4work@gmail.com
+- Papadopoulos Stylianos stypapad@physics.auth.gr
+- Aneta Wojnar aneta.wojnar@uwr.edu.pl
+- Emmanuel Saridakis msaridak@noa.gr
+```

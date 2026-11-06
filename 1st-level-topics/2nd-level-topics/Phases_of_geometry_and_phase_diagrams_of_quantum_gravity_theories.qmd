@@ -1,0 +1,10 @@
+---
+title: 'Phases of Geometry and Phase Diagrams of Quantum Gravity Theories'
+---
+
+```{=comment}
+Volunteer authors (not shown on the page):
+- Etera Livine etera.livine@ens-lyon.fr
+- Papadopoulos Stylianos stypapad@physics.auth.gr
+- Fabian Wagner f.wagner@thphys.uni-heidelberg.de
+```

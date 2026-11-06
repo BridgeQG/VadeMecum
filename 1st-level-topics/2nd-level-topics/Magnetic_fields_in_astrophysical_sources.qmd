@@ -1,0 +1,8 @@
+---
+title: 'Magnetic Fields in Astrophysical Sources'
+---
+
+```{=comment}
+Volunteer authors (not shown on the page):
+- Denise Boncioli denise.boncioli@univaq.it
+```

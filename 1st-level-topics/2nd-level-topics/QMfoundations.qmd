@@ -1,0 +1,10 @@
+---
+title: 'Fundamental principles of Quantum Mechanics that are amenable to testing'
+---
+
+```{=comment}
+Volunteer authors (not shown on the page):
+- Catalina Curceanu catalina.curceanu@lnf.infn.it
+- Michele Arzano michele.arzano@unina.it
+- Houri Ziaeepour houriziaeepour@gmail.com
+```

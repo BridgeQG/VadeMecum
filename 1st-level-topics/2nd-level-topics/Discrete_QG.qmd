@@ -1,0 +1,11 @@
+---
+title: 'Discrete, Canonical and Covariant Quantum Gravity'
+---
+
+```{=comment}
+Volunteer authors (not shown on the page):
+- Etera Livine etera.livine@ens-lyon.fr
+- Fay Dowker f.dowker@imperial.ac.uk
+- Saeed Rastgoo srastgoo@ualberta.ca
+- Roukaya Dekhil roukaya.dk@gmail.com
+```

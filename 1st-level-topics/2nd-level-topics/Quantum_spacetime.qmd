@@ -1,0 +1,30 @@
+---
+title: 'Quantum Spacetime'
+---
+
+```{=comment}
+Volunteer authors (not shown on the page):
+- Flavio Mercati f.mercati@ubu.es
+- Etera Livine etera.livine@ens-lyon.fr
+- Papadopoulos Stylianos stypapad@physics.auth.gr
+- Giuseppe Fabiano gfabiano@lbl.gov
+- Andrea Bevilacqua andrea.bevilacqua@ncbj.gov.pl
+- Domenico Frattulillo domenico.frattulillo@unina.it
+- Vishal Nath vishaln.physics.rs@jadavpuruniversity.in
+- Claudio Paganini Claudio.Paganini@mathematik.uni-regensburg.de
+- Marco Refuto marco.refuto@unina.it
+- Paolo Palumbo paolo.palumbo@unina.it
+- Vladimir Dobrev vkdobrev@gmail.com
+- Andrzej Borowiec andrzej.borowiec@uwr.edu.pl
+- Saeed Rastgoo srastgoo@ualberta.ca
+- Christian Pfeifer Christian.Pfeifer@zarm.uni-bremen.de
+- Tajron Jurić tjuric@irb.hr
+- Roukaya Dekhil roukaya.dk@gmail.com
+- Sara Kanzi sara.kanzi@final.edu.tr
+- Priidik Gallagher priidik.gallagher@ut.ee
+- Bekir Baytaş bkrbaytas@gmail.com
+- Anna Pachol anna.pachol@usn.no
+- Vittorio D'Esposito vittorio.d.esposito@uniroma2.it
+- Iván Gutiérrez-Sagredo igsagredo@ubu.es
+- Francisco J. Herranz fjherranz@ubu.es
+```

@@ -41,6 +41,13 @@ local function parse_file_metadata(filepath)
     return meta, content
 end
 
+-- A page is "empty" when nothing but the front matter (and HTML comments) is left in it
+local function body_is_empty(content)
+    local body = content:gsub("^%-%-%-\r?\n.-\r?\n%-%-%-[ \t\r]*\n?", "", 1)
+    body = body:gsub("<!%-%-.-%-%->", "")
+    return body:match("^%s*$") ~= nil
+end
+
 local function extract_internal_links(content)
     local links = {}
 
@@ -71,15 +78,16 @@ local function generate_graph_html(nodes_db, edges_db)
 
     local nodes_js_arr = {}
     for id, attrs in pairs(nodes_db) do
-        -- First-level topics are the pages directly in doc/ (second-level ones are in doc/2ndlevel/)
-        local is_first = attrs.url and attrs.url:match("^doc/[^/]+%.html$") ~= nil
+        -- First-level topics are the pages directly in 1st-level-topics/ (second-level ones are in 1st-level-topics/2nd-level-topics/)
+        local is_first = attrs.url and attrs.url:match("^1st%-level%-topics/[^/]+%.html$") ~= nil
         table.insert(nodes_js_arr, string.format(
-            "{ id: '%s', url: %s, color: %s, shape: %s, level1: %s }",
+            "{ id: '%s', url: %s, color: %s, shape: %s, level1: %s, empty: %s }",
             escape_js(id),
             attrs.url and string.format("'%s'", escape_js(attrs.url)) or "null",
             attrs.color and string.format("'%s'", escape_js(attrs.color)) or "null",
             attrs.shape and string.format("'%s'", escape_js(attrs.shape)) or "'rounded'",
-            is_first and "true" or "false"
+            is_first and "true" or "false",
+            attrs.empty and "true" or "false"
         ))
     end
 
@@ -460,13 +468,14 @@ local function generate_graph_html(nodes_db, edges_db)
           const g = node.__g;
 
           const bgColor = node.color || '#84cfff';
-          const fgColor = getContrastColor(bgColor);
+          // pages that are still empty (title only) are drawn with red text and border
+          const fgColor = node.empty ? '#c00000' : getContrastColor(bgColor);
           const dim = hot && node !== hot && !(nbrs[hot.id] && nbrs[hot.id].has(node.id));
 
           ctx.globalAlpha = dim ? 0.3 : 1;
           ctx.fillStyle = bgColor;
-          ctx.strokeStyle = '#333333';
-          ctx.lineWidth = 1.5 / Math.max(globalScale, 1);
+          ctx.strokeStyle = node.empty ? '#d00000' : '#333333';
+          ctx.lineWidth = (node.empty ? 2.5 : 1.5) / Math.max(globalScale, 1);
 
           drawShape(ctx, node.shape, node.x, node.y, g.w, g.h);
           ctx.fill(); ctx.stroke();
@@ -669,7 +678,7 @@ local function process_auto_folder(folder_path)
                 end
                 local url = rel_path:gsub("%.qmd$", ".html")
 
-                register_node(node_id, { url = url, shape = meta.shape, color = meta.color })
+                register_node(node_id, { url = url, shape = meta.shape, color = meta.color, empty = body_is_empty(content) or nil })
 
                 local base_filename = filename:gsub("%.qmd$", "")
                 file_to_id[base_filename] = node_id

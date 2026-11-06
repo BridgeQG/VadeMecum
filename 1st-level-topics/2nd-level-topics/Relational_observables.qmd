@@ -1,0 +1,10 @@
+---
+title: 'Relational Observables'
+---
+
+```{=comment}
+Volunteer authors (not shown on the page):
+- Claudio Paganini Claudio.Paganini@mathematik.uni-regensburg.de
+- Paolo Palumbo paolo.palumbo@unina.it
+- Saeed Rastgoo srastgoo@ualberta.ca
+```

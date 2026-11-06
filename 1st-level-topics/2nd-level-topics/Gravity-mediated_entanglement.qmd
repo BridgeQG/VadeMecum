@@ -1,0 +1,13 @@
+---
+title: 'Gravity-mediated Entanglement'
+---
+
+```{=comment}
+Volunteer authors (not shown on the page):
+- Giuseppe Fabiano gfabiano@lbl.gov
+- Luciano Petruzziello luciano.petruzziello@uni-ulm.de
+- Guilherme Franzmann guilherme.franzmann@su.se
+- Gaetano Lambiase glambiase@unisa.it
+- Roukaya Dekhil roukaya.dk@gmail.com
+- Vittorio D'Esposito vittorio.d.esposito@uniroma2.it
+```

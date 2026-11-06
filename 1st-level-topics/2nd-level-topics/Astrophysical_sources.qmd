@@ -1,0 +1,14 @@
+---
+title: 'Astrophysical Sources'
+---
+
+```{=comment}
+Volunteer authors (not shown on the page):
+- Ayush Hazarika ayush.hazarika4work@gmail.com
+- David Benisty benidav@post.bgu.ac.il
+- Tanmay Kumar Poddar tanmay.k.poddar@durham.ac.uk
+- Tomislav Terzić tomislav.terzic@gmail.com
+- Houri Ziaeepour houriziaeepour@gmail.com
+- Denise Boncioli denise.boncioli@univaq.it
+- Jelena Strišković jelena.striskovic@gmail.com
+```

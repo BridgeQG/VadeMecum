@@ -1,0 +1,21 @@
+---
+title: 'Quantum groups and Hopf algebras'
+---
+
+```{=comment}
+Volunteer authors (not shown on the page):
+- Giuseppe Fabiano gfabiano@lbl.gov
+- Andrea Bevilacqua andrea.bevilacqua@ncbj.gov.pl
+- Papadopoulos Stylianos stypapad@physics.auth.gr
+- Tadeusz Adach tadeusz.adach@uwr.edu.pl
+- Michele Arzano michele.arzano@unina.it
+- Jerzy Kowalski-Glikman jerzy.kowalski-glikman@uwr.edu.pl
+- Marco Refuto marco.refuto@unina.it
+- Paolo Palumbo paolo.palumbo@unina.it
+- Vladimir Dobrev vkdobrev@gmail.com
+- Andrzej Borowiec andrzej.borowiec@uwr.edu.pl
+- Anna Pachol anna.pachol@usn.no
+- Vittorio D'Esposito vittorio.d.esposito@uniroma2.it
+- Iván Gutiérrez-Sagredo igsagredo@ubu.es
+- Francisco J. Herranz fjherranz@ubu.es
+```

@@ -1,0 +1,15 @@
+---
+title: 'Algebraic Quantum Field Theory: relevant aspects for QG'
+---
+
+```{=comment}
+Volunteer authors (not shown on the page):
+- Michele Arzano michele.arzano@unina.it
+- Paolo Palumbo paolo.palumbo@unina.it
+- Papadopoulos Stylianos stypapad@physics.auth.gr
+- Vladimir Dobrev vkdobrev@gmail.com
+- Guilherme Franzmann guilherme.franzmann@su.se
+- Tajron Jurić tjuric@irb.hr
+- Vishal Nath vishaln.physics.rs@jadavpuruniversity.in
+- Priidik Gallagher priidik.gallagher@ut.ee
+```

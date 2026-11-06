@@ -1,0 +1,14 @@
+---
+title: 'Quantum Causality'
+---
+
+```{=comment}
+Volunteer authors (not shown on the page):
+- Fay Dowker f.dowker@imperial.ac.uk
+- Andrea Bevilacqua andrea.bevilacqua@ncbj.gov.pl
+- Papadopoulos Stylianos stypapad@physics.auth.gr
+- Claudio Paganini Claudio.Paganini@mathematik.uni-regensburg.de
+- Caslav Brukner caslav.brukner@univie.ac.at
+- Priidik Gallagher priidik.gallagher@ut.ee
+- Vishal Nath vishaln.physics.rs@jadavpuruniversity.in
+```

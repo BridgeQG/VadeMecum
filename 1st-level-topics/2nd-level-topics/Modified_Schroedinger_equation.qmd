@@ -1,0 +1,10 @@
+---
+title: 'Modified Schroedinger Equation'
+---
+
+```{=comment}
+Volunteer authors (not shown on the page):
+- Fabian Wagner f.wagner@thphys.uni-heidelberg.de
+- Vladimir Dobrev vkdobrev@gmail.com
+- Iarley Lobo lobofisica@gmail.com
+```

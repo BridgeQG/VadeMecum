@@ -1,0 +1,20 @@
+---
+title: 'Doubly (or Deformed) Special Relativity (DSR)'
+---
+
+```{=comment}
+Volunteer authors (not shown on the page):
+- Giacomo Rosati giacomo.rosati@unica.it
+- Giuseppe Fabiano gfabiano@lbl.gov
+- Andrea Bevilacqua andrea.bevilacqua@ncbj.gov.pl
+- Domenico Frattulillo domenico.frattulillo@unina.it
+- Marco Refuto marco.refuto@unina.it
+- Christian Pfeifer Christian.Pfeifer@zarm.uni-bremen.de
+- Michał Popiel michal.popiel@uwr.edu.pl
+- Jose Manuel Carmona jcarmona@unizar.es
+- Jose Luis Cortes cortes@unizar.es
+- Maykoll Reyes mkreyes@unizar.es
+- Ardit Gkioni agkioni@unizar
+- Javier Relancio jjrelancio@ubu.es
+- Vittorio D'Esposito vittorio.d.esposito@uniroma2.it
+```

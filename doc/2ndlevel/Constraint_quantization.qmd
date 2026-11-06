@@ -1,5 +1,0 @@
----
-title: 'Constraint Quantization in Gravity'
----
-
-Mention Dirac observables.

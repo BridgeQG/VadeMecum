@@ -1,0 +1,13 @@
+---
+title: 'Discrete Symmetries Violation and Deformation motivated by Quantum Gravity'
+---
+
+```{=comment}
+Volunteer authors (not shown on the page):
+- Giacomo Rosati giacomo.rosati@unica.it
+- Tadeusz Adach tadeusz.adach@uwr.edu.pl
+- Papadopoulos Stylianos stypapad@physics.auth.gr
+- Jean Thibaut jean.thibaut@cpt.univ-mrs.fr
+- Michele Arzano michele.arzano@unina.it
+- Jerzy Kowalski-Glikman jerzy.kowalski-glikman@uwr.edu.pl
+```

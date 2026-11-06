@@ -1,0 +1,10 @@
+---
+title: 'Particle Processes in Astrophysical Sources'
+---
+
+```{=comment}
+Volunteer authors (not shown on the page):
+- Tomislav Terzić tomislav.terzic@gmail.com
+- Denise Boncioli denise.boncioli@univaq.it
+- Jelena Strišković jelena.striskovic@gmail.com
+```

@@ -1,0 +1,16 @@
+---
+title: 'Hawking Radiation'
+---
+
+```{=comment}
+Volunteer authors (not shown on the page):
+- Stefano Liberati liberati@sissa.it
+- Michele Arzano michele.arzano@unina.it
+- Papadopoulos Stylianos stypapad@physics.auth.gr
+- Vishal Nath vishaln.physics.rs@jadavpuruniversity.in
+- Marco Refuto marco.refuto@unina.it
+- Paolo Palumbo paolo.palumbo@unina.it
+- Sebastian Franchino-Viñas sfranchinovinas@univ-tours.fr
+- Tajron Jurić tjuric@irb.hr
+- Sara Kanzi sara.kanzi@final.edu.tr
+```

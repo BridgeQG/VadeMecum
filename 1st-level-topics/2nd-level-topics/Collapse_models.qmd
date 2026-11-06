@@ -1,0 +1,10 @@
+---
+title: 'Collapse Models'
+---
+
+```{=comment}
+Volunteer authors (not shown on the page):
+- Catalina Curceanu catalina.curceanu@lnf.infn.it
+- Claudio Paganini Claudio.Paganini@mathematik.uni-regensburg.de
+- Priidik Gallagher priidik.gallagher@ut.ee
+```

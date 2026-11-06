@@ -1,0 +1,17 @@
+---
+title: 'Generalized Uncertainty Principle'
+---
+
+```{=comment}
+Volunteer authors (not shown on the page):
+- Gaetano Luciano giuseppegaetano.luciano@udl.cat
+- Catalina Curceanu catalina.curceanu@lnf.infn.it
+- Victor Ovidiu Slupic victor.slupic@theory.nipne.ro
+- Luciano Petruzziello luciano.petruzziello@uni-ulm.de
+- Fabian Wagner f.wagner@thphys.uni-heidelberg.de
+- Saurya Das saurya.das@uleth.ca
+- Saeed Rastgoo srastgoo@ualberta.ca
+- Christian Pfeifer Christian.Pfeifer@zarm.uni-bremen.de
+- Gaetano Lambiase glambiase@unisa.it
+- Sara Kanzi sara.kanzi@final.edu.tr
+```

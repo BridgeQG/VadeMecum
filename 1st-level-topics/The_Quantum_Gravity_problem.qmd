@@ -1,0 +1,5 @@
+---
+title: 'The Quantum Gravity problem'
+mindmap-shape: 'circle'
+mindmap-color: '#fdbcce'
+---

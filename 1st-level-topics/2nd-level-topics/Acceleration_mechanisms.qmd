@@ -1,0 +1,10 @@
+---
+title: 'Acceleration Mechanisms'
+---
+
+```{=comment}
+Volunteer authors (not shown on the page):
+- Kostas Dialektopoulos kdialekt@gmail.com
+- Iarley Lobo lobofisica@gmail.com
+- Denise Boncioli denise.boncioli@univaq.it
+```

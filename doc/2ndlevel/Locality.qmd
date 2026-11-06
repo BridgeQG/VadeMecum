@@ -1,3 +1,0 @@
----
-title: 'The Problem of Locality'
----

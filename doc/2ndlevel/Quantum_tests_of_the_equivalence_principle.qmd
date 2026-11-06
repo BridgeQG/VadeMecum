@@ -1,3 +1,0 @@
----
-title: 'Quantum Tests of the Equivalence Principle'
----

@@ -1,0 +1,12 @@
+---
+title: 'Astrophysical Detection Techniques'
+---
+
+```{=comment}
+Volunteer authors (not shown on the page):
+- Julien Bolmont bolmont@in2p3.fr
+- Tanmay Kumar Poddar tanmay.k.poddar@durham.ac.uk
+- Tomislav Terzić tomislav.terzic@gmail.com
+- Denise Boncioli denise.boncioli@univaq.it
+- Jelena Strišković jelena.striskovic@gmail.com
+```

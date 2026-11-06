@@ -1,0 +1,13 @@
+---
+title: 'Vacuum Birefringence'
+---
+
+```{=comment}
+Volunteer authors (not shown on the page):
+- Stefano Liberati liberati@sissa.it
+- Claudio Paganini Claudio.Paganini@mathematik.uni-regensburg.de
+- Christian Pfeifer Christian.Pfeifer@zarm.uni-bremen.de
+- Sebastian Franchino-Viñas sfranchinovinas@univ-tours.fr
+- Priidik Gallagher priidik.gallagher@ut.ee
+- Giulia Gubitosi giulia.gubitosi@gmail.com
+```

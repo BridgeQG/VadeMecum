@@ -1,0 +1,13 @@
+---
+title: 'Quantum Superposition of Geometries'
+---
+
+```{=comment}
+Volunteer authors (not shown on the page):
+- Catalina Curceanu catalina.curceanu@lnf.infn.it
+- Caslav Brukner caslav.brukner@univie.ac.at
+- Papadopoulos Stylianos stypapad@physics.auth.gr
+- Claudio Paganini Claudio.Paganini@mathematik.uni-regensburg.de
+- Priidik Gallagher priidik.gallagher@ut.ee
+- Anne-Catherine de la Hamette acdelahamette@gmail.com
+```

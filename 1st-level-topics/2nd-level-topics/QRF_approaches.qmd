@@ -1,0 +1,14 @@
+---
+title: 'Perspectival and Operational Approaches to QRFs'
+---
+
+```{=comment}
+Volunteer authors (not shown on the page):
+- Leon Loveridge leon.d.loveridge@usn.no
+- Samuel Fedida sylf2@cam.ac.uk
+- Claudio Paganini Claudio.Paganini@mathematik.uni-regensburg.de
+- Guilherme Franzmann guilherme.franzmann@su.se
+- Caslav Brukner caslav.brukner@univie.ac.at
+- Anne-Catherine de la Hamette acdelahamette@gmail.com
+- Ladina Hausmann hladina@phys.ethz.ch
+```

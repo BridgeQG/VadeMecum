@@ -1,5 +1,0 @@
----
-title: 'Algebraic Quantum Field Theory: relevant aspects for QG'
----
-
-Mention "type reduction" and connection with QRFs

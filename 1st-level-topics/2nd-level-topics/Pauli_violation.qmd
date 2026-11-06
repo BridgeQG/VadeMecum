@@ -1,0 +1,10 @@
+---
+title: 'Pauli Exclusion Principle violations'
+---
+
+```{=comment}
+Volunteer authors (not shown on the page):
+- Catalina Curceanu catalina.curceanu@lnf.infn.it
+- Michele Arzano michele.arzano@unina.it
+- Claudio Paganini Claudio.Paganini@mathematik.uni-regensburg.de
+```

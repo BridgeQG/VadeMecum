@@ -1,4 +1,0 @@
----
-title: 'Discrete, Canonical and Covariant Quantum Gravity'
----
-

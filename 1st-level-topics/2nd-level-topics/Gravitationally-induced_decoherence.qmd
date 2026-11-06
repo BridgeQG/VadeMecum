@@ -1,0 +1,15 @@
+---
+title: 'Gravitationally-induced Decoherence'
+---
+
+```{=comment}
+Volunteer authors (not shown on the page):
+- Catalina Curceanu catalina.curceanu@lnf.infn.it
+- Giuseppe Fabiano gfabiano@lbl.gov
+- Luciano Petruzziello luciano.petruzziello@uni-ulm.de
+- Alba Domi alba.domi@fau.de
+- Max Joseph Fahn maxjoseph.fahn@unibo.it
+- Iarley Lobo lobofisica@gmail.com
+- Houri Ziaeepour houriziaeepour@gmail.com
+- Vittorio D'Esposito vittorio.d.esposito@uniroma2.it
+```

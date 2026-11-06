@@ -1,5 +1,0 @@
----
-title: 'Quantum Reference Frame Transformations'
----
-
-Mention also quantum group transformations of QRFs

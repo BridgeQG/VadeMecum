@@ -1,0 +1,11 @@
+---
+title: 'Standard Model Extensions'
+---
+
+```{=comment}
+Volunteer authors (not shown on the page):
+- Stefano Liberati liberati@sissa.it
+- Nils A. Nilsson nilsson@ibs.re.kr
+- Tanmay Kumar Poddar tanmay.k.poddar@durham.ac.uk
+- Ayush Bidlan i21ph018@phy.svnit.ac.in
+```

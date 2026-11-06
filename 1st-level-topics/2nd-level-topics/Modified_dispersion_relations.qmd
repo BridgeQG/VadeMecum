@@ -1,0 +1,19 @@
+---
+title: 'Modified Dispersion Relations'
+---
+
+```{=comment}
+Volunteer authors (not shown on the page):
+- Stefano Liberati liberati@sissa.it
+- Giuseppe Fabiano gfabiano@lbl.gov
+- Fabian Wagner f.wagner@thphys.uni-heidelberg.de
+- Domenico Frattulillo domenico.frattulillo@unina.it
+- Saurya Das saurya.das@uleth.ca
+- Marco Refuto marco.refuto@unina.it
+- Christian Pfeifer Christian.Pfeifer@zarm.uni-bremen.de
+- Tajron Jurić tjuric@irb.hr
+- Jose Manuel Carmona jcarmona@unizar.es
+- Maykoll Reyes mkreyes@unizar.es
+- Ardit Gkioni agkioni@unizar
+- Vittorio D'Esposito vittorio.d.esposito@uniroma2.it
+```

@@ -1,0 +1,13 @@
+---
+title: 'Threshold Anomalies'
+---
+
+```{=comment}
+Volunteer authors (not shown on the page):
+- Stefano Liberati liberati@sissa.it
+- Iarley Lobo lobofisica@gmail.com
+- Jose Manuel Carmona jcarmona@unizar.es
+- Jose Luis Cortes cortes@unizar.es
+- Maykoll Reyes mkreyes@unizar.es
+- Ardit Gkioni agkioni@unizar
+```

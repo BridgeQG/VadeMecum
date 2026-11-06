@@ -7,24 +7,27 @@ website:
     contents:
       - href: index.qmd
         text: "Home"
-      #- auto: "doc/Examples"
+      #- auto: "docs/Examples"
       - section: "Topics"
         contents:
          - section: "First level topics"
            contents:
-            - href: "doc/Astrophysical_probes.qmd"
-            - href: "doc/Black_holes_and_QM.qmd"
-            - href: "doc/Low-energy_table-top_experiments.qmd"
-            - href: "doc/Invacuo_dispersion.qmd"
-            - href: "doc/LIV_DSR.qmd"
-            - href: "doc/Gravitationally-induced_quantum_effects.qmd"
-            - href: "doc/IR-UV_mixing.qmd"
-            - href: "doc/Equivalence_principle.qmd"
-            - href: "doc/Emergent_nonclassical_and_fuzzy_spacetime.qmd"
-            - href: "doc/Quantum_Reference_Frames.qmd"
+            - href: "1st-level-topics/Astrophysical_probes.qmd"
+            - href: "1st-level-topics/Black_holes_and_QM.qmd"
+            - href: "1st-level-topics/Low-energy_table-top_experiments.qmd"
+            - href: "1st-level-topics/Invacuo_dispersion.qmd"
+            - href: "1st-level-topics/LIV_DSR.qmd"
+            - href: "1st-level-topics/Gravitationally-induced_quantum_effects.qmd"
+            - href: "1st-level-topics/IR-UV_mixing.qmd"
+            - href: "1st-level-topics/Equivalence_principle.qmd"
+            - href: "1st-level-topics/Emergent_nonclassical_and_fuzzy_spacetime.qmd"
+            - href: "1st-level-topics/Quantum_Reference_Frames.qmd"
+            - href: "1st-level-topics/Asymptotic_symmetries.qmd"
+            - href: "1st-level-topics/Relativistic_Quantum_Information.qmd"
+            - href: "1st-level-topics/The_Quantum_Gravity_problem.qmd"
          - section: "Second level topics"
            contents:
-            - auto: "doc/2ndlevel/*.qmd"
+            - auto: "1st-level-topics/2nd-level-topics/*.qmd"
       - href: https://github.com/BridgeQG/VadeMecum
         text: "GitHub Project"
       - href: about.qmd

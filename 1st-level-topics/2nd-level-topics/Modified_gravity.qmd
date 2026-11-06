@@ -1,0 +1,24 @@
+---
+title: 'Modified Gravity theories that emerge from QG models'
+---
+
+```{=comment}
+Volunteer authors (not shown on the page):
+- Stefano Liberati liberati@sissa.it
+- Ayush Hazarika ayush.hazarika4work@gmail.com
+- Papadopoulos Stylianos stypapad@physics.auth.gr
+- David Benisty benidav@post.bgu.ac.il
+- Diego Rubiera-Garcia drubiera@ucm.es
+- Aneta Wojnar aneta.wojnar@uwr.edu.pl
+- Catalina Curceanu catalina.curceanu@lnf.infn.it
+- Kostas Dialektopoulos kdialekt@gmail.com
+- Vishal Nath vishaln.physics.rs@jadavpuruniversity.in
+- Claudio Paganini Claudio.Paganini@mathematik.uni-regensburg.de
+- Saeed Rastgoo srastgoo@ualberta.ca
+- Roukaya Dekhil roukaya.dk@gmail.com
+- Christian Pfeifer Christian.Pfeifer@zarm.uni-bremen.de
+- Héloïse Delaporte heloise.delaporte@uj.edu.pl
+- Tajron Jurić tjuric@irb.hr
+- Sara Kanzi sara.kanzi@final.edu.tr
+- Priidik Gallagher priidik.gallagher@ut.ee
+```

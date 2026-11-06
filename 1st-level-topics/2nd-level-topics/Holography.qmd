@@ -1,0 +1,13 @@
+---
+title: 'Holographic Principle'
+---
+
+```{=comment}
+Volunteer authors (not shown on the page):
+- Gaetano Luciano giuseppegaetano.luciano@udl.cat
+- Vladimir Dobrev vkdobrev@gmail.com
+- Guilherme Franzmann guilherme.franzmann@su.se
+- Emmanuel Saridakis msaridak@noa.gr
+- Iarley Lobo lobofisica@gmail.com
+- Ayush Bidlan i21ph018@phy.svnit.ac.in
+```

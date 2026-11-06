@@ -1,0 +1,14 @@
+---
+title: 'Quantum Reference Frame Transformations'
+---
+
+```{=comment}
+Volunteer authors (not shown on the page):
+- Leon Loveridge leon.d.loveridge@usn.no
+- Caslav Brukner caslav.brukner@univie.ac.at
+- Thomas Galley thomas.d.galley@gmail.com
+- Sara Kanzi sara.kanzi@final.edu.tr
+- Anne-Catherine de la Hamette acdelahamette@gmail.com
+- Ladina Hausmann hladina@phys.ethz.ch
+- Vittorio D'Esposito vittorio.d.esposito@uniroma2.it
+```
