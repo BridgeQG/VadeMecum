@@ -111,10 +111,18 @@ local function generate_graph_html(nodes_db, edges_db)
       const outDegree = {};
       graphData.links.forEach(l => { outDegree[l.source] = (outDegree[l.source] || 0) + 1; });
 
-      // Size of first-level balloons: radius in screen pixels = BASE + PER_LINK * links.
-      // Tune these two numbers to make the balloons bigger/smaller or the differences stronger.
-      const L1_BASE_RADIUS = 22;
-      const L1_PER_LINK = 5;
+      // Size of first-level balloons (rounded squares): minimum side = BASE + PER_LINK * links.
+      // Tune these numbers to make them bigger/smaller or the differences stronger.
+      const L1_BASE_SIDE = 56;
+      const L1_PER_LINK = 7;
+      // Same bold font for every balloon; sizes are fixed in graph units (they scale with zoom)
+      const FONT_SIZE = 12;
+      const L2_WRAP_WIDTH = 110;
+      // Forces: border-to-border repulsion, minimum gap between boxes, pull towards the centre
+      const REPULSION = 60000;  // strength of the border-to-border repulsion
+      const LINK_GAP = 40;      // preferred gap between the borders of linked balloons
+      const BOX_GAP = 10;
+      const GRAVITY = 0.04;
 
       const wrapper = document.getElementById('wrapper_]] .. graph_id .. [[');
       const container = document.getElementById(']] .. graph_id .. [[');
@@ -165,36 +173,53 @@ local function generate_graph_html(nodes_db, edges_db)
 
       // Computes (and stores on the node) the lines of text and the size of the balloon,
       // in graph units. Used for drawing, for the hover area and for click detection.
-      function layoutNode(node, ctx, globalScale) {
-          const fontSize = 10 / globalScale;
-          ctx.font = `bold ${fontSize}px Sans-Serif`;
+      const measureCtx = document.createElement('canvas').getContext('2d');
+      measureCtx.font = `bold ${FONT_SIZE}px Sans-Serif`;
 
-          const words = node.id.split(' ');
-          const maxTextWidth = 100 / globalScale;
+      function wrapText(text, maxWidth) {
+          const words = text.split(' ');
           const lines = []; let curLine = words[0];
           for (let i = 1; i < words.length; i++) {
-              if (ctx.measureText(curLine + " " + words[i]).width < maxTextWidth) curLine += " " + words[i];
+              if (measureCtx.measureText(curLine + " " + words[i]).width < maxWidth) curLine += " " + words[i];
               else { lines.push(curLine); curLine = words[i]; }
           }
           lines.push(curLine);
-
-          const lineHeight = fontSize * 1.2;
-          const textWidth = Math.max(...lines.map(l => ctx.measureText(l).width));
-          const padding = fontSize * 1.0;
-          let w = textWidth + padding;
-          let h = lines.length * lineHeight + padding;
-
-          // First-level balloons grow with the number of topics they link to
-          if (node.level1) {
-              const minSize = 2 * (L1_BASE_RADIUS + L1_PER_LINK * (outDegree[node.id] || 0)) / globalScale;
-              w = Math.max(w, minSize);
-              h = Math.max(h, minSize);
-          }
-          if (node.shape === 'circle') { const d = Math.max(w, h); w = d; h = d; }
-
-          node.__g = { lines, lineHeight, w, h };
-          return node.__g;
+          return lines;
       }
+
+      function layoutNode(node) {
+          const lineHeight = FONT_SIZE * 1.2;
+          const padding = FONT_SIZE * 1.1;
+          const boxFor = lines => ({
+              lines,
+              w: Math.max(...lines.map(l => measureCtx.measureText(l).width)) + padding,
+              h: lines.length * lineHeight + padding
+          });
+
+          let box;
+          if (node.level1) {
+              // First-level topics: rounded square. Try several wrapping widths and keep the one
+              // giving the smallest square, so the text fills the box. The square then grows with
+              // the number of topics the page links to.
+              node.shape = 'rounded';
+              let best = null;
+              for (let maxW = 50; maxW <= 240; maxW += 5) {
+                  const b = boxFor(wrapText(node.id, maxW));
+                  const side = Math.max(b.w, b.h);
+                  if (!best || side < best.side - 0.5) best = { b, side };
+              }
+              const minSide = L1_BASE_SIDE + L1_PER_LINK * (outDegree[node.id] || 0);
+              const side = Math.max(best.side, minSide);
+              box = { lines: best.b.lines, w: side, h: side };
+          } else {
+              box = boxFor(wrapText(node.id, L2_WRAP_WIDTH));
+              if (node.shape === 'circle') { const d = Math.max(box.w, box.h); box.w = d; box.h = d; }
+          }
+          box.lineHeight = lineHeight;
+          node.__g = box;
+          return box;
+      }
+      graphData.nodes.forEach(layoutNode);
 
       // Is the graph-space point (px, py) inside the balloon of this node?
       function insideNode(node, px, py) {
@@ -210,33 +235,86 @@ local function generate_graph_html(nodes_db, edges_db)
         .linkDirectionalParticles(2)
         .linkColor(() => '#cccccc')
         .nodeCanvasObject((node, ctx, globalScale) => {
-          const g = layoutNode(node, ctx, globalScale);
+          const g = node.__g;
 
           const bgColor = node.color || '#84cfff';
           const fgColor = getContrastColor(bgColor);
 
           ctx.fillStyle = bgColor;
           ctx.strokeStyle = '#333333';
-          ctx.lineWidth = 1.5 / globalScale;
+          ctx.lineWidth = 1.5 / Math.max(globalScale, 1);
 
           drawShape(ctx, node.shape, node.x, node.y, g.w, g.h);
           ctx.fill(); ctx.stroke();
 
+          ctx.font = `bold ${FONT_SIZE}px Sans-Serif`;
           ctx.textAlign = 'center'; ctx.textBaseline = 'middle'; ctx.fillStyle = fgColor;
           const startY = node.y - (g.lines.length * g.lineHeight)/2 + g.lineHeight/2;
           g.lines.forEach((line, i) => ctx.fillText(line, node.x, startY + i * g.lineHeight));
         })
         // The hover area is exactly the drawn balloon (used for the pointer cursor)
-        .nodePointerAreaPaint((node, color, ctx, globalScale) => {
-          const g = layoutNode(node, ctx, globalScale);
+        .nodePointerAreaPaint((node, color, ctx) => {
+          const g = node.__g;
           ctx.fillStyle = color;
           drawShape(ctx, node.shape, node.x, node.y, g.w, g.h);
           ctx.fill();
         })
         .onNodeHover(node => container.style.cursor = node && node.url ? 'pointer' : null);
 
-        Graph.d3Force('charge').strength(-600);
-        Graph.d3Force('link').distance(150);
+        // Layout forces: strong repulsion, no overlapping boxes, and a pull towards the centre that is
+        // weaker along the longer side of the window, so the map spreads over the whole area.
+        // Repulsion is computed from the gap between the actual borders of the two balloons
+        // (not between their centres), and falls off with the square of that gap.
+        Graph.d3Force('charge', alpha => {
+            const ns = graphData.nodes;
+            for (let i = 0; i < ns.length; i++) {
+                for (let j = i + 1; j < ns.length; j++) {
+                    const a = ns[i], b = ns[j];
+                    let dx = b.x - a.x, dy = b.y - a.y;
+                    const gapX = Math.max(0, Math.abs(dx) - (a.__g.w + b.__g.w) / 2);
+                    const gapY = Math.max(0, Math.abs(dy) - (a.__g.h + b.__g.h) / 2);
+                    const gap = Math.hypot(gapX, gapY);
+                    const len = Math.hypot(dx, dy) || 1;
+                    if (len === 1 && dx === 0 && dy === 0) { dx = Math.random() - 0.5; dy = Math.random() - 0.5; }
+                    const f = REPULSION * alpha / ((gap + BOX_GAP) * (gap + BOX_GAP));
+                    const fx = f * dx / len, fy = f * dy / len;
+                    a.vx -= fx; a.vy -= fy; b.vx += fx; b.vy += fy;
+                }
+            }
+        });
+        // Links want their two balloons to be a fixed gap apart, measured border to border
+        Graph.d3Force('link').distance(l => {
+            const a = l.source.__g, b = l.target.__g;
+            return (Math.max(a.w, a.h) + Math.max(b.w, b.h)) / 2 + LINK_GAP;
+        });
+        Graph.d3Force('center', null);
+        Graph.d3Force('gravity', alpha => {
+            const aspect = Math.max(0.3, Math.min(3, wrapper.offsetWidth / Math.max(1, wrapper.offsetHeight)));
+            const gx = GRAVITY / Math.max(1, aspect), gy = GRAVITY * Math.max(1, aspect);
+            graphData.nodes.forEach(n => { n.vx -= n.x * gx * alpha; n.vy -= n.y * gy * alpha; });
+        });
+        Graph.d3Force('boxCollide', alpha => {
+            const ns = graphData.nodes;
+            for (let i = 0; i < ns.length; i++) {
+                for (let j = i + 1; j < ns.length; j++) {
+                    const a = ns[i], b = ns[j];
+                    const dx = b.x - a.x, dy = b.y - a.y;
+                    const ox = (a.__g.w + b.__g.w) / 2 + BOX_GAP - Math.abs(dx);
+                    const oy = (a.__g.h + b.__g.h) / 2 + BOX_GAP - Math.abs(dy);
+                    if (ox > 0 && oy > 0) {
+                        if (ox < oy) { const s = (dx >= 0 ? 1 : -1) * ox * 0.25; a.vx -= s; b.vx += s; }
+                        else { const s = (dy >= 0 ? 1 : -1) * oy * 0.25; a.vy -= s; b.vy += s; }
+                    }
+                }
+            }
+        });
+        Graph.warmupTicks(200).cooldownTime(4000);
+
+        // Zoom so that the whole map fills the window (once the layout settles, and on resize)
+        let fitTimer = null;
+        const fitMap = () => { clearTimeout(fitTimer); fitTimer = setTimeout(() => Graph.zoomToFit(400, 25), 150); };
+        Graph.onEngineStop(fitMap);
+        Graph.minZoom(0.2);
 
         // Click / tap: open the page of the balloon under the pointer in a new tab.
         // Hit-testing is done here (instead of relying on hover) so that taps work on touch screens.
@@ -260,7 +338,7 @@ local function generate_graph_html(nodes_db, edges_db)
         });
 
         // ResizeObserver now watches the WRAPPER to rescale the graph
-        new ResizeObserver(() => { Graph.width(wrapper.offsetWidth); Graph.height(wrapper.offsetHeight); }).observe(wrapper);
+        new ResizeObserver(() => { Graph.width(wrapper.offsetWidth); Graph.height(wrapper.offsetHeight); fitMap(); }).observe(wrapper);
     })();
   </script>
     ]]
