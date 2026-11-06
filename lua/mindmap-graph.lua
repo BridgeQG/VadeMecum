@@ -88,7 +88,7 @@ local function generate_graph_html(nodes_db, edges_db)
     local graph_id = "graph_" .. tostring(math.random(100000, 999999))
     
     local html_code = [[
-  <div id="wrapper_]] .. graph_id .. [[" style="position: relative; width: 100%; height: 600px; border: 1px solid #ddd; background: #ffffff; border-radius: 8px; overflow: hidden; margin-bottom: 1.5em;">
+  <div id="wrapper_]] .. graph_id .. [[" style="position: relative; width: 100%; height: max(600px, calc(100vh - 220px)); border: 1px solid #ddd; background: #ffffff; border-radius: 8px; overflow: hidden; margin-bottom: 1.5em;">
       <div id="]] .. graph_id .. [[" style="width: 100%; height: 100%;"></div>
       <button id="btn_]] .. graph_id .. [[" title="Toggle Fullscreen" style="position: absolute; bottom: 15px; right: 15px; z-index: 1000; width: 36px; height: 36px; padding: 0; background: rgba(255, 255, 255, 0.9); border: 1px solid #ccc; border-radius: 6px; cursor: pointer; font-size: 20px; color: #333; box-shadow: 0 2px 5px rgba(0,0,0,0.2); display: flex; align-items: center; justify-content: center; transition: background 0.2s; line-height: 1;">⛶</button>
   </div>

@@ -1,5 +1,6 @@
 ---
 title: 'BridgeQG Vade Mecum'
+page-layout: full
 ---
 
 !mindmap-graph-auto: doc
