@@ -4,39 +4,39 @@ mindmap-shape: 'circle'
 mindmap-color: '#fdbcce'
 ---
 
-Black holes force quantum mechanics and gravity into direct contact: semiclassical QFT predicts [Hawking radiation](/1st-level-topics/2nd-level-topics/Hawking_radiation.qmd) \cite{Hawking:1975vcx} and evaporation, sharpening the [information-loss paradox](/1st-level-topics/2nd-level-topics/Black_hole_information_loss_problem.qmd) and motivating genuine quantum-gravity (QGR) models (since AdS/CFT \cite{Maldacena:1997re} is rigorously established only in (2+1) dimensions and its (3+1)D status is uncertain).
+Black holes force quantum mechanics and gravity into direct contact: semiclassical QFT predicts [Hawking radiation](/1st-level-topics/2nd-level-Gravitationally-induced_quantum_effects/Hawking_radiation.qmd) \cite{Hawking:1975vcx} and evaporation, sharpening the [information-loss paradox](/1st-level-topics/2nd-level-Black_holes_and_QM/Black_hole_information_loss_problem.qmd) and motivating genuine quantum-gravity (QGR) models (since AdS/CFT \cite{Maldacena:1997re} is rigorously established only in (2+1) dimensions and its (3+1)D status is uncertain).
 
-Entanglement across the horizon obeys an [area law](/1st-level-topics/2nd-level-topics/Entanglement_entropy_and_area_law.qmd), suggesting an entanglement origin for black-hole entropy \cite{Bekenstein:1973ur} and underpinning [holography](/1st-level-topics/2nd-level-topics/Holography.qmd)/emergent spacetime via Ryu--Takayanagi \cite{Ryu:2006bv} and ER=EPR; this also implicates scrambling/complexity, the no-hair vs huge-entropy tension (see also the [absence of global symmetries in quantum gravity](/1st-level-topics/2nd-level-topics/No_global_symmetries_in_quantum_gravity.qmd)), the [equivalence principle](/1st-level-topics/2nd-level-topics/Quantum_tests_of_the_equivalence_principle.qmd), the fate of infalling matter, and even [quantum superpositions of macroscopic geometries](/1st-level-topics/2nd-level-topics/Quantum_superposition_of_geometries.qmd) or [causal structures](/1st-level-topics/2nd-level-topics/Quantum_causality.qmd), with [singularity-resolution](/1st-level-topics/2nd-level-topics/Singularity_resolution.qmd) scenarios as a key target.
+Entanglement across the horizon obeys an [area law](/1st-level-topics/2nd-level-Black_holes_and_QM/Entanglement_entropy_and_area_law.qmd), suggesting an entanglement origin for black-hole entropy \cite{Bekenstein:1973ur} and underpinning [holography](/1st-level-topics/2nd-level-Quantum_Reference_Frames/Holography.qmd)/emergent spacetime via Ryu--Takayanagi \cite{Ryu:2006bv} and ER=EPR; this also implicates scrambling/complexity, the no-hair vs huge-entropy tension (see also the [absence of global symmetries in quantum gravity](/1st-level-topics/2nd-level-Asymptotic_symmetries/No_global_symmetries_in_quantum_gravity.qmd)), the [equivalence principle](/1st-level-topics/2nd-level-Gravitationally-induced_quantum_effects/Quantum_tests_of_the_equivalence_principle.qmd), the fate of infalling matter, and even [quantum superpositions of macroscopic geometries](/1st-level-topics/2nd-level-Emergent_nonclassical_and_fuzzy_spacetime/Quantum_superposition_of_geometries.qmd) or [causal structures](/1st-level-topics/2nd-level-Emergent_nonclassical_and_fuzzy_spacetime/Quantum_causality.qmd), with [singularity-resolution](/1st-level-topics/2nd-level-Black_holes_and_QM/Singularity_resolution.qmd) scenarios as a key target.
 
-Observational handles include [greybody factors](/1st-level-topics/2nd-level-topics/Greybody_factors.qmd) (non-thermal distortions), Planck-scale deformations of particle creation that can be parameterized phenomenologically (explicitly including the [Generalized Uncertainty Principle, GUP](/1st-level-topics/2nd-level-topics/GUP.qmd)), and associated [corrections to temperature, entropy (including Rényi/Tsallis generalizations), heat capacity, phase structure, stability and evaporation endgames](/1st-level-topics/2nd-level-topics/Black_hole_thermodynamics_corrections.qmd).
+Observational handles include [greybody factors](/1st-level-topics/2nd-level-Black_holes_and_QM/Greybody_factors.qmd) (non-thermal distortions), Planck-scale deformations of particle creation that can be parameterized phenomenologically (explicitly including the [Generalized Uncertainty Principle, GUP](/1st-level-topics/2nd-level-LIV_DSR/GUP.qmd)), and associated [corrections to temperature, entropy (including Rényi/Tsallis generalizations), heat capacity, phase structure, stability and evaporation endgames](/1st-level-topics/2nd-level-Black_holes_and_QM/Black_hole_thermodynamics_corrections.qmd).
 
-Gravitational-wave and EM probes test [quasinormal modes (QNMs) and ringdown](/1st-level-topics/2nd-level-topics/Quasinormal_modes_and_ringdown.qmd), possible gravitational-wave echoes, and multiple [photon spheres](/1st-level-topics/2nd-level-topics/Black_hole_shadows_and_photon_spheres.qmd); linked eikonal correspondences among QNMs, shadows and greybody factors can help distinguish true horizons from ultra-compact mimickers with surfaces just above the would-be horizon and assess whether primordial-black-hole remnants store missing information.
+Gravitational-wave and EM probes test [quasinormal modes (QNMs) and ringdown](/1st-level-topics/2nd-level-Black_holes_and_QM/Quasinormal_modes_and_ringdown.qmd), possible gravitational-wave echoes, and multiple [photon spheres](/1st-level-topics/2nd-level-Black_holes_and_QM/Black_hole_shadows_and_photon_spheres.qmd); linked eikonal correspondences among QNMs, shadows and greybody factors can help distinguish true horizons from ultra-compact mimickers with surfaces just above the would-be horizon and assess whether primordial-black-hole remnants store missing information.
 
-Infrared physics provides complementary probes: [BMS symmetries](/1st-level-topics/2nd-level-topics/BMS_algebra.qmd), [soft hair and gravitational memory](/1st-level-topics/2nd-level-topics/Soft_hair_and_gravitational_memory.qmd) (tied to soft-graviton theorems) \cite{Strominger:2017zoo}, plus [nonlocal fractional non-Markovian dynamics](/1st-level-topics/2nd-level-topics/Nonlocal_fractional_dynamics.qmd) (e.g., Caputo derivatives).
+Infrared physics provides complementary probes: [BMS symmetries](/1st-level-topics/2nd-level-Asymptotic_symmetries/BMS_algebra.qmd), [soft hair and gravitational memory](/1st-level-topics/2nd-level-Black_holes_and_QM/Soft_hair_and_gravitational_memory.qmd) (tied to soft-graviton theorems) \cite{Strominger:2017zoo}, plus [nonlocal fractional non-Markovian dynamics](/1st-level-topics/2nd-level-Black_holes_and_QM/Nonlocal_fractional_dynamics.qmd) (e.g., Caputo derivatives).
 
-Candidate frameworks include [noncommutative geometry](/1st-level-topics/2nd-level-topics/Noncommutative_geometry_and_black_holes.qmd) (minimal length; Regge--Wheeler potential/QNM shifts with linear stability) and [loop-quantum-gravity dressed-metric/rainbow models](/1st-level-topics/2nd-level-topics/LQG_effective_metrics.qmd) where backreaction yields mode-dependent effective spacetimes, chromatic lensing, possible Lorentz-invariance violations and mode-dependent Einstein angles; astrophysical environments (e.g., dark-matter halos) and consistency tests of the [Weak Gravity and Weak Cosmic Censorship conjectures](/1st-level-topics/2nd-level-topics/Weak_gravity_and_cosmic_censorship.qmd) further constrain viable models.
+Candidate frameworks include [noncommutative geometry](/1st-level-topics/2nd-level-Black_holes_and_QM/Noncommutative_geometry_and_black_holes.qmd) (minimal length; Regge--Wheeler potential/QNM shifts with linear stability) and [loop-quantum-gravity dressed-metric/rainbow models](/1st-level-topics/2nd-level-Black_holes_and_QM/LQG_effective_metrics.qmd) where backreaction yields mode-dependent effective spacetimes, chromatic lensing, possible Lorentz-invariance violations and mode-dependent Einstein angles; astrophysical environments (e.g., dark-matter halos) and consistency tests of the [Weak Gravity and Weak Cosmic Censorship conjectures](/1st-level-topics/2nd-level-Black_holes_and_QM/Weak_gravity_and_cosmic_censorship.qmd) further constrain viable models.
 
 \subsubsection{See also:}
-- [Hawking radiation](/1st-level-topics/2nd-level-topics/Hawking_radiation.qmd)
-- [Black hole information-loss problem](/1st-level-topics/2nd-level-topics/Black_hole_information_loss_problem.qmd)
-- [Entanglement entropy and the area law](/1st-level-topics/2nd-level-topics/Entanglement_entropy_and_area_law.qmd)
-- [Holographic principle](/1st-level-topics/2nd-level-topics/Holography.qmd)
-- [Singularity resolution](/1st-level-topics/2nd-level-topics/Singularity_resolution.qmd)
-- [Greybody factors](/1st-level-topics/2nd-level-topics/Greybody_factors.qmd)
-- [Generalized Uncertainty Principle](/1st-level-topics/2nd-level-topics/GUP.qmd)
-- [Corrections to black hole thermodynamics](/1st-level-topics/2nd-level-topics/Black_hole_thermodynamics_corrections.qmd)
-- [Quasinormal modes, ringdown and echoes](/1st-level-topics/2nd-level-topics/Quasinormal_modes_and_ringdown.qmd)
-- [Black hole shadows and photon spheres](/1st-level-topics/2nd-level-topics/Black_hole_shadows_and_photon_spheres.qmd)
-- [BMS algebra and asymptotically flat spacetimes](/1st-level-topics/2nd-level-topics/BMS_algebra.qmd)
-- [Soft hair and gravitational memory](/1st-level-topics/2nd-level-topics/Soft_hair_and_gravitational_memory.qmd)
-- [Nonlocal and fractional non-Markovian dynamics](/1st-level-topics/2nd-level-topics/Nonlocal_fractional_dynamics.qmd)
-- [Noncommutative geometry and black holes](/1st-level-topics/2nd-level-topics/Noncommutative_geometry_and_black_holes.qmd)
-- [Loop quantum gravity dressed-metric and rainbow models](/1st-level-topics/2nd-level-topics/LQG_effective_metrics.qmd)
-- [Weak gravity and weak cosmic censorship conjectures](/1st-level-topics/2nd-level-topics/Weak_gravity_and_cosmic_censorship.qmd)
-- [Quantum tests of the equivalence principle](/1st-level-topics/2nd-level-topics/Quantum_tests_of_the_equivalence_principle.qmd)
-- [Quantum superposition of geometries](/1st-level-topics/2nd-level-topics/Quantum_superposition_of_geometries.qmd)
-- [Quantum causality](/1st-level-topics/2nd-level-topics/Quantum_causality.qmd)
-- [Absence of global symmetries in quantum gravity](/1st-level-topics/2nd-level-topics/No_global_symmetries_in_quantum_gravity.qmd)
+- [Hawking radiation](/1st-level-topics/2nd-level-Gravitationally-induced_quantum_effects/Hawking_radiation.qmd)
+- [Black hole information-loss problem](/1st-level-topics/2nd-level-Black_holes_and_QM/Black_hole_information_loss_problem.qmd)
+- [Entanglement entropy and the area law](/1st-level-topics/2nd-level-Black_holes_and_QM/Entanglement_entropy_and_area_law.qmd)
+- [Holographic principle](/1st-level-topics/2nd-level-Quantum_Reference_Frames/Holography.qmd)
+- [Singularity resolution](/1st-level-topics/2nd-level-Black_holes_and_QM/Singularity_resolution.qmd)
+- [Greybody factors](/1st-level-topics/2nd-level-Black_holes_and_QM/Greybody_factors.qmd)
+- [Generalized Uncertainty Principle](/1st-level-topics/2nd-level-LIV_DSR/GUP.qmd)
+- [Corrections to black hole thermodynamics](/1st-level-topics/2nd-level-Black_holes_and_QM/Black_hole_thermodynamics_corrections.qmd)
+- [Quasinormal modes, ringdown and echoes](/1st-level-topics/2nd-level-Black_holes_and_QM/Quasinormal_modes_and_ringdown.qmd)
+- [Black hole shadows and photon spheres](/1st-level-topics/2nd-level-Black_holes_and_QM/Black_hole_shadows_and_photon_spheres.qmd)
+- [BMS algebra and asymptotically flat spacetimes](/1st-level-topics/2nd-level-Asymptotic_symmetries/BMS_algebra.qmd)
+- [Soft hair and gravitational memory](/1st-level-topics/2nd-level-Black_holes_and_QM/Soft_hair_and_gravitational_memory.qmd)
+- [Nonlocal and fractional non-Markovian dynamics](/1st-level-topics/2nd-level-Black_holes_and_QM/Nonlocal_fractional_dynamics.qmd)
+- [Noncommutative geometry and black holes](/1st-level-topics/2nd-level-Black_holes_and_QM/Noncommutative_geometry_and_black_holes.qmd)
+- [Loop quantum gravity dressed-metric and rainbow models](/1st-level-topics/2nd-level-Black_holes_and_QM/LQG_effective_metrics.qmd)
+- [Weak gravity and weak cosmic censorship conjectures](/1st-level-topics/2nd-level-Black_holes_and_QM/Weak_gravity_and_cosmic_censorship.qmd)
+- [Quantum tests of the equivalence principle](/1st-level-topics/2nd-level-Gravitationally-induced_quantum_effects/Quantum_tests_of_the_equivalence_principle.qmd)
+- [Quantum superposition of geometries](/1st-level-topics/2nd-level-Emergent_nonclassical_and_fuzzy_spacetime/Quantum_superposition_of_geometries.qmd)
+- [Quantum causality](/1st-level-topics/2nd-level-Emergent_nonclassical_and_fuzzy_spacetime/Quantum_causality.qmd)
+- [Absence of global symmetries in quantum gravity](/1st-level-topics/2nd-level-Asymptotic_symmetries/No_global_symmetries_in_quantum_gravity.qmd)
 
 ## List of Authors {id="authors" .appendix}
 - Saurya Das

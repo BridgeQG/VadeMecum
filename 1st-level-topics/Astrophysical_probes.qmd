@@ -13,11 +13,11 @@ The location of the source also plays a key role during propagation, through bot
 Finally, at the detection stage, messengers are observed through different experimental techniques depending on their nature and energy, such as air-shower measurements, Cherenkov radiation, neutrino telescopes, or interferometric detectors. Since different messengers are linked by the particle processes that govern their production and interactions, their origin can be investigated in a correlated way. Multimessenger astrophysics is developed through studies involving more than one messenger, and is a very hot topic in current investigations of the nature of astrophysical objects, as well as searches for signatures of quantum gravity.
 
 \subsubsection{See also:}
-- [Astrophysical sources](/1st-level-topics/2nd-level-topics/Astrophysical_sources.qmd)
-- Production stage ([acceleration mechanisms](/1st-level-topics/2nd-level-topics/Acceleration_mechanisms.qmd), [elementary particle interactions](/1st-level-topics/2nd-level-topics/Particle_processes_in_astrophysical_sources.qmd), [time delays](/1st-level-topics/2nd-level-topics/Time_delay.qmd))
-- Propagation stage ([elementary particle interactions](/1st-level-topics/2nd-level-topics/Particle_processes_in_astrophysical_sources.qmd), [time delays](/1st-level-topics/2nd-level-topics/Time_delay.qmd), [magnetic fields](/1st-level-topics/2nd-level-topics/Magnetic_fields_in_astrophysical_sources.qmd))
-- Detection stage ([detection techniques](/1st-level-topics/2nd-level-topics/Astrophysical_detection_techniques.qmd))
-- [Multimessenger astrophysics](/1st-level-topics/2nd-level-topics/Multimessenger_astrophysics.qmd) (connections of different messengers and energy ranges)
+- [Astrophysical sources](/1st-level-topics/2nd-level-Astrophysical_probes/Astrophysical_sources.qmd)
+- Production stage ([acceleration mechanisms](/1st-level-topics/2nd-level-Astrophysical_probes/Acceleration_mechanisms.qmd), [elementary particle interactions](/1st-level-topics/2nd-level-Astrophysical_probes/Particle_processes_in_astrophysical_sources.qmd), [time delays](/1st-level-topics/2nd-level-Invacuo_dispersion/Time_delay.qmd))
+- Propagation stage ([elementary particle interactions](/1st-level-topics/2nd-level-Astrophysical_probes/Particle_processes_in_astrophysical_sources.qmd), [time delays](/1st-level-topics/2nd-level-Invacuo_dispersion/Time_delay.qmd), [magnetic fields](/1st-level-topics/2nd-level-Astrophysical_probes/Magnetic_fields_in_astrophysical_sources.qmd))
+- Detection stage ([detection techniques](/1st-level-topics/2nd-level-Astrophysical_probes/Astrophysical_detection_techniques.qmd))
+- [Multimessenger astrophysics](/1st-level-topics/2nd-level-Astrophysical_probes/Multimessenger_astrophysics.qmd) (connections of different messengers and energy ranges)
 - Quantum gravity effects (list of relevant effects)
 
 

@@ -14,7 +14,7 @@ In its most general and abstract form, the equivalence principle states \cite{Mi
 
 \textit{The equations of motion for matter coupled to gravity are locally identical to the equations of motion for matter in the absence of gravity}.
 
-Here, the notion of [locality](/1st-level-topics/2nd-level-topics/Locality.qmd) refers to an infinitesimally small region around a single point in spacetime, in which the dynamics of matter is being discussed. In general, locality is a notion that restricts how the physics "here and now" can influence physics "there and then", by requiring that the influence propagates through all intermediate spacetime regions connecting the "here and now" region to the "there and then"region. The opposite notion is \textit{action at a distance}, where influence can spread from "here and now" to "there and then" directly, skipping intermediate regions. See the article on [locality](/1st-level-topics/2nd-level-topics/Locality.qmd) for further details.
+Here, the notion of [locality](/1st-level-topics/2nd-level-Equivalence_principle/Locality.qmd) refers to an infinitesimally small region around a single point in spacetime, in which the dynamics of matter is being discussed. In general, locality is a notion that restricts how the physics "here and now" can influence physics "there and then", by requiring that the influence propagates through all intermediate spacetime regions connecting the "here and now" region to the "there and then"region. The opposite notion is \textit{action at a distance}, where influence can spread from "here and now" to "there and then" directly, skipping intermediate regions. See the article on [locality](/1st-level-topics/2nd-level-Equivalence_principle/Locality.qmd) for further details.
 
 In the context of EP, one typically assumes that the dynamics of matter is being governed by some (partial) differential equations of finite order, specified in the infinitesimal neighborhood of a single spacetime point. Such equations are called local, since the influence of the physics at the initial point can spread to other spacetime points only through the process of integrating the equations, thus implementing the above idea of locality. Given such local equations of motion for matter in the absence of gravity, the statement of EP is that these equations remain unchanged when one couples gravity to matter. The presence of gravity becomes manifest only through the process of integration, i.e., as a global property of the solutions of the equations, rather than of the equations themselves.
 
@@ -22,11 +22,11 @@ In the context of EP, one typically assumes that the dynamics of matter is being
 
 Depending on the details on how one chooses to describe gravity, matter, and equations of motion, the above abstract statement of EP can be rephrased in various (inequivalent) ways \cite{Okon:2010kn,DiCasola:2013iia}. The most common flavors are \cite{Paunkovic:2022flx}:
 
-- [Newtonian EP](/1st-level-topics/2nd-level-topics/Newtonian_equivalence_principle.qmd): equality of gravitational and inertial mass of point particles in Newtonian mechanics.
-- [Galilean EP](/1st-level-topics/2nd-level-topics/Galilean_equivalence_principle.qmd): universality of free fall: all bodies fall the same way in the same gravitational background.
-- [Einstein's EP](/1st-level-topics/2nd-level-topics/Einstein_equivalence_principle.qmd): local indistinguishability of inertial and (uniform) gravitational forces, as in the "falling elevator".
-- [Weak EP](/1st-level-topics/2nd-level-topics/Weak_equivalence_principle.qmd): free point particles follow geodesics of the curved spacetime geometry.
-- [Strong EP](/1st-level-topics/2nd-level-topics/Strong_equivalence_principle.qmd): matter fields couple minimally to gravity, i.e. to the metric and connection but not directly to curvature.
+- [Newtonian EP](/1st-level-topics/2nd-level-Equivalence_principle/Newtonian_equivalence_principle.qmd): equality of gravitational and inertial mass of point particles in Newtonian mechanics.
+- [Galilean EP](/1st-level-topics/2nd-level-Equivalence_principle/Galilean_equivalence_principle.qmd): universality of free fall: all bodies fall the same way in the same gravitational background.
+- [Einstein's EP](/1st-level-topics/2nd-level-Equivalence_principle/Einstein_equivalence_principle.qmd): local indistinguishability of inertial and (uniform) gravitational forces, as in the "falling elevator".
+- [Weak EP](/1st-level-topics/2nd-level-Equivalence_principle/Weak_equivalence_principle.qmd): free point particles follow geodesics of the curved spacetime geometry.
+- [Strong EP](/1st-level-topics/2nd-level-Equivalence_principle/Strong_equivalence_principle.qmd): matter fields couple minimally to gravity, i.e. to the metric and connection but not directly to curvature.
 
 \subsubsection{Generalizations of EP}
 

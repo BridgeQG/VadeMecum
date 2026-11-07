@@ -1,0 +1,16 @@
+---
+title: 'Gravitons Entanglement and General Covariance'
+mindmap-status: 'work-in-progress'
+---
+
+## List of Authors {id="authors" .appendix}
+- Author 1
+- Author 2
+- ...
+
+```{=comment}
+Volunteer authors (not shown on the page):
+- Manuel Asorey asorey@unizar.es
+- Miguel Pardina mpardina@unizar.es
+- Houri Ziaeepour houriziaeepour@gmail.com
+```

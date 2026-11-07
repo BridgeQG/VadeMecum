@@ -33,7 +33,7 @@ website:
             - href: "1st-level-topics/The_Quantum_Gravity_problem.qmd"
          - section: "Second level topics"
            contents:
-            - auto: "1st-level-topics/2nd-level-topics/*.qmd"
+            - auto: "1st-level-topics/2nd-level-*/*.qmd"
       - href: https://github.com/BridgeQG/VadeMecum
         text: "GitHub Project"
       - href: about.qmd

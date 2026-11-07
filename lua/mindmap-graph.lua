@@ -73,7 +73,7 @@ local function generate_graph_html(nodes_db, edges_db)
 
     local nodes_js_arr = {}
     for id, attrs in pairs(nodes_db) do
-        -- First-level topics are the pages directly in 1st-level-topics/ (second-level ones are in 1st-level-topics/2nd-level-topics/)
+        -- First-level topics are the pages directly in 1st-level-topics/ (second-level ones are in the subfolders 1st-level-topics/2nd-level-NAME/)
         local is_first = attrs.url and attrs.url:match("^1st%-level%-topics/[^/]+%.html$") ~= nil
         table.insert(nodes_js_arr, string.format(
             "{ id: '%s', url: %s, color: %s, shape: %s, level1: %s, status: %s }",
