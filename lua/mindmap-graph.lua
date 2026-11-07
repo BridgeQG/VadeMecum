@@ -119,7 +119,11 @@ local function generate_graph_html(nodes_db, edges_db)
       const L2_WRAP_WIDTH = 110;
       // Forces
       const REPULSION = 60000;    // border-to-border repulsion between any two balloons
-      const L1_REPULSION = 4;     // extra factor between two first-level balloons (separates the clouds)
+      const REPULSION_MAX = 12;   // upper limit of the repulsion force (keeps touching balloons from vibrating)
+      // First-level <-> first-level: Van der Waals-like (Lennard-Jones-like) force on the border-to-border
+      // distance: repulsive closer than L1_R0, attractive beyond it, with a long tail (falls off as 1/d^2)
+      const L1_R0 = 170;          // distance (border to border) at which the force changes sign
+      const L1_EPS = 40;          // strength
       const BOX_GAP = 10;         // minimum gap kept between boxes
       const LINK_GAP = 12;        // preferred gap (border to border) between a topic and its first-level parent
       const LINK_OWN = 0.5;       // spring strength of first-level <-> second-level links (they shape the map)
@@ -131,13 +135,27 @@ local function generate_graph_html(nodes_db, edges_db)
       const DAMPING = 0.85;       // friction afterwards: 0 = none, 1 = frozen (library default 0.4)
       const MAX_SPEED = 6;        // speed limit per tick
       const ALPHA_FLOOR = 0.2;    // the simulation never stops: forces never drop below this level
-      const T_LOW = 0.2;          // permanent, very slow Brownian agitation
-      const T_HIGH = 4;           // agitation right after load / after a balloon is moved
-      const T_SHUFFLE = 10;       // agitation when pressing the shuffle button
-      const COOL_TICKS = 600;     // time constant of the cooling (about 60 ticks per second)
+      const T_HIGH = 1.5;         // short agitation after a balloon has been moved
+      const T_SHUFFLE = 2;        // agitation after the shuffle kick
+      const T_OFF = 0.03;         // below this the agitation is switched off completely
+      const COOL_TICKS = 120;     // time constant of the cooling (about 60 ticks per second)
       const NOISE_CORR = 0.96;    // memory of the random force from one tick to the next (higher = smoother)
+      // Shuffle button
+      const SHAKE_CANDIDATES = 12;// arrangements tried offline
+      const SHAKE_BUDGET_MS = 900;// never spend more than this on the search (after the first four)
+      const SHAKE_KICK = 0.45;    // ... for half of them the current map is displaced randomly by this (std. dev., fraction of the map size)
+      const SHAKE_JOLT = 0.06;    // visible random jolt of every balloon when the button is pressed (fraction of the map size)
+      const SHAKE_TICKS = 110;    // balloons are carried to the new arrangement for this many ticks ...
+      const SHAKE_PULL = 0.3;     // ... with this pull (per unit distance)
+      // Mouse pointer: attracts the balloon under it and pushes the neighbouring ones away
+      const MOUSE_ATTRACT = 0.35;  // pull of the balloon under the pointer towards the pointer (per unit distance)
+      const MOUSE_ATTRACT_MAX = 5; // ... capped to this speed increment per tick
+      const MOUSE_RADIUS = 60;     // balloons whose border is closer than this to the pointer are pushed away (screen pixels)
+      const MOUSE_PUSH = 8;        // push strength at the border of the balloon under the pointer
       // Offline search for a good starting arrangement
       const RESTARTS = 12;           // number of random starts tried
+      const POLISH_DAMPING = 0.5;    // friction during that polishing (lower than the live one: slow modes relax faster)
+      const POLISH_ITERS = 3000;     // final relaxation of the chosen arrangement (stops early once at rest)
       const RELAX_ITERS = 350;       // relaxation steps for each
       const RESTART_BUDGET_MS = 1500; // never spend more than this (after the first three)
 
@@ -298,8 +316,14 @@ local function generate_graph_html(nodes_db, edges_db)
                   const gapY = Math.max(0, Math.abs(dy) - (a.__g.h + b.__g.h) / 2);
                   const gap = Math.hypot(gapX, gapY);
                   const len = Math.hypot(dx, dy);
-                  const boost = (a.level1 && b.level1) ? L1_REPULSION : 1;
-                  const f = boost * REPULSION * alpha / ((gap + BOX_GAP) * (gap + BOX_GAP));
+                  let f;
+                  if (a.level1 && b.level1) {
+                      const x = L1_R0 / (gap + BOX_GAP);
+                      f = Math.min(REPULSION_MAX, L1_EPS * alpha * (x * x * x - x * x));   // > 0 repulsive, < 0 attractive
+                  } else {
+                      // capped at close range: an unbounded repulsion is so stiff that touching balloons chatter
+                      f = Math.min(REPULSION_MAX, REPULSION * alpha / ((gap + BOX_GAP) * (gap + BOX_GAP)));
+                  }
                   const fx = f * dx / len, fy = f * dy / len;
                   a.vx -= fx; a.vy -= fy; b.vx += fx; b.vy += fy;
               }
@@ -345,75 +369,86 @@ local function generate_graph_html(nodes_db, edges_db)
                   const ox = (a.__g.w + b.__g.w) / 2 + BOX_GAP - Math.abs(dx);
                   const oy = (a.__g.h + b.__g.h) / 2 + BOX_GAP - Math.abs(dy);
                   if (ox > 0 && oy > 0) {
-                      if (ox < oy) { const s = (dx >= 0 ? 1 : -1) * ox * 0.25; a.vx -= s; b.vx += s; }
-                      else { const s = (dy >= 0 ? 1 : -1) * oy * 0.25; a.vy -= s; b.vy += s; }
+                      if (ox < oy) { const s = (dx >= 0 ? 1 : -1) * ox * 0.8; a.vx -= s; b.vx += s; }
+                      else { const s = (dy >= 0 ? 1 : -1) * oy * 0.8; a.vy -= s; b.vy += s; }
                   }
               }
           }
       }
 
       // ---------------------------------------------------------------- starting positions
-      // First-level topics on an ellipse (ordered so that topics sharing many pages are neighbours, or
-      // in random order); every other page starts at the barycentre of its first-level parents.
-      function placeNodes(randomOrder) {
+      // First-level topics are dropped at random but spread uniformly over the window area (a random
+      // sequential placement that keeps a minimum distance between them). Pages linked to a single
+      // first-level topic start in a ring around it, pages linked to several start between their
+      // topics, and the others anywhere.
+      function placeNodes() {
           const W = Math.max(300, wrapper.offsetWidth), H = Math.max(300, wrapper.offsetHeight);
           const aspect = Math.max(0.6, Math.min(2.2, W / H));
           const R = 130 + 30 * Math.sqrt(graphData.nodes.length);
           const rx = R * Math.sqrt(aspect), ry = R / Math.sqrt(aspect);
-
           const tops = graphData.nodes.filter(n => n.level1);
-          const shared = (p, q) => {
-              let s = 0;
-              for (const id in parentsOf) {
-                  const ps = parentsOf[id];
-                  if (ps.indexOf(p.id) >= 0 && ps.indexOf(q.id) >= 0) s++;
-              }
-              return s;
-          };
-          const order = [];
-          const left = tops.slice();
-          if (randomOrder) left.sort(() => Math.random() - 0.5);
-          if (left.length) order.push(left.shift());
-          while (left.length) {
-              const last = order[order.length - 1];
-              let bi = 0, bs = -1;
-              if (!randomOrder) left.forEach((q, i) => { const s = shared(last, q); if (s > bs) { bs = s; bi = i; } });
-              order.push(left.splice(bi, 1)[0]);
-          }
-          order.forEach((n, i) => {
-              const ang = 2 * Math.PI * i / order.length;
-              n.x = rx * Math.cos(ang); n.y = ry * Math.sin(ang);
+          tops.forEach(t => { t.__ringPhase = Math.random() * 2 * Math.PI; });
+          let dmin = 0.75 * Math.sqrt((4 * rx * ry) / Math.max(1, tops.length));
+          const placed = [];
+          tops.forEach(n => {
+              let x, y, tries = 0;
+              do {
+                  x = (Math.random() * 2 - 1) * rx; y = (Math.random() * 2 - 1) * ry;
+                  if (++tries % 40 === 0) dmin *= 0.9;   // too crowded: relax the requirement
+              } while (placed.some(q => Math.hypot(q.x - x, q.y - y) < dmin) && tries < 2000);
+              n.x = x; n.y = y; placed.push(n);
+          });
+          const seen = {};   // first-level id -> number of single-parent pages already placed
+          const kids = {};
+          graphData.nodes.forEach(n => {
+              const ps = parentsOf[n.id];
+              if (!n.level1 && ps && ps.length === 1) { const pid = ps[0]; kids[pid] = (kids[pid] || 0) + 1; }
           });
           graphData.nodes.forEach(n => {
               n.vx = 0; n.vy = 0;
               if (n.level1) return;
               const ps = parentsOf[n.id];
-              if (ps && ps.length) {
+              if (ps && ps.length === 1) {
+                  const pid1 = ps[0], p = byId[pid1];
+                  const k = seen[p.id] = (seen[p.id] || 0) + 1;
+                  const ang = 2 * Math.PI * (k / kids[p.id]) + (Math.random() - 0.5) * 0.8 + p.__ringPhase;
+                  const rad = Math.max(p.__g.w, p.__g.h) / 2 + 50 + Math.random() * 70;
+                  n.x = p.x + rad * Math.cos(ang); n.y = p.y + rad * Math.sin(ang);
+              } else if (ps && ps.length) {
                   let sx = 0, sy = 0;
                   ps.forEach(id => { sx += byId[id].x; sy += byId[id].y; });
-                  n.x = sx / ps.length + (Math.random() - 0.5) * 60;
-                  n.y = sy / ps.length + (Math.random() - 0.5) * 60;
+                  n.x = sx / ps.length + (Math.random() - 0.5) * 40;
+                  n.y = sy / ps.length + (Math.random() - 0.5) * 40;
               } else {
-                  n.x = (Math.random() - 0.5) * rx; n.y = (Math.random() - 0.5) * ry;
+                  n.x = (Math.random() * 2 - 1) * rx; n.y = (Math.random() * 2 - 1) * ry;
               }
           });
       }
 
       // The same forces as the live simulation, run offline (no drawing, no noise)
-      function relax(iters) {
+      // warmFrac: fraction of the iterations done with low friction before the final friction is used
+      function relax(iters, warmFrac) {
+          if (warmFrac === undefined) warmFrac = 0.6;
           let alpha = 1;
           for (let i = 0; i < iters; i++) {
               alpha *= 0.97;
               fCharge(alpha); fSprings(alpha); fGravity(alpha); fCollide();
-              const keep = 1 - (i < iters * 0.6 ? 0.4 : DAMPING);
+              const keep = 1 - (i < iters * warmFrac ? 0.4 : (warmFrac === 0 ? POLISH_DAMPING : DAMPING));
+              let vmax = 0;
               graphData.nodes.forEach(n => {
                   n.vx *= keep; n.vy *= keep;
                   const v = Math.hypot(n.vx, n.vy);
                   if (v > 60) { n.vx *= 60 / v; n.vy *= 60 / v; }
+                  vmax = Math.max(vmax, v);
                   n.x += n.vx; n.y += n.vy;
               });
+              if (warmFrac === 0 && vmax < 0.001) break;   // settled
           }
+          graphData.nodes.forEach(n => { n.vx = 0; n.vy = 0; });
       }
+      // Long relaxation with the final friction only: the soft, slow modes of the map are brought to
+      // rest here, offline, so that the live map starts (and ends a shuffle) at rest.
+      function polish() { relax(POLISH_ITERS, 0); }
 
       // Quality of an arrangement: crossing first-level links count most, then how far the links
       // are from their preferred length.
@@ -446,6 +481,7 @@ local function generate_graph_html(nodes_db, edges_db)
               if (!best || c < best.c) best = { c, pos: graphData.nodes.map(n => [n.x, n.y]) };
           }
           graphData.nodes.forEach((n, i) => { n.x = best.pos[i][0]; n.y = best.pos[i][1]; n.vx = 0; n.vy = 0; });
+          polish();
       })();
 
       // ---------------------------------------------------------------- the graph
@@ -509,14 +545,17 @@ local function generate_graph_html(nodes_db, edges_db)
           return Math.sqrt(-2 * Math.log(u)) * Math.cos(2 * Math.PI * v);
       }
 
-      // Brownian agitation: starts hot and cools exponentially down to a very low permanent level,
-      // so the map keeps annealing by itself and then just breathes around its configuration.
+      // Brownian agitation: only a transient (after load, after a balloon was moved, after shuffle).
+      // It cools exponentially and is switched off completely, so a settled map stays still.
       Graph.d3Force('thermal', () => {
           tick++;
           if (tick === WARM_TICKS) Graph.d3VelocityDecay(DAMPING);
-          currentT = tick < WARM_TICKS ? 0
-              : T_LOW + (heatPeak - T_LOW) * Math.exp(-(tick - heatStart) / COOL_TICKS);
-          if (currentT <= 0) return;
+          currentT = tick < WARM_TICKS ? 0 : heatPeak * Math.exp(-(tick - heatStart) / COOL_TICKS);
+          if (currentT < T_OFF) {
+              currentT = 0;
+              if (tick >= WARM_TICKS && heatPeak > 0) { heatPeak = 0; graphData.nodes.forEach(n => { n.__nx = 0; n.__ny = 0; }); }
+              return;
+          }
           // the random force of each balloon changes slowly (correlated noise): smooth wandering, no vibration
           const c = NOISE_CORR, q = Math.sqrt(1 - c * c) * currentT;
           graphData.nodes.forEach(n => {
@@ -526,12 +565,97 @@ local function generate_graph_html(nodes_db, edges_db)
           });
       });
 
+      // Mouse pointer force (mouse only, not on touch screens, not while panning):
+      // the balloon under the pointer is pulled towards it (so it is "trapped" and easy to hit),
+      // and the balloons whose border is within MOUSE_RADIUS of the pointer are pushed away from it.
+      let mouse = null;   // pointer position in screen coordinates inside the map, or null
+      let panning = false;
+      container.addEventListener('pointermove', ev => {
+          if (ev.pointerType !== 'mouse') { mouse = null; return; }
+          const r = container.getBoundingClientRect();
+          mouse = { x: ev.clientX - r.left, y: ev.clientY - r.top };
+      }, true);
+      container.addEventListener('pointerleave', () => { mouse = null; }, true);
+      container.addEventListener('pointerdown', () => { if (!hot) panning = true; }, true);
+      window.addEventListener('pointerup', () => { panning = false; }, true);
+      Graph.d3Force('mouse', () => {
+          if (!mouse || panning || tick < WARM_TICKS) return;
+          const p = Graph.screen2GraphCoords(mouse.x, mouse.y);
+          const nodes = graphData.nodes;
+          // radius and strength are meant in screen terms: they grow when the map is zoomed out
+          const s = 1 / Math.max(Graph.zoom(), 0.1), R = MOUSE_RADIUS * s;
+          let under = null;
+          for (let i = nodes.length - 1; i >= 0; i--) if (insideNode(nodes[i], p.x, p.y)) { under = nodes[i]; break; }
+          nodes.forEach(n => {
+              if (n.fx != null) return;   // balloon being dragged
+              if (n === under) {
+                  let dx = p.x - n.x, dy = p.y - n.y;
+                  const d = Math.hypot(dx, dy), f = Math.min(MOUSE_ATTRACT * d, MOUSE_ATTRACT_MAX * s);
+                  if (d > 0) { n.vx += dx / d * f; n.vy += dy / d * f; }
+                  return;
+              }
+              // distance from the pointer to the border of the balloon (0 inside)
+              const ex = Math.max(Math.abs(p.x - n.x) - n.__g.w / 2, 0);
+              const ey = Math.max(Math.abs(p.y - n.y) - n.__g.h / 2, 0);
+              const gap = Math.hypot(ex, ey);
+              if (gap >= R) return;
+              let dx = n.x - p.x, dy = n.y - p.y;
+              let d = Math.hypot(dx, dy);
+              if (d === 0) { dx = Math.random() - 0.5; dy = Math.random() - 0.5; d = Math.hypot(dx, dy); }
+              const f = MOUSE_PUSH * s * (1 - gap / R) * (under ? 1 : 0.5);
+              n.vx += dx / d * f; n.vy += dy / d * f;
+          });
+      });
+
+      // Shuffle: a violent shake. Throwing the balloons about at random and letting them fall back
+      // would almost always end in a worse arrangement, so the shake works in two steps: several
+      // completely different arrangements are relaxed offline (half of them from a fresh random start,
+      // half from a violent kick of the current map) and the best one that differs clearly from the
+      // current map is chosen; then the balloons are thrown about and carried there.
+      let shakeTarget = null, shakeUntil = 0;
+      function shake() {
+          const nodes = graphData.nodes;
+          const cur = nodes.map(n => [n.x, n.y]);
+          let x0 = Infinity, x1 = -Infinity, y0 = Infinity, y1 = -Infinity;
+          cur.forEach(p => { x0 = Math.min(x0, p[0]); x1 = Math.max(x1, p[0]); y0 = Math.min(y0, p[1]); y1 = Math.max(y1, p[1]); });
+          const size = Math.max(x1 - x0, y1 - y0, 300);
+          const meanDisp = pos => pos.reduce((s, p, i) => s + Math.hypot(p[0] - cur[i][0], p[1] - cur[i][1]), 0) / pos.length;
+          const t0 = performance.now();
+          let best = null;
+          for (let k = 0; k < SHAKE_CANDIDATES && (k < 4 || performance.now() - t0 < SHAKE_BUDGET_MS); k++) {
+              if (k % 2 === 0) placeNodes(true);
+              else nodes.forEach((n, i) => { n.x = cur[i][0] + gauss() * SHAKE_KICK * size; n.y = cur[i][1] + gauss() * SHAKE_KICK * size; });
+              nodes.forEach(n => { n.vx = 0; n.vy = 0; });
+              relax(RELAX_ITERS);
+              const pos = nodes.map(n => [n.x, n.y]);
+              if (meanDisp(pos) < 0.1 * size) continue;   // too close to where it already is
+              const c = layoutCost();
+              if (!best || c < best.c) best = { c, pos };
+          }
+          if (best) { nodes.forEach((n, i) => { n.x = best.pos[i][0]; n.y = best.pos[i][1]; }); polish(); best.pos = nodes.map(n => [n.x, n.y]); }
+          nodes.forEach((n, i) => {
+              n.x = cur[i][0] + gauss() * SHAKE_JOLT * size; n.y = cur[i][1] + gauss() * SHAKE_JOLT * size;
+              n.vx = 0; n.vy = 0;
+          });
+          if (best) { shakeTarget = best.pos; shakeUntil = tick + SHAKE_TICKS; }
+          heat(T_SHUFFLE);
+      }
+      Graph.d3Force('shakeTo', () => {
+          if (!shakeTarget) return;
+          if (tick > shakeUntil) { shakeTarget = null; return; }
+          graphData.nodes.forEach((n, i) => {
+              n.vx += (shakeTarget[i][0] - n.x) * SHAKE_PULL; n.vy += (shakeTarget[i][1] - n.y) * SHAKE_PULL;
+          });
+      });
+
       // The shape-giving forces are defined above (the library's own link force is switched off)
       Graph.d3Force('link').strength(0);
       Graph.d3Force('center', null);
-      Graph.d3Force('charge', fCharge);
-      Graph.d3Force('springs', fSprings);
-      Graph.d3Force('gravity', fGravity);
+      // The live forces ignore the library's cooling parameter (alpha, which starts at 1 and would shake
+      // the carefully relaxed starting arrangement): they always act at the floor level.
+      Graph.d3Force('charge', () => fCharge(0));
+      Graph.d3Force('springs', () => fSprings(0));
+      Graph.d3Force('gravity', () => fGravity(0));
       Graph.d3Force('boxCollide', fCollide);
 
       // No balloon moves faster than MAX_SPEED (plus what the current agitation allows)
@@ -547,8 +671,7 @@ local function generate_graph_html(nodes_db, edges_db)
       // Relaxation before the first frame with low friction, then heavy damping; never fully cool down
       Graph.d3VelocityDecay(0.4).d3AlphaDecay(0.04).d3AlphaMin(0);
       Graph.warmupTicks(WARM_TICKS).cooldownTime(Infinity).cooldownTicks(Infinity);
-      Graph.minZoom(0.2);
-      heat(T_HIGH);
+      Graph.minZoom(0.2);   // (no agitation at load: the starting arrangement is already at rest)
 
       // Zoom so that the whole map fills the window. The map keeps being re-fitted while it settles,
       // until you zoom or pan yourself; the shuffle button switches this on again.
@@ -562,7 +685,7 @@ local function generate_graph_html(nodes_db, edges_db)
       container.addEventListener('pointerup', () => { panStart = false; }, true);
       container.addEventListener('touchstart', ev => { if (ev.touches.length > 1) autoFit = false; }, { passive: true });
       let panStart = false;
-      heatBtn.addEventListener('click', () => { heat(T_SHUFFLE); autoFit = true; });
+      heatBtn.addEventListener('click', () => { shake(); autoFit = true; });
       new ResizeObserver(() => { Graph.width(wrapper.offsetWidth); Graph.height(wrapper.offsetHeight); }).observe(wrapper);
 
       // Click / tap: open the page of the balloon under the pointer in a new tab.
@@ -586,7 +709,7 @@ local function generate_graph_html(nodes_db, edges_db)
           }
       });
 
-      if (window.__BQG_DEBUG) window.__bqg = { Graph, graphData, heat, parentsOf, childCount, getTick: () => tick };
+      if (window.__BQG_DEBUG) window.__bqg = { Graph, graphData, heat, shake, parentsOf, childCount, getTick: () => tick, getT: () => currentT, layoutCost, setMouse: m => { mouse = m; }, getMouse: () => mouse, polish };
     })();
   </script>
     ]]
