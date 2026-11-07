@@ -943,10 +943,10 @@ window.Quarto = {
 </header>
 
 
-  <div id="wrapper_graph_225004" style="position: relative; width: 100%; height: max(600px, calc(100vh - 220px)); border: 1px solid #ddd; background: #ffffff; border-radius: 8px; overflow: hidden; margin-bottom: 1.5em;">
-      <div id="graph_225004" style="width: 100%; height: 100%;"></div>
-      <button id="btn_graph_225004" title="Toggle Fullscreen" style="position: absolute; bottom: 15px; right: 15px; z-index: 1000; width: 36px; height: 36px; padding: 0; background: rgba(255, 255, 255, 0.9); border: 1px solid #ccc; border-radius: 6px; cursor: pointer; font-size: 20px; color: #333; box-shadow: 0 2px 5px rgba(0,0,0,0.2); display: flex; align-items: center; justify-content: center; transition: background 0.2s; line-height: 1;">⛶</button>
-      <button id="heat_graph_225004" title="Shuffle: shake the map so it can find a new arrangement" style="position: absolute; bottom: 15px; right: 59px; z-index: 1000; width: 36px; height: 36px; padding: 0; background: rgba(255, 255, 255, 0.9); border: 1px solid #ccc; border-radius: 6px; cursor: pointer; font-size: 20px; color: #333; box-shadow: 0 2px 5px rgba(0,0,0,0.2); display: flex; align-items: center; justify-content: center; line-height: 1;"><svg width="22" height="22" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="4" width="8" height="16" rx="2"></rect><path d="M5 8q-2 4 0 8M2.5 6q-3 6 0 12M19 8q2 4 0 8M21.5 6q3 6 0 12"></path></svg></button>
+  <div id="wrapper_graph_753687" style="position: relative; width: 100%; height: max(600px, calc(100vh - 220px)); border: 1px solid #ddd; background: #ffffff; border-radius: 8px; overflow: hidden; margin-bottom: 1.5em;">
+      <div id="graph_753687" style="width: 100%; height: 100%;"></div>
+      <button id="btn_graph_753687" title="Toggle Fullscreen" style="position: absolute; bottom: 15px; right: 15px; z-index: 1000; width: 36px; height: 36px; padding: 0; background: rgba(255, 255, 255, 0.9); border: 1px solid #ccc; border-radius: 6px; cursor: pointer; font-size: 20px; color: #333; box-shadow: 0 2px 5px rgba(0,0,0,0.2); display: flex; align-items: center; justify-content: center; transition: background 0.2s; line-height: 1;">⛶</button>
+      <button id="heat_graph_753687" title="Shuffle: shake the map so it can find a new arrangement" style="position: absolute; bottom: 15px; right: 59px; z-index: 1000; width: 36px; height: 36px; padding: 0; background: rgba(255, 255, 255, 0.9); border: 1px solid #ccc; border-radius: 6px; cursor: pointer; font-size: 20px; color: #333; box-shadow: 0 2px 5px rgba(0,0,0,0.2); display: flex; align-items: center; justify-content: center; line-height: 1;"><svg width="22" height="22" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="4" width="8" height="16" rx="2"></rect><path d="M5 8q-2 4 0 8M2.5 6q-3 6 0 12M19 8q2 4 0 8M21.5 6q3 6 0 12"></path></svg></button>
   </div>
 
   <script src="https://unpkg.com/force-graph"></script>
@@ -955,256 +955,256 @@ window.Quarto = {
       if (typeof ForceGraph === 'undefined') { setTimeout(initGraph, 50); return; }
 
       const graphData = {
-        nodes: [ { id: 'Newtonian Equivalence Principle', url: '1st-level-topics/2nd-level-Equivalence_principle/Newtonian_equivalence_principle.html', color: null, shape: 'rounded', level1: false, status: 'written' },
+        nodes: [ { id: 'In-vacuo dispersion', url: '1st-level-topics/Invacuo_dispersion.html', color: '#fdbcce', shape: 'circle', level1: true, status: null },
+          { id: 'The Quantum Gravity problem', url: '1st-level-topics/The_Quantum_Gravity_problem.html', color: '#fdbcce', shape: 'circle', level1: true, status: null },
           { id: 'Symmetries in String Theory', url: '1st-level-topics/2nd-level-Asymptotic_symmetries/Symmetries_in_string_theory.html', color: null, shape: 'rounded', level1: false, status: 'authors-unassigned' },
+          { id: 'COW experiment and gravitational phase shifts', url: '1st-level-topics/2nd-level-Gravitationally-induced_quantum_effects/COW_experiment.html', color: null, shape: 'rounded', level1: false, status: 'work-in-progress' },
+          { id: 'Global Spacetime Symmetries and Isometries', url: '1st-level-topics/2nd-level-Asymptotic_symmetries/Global_spacetime_symmetries_and_isometries.html', color: null, shape: 'rounded', level1: false, status: 'authors-unassigned' },
+          { id: 'BMS Algebra and Asymptotically Flat Spacetimes', url: '1st-level-topics/2nd-level-Asymptotic_symmetries/BMS_algebra.html', color: null, shape: 'rounded', level1: false, status: 'authors-unassigned' },
+          { id: 'Gravitationally-induced quantum effects', url: '1st-level-topics/Gravitationally-induced_quantum_effects.html', color: '#fdbcce', shape: 'circle', level1: true, status: null },
+          { id: 'Collapse Models', url: '1st-level-topics/2nd-level-Low-energy_table-top_experiments/Collapse_models.html', color: null, shape: 'rounded', level1: false, status: 'work-in-progress' },
+          { id: 'Emergent, Nonclassical and Fuzzy Spacetime', url: '1st-level-topics/Emergent_nonclassical_and_fuzzy_spacetime.html', color: '#fdbcce', shape: 'circle', level1: true, status: null },
+          { id: 'Absence of Global Symmetries in Quantum Gravity', url: '1st-level-topics/2nd-level-Asymptotic_symmetries/No_global_symmetries_in_quantum_gravity.html', color: null, shape: 'rounded', level1: false, status: 'authors-unassigned' },
+          { id: 'Subsystem Relativity: the Paradox of the Third Particle', url: '1st-level-topics/2nd-level-Quantum_Reference_Frames/Subsystems_relativity.html', color: null, shape: 'rounded', level1: false, status: 'work-in-progress' },
+          { id: 'Emergence, Coarse-graining and the Inverse Problem', url: '1st-level-topics/2nd-level-The_Quantum_Gravity_problem/Emergence_and_coarse_graining.html', color: null, shape: 'rounded', level1: false, status: 'authors-unassigned' },
+          { id: 'Quantum Causality', url: '1st-level-topics/2nd-level-Emergent_nonclassical_and_fuzzy_spacetime/Quantum_causality.html', color: null, shape: 'rounded', level1: false, status: 'work-in-progress' },
+          { id: 'Quantum groups and Hopf algebras', url: '1st-level-topics/2nd-level-LIV_DSR/Hopf_algebra.html', color: null, shape: 'rounded', level1: false, status: 'work-in-progress' },
+          { id: 'Astrophysical Sources', url: '1st-level-topics/2nd-level-Astrophysical_probes/Astrophysical_sources.html', color: null, shape: 'rounded', level1: false, status: 'work-in-progress' },
+          { id: 'Quantum Reference Frame Transformations', url: '1st-level-topics/2nd-level-Quantum_Reference_Frames/QRF_transformations.html', color: null, shape: 'rounded', level1: false, status: 'work-in-progress' },
+          { id: 'Precision Measurements of Short-range Gravity', url: '1st-level-topics/2nd-level-Gravitationally-induced_quantum_effects/Precision_measurements_of_short-range_gravity.html', color: null, shape: 'rounded', level1: false, status: 'work-in-progress' },
+          { id: 'Covariant Surface Charges and Boundary Terms', url: '1st-level-topics/2nd-level-Asymptotic_symmetries/Covariant_surface_charges.html', color: null, shape: 'rounded', level1: false, status: 'authors-unassigned' },
+          { id: 'Modified Schroedinger Equation', url: '1st-level-topics/2nd-level-Gravitationally-induced_quantum_effects/Modified_Schroedinger_equation.html', color: null, shape: 'rounded', level1: false, status: 'work-in-progress' },
+          { id: 'Nonlocalities', url: '1st-level-topics/2nd-level-IR-UV_mixing/Nonlocalities.html', color: null, shape: 'rounded', level1: false, status: 'authors-unassigned' },
+          { id: 'Weak Gravity and Weak Cosmic Censorship Conjectures', url: '1st-level-topics/2nd-level-Black_holes_and_QM/Weak_gravity_and_cosmic_censorship.html', color: null, shape: 'rounded', level1: false, status: 'authors-unassigned' },
+          { id: 'Renormalizability', url: '1st-level-topics/2nd-level-IR-UV_mixing/Renormalizability.html', color: null, shape: 'rounded', level1: false, status: 'authors-unassigned' },
+          { id: 'Loop Quantum Gravity Dressed-metric and Rainbow Models of Black Holes', url: '1st-level-topics/2nd-level-Black_holes_and_QM/LQG_effective_metrics.html', color: null, shape: 'rounded', level1: false, status: 'authors-unassigned' },
+          { id: 'Equivalence Principle, locality and quantum gravity', url: '1st-level-topics/Equivalence_principle.html', color: '#fdbcce', shape: 'circle', level1: true, status: null },
+          { id: 'Fundamental principles of Quantum Mechanics that are amenable to testing', url: '1st-level-topics/2nd-level-Low-energy_table-top_experiments/QMfoundations.html', color: null, shape: 'rounded', level1: false, status: 'work-in-progress' },
+          { id: 'Einstein\'s Equivalence Principle', url: '1st-level-topics/2nd-level-Equivalence_principle/Einstein_equivalence_principle.html', color: null, shape: 'rounded', level1: false, status: 'written' },
+          { id: 'Matrix Models', url: '1st-level-topics/2nd-level-Emergent_nonclassical_and_fuzzy_spacetime/Matrix_models.html', color: null, shape: 'rounded', level1: false, status: 'authors-unassigned' },
           { id: 'Violation and Deformation of Relativistic Symmetries', url: '1st-level-topics/LIV_DSR.html', color: '#fdbcce', shape: 'circle', level1: true, status: null },
           { id: 'Corrections to Black Hole Thermodynamics', url: '1st-level-topics/2nd-level-Black_holes_and_QM/Black_hole_thermodynamics_corrections.html', color: null, shape: 'rounded', level1: false, status: 'authors-unassigned' },
-          { id: 'The Quantum Gravity problem', url: '1st-level-topics/The_Quantum_Gravity_problem.html', color: '#fdbcce', shape: 'circle', level1: true, status: null },
-          { id: 'Holographic Principle', url: '1st-level-topics/2nd-level-Quantum_Reference_Frames/Holography.html', color: null, shape: 'rounded', level1: false, status: 'work-in-progress' },
-          { id: 'Hawking Radiation', url: '1st-level-topics/2nd-level-Gravitationally-induced_quantum_effects/Hawking_radiation.html', color: null, shape: 'rounded', level1: false, status: 'work-in-progress' },
-          { id: 'String theory', url: '1st-level-topics/2nd-level-IR-UV_mixing/String_theory.html', color: null, shape: 'rounded', level1: false, status: 'authors-unassigned' },
-          { id: 'Discrete, Canonical and Covariant Quantum Gravity', url: '1st-level-topics/2nd-level-Quantum_Reference_Frames/Discrete_QG.html', color: null, shape: 'rounded', level1: false, status: 'work-in-progress' },
-          { id: 'Quasinormal Modes, Ringdown and Echoes', url: '1st-level-topics/2nd-level-Black_holes_and_QM/Quasinormal_modes_and_ringdown.html', color: null, shape: 'rounded', level1: false, status: 'authors-unassigned' },
-          { id: 'Astrophysical Sources', url: '1st-level-topics/2nd-level-Astrophysical_probes/Astrophysical_sources.html', color: null, shape: 'rounded', level1: false, status: 'work-in-progress' },
-          { id: 'In-vacuo dispersion', url: '1st-level-topics/Invacuo_dispersion.html', color: '#fdbcce', shape: 'circle', level1: true, status: null },
-          { id: 'Multimessenger Astrophysics', url: '1st-level-topics/2nd-level-Astrophysical_probes/Multimessenger_astrophysics.html', color: null, shape: 'rounded', level1: false, status: 'work-in-progress' },
-          { id: 'Modified Dispersion Relations', url: '1st-level-topics/2nd-level-LIV_DSR/Modified_dispersion_relations.html', color: null, shape: 'rounded', level1: false, status: 'work-in-progress' },
-          { id: 'Equivalence Principle, locality and quantum gravity', url: '1st-level-topics/Equivalence_principle.html', color: '#fdbcce', shape: 'circle', level1: true, status: null },
-          { id: 'Einstein\'s Equivalence Principle', url: '1st-level-topics/2nd-level-Equivalence_principle/Einstein_equivalence_principle.html', color: null, shape: 'rounded', level1: false, status: 'written' },
-          { id: 'Gravitationally-induced quantum effects', url: '1st-level-topics/Gravitationally-induced_quantum_effects.html', color: '#fdbcce', shape: 'circle', level1: true, status: null },
-          { id: 'Black Holes and Quantum Mechanics', url: '1st-level-topics/Black_holes_and_QM.html', color: '#fdbcce', shape: 'circle', level1: true, status: null },
-          { id: 'Renormalizability', url: '1st-level-topics/2nd-level-IR-UV_mixing/Renormalizability.html', color: null, shape: 'rounded', level1: false, status: 'authors-unassigned' },
-          { id: 'Relative Locality', url: '1st-level-topics/2nd-level-LIV_DSR/Relative_locality.html', color: null, shape: 'rounded', level1: false, status: 'authors-unassigned' },
-          { id: 'Quantum Optomechanical Systems', url: '1st-level-topics/2nd-level-Low-energy_table-top_experiments/Optomechanical_systems.html', color: null, shape: 'rounded', level1: false, status: 'work-in-progress' },
-          { id: 'Subsystem Relativity: the Paradox of the Third Particle', url: '1st-level-topics/2nd-level-Quantum_Reference_Frames/Subsystems_relativity.html', color: null, shape: 'rounded', level1: false, status: 'work-in-progress' },
-          { id: 'Singularity Resolution', url: '1st-level-topics/2nd-level-Black_holes_and_QM/Singularity_resolution.html', color: null, shape: 'rounded', level1: false, status: 'authors-unassigned' },
-          { id: 'Relational Observables', url: '1st-level-topics/2nd-level-Quantum_Reference_Frames/Relational_observables.html', color: null, shape: 'rounded', level1: false, status: 'work-in-progress' },
-          { id: 'Emergent, Nonclassical and Fuzzy Spacetime', url: '1st-level-topics/Emergent_nonclassical_and_fuzzy_spacetime.html', color: '#fdbcce', shape: 'circle', level1: true, status: null },
-          { id: 'Phases of Geometry and Phase Diagrams of Quantum Gravity Theories', url: '1st-level-topics/2nd-level-Emergent_nonclassical_and_fuzzy_spacetime/Phases_of_geometry_and_phase_diagrams_of_quantum_gravity_theories.html', color: null, shape: 'rounded', level1: false, status: 'work-in-progress' },
-          { id: 'Global Spacetime Symmetries and Isometries', url: '1st-level-topics/2nd-level-Asymptotic_symmetries/Global_spacetime_symmetries_and_isometries.html', color: null, shape: 'rounded', level1: false, status: 'authors-unassigned' },
-          { id: 'Quantum Superposition of Geometries', url: '1st-level-topics/2nd-level-Emergent_nonclassical_and_fuzzy_spacetime/Quantum_superposition_of_geometries.html', color: null, shape: 'rounded', level1: false, status: 'work-in-progress' },
-          { id: 'BMS Algebra and Asymptotically Flat Spacetimes', url: '1st-level-topics/2nd-level-Asymptotic_symmetries/BMS_algebra.html', color: null, shape: 'rounded', level1: false, status: 'authors-unassigned' },
-          { id: 'Asymptotic Symmetries in AdS and dS', url: '1st-level-topics/2nd-level-Asymptotic_symmetries/Asymptotic_symmetries_in_AdS_and_dS.html', color: null, shape: 'rounded', level1: false, status: 'authors-unassigned' },
-          { id: 'Nonlocalities', url: '1st-level-topics/2nd-level-IR-UV_mixing/Nonlocalities.html', color: null, shape: 'rounded', level1: false, status: 'authors-unassigned' },
-          { id: 'Doubly (or Deformed) Special Relativity (DSR)', url: '1st-level-topics/2nd-level-LIV_DSR/DSR.html', color: null, shape: 'rounded', level1: false, status: 'work-in-progress' },
-          { id: 'Weak Equivalence Principle', url: '1st-level-topics/2nd-level-Equivalence_principle/Weak_equivalence_principle.html', color: null, shape: 'rounded', level1: false, status: 'written' },
-          { id: 'Strong Equivalence Principle', url: '1st-level-topics/2nd-level-Equivalence_principle/Strong_equivalence_principle.html', color: null, shape: 'rounded', level1: false, status: 'written' },
-          { id: 'Modified Schroedinger Equation', url: '1st-level-topics/2nd-level-Gravitationally-induced_quantum_effects/Modified_Schroedinger_equation.html', color: null, shape: 'rounded', level1: false, status: 'work-in-progress' },
-          { id: 'Astrophysical probes', url: '1st-level-topics/Astrophysical_probes.html', color: '#fdbcce', shape: 'circle', level1: true, status: null },
-          { id: 'Soft Hair and Gravitational Memory', url: '1st-level-topics/2nd-level-Black_holes_and_QM/Soft_hair_and_gravitational_memory.html', color: null, shape: 'rounded', level1: false, status: 'authors-unassigned' },
-          { id: 'Emergence, Coarse-graining and the Inverse Problem', url: '1st-level-topics/2nd-level-The_Quantum_Gravity_problem/Emergence_and_coarse_graining.html', color: null, shape: 'rounded', level1: false, status: 'authors-unassigned' },
-          { id: 'Discrete Symmetries Violation and Deformation motivated by Quantum Gravity', url: '1st-level-topics/2nd-level-LIV_DSR/Discrete_symmetries.html', color: null, shape: 'rounded', level1: false, status: 'work-in-progress' },
-          { id: 'IR-UV mixing', url: '1st-level-topics/IR-UV_mixing.html', color: '#fdbcce', shape: 'circle', level1: true, status: null },
-          { id: 'Black Hole Information-Loss Problem', url: '1st-level-topics/2nd-level-Black_holes_and_QM/Black_hole_information_loss_problem.html', color: null, shape: 'rounded', level1: false, status: 'authors-unassigned' },
-          { id: 'Entanglement Entropy and the Area Law', url: '1st-level-topics/2nd-level-Black_holes_and_QM/Entanglement_entropy_and_area_law.html', color: null, shape: 'rounded', level1: false, status: 'authors-unassigned' },
-          { id: 'The Problem of Locality', url: '1st-level-topics/2nd-level-Equivalence_principle/Locality.html', color: null, shape: 'rounded', level1: false, status: 'work-in-progress' },
-          { id: 'Galilean Equivalence Principle', url: '1st-level-topics/2nd-level-Equivalence_principle/Galilean_equivalence_principle.html', color: null, shape: 'rounded', level1: false, status: 'written' },
-          { id: 'Time Dilation-induced Dephasing', url: '1st-level-topics/2nd-level-Gravitationally-induced_quantum_effects/Time_dilation-induced_dephasing.html', color: null, shape: 'rounded', level1: false, status: 'work-in-progress' },
-          { id: 'Quantum Cosmology', url: '1st-level-topics/2nd-level-Emergent_nonclassical_and_fuzzy_spacetime/Quantum_cosmology.html', color: null, shape: 'rounded', level1: false, status: 'work-in-progress' },
-          { id: 'Quantum Spacetime', url: '1st-level-topics/2nd-level-Emergent_nonclassical_and_fuzzy_spacetime/Quantum_spacetime.html', color: null, shape: 'rounded', level1: false, status: 'work-in-progress' },
-          { id: 'Quantum Causality', url: '1st-level-topics/2nd-level-Emergent_nonclassical_and_fuzzy_spacetime/Quantum_causality.html', color: null, shape: 'rounded', level1: false, status: 'work-in-progress' },
-          { id: 'Gravity as Thermodynamics/Hydrodynamics', url: '1st-level-topics/2nd-level-Emergent_nonclassical_and_fuzzy_spacetime/Gravity_as_thermodynamics_hydrodynamics.html', color: null, shape: 'rounded', level1: false, status: 'work-in-progress' },
-          { id: 'Matrix Models', url: '1st-level-topics/2nd-level-Emergent_nonclassical_and_fuzzy_spacetime/Matrix_models.html', color: null, shape: 'rounded', level1: false, status: 'authors-unassigned' },
-          { id: 'Absence of Global Symmetries in Quantum Gravity', url: '1st-level-topics/2nd-level-Asymptotic_symmetries/No_global_symmetries_in_quantum_gravity.html', color: null, shape: 'rounded', level1: false, status: 'authors-unassigned' },
-          { id: 'Quantum groups and Hopf algebras', url: '1st-level-topics/2nd-level-LIV_DSR/Hopf_algebra.html', color: null, shape: 'rounded', level1: false, status: 'work-in-progress' },
           { id: 'Noncommutative quantum field theories', url: '1st-level-topics/2nd-level-IR-UV_mixing/Noncommutative_QFT.html', color: null, shape: 'rounded', level1: false, status: 'authors-unassigned' },
-          { id: 'Quantum Gravity Scale', url: '1st-level-topics/2nd-level-LIV_DSR/QGscale.html', color: null, shape: 'rounded', level1: false, status: 'work-in-progress' },
+          { id: 'Strong Equivalence Principle', url: '1st-level-topics/2nd-level-Equivalence_principle/Strong_equivalence_principle.html', color: null, shape: 'rounded', level1: false, status: 'written' },
+          { id: 'The Problem of Locality', url: '1st-level-topics/2nd-level-Equivalence_principle/Locality.html', color: null, shape: 'rounded', level1: false, status: 'work-in-progress' },
           { id: 'Standard Model Extensions', url: '1st-level-topics/2nd-level-LIV_DSR/Standard_model_extensions.html', color: null, shape: 'rounded', level1: false, status: 'work-in-progress' },
-          { id: 'LIV in expanding spacetimes', url: '1st-level-topics/2nd-level-LIV_DSR/LIV_FLRW.html', color: null, shape: 'rounded', level1: false, status: 'work-in-progress' },
-          { id: 'DSR in expanding spacetimes', url: '1st-level-topics/2nd-level-LIV_DSR/DSR_FLRW.html', color: null, shape: 'rounded', level1: false, status: 'work-in-progress' },
-          { id: 'Greybody Factors', url: '1st-level-topics/2nd-level-Black_holes_and_QM/Greybody_factors.html', color: null, shape: 'rounded', level1: false, status: 'authors-unassigned' },
-          { id: 'Nonlocal and Fractional Non-Markovian Dynamics', url: '1st-level-topics/2nd-level-Black_holes_and_QM/Nonlocal_fractional_dynamics.html', color: null, shape: 'rounded', level1: false, status: 'authors-unassigned' },
-          { id: 'Weak Gravity and Weak Cosmic Censorship Conjectures', url: '1st-level-topics/2nd-level-Black_holes_and_QM/Weak_gravity_and_cosmic_censorship.html', color: null, shape: 'rounded', level1: false, status: 'authors-unassigned' },
-          { id: 'Magnetic Fields in Astrophysical Sources', url: '1st-level-topics/2nd-level-Astrophysical_probes/Magnetic_fields_in_astrophysical_sources.html', color: null, shape: 'rounded', level1: false, status: 'work-in-progress' },
-          { id: 'Ultra-sensitive Magnetometry', url: '1st-level-topics/2nd-level-Low-energy_table-top_experiments/Magnometry.html', color: null, shape: 'rounded', level1: false, status: 'authors-unassigned' },
-          { id: 'Quantum Reference Frame Transformations', url: '1st-level-topics/2nd-level-Quantum_Reference_Frames/QRF_transformations.html', color: null, shape: 'rounded', level1: false, status: 'work-in-progress' },
-          { id: 'Quantum Superposition of Massive Objects', url: '1st-level-topics/2nd-level-Gravitationally-induced_quantum_effects/Quantum_superposition_of_massive_objects.html', color: null, shape: 'rounded', level1: false, status: 'work-in-progress' },
-          { id: 'Quantum Tests of the Equivalence Principle', url: '1st-level-topics/2nd-level-Gravitationally-induced_quantum_effects/Quantum_tests_of_the_equivalence_principle.html', color: null, shape: 'rounded', level1: false, status: 'work-in-progress' },
-          { id: 'Effective Field Theory of Gravity', url: '1st-level-topics/2nd-level-The_Quantum_Gravity_problem/Effective_field_theory_of_gravity.html', color: null, shape: 'rounded', level1: false, status: 'authors-unassigned' },
           { id: 'Quantum Reference Frames', url: '1st-level-topics/Quantum_Reference_Frames.html', color: '#fdbcce', shape: 'circle', level1: true, status: null },
-          { id: 'Vacuum Birefringence', url: '1st-level-topics/2nd-level-LIV_DSR/Vacuum_birefringence.html', color: null, shape: 'rounded', level1: false, status: 'work-in-progress' },
-          { id: 'Algebraic Quantum Field Theory: relevant aspects for QG', url: '1st-level-topics/2nd-level-Quantum_Reference_Frames/Algebraic_QFT.html', color: null, shape: 'rounded', level1: false, status: 'work-in-progress' },
-          { id: 'Problem of Time', url: '1st-level-topics/2nd-level-The_Quantum_Gravity_problem/Problem_of_time.html', color: null, shape: 'rounded', level1: false, status: 'authors-unassigned' },
-          { id: 'Astrophysical Detection Techniques', url: '1st-level-topics/2nd-level-Astrophysical_probes/Astrophysical_detection_techniques.html', color: null, shape: 'rounded', level1: false, status: 'work-in-progress' },
+          { id: 'DSR in expanding spacetimes', url: '1st-level-topics/2nd-level-LIV_DSR/DSR_FLRW.html', color: null, shape: 'rounded', level1: false, status: 'work-in-progress' },
+          { id: 'Nonlocal and Fractional Non-Markovian Dynamics', url: '1st-level-topics/2nd-level-Black_holes_and_QM/Nonlocal_fractional_dynamics.html', color: null, shape: 'rounded', level1: false, status: 'authors-unassigned' },
+          { id: 'Black Holes and Quantum Mechanics', url: '1st-level-topics/Black_holes_and_QM.html', color: '#fdbcce', shape: 'circle', level1: true, status: null },
+          { id: 'Relational Observables', url: '1st-level-topics/2nd-level-Quantum_Reference_Frames/Relational_observables.html', color: null, shape: 'rounded', level1: false, status: 'work-in-progress' },
+          { id: 'Ultra-sensitive Magnetometry', url: '1st-level-topics/2nd-level-Low-energy_table-top_experiments/Magnometry.html', color: null, shape: 'rounded', level1: false, status: 'authors-unassigned' },
           { id: 'Gravitationally-induced Decoherence', url: '1st-level-topics/2nd-level-Gravitationally-induced_quantum_effects/Gravitationally-induced_decoherence.html', color: null, shape: 'rounded', level1: false, status: 'work-in-progress' },
+          { id: 'Newtonian Equivalence Principle', url: '1st-level-topics/2nd-level-Equivalence_principle/Newtonian_equivalence_principle.html', color: null, shape: 'rounded', level1: false, status: 'written' },
+          { id: 'Quantum Cosmology', url: '1st-level-topics/2nd-level-Emergent_nonclassical_and_fuzzy_spacetime/Quantum_cosmology.html', color: null, shape: 'rounded', level1: false, status: 'work-in-progress' },
+          { id: 'Quantum Gravity Induced Time Delays', url: '1st-level-topics/2nd-level-Invacuo_dispersion/Time_delay.html', color: null, shape: 'rounded', level1: false, status: 'work-in-progress' },
+          { id: 'Greybody Factors', url: '1st-level-topics/2nd-level-Black_holes_and_QM/Greybody_factors.html', color: null, shape: 'rounded', level1: false, status: 'authors-unassigned' },
+          { id: 'Quantum Spacetime', url: '1st-level-topics/2nd-level-Emergent_nonclassical_and_fuzzy_spacetime/Quantum_spacetime.html', color: null, shape: 'rounded', level1: false, status: 'work-in-progress' },
+          { id: 'Quantum Superposition of Geometries', url: '1st-level-topics/2nd-level-Emergent_nonclassical_and_fuzzy_spacetime/Quantum_superposition_of_geometries.html', color: null, shape: 'rounded', level1: false, status: 'work-in-progress' },
+          { id: 'Constraint Quantization in Gravity', url: '1st-level-topics/2nd-level-Quantum_Reference_Frames/Constraint_quantization.html', color: null, shape: 'rounded', level1: false, status: 'work-in-progress' },
+          { id: 'Gravity as Thermodynamics/Hydrodynamics', url: '1st-level-topics/2nd-level-Emergent_nonclassical_and_fuzzy_spacetime/Gravity_as_thermodynamics_hydrodynamics.html', color: null, shape: 'rounded', level1: false, status: 'work-in-progress' },
+          { id: 'Gravitons Entanglement and General Covariance', url: '1st-level-topics/2nd-level-Gravitationally-induced_quantum_effects/Gravitons_entanglement_and_general_covariance.html', color: null, shape: 'rounded', level1: false, status: 'work-in-progress' },
+          { id: 'Phases of Geometry and Phase Diagrams of Quantum Gravity Theories', url: '1st-level-topics/2nd-level-Emergent_nonclassical_and_fuzzy_spacetime/Phases_of_geometry_and_phase_diagrams_of_quantum_gravity_theories.html', color: null, shape: 'rounded', level1: false, status: 'work-in-progress' },
+          { id: 'Quantum Gravity Scale', url: '1st-level-topics/2nd-level-LIV_DSR/QGscale.html', color: null, shape: 'rounded', level1: false, status: 'work-in-progress' },
+          { id: 'Asymptotic and global symmetries of spacetime', url: '1st-level-topics/Asymptotic_symmetries.html', color: '#fdbcce', shape: 'circle', level1: true, status: null },
+          { id: 'Doubly (or Deformed) Special Relativity (DSR)', url: '1st-level-topics/2nd-level-LIV_DSR/DSR.html', color: null, shape: 'rounded', level1: false, status: 'work-in-progress' },
+          { id: 'Galilean Equivalence Principle', url: '1st-level-topics/2nd-level-Equivalence_principle/Galilean_equivalence_principle.html', color: null, shape: 'rounded', level1: false, status: 'written' },
+          { id: 'Global Symmetries in Holography', url: '1st-level-topics/2nd-level-Asymptotic_symmetries/Global_symmetries_in_holography.html', color: null, shape: 'rounded', level1: false, status: 'authors-unassigned' },
+          { id: 'Singularity Resolution', url: '1st-level-topics/2nd-level-Black_holes_and_QM/Singularity_resolution.html', color: null, shape: 'rounded', level1: false, status: 'authors-unassigned' },
+          { id: 'Effective Field Theory of Gravity', url: '1st-level-topics/2nd-level-The_Quantum_Gravity_problem/Effective_field_theory_of_gravity.html', color: null, shape: 'rounded', level1: false, status: 'authors-unassigned' },
+          { id: 'Discrete Symmetries Violation and Deformation motivated by Quantum Gravity', url: '1st-level-topics/2nd-level-LIV_DSR/Discrete_symmetries.html', color: null, shape: 'rounded', level1: false, status: 'work-in-progress' },
+          { id: 'Quasinormal Modes, Ringdown and Echoes', url: '1st-level-topics/2nd-level-Black_holes_and_QM/Quasinormal_modes_and_ringdown.html', color: null, shape: 'rounded', level1: false, status: 'authors-unassigned' },
+          { id: 'Asymptotic Symmetries in AdS and dS', url: '1st-level-topics/2nd-level-Asymptotic_symmetries/Asymptotic_symmetries_in_AdS_and_dS.html', color: null, shape: 'rounded', level1: false, status: 'authors-unassigned' },
+          { id: 'Generalized Uncertainty Principle', url: '1st-level-topics/2nd-level-LIV_DSR/GUP.html', color: null, shape: 'rounded', level1: false, status: 'work-in-progress' },
+          { id: 'Relative Locality', url: '1st-level-topics/2nd-level-LIV_DSR/Relative_locality.html', color: null, shape: 'rounded', level1: false, status: 'authors-unassigned' },
+          { id: 'Pauli Exclusion Principle violations', url: '1st-level-topics/2nd-level-Low-energy_table-top_experiments/Pauli_violation.html', color: null, shape: 'rounded', level1: false, status: 'work-in-progress' },
+          { id: 'Curved Momentum Space', url: '1st-level-topics/2nd-level-LIV_DSR/Curved_momentum_space.html', color: null, shape: 'rounded', level1: false, status: 'work-in-progress' },
+          { id: 'Asymptotic Safety', url: '1st-level-topics/2nd-level-The_Quantum_Gravity_problem/Asymptotic_safety.html', color: null, shape: 'rounded', level1: false, status: 'authors-unassigned' },
+          { id: 'Holographic Principle', url: '1st-level-topics/2nd-level-Quantum_Reference_Frames/Holography.html', color: null, shape: 'rounded', level1: false, status: 'work-in-progress' },
+          { id: 'Entanglement Entropy and the Area Law', url: '1st-level-topics/2nd-level-Black_holes_and_QM/Entanglement_entropy_and_area_law.html', color: null, shape: 'rounded', level1: false, status: 'authors-unassigned' },
+          { id: 'Magnetic Fields in Astrophysical Sources', url: '1st-level-topics/2nd-level-Astrophysical_probes/Magnetic_fields_in_astrophysical_sources.html', color: null, shape: 'rounded', level1: false, status: 'work-in-progress' },
+          { id: 'Soft Hair and Gravitational Memory', url: '1st-level-topics/2nd-level-Black_holes_and_QM/Soft_hair_and_gravitational_memory.html', color: null, shape: 'rounded', level1: false, status: 'authors-unassigned' },
+          { id: 'Modified Dispersion Relations', url: '1st-level-topics/2nd-level-LIV_DSR/Modified_dispersion_relations.html', color: null, shape: 'rounded', level1: false, status: 'work-in-progress' },
+          { id: 'Modified Gravity theories that emerge from QG models', url: '1st-level-topics/2nd-level-Low-energy_table-top_experiments/Modified_gravity.html', color: null, shape: 'rounded', level1: false, status: 'work-in-progress' },
+          { id: 'Astrophysical probes', url: '1st-level-topics/Astrophysical_probes.html', color: '#fdbcce', shape: 'circle', level1: true, status: null },
+          { id: 'Matter-wave and Neutron Interferometry', url: '1st-level-topics/2nd-level-Low-energy_table-top_experiments/Matter_interferometry.html', color: null, shape: 'rounded', level1: false, status: 'authors-unassigned' },
+          { id: 'Vacuum Birefringence', url: '1st-level-topics/2nd-level-LIV_DSR/Vacuum_birefringence.html', color: null, shape: 'rounded', level1: false, status: 'work-in-progress' },
+          { id: 'Problem of Time', url: '1st-level-topics/2nd-level-The_Quantum_Gravity_problem/Problem_of_time.html', color: null, shape: 'rounded', level1: false, status: 'authors-unassigned' },
           { id: 'Acceleration Mechanisms', url: '1st-level-topics/2nd-level-Astrophysical_probes/Acceleration_mechanisms.html', color: null, shape: 'rounded', level1: false, status: 'work-in-progress' },
           { id: 'Particle Processes in Astrophysical Sources', url: '1st-level-topics/2nd-level-Astrophysical_probes/Particle_processes_in_astrophysical_sources.html', color: null, shape: 'rounded', level1: false, status: 'work-in-progress' },
-          { id: 'Asymptotic Safety', url: '1st-level-topics/2nd-level-The_Quantum_Gravity_problem/Asymptotic_safety.html', color: null, shape: 'rounded', level1: false, status: 'authors-unassigned' },
-          { id: 'Asymptotic and global symmetries of spacetime', url: '1st-level-topics/Asymptotic_symmetries.html', color: '#fdbcce', shape: 'circle', level1: true, status: null },
-          { id: 'Threshold Anomalies', url: '1st-level-topics/2nd-level-LIV_DSR/Threshold_anomalies.html', color: null, shape: 'rounded', level1: false, status: 'work-in-progress' },
-          { id: 'Low-energy table-top experiments', url: '1st-level-topics/Low-energy_table-top_experiments.html', color: '#fdbcce', shape: 'circle', level1: true, status: null },
-          { id: 'Covariant Surface Charges and Boundary Terms', url: '1st-level-topics/2nd-level-Asymptotic_symmetries/Covariant_surface_charges.html', color: null, shape: 'rounded', level1: false, status: 'authors-unassigned' },
-          { id: 'Precision Measurements of Short-range Gravity', url: '1st-level-topics/2nd-level-Gravitationally-induced_quantum_effects/Precision_measurements_of_short-range_gravity.html', color: null, shape: 'rounded', level1: false, status: 'work-in-progress' },
-          { id: 'Loop Quantum Gravity Dressed-metric and Rainbow Models of Black Holes', url: '1st-level-topics/2nd-level-Black_holes_and_QM/LQG_effective_metrics.html', color: null, shape: 'rounded', level1: false, status: 'authors-unassigned' },
-          { id: 'Quantum Gravity Induced Time Delays', url: '1st-level-topics/2nd-level-Invacuo_dispersion/Time_delay.html', color: null, shape: 'rounded', level1: false, status: 'work-in-progress' },
-          { id: 'Higher-form, Discrete and Approximate Global Symmetries', url: '1st-level-topics/2nd-level-Asymptotic_symmetries/Generalized_and_approximate_global_symmetries.html', color: null, shape: 'rounded', level1: false, status: 'authors-unassigned' },
-          { id: 'Modified Gravity theories that emerge from QG models', url: '1st-level-topics/2nd-level-Low-energy_table-top_experiments/Modified_gravity.html', color: null, shape: 'rounded', level1: false, status: 'work-in-progress' },
-          { id: 'Matter-wave and Neutron Interferometry', url: '1st-level-topics/2nd-level-Low-energy_table-top_experiments/Matter_interferometry.html', color: null, shape: 'rounded', level1: false, status: 'authors-unassigned' },
-          { id: 'Relativistic Quantum Information', url: '1st-level-topics/Relativistic_Quantum_Information.html', color: '#fdbcce', shape: 'circle', level1: true, status: 'authors-unassigned' },
-          { id: 'Black Hole Shadows and Photon Spheres', url: '1st-level-topics/2nd-level-Black_holes_and_QM/Black_hole_shadows_and_photon_spheres.html', color: null, shape: 'rounded', level1: false, status: 'authors-unassigned' },
-          { id: 'Fundamental principles of Quantum Mechanics that are amenable to testing', url: '1st-level-topics/2nd-level-Low-energy_table-top_experiments/QMfoundations.html', color: null, shape: 'rounded', level1: false, status: 'work-in-progress' },
-          { id: 'COW experiment and gravitational phase shifts', url: '1st-level-topics/2nd-level-Gravitationally-induced_quantum_effects/COW_experiment.html', color: null, shape: 'rounded', level1: false, status: 'work-in-progress' },
-          { id: 'Collapse Models', url: '1st-level-topics/2nd-level-Low-energy_table-top_experiments/Collapse_models.html', color: null, shape: 'rounded', level1: false, status: 'work-in-progress' },
-          { id: 'Generalized Uncertainty Principle', url: '1st-level-topics/2nd-level-LIV_DSR/GUP.html', color: null, shape: 'rounded', level1: false, status: 'work-in-progress' },
-          { id: 'Constraint Quantization in Gravity', url: '1st-level-topics/2nd-level-Quantum_Reference_Frames/Constraint_quantization.html', color: null, shape: 'rounded', level1: false, status: 'work-in-progress' },
-          { id: 'Perspectival and Operational Approaches to QRFs', url: '1st-level-topics/2nd-level-Quantum_Reference_Frames/QRF_approaches.html', color: null, shape: 'rounded', level1: false, status: 'work-in-progress' },
+          { id: 'Astrophysical Detection Techniques', url: '1st-level-topics/2nd-level-Astrophysical_probes/Astrophysical_detection_techniques.html', color: null, shape: 'rounded', level1: false, status: 'work-in-progress' },
+          { id: 'IR-UV mixing', url: '1st-level-topics/IR-UV_mixing.html', color: '#fdbcce', shape: 'circle', level1: true, status: null },
           { id: 'Noncommutative Geometry and Black Holes', url: '1st-level-topics/2nd-level-Black_holes_and_QM/Noncommutative_geometry_and_black_holes.html', color: null, shape: 'rounded', level1: false, status: 'authors-unassigned' },
+          { id: 'LIV in expanding spacetimes', url: '1st-level-topics/2nd-level-LIV_DSR/LIV_FLRW.html', color: null, shape: 'rounded', level1: false, status: 'work-in-progress' },
+          { id: 'Algebraic Quantum Field Theory: relevant aspects for QG', url: '1st-level-topics/2nd-level-Quantum_Reference_Frames/Algebraic_QFT.html', color: null, shape: 'rounded', level1: false, status: 'work-in-progress' },
+          { id: 'Low-energy table-top experiments', url: '1st-level-topics/Low-energy_table-top_experiments.html', color: '#fdbcce', shape: 'circle', level1: true, status: null },
+          { id: 'Threshold Anomalies', url: '1st-level-topics/2nd-level-LIV_DSR/Threshold_anomalies.html', color: null, shape: 'rounded', level1: false, status: 'work-in-progress' },
+          { id: 'Black Hole Information-Loss Problem', url: '1st-level-topics/2nd-level-Black_holes_and_QM/Black_hole_information_loss_problem.html', color: null, shape: 'rounded', level1: false, status: 'authors-unassigned' },
+          { id: 'String theory', url: '1st-level-topics/2nd-level-IR-UV_mixing/String_theory.html', color: null, shape: 'rounded', level1: false, status: 'authors-unassigned' },
+          { id: 'Relativistic Quantum Information', url: '1st-level-topics/Relativistic_Quantum_Information.html', color: '#fdbcce', shape: 'circle', level1: true, status: 'authors-unassigned' },
+          { id: 'Quantum Optomechanical Systems', url: '1st-level-topics/2nd-level-Low-energy_table-top_experiments/Optomechanical_systems.html', color: null, shape: 'rounded', level1: false, status: 'work-in-progress' },
+          { id: 'Multimessenger Astrophysics', url: '1st-level-topics/2nd-level-Astrophysical_probes/Multimessenger_astrophysics.html', color: null, shape: 'rounded', level1: false, status: 'work-in-progress' },
+          { id: 'Discrete, Canonical and Covariant Quantum Gravity', url: '1st-level-topics/2nd-level-Quantum_Reference_Frames/Discrete_QG.html', color: null, shape: 'rounded', level1: false, status: 'work-in-progress' },
+          { id: 'Hawking Radiation', url: '1st-level-topics/2nd-level-Gravitationally-induced_quantum_effects/Hawking_radiation.html', color: null, shape: 'rounded', level1: false, status: 'work-in-progress' },
+          { id: 'Perspectival and Operational Approaches to QRFs', url: '1st-level-topics/2nd-level-Quantum_Reference_Frames/QRF_approaches.html', color: null, shape: 'rounded', level1: false, status: 'work-in-progress' },
+          { id: 'Quantum Superposition of Massive Objects', url: '1st-level-topics/2nd-level-Gravitationally-induced_quantum_effects/Quantum_superposition_of_massive_objects.html', color: null, shape: 'rounded', level1: false, status: 'work-in-progress' },
           { id: 'Gravity-mediated Entanglement', url: '1st-level-topics/2nd-level-Gravitationally-induced_quantum_effects/Gravity-mediated_entanglement.html', color: null, shape: 'rounded', level1: false, status: 'work-in-progress' },
-          { id: 'Global Symmetries in Holography', url: '1st-level-topics/2nd-level-Asymptotic_symmetries/Global_symmetries_in_holography.html', color: null, shape: 'rounded', level1: false, status: 'authors-unassigned' },
-          { id: 'Curved Momentum Space', url: '1st-level-topics/2nd-level-LIV_DSR/Curved_momentum_space.html', color: null, shape: 'rounded', level1: false, status: 'work-in-progress' },
-          { id: 'Pauli Exclusion Principle violations', url: '1st-level-topics/2nd-level-Low-energy_table-top_experiments/Pauli_violation.html', color: null, shape: 'rounded', level1: false, status: 'work-in-progress' },
-          { id: 'Gravitons Entanglement and General Covariance', url: '1st-level-topics/2nd-level-Gravitationally-induced_quantum_effects/Gravitons_entanglement_and_general_covariance.html', color: null, shape: 'rounded', level1: false, status: 'work-in-progress' } ],
-        links: [ { source: 'IR-UV mixing', target: 'Nonlocalities' },
-          { source: 'The Quantum Gravity problem', target: 'Phases of Geometry and Phase Diagrams of Quantum Gravity Theories' },
-          { source: 'The Quantum Gravity problem', target: 'Astrophysical probes' },
-          { source: 'Low-energy table-top experiments', target: 'Ultra-sensitive Magnetometry' },
-          { source: 'Asymptotic and global symmetries of spacetime', target: 'Holographic Principle' },
-          { source: 'Violation and Deformation of Relativistic Symmetries', target: 'Vacuum Birefringence' },
-          { source: 'Violation and Deformation of Relativistic Symmetries', target: 'Modified Dispersion Relations' },
-          { source: 'Violation and Deformation of Relativistic Symmetries', target: 'LIV in expanding spacetimes' },
-          { source: 'Black Holes and Quantum Mechanics', target: 'Quantum Tests of the Equivalence Principle' },
-          { source: 'Low-energy table-top experiments', target: 'Quantum Gravity Scale' },
-          { source: 'Quantum Reference Frames', target: 'Subsystem Relativity: the Paradox of the Third Particle' },
-          { source: 'Black Holes and Quantum Mechanics', target: 'Noncommutative Geometry and Black Holes' },
-          { source: 'Black Holes and Quantum Mechanics', target: 'Loop Quantum Gravity Dressed-metric and Rainbow Models of Black Holes' },
-          { source: 'The Quantum Gravity problem', target: 'Problem of Time' },
-          { source: 'Black Holes and Quantum Mechanics', target: 'Singularity Resolution' },
-          { source: 'Violation and Deformation of Relativistic Symmetries', target: 'Doubly (or Deformed) Special Relativity (DSR)' },
-          { source: 'Low-energy table-top experiments', target: 'Collapse Models' },
-          { source: 'Low-energy table-top experiments', target: 'Generalized Uncertainty Principle' },
-          { source: 'Low-energy table-top experiments', target: 'Matter-wave and Neutron Interferometry' },
-          { source: 'Black Holes and Quantum Mechanics', target: 'Black Hole Shadows and Photon Spheres' },
-          { source: 'Asymptotic and global symmetries of spacetime', target: 'Higher-form, Discrete and Approximate Global Symmetries' },
-          { source: 'Black Holes and Quantum Mechanics', target: 'Hawking Radiation' },
-          { source: 'Violation and Deformation of Relativistic Symmetries', target: 'Modified Schroedinger Equation' },
-          { source: 'The Quantum Gravity problem', target: 'Emergent, Nonclassical and Fuzzy Spacetime' },
-          { source: 'Quantum Reference Frames', target: 'Constraint Quantization in Gravity' },
-          { source: 'Equivalence Principle, locality and quantum gravity', target: 'Weak Equivalence Principle' },
-          { source: 'Asymptotic and global symmetries of spacetime', target: 'Global Spacetime Symmetries and Isometries' },
-          { source: 'Astrophysical probes', target: 'Multimessenger Astrophysics' },
-          { source: 'IR-UV mixing', target: 'Noncommutative quantum field theories' },
-          { source: 'In-vacuo dispersion', target: 'Violation and Deformation of Relativistic Symmetries' },
-          { source: 'Violation and Deformation of Relativistic Symmetries', target: 'In-vacuo dispersion' },
-          { source: 'The Quantum Gravity problem', target: 'Hawking Radiation' },
-          { source: 'Astrophysical probes', target: 'Acceleration Mechanisms' },
-          { source: 'Equivalence Principle, locality and quantum gravity', target: 'The Problem of Locality' },
-          { source: 'Asymptotic and global symmetries of spacetime', target: 'BMS Algebra and Asymptotically Flat Spacetimes' },
-          { source: 'IR-UV mixing', target: 'Renormalizability' },
-          { source: 'Violation and Deformation of Relativistic Symmetries', target: 'Discrete Symmetries Violation and Deformation motivated by Quantum Gravity' },
-          { source: 'Violation and Deformation of Relativistic Symmetries', target: 'IR-UV mixing' },
-          { source: 'Violation and Deformation of Relativistic Symmetries', target: 'Quantum Spacetime' },
-          { source: 'Black Holes and Quantum Mechanics', target: 'Generalized Uncertainty Principle' },
-          { source: 'Violation and Deformation of Relativistic Symmetries', target: 'Relative Locality' },
-          { source: 'Low-energy table-top experiments', target: 'Modified Gravity theories that emerge from QG models' },
-          { source: 'Quantum Reference Frames', target: 'Emergent, Nonclassical and Fuzzy Spacetime' },
-          { source: 'Quantum Reference Frames', target: 'Perspectival and Operational Approaches to QRFs' },
-          { source: 'Low-energy table-top experiments', target: 'Fundamental principles of Quantum Mechanics that are amenable to testing' },
-          { source: 'In-vacuo dispersion', target: 'Quantum Gravity Induced Time Delays' },
-          { source: 'Gravitationally-induced quantum effects', target: 'Quantum Tests of the Equivalence Principle' },
+          { id: 'Black Hole Shadows and Photon Spheres', url: '1st-level-topics/2nd-level-Black_holes_and_QM/Black_hole_shadows_and_photon_spheres.html', color: null, shape: 'rounded', level1: false, status: 'authors-unassigned' },
+          { id: 'Time Dilation-induced Dephasing', url: '1st-level-topics/2nd-level-Gravitationally-induced_quantum_effects/Time_dilation-induced_dephasing.html', color: null, shape: 'rounded', level1: false, status: 'work-in-progress' },
+          { id: 'Higher-form, Discrete and Approximate Global Symmetries', url: '1st-level-topics/2nd-level-Asymptotic_symmetries/Generalized_and_approximate_global_symmetries.html', color: null, shape: 'rounded', level1: false, status: 'authors-unassigned' },
+          { id: 'Quantum Tests of the Equivalence Principle', url: '1st-level-topics/2nd-level-Gravitationally-induced_quantum_effects/Quantum_tests_of_the_equivalence_principle.html', color: null, shape: 'rounded', level1: false, status: 'work-in-progress' },
+          { id: 'Weak Equivalence Principle', url: '1st-level-topics/2nd-level-Equivalence_principle/Weak_equivalence_principle.html', color: null, shape: 'rounded', level1: false, status: 'written' } ],
+        links: [ { source: 'Violation and Deformation of Relativistic Symmetries', target: 'Astrophysical probes' },
           { source: 'Violation and Deformation of Relativistic Symmetries', target: 'Generalized Uncertainty Principle' },
-          { source: 'Violation and Deformation of Relativistic Symmetries', target: 'Curved Momentum Space' },
-          { source: 'Emergent, Nonclassical and Fuzzy Spacetime', target: 'Matrix Models' },
-          { source: 'Violation and Deformation of Relativistic Symmetries', target: 'Standard Model Extensions' },
-          { source: 'The Quantum Gravity problem', target: 'Modified Dispersion Relations' },
-          { source: 'Low-energy table-top experiments', target: 'Discrete Symmetries Violation and Deformation motivated by Quantum Gravity' },
-          { source: 'The Quantum Gravity problem', target: 'The Problem of Locality' },
-          { source: 'Black Holes and Quantum Mechanics', target: 'BMS Algebra and Asymptotically Flat Spacetimes' },
-          { source: 'Black Holes and Quantum Mechanics', target: 'Greybody Factors' },
-          { source: 'Low-energy table-top experiments', target: 'Quantum Optomechanical Systems' },
-          { source: 'The Quantum Gravity problem', target: 'Violation and Deformation of Relativistic Symmetries' },
-          { source: 'Astrophysical probes', target: 'Magnetic Fields in Astrophysical Sources' },
           { source: 'Quantum Reference Frames', target: 'Holographic Principle' },
-          { source: 'Quantum Reference Frames', target: 'Relational Observables' },
-          { source: 'Asymptotic and global symmetries of spacetime', target: 'Symmetries in String Theory' },
-          { source: 'Black Holes and Quantum Mechanics', target: 'Black Hole Information-Loss Problem' },
-          { source: 'The Quantum Gravity problem', target: 'Gravity as Thermodynamics/Hydrodynamics' },
-          { source: 'Emergent, Nonclassical and Fuzzy Spacetime', target: 'Quantum Superposition of Geometries' },
-          { source: 'Violation and Deformation of Relativistic Symmetries', target: 'Quantum groups and Hopf algebras' },
-          { source: 'The Quantum Gravity problem', target: 'Generalized Uncertainty Principle' },
-          { source: 'The Quantum Gravity problem', target: 'Quasinormal Modes, Ringdown and Echoes' },
-          { source: 'Low-energy table-top experiments', target: 'Pauli Exclusion Principle violations' },
-          { source: 'Quantum Reference Frames', target: 'The Problem of Locality' },
-          { source: 'The Quantum Gravity problem', target: 'Black Holes and Quantum Mechanics' },
-          { source: 'Low-energy table-top experiments', target: 'Gravity-mediated Entanglement' },
-          { source: 'Violation and Deformation of Relativistic Symmetries', target: 'Astrophysical probes' },
-          { source: 'The Quantum Gravity problem', target: 'Discrete, Canonical and Covariant Quantum Gravity' },
-          { source: 'The Quantum Gravity problem', target: 'Asymptotic Safety' },
-          { source: 'Gravitationally-induced quantum effects', target: 'Gravity-mediated Entanglement' },
-          { source: 'Quantum Reference Frames', target: 'Quantum groups and Hopf algebras' },
-          { source: 'The Quantum Gravity problem', target: 'Constraint Quantization in Gravity' },
-          { source: 'Gravitationally-induced quantum effects', target: 'Time Dilation-induced Dephasing' },
-          { source: 'Astrophysical probes', target: 'Particle Processes in Astrophysical Sources' },
-          { source: 'The Quantum Gravity problem', target: 'Quantum Cosmology' },
-          { source: 'Black Holes and Quantum Mechanics', target: 'Quasinormal Modes, Ringdown and Echoes' },
-          { source: 'Gravitationally-induced quantum effects', target: 'Gravitationally-induced Decoherence' },
-          { source: 'Equivalence Principle, locality and quantum gravity', target: 'Strong Equivalence Principle' },
-          { source: 'Black Holes and Quantum Mechanics', target: 'Entanglement Entropy and the Area Law' },
-          { source: 'Gravitationally-induced quantum effects', target: 'Quantum Superposition of Massive Objects' },
-          { source: 'Equivalence Principle, locality and quantum gravity', target: 'Galilean Equivalence Principle' },
-          { source: 'Equivalence Principle, locality and quantum gravity', target: 'Newtonian Equivalence Principle' },
-          { source: 'Black Holes and Quantum Mechanics', target: 'Quantum Superposition of Geometries' },
-          { source: 'The Quantum Gravity problem', target: 'String theory' },
-          { source: 'The Quantum Gravity problem', target: 'Relational Observables' },
-          { source: 'Asymptotic and global symmetries of spacetime', target: 'Absence of Global Symmetries in Quantum Gravity' },
-          { source: 'Asymptotic and global symmetries of spacetime', target: 'Asymptotic Symmetries in AdS and dS' },
+          { source: 'The Quantum Gravity problem', target: 'The Problem of Locality' },
+          { source: 'Violation and Deformation of Relativistic Symmetries', target: 'In-vacuo dispersion' },
+          { source: 'Violation and Deformation of Relativistic Symmetries', target: 'Quantum Gravity Scale' },
+          { source: 'In-vacuo dispersion', target: 'Quantum Spacetime' },
+          { source: 'Low-energy table-top experiments', target: 'Quantum Gravity Scale' },
+          { source: 'Violation and Deformation of Relativistic Symmetries', target: 'Relative Locality' },
+          { source: 'Violation and Deformation of Relativistic Symmetries', target: 'Vacuum Birefringence' },
+          { source: 'Black Holes and Quantum Mechanics', target: 'Hawking Radiation' },
+          { source: 'Black Holes and Quantum Mechanics', target: 'Nonlocal and Fractional Non-Markovian Dynamics' },
+          { source: 'Black Holes and Quantum Mechanics', target: 'Soft Hair and Gravitational Memory' },
+          { source: 'Emergent, Nonclassical and Fuzzy Spacetime', target: 'Quantum Causality' },
           { source: 'Asymptotic and global symmetries of spacetime', target: 'Covariant Surface Charges and Boundary Terms' },
+          { source: 'Equivalence Principle, locality and quantum gravity', target: 'Strong Equivalence Principle' },
+          { source: 'Black Holes and Quantum Mechanics', target: 'Singularity Resolution' },
+          { source: 'Black Holes and Quantum Mechanics', target: 'Holographic Principle' },
+          { source: 'Gravitationally-induced quantum effects', target: 'Modified Schroedinger Equation' },
+          { source: 'The Quantum Gravity problem', target: 'Quantum Reference Frames' },
+          { source: 'Black Holes and Quantum Mechanics', target: 'Quantum Superposition of Geometries' },
+          { source: 'Violation and Deformation of Relativistic Symmetries', target: 'Quantum groups and Hopf algebras' },
+          { source: 'Low-energy table-top experiments', target: 'Gravity-mediated Entanglement' },
+          { source: 'Quantum Reference Frames', target: 'Subsystem Relativity: the Paradox of the Third Particle' },
+          { source: 'IR-UV mixing', target: 'String theory' },
+          { source: 'Quantum Reference Frames', target: 'Quantum groups and Hopf algebras' },
+          { source: 'Low-energy table-top experiments', target: 'Fundamental principles of Quantum Mechanics that are amenable to testing' },
+          { source: 'Black Holes and Quantum Mechanics', target: 'Quantum Tests of the Equivalence Principle' },
+          { source: 'Astrophysical probes', target: 'Quantum Gravity Induced Time Delays' },
+          { source: 'Gravitationally-induced quantum effects', target: 'Hawking Radiation' },
+          { source: 'Emergent, Nonclassical and Fuzzy Spacetime', target: 'Gravity as Thermodynamics/Hydrodynamics' },
+          { source: 'Black Holes and Quantum Mechanics', target: 'BMS Algebra and Asymptotically Flat Spacetimes' },
+          { source: 'Gravitationally-induced quantum effects', target: 'Gravitons Entanglement and General Covariance' },
+          { source: 'Asymptotic and global symmetries of spacetime', target: 'Global Symmetries in Holography' },
+          { source: 'Violation and Deformation of Relativistic Symmetries', target: 'IR-UV mixing' },
+          { source: 'Equivalence Principle, locality and quantum gravity', target: 'Weak Equivalence Principle' },
+          { source: 'Black Holes and Quantum Mechanics', target: 'Noncommutative Geometry and Black Holes' },
+          { source: 'Black Holes and Quantum Mechanics', target: 'Generalized Uncertainty Principle' },
+          { source: 'The Quantum Gravity problem', target: 'Black Hole Information-Loss Problem' },
+          { source: 'Low-energy table-top experiments', target: 'Discrete Symmetries Violation and Deformation motivated by Quantum Gravity' },
+          { source: 'Black Holes and Quantum Mechanics', target: 'Weak Gravity and Weak Cosmic Censorship Conjectures' },
+          { source: 'Violation and Deformation of Relativistic Symmetries', target: 'LIV in expanding spacetimes' },
           { source: 'The Quantum Gravity problem', target: 'Emergence, Coarse-graining and the Inverse Problem' },
+          { source: 'Black Holes and Quantum Mechanics', target: 'Quantum Causality' },
+          { source: 'Gravitationally-induced quantum effects', target: 'Quantum Tests of the Equivalence Principle' },
+          { source: 'Black Holes and Quantum Mechanics', target: 'Greybody Factors' },
+          { source: 'Low-energy table-top experiments', target: 'Pauli Exclusion Principle violations' },
+          { source: 'The Quantum Gravity problem', target: 'Hawking Radiation' },
+          { source: 'The Quantum Gravity problem', target: 'Generalized Uncertainty Principle' },
+          { source: 'The Quantum Gravity problem', target: 'Asymptotic Safety' },
+          { source: 'Gravitationally-induced quantum effects', target: 'Collapse Models' },
+          { source: 'Quantum Reference Frames', target: 'Relational Observables' },
+          { source: 'The Quantum Gravity problem', target: 'Violation and Deformation of Relativistic Symmetries' },
+          { source: 'The Quantum Gravity problem', target: 'IR-UV mixing' },
+          { source: 'In-vacuo dispersion', target: 'Quantum Gravity Scale' },
+          { source: 'Quantum Reference Frames', target: 'Perspectival and Operational Approaches to QRFs' },
+          { source: 'Asymptotic and global symmetries of spacetime', target: 'Global Spacetime Symmetries and Isometries' },
+          { source: 'Violation and Deformation of Relativistic Symmetries', target: 'Standard Model Extensions' },
+          { source: 'Astrophysical probes', target: 'Acceleration Mechanisms' },
+          { source: 'Black Holes and Quantum Mechanics', target: 'Black Hole Information-Loss Problem' },
+          { source: 'Emergent, Nonclassical and Fuzzy Spacetime', target: 'Matrix Models' },
+          { source: 'Gravitationally-induced quantum effects', target: 'Precision Measurements of Short-range Gravity' },
+          { source: 'Astrophysical probes', target: 'Astrophysical Sources' },
+          { source: 'The Quantum Gravity problem', target: 'String theory' },
+          { source: 'Equivalence Principle, locality and quantum gravity', target: 'Newtonian Equivalence Principle' },
+          { source: 'The Quantum Gravity problem', target: 'Covariant Surface Charges and Boundary Terms' },
+          { source: 'Black Holes and Quantum Mechanics', target: 'Absence of Global Symmetries in Quantum Gravity' },
+          { source: 'Asymptotic and global symmetries of spacetime', target: 'Asymptotic Symmetries in AdS and dS' },
+          { source: 'Quantum Reference Frames', target: 'Discrete, Canonical and Covariant Quantum Gravity' },
+          { source: 'Black Holes and Quantum Mechanics', target: 'Quasinormal Modes, Ringdown and Echoes' },
+          { source: 'Emergent, Nonclassical and Fuzzy Spacetime', target: 'Quantum Spacetime' },
+          { source: 'The Quantum Gravity problem', target: 'Quasinormal Modes, Ringdown and Echoes' },
+          { source: 'Equivalence Principle, locality and quantum gravity', target: 'The Problem of Locality' },
+          { source: 'The Quantum Gravity problem', target: 'Phases of Geometry and Phase Diagrams of Quantum Gravity Theories' },
+          { source: 'IR-UV mixing', target: 'Nonlocalities' },
+          { source: 'Astrophysical probes', target: 'Magnetic Fields in Astrophysical Sources' },
+          { source: 'IR-UV mixing', target: 'Noncommutative quantum field theories' },
+          { source: 'Violation and Deformation of Relativistic Symmetries', target: 'Doubly (or Deformed) Special Relativity (DSR)' },
+          { source: 'The Quantum Gravity problem', target: 'Relational Observables' },
+          { source: 'Equivalence Principle, locality and quantum gravity', target: 'Einstein\'s Equivalence Principle' },
+          { source: 'Equivalence Principle, locality and quantum gravity', target: 'Galilean Equivalence Principle' },
+          { source: 'In-vacuo dispersion', target: 'Modified Dispersion Relations' },
+          { source: 'The Quantum Gravity problem', target: 'Holographic Principle' },
+          { source: 'Low-energy table-top experiments', target: 'Modified Gravity theories that emerge from QG models' },
+          { source: 'Asymptotic and global symmetries of spacetime', target: 'Higher-form, Discrete and Approximate Global Symmetries' },
+          { source: 'Low-energy table-top experiments', target: 'Quantum Optomechanical Systems' },
+          { source: 'Quantum Reference Frames', target: 'Emergent, Nonclassical and Fuzzy Spacetime' },
+          { source: 'The Quantum Gravity problem', target: 'Constraint Quantization in Gravity' },
+          { source: 'Black Holes and Quantum Mechanics', target: 'Entanglement Entropy and the Area Law' },
+          { source: 'Black Holes and Quantum Mechanics', target: 'Corrections to Black Hole Thermodynamics' },
+          { source: 'Asymptotic and global symmetries of spacetime', target: 'Symmetries in String Theory' },
+          { source: 'Quantum Reference Frames', target: 'Constraint Quantization in Gravity' },
+          { source: 'The Quantum Gravity problem', target: 'Modified Gravity theories that emerge from QG models' },
+          { source: 'Quantum Reference Frames', target: 'Algebraic Quantum Field Theory: relevant aspects for QG' },
+          { source: 'Asymptotic and global symmetries of spacetime', target: 'Absence of Global Symmetries in Quantum Gravity' },
+          { source: 'Asymptotic and global symmetries of spacetime', target: 'BMS Algebra and Asymptotically Flat Spacetimes' },
+          { source: 'Violation and Deformation of Relativistic Symmetries', target: 'Curved Momentum Space' },
+          { source: 'Low-energy table-top experiments', target: 'COW experiment and gravitational phase shifts' },
           { source: 'Quantum Reference Frames', target: 'Quantum Spacetime' },
           { source: 'Quantum Reference Frames', target: 'Covariant Surface Charges and Boundary Terms' },
-          { source: 'IR-UV mixing', target: 'String theory' },
-          { source: 'The Quantum Gravity problem', target: 'Black Hole Information-Loss Problem' },
-          { source: 'The Quantum Gravity problem', target: 'Effective Field Theory of Gravity' },
-          { source: 'Black Holes and Quantum Mechanics', target: 'Nonlocal and Fractional Non-Markovian Dynamics' },
-          { source: 'Gravitationally-induced quantum effects', target: 'Hawking Radiation' },
-          { source: 'Black Holes and Quantum Mechanics', target: 'Weak Gravity and Weak Cosmic Censorship Conjectures' },
-          { source: 'Emergent, Nonclassical and Fuzzy Spacetime', target: 'Quantum Causality' },
-          { source: 'The Quantum Gravity problem', target: 'Relativistic Quantum Information' },
-          { source: 'Equivalence Principle, locality and quantum gravity', target: 'Einstein\'s Equivalence Principle' },
-          { source: 'Emergent, Nonclassical and Fuzzy Spacetime', target: 'Quantum Spacetime' },
-          { source: 'The Quantum Gravity problem', target: 'Renormalizability' },
-          { source: 'Gravitationally-induced quantum effects', target: 'Collapse Models' },
-          { source: 'Violation and Deformation of Relativistic Symmetries', target: 'DSR in expanding spacetimes' },
-          { source: 'The Quantum Gravity problem', target: 'Nonlocalities' },
-          { source: 'Astrophysical probes', target: 'Quantum Gravity Induced Time Delays' },
-          { source: 'Low-energy table-top experiments', target: 'Gravitationally-induced Decoherence' },
-          { source: 'Violation and Deformation of Relativistic Symmetries', target: 'Threshold Anomalies' },
-          { source: 'Gravitationally-induced quantum effects', target: 'Precision Measurements of Short-range Gravity' },
-          { source: 'The Quantum Gravity problem', target: 'Entanglement Entropy and the Area Law' },
-          { source: 'Black Holes and Quantum Mechanics', target: 'Quantum Causality' },
-          { source: 'Astrophysical probes', target: 'Astrophysical Detection Techniques' },
-          { source: 'Quantum Reference Frames', target: 'Quantum Reference Frame Transformations' },
-          { source: 'In-vacuo dispersion', target: 'Modified Dispersion Relations' },
-          { source: 'Violation and Deformation of Relativistic Symmetries', target: 'Quantum Gravity Scale' },
+          { source: 'Asymptotic and global symmetries of spacetime', target: 'Holographic Principle' },
+          { source: 'In-vacuo dispersion', target: 'Violation and Deformation of Relativistic Symmetries' },
+          { source: 'IR-UV mixing', target: 'Renormalizability' },
+          { source: 'The Quantum Gravity problem', target: 'Emergent, Nonclassical and Fuzzy Spacetime' },
+          { source: 'Violation and Deformation of Relativistic Symmetries', target: 'Quantum Spacetime' },
+          { source: 'Astrophysical probes', target: 'Multimessenger Astrophysics' },
+          { source: 'Low-energy table-top experiments', target: 'Matter-wave and Neutron Interferometry' },
           { source: 'Emergent, Nonclassical and Fuzzy Spacetime', target: 'Phases of Geometry and Phase Diagrams of Quantum Gravity Theories' },
-          { source: 'In-vacuo dispersion', target: 'Quantum Gravity Scale' },
-          { source: 'Gravitationally-induced quantum effects', target: 'Modified Schroedinger Equation' },
-          { source: 'Black Holes and Quantum Mechanics', target: 'Holographic Principle' },
-          { source: 'Black Holes and Quantum Mechanics', target: 'Soft Hair and Gravitational Memory' },
-          { source: 'In-vacuo dispersion', target: 'Quantum Spacetime' },
-          { source: 'Asymptotic and global symmetries of spacetime', target: 'Global Symmetries in Holography' },
-          { source: 'The Quantum Gravity problem', target: 'Covariant Surface Charges and Boundary Terms' },
-          { source: 'The Quantum Gravity problem', target: 'Modified Gravity theories that emerge from QG models' },
-          { source: 'Emergent, Nonclassical and Fuzzy Spacetime', target: 'Gravity as Thermodynamics/Hydrodynamics' },
-          { source: 'Black Holes and Quantum Mechanics', target: 'Absence of Global Symmetries in Quantum Gravity' },
-          { source: 'Quantum Reference Frames', target: 'Algebraic Quantum Field Theory: relevant aspects for QG' },
-          { source: 'Asymptotic and global symmetries of spacetime', target: 'Hawking Radiation' },
-          { source: 'Emergent, Nonclassical and Fuzzy Spacetime', target: 'The Problem of Locality' },
-          { source: 'The Quantum Gravity problem', target: 'Quantum Spacetime' },
-          { source: 'The Quantum Gravity problem', target: 'Weak Gravity and Weak Cosmic Censorship Conjectures' },
-          { source: 'The Quantum Gravity problem', target: 'Holographic Principle' },
-          { source: 'Gravitationally-induced quantum effects', target: 'Gravitons Entanglement and General Covariance' },
+          { source: 'Quantum Reference Frames', target: 'The Problem of Locality' },
           { source: 'Violation and Deformation of Relativistic Symmetries', target: 'Gravitationally-induced Decoherence' },
+          { source: 'Violation and Deformation of Relativistic Symmetries', target: 'DSR in expanding spacetimes' },
+          { source: 'The Quantum Gravity problem', target: 'Entanglement Entropy and the Area Law' },
+          { source: 'Gravitationally-induced quantum effects', target: 'Quantum Superposition of Massive Objects' },
+          { source: 'The Quantum Gravity problem', target: 'Relativistic Quantum Information' },
+          { source: 'The Quantum Gravity problem', target: 'Renormalizability' },
+          { source: 'Violation and Deformation of Relativistic Symmetries', target: 'Discrete Symmetries Violation and Deformation motivated by Quantum Gravity' },
+          { source: 'Violation and Deformation of Relativistic Symmetries', target: 'Modified Dispersion Relations' },
+          { source: 'The Quantum Gravity problem', target: 'Gravity as Thermodynamics/Hydrodynamics' },
+          { source: 'Black Holes and Quantum Mechanics', target: 'Black Hole Shadows and Photon Spheres' },
+          { source: 'Violation and Deformation of Relativistic Symmetries', target: 'Threshold Anomalies' },
           { source: 'IR-UV mixing', target: 'Modified Dispersion Relations' },
-          { source: 'The Quantum Gravity problem', target: 'IR-UV mixing' },
-          { source: 'The Quantum Gravity problem', target: 'Quantum Reference Frames' },
-          { source: 'The Quantum Gravity problem', target: 'Black Hole Shadows and Photon Spheres' },
+          { source: 'Gravitationally-induced quantum effects', target: 'COW experiment and gravitational phase shifts' },
+          { source: 'The Quantum Gravity problem', target: 'Effective Field Theory of Gravity' },
+          { source: 'Emergent, Nonclassical and Fuzzy Spacetime', target: 'Quantum Superposition of Geometries' },
           { source: 'The Quantum Gravity problem', target: 'Low-energy table-top experiments' },
+          { source: 'Astrophysical probes', target: 'Astrophysical Detection Techniques' },
+          { source: 'Emergent, Nonclassical and Fuzzy Spacetime', target: 'The Problem of Locality' },
+          { source: 'Gravitationally-induced quantum effects', target: 'Gravitationally-induced Decoherence' },
+          { source: 'The Quantum Gravity problem', target: 'Discrete, Canonical and Covariant Quantum Gravity' },
+          { source: 'Gravitationally-induced quantum effects', target: 'Gravity-mediated Entanglement' },
+          { source: 'The Quantum Gravity problem', target: 'Quantum Spacetime' },
+          { source: 'The Quantum Gravity problem', target: 'Modified Dispersion Relations' },
+          { source: 'The Quantum Gravity problem', target: 'Nonlocalities' },
+          { source: 'Quantum Reference Frames', target: 'Quantum Reference Frame Transformations' },
+          { source: 'The Quantum Gravity problem', target: 'Black Hole Shadows and Photon Spheres' },
+          { source: 'Astrophysical probes', target: 'Particle Processes in Astrophysical Sources' },
+          { source: 'The Quantum Gravity problem', target: 'Black Holes and Quantum Mechanics' },
+          { source: 'Low-energy table-top experiments', target: 'Collapse Models' },
           { source: 'The Quantum Gravity problem', target: 'Singularity Resolution' },
-          { source: 'Low-energy table-top experiments', target: 'COW experiment and gravitational phase shifts' },
-          { source: 'Quantum Reference Frames', target: 'Discrete, Canonical and Covariant Quantum Gravity' },
-          { source: 'Black Holes and Quantum Mechanics', target: 'Corrections to Black Hole Thermodynamics' },
-          { source: 'Astrophysical probes', target: 'Astrophysical Sources' },
-          { source: 'Gravitationally-induced quantum effects', target: 'COW experiment and gravitational phase shifts' } ]
+          { source: 'The Quantum Gravity problem', target: 'Problem of Time' },
+          { source: 'The Quantum Gravity problem', target: 'Weak Gravity and Weak Cosmic Censorship Conjectures' },
+          { source: 'The Quantum Gravity problem', target: 'Quantum Cosmology' },
+          { source: 'The Quantum Gravity problem', target: 'Astrophysical probes' },
+          { source: 'Low-energy table-top experiments', target: 'Gravitationally-induced Decoherence' },
+          { source: 'Gravitationally-induced quantum effects', target: 'Time Dilation-induced Dephasing' },
+          { source: 'Violation and Deformation of Relativistic Symmetries', target: 'Modified Schroedinger Equation' },
+          { source: 'Black Holes and Quantum Mechanics', target: 'Loop Quantum Gravity Dressed-metric and Rainbow Models of Black Holes' },
+          { source: 'Low-energy table-top experiments', target: 'Ultra-sensitive Magnetometry' },
+          { source: 'Asymptotic and global symmetries of spacetime', target: 'Hawking Radiation' },
+          { source: 'Low-energy table-top experiments', target: 'Generalized Uncertainty Principle' },
+          { source: 'In-vacuo dispersion', target: 'Quantum Gravity Induced Time Delays' } ]
       };
 
       // ---------------------------------------------------------------- parameters
@@ -1216,7 +1216,11 @@ window.Quarto = {
       const L2_WRAP_WIDTH = 110;
       // Forces
       const REPULSION = 60000;    // border-to-border repulsion between any two balloons
-      const L1_REPULSION = 4;     // extra factor between two first-level balloons (separates the clouds)
+      const REPULSION_MAX = 12;   // upper limit of the repulsion force (keeps touching balloons from vibrating)
+      // First-level <-> first-level: Van der Waals-like (Lennard-Jones-like) force on the border-to-border
+      // distance: repulsive closer than L1_R0, attractive beyond it, with a long tail (falls off as 1/d^2)
+      const L1_R0 = 170;          // distance (border to border) at which the force changes sign
+      const L1_EPS = 40;          // strength
       const BOX_GAP = 10;         // minimum gap kept between boxes
       const LINK_GAP = 12;        // preferred gap (border to border) between a topic and its first-level parent
       const LINK_OWN = 0.5;       // spring strength of first-level <-> second-level links (they shape the map)
@@ -1228,13 +1232,27 @@ window.Quarto = {
       const DAMPING = 0.85;       // friction afterwards: 0 = none, 1 = frozen (library default 0.4)
       const MAX_SPEED = 6;        // speed limit per tick
       const ALPHA_FLOOR = 0.2;    // the simulation never stops: forces never drop below this level
-      const T_LOW = 0.2;          // permanent, very slow Brownian agitation
-      const T_HIGH = 4;           // agitation right after load / after a balloon is moved
-      const T_SHUFFLE = 10;       // agitation when pressing the shuffle button
-      const COOL_TICKS = 600;     // time constant of the cooling (about 60 ticks per second)
+      const T_HIGH = 1.5;         // short agitation after a balloon has been moved
+      const T_SHUFFLE = 2;        // agitation after the shuffle kick
+      const T_OFF = 0.03;         // below this the agitation is switched off completely
+      const COOL_TICKS = 120;     // time constant of the cooling (about 60 ticks per second)
       const NOISE_CORR = 0.96;    // memory of the random force from one tick to the next (higher = smoother)
+      // Shuffle button
+      const SHAKE_CANDIDATES = 12;// arrangements tried offline
+      const SHAKE_BUDGET_MS = 900;// never spend more than this on the search (after the first four)
+      const SHAKE_KICK = 0.45;    // ... for half of them the current map is displaced randomly by this (std. dev., fraction of the map size)
+      const SHAKE_JOLT = 0.06;    // visible random jolt of every balloon when the button is pressed (fraction of the map size)
+      const SHAKE_TICKS = 110;    // balloons are carried to the new arrangement for this many ticks ...
+      const SHAKE_PULL = 0.3;     // ... with this pull (per unit distance)
+      // Mouse pointer: attracts the balloon under it and pushes the neighbouring ones away
+      const MOUSE_ATTRACT = 0.35;  // pull of the balloon under the pointer towards the pointer (per unit distance)
+      const MOUSE_ATTRACT_MAX = 5; // ... capped to this speed increment per tick
+      const MOUSE_RADIUS = 60;     // balloons whose border is closer than this to the pointer are pushed away (screen pixels)
+      const MOUSE_PUSH = 8;        // push strength at the border of the balloon under the pointer
       // Offline search for a good starting arrangement
       const RESTARTS = 12;           // number of random starts tried
+      const POLISH_DAMPING = 0.5;    // friction during that polishing (lower than the live one: slow modes relax faster)
+      const POLISH_ITERS = 3000;     // final relaxation of the chosen arrangement (stops early once at rest)
       const RELAX_ITERS = 350;       // relaxation steps for each
       const RESTART_BUDGET_MS = 1500; // never spend more than this (after the first three)
 
@@ -1266,10 +1284,10 @@ window.Quarto = {
           }
       });
 
-      const wrapper = document.getElementById('wrapper_graph_225004');
-      const container = document.getElementById('graph_225004');
-      const fsBtn = document.getElementById('btn_graph_225004');
-      const heatBtn = document.getElementById('heat_graph_225004');
+      const wrapper = document.getElementById('wrapper_graph_753687');
+      const container = document.getElementById('graph_753687');
+      const fsBtn = document.getElementById('btn_graph_753687');
+      const heatBtn = document.getElementById('heat_graph_753687');
       if (!wrapper || !container || !fsBtn || !heatBtn) return;
 
       // Fullscreen Toggle Logic now targets the WRAPPER
@@ -1395,8 +1413,14 @@ window.Quarto = {
                   const gapY = Math.max(0, Math.abs(dy) - (a.__g.h + b.__g.h) / 2);
                   const gap = Math.hypot(gapX, gapY);
                   const len = Math.hypot(dx, dy);
-                  const boost = (a.level1 && b.level1) ? L1_REPULSION : 1;
-                  const f = boost * REPULSION * alpha / ((gap + BOX_GAP) * (gap + BOX_GAP));
+                  let f;
+                  if (a.level1 && b.level1) {
+                      const x = L1_R0 / (gap + BOX_GAP);
+                      f = Math.min(REPULSION_MAX, L1_EPS * alpha * (x * x * x - x * x));   // > 0 repulsive, < 0 attractive
+                  } else {
+                      // capped at close range: an unbounded repulsion is so stiff that touching balloons chatter
+                      f = Math.min(REPULSION_MAX, REPULSION * alpha / ((gap + BOX_GAP) * (gap + BOX_GAP)));
+                  }
                   const fx = f * dx / len, fy = f * dy / len;
                   a.vx -= fx; a.vy -= fy; b.vx += fx; b.vy += fy;
               }
@@ -1442,75 +1466,86 @@ window.Quarto = {
                   const ox = (a.__g.w + b.__g.w) / 2 + BOX_GAP - Math.abs(dx);
                   const oy = (a.__g.h + b.__g.h) / 2 + BOX_GAP - Math.abs(dy);
                   if (ox > 0 && oy > 0) {
-                      if (ox < oy) { const s = (dx >= 0 ? 1 : -1) * ox * 0.25; a.vx -= s; b.vx += s; }
-                      else { const s = (dy >= 0 ? 1 : -1) * oy * 0.25; a.vy -= s; b.vy += s; }
+                      if (ox < oy) { const s = (dx >= 0 ? 1 : -1) * ox * 0.8; a.vx -= s; b.vx += s; }
+                      else { const s = (dy >= 0 ? 1 : -1) * oy * 0.8; a.vy -= s; b.vy += s; }
                   }
               }
           }
       }
 
       // ---------------------------------------------------------------- starting positions
-      // First-level topics on an ellipse (ordered so that topics sharing many pages are neighbours, or
-      // in random order); every other page starts at the barycentre of its first-level parents.
-      function placeNodes(randomOrder) {
+      // First-level topics are dropped at random but spread uniformly over the window area (a random
+      // sequential placement that keeps a minimum distance between them). Pages linked to a single
+      // first-level topic start in a ring around it, pages linked to several start between their
+      // topics, and the others anywhere.
+      function placeNodes() {
           const W = Math.max(300, wrapper.offsetWidth), H = Math.max(300, wrapper.offsetHeight);
           const aspect = Math.max(0.6, Math.min(2.2, W / H));
           const R = 130 + 30 * Math.sqrt(graphData.nodes.length);
           const rx = R * Math.sqrt(aspect), ry = R / Math.sqrt(aspect);
-
           const tops = graphData.nodes.filter(n => n.level1);
-          const shared = (p, q) => {
-              let s = 0;
-              for (const id in parentsOf) {
-                  const ps = parentsOf[id];
-                  if (ps.indexOf(p.id) >= 0 && ps.indexOf(q.id) >= 0) s++;
-              }
-              return s;
-          };
-          const order = [];
-          const left = tops.slice();
-          if (randomOrder) left.sort(() => Math.random() - 0.5);
-          if (left.length) order.push(left.shift());
-          while (left.length) {
-              const last = order[order.length - 1];
-              let bi = 0, bs = -1;
-              if (!randomOrder) left.forEach((q, i) => { const s = shared(last, q); if (s > bs) { bs = s; bi = i; } });
-              order.push(left.splice(bi, 1)[0]);
-          }
-          order.forEach((n, i) => {
-              const ang = 2 * Math.PI * i / order.length;
-              n.x = rx * Math.cos(ang); n.y = ry * Math.sin(ang);
+          tops.forEach(t => { t.__ringPhase = Math.random() * 2 * Math.PI; });
+          let dmin = 0.75 * Math.sqrt((4 * rx * ry) / Math.max(1, tops.length));
+          const placed = [];
+          tops.forEach(n => {
+              let x, y, tries = 0;
+              do {
+                  x = (Math.random() * 2 - 1) * rx; y = (Math.random() * 2 - 1) * ry;
+                  if (++tries % 40 === 0) dmin *= 0.9;   // too crowded: relax the requirement
+              } while (placed.some(q => Math.hypot(q.x - x, q.y - y) < dmin) && tries < 2000);
+              n.x = x; n.y = y; placed.push(n);
+          });
+          const seen = {};   // first-level id -> number of single-parent pages already placed
+          const kids = {};
+          graphData.nodes.forEach(n => {
+              const ps = parentsOf[n.id];
+              if (!n.level1 && ps && ps.length === 1) { const pid = ps[0]; kids[pid] = (kids[pid] || 0) + 1; }
           });
           graphData.nodes.forEach(n => {
               n.vx = 0; n.vy = 0;
               if (n.level1) return;
               const ps = parentsOf[n.id];
-              if (ps && ps.length) {
+              if (ps && ps.length === 1) {
+                  const pid1 = ps[0], p = byId[pid1];
+                  const k = seen[p.id] = (seen[p.id] || 0) + 1;
+                  const ang = 2 * Math.PI * (k / kids[p.id]) + (Math.random() - 0.5) * 0.8 + p.__ringPhase;
+                  const rad = Math.max(p.__g.w, p.__g.h) / 2 + 50 + Math.random() * 70;
+                  n.x = p.x + rad * Math.cos(ang); n.y = p.y + rad * Math.sin(ang);
+              } else if (ps && ps.length) {
                   let sx = 0, sy = 0;
                   ps.forEach(id => { sx += byId[id].x; sy += byId[id].y; });
-                  n.x = sx / ps.length + (Math.random() - 0.5) * 60;
-                  n.y = sy / ps.length + (Math.random() - 0.5) * 60;
+                  n.x = sx / ps.length + (Math.random() - 0.5) * 40;
+                  n.y = sy / ps.length + (Math.random() - 0.5) * 40;
               } else {
-                  n.x = (Math.random() - 0.5) * rx; n.y = (Math.random() - 0.5) * ry;
+                  n.x = (Math.random() * 2 - 1) * rx; n.y = (Math.random() * 2 - 1) * ry;
               }
           });
       }
 
       // The same forces as the live simulation, run offline (no drawing, no noise)
-      function relax(iters) {
+      // warmFrac: fraction of the iterations done with low friction before the final friction is used
+      function relax(iters, warmFrac) {
+          if (warmFrac === undefined) warmFrac = 0.6;
           let alpha = 1;
           for (let i = 0; i < iters; i++) {
               alpha *= 0.97;
               fCharge(alpha); fSprings(alpha); fGravity(alpha); fCollide();
-              const keep = 1 - (i < iters * 0.6 ? 0.4 : DAMPING);
+              const keep = 1 - (i < iters * warmFrac ? 0.4 : (warmFrac === 0 ? POLISH_DAMPING : DAMPING));
+              let vmax = 0;
               graphData.nodes.forEach(n => {
                   n.vx *= keep; n.vy *= keep;
                   const v = Math.hypot(n.vx, n.vy);
                   if (v > 60) { n.vx *= 60 / v; n.vy *= 60 / v; }
+                  vmax = Math.max(vmax, v);
                   n.x += n.vx; n.y += n.vy;
               });
+              if (warmFrac === 0 && vmax < 0.001) break;   // settled
           }
+          graphData.nodes.forEach(n => { n.vx = 0; n.vy = 0; });
       }
+      // Long relaxation with the final friction only: the soft, slow modes of the map are brought to
+      // rest here, offline, so that the live map starts (and ends a shuffle) at rest.
+      function polish() { relax(POLISH_ITERS, 0); }
 
       // Quality of an arrangement: crossing first-level links count most, then how far the links
       // are from their preferred length.
@@ -1543,6 +1578,7 @@ window.Quarto = {
               if (!best || c < best.c) best = { c, pos: graphData.nodes.map(n => [n.x, n.y]) };
           }
           graphData.nodes.forEach((n, i) => { n.x = best.pos[i][0]; n.y = best.pos[i][1]; n.vx = 0; n.vy = 0; });
+          polish();
       })();
 
       // ---------------------------------------------------------------- the graph
@@ -1606,14 +1642,17 @@ window.Quarto = {
           return Math.sqrt(-2 * Math.log(u)) * Math.cos(2 * Math.PI * v);
       }
 
-      // Brownian agitation: starts hot and cools exponentially down to a very low permanent level,
-      // so the map keeps annealing by itself and then just breathes around its configuration.
+      // Brownian agitation: only a transient (after load, after a balloon was moved, after shuffle).
+      // It cools exponentially and is switched off completely, so a settled map stays still.
       Graph.d3Force('thermal', () => {
           tick++;
           if (tick === WARM_TICKS) Graph.d3VelocityDecay(DAMPING);
-          currentT = tick < WARM_TICKS ? 0
-              : T_LOW + (heatPeak - T_LOW) * Math.exp(-(tick - heatStart) / COOL_TICKS);
-          if (currentT <= 0) return;
+          currentT = tick < WARM_TICKS ? 0 : heatPeak * Math.exp(-(tick - heatStart) / COOL_TICKS);
+          if (currentT < T_OFF) {
+              currentT = 0;
+              if (tick >= WARM_TICKS && heatPeak > 0) { heatPeak = 0; graphData.nodes.forEach(n => { n.__nx = 0; n.__ny = 0; }); }
+              return;
+          }
           // the random force of each balloon changes slowly (correlated noise): smooth wandering, no vibration
           const c = NOISE_CORR, q = Math.sqrt(1 - c * c) * currentT;
           graphData.nodes.forEach(n => {
@@ -1623,12 +1662,97 @@ window.Quarto = {
           });
       });
 
+      // Mouse pointer force (mouse only, not on touch screens, not while panning):
+      // the balloon under the pointer is pulled towards it (so it is "trapped" and easy to hit),
+      // and the balloons whose border is within MOUSE_RADIUS of the pointer are pushed away from it.
+      let mouse = null;   // pointer position in screen coordinates inside the map, or null
+      let panning = false;
+      container.addEventListener('pointermove', ev => {
+          if (ev.pointerType !== 'mouse') { mouse = null; return; }
+          const r = container.getBoundingClientRect();
+          mouse = { x: ev.clientX - r.left, y: ev.clientY - r.top };
+      }, true);
+      container.addEventListener('pointerleave', () => { mouse = null; }, true);
+      container.addEventListener('pointerdown', () => { if (!hot) panning = true; }, true);
+      window.addEventListener('pointerup', () => { panning = false; }, true);
+      Graph.d3Force('mouse', () => {
+          if (!mouse || panning || tick < WARM_TICKS) return;
+          const p = Graph.screen2GraphCoords(mouse.x, mouse.y);
+          const nodes = graphData.nodes;
+          // radius and strength are meant in screen terms: they grow when the map is zoomed out
+          const s = 1 / Math.max(Graph.zoom(), 0.1), R = MOUSE_RADIUS * s;
+          let under = null;
+          for (let i = nodes.length - 1; i >= 0; i--) if (insideNode(nodes[i], p.x, p.y)) { under = nodes[i]; break; }
+          nodes.forEach(n => {
+              if (n.fx != null) return;   // balloon being dragged
+              if (n === under) {
+                  let dx = p.x - n.x, dy = p.y - n.y;
+                  const d = Math.hypot(dx, dy), f = Math.min(MOUSE_ATTRACT * d, MOUSE_ATTRACT_MAX * s);
+                  if (d > 0) { n.vx += dx / d * f; n.vy += dy / d * f; }
+                  return;
+              }
+              // distance from the pointer to the border of the balloon (0 inside)
+              const ex = Math.max(Math.abs(p.x - n.x) - n.__g.w / 2, 0);
+              const ey = Math.max(Math.abs(p.y - n.y) - n.__g.h / 2, 0);
+              const gap = Math.hypot(ex, ey);
+              if (gap >= R) return;
+              let dx = n.x - p.x, dy = n.y - p.y;
+              let d = Math.hypot(dx, dy);
+              if (d === 0) { dx = Math.random() - 0.5; dy = Math.random() - 0.5; d = Math.hypot(dx, dy); }
+              const f = MOUSE_PUSH * s * (1 - gap / R) * (under ? 1 : 0.5);
+              n.vx += dx / d * f; n.vy += dy / d * f;
+          });
+      });
+
+      // Shuffle: a violent shake. Throwing the balloons about at random and letting them fall back
+      // would almost always end in a worse arrangement, so the shake works in two steps: several
+      // completely different arrangements are relaxed offline (half of them from a fresh random start,
+      // half from a violent kick of the current map) and the best one that differs clearly from the
+      // current map is chosen; then the balloons are thrown about and carried there.
+      let shakeTarget = null, shakeUntil = 0;
+      function shake() {
+          const nodes = graphData.nodes;
+          const cur = nodes.map(n => [n.x, n.y]);
+          let x0 = Infinity, x1 = -Infinity, y0 = Infinity, y1 = -Infinity;
+          cur.forEach(p => { x0 = Math.min(x0, p[0]); x1 = Math.max(x1, p[0]); y0 = Math.min(y0, p[1]); y1 = Math.max(y1, p[1]); });
+          const size = Math.max(x1 - x0, y1 - y0, 300);
+          const meanDisp = pos => pos.reduce((s, p, i) => s + Math.hypot(p[0] - cur[i][0], p[1] - cur[i][1]), 0) / pos.length;
+          const t0 = performance.now();
+          let best = null;
+          for (let k = 0; k < SHAKE_CANDIDATES && (k < 4 || performance.now() - t0 < SHAKE_BUDGET_MS); k++) {
+              if (k % 2 === 0) placeNodes(true);
+              else nodes.forEach((n, i) => { n.x = cur[i][0] + gauss() * SHAKE_KICK * size; n.y = cur[i][1] + gauss() * SHAKE_KICK * size; });
+              nodes.forEach(n => { n.vx = 0; n.vy = 0; });
+              relax(RELAX_ITERS);
+              const pos = nodes.map(n => [n.x, n.y]);
+              if (meanDisp(pos) < 0.1 * size) continue;   // too close to where it already is
+              const c = layoutCost();
+              if (!best || c < best.c) best = { c, pos };
+          }
+          if (best) { nodes.forEach((n, i) => { n.x = best.pos[i][0]; n.y = best.pos[i][1]; }); polish(); best.pos = nodes.map(n => [n.x, n.y]); }
+          nodes.forEach((n, i) => {
+              n.x = cur[i][0] + gauss() * SHAKE_JOLT * size; n.y = cur[i][1] + gauss() * SHAKE_JOLT * size;
+              n.vx = 0; n.vy = 0;
+          });
+          if (best) { shakeTarget = best.pos; shakeUntil = tick + SHAKE_TICKS; }
+          heat(T_SHUFFLE);
+      }
+      Graph.d3Force('shakeTo', () => {
+          if (!shakeTarget) return;
+          if (tick > shakeUntil) { shakeTarget = null; return; }
+          graphData.nodes.forEach((n, i) => {
+              n.vx += (shakeTarget[i][0] - n.x) * SHAKE_PULL; n.vy += (shakeTarget[i][1] - n.y) * SHAKE_PULL;
+          });
+      });
+
       // The shape-giving forces are defined above (the library's own link force is switched off)
       Graph.d3Force('link').strength(0);
       Graph.d3Force('center', null);
-      Graph.d3Force('charge', fCharge);
-      Graph.d3Force('springs', fSprings);
-      Graph.d3Force('gravity', fGravity);
+      // The live forces ignore the library's cooling parameter (alpha, which starts at 1 and would shake
+      // the carefully relaxed starting arrangement): they always act at the floor level.
+      Graph.d3Force('charge', () => fCharge(0));
+      Graph.d3Force('springs', () => fSprings(0));
+      Graph.d3Force('gravity', () => fGravity(0));
       Graph.d3Force('boxCollide', fCollide);
 
       // No balloon moves faster than MAX_SPEED (plus what the current agitation allows)
@@ -1644,8 +1768,7 @@ window.Quarto = {
       // Relaxation before the first frame with low friction, then heavy damping; never fully cool down
       Graph.d3VelocityDecay(0.4).d3AlphaDecay(0.04).d3AlphaMin(0);
       Graph.warmupTicks(WARM_TICKS).cooldownTime(Infinity).cooldownTicks(Infinity);
-      Graph.minZoom(0.2);
-      heat(T_HIGH);
+      Graph.minZoom(0.2);   // (no agitation at load: the starting arrangement is already at rest)
 
       // Zoom so that the whole map fills the window. The map keeps being re-fitted while it settles,
       // until you zoom or pan yourself; the shuffle button switches this on again.
@@ -1659,7 +1782,7 @@ window.Quarto = {
       container.addEventListener('pointerup', () => { panStart = false; }, true);
       container.addEventListener('touchstart', ev => { if (ev.touches.length > 1) autoFit = false; }, { passive: true });
       let panStart = false;
-      heatBtn.addEventListener('click', () => { heat(T_SHUFFLE); autoFit = true; });
+      heatBtn.addEventListener('click', () => { shake(); autoFit = true; });
       new ResizeObserver(() => { Graph.width(wrapper.offsetWidth); Graph.height(wrapper.offsetHeight); }).observe(wrapper);
 
       // Click / tap: open the page of the balloon under the pointer in a new tab.
@@ -1683,7 +1806,7 @@ window.Quarto = {
           }
       });
 
-      if (window.__BQG_DEBUG) window.__bqg = { Graph, graphData, heat, parentsOf, childCount, getTick: () => tick };
+      if (window.__BQG_DEBUG) window.__bqg = { Graph, graphData, heat, shake, parentsOf, childCount, getTick: () => tick, getT: () => currentT, layoutCost, setMouse: m => { mouse = m; }, getMouse: () => mouse, polish };
     })();
   </script>
     
