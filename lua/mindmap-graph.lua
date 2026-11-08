@@ -117,13 +117,13 @@ local function generate_graph_html(nodes_db, edges_db)
       // Same bold font for every balloon; sizes are fixed in graph units (they scale with zoom)
       const FONT_SIZE = 12;
       const L2_WRAP_WIDTH = 110;
+      const L2_WRAP_NARROW = 80;  // narrower (taller) balloons on narrow screens
+      const NARROW_PX = 600;      // windows narrower than this count as phones
+      const PHONE_ZOOM = 1.3;     // phones: start zoomed in by this factor beyond 'fit all' (readable text; pan to see the rest)
       // Forces
       const REPULSION = 60000;    // border-to-border repulsion between any two balloons
       const REPULSION_MAX = 12;   // upper limit of the repulsion force (keeps touching balloons from vibrating)
-      // First-level <-> first-level: Van der Waals-like (Lennard-Jones-like) force on the border-to-border
-      // distance: repulsive closer than L1_R0, attractive beyond it, with a long tail (falls off as 1/d^2)
-      const L1_R0 = 170;          // distance (border to border) at which the force changes sign
-      const L1_EPS = 40;          // strength
+      // First-level balloons feel no force from each other and stay where they were placed (until moved by hand)
       const BOX_GAP = 10;         // minimum gap kept between boxes
       const LINK_GAP = 12;        // preferred gap (border to border) between a topic and its first-level parent
       const LINK_OWN = 0.5;       // spring strength of first-level <-> second-level links (they shape the map)
@@ -131,12 +131,18 @@ local function generate_graph_html(nodes_db, edges_db)
       const LINK_CROSS = 0.02;    // ... of all other links (second-level <-> second-level, ...)
       const GRAVITY = 0.04;       // pull towards the centre
       // Dissipation and thermal agitation (annealing)
-      const WARM_TICKS = 300;     // initial relaxation, with low friction, done before the first frame
+      // EXPLORATORY: initial arrangement from the jittered-grid algorithm (Web_Graph_Layout_Algorithm_Specification.md):
+      // no offline relaxation, no warm-up; the live simulation starts from it. Add ?layout=old to the URL for the previous behaviour.
+      const GRID_MODE = new URLSearchParams(location.search).get('layout') !== 'old';
+      const GRID_JITTER = 0.2;    // random displacement of a root inside its cell (fraction of the cell size)
+      const GRID_AREA = 3.5;      // area of the grid = this x the total area of all balloons
+      const GRID_RING = 0.25;     // single-parent pages: ring radius = this x min(cell width, cell height) (+ balloon sizes)
+      const WARM_TICKS = GRID_MODE ? 0 : 300;     // initial relaxation, with low friction, done before the first frame
       const DAMPING = 0.85;       // friction afterwards: 0 = none, 1 = frozen (library default 0.4)
       const MAX_SPEED = 6;        // speed limit per tick
       const ALPHA_FLOOR = 0.2;    // the simulation never stops: forces never drop below this level
       const T_HIGH = 1.5;         // short agitation after a balloon has been moved
-      const T_SHUFFLE = 2;        // agitation after the shuffle kick
+      const T_SHUFFLE = 0;         // agitation after the shuffle kick
       const T_OFF = 0.03;         // below this the agitation is switched off completely
       const COOL_TICKS = 120;     // time constant of the cooling (about 60 ticks per second)
       const NOISE_CORR = 0.96;    // memory of the random force from one tick to the next (higher = smoother)
@@ -283,7 +289,7 @@ local function generate_graph_html(nodes_db, edges_db)
               const side = Math.max(best.side, minSide);
               box = { lines: best.b.lines, w: side, h: side };
           } else {
-              box = boxFor(wrapText(node.id, L2_WRAP_WIDTH));
+              box = boxFor(wrapText(node.id, wrapper.offsetWidth < NARROW_PX ? L2_WRAP_NARROW : L2_WRAP_WIDTH));
               if (node.shape === 'circle') { const d = Math.max(box.w, box.h); box.w = d; box.h = d; }
           }
           box.lineHeight = lineHeight;
@@ -310,20 +316,15 @@ local function generate_graph_html(nodes_db, edges_db)
           for (let i = 0; i < ns.length; i++) {
               for (let j = i + 1; j < ns.length; j++) {
                   const a = ns[i], b = ns[j];
+                  if (a.level1 && b.level1) continue;   // no force at all between first-level balloons
                   let dx = b.x - a.x, dy = b.y - a.y;
                   if (dx === 0 && dy === 0) { dx = Math.random() - 0.5; dy = Math.random() - 0.5; }
                   const gapX = Math.max(0, Math.abs(dx) - (a.__g.w + b.__g.w) / 2);
                   const gapY = Math.max(0, Math.abs(dy) - (a.__g.h + b.__g.h) / 2);
                   const gap = Math.hypot(gapX, gapY);
                   const len = Math.hypot(dx, dy);
-                  let f;
-                  if (a.level1 && b.level1) {
-                      const x = L1_R0 / (gap + BOX_GAP);
-                      f = Math.min(REPULSION_MAX, L1_EPS * alpha * (x * x * x - x * x));   // > 0 repulsive, < 0 attractive
-                  } else {
-                      // capped at close range: an unbounded repulsion is so stiff that touching balloons chatter
-                      f = Math.min(REPULSION_MAX, REPULSION * alpha / ((gap + BOX_GAP) * (gap + BOX_GAP)));
-                  }
+                  // capped at close range: an unbounded repulsion is so stiff that touching balloons chatter
+                  const f = Math.min(REPULSION_MAX, REPULSION * alpha / ((gap + BOX_GAP) * (gap + BOX_GAP)));
                   const fx = f * dx / len, fy = f * dy / len;
                   a.vx -= fx; a.vy -= fy; b.vx += fx; b.vy += fy;
               }
@@ -354,8 +355,11 @@ local function generate_graph_html(nodes_db, edges_db)
       // Pull towards the centre, weaker along the longer side of the window
       function fGravity(alpha0) {
           const alpha = Math.max(alpha0, ALPHA_FLOOR);
-          const aspect = Math.max(0.3, Math.min(3, wrapper.offsetWidth / Math.max(1, wrapper.offsetHeight)));
-          const gx = GRAVITY / Math.max(1, aspect), gy = GRAVITY * Math.max(1, aspect);
+          // weaker along the longer side of the window, so the map takes the shape of the window
+          const aspect = Math.max(0.25, Math.min(4, wrapper.offsetWidth / Math.max(1, wrapper.offsetHeight)));
+          // (the pull is stronger along the shorter side and weaker along the longer one: ratio aspect^-3)
+          const gx = aspect < 1 ? GRAVITY / aspect : GRAVITY / (aspect * aspect);
+          const gy = aspect < 1 ? GRAVITY * aspect * aspect : GRAVITY * aspect;
           graphData.nodes.forEach(n => { n.vx -= n.x * gx * alpha; n.vy -= n.y * gy * alpha; });
       }
 
@@ -383,7 +387,7 @@ local function generate_graph_html(nodes_db, edges_db)
       // topics, and the others anywhere.
       function placeNodes() {
           const W = Math.max(300, wrapper.offsetWidth), H = Math.max(300, wrapper.offsetHeight);
-          const aspect = Math.max(0.6, Math.min(2.2, W / H));
+          const aspect = Math.max(0.25, Math.min(4, W / H));
           const R = 130 + 30 * Math.sqrt(graphData.nodes.length);
           const rx = R * Math.sqrt(aspect), ry = R / Math.sqrt(aspect);
           const tops = graphData.nodes.filter(n => n.level1);
@@ -425,6 +429,116 @@ local function generate_graph_html(nodes_db, edges_db)
           });
       }
 
+      // Jittered-grid placement (O(N + pages), no iterations):
+      // 1. the first-level topics get the cells of a grid matching the window's aspect ratio, with jitter;
+      // 2. topics that share pages are given neighbouring cells (greedy, breadth first);
+      // 3. pages linked to several topics go to the barycentre of their topics, pages linked to a single
+      //    topic are spread on a ring around it, inside its cell.
+      function placeGrid() {
+          const nodes = graphData.nodes;
+          const W0 = Math.max(300, wrapper.offsetWidth), H0 = Math.max(300, wrapper.offsetHeight);
+          const asp = Math.max(0.25, Math.min(4, W0 / H0));
+          const area = GRID_AREA * nodes.reduce((a, n) => a + n.__g.w * n.__g.h, 0);
+          const W = Math.sqrt(area * asp), H = Math.sqrt(area / asp);
+          const tops = nodes.filter(n => n.level1);
+          const N = Math.max(1, tops.length);
+          // phase 1: grid
+          const cols = Math.max(1, Math.round(Math.sqrt(N * W / H)));
+          const rows = Math.ceil(N / cols);
+          const dx = W / cols, dy = H / rows;
+          const cellOf = {};            // root id -> [col, row]
+          const used = {};              // "col,row" -> root id
+          const free = (c, r) => c >= 0 && r >= 0 && c < cols && r < rows && !used[c + ',' + r];
+          const take = (n, c, r) => { cellOf[n.id] = [c, r]; used[c + ',' + r] = n.id; };
+          // phase 2: topics sharing pages are neighbours
+          const weight = {};            // id -> {id: number of shared pages}
+          tops.forEach(a => { weight[a.id] = {}; });
+          for (const id in parentsOf) {
+              const ps = parentsOf[id];
+              for (let i = 0; i < ps.length; i++) for (let j = 0; j < ps.length; j++) {
+                  if (i === j) continue;
+                  const pi = ps[i], pj = ps[j], wi = weight[pi];
+                  wi[pj] = (wi[pj] || 0) + 1;
+              }
+          }
+          const degree = n => Object.values(weight[n.id]).reduce((a, b) => a + b, 0);
+          const randomFree = () => {
+              const cells = [];
+              for (let c = 0; c < cols; c++) for (let r = 0; r < rows; r++) if (free(c, r)) cells.push([c, r]);
+              return cells[Math.floor(Math.random() * cells.length)];
+          };
+          const nearestFree = (c0, r0) => {
+              let best = null, bd = 1e9;
+              for (let c = 0; c < cols; c++) for (let r = 0; r < rows; r++) if (free(c, r)) {
+                  const d = Math.hypot(c - c0, r - r0) + Math.random() * 0.01;
+                  if (d < bd) { bd = d; best = [c, r]; }
+              }
+              return best;
+          };
+          const pending = tops.slice().sort((a, b) => degree(b) - degree(a) || Math.random() - 0.5);
+          const queue = [];
+          while (pending.length) {
+              if (!queue.length) {          // start a new connected group at a random free cell
+                  const n = pending.shift(), cr = randomFree();
+                  take(n, cr[0], cr[1]); queue.push(n);
+              }
+              const cur = queue.shift();
+              const nb = Object.keys(weight[cur.id]).filter(id => !cellOf[id])
+                  .sort((a, b) => weight[cur.id][b] - weight[cur.id][a]);
+              nb.forEach(id => {
+                  const q = byId[id], [c0, r0] = cellOf[cur.id];
+                  const cr = nearestFree(c0, r0);
+                  if (!cr) return;
+                  take(q, cr[0], cr[1]); queue.push(q);
+                  pending.splice(pending.indexOf(q), 1);
+              });
+          }
+          tops.forEach(n => {
+              const [c, r] = cellOf[n.id];
+              n.x = -W / 2 + (c + 0.5 + (Math.random() * 2 - 1) * GRID_JITTER) * dx;
+              n.y = -H / 2 + (r + 0.5 + (Math.random() * 2 - 1) * GRID_JITTER) * dy;
+          });
+          // phase 3: pages. The single-parent ones are counted first, to space them evenly on the ring.
+          const kids = {};
+          nodes.forEach(n => { n.vx = 0; n.vy = 0; });
+          nodes.forEach(n => {
+              const ps = parentsOf[n.id];
+              if (!n.level1 && ps && ps.length === 1) { const pid = ps[0]; (kids[pid] = kids[pid] || []).push(n); }
+          });
+          const cellMin = Math.min(dx, dy);
+          tops.forEach(p => {
+              const ks = kids[p.id] || [];
+              const phase = Math.random() * 2 * Math.PI;
+              const r0 = GRID_RING * cellMin + Math.max(p.__g.w, p.__g.h) / 2;
+              ks.forEach((n, i) => {
+                  // two interleaved rings when there are many pages
+                  const ring = ks.length > 8 ? 1 + (i % 2) * 0.55 : 1;
+                  const ang = phase + 2 * Math.PI * i / ks.length;
+                  const rad = (r0 + Math.max(n.__g.w, n.__g.h) / 2) * ring;
+                  n.x = p.x + rad * Math.cos(ang); n.y = p.y + rad * Math.sin(ang);
+              });
+          });
+          const groups = {};
+          nodes.forEach(n => {
+              const ps = parentsOf[n.id];
+              if (n.level1) return;
+              if (ps && ps.length > 1) {
+                  let sx = 0, sy = 0;
+                  ps.forEach(id => { sx += byId[id].x; sy += byId[id].y; });
+                  const key = ps.slice().sort().join('|'), k = groups[key] = (groups[key] || 0) + 1;
+                  // pages with exactly the same parents are spread apart perpendicular to the parent axis
+                  const pa = ps[0], pb = ps[1], a = byId[pa], b = byId[pb];
+                  const len = Math.hypot(b.x - a.x, b.y - a.y) || 1;
+                  const off = (k - 1) * 2.5 * (k % 2 ? 1 : -1);
+                  n.x = sx / ps.length - (b.y - a.y) / len * off;
+                  n.y = sy / ps.length + (b.x - a.x) / len * off;
+              } else if (!ps || !ps.length) {
+                  n.x = (Math.random() - 0.5) * W; n.y = (Math.random() - 0.5) * H;
+              }
+          });
+      }
+      const placeInitial = () => GRID_MODE ? placeGrid() : placeNodes();
+
       // The same forces as the live simulation, run offline (no drawing, no noise)
       // warmFrac: fraction of the iterations done with low friction before the final friction is used
       function relax(iters, warmFrac) {
@@ -436,6 +550,7 @@ local function generate_graph_html(nodes_db, edges_db)
               const keep = 1 - (i < iters * warmFrac ? 0.4 : (warmFrac === 0 ? POLISH_DAMPING : DAMPING));
               let vmax = 0;
               graphData.nodes.forEach(n => {
+                  if (n.level1) { n.vx = 0; n.vy = 0; return; }   // first-level balloons stay where they were placed
                   n.vx *= keep; n.vy *= keep;
                   const v = Math.hypot(n.vx, n.vy);
                   if (v > 60) { n.vx *= 60 / v; n.vy *= 60 / v; }
@@ -472,6 +587,7 @@ local function generate_graph_html(nodes_db, edges_db)
       // Try several starting arrangements offline and keep the best one: the first view is then
       // already a good arrangement, and the live simulation only has to keep it that way.
       (function solveInitial() {
+          if (GRID_MODE) { placeGrid(); return; }   // exploratory: the live simulation starts from the grid layout
           const t0 = performance.now();
           let best = null;
           for (let k = 0; k < RESTARTS && (k < 3 || performance.now() - t0 < RESTART_BUDGET_MS); k++) {
@@ -623,7 +739,7 @@ local function generate_graph_html(nodes_db, edges_db)
           const t0 = performance.now();
           let best = null;
           for (let k = 0; k < SHAKE_CANDIDATES && (k < 4 || performance.now() - t0 < SHAKE_BUDGET_MS); k++) {
-              if (k % 2 === 0) placeNodes(true);
+              if (k % 2 === 0) placeInitial();
               else nodes.forEach((n, i) => { n.x = cur[i][0] + gauss() * SHAKE_KICK * size; n.y = cur[i][1] + gauss() * SHAKE_KICK * size; });
               nodes.forEach(n => { n.vx = 0; n.vy = 0; });
               relax(RELAX_ITERS);
@@ -668,8 +784,15 @@ local function generate_graph_html(nodes_db, edges_db)
           });
       });
 
+      // First-level balloons never move by themselves: whatever the other forces do to them is cancelled
+      // (a balloon being dragged is held by the library; it stays where it is dropped). Not during a shuffle.
+      Graph.d3Force('pinTops', () => {
+          if (shakeTarget) return;
+          graphData.nodes.forEach(n => { if (n.level1 && n.fx == null) { n.vx = 0; n.vy = 0; } });
+      });
+
       // Relaxation before the first frame with low friction, then heavy damping; never fully cool down
-      Graph.d3VelocityDecay(0.4).d3AlphaDecay(0.04).d3AlphaMin(0);
+      Graph.d3VelocityDecay(GRID_MODE ? DAMPING : 0.4).d3AlphaDecay(0.04).d3AlphaMin(0);
       Graph.warmupTicks(WARM_TICKS).cooldownTime(Infinity).cooldownTicks(Infinity);
       Graph.minZoom(0.2);   // (no agitation at load: the starting arrangement is already at rest)
 
@@ -677,15 +800,25 @@ local function generate_graph_html(nodes_db, edges_db)
       // until you zoom or pan yourself; the shuffle button switches this on again.
       let autoFit = true;
       let firstTick = true;
-      Graph.onEngineTick(() => { if (firstTick) { firstTick = false; Graph.zoomToFit(0, 25); } });
-      setInterval(() => { if (autoFit && !dragging) Graph.zoomToFit(600, 25); }, 700);
+      const narrow = () => wrapper.offsetWidth < NARROW_PX;
+      // phones: fit, then zoom in further (the map is panned by hand); otherwise fit the whole map
+      function fit(ms) {
+          if (narrow()) { Graph.zoomToFit(0, 25); Graph.zoom(Graph.zoom() * PHONE_ZOOM, ms); }
+          else Graph.zoomToFit(ms, 25);
+      }
+      Graph.onEngineTick(() => { if (firstTick) { firstTick = false; fit(0); if (narrow()) autoFit = false; } });
+      setInterval(() => { if (autoFit && !dragging) fit(600); }, 700);
       container.addEventListener('wheel', () => { autoFit = false; }, { passive: true });
       container.addEventListener('pointerdown', () => { if (!hot) panStart = true; }, true);
       container.addEventListener('pointermove', () => { if (panStart) { autoFit = false; } }, true);
       container.addEventListener('pointerup', () => { panStart = false; }, true);
       container.addEventListener('touchstart', ev => { if (ev.touches.length > 1) autoFit = false; }, { passive: true });
       let panStart = false;
-      heatBtn.addEventListener('click', () => { shake(); autoFit = true; });
+      heatBtn.addEventListener('click', () => {
+          shake();
+          if (narrow()) { autoFit = false; setTimeout(() => fit(600), 2500); }   // phones: one re-fit when the shake has landed
+          else autoFit = true;
+      });
       new ResizeObserver(() => { Graph.width(wrapper.offsetWidth); Graph.height(wrapper.offsetHeight); }).observe(wrapper);
 
       // Click / tap: open the page of the balloon under the pointer in a new tab.
@@ -709,7 +842,7 @@ local function generate_graph_html(nodes_db, edges_db)
           }
       });
 
-      if (window.__BQG_DEBUG) window.__bqg = { Graph, graphData, heat, shake, parentsOf, childCount, getTick: () => tick, getT: () => currentT, layoutCost, setMouse: m => { mouse = m; }, getMouse: () => mouse, polish };
+      if (window.__BQG_DEBUG) window.__bqg = { Graph, graphData, heat, shake, parentsOf, childCount, getTick: () => tick, getT: () => currentT, layoutCost, setMouse: m => { mouse = m; }, getMouse: () => mouse, polish, placeInitial, placeOld: () => placeNodes(), getTarget: () => shakeTarget, relaxCost: () => layoutCost() };
     })();
   </script>
     ]]

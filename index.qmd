@@ -6,11 +6,24 @@ page-layout: full
 !mindmap-graph-auto: 1st-level-topics
 
 ```{=html}
-<div style="font-size: 0.8em; margin-top: 0.4em;">
-<span style="display:inline-block; padding:1px 6px; margin:2px 4px; border-radius:4px; background:#fdbcce; color:#000; border:1.5px solid #333; font-weight:bold;">First-level topic</span>
-<span style="display:inline-block; padding:1px 6px; margin:2px 4px; border-radius:4px; background:#84cfff; color:#c00000; border:2.5px solid #d00000; font-weight:normal;">Second-level: authors unassigned</span>
-<span style="display:inline-block; padding:1px 6px; margin:2px 4px; border-radius:4px; background:#84cfff; color:#00703c; border:2.5px solid #008a45; font-weight:normal;">Second-level: work in progress</span>
-<span style="display:inline-block; padding:1px 6px; margin:2px 4px; border-radius:4px; background:#84cfff; color:#0b2f8a; border:2.5px solid #0b2f8a; font-weight:normal;">Second-level: written</span>
+<style>
+.legend-line { font-size: 0.8em; margin-top: 0.4em; white-space: nowrap; }
+.legend-line .chip { display:inline-block; padding:1px 6px; margin:2px 4px; border-radius:4px; }
+.legend-line .lg-short { display:none; }
+/* phones: title and legend each on one line, with shorter legend labels */
+@media (max-width: 600px) {
+  .quarto-title h1.title, h1.title { font-size: min(2.2rem, 7.5vw) !important; white-space: nowrap; }
+  .legend-line { font-size: min(0.8em, 3.1vw); }
+  .legend-line .chip { padding:1px 4px; margin:2px 2px; }
+  .legend-line .lg-long { display:none; }
+  .legend-line .lg-short { display:inline; }
+}
+</style>
+<div class="legend-line">
+<span class="chip" style="background:#fdbcce; color:#000; border:1.5px solid #333; font-weight:bold;"><span class="lg-long">First-level topic</span><span class="lg-short">1st level</span></span>
+<span class="chip" style="background:#84cfff; color:#c00000; border:2.5px solid #d00000; font-weight:normal;"><span class="lg-long">Second-level: authors unassigned</span><span class="lg-short">no authors</span></span>
+<span class="chip" style="background:#84cfff; color:#00703c; border:2.5px solid #008a45; font-weight:normal;"><span class="lg-long">Second-level: work in progress</span><span class="lg-short">in progress</span></span>
+<span class="chip" style="background:#84cfff; color:#0b2f8a; border:2.5px solid #0b2f8a; font-weight:normal;"><span class="lg-long">Second-level: written</span><span class="lg-short">written</span></span>
 </div>
 ```
 
